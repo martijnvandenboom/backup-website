@@ -1,4 +1,7 @@
 <menu id="lang-menu" class="flyout-menu menu">
+
+  <img style="height: 140px; padding: 25px 2px 11px 24px;" src="images/Earth-golden.gif">
+  
   <a href="#" lang="{{ .Site.Language.Lang }}" class="nav link active">{{ .Site.Language.LanguageName }} ({{ .Site.Language.Lang }})</a>
   {{ if .IsTranslated -}}
     {{ range .Translations }}
@@ -12,6 +15,6 @@
     {{ end }}
   {{ end }}
 
-  <img style="height: 140px; padding: 25px 2px 8px 23px;" src="images/Earth-golden.gif">  
+    
 
 </menu>
