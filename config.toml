@@ -6,9 +6,12 @@ title                   = "Notities"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
 disqusShortname         = ""
-googleAnalytics         = ""
+googleAnalytics         = "G-PX9BKD4YYT"
 pluralizeListTitles     = false
 disableLanguages        = []
+
+# Build robots.txt file
+enableRobotsTXT =             true
 
 [markup.goldmark.renderer]
   unsafe                = true
