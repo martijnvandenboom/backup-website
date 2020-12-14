@@ -58,7 +58,7 @@ enableRobotsTXT =             true
     alwaysOnHomepage      = false
 
     [params.intro.pic]
-      src                 = "img/main/Martijn_001.jpg"
+      src                 = "https://brave-davinci-b93713.netlify.app/images/Martijn_001.jpg"
       shape               = "circle"
       width               = ""
       alt                 = "Notities"
