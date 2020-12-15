@@ -20,6 +20,7 @@ enableRobotsTXT         = true
   home                  = ["html", "json", "rss"]
 
 [params]
+  author                = "van den Boom"
   enableCDN             = false
   cssFiles              = ["default"]
   jsFiles               = ["default"]
