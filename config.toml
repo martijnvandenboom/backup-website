@@ -325,7 +325,7 @@ enableRobotsTXT         = true
   # Coding Communities
   github                = "martijnvandenboom"
   #gitlab                = ""
-  #stackoverflow         = "" # User Number
+  stackoverflow         = "13417146" # User Number
   #bitbucket             = ""
   #jsfiddle              = ""
   #codepen               = ""
