@@ -15,6 +15,7 @@ $(document).ready(function() {
     var repo = '{{ .repo }}';
     var branch = '{{ .branch }}';
 
+    //url: ['https:/', api, 'v3/entry', gitProvider, username, repo, branch, 'comments'].join('/'),
     $.ajax({
       type: $(this).attr('method'),
       url: ['https:/', api, 'v3/entry', gitProvider, username, repo, branch, 'comments'].join('/'),

@@ -76,7 +76,7 @@ enableRobotsTXT         = true
   [params.staticman]
     enabled             = true
     api                 = "api.staticman.net"  # No Trailing Slash
-    gitProvider         = "github.com"
+    gitProvider         = "github"
     username            = "martijnvandenboom"
     repo                = "backup-website"
     branch              = "main"
