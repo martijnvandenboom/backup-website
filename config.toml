@@ -5,7 +5,7 @@ DefaultContentLanguage  = "en"
 title                   = "Notities"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
-disqusShortname         = ""
+disqusShortname         = "discussion"
 googleAnalytics         = "G-PX9BKD4YYT"
 pluralizeListTitles     = false
 disableLanguages        = []
@@ -74,7 +74,7 @@ enableRobotsTXT         = true
     socialFooter        = true
 
   [params.staticman]
-    enabled             = true
+    enabled             = false
     api                 = "api.staticman.net"  # No Trailing Slash
     gitProvider         = "github"
     username            = "martijnvandenboom"
