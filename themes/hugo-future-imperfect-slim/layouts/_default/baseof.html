@@ -14,9 +14,9 @@
     </div>
     
     <div class="footer">
-      <time class="published">
+      <p>
         {{ (.Site.Copyright | safeHTML) | default (print "\u00A9 " .Site.LastChange.Year "  -  " (.Site.Params.author | default .Site.Title)) }}
-      </time>
+      </p>
     </div>
 
   </body>
