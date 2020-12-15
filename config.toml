@@ -75,11 +75,11 @@ enableRobotsTXT         = true
 
   [params.staticman]
     enabled             = true
-    api                 = ""  # No Trailing Slash
-    gitProvider         = ""
-    username            = ""
-    repo                = ""
-    branch              = ""
+    api                 = "api.staticman.net"  # No Trailing Slash
+    gitProvider         = "github.com"
+    username            = "martijnvandenboom"
+    repo                = "backup-website"
+    branch              = "main"
 
     [params.staticman.recaptcha]
       siteKey           = "6LeYtQYaAAAAAIRQjBkZTA59iEa3OBI3hxWWMFx_"
