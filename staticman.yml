@@ -62,7 +62,7 @@ comments:
   # Register your domain at https://www.google.com/recaptcha/ and choose
   # reCAPTCHA V2. Use your OWN siteKey and secret.
   reCaptcha:
-    enabled: true
+    enabled: false
     # siteKey and secret should match your config.toml
     siteKey: "6LeYtQYaAAAAAIRQjBkZTA59iEa3OBI3hxWWMFx_"
     # (!) ENCRYPT reCaptcha secret key using Staticman /encrypt endpoint
