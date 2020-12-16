@@ -17,6 +17,6 @@ begin
       insert into public.person (first_name, last_name) values ('Jack', 'Twin');
 	  counter := counter + 1;
    end loop;
-end$$; ...
+end$$;
 
 ```
