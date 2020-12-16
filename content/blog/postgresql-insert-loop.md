@@ -7,7 +7,7 @@ tags = ["markdown", "css", "html", "themes"]
 categories = ["themes", "syntax"]
 +++
 
-{{< highlight html >}}
+```
 
 do $$
 declare 
@@ -19,4 +19,4 @@ begin
    end loop;
 end$$; ...
 
-{{< /highlight >}}
+```
