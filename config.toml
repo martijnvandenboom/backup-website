@@ -351,13 +351,11 @@ enableRobotsTXT         = true
   youtube               = "channel/UCslXipyVBwsTe6UjhVNOz7A"
   vimeo                 = "macmvandenboom"
   #whatsapp              = "" # WhatsApp Number
-    # WeChat and QQ need testing.
-    wechat              = ""
-    qq                  = "" # User ID Number
+  # WeChat and QQ need testing.
+  #wechat              = ""
+  #qq                  = "" # User ID Number
   instagram             = "ingmacmvandenboom"
   #tumblr                = ""
-  spotify               = "test"
-  soundcloud            = "test"
   twitter               = "ingvdboom"
   #strava                = ""
   #skype                 = ""
