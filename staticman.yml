@@ -7,17 +7,21 @@ comments:
   #
   # Names of the fields the form is allowed to submit. If a field that is
   # not here is part of the request, an error will be thrown.
-  allowedFields: ["name", "email", "website", "body", "replyID", "replyName", "replyThread"]
+  #allowedFields: ["name", "email", "website", "body", "replyID", "replyName", "replyThread"]
+  allowedFields: ["name", "website", "email" , "body", "replyID", "replyName", "replyThread"]
 
   # When allowedOrigins is defined, only requests sent from one of the domains
   # listed will be accepted.
-  # allowedOrigins: ["localhost", "hugo.staticman.net"]
+  #allowedOrigins: ["localhost", "hugo.staticman.net"]
+  allowedOrigins: ["localhost", "vandenboom.icu"]
+
 
   # (*) REQUIRED
   #
   # Name of the branch being used. Must match the branch configured in
   # "config.toml".
-  branch: "master"
+  #branch: "master"
+  branch: "main"
 
   # List of fields to be populated automatically by Staticman and included in
   # the data file. Keys are the name of the field. The value can be an object
@@ -34,10 +38,10 @@ comments:
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
   # Otherwise, entries will be published to the main branch automatically.
-  moderation: false
+  moderation: true
 
   # Name of the site. Used in notification emails.
-  name: ""
+  name: "vandenboom.icu"
 
   # (*) REQUIRED
   #
@@ -51,7 +55,7 @@ comments:
 
   # Names of required files. If any of these isn't in the request or is empty,
   # an error will be thrown.
-  requiredFields: ["name", "body"]
+  #requiredFields: ["name", "body"]
 
   # List of transformations to apply to any of the fields supplied. Keys are
   # the name of the field and values are possible transformation types.
@@ -64,8 +68,8 @@ comments:
   reCaptcha:
     enabled: false
     # siteKey and secret should match your config.toml
-    siteKey: ""
+    siteKey: "6LeYtQYaAAAAAIRQjBkZTA59iEa3OBI3hxWWMFx_"
     # (!) ENCRYPT reCaptcha secret key using Staticman /encrypt endpoint
     # i.e. https://{your-staticman-api}/v3/encrypt/{your-site-secret}
     # For more information, visit https://staticman.net/docs/encryption
-    secret: ""
+    secret: "6LeYtQYaAAAAAK5CSKSbh_UvF5_ngEi5VS14GYqm"

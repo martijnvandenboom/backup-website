@@ -5,10 +5,13 @@ DefaultContentLanguage  = "en"
 title                   = "Notities"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
-disqusShortname         = ""
-googleAnalytics         = ""
+disqusShortname         = "vandenboom-icu"
+googleAnalytics         = "G-PX9BKD4YYT"
 pluralizeListTitles     = false
 disableLanguages        = []
+
+# Build robots.txt file
+enableRobotsTXT         = true
 
 [markup.goldmark.renderer]
   unsafe                = true
@@ -17,6 +20,7 @@ disableLanguages        = []
   home                  = ["html", "json", "rss"]
 
 [params]
+  author                = "van den Boom"
   enableCDN             = false
   cssFiles              = ["default"]
   jsFiles               = ["default"]
@@ -33,7 +37,7 @@ disableLanguages        = []
   [params.meta]
     description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
     author              = "van den Boom"
-    favicon             = false
+    favicon             = true
     svg                 = true
     faviconVersion      = "1"
     msColor             = "#ffffff"
@@ -55,7 +59,7 @@ disableLanguages        = []
     alwaysOnHomepage      = false
 
     [params.intro.pic]
-      src                 = "img/main/Martijn_001.jpg"
+      src                 = "https://brave-davinci-b93713.netlify.app/images/Martijn_001.jpg"
       shape               = "circle"
       width               = ""
       alt                 = "Notities"
@@ -71,16 +75,16 @@ disableLanguages        = []
     socialFooter        = true
 
   [params.staticman]
-    enabled             = true
-    api                 = ""  # No Trailing Slash
-    gitProvider         = ""
-    username            = ""
-    repo                = ""
-    branch              = ""
+    enabled             = false
+    api                 = "api.staticman.net"  # No Trailing Slash
+    gitProvider         = "github"
+    username            = "martijnvandenboom"
+    repo                = "backup-website"
+    branch              = "main"
 
     [params.staticman.recaptcha]
-      siteKey           = ""
-      encryptedKey      = ""
+      siteKey           = "6LeYtQYaAAAAAIRQjBkZTA59iEa3OBI3hxWWMFx_"
+      encryptedKey      = "6LeYtQYaAAAAAK5CSKSbh_UvF5_ngEi5VS14GYqm"
 
 [menu]
 
@@ -321,7 +325,7 @@ disableLanguages        = []
   # Coding Communities
   github                = "martijnvandenboom"
   #gitlab                = ""
-  #stackoverflow         = "" # User Number
+  stackoverflow         = "13417146" # User Number
   #bitbucket             = ""
   #jsfiddle              = ""
   #codepen               = ""
@@ -347,11 +351,13 @@ disableLanguages        = []
   youtube               = "channel/UCslXipyVBwsTe6UjhVNOz7A"
   vimeo                 = "macmvandenboom"
   #whatsapp              = "" # WhatsApp Number
-    # WeChat and QQ need testing.
-    wechat              = ""
-    qq                  = "" # User ID Number
+  # WeChat and QQ need testing.
+  #wechat              = ""
+  #qq                  = "" # User ID Number
   instagram             = "ingmacmvandenboom"
   #tumblr                = ""
+  spotify               = "0d6z61v65xapwjgn7n416pc1j"
+  soundcloud            = "ing-macm-van-den-boom"
   twitter               = "ingvdboom"
   #strava                = ""
   #skype                 = ""
