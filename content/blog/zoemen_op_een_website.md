@@ -9,6 +9,7 @@ categories = ["windows"]
 
 {{< highlight html >}}
 
-Houd de CTRL toets van het toetsenbord ingedrukt en draai aan het wieltje op de muis.
+Houd de CTRL toets van het toetsenbord ingedrukt
+en draai aan het wieltje op de muis.
 
 {{< /highlight >}}
