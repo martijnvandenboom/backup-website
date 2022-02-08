@@ -12,5 +12,12 @@
       {{ partial "site-footer" . }}
       {{ partial "scripts" . }}
     </div>
+    
+    <div class="footer">
+      <p>
+        {{ (.Site.Copyright | safeHTML) | default (print "\u00A9 " now.Year "  -  " (.Site.Params.author | default .Site.Title)) }}      
+      </p>
+    </div>
+
   </body>
 </html>
