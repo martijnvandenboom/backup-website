@@ -64,29 +64,6 @@ comments:
   transforms:
     email: md5
 
-
-posts:
-  allowedFields: ["title", "body"]
-  allowedOrigins: ["localhost", "hugo.staticman.net"]
-  branch: "master"
-  generatedFields:
-    date:
-      type: date
-    slug:
-      type: slugify
-      options:
-        field: title
-    tags: ["user-generated"]
-  format: "frontmatter"
-  moderation: true
-  name: "Hugo + Staticman"
-  path: "content/post"
-  filename: "{fields.slug}"
-  requiredFields: ["title", "body"]
-  transforms:
-    body: "frontmatterContent"
-
-
   # reCAPTCHA (OPTIONAL)
   # Register your domain at https://www.google.com/recaptcha/ and choose
   # reCAPTCHA V2. Use your OWN siteKey and secret.
