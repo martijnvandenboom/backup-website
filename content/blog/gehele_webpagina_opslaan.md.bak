@@ -10,7 +10,7 @@ categories = ["windows", "handelingen"]
 {{< highlight html >}}
 
 In de webbrowser Microsoft Edge:
-> klik rechtsboven in de hoek op de 3 puntjes: ...
+> klik rechts boven in de hoek op de 3 puntjes: ...
 > kies voor de optie: Webopname (Ctrl+Shift+S)
 > kies voor de optie: Volledige pagina vastleggen
 > klik op de knop: Opslaan
