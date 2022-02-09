@@ -1,7 +1,7 @@
 ---
 title: Add new blog posts easily with Netlify CMS
 date: 2022-02-09T17:24:44.688Z
-draft: true
+draft: false
 categories: Podcast
 tags:
   - new
