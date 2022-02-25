@@ -46,7 +46,7 @@ enableRobotsTXT         = true
   [params.header]
     navbarTitle         = "Notities"
     dynamicTitles       = true
-    searchMenu          = true
+    searchMenu          = false
     shareMenu           = true
     languageMenu        = true
 
@@ -341,7 +341,7 @@ enableRobotsTXT         = true
   linkedin              = "macmvandenboom"
   #linkedin_company      = "examplebusiness"
   #foursquare            = ""
-  xing                  = "Martijn_vandenBoom"
+  xing                  = "MACMMartijn_vandenBoom"
   #slideshare            = ""
   # Social Networks
   facebook              = "macmvandenboom"
