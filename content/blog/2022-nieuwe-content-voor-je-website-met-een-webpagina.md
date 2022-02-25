@@ -12,8 +12,6 @@ tags:
   - webpagina
   - Netlify
   - CMS
-[[images]]
-  src = "uploads/netlify_cms.png"
 author: ing. M.A.C.M. (Martijn) van den Boom
 authorImage: uploads/Martijn_001.jpg
 image: uploads/netlify_cms.png
