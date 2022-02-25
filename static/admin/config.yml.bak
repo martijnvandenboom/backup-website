@@ -15,7 +15,11 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "Categories", name: "categories", widget: "hidden", default: "Podcast"}
+      - label: "Categories"
+          name: "categories"
+          widget: "list"
+          summary: '{{fields.category}}'
+          field: {label: Category, name: category, widget: string}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: Author, name: author, widget: hidden, default: "ing. M.A.C.M. (Martijn) van den Boom"}
       - {label: Author Image, name: authorImage, widget: hidden, default: "uploads/Martijn_001.jpg"}
