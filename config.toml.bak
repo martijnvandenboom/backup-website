@@ -326,11 +326,11 @@ enableRobotsTXT         = true
   github                = "martijnvandenboom"
   #gitlab                = ""
   stackoverflow         = "13417146" # User Number
-  #bitbucket             = ""
+  bitbucket             = "martijnvandenboom"
   #jsfiddle              = ""
   #codepen               = ""
   # Visual Art Communities
-  #deviantart            = ""
+  deviantart            = "ingvdboom"
   #flickr                = "example"
   #behance               = ""
   #dribbble              = ""
