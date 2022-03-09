@@ -1,6 +1,6 @@
 <footer id="site-footer">
   {{ if or (.Site.Params.footer.rssFooter) (.Site.Params.footer.socialFooter) }}
-	  <h6 style="text-align:left;">Social Media Links:</h6></br>
+	  <h6 style="text-align:left;">Social Media Links:</h6>
       <ul class="socnet-icons">
         {{ if .Site.Params.footer.rssFooter }}{{ partial "rss-icon" . }}{{ end }}
         {{ if .Site.Params.footer.socialFooter }}{{ partial "socnet-icon" . }}{{ end }}
