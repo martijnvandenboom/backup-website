@@ -16,7 +16,7 @@ Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of p
 Automatisch inloggen in Windows:</br>
 Microsoft heeft hiervoor speciaal een handig programmatje beschikbaar gemaakt.</br>
 Het heet: Autologon</br>
-Nu is versie: v3.10 ervan uit.</br>
+Huidige versie: v3.10</br>
 Je kunt het downloaden bij Microsoft via deze link: https://live.sysinternals.com/Autologon.exe</br>
 
 P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contactformulier van deze website.</br>
