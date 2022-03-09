@@ -10,6 +10,7 @@ categories = ["windows", "handelingen", "tools", "utilities"]
 
 Maak een gratis website met GitHub</br>
 
-<img src="static/uploads/GitHub-Pages.png" alt="GitHub Pages en GitHub Desktop" /></br>
+<img src="https://vandenboom.netlify.app/images/GitHub-Pages.png" alt="GitHub Pages en GitHub Desktop" /></br>
+<img src="img/2019/03/pic02.jpg" /></br>
 
 P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contactformulier van deze website.</br>
