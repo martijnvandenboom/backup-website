@@ -1,0 +1,24 @@
++++
+title = "Automatisch inloggen in Windows"
+description = "Commands"
+author = "van den Boom"
+date = 2021-12-19T09:50:22+01:00
+tags = ["automatisch", "inloggen", "windows", "autologon", "handelingen", "tools", "utilities"]
+categories = ["windows", "handelingen", "tools", "utilities"]
++++
+
+Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig.</br>
+Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows?</br>
+Je kunt ook automatisch inloggen in Windows. Als de computer dan klaar is met opstarten krijg je meteen het bureaublad voor je.</br>
+Op het bureaublad kun je al je handige programma's bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.</br>
+
+{{< highlight html >}}
+
+Automatisch inloggen in Windows:
+Microsoft heeft hiervoor speciaal een handig programmatje beschikbaar gemaakt.
+Het heet: Autologon
+Nu is versie: v3.10 ervan uit.
+Je kunt het downloaden bij Microsoft via deze link: https://live.sysinternals.com/Autologon.exe
+Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contact formulier van deze website. 
+
+{{< /highlight >}}
