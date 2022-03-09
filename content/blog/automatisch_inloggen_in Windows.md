@@ -9,16 +9,14 @@ categories = ["windows", "handelingen", "tools", "utilities"]
 
 Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig.</br>
 Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows?</br>
-Je kunt ook automatisch inloggen in Windows. Als de computer dan klaar is met opstarten krijg je meteen het bureaublad voor je.</br>
-Op het bureaublad kun je al je handige programma's bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.</br>
+Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien.
+Op het bureaublad kun je al je handige programma's bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.
+Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of pincode in te hoeven toetsen.</br>
+</br>
 
-{{< highlight html >}}
-
-Automatisch inloggen in Windows:
-Microsoft heeft hiervoor speciaal een handig programmatje beschikbaar gemaakt.
-Het heet: Autologon
-Nu is versie: v3.10 ervan uit.
-Je kunt het downloaden bij Microsoft via deze link: https://live.sysinternals.com/Autologon.exe
-Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contactformulier van deze website. 
-
-{{< /highlight >}}
+Automatisch inloggen in Windows:</br>
+Microsoft heeft hiervoor speciaal een handig programmatje beschikbaar gemaakt.</br>
+Het heet: Autologon</br>
+Nu is versie: v3.10 ervan uit.</br>
+Je kunt het downloaden bij Microsoft via deze link: https://live.sysinternals.com/Autologon.exe</br>
+Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contactformulier van deze website.</br> 
