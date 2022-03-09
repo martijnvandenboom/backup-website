@@ -872,7 +872,7 @@ figcaption {
   background-color: $white;
   border-left: $primary-border;
   height: 100%;
-  margin-top: 3.5em;
+  margin-top: 2.5em;
   overflow-y: auto;
   padding: 0;
   position: fixed;
@@ -1128,8 +1128,8 @@ figcaption {
   @include display-flex;
   justify-content: space-between;
   .flyout-menu {
-    right: -177px;
-    width: 177px;
+    right: -180px;
+    width: 180px;
     @include for-desktop-up {
       background-color: unset;
       border: none;
@@ -1182,8 +1182,8 @@ figcaption {
 
 #lang-menu {
   &.flyout-menu {
-    right: -177px;
-    width: 177px;
+    right: -180px;
+    width: 180px;
     a {
       border-left: 0;
     }
@@ -1209,8 +1209,8 @@ figcaption {
   justify-content: flex-start;
   text-align: center;
   &.flyout-menu {
-    width: 177px;
-    right: -177px;
+    width: 180px;
+    right: -180px;
     padding: 1em;
     h1 {
       font-size: 0.9em;
