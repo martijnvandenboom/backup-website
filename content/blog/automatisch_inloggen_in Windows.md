@@ -1,8 +1,8 @@
 +++
 title = "Automatisch inloggen in Windows"
-description = "Commands"
+description = "Tools"
 author = "van den Boom"
-date = 2021-12-19T09:50:22+01:00
+date = 2022-03-09T11:58:22+01:00
 tags = ["automatisch", "inloggen", "windows", "autologon", "handelingen", "tools", "utilities"]
 categories = ["windows", "handelingen", "tools", "utilities"]
 +++
@@ -19,6 +19,6 @@ Microsoft heeft hiervoor speciaal een handig programmatje beschikbaar gemaakt.
 Het heet: Autologon
 Nu is versie: v3.10 ervan uit.
 Je kunt het downloaden bij Microsoft via deze link: https://live.sysinternals.com/Autologon.exe
-Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contact formulier van deze website. 
+Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contactformulier van deze website. 
 
 {{< /highlight >}}
