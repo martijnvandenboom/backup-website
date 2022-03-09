@@ -18,4 +18,5 @@ Microsoft heeft hiervoor speciaal een handig programmatje beschikbaar gemaakt.</
 Het heet: Autologon</br>
 Nu is versie: v3.10 ervan uit.</br>
 Je kunt het downloaden bij Microsoft via deze link: https://live.sysinternals.com/Autologon.exe</br>
-Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contactformulier van deze website.</br> 
+
+P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contactformulier van deze website.</br>
