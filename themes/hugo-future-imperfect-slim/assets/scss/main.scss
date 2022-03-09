@@ -1128,8 +1128,8 @@ figcaption {
   @include display-flex;
   justify-content: space-between;
   .flyout-menu {
-    right: -180px;
-    width: 180px;
+    right: -200px;
+    width: 200px;
     @include for-desktop-up {
       background-color: unset;
       border: none;
@@ -1182,8 +1182,8 @@ figcaption {
 
 #lang-menu {
   &.flyout-menu {
-    right: -180px;
-    width: 180px;
+    right: -200px;
+    width: 200px;
     a {
       border-left: 0;
     }
@@ -1209,8 +1209,8 @@ figcaption {
   justify-content: flex-start;
   text-align: center;
   &.flyout-menu {
-    width: 180px;
-    right: -180px;
+    width: 200px;
+    right: -200px;
     padding: 1em;
     h1 {
       font-size: 0.9em;

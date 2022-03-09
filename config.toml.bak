@@ -329,6 +329,7 @@ enableRobotsTXT         = true
   bitbucket             = "martijnvandenboom"
   #jsfiddle              = ""
   #codepen               = ""
+  docker				 = "martijnvandenboom"
   # Visual Art Communities
   deviantart            = "ingvdboom"
   #flickr                = "example"
@@ -358,6 +359,8 @@ enableRobotsTXT         = true
   #tumblr                = ""
   spotify               = "0d6z61v65xapwjgn7n416pc1j"
   soundcloud            = "ing-macm-van-den-boom"
+  lastfm				= "ingvdboom"
+  tiktok				= "martijn.vandenboom"
   twitter               = "ingvdboom"
   #strava                = ""
   skype                 = "mvdboom@live.com"
