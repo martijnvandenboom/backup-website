@@ -12,7 +12,6 @@ Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij
 Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien.
 Op het bureaublad kun je al je handige programma's bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.
 Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of pincode in te hoeven toetsen.</br>
-</br>
 
 Automatisch inloggen in Windows:</br>
 Microsoft heeft hiervoor speciaal een handig programmatje beschikbaar gemaakt.</br>
