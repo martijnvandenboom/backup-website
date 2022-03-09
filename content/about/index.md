@@ -1,5 +1,5 @@
 +++
-title = "About"
+title = "Over mij"
 description = "ing. M.A.C.M. (Martijn) van den Boom, Elektrotechnisch ingenieur en docent"
 author = "van den Boom"
 date = "2020-12-11"
