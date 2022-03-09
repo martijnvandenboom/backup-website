@@ -12,4 +12,4 @@ Maak een gratis website met GitHub</br>
 
 <img src="https://vandenboom.netlify.app/images/GitHub-Pages.png" alt="GitHub Pages en GitHub Desktop" /></br>
 
-P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contactformulier van deze website.</br>
+P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via een van de Social Media Links op deze website.</br>

@@ -19,4 +19,4 @@ Het heet: Autologon</br>
 Huidige versie: v3.10</br>
 Je kunt het downloaden bij Microsoft via deze link: https://live.sysinternals.com/Autologon.exe</br>
 
-P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via het contactformulier van deze website.</br>
+P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via een van de Social Media Links op deze website.</br>
