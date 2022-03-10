@@ -1,6 +1,6 @@
 +++
 title = "Create a website for free with GitHub Pages"
-description = "Handleiding"
+description = "Manual"
 author = "van den Boom"
 date = 2022-03-09T19:18:22+01:00
 tags = ["create", "website", "GitHub", "Pages", "tutorial", "manual", "tools", "utilities"]
