@@ -5,11 +5,11 @@ draft: false
 categories:
   - article
 tags:
-  - "#Concourse"
-  - "#persistent"
-  - "#PostgreSQL"
-  - "#Database"
-  - "#Docker"
+  - Concourse
+  - persistent
+  - PostgreSQL
+  - Database
+  - Docker
 author: ing. M.A.C.M. (Martijn) van den Boom
 authorImage: uploads/Martijn_001.jpg
 comments: true
