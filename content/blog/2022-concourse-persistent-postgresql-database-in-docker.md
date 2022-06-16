@@ -15,6 +15,7 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
+```
 $ sudo docker-compose stop concourse-db
 
 $ sudo docker ps
@@ -26,3 +27,4 @@ $ vim docker-compose.yml
 	environment:
 
 $ sudo docker-compose up -d --no-deps concourse-db
+```
