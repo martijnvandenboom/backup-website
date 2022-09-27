@@ -3,13 +3,12 @@
     <header>
       <div class="title">
         <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-        {{ with .Description }}<p>{{ . }}</p>{{ end }}
-      </div>
-	  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-	  <div class="badge-base LI-profile-badge" data-locale="nl_NL" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="macmvandenboom" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://nl.linkedin.com/in/macmvandenboom/nl?trk=profile-badge">ing. M.A.C.M. (Martijn) van den Boom</a></div>
-              
-	  
-	  
+			<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+			<div class="badge-base LI-profile-badge" data-locale="nl_NL" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="macmvandenboom" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://nl.linkedin.com/in/macmvandenboom/nl?trk=profile-badge">ing. M.A.C.M. (Martijn) van den Boom</a></div>
+            
+			{{ with .Description }}<p>{{ . }}</p>{{ end }}
+      
+	  </div>
     </header>
     <div id="content">
       {{ .Content }}
