@@ -1,11 +1,18 @@
-+++
-title = "any iMac as an extended display"
-description = "Features"
-author = "van den Boom"
-date = 2022-10-31T20:56:00+01:00
-tags = ["iMac", "extended", "display"]
-categories = ["windows"]
-+++
+---
+title: any iMac as an extended display
+date: 2022-10-31T19:56:00.000Z
+draft: true
+categories:
+  - article
+tags:
+  - iMac
+  - extended
+  - display
+author: van den Boom
+comments: true
+description: Features
+share: true
+---
 
 {{< highlight html >}}
 
