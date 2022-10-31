@@ -1,5 +1,5 @@
 ---
-title: iMac as an extened display with Windows
+title: iMac as an extened display
 date: 2022-10-31T17:55:56.563Z
 draft: false
 categories:
@@ -14,4 +14,6 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-b﻿ody
+Install Windows on your iMac and use the software utility spacedesk.
+
+Such a simple solution to turn any iMac into a display to extended your desktop.
