@@ -1,7 +1,7 @@
 ---
 title: any iMac as an extended display
 date: 2022-10-31T19:56:00.000Z
-draft: true
+draft: false
 categories:
   - article
 tags:
