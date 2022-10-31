@@ -1,5 +1,5 @@
 ---
-title: iMac as an extened display
+title: any iMac as an extened display
 date: 2022-10-31T17:55:56.563Z
 draft: false
 categories:
