@@ -16,4 +16,4 @@ share: true
 ---
 Install Windows on your iMac and use the software utility spacedesk.
 
-Such a simple solution to turn any iMac into a display to extended your desktop.
+Such a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.
