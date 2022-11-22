@@ -1,45 +1,33 @@
 {{ define "main" }}
-{{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+<section class="section is-fullheight">
+  {{ $type := .Type }}
+  {{ $.Scratch.Set "count" 1 }}
 
-<div data-pagefind-ignore="all" class="container">
-    <div class="row">
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-            <div class="archive-list">
-                {{ range ($pages.GroupByDate "2006") }}
-                {{ if gt .Key 1 }}
-                    {{ $.Scratch.Set "count" 1 }}
-                    {{ range .Pages  }}
-                        {{ if (eq ($.Scratch.Get "count") 1) }}
-                            {{ $.Scratch.Set "count" 0 }}
-                            <h1 class="title is-4 has-text-weight-normal">{{ .Date.Format "2006" }}</h1>
-                        {{ end }}
-                    {{ end }}
+    {{ range (.Site.RegularPages.GroupByDate "2006") }}
+      {{ if and (gt .Key 1) (gt (where .Pages "Type" $type) 0) }}
 
-                    <ul>
-                    {{ range .Pages }}
-                        <li>
-                            <span>{{ .Date.Format "01/02" }}</span> — 
-                            <a href="{{ .RelPermalink }}">
-                                {{ .Title }}
-                            </a>
-                        </li>
-                    {{ end }}
-                    </ul>
+        {{ range (where .Pages "Type" $type) }}
+          {{ if (eq ($.Scratch.Get "count") 1) }}
+            {{ $.Scratch.Set "count" 0 }}
+            <h1 class="title is-4 has-text-weight-normal">{{ .Date.Format "2006" }}</h1>
+          {{ end }}
+        {{ end }}
 
-                {{ end }}
-                {{ end }}
-            </div>
-       	</div>
-        {{ partial "sidebar.html" . }}
-	</div>
-</div>
+        {{ $.Scratch.Set "count" 1 }}
 
+          <ul class="article__list">
+          {{ range (where .Pages "Type" $type) }}
+            {{ if (ne .Params.hidden true) }}
+              <li>
+                <a class="is-block" href="{{ .RelPermalink }}">
+                  <span class="has-text-grey-dark">{{ .Date.Format "02 Jan" }}</span> — {{ .Title }}
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+          </ul>
 
-<hr />
+    {{ end }}
+  {{ end }}
+</section>
 {{ end }}
