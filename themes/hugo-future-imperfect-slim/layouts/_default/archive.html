@@ -1,26 +1,14 @@
 {{ define "main" }}
-  <article class="post">
-    {{ .Render "header" }}
-    <div id="socnet-share">
-      {{ partial "share-buttons" . }}
-    </div>
-    <div class="content">
-      {{ .Render "featured" }}
-      {{ .Content }}
-    </div>
-    <footer>
-      {{ .Render "stats" }}
-    </footer>
-  </article>
-  {{ if not ( eq .Params.comments false) }}
-    {{ .Render "comments" }}
+  {{ $paginator := .Paginate (cond .IsHome (where site.RegularPages "Type" "in" site.Params.mainSections) (.Data.Pages) ) }}
+  {{ range $paginator.Pages }}
+    {{ .Render "content-list" }}
   {{ end }}
   <div class="pagination">
-    {{ if .NextInSection }}
-      <a href="{{ .NextInSection.RelPermalink }}" class="button left"><span>{{ .NextInSection.Title }}</span></a>
+    {{ if .Paginator.HasPrev }}
+      <a href="{{ .Paginator.Prev.URL }}" class="button left"><span>{{ i18n "previous_page" }}</span></a>
     {{ end }}
-    {{ if .PrevInSection }}
-      <a href="{{ .PrevInSection.RelPermalink }}" class="button right"><span>{{ .PrevInSection.Title }}</span></a>
+    {{ if .Paginator.HasNext }}
+      <a href="{{ .Paginator.Next.URL }}" class="button right"><span>{{ i18n "next_page" }}</span></a>
     {{ end }}
   </div>
 {{ end }}
