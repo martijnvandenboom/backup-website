@@ -1,7 +1,7 @@
 ---
 title: "Posts Archive"
 layout: archive
-type: archive
+type: posts
 description: Archive of historical posts.
 url: "/archive/"
 ---

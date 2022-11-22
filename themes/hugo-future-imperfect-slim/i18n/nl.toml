@@ -25,6 +25,9 @@
 [categories]
   one = "Categorie"
   other = "Categorieën"
+[archive]
+  one = "Archief"
+  other = "Archief"
 [tags]
   one = "Tag"
   other = "Tags"

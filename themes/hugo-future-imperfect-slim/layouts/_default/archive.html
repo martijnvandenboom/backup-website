@@ -1,14 +1,33 @@
 {{ define "main" }}
-  {{ $paginator := .Paginate (cond .IsHome (where site.RegularPages "Type" "in" site.Params.mainSections) (.Data.Pages) ) }}
-  {{ range $paginator.Pages }}
-    {{ .Render "content-list" }}
+<section class="section is-fullheight">
+  {{ $type := .Type }}
+  {{ $.Scratch.Set "count" 1 }}
+
+    {{ range (.Site.RegularPages.GroupByDate "2006") }}
+      {{ if and (gt .Key 1) (gt (where .Pages "Type" $type) 0) }}
+
+        {{ range (where .Pages "Type" $type) }}
+          {{ if (eq ($.Scratch.Get "count") 1) }}
+            {{ $.Scratch.Set "count" 0 }}
+            <h1 class="title is-4 has-text-weight-normal">{{ .Date.Format "2006" }}</h1>
+          {{ end }}
+        {{ end }}
+
+        {{ $.Scratch.Set "count" 1 }}
+
+          <ul class="article__list">
+          {{ range (where .Pages "Type" $type) }}
+            {{ if (ne .Params.hidden true) }}
+              <li>
+                <a class="is-block" href="{{ .RelPermalink }}">
+                  <span class="has-text-grey-dark">{{ .Date.Format "02 Jan" }}</span> — {{ .Title }}
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+          </ul>
+
+    {{ end }}
   {{ end }}
-  <div class="pagination">
-    {{ if .Paginator.HasPrev }}
-      <a href="{{ .Paginator.Prev.URL }}" class="button left"><span>{{ i18n "previous_page" }}</span></a>
-    {{ end }}
-    {{ if .Paginator.HasNext }}
-      <a href="{{ .Paginator.Next.URL }}" class="button right"><span>{{ i18n "next_page" }}</span></a>
-    {{ end }}
-  </div>
+</section>
 {{ end }}
