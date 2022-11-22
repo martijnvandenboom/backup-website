@@ -115,6 +115,13 @@ enableRobotsTXT         = true
     url               = "/categories/"
     pre               = "<i class='fas fa-sitemap'></i>"
     weight            = 5
+  
+  [[menu.main]]
+    name              = "Archive"
+    identifier        = "archive"
+    url               = "/archive/"
+    pre               = "<i class='fas fa-archive'></i>"
+    weight            = 5
 
 [Languages]
 
