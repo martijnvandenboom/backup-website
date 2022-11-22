@@ -159,7 +159,7 @@ enableRobotsTXT         = true
       weight            = 4
 
     [[Languages.nl.menu.main]]
-      name              = "Archive"
+      name              = "Archief"
       identifier        = "archive"
       url               = "/archive/"
       pre               = "<i class='fas fa-archive'></i>"
