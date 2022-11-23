@@ -46,7 +46,7 @@ enableRobotsTXT         = true
   [params.header]
     navbarTitle         = "Notities"
     dynamicTitles       = true
-    searchMenu          = false
+    searchMenu          = true
     shareMenu           = true
     languageMenu        = true
 
