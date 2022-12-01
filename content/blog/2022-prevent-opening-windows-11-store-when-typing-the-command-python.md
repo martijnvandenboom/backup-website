@@ -1,7 +1,7 @@
 ---
 title: Prevent opening Windows 11 Store when typing the command python
 date: 2022-12-01T19:30:38.507Z
-draft: true
+draft: false
 categories:
   - article
 tags:
