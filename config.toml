@@ -65,7 +65,7 @@ enableRobotsTXT         = true
       alt                 = "Notities"
 
   [params.sidebar]
-    about               = "Sponsor me: https://paypal.me/ingmacmvandenboom"
+    about               = "Sponsor me link: <a href="https://paypal.me/ingmacmvandenboom">paypal.me/ingmacmvandenboom</a>"
     postAmount          = 5
     categories          = true
     categoriesByCount   = true
