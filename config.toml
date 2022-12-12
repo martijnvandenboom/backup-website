@@ -65,7 +65,7 @@ enableRobotsTXT         = true
       alt                 = "Notities"
 
   [params.sidebar]
-    about               = "This theme was developed for Hugo static site generator."
+    about               = "Sponsor me: https://paypal.me/ingmacmvandenboom"
     postAmount          = 5
     categories          = true
     categoriesByCount   = true
