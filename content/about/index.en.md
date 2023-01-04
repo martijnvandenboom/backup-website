@@ -8,7 +8,7 @@ layout = "about"
 
 ing. M.A.C.M. (Martijn) van den Boom
 
-Computer Infrastructure Architect
+Computer Infrastructure Architect</br>
 ingenieur, docent en mentor
 
 
