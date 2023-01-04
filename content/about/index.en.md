@@ -1,6 +1,6 @@
 +++
 title = "About"
-description = "ing. M.A.C.M. (Martijn) van den Boom - Computer Infrastructure Architect - ingenieur, docent en mentor"
+description = "ing. M.A.C.M. (Martijn) van den Boom </br></br> Computer Infrastructure Architect </br> ingenieur, docent en mentor"
 author = "van den Boom"
 date = "2020-12-11"
 layout = "about"
