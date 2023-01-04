@@ -52,7 +52,7 @@ enableRobotsTXT         = true
 
   [params.intro]
     header                = "Notities"
-    paragraph             = "ing. M.A.C.M. (Martijn) van den Boom </br></br> Computer Infrastructure Architect </br> ingenieur, docent en mentor"
+    paragraph             = "ing. M.A.C.M. (Martijn) van den Boom </br></br> Computer Infrastructure Architect </br> ingenieur, docent en mentor</br></br>"
     rssIntro              = true
     socialIntro           = true
     hideWhenSingleColumn  = false
