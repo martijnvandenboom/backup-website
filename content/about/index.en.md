@@ -32,6 +32,6 @@ Websites built with Hugo are extremelly fast, secure and can be deployed anywher
 Learn more and contribute on [GitHub](https://github.com/gohugoio).
 
 
-Would you care to sponsor me? See page:
-https://paypal.me/ingmacmvandenboom
-https://www.buymeacoffee.com/ingvdboom
+Would you care to sponsor me? See page: </br>
+<a href='https://paypal.me/ingmacmvandenboom'>paypal.me/ingmacmvandenboom</a> </br>
+<a href='https://buymeacoffee.com/ingvdboom'>buymeacoffee.com/ingvdboom</a>
