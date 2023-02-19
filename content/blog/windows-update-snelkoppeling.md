@@ -32,8 +32,9 @@ Windows Update snelkoppeling die iedereen op zijn bureaublad moet hebben
 
   (Op Windows 10)
 
-  ms-settings:windowsupdate</br>\
-  </br>
+  ms-settings:windowsupdate
+
+
 * Klik op: Volgende
 * Vul de naam in: Windows Update
 * Klik op: Voltooien
