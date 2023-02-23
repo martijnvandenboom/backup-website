@@ -1,5 +1,5 @@
 ---
-title: Authomatisch inloggen op een Linux server m.b.v. PuTTY onder Windows
+title: Automatisch inloggen op een Linux server m.b.v. PuTTY onder Windows
 date: 2023-02-17T14:51:15.829Z
 draft: false
 categories:
