@@ -1,5 +1,5 @@
 ---
-title: "Maak een Windows '\0God Mode'\0 snelkoppeling"
+title: Maak een Windows - God Mode - snelkoppeling
 date: 2023-03-05T13:40:14.023Z
 draft: false
 categories:
