@@ -10,6 +10,7 @@ tags:
   - 2e handse
   - Apple
   - Mac
+  - macOS
   - MacBook
   - iMac
   - Mac mini
