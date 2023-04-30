@@ -8,6 +8,7 @@ tags:
   - installing
   - virtual
   - machines
+  - VirtualBox
   - Apple
   - mac
   - macos
