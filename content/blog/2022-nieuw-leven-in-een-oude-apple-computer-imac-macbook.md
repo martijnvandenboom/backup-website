@@ -13,6 +13,9 @@ tags:
   - Mac
   - iMac
   - Macbook
+  - virtual
+  - machines
+  - VirtualBox
 author: ing. M.A.C.M. (Martijn) van den Boom
 authorImage: uploads/Martijn_001.jpg
 comments: true
