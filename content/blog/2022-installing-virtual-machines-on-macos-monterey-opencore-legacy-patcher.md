@@ -8,11 +8,11 @@ tags:
   - installing
   - virtual
   - machines
+  - mac
   - macos
   - monterey
-  - open core
-  - legacy
-  - patcher
+  - opencore
+  - legacy patcher
 author: ing. M.A.C.M. (Martijn) van den Boom
 authorImage: uploads/Martijn_001.jpg
 comments: true
