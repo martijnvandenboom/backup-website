@@ -1,5 +1,5 @@
 ---
-title: "Al gehoord van: ChatGPT? Vind antwoorden op al je moeilijke vragen?"
+title: "Al gehoord van: ChatGPT? Vind antwoorden op al je moeilijke vragen!"
 date: 2023-04-30T13:15:53.989Z
 draft: false
 categories:
