@@ -10,6 +10,7 @@ tags:
   - oude
   - Apple
   - computer
+  - Mac
   - iMac
   - Macbook
 author: ing. M.A.C.M. (Martijn) van den Boom
