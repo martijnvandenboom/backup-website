@@ -11,8 +11,7 @@ tags:
   - mac
   - macos
   - monterey
-  - opencore
-  - legacy patcher
+  - opencore legacy patcher
 author: ing. M.A.C.M. (Martijn) van den Boom
 authorImage: uploads/Martijn_001.jpg
 comments: true
