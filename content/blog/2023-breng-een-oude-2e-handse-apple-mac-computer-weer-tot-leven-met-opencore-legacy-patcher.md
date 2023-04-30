@@ -22,7 +22,7 @@ share: true
 ---
 Is computeren je hobby en heb je altijd al een Apple Mac willen proberen? Een tip / aanrader is dan OpenCore Lagacy Patcher.
 
-Zie de oficiele website: https://github.com/dortania/OpenCore-Legacy-Patcher/releases
+Zie de officiele website: https://github.com/dortania/OpenCore-Legacy-Patcher/releases
 
 En het YouTube kanaal: https://www.youtube.com/@Mr.Macintosh
 
