@@ -8,6 +8,7 @@ tags:
   - installing
   - virtual
   - machines
+  - Apple
   - mac
   - macos
   - monterey
