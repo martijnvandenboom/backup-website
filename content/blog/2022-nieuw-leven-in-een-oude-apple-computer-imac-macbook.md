@@ -13,9 +13,12 @@ tags:
   - Mac
   - iMac
   - Macbook
+  - macOS
   - virtual
   - machines
   - VirtualBox
+  - Linux
+  - Windows
 author: ing. M.A.C.M. (Martijn) van den Boom
 authorImage: uploads/Martijn_001.jpg
 comments: true
