@@ -17,7 +17,7 @@ share: true
 ---
 W﻿il je anoniem blijven als je op het Internet gaat zoeken?
 
-G﻿ebruik dan een andere webbrowser, de Tor Browser is speciaal ontwikkeld is om anoniem te blijven.</br></br>
+G﻿ebruik dan een andere webbrowser, de Tor Browser is speciaal ontwikkeld om anoniem te blijven.</br></br>
 
 S﻿tap 1.: ga naar de website: https://www.torproject.org/
 
