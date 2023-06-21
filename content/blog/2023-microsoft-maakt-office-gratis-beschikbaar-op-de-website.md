@@ -20,9 +20,9 @@ S﻿tap 1.: log in op de website: office.com
 
 S﻿tap 2.: klik op het icoontje met de 9 puntjes links bovenin beeld
 
-S﻿tap 3.: kies de office app die je wilt gebruiken</br>
+S﻿tap 3.: kies de office app die je wilt gebruiken</br></br>
 
-<﻿/br>
+
 
 A﻿ls je nog geen Microsoft account hebt kun je er een gratis aanmaken.
 
