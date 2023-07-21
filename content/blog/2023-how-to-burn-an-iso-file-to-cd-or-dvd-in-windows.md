@@ -16,4 +16,4 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-In File Explorer Right-click on the \*.ISO file and choose Properties.</br>Then, click Change from the General tab, choose Windows Explorer, and click OK.</br>Next, save the change by clicking Apply > OK</br> Now right click on the \*.ISO file and choose: Burn disc image or on: Show more options to find this.
+In File Explorer right-click on the \*.ISO file and choose Properties.</br>Then, click Change from the General tab, choose Windows Explorer, and click OK.</br>Next, save the change by clicking Apply > OK</br> Now right click on the \*.ISO file and choose: Burn disc image or on: Show more options to find this.
