@@ -15,7 +15,7 @@ comments: true
 share: true
 ---
 ```
-ls -al /usr/local/opt/ | grep -i openjdk
+$ ls -al /usr/local/opt/ | grep -i openjdk
 
 $ brew install jenv
 
