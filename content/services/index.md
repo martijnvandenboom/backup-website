@@ -1,6 +1,6 @@
 +++
 title = "Services"
-description = "Services"
+description = "Beschikbare services"
 author = "van den Boom"
 date = "2023-10-29"
 layout = "services"
@@ -13,7 +13,7 @@ ingenieur, docent en mentor</br>
 </br>
 </br>
 
-Floppy Disk Recovery Service
+<b>Floppy Disk Recovery Service</b>
 
 Herstel van 5.25" en 3.5" Floppy Disks - Een Vrijwillige Service
 
