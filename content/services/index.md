@@ -15,7 +15,7 @@ ingenieur, docent en mentor</br>
 
 <b>Floppy Disk Recovery Service</b>
 
-Herstel van 5.25" en 3.5" Floppy Disks - Een Vrijwillige Service
+Herstel van 5.25", 3.5" floppies en Iomega Zip Disks (super floppy) - Een Vrijwillige Service
 
 Heeft u nog oude floppy disks rondslingeren vol met kostbare herinneringen en belangrijke documenten? Wij begrijpen hoe waardevol die oude schijven kunnen zijn, en daarom bieden wij een vrijwillige service voor floppy disk recovery aan.
 

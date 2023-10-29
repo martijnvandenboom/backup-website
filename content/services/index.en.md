@@ -15,7 +15,7 @@ ingenieur, docent en mentor</br>
 
 <b>Floppy Disk Recovery Service</b>
 
-Recovery of 5.25" and 3.5" Floppy Disks - A Voluntary Service
+Recovery of 5.25", 3.5" floppies and Iomega Zip Disks (super floppy) - A Voluntary Service
 
 Do you have old floppy disks lying around with precious memories and important documents? We understand the value of these old disks, and that's why we offer a voluntary service for floppy disk recovery.
 
