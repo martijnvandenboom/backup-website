@@ -4,6 +4,12 @@ description = "Notities"
 author = "van den Boom"
 date = "2020-12-11"
 layout = "about"
+categories:
+  - article
+tags:
+  - persoonlijke
+  - introductie
+
 +++
 
 Beste lezer,
