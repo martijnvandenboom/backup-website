@@ -19,6 +19,10 @@ Ik besloot mijn passie voor computers na te jagen en stapte over naar de opleidi
 
 Voor mij zijn computers niet alleen een carrière, maar ook mijn grootste hobby. Ik heb het voorrecht gehad om mijn passie te veranderen in mijn dagelijkse werk. Elke dag ga ik met onverminderde energie naar mijn baan, gedreven door de mogelijkheid om te innoveren en te creëren, om zowel nieuwe als oude ideeën tot leven te brengen. Kortom, computers zijn mijn leven, en ik geniet van elke seconde van deze spannende reis.
 
+Als voortzetting van mijn academische reis koester ik een sterke wens om mijn ervaringen en inzichten te delen met anderen. Ik geloof in de kracht van het delen van aantekeningen en kennis om individuen te inspireren en innovatieve ideeën te ontketenen. Mijn ambitie is om in contact te treden met gelijkgestemde personen en deel te nemen aan zinvolle gesprekken om gedachten en standpunten uit te wisselen.
+
+Ik ben er stellig van overtuigd dat we door open communicatie en samenwerking een levendige intellectuele gemeenschap kunnen bevorderen, waar ideeën gedijen en positieve verandering in gang wordt gezet. Of het nu via online platforms, seminars of netwerkevenementen is, ik ben enthousiast om bij te dragen aan deze uitwisseling van kennis en ideeën. Ik kijk ernaar uit om anderen te inspireren en zelf geïnspireerd te worden, en zo een dynamische omgeving te creëren waarin we allemaal kunnen leren, groeien en samen innoveren.
+
 Vriendelijke groet,
 
 Martijn
