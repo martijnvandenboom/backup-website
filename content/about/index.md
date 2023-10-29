@@ -1,5 +1,5 @@
 +++
-title = "Over mij"
+title = "Over"
 description = "Notities"
 author = "van den Boom"
 date = "2020-12-11"
@@ -46,7 +46,7 @@ Meer informatie en bijdragen op [GitHub](https://github.com/gohugoio).
 
 </br>
 </br>
-Sponsor je me? Het kan via: </br>
+<u>Sponsor je me? Het kan via:</u> </br>
 <a href='https://ko-fi.com/martijnvandenboom'>ko-fi.com/martijnvandenboom</a> </br>
 <a href='https://paypal.me/ingmacmvandenboom'>paypal.me/ingmacmvandenboom</a> </br>
 <a href='https://buymeacoffee.com/ingvdboom'>buymeacoffee.com/ingvdboom</a>

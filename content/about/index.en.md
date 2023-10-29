@@ -46,7 +46,7 @@ Learn more and contribute on [GitHub](https://github.com/gohugoio).
 
 </br>
 </br>
-Would you care to sponsor me? See page: </br>
+<u>Would you care to sponsor me? See page:</u> </br>
 <a href='https://ko-fi.com/martijnvandenboom'>ko-fi.com/martijnvandenboom</a> </br>
 <a href='https://paypal.me/ingmacmvandenboom'>paypal.me/ingmacmvandenboom</a> </br>
 <a href='https://buymeacoffee.com/ingvdboom'>buymeacoffee.com/ingvdboom</a>
