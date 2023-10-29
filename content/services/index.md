@@ -14,7 +14,7 @@ Heb je nog oude floppy disks rondslingeren vol met kostbare herinneringen en bel
 
 <u>Wat wij bieden:</u>
 
-Herstel van 5.25" en 3.5" floppy disks: Ons team van deskundigen heeft de nodige ervaring en technologie om gegevens te herstellen van zowel 5.25" als 3.5" floppy disks. We behandelen disks die mogelijk verloren leken, met zorg en aandacht.
+Herstel van 5.25", 3.5" en Zip floppy disks: Ons team van deskundigen heeft de nodige ervaring en technologie om gegevens te herstellen van zowel 5.25", 3.5" als Zip floppy disks. We behandelen disks die mogelijk verloren leken, met zorg en aandacht.
 
 Ervaren vrijwilligers: Onze dienst wordt gerund door gepassioneerde vrijwilligers die zich inzetten om verloren gegevens terug te halen. We begrijpen dat deze disks vaak een schat aan persoonlijke en historische informatie bevatten, en we doen ons best om u te helpen.
 

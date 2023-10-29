@@ -14,7 +14,7 @@ Do you have old floppy disks lying around with precious memories and important d
 
 <u>What We Offer:</u>
 
-Recovery of 5.25" and 3.5" floppy disks: Our team of experts has the necessary experience and technology to recover data from both 5.25" and 3.5" floppy disks. We handle disks that may have seemed lost with care and attention.
+Recovery of 5.25", 3.5" and Zip floppy disks: Our team of experts has the necessary experience and technology to recover data from both 5.25", 3.5" and Zip floppy disks. We handle disks that may have seemed lost with care and attention.
 
 Dedicated volunteers: Our service is run by passionate volunteers committed to retrieving lost data. We understand that these disks often contain a treasure trove of personal and historical information, and we do our best to assist you.
 
