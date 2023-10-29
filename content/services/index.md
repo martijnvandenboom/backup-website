@@ -6,13 +6,6 @@ date = "2023-10-29"
 layout = "services"
 +++
 
-ing. M.A.C.M. (Martijn) van den Boom</br>
-</br>
-Computer Infrastructure Architect</br>
-ingenieur, docent en mentor</br>
-</br>
-</br>
-
 <b>Floppy Disk Recovery Service</b>
 
 Herstel van 5.25", 3.5" floppies en Iomega Zip Disks (super floppy) - Een Vrijwillige Service
