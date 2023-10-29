@@ -6,9 +6,24 @@ date = "2020-12-11"
 layout = "about"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Beste lezer,
 
-Hugo makes use of a variety of open source projects including:
+In mijn academische reis stuitte ik in mijn eerste jaar bouwkunde aan het HBO op een vak dat mijn leven voorgoed veranderde: Visual Basic programmeren. Tot mijn verbazing bleek ik hierin uit te blinken, met een indrukwekkende 9 als cijfer. Dit stond in schril contrast tot mijn prestaties in andere vakken, waar ik misschien net een mager zesje scoorde. Het was een keerpunt, een 'Eureka'-moment dat me ondubbelzinnig wees in welke richting ik moest gaan.
+
+Ik besloot mijn passie voor computers na te jagen en stapte over naar de opleiding Elektrotechniek. Deze keuze bood niet alleen meer mogelijkheden om mijn softwarevaardigheden te ontwikkelen, maar gaf me ook een diepgaand begrip van hardware. Het was een uitdaging die ik met open armen omhelsde, wetende dat het de zwaarste HBO-opleiding was die ik kon kiezen. Voor mij betekende dat simpelweg een nog grotere uitdaging en een kans om te groeien.
+
+Voor mij zijn computers niet alleen een carrière, maar ook mijn grootste hobby. Ik heb het voorrecht gehad om mijn passie te veranderen in mijn dagelijkse werk. Elke dag ga ik met onverminderde energie naar mijn baan, gedreven door de mogelijkheid om te innoveren en te creëren, om zowel nieuwe als oude ideeën tot leven te brengen. Kortom, computers zijn mijn leven, en ik geniet van elke seconde van deze spannende reis.
+
+Vriendelijke groet,
+
+Martijn
+
+
+<u>Toelichting:</u>
+
+In Go geschreven, is Hugo een open source statische site-generator die beschikbaar is onder de Apache Licentie 2.0. Hugo ondersteunt TOML, YAML en JSON databestandtypen, Markdown- en HTML-contentbestanden, en maakt gebruik van shortcodes om rijke inhoud toe te voegen. Andere opvallende functies zijn taxonomieën, meertalige modus, beeldverwerking, aangepaste uitvoerindelingen, HTML/CSS/JS minificatie en ondersteuning voor Sass SCSS-workflows.
+
+Hugo maakt gebruik van verschillende open source projecten, waaronder:
 
 * https://github.com/yuin/goldmark
 * https://github.com/alecthomas/chroma
@@ -16,13 +31,13 @@ Hugo makes use of a variety of open source projects including:
 * https://github.com/spf13/cobra
 * https://github.com/spf13/viper
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+Hugo is ideaal voor blogs, bedrijfswebsites, creatieve portfolio's, online magazines, single page applicaties, of zelfs websites met duizenden pagina's.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+Hugo is bedoeld voor mensen die hun eigen website met de hand willen coderen, zonder zich zorgen te maken over het opzetten van ingewikkelde runtimes, afhankelijkheden en databases.
 
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+Websites gebouwd met Hugo zijn extreem snel, veilig en kunnen overal worden ingezet, inclusief AWS, GitHub Pages, Heroku, Netlify en elke andere hostingprovider.
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Meer informatie en bijdragen op [GitHub](https://github.com/gohugoio).
 
 
 Sponsor je me? Het kan via: </br>
