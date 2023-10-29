@@ -44,7 +44,8 @@ Websites gebouwd met Hugo zijn extreem snel, veilig en kunnen overal worden inge
 
 Meer informatie en bijdragen op [GitHub](https://github.com/gohugoio).
 
-
+</br>
+</br>
 Sponsor je me? Het kan via: </br>
 <a href='https://ko-fi.com/martijnvandenboom'>ko-fi.com/martijnvandenboom</a> </br>
 <a href='https://paypal.me/ingmacmvandenboom'>paypal.me/ingmacmvandenboom</a> </br>
