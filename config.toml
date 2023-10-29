@@ -117,11 +117,19 @@ enableRobotsTXT         = true
     weight            = 4
   
   [[menu.main]]
+    name              = "Services"
+    identifier        = "services"
+    url               = "/services/"
+    pre               = "<i class='fas fa-services'></i>"
+    weight            = 5
+
+
+  [[menu.main]]
     name              = "Archive"
     identifier        = "archive"
     url               = "/archive/"
     pre               = "<i class='fas fa-archive'></i>"
-    weight            = 5
+    weight            = 6
 
 [Languages]
 
@@ -159,11 +167,18 @@ enableRobotsTXT         = true
       weight            = 4
 
     [[Languages.nl.menu.main]]
+      name              = "Services"
+      identifier        = "services"
+      url               = "/services/"
+      pre               = "<i class='fas fa-services'></i>"
+      weight            = 5
+
+    [[Languages.nl.menu.main]]
       name              = "Archief"
       identifier        = "archive"
       url               = "/archive/"
       pre               = "<i class='fas fa-archive'></i>"
-      weight            = 5
+      weight            = 6
 
   [Languages.en]
     LanguageCode        = "en"
