@@ -120,7 +120,7 @@ enableRobotsTXT         = true
     name              = "Services"
     identifier        = "services"
     url               = "/services/"
-    pre               = "<i class='fa-solid fa-briefcase'></i>"
+    pre               = "<i class='fas fa-briefcase'></i>"
     weight            = 5
 
 
@@ -170,7 +170,7 @@ enableRobotsTXT         = true
       name              = "Services"
       identifier        = "services"
       url               = "/services/"
-      pre               = "<i class='fa-solid fa-briefcase'></i>"
+      pre               = "<i class='fas fa-briefcase'></i>"
       weight            = 5
 
     [[Languages.nl.menu.main]]
