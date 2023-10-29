@@ -120,7 +120,7 @@ enableRobotsTXT         = true
     name              = "Services"
     identifier        = "services"
     url               = "/services/"
-    pre               = "<i class='fas fa-services'></i>"
+    pre               = "<i class='fas fa-bell-concierge'></i>"
     weight            = 5
 
 
