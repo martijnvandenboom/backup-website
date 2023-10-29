@@ -32,10 +32,3 @@ Als u geïnteresseerd bent in onze service, kunt u contact met ons opnemen via e
 Let op: Onze service is gebaseerd op vrijwillige bijdragen. Als we erin slagen uw gegevens te herstellen en u tevreden bent met het resultaat, stellen we een vrijwillige donatie op prijs om onze inspanningen te ondersteunen en de service beschikbaar te houden voor anderen.
 
 Aarzel niet om contact met ons op te nemen als u vragen heeft of als u geïnteresseerd bent in het herstellen van uw floppy disks. Wij zijn hier om u te helpen uw kostbare herinneringen te behouden.
-
-
-
-Sponsor je me? Het kan via: </br>
-<a href='https://ko-fi.com/martijnvandenboom'>ko-fi.com/martijnvandenboom</a> </br>
-<a href='https://paypal.me/ingmacmvandenboom'>paypal.me/ingmacmvandenboom</a> </br>
-<a href='https://buymeacoffee.com/ingvdboom'>buymeacoffee.com/ingvdboom</a>

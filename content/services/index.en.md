@@ -32,9 +32,3 @@ If you're interested in our service, you can contact us via email at ingmacmvand
 Please note: Our service is based on voluntary contributions. If we successfully recover your data and you are satisfied with the result, we appreciate any voluntary donations to support our efforts and keep the service available for others.
 
 Feel free to reach out if you have any questions or if you are interested in recovering your floppy disks. We are here to help you preserve your precious memories.
-
-
-Would you care to sponsor me? See page: </br>
-<a href='https://ko-fi.com/martijnvandenboom'>ko-fi.com/martijnvandenboom</a> </br>
-<a href='https://paypal.me/ingmacmvandenboom'>paypal.me/ingmacmvandenboom</a> </br>
-<a href='https://buymeacoffee.com/ingvdboom'>buymeacoffee.com/ingvdboom</a>
