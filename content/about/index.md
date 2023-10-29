@@ -9,7 +9,6 @@ categories:
 tags:
   - persoonlijke
   - introductie
-
 +++
 
 Beste lezer,
@@ -24,7 +23,8 @@ Vriendelijke groet,
 
 Martijn
 
-
+</br>
+</br>
 <u>Toelichting:</u>
 
 In Go geschreven, is Hugo een open source statische site-generator die beschikbaar is onder de Apache Licentie 2.0. Hugo ondersteunt TOML, YAML en JSON databestandtypen, Markdown- en HTML-contentbestanden, en maakt gebruik van shortcodes om rijke inhoud toe te voegen. Andere opvallende functies zijn taxonomieën, meertalige modus, beeldverwerking, aangepaste uitvoerindelingen, HTML/CSS/JS minificatie en ondersteuning voor Sass SCSS-workflows.
