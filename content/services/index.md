@@ -6,12 +6,15 @@ date = "2023-10-29"
 layout = "services"
 +++
 
-<a rel="noopener" target="_blank" href="#facebook_ads_example">Click here to see an example of how a company uses Facebook ads.</a>
-<a rel="noopener" target="_blank" href="#facebook_ads_example2">Click here to see an example of how a company uses Facebook ads.</a>
+<a rel="noopener" href="#facebook_ads_example">Click here to see an example of how a company uses Facebook ads.</a></br>
+<a rel="noopener" href="#facebook_ads_example2">Click here to see an example of how a company uses Facebook ads.</a></br>
+</br>
 
-
-<a id="facebook_ads_example">This is the Facebook ad example I want to link to.</a>
-
+<a id="facebook_ads_example"></a>
+</br>
+</br>
+</br>
+</br>
 <b>Floppy Disk Recovery Service</b>
 
 Herstel van 5.25", 3.5" floppies en Iomega Zip Disks (super floppy) - Een Vrijwillige Service
@@ -34,12 +37,16 @@ Aarzel niet om contact met ons op te nemen als je vragen hebt of als je geïnter
 
 Vriendelijke groet,
 
-Martijn
+Martijn</br>
+</br>
 
+<a id="facebook_ads_example2"></a>
+</br>
+</br>
+</br>
+</br>
 
-<a id="facebook_ads_example2">This is the Facebook ad example I want to link to.</a>
-
-Dia's Digitaliseren
+<b>Dia's Digitaliseren</b>
 
 een hele uitleg over de service
 
