@@ -49,8 +49,6 @@ Hoogwaardige Digitalisering: We leggen de nadruk op kwaliteit, kleurnauwkeurighe
 
 Veiligheid en Zorg: We behandelen jouw dia's met uiterste zorg en bewaren ze veilig gedurende het hele proces.
 
-Efficiënte Service: We streven naar een snelle ommekeer, zodat je snel kunt genieten van jouw gedigitaliseerde foto's.
-
 Maatwerk: Je hebt de vrijheid om te kiezen uit verschillende digitale formaten en resoluties die passen bij jouw behoeften.
 
 <u>Hoe Het Werkt:</u>
