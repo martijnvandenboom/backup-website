@@ -6,6 +6,12 @@ date = "2023-10-29"
 layout = "services"
 +++
 
+<a rel="noopener" target="_blank" href="#facebook_ads_example">Click here to see an example of how a company uses Facebook ads.</a>
+<a rel="noopener" target="_blank" href="#facebook_ads_example2">Click here to see an example of how a company uses Facebook ads.</a>
+
+
+<a id="facebook_ads_example">This is the Facebook ad example I want to link to.</a>
+
 <b>Floppy Disk Recovery Service</b>
 
 Herstel van 5.25", 3.5" floppies en Iomega Zip Disks (super floppy) - Een Vrijwillige Service
@@ -25,6 +31,17 @@ Als je geïnteresseerd bent in onze service, kun je contact met ons opnemen via 
 Let op: Onze service is gebaseerd op vrijwillige bijdragen. Als we erin slagen je gegevens te herstellen en je tevreden bent met het resultaat, stellen we een vrijwillige donatie op prijs om onze inspanningen te ondersteunen en de service beschikbaar te houden voor anderen.
 
 Aarzel niet om contact met ons op te nemen als je vragen hebt of als je geïnteresseerd bent in het herstellen van je floppy disks. Wij zijn hier om je te helpen jouw kostbare herinneringen te behouden.
+
+Vriendelijke groet,
+
+Martijn
+
+
+<a id="facebook_ads_example2">This is the Facebook ad example I want to link to.</a>
+
+Dia's Digitaliseren
+
+een hele uitleg over de service
 
 Vriendelijke groet,
 
