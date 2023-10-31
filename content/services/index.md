@@ -7,7 +7,6 @@ layout = "services"
 +++
 
 <b><a rel="noopener" href="#floppy_disk_recovery_service">1. Floppy Disk Recovery Service</a></b></br>
-</br>
 <b><a rel="noopener" href="#dia_scan_service">2. Dia Scan Service</a></b>
 
 <a id="floppy_disk_recovery_service"></a>
@@ -72,5 +71,5 @@ Martijn</br>
 </br>
 
 P.S.</br>
-Let op: Onze services zijn gebaseerd op vrijwillige bijdragen. Als we erin slagen je gegevens te herstellen en je tevreden bent met het resultaat, stellen we een vrijwillige donatie op prijs om onze inspanningen te ondersteunen en de service beschikbaar te houden voor anderen.</br>
+Let op: Onze services zijn gebaseerd op vrijwillige bijdragen. Als we erin slagen je gegevens te herstellen en je tevreden bent met het resultaat, stellen we een vrijwillige donatie op prijs om onze inspanningen te ondersteunen en de services beschikbaar te houden voor anderen.</br>
 </br>
