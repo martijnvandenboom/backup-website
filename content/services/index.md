@@ -6,15 +6,14 @@ date = "2023-10-29"
 layout = "services"
 +++
 
-<a rel="noopener" href="#facebook_ads_example">Click here to see an example of how a company uses Facebook ads.</a></br>
-<a rel="noopener" href="#facebook_ads_example2">Click here to see an example of how a company uses Facebook ads.</a></br>
+<a rel="noopener" href="#floppy_disk_recovery_service">Floppy Disk Recovery Service</a></br>
+<a rel="noopener" href="#dia_scan_service">Dia Scan Service</a>
+
+<a id="floppy_disk_recovery_service"></a>
+</br>
+</br>
 </br>
 
-<a id="facebook_ads_example"></a>
-</br>
-</br>
-</br>
-</br>
 <b>Floppy Disk Recovery Service</b>
 
 Herstel van 5.25", 3.5" floppies en Iomega Zip Disks (super floppy) - Een Vrijwillige Service
@@ -29,7 +28,8 @@ Ervaren vrijwilligers: Onze dienst wordt gerund door gepassioneerde vrijwilliger
 
 <u>Hoe werkt het?</u>
 
-Als je geïnteresseerd bent in onze service, kun je contact met ons opnemen via e-mail op: ingmacmvandenboom@gmail.com. Stuur ons een bericht met een beschrijving van je situatie en de floppy disks die je wilt herstellen. We zullen zo snel mogelijk reageren en met je samenwerken om de best mogelijke oplossing te vinden.
+Als je geïnteresseerd bent in onze service, kun je contact met ons opnemen via e-mail op: ingmacmvandenboom@gmail.com
+Stuur ons een bericht met een beschrijving van je situatie en de floppy disks die je wilt herstellen. We zullen zo snel mogelijk reageren en met je samenwerken om de best mogelijke oplossing te vinden.
 
 Let op: Onze service is gebaseerd op vrijwillige bijdragen. Als we erin slagen je gegevens te herstellen en je tevreden bent met het resultaat, stellen we een vrijwillige donatie op prijs om onze inspanningen te ondersteunen en de service beschikbaar te houden voor anderen.
 
@@ -40,16 +40,39 @@ Vriendelijke groet,
 Martijn</br>
 </br>
 
-<a id="facebook_ads_example2"></a>
-</br>
+<a id="dia_scan_service"></a>
 </br>
 </br>
 </br>
 
-<b>Dia's Digitaliseren</b>
+<b>Dia Scan Service</b>
 
-een hele uitleg over de service
+Welkom bij onze Dia Scan Service, waar we je een toonaangevende oplossing bieden voor het digitaliseren van jouw waardevolle dia-collecties. Onze missie is het behouden en delen van jouw kostbare herinneringen en visuele schatten.
+
+<u>Wat wij bieden:</u>
+
+Bij onze Dia Scan Service kunt je rekenen op een zorgvuldige en professionele aanpak. We beloven:
+
+Hoogwaardige Digitalisering: We leggen de nadruk op kwaliteit, kleurnauwkeurigheid en detail bij het omzetten van jouw dia's in digitale bestanden.
+
+Veiligheid en Zorg: We behandelen jouw dia's met uiterste zorg en bewaren ze veilig gedurende het hele proces.
+
+Efficiënte Service: We streven naar een snelle ommekeer, zodat je snel kunt genieten van jouw gedigitaliseerde foto's.
+
+Maatwerk: Je hebt de vrijheid om te kiezen uit verschillende digitale formaten en resoluties die passen bij jouw behoeften.
+
+<u>Hoe Het Werkt:</u>
+
+Contact met Ons Opnemen: Stuur een e-mail naar: ingmacmvandenboom@gmail.com, waarin je jouw interesse en vragen kenbaar maakt. We nemen zo snel mogelijk contact met je op om de vervolgstappen te bespreken.
+
+Scanning Proces: Ons professionele team begint met het digitaliseren van jouw dia's met geavanceerde apparatuur en technologie.
+
+Kwaliteitscontrole: Elke digitale scan wordt zorgvuldig gecontroleerd op kwaliteit en nauwkeurigheid.
+
+Met onze Dia Scan Service willen we jouw dia-collecties nieuw leven inblazen en toegankelijk maken voor de digitale wereld. Als je geïnteresseerd bent in onze diensten, aarzel dan niet om contact met ons op te nemen via: ingmacmvandenboom@gmail.com
+We kijken ernaar uit om je te helpen jouw herinneringen te behouden en te delen.
 
 Vriendelijke groet,
 
-Martijn
+Martijn</br>
+</br>
