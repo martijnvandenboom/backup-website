@@ -6,14 +6,48 @@ date = "2023-10-29"
 layout = "services"
 +++
 
-<b><a rel="noopener" href="#floppy_disk_recovery_service">1. Floppy Disk Recovery Service</a></b></br>
-<b><a rel="noopener" href="#dia_scan_service">2. Dia Scan Service</a></b>
+<b><a rel="noopener" href="#webdesign_en_ontwikkeling_service">1. Webdesign en Ontwikkeling Service</a></b></br>
+<b><a rel="noopener" href="#floppy_disk_recovery_service">2. Floppy Disk Recovery Service</a></b></br>
+<b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b>
+
+<a id="webdesign_en_ontwikkeling_service"></a>
+</br>
+</br>
+
+<b>1. Webdesign en Ontwikkeling Service</b>
+
+Wij zijn gepassioneerd over het bouwen van websites die er niet alleen geweldig uitzien, maar ook soepel werken. Bij onze service geven we de voorkeur aan static HTML-websites, en we bieden deze dienst op vrijwillige basis aan, met de mogelijkheid voor een vrijwillige bijdrage.
+
+<u>Wat Wij Bieden:</u>
+
+Bij onze webdesign en ontwikkelingsservice geloven we in de kracht van eenvoud. We bieden:
+
+Prachtige Static HTML Websites: We ontwerpen websites die jouw merk en inhoud in de schijnwerpers zetten, eenvoudig en elegant.
+
+Op Maat Gemaakt: Elk project begint met een grondig begrip van jouw doelstellingen. We ontwikkelen websites die perfect bij jouw behoeften passen.
+
+Snel en Betrouwbaar: Onze websites zijn snel en betrouwbaar, wat een optimale gebruikerservaring en meer websitebezoekers betekent.
+
+<u>Hoe Werkt Het?</u>
+
+Als je geïnteresseerd bent in onze service, kun je contact met ons opnemen via e-mail op: ingmacmvandenboom@gmail.com
+
+Beschrijf Jouw Visie: Vertel ons over jouw project en doelen. Hoe zie je jouw website? Welke functionaliteiten heb je nodig?
+
+Ontwerp en Ontwikkeling: Ons team van vrijwilligers werkt samen met je om het ontwerp en de ontwikkeling aan te pakken. We zorgen ervoor dat jouw visie werkelijkheid wordt.
+
+Review en Aanpassing: Nadat het ontwerp en de ontwikkeling zijn voltooid, bespreken we het met je en passen we eventuele wijzigingen aan.
+
+Publicatie: Jouw website wordt klaargemaakt voor publicatie. We zorgen ervoor dat alles soepel verloopt.
+
+Wil je jouw project laten bloeien met een prachtige static HTML-website? Neem contact met ons op en laat ons je ondersteunen. Samen kunnen we jouw visie tot leven brengen.</br>
+</br>
 
 <a id="floppy_disk_recovery_service"></a>
 </br>
 </br>
 
-<b>1. Floppy Disk Recovery Service</b>
+<b>2. Floppy Disk Recovery Service</b>
 
 Herstel van 5.25", 3.5" floppies en Iomega Zip Disks (super floppy) - Een Vrijwillige Service
 
@@ -37,7 +71,7 @@ Aarzel niet om contact met ons op te nemen als je vragen hebt of als je geïnter
 </br>
 </br>
 
-<b>2. Dia Scan Service</b>
+<b>3. Dia Scan Service</b>
 
 Welkom bij onze Dia Scan Service, waar we je een toonaangevende oplossing bieden voor het digitaliseren van jouw waardevolle dia-collecties. Onze missie is het behouden en delen van jouw kostbare herinneringen en visuele schatten.
 
@@ -70,4 +104,10 @@ Martijn</br>
 
 P.S.</br>
 Let op: Onze services zijn gebaseerd op vrijwillige bijdragen. Als we erin slagen je gegevens te herstellen en je tevreden bent met het resultaat, stellen we een vrijwillige donatie op prijs om onze inspanningen te ondersteunen en de services beschikbaar te houden voor anderen.</br>
+</br>
+</br>
+
+<b><a rel="noopener" href="#webdesign_en_ontwikkeling_service">1. Webdesign en Ontwikkeling Service</a></b></br>
+<b><a rel="noopener" href="#floppy_disk_recovery_service">2. Floppy Disk Recovery Service</a></b></br>
+<b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
 </br>
