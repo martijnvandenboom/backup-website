@@ -103,7 +103,7 @@ Martijn</br>
 </br>
 
 P.S.</br>
-Please note: Our services are based on voluntary contributions. If we succeed in recovering your data and you are satisfied with the result, we appreciate a voluntary donation to support our efforts and keep the services available for others.</br>
+Please note: Our services are based on voluntary contributions. If we manage to provide you with good service and you are satisfied with the result, we appreciate a voluntary donation to support our efforts and keep the services available for others.</br>
 </br>
 </br>
 

@@ -103,7 +103,7 @@ Martijn</br>
 </br>
 
 P.S.</br>
-Let op: Onze services zijn gebaseerd op vrijwillige bijdragen. Als we erin slagen je gegevens te herstellen en je tevreden bent met het resultaat, stellen we een vrijwillige donatie op prijs om onze inspanningen te ondersteunen en de services beschikbaar te houden voor anderen.</br>
+Let op: Onze services zijn gebaseerd op vrijwillige bijdragen. Als we erin slagen je een goede service te verlenen en je bent tevreden met het resultaat, stellen we een vrijwillige donatie op prijs om onze inspanningen te ondersteunen en de services beschikbaar te houden voor anderen.</br>
 </br>
 </br>
 
