@@ -1,5 +1,5 @@
 ---
-title: macOS desktop extended over 3 schermen
+title: macOS desktop extended over 3 schermen, iMac, MacBook en iPad
 date: 2023-11-26T15:16:27.719Z
 draft: false
 categories:
