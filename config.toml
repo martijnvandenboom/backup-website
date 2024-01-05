@@ -1,6 +1,6 @@
 # For a description of these parameters, please visit the theme wiki.
 # https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
-baseurl                 = "https://www.vandenboom.icu/"
+baseurl                 = "https://www.vandenboom.icu/archive/"
 DefaultContentLanguage  = "nl"
 title                   = "Notities"
 theme                   = "hugo-future-imperfect-slim"
