@@ -28,3 +28,8 @@ HUGO_VERSION = "0.79.0"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+  from = "/"
+  to = "/archive/"
+  status = 302
