@@ -10,6 +10,9 @@ googleAnalytics         = "G-PX9BKD4YYT"
 pluralizeListTitles     = false
 disableLanguages        = []
 
+[permalinks]
+  posts = "archive/:title"
+
 # Build robots.txt file
 enableRobotsTXT         = true
 
