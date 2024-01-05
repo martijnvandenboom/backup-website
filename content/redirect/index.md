@@ -1,4 +1,5 @@
----
-title: Redirect
-redirect: "/archive/"
----
++++
+title = "Redirect"
+redirect = "/archive/"
+author = "Hugo Authors"
++++
