@@ -1,0 +1,4 @@
+---
+title: Redirect
+redirect: "/archive/"
+---
