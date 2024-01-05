@@ -11,7 +11,7 @@ pluralizeListTitles     = false
 disableLanguages        = []
 
 [permalinks]
-  posts = "archive/:title"
+  posts = "/archive/"
 
 # Build robots.txt file
 enableRobotsTXT         = true
