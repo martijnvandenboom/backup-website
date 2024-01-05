@@ -89,6 +89,8 @@ enableRobotsTXT         = true
       siteKey           = "6LeYtQYaAAAAAIRQjBkZTA59iEa3OBI3hxWWMFx_"
       encryptedKey      = "6LeYtQYaAAAAAK5CSKSbh_UvF5_ngEi5VS14GYqm"
 
+section = "archive"
+
 [menu]
 
   [[menu.main]]
