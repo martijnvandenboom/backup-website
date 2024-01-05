@@ -1,6 +1,5 @@
 +++
 author = "Hugo Authors"
-aliases = ["archive", "archive"]
 +++
 
 <!--
