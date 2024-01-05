@@ -2,6 +2,12 @@
 publish = "public"
 command = "hugo --gc --minify"
 
+[context.production]
+  [[context.production.redirects]]
+    from = "/"
+    to = "/archive/"
+    status = 302
+
 [[redirects]]
   from = "/"
   to = "/archive/"
