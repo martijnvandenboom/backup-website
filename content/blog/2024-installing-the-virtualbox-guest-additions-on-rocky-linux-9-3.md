@@ -1,5 +1,5 @@
 ---
-title: "**Installing the VirtualBox Guest Additions on Rocky Linux 9.3**"
+title: Installing the VirtualBox Guest Additions on Rocky Linux 9.3
 date: 2024-01-16T21:08:26.966Z
 draft: false
 categories:
