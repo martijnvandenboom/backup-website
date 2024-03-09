@@ -47,7 +47,7 @@ ldap.user.baseDn=cn=users,cn=accounts,dc=<NETWORK>,dc=com
 
 \# LDAP user request. (default: (&(objectClass=inetOrgPerson)(uid={login})) )
 
-ldap.group.baseDn=cn=groups,cn=accounts,dc=resultinfra,dc=com
+ldap.group.baseDn=cn=groups,cn=accounts,dc=<NETWORK>,dc=com
 
 \# laat volgende default
 
