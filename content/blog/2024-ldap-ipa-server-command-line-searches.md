@@ -26,10 +26,6 @@ $ ldapsearch -H ldap://<IP_SERVER> -D "uid=<ADMIN_USER>,cn=users,cn=compat,dc=<N
 
 $ ldapsearch -H ldap://<IP_SERVER> -D "uid=<ADMIN_USER>,cn=users,cn=compat,dc=<NETWORK>,dc=com" -b "dc=<NETWORK>,dc=com" -x -W -s one "(&(objectClass=organizationalUnit)
 
-
-
 $ ldapsearch -h <FQDN_SERVER> -D 'uid=<ADMIN_USER>,cn=users,cn=compat,dc=<NETWORK>,dc=com' -o ldif-wrap=no -b 'dc=<NETWORK>,dc=com' -W uid=<ADMIN_USER>
-
-
 
 $ ldapsearch -h <FQDN_SERVER> -D 'uid=<USER>,cn=users,cn=compat,dc=<NETWORK>,dc=com' -o ldif-wrap=no -b 'dc=<NETWORK>,dc=com' -W uid=<USER>
