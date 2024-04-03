@@ -1,5 +1,5 @@
 ---
-title: SSH in remote machine with SSH keys and run command in old Python
+title: SSH in remote machine with SSH keys and run command in old Python 2
 date: 2024-04-03T20:12:58.290Z
 draft: false
 categories:
