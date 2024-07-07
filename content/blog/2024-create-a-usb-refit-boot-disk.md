@@ -1,7 +1,7 @@
 ---
 title: Create a USB rEFIt boot disk
 date: 2024-07-07T20:45:53.867Z
-draft: true
+draft: false
 categories:
   - article
 tags:
