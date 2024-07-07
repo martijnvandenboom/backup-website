@@ -1,7 +1,7 @@
 ---
 title: Putting the Microsoft EFI boot files on the EFI partition
 date: 2024-07-07T20:49:33.290Z
-draft: true
+draft: false
 categories:
   - article
 tags:
