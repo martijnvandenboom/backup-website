@@ -132,6 +132,7 @@ Opties:
 - Multiboot voor macOS, op een 128GB stick kunnen wel 6 verschillende versies.</br>
 - OCLP-versie van macOS: We kunnen ook een OCLP (OpenCore Legacy Patcher) versie van macOS leveren, zodat je jouw oudere Mac nieuw leven kunt inblazen. Je betaalt dan alleen voor de USB stick.</br>
 </br>
+
 Neem contact met ons op en kies de juiste installatie stick voor uw behoeften, en geniet van de voordelen van een soepel werkende computer zonder gedoe.
 
 Vertrouw op ons voor uw installatiebehoeften en ervaar het gemak van onze hoogwaardige USB installatie sticks.</br>
