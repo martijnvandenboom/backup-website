@@ -9,6 +9,8 @@ layout = "services"
 <b><a rel="noopener" href="#web_design_and_development_service">1. Web Design and Development Service</a></b></br>
 <b><a rel="noopener" href="#floppy_disk_recovery_service">2. Floppy Disk Recovery Service</a></b></br>
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b>
+<b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b>
+<b><a rel="noopener" href="#usb_service">3. USB Service</a></b>
 
 <a id="web_design_and_development_service"></a>
 </br>
@@ -97,6 +99,45 @@ Quality Control: Each digital scan is meticulously inspected for quality and acc
 With our Slide Scan Service, we aim to breathe new life into your slide collections and make them accessible in the digital world. If you are interested in our services, do not hesitate to contact us. We look forward to helping you preserve and share your memories.</br>
 </br>
 
+<a id="upgrade_service"></a>
+</br>
+</br>
+
+<b>4. Upgrade Service</b>
+
+Is your computer feeling sluggish? Give it a new lease on life with our refresh service!
+Revamp your old computer with our specialized refresh service and experience a renewed performance boost. Whether it's a desktop, laptop, or even an older iMac, we can optimize your system to make it feel like new again.
+
+With a clean installation of your operating system – be it Windows, macOS, or Linux – we'll ensure faster performance and more efficient operation. We'll also replace your old hard drive with a speedy SSD for a significant boost in overall speed. Your old hard drive can be repurposed as an external backup via a USB cable, so you won't lose any data and will always have access to your files.
+
+Our service will bring your computer back up to date, with improved performance and functionality tailored to your needs. Let us give your computer a second life with the right upgrades and enjoy a smooth, efficient user experience once again.
+
+Contact us today for a consultation and discover the possibilities for your system!</br>
+</br>
+
+<a id="usb_service"></a>
+</br>
+</br>
+
+<b>5. USB Service</b>
+
+Our USB installation sticks offer the perfect solution! We provide ready-to-use sticks for macOS, Windows, and Linux installations.
+
+Each stick is carefully configured to ensure a seamless installation. Whether you're setting up a new computer or breathing new life into an old machine, our installation sticks make the process quick and easy.
+
+Options:
+
+- macOS Installation Stick: Suitable for all recent versions of macOS. Perfect for reinstalling or upgrading your Mac.</br>
+- Windows Installation Stick: Includes the latest versions of Windows, ideal for a clean install or recovering your current Windows system.</br>
+- Linux Installation Stick: For various Linux distributions like Ubuntu, Fedora, and Debian. A great choice for both beginners and experienced users who want to experiment with Linux.</br>
+- Multiboot USB Stick with Ventoy: Choose a multiboot USB stick with Ventoy to have multiple installation options for different versions of Windows and Linux. A multiboot for macOS can also be created; up to 6 different versions can fit on a 128GB stick.</br>
+- OCLP Version of macOS: We can also provide an OCLP (OpenCore Legacy Patcher) version of macOS, so you can bring your old Mac back to life. You only pay for the USB stick.</br>
+</br>
+Contact us and choose the right installation stick for your needs, and enjoy the benefits of a smoothly running computer without any hassle.</br>
+</br>
+Trust us for your installation needs and experience the convenience of our high-quality USB installation sticks.</br>
+</br>
+
 Best regards,
 
 Martijn</br>
@@ -110,5 +151,7 @@ Please note: Our services are based on voluntary contributions. If we manage to 
 <b><a rel="noopener" href="#web_design_and_development_service">1. Web Design and Development Service</a></b></br>
 <b><a rel="noopener" href="#floppy_disk_recovery_service">2. Floppy Disk Recovery Service</a></b></br>
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
+<b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b>
+<b><a rel="noopener" href="#usb_service">5. USB Service</a></b>
 </br>
 </br>
