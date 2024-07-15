@@ -104,7 +104,7 @@ Met onze Dia Scan Service willen we jouw dia-collecties nieuw leven inblazen en 
 
 <b>4. Upgrade Service</b>
 
-Hen je nog een oude computer die wel een oppepper kan gebruiken? Laat ons hem nieuw leven inblazen met een schone installatie! Onze gespecialiseerde dienst biedt een complete vernieuwing van je systeem, zodat je computer weer als nieuw aanvoelt. Of het nu gaat om een desktop, laptop, of zelfs een oudere iMac, wij kunnen je systeem optimaliseren.
+Heb je nog een oude computer die wel een oppepper kan gebruiken? Laat ons hem nieuw leven inblazen met een schone installatie! Onze gespecialiseerde dienst biedt een complete vernieuwing van je systeem, zodat je computer weer als nieuw aanvoelt. Of het nu gaat om een desktop, laptop, of zelfs een oudere iMac, wij kunnen je systeem optimaliseren.
 
 Met een schone installatie van je computer – of het nu Windows, macOS of Linux is – zorgen we voor snellere prestaties en een efficiëntere werking. Daarbij vervangen we je oude harde schijf door een snelle SSD voor een aanzienlijke verbetering van de algehele snelheid. Je oude harde schijf kan via een USB-kabel als externe backup gaan dienen, zodat je geen data verliest en altijd toegang hebt tot je bestanden.
 
