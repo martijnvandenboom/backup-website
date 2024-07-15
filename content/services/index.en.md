@@ -130,7 +130,8 @@ Options:
 - macOS Installation Stick: Suitable for all recent versions of macOS. Perfect for reinstalling or upgrading your Mac.</br>
 - Windows Installation Stick: Includes the latest versions of Windows, ideal for a clean install or recovering your current Windows system.</br>
 - Linux Installation Stick: For various Linux distributions like Ubuntu, Fedora, and Debian. A great choice for both beginners and experienced users who want to experiment with Linux.</br>
-- Multiboot USB Stick with Ventoy: Choose a multiboot USB stick with Ventoy to have multiple installation options for different versions of Windows and Linux. A multiboot for macOS can also be created; up to 6 different versions can fit on a 128GB stick.</br>
+- Multiboot USB Stick with Ventoy: Choose a multiboot USB stick with Ventoy to have multiple installation options for different versions of Windows and Linux.</br>
+- Multiboot for macOS; up to 6 different versions can fit on a 128GB stick.</br>
 - OCLP Version of macOS: We can also provide an OCLP (OpenCore Legacy Patcher) version of macOS, so you can bring your old Mac back to life. You only pay for the USB stick.</br>
 </br>
 Contact us and choose the right installation stick for your needs, and enjoy the benefits of a smoothly running computer without any hassle.</br>
@@ -154,4 +155,4 @@ Please note: Our services are based on voluntary contributions. If we manage to 
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
 <b><a rel="noopener" href="#usb_service">5. USB Service</a></b>
 </br>
-</br>
+</br>   

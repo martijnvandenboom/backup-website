@@ -104,13 +104,13 @@ Met onze Dia Scan Service willen we jouw dia-collecties nieuw leven inblazen en 
 
 <b>4. Upgrade Service</b>
 
-Heeft u nog een oude computer die wel een oppepper kan gebruiken? Laat ons hem nieuw leven inblazen met een schone installatie! Onze gespecialiseerde dienst biedt een complete vernieuwing van uw systeem, zodat uw computer weer als nieuw aanvoelt. Of het nu gaat om een desktop, laptop, of zelfs een oudere iMac, wij kunnen uw systeem optimaliseren.
+Hen je nog een oude computer die wel een oppepper kan gebruiken? Laat ons hem nieuw leven inblazen met een schone installatie! Onze gespecialiseerde dienst biedt een complete vernieuwing van je systeem, zodat je computer weer als nieuw aanvoelt. Of het nu gaat om een desktop, laptop, of zelfs een oudere iMac, wij kunnen je systeem optimaliseren.
 
-Met een schone installatie van uw besturingssysteem – of het nu Windows, macOS of Linux is – zorgen we voor snellere prestaties en een efficiëntere werking. Daarbij vervangen we uw oude harde schijf door een snelle SSD voor een aanzienlijke verbetering van de algehele snelheid. Uw oude harde schijf kan via een USB-kabel als externe backup gaan dienen, zodat u geen data verliest en altijd toegang heeft tot uw bestanden.
+Met een schone installatie van je computer – of het nu Windows, macOS of Linux is – zorgen we voor snellere prestaties en een efficiëntere werking. Daarbij vervangen we je oude harde schijf door een snelle SSD voor een aanzienlijke verbetering van de algehele snelheid. Je oude harde schijf kan via een USB-kabel als externe backup gaan dienen, zodat je geen data verliest en altijd toegang hebt tot je bestanden.
 
-Onze service zorgt ervoor dat uw computer weer helemaal bij de tijd is, met verbeterde prestaties en functionaliteit die aan uw wensen voldoen. Laat ons uw computer een tweede leven geven met de juiste upgrades en geniet weer van een soepele en efficiënte gebruikerservaring.
+Onze service zorgt ervoor dat je computer weer helemaal bij de tijd is, met verbeterde prestaties en functionaliteit die aan je wensen voldoen. Laat ons je computer een tweede leven geven met de juiste upgrades en geniet weer van een soepele en efficiënte gebruikerservaring.
 
-Neem vandaag nog contact met ons op voor een consult en ontdek de mogelijkheden voor uw systeem!</br>
+Neem vandaag nog contact met ons op voor een consult en ontdek de mogelijkheden voor je systeem!</br>
 </br>
 
 <a id="usb_service"></a>
@@ -119,17 +119,18 @@ Neem vandaag nog contact met ons op voor een consult en ontdek de mogelijkheden 
 
 <b>5. USB Service</b>
 
-Heeft u een gemakkelijke en betrouwbare manier nodig om uw computer te installeren? Onze USB installatie sticks bieden de perfecte oplossing! Wij leveren gebruiksklare sticks voor macOS, Windows, en Linux installaties.
+Heb je een gemakkelijke en betrouwbare manier nodig om je computer te installeren? Onze USB installatie sticks bieden de perfecte oplossing! Wij leveren gebruiksklare sticks voor macOS, Windows, en Linux installaties.
 
-Elke stick is zorgvuldig geconfigureerd om een naadloze en probleemloze installatie te garanderen. Of u nu een nieuwe computer installeert of een oude machine nieuw leven wilt inblazen, onze installatie sticks maken het proces eenvoudig en snel.
+Elke stick is zorgvuldig geconfigureerd om een naadloze en probleemloze installatie te garanderen. Of je nu een nieuwe computer installeert of een oude machine nieuw leven wilt inblazen, onze installatie sticks maken het proces eenvoudig en snel.
 
 Opties:
 
-- macOS Installatie Stick: Geschikt voor alle recente versies van macOS. Perfect voor het opnieuw installeren of upgraden van uw Mac.</br>
-- Windows Installatie Stick: Inclusief de nieuwste versies van Windows, ideaal voor een schone installatie of het herstellen van uw huidige Windows-systeem.</br>
+- macOS Installatie Stick: Geschikt voor alle recente versies van macOS. Perfect voor het opnieuw installeren of upgraden van je Mac.</br>
+- Windows Installatie Stick: Inclusief de nieuwste versies van Windows, ideaal voor een schone installatie of het herstellen van je huidige Windows-systeem.</br>
 - Linux Installatie Stick: Voor diverse Linux-distributies zoals Ubuntu, Fedora, en Debian. Een geweldige keuze voor zowel beginners als gevorderde gebruikers die willen experimenteren met Linux.</br>
-- Multiboot USB Stick met Ventoy: Kies voor een multiboot USB stick met Ventoy om meerdere installatie-opties te hebben voor verschillende versies van Windows en Linux. Ook kan er een multiboot voor macOS worden gemaakt, op een 128GB stick kunnen wel 6 verschillende versies.</br>
-- OCLP-versie van macOS: We kunnen ook een OCLP (OpenCore Legacy Patcher) versie van macOS leveren, zodat u uw oudere Mac nieuw leven kunt inblazen. Je betaalt dan alleen voor de USB stick.</br>
+- Multiboot USB Stick met Ventoy: Kies voor een multiboot USB stick met Ventoy om meerdere installatie-opties te hebben voor verschillende versies van Windows en Linux.</br>
+- Multiboot voor macOS, op een 128GB stick kunnen wel 6 verschillende versies.</br>
+- OCLP-versie van macOS: We kunnen ook een OCLP (OpenCore Legacy Patcher) versie van macOS leveren, zodat je jouw oudere Mac nieuw leven kunt inblazen. Je betaalt dan alleen voor de USB stick.</br>
 </br>
 Neem contact met ons op en kies de juiste installatie stick voor uw behoeften, en geniet van de voordelen van een soepel werkende computer zonder gedoe.
 
