@@ -10,7 +10,7 @@ layout = "services"
 <b><a rel="noopener" href="#floppy_disk_recovery_service">2. Floppy Disk Recovery Service</a></b></br>
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
-<b><a rel="noopener" href="#usb_service">3. USB Service</a></b>
+<b><a rel="noopener" href="#usb_service">5. USB Service</a></b>
 
 <a id="web_design_and_development_service"></a>
 </br>
