@@ -129,7 +129,7 @@ Opties:
 - Windows Installatie Stick: Inclusief de nieuwste versies van Windows, ideaal voor een schone installatie of het herstellen van uw huidige Windows-systeem.</br>
 - Linux Installatie Stick: Voor diverse Linux-distributies zoals Ubuntu, Fedora, en Debian. Een geweldige keuze voor zowel beginners als gevorderde gebruikers die willen experimenteren met Linux.</br>
 - Multiboot USB Stick met Ventoy: Kies voor een multiboot USB stick met Ventoy om meerdere installatie-opties te hebben voor verschillende versies van Windows en Linux. Ook kan er een multiboot voor macOS worden gemaakt, op een 128GB stick kunnen wel 6 verschillende versies.</br>
-- OCLP-versie van macOS: We kunnen ook een OCLP (OpenCore Legacy Patcher) versie van macOS leveren, zodat u uw oudere Mac nieuw leven kunt inblazen. U betaalt dan alleen voor de USB stick.</br>
+- OCLP-versie van macOS: We kunnen ook een OCLP (OpenCore Legacy Patcher) versie van macOS leveren, zodat u uw oudere Mac nieuw leven kunt inblazen. Je betaalt dan alleen voor de USB stick.</br>
 </br>
 Neem contact met ons op en kies de juiste installatie stick voor uw behoeften, en geniet van de voordelen van een soepel werkende computer zonder gedoe.
 
