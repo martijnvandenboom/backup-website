@@ -41,11 +41,16 @@ public class prog_002_variables {
         prijs = 2.50;
 
         // Combine the creation of the Locale and the NumberFormat in one line
-        NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(new Locale("nl", "NL"));
+        NumberFormat currencyFormat;
+        
+        currencyFormat = NumberFormat.getCurrencyInstance(new Locale("nl", "NL"));
+        System.out.println(message + year + ", een frikandel kost nu: " + currencyFormat.format(prijs));
 
+        currencyFormat = NumberFormat.getCurrencyInstance(new Locale("de", "CH"));
         System.out.println(message + year + ", een frikandel kost nu: " + currencyFormat.format(prijs));
 
     }
 
 }
+
 ```
