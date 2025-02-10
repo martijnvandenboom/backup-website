@@ -7,8 +7,8 @@
       </ul>
   {{ end }}
   <p class="copyright">
-    {{ (.Site.Copyright | safeHTML) | default (print " - van den <span class=\"bold-rotate\">B</span>oom \u00A9 " now.Year " - ") }}
-      <br>
+    {{ .Site.Copyright | default (printf " - van den <span class=\"bold-rotate\">B</span>oom &copy; %d - " now.Year) | safeHTML }}
+    <br>
     {{ i18n "attribution" . | safeHTML }}
   </p>
 
