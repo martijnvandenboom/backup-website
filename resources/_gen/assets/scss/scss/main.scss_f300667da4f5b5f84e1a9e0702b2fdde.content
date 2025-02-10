@@ -828,6 +828,7 @@ figcaption {
 
 p.copyright {
   text-align: left;
+  text-transform: none;
   font-size: 12px;
   color: black;
 }
