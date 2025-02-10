@@ -8,8 +8,6 @@
   {{ end }}
   <p class="copyright">
     {{ .Site.Copyright | default (printf " - van den <span class=\"bold-rotate\">B</span>oom &copy; %d - " now.Year) | safeHTML }}
-    <br>
-    {{ i18n "attribution" . | safeHTML }}
   </p>
 
 </footer>
