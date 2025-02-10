@@ -831,12 +831,7 @@ figcaption {
   float: right; }
 
 .copyright {
-  color: #ababab;
-  font-family: "Raleway", Helvetica, sans-serif;
-  font-size: 0.5em;
-  font-weight: 400;
-  letter-spacing: 0.25em;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase; }
 
 .socnet-icons {
