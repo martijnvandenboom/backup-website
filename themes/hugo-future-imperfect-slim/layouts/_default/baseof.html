@@ -1,5 +1,19 @@
 <!doctype html>
 <html lang="{{ .Page.Language | default "en" }}">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+        @keyframes rotate {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+        .bold-rotate {
+            font-weight: bold;
+            display: inline-block;
+            animation: rotate 2s infinite;
+        }
+    </style>
+  </head>
   {{ partial "head" . }}
   <body>
 
@@ -22,7 +36,7 @@
     
     <div class="footer">
       <p>
-        {{ (.Site.Copyright | safeHTML) | default (print "\u00A9 " now.Year "  -  " (.Site.Params.author | default .Site.Title)) }}      
+        {{ (.Site.Copyright | safeHTML) | default (print " - van den <span class=\"bold-rotate\">B</span>oom \u00A9 " now.Year " - ") }}      
       </p>
     </div>
 

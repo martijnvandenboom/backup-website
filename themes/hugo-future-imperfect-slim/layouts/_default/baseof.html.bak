@@ -15,7 +15,7 @@
     
     <div class="footer">
       <p>
-        {{ (.Site.Copyright | safeHTML) | default (print " - van den <span class="bold-rotate">B</span>oom \u00A9 " now.Year "  -  ") }}      
+        {{ (.Site.Copyright | safeHTML) | default (print " - van den <span class=\"bold-rotate\">B</span>oom \u00A9 " now.Year " - ") }}      
       </p>
     </div>
 
