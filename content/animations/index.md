@@ -46,7 +46,6 @@ Voorbeelden:</br>
     "van den <span class="bold-rotate">B</span>oom Animations" deze roterende letter "B" is één van de eerste ideeën die bij me opkwam toen ik begon met het verkennen van de wereld van webdesign en animaties. Een website vind ik veel vermakelijker en levendiger door deze kleine, maar krachtige aandachtspunten – de animaties die de gebruiker verrassen en de ervaring verrijken. Het toevoegen van subtiele bewegingen, zoals het laten draaien van een element of het laten oplichten van een afbeelding, zorgt voor een dynamischere en aantrekkelijkere website. Mijn doel is om die magie te brengen, zodat elke website die wij maken net dat beetje extra heeft, iets wat de bezoekers niet alleen opmerkt, maar ook waardeert.
 </div></br>
 </br>
-</br>
 
 <div class="flame-container">
     <div class="left-div">2. Het brandend vlammetje:</br>

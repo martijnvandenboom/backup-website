@@ -46,7 +46,6 @@ Examples:</br>
     "van den <span class="bold-rotate">B</span>oom Animations" this rotating letter "B" is one of the first ideas that came to me when I started exploring the world of web design and animations. A website can become much more entertaining and lively through these small yet powerful details – the animations that surprise the user and enrich the experience. Adding subtle movements, such as rotating an element or making an image glow, creates a more dynamic and engaging website. My goal is to bring that magic, so every website we create has that little extra touch, something that visitors not only notice but also appreciate.
 </div></br>
 </br>
-</br>
 
 <div class="flame-container">
     <div class="left-div">2. The burning flame:
