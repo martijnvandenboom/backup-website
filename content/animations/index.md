@@ -49,7 +49,12 @@ Voorbeelden:</br>
 </br>
 
 <div class="flame-container">
-    <img src="https://vandenboom.netlify.app/images/flame-image-003.png" alt="Flame" class="flame"></br>
-    2. Het brandend vlammetje:
-    Onze vlamanimatie symboliseert de brandende creativiteit die we in elk project stoppen. Zoals een vlam die constant danst en verandert, geven wij jouw ideeën energie en beweging. Of je nu een dynamisch element voor je website zoekt of een visueel effect dat de aandacht vasthoudt, onze vlammen brengen jouw project naar een hoger niveau. Kijk hoe de vlam oplicht en beweegt, net zoals onze creatieve processen!
-</div>
+    <div class="left-div">2. Het brandend vlammetje:</br>
+        Onze vlamanimatie symboliseert de brandende creativiteit die we in elk project stoppen. Zoals een vlam die constant danst en verandert, geven wij jouw ideeën energie en beweging. Of je nu een dynamisch element voor je website zoekt of een visueel effect dat de aandacht vasthoudt, onze vlammen brengen jouw project naar een hoger niveau. Kijk hoe de vlam oplicht en beweegt, net zoals onze creatieve processen!
+    </div>
+    <div class="right-div">
+        <img src="https://vandenboom.netlify.app/images/flame-image-003.png" alt="Flame" class="flame">
+    </div>
+    
+</div></br>
+</br>
