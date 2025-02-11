@@ -318,7 +318,7 @@ table {
         table > tbody > tr > td:first-child::after {
           content: "\f078";
           float: right;
-          font-family: "Font Awesome 5 Free";
+          font-family: "Font Awesome Free";
           font-weight: 900;
           text-decoration: inherit;
           transition: all 0.2s ease-in-out; }
@@ -511,7 +511,7 @@ figcaption {
     flex-wrap: wrap;
     margin: 1em 0 0 0;
     padding: 0;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome Free";
     font-weight: 900;
     list-style: none; }
     @media (min-width: 375px) {
@@ -612,7 +612,7 @@ figcaption {
       white-space: nowrap; } }
 .left::before,
 .right::before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome Free";
   font-weight: 900;
   text-decoration: inherit; }
 
@@ -1121,7 +1121,7 @@ p.copyright {
 .new-comment .reply-notice .reply-name {
   vertical-align: middle; }
   .new-comment .reply-notice .reply-name::before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome Free";
     font-weight: 900;
     content: "\f3e5";
     margin-right: .5em;
@@ -1201,7 +1201,7 @@ p.copyright {
 .comment-reply-btn {
   border: 0; }
   .comment-reply-btn::before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome Free";
     font-weight: 900;
     content: "\f3e5";
     margin-right: .5em;
@@ -1349,7 +1349,7 @@ p.copyright {
   .x:hover {
     background-color: #0087bd; }
   .x::before {
-    font-family: "Font Awesome 5 Brands";
+    font-family: "Font Awesome Brands";
     content: ""; }
 
 .facebook {
@@ -1357,7 +1357,7 @@ p.copyright {
   .facebook:hover {
     background-color: #2c4272; }
   .facebook::before {
-    font-family: "Font Awesome 5 Brands";
+    font-family: "Font Awesome Brands";
     content: ""; }
 
 .linkedin {
@@ -1365,7 +1365,7 @@ p.copyright {
   .linkedin:hover {
     background-color: #005380; }
   .linkedin::before {
-    font-family: "Font Awesome 5 Brands";
+    font-family: "Font Awesome Brands";
     content: ""; }
 
 .pinterest {
@@ -1373,7 +1373,7 @@ p.copyright {
   .pinterest:hover {
     background-color: #9c1c22; }
   .pinterest::before {
-    font-family: "Font Awesome 5 Brands";
+    font-family: "Font Awesome Brands";
     content: ""; }
 
 .reddit {
@@ -1381,7 +1381,7 @@ p.copyright {
   .reddit:hover {
     background-color: #cc4400; }
   .reddit::before {
-    font-family: "Font Awesome 5 Brands";
+    font-family: "Font Awesome Brands";
     content: ""; }
 
 .email {
@@ -1390,7 +1390,7 @@ p.copyright {
   .email:hover {
     background-color: #2b2b2b; }
   .email::before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome Free";
     content: ""; }
 
 /* Hide Single Column */

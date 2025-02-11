@@ -8,7 +8,7 @@ tags = ["Academic", "Academicons", "Blog", "Contact Form", "CSS Grid", "Disqus",
         "Highlight.js", "Jquery", "Lunr.js", "Multilingual", "Netlify",
         "Responsive", "Search",  "Open Graph", "Staticman", "Syntax Highlighting",
         "Twitter Cards"]
-features = ["Academicons v1.8.6", "Disqus", "Fancybox v3.5.7", "Font Awesome v5.13.0",
+features = ["Academicons v1.8.6", "Disqus", "Fancybox v3.5.7", "Font Awesome v6.0.0",  # Updated version
             "Google Analytics", "Google News", "Highlight.js v10.0.3", "Jquery v3.5.1",
             "Lunr.js v2.3.8", "Netlify", "Open Graph", "Staticman", "Theme Update Notification",
             "Twitter Cards"]
