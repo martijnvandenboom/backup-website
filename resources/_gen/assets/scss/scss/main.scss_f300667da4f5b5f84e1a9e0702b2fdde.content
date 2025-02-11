@@ -1352,6 +1352,14 @@ p.copyright {
     font-family: "Font Awesome 5 Brands";
     content: ""; }
 
+.x {
+  background-color: #00acf0; }
+  .x:hover {
+    background-color: #0087bd; }
+  .x::before {
+    font-family: "Font Awesome 5 Brands";
+    content: ""; }
+
 .facebook {
   background-color: #3b5897; }
   .facebook:hover {

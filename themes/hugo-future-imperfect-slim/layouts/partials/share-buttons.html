@@ -3,10 +3,10 @@
 {{ $author := $.Scratch.Get "Author" }}
 {{ $tags := $.Scratch.Get "Tags" }}
 {{ range .Site.Params.socialShare }}
-  {{ if eq . "twitter" }}
+  {{ if eq . "X" }}
     <!-- TODO: Add Hashtags &amp;hashtags= -->
-    <a href="//twitter.com/share?text={{ $title }}&amp;url={{ $permalink }}" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
+    <a href="//x.com/share?text={{ $title }}&amp;url={{ $permalink }}" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>X</p>
       </a>
   {{ else if eq . "facebook" }}
       <a href="//www.facebook.com/sharer/sharer.php?u={{ $permalink }}" target="_blank" rel="noopener" class="nav share-btn facebook">
