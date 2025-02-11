@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!--
-Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
+Font Awesome 5 Free 5.13.0 by @fontawesome - https://fontawesome.com
 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
 -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
@@ -13,7 +13,7 @@ Copyright (c) Font Awesome
 <defs>
 <font id="FontAwesome5Free-Solid" horiz-adv-x="512" >
   <font-face 
-    font-family="Font Awesome Free Solid"
+    font-family="Font Awesome 5 Free Solid"
     font-weight="900"
     font-stretch="normal"
     units-per-em="512"
