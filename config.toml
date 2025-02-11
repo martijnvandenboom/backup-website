@@ -132,7 +132,7 @@ section = "archive"
     name              = "Animations"
     identifier        = "animations"
     url               = "/animations/"
-    pre               = "<i class='fas fa-movie'></i>"
+    pre               = "<i class='fas fa-film'></i>"
     weight            = 6
 
   [[menu.main]]
@@ -188,7 +188,7 @@ section = "archive"
       name              = "Animations"
       identifier        = "animations"
       url               = "/animations/"
-      pre               = "<i class='fas fa-movie'></i>"
+      pre               = "<i class='fas fa-film'></i>"
       weight            = 6
 
     [[Languages.nl.menu.main]]
