@@ -39,13 +39,16 @@ Let op: Deze service is gebaseerd op de bijdragen die door beide partijen zijn o
 
 <b><a rel="noopener" href="#creating_animations">Animatie creatie service</a></b></br>
 
-Voorbeelden:
+Voorbeelden:</br>
+</br>
 
 <div class="name-container">
-    "van den <span class="bold-rotate">B</span>oom Animations" dit is één van de eerste ideeën die bij me opkwamen toen ik begon met het verkennen van de wereld van webdesign en animaties. Een website vind ik veel vermakelijker en levendiger door deze kleine, maar krachtige aandachtspunten – de animaties die de gebruiker verrassen en de ervaring verrijken. Het toevoegen van subtiele bewegingen, zoals het laten draaien van een element of het laten oplichten van een afbeelding, zorgt voor een dynamischere en aantrekkelijkere website. Mijn doel is om die magie te brengen, zodat elke website die wij maken net dat beetje extra heeft, iets wat de bezoekers niet alleen opmerkt, maar ook waardeert.
-</div>
-
+    "van den <span class="bold-rotate">B</span>oom Animations" deze roterende letter is één van de eerste ideeën die bij me opkwamen toen ik begon met het verkennen van de wereld van webdesign en animaties. Een website vind ik veel vermakelijker en levendiger door deze kleine, maar krachtige aandachtspunten – de animaties die de gebruiker verrassen en de ervaring verrijken. Het toevoegen van subtiele bewegingen, zoals het laten draaien van een element of het laten oplichten van een afbeelding, zorgt voor een dynamischere en aantrekkelijkere website. Mijn doel is om die magie te brengen, zodat elke website die wij maken net dat beetje extra heeft, iets wat de bezoekers niet alleen opmerkt, maar ook waardeert.
+</div></br>
+</br>
+</br>
 
 <div class="flame-container">
     <img src="https://vandenboom.netlify.app/images/flame-image-003.png" alt="Flame" class="flame">
+    Onze vlamanimatie symboliseert de brandende creativiteit die we in elk project stoppen. Zoals een vlam die constant danst en verandert, geven wij jouw ideeën energie en beweging. Of je nu een dynamisch element voor je website zoekt of een visueel effect dat de aandacht vasthoudt, onze vlammen brengen jouw project naar een hoger niveau. Kijk hoe de vlam oplicht en beweegt, net zoals onze creatieve processen!
 </div>
