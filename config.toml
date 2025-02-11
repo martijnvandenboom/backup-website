@@ -257,4 +257,4 @@ section = "archive"
   #mastodon              = "example.com/@example"
   # Email
   email                 = "ingmacmvandenboom@gmail.com"
-  x                     = "https://x.com/ingvdboom"
+  x                     = "ingvdboom"
