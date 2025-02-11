@@ -128,13 +128,19 @@ section = "archive"
     pre               = "<i class='fas fa-briefcase'></i>"
     weight            = 5
 
+  [[menu.main]]
+    name              = "Animations"
+    identifier        = "animations"
+    url               = "/animations/"
+    pre               = "<i class='fas fa-movie'></i>"
+    weight            = 6
 
   [[menu.main]]
     name              = "Archive"
     identifier        = "archive"
     url               = "/archive/"
     pre               = "<i class='fas fa-archive'></i>"
-    weight            = 6
+    weight            = 7
 
 [Languages]
 
@@ -179,11 +185,18 @@ section = "archive"
       weight            = 5
 
     [[Languages.nl.menu.main]]
+      name              = "Animations"
+      identifier        = "animations"
+      url               = "/animations/"
+      pre               = "<i class='fas fa-movie'></i>"
+      weight            = 6
+
+    [[Languages.nl.menu.main]]
       name              = "Archief"
       identifier        = "archive"
       url               = "/archive/"
       pre               = "<i class='fas fa-archive'></i>"
-      weight            = 6
+      weight            = 7
 
   [Languages.en]
     LanguageCode        = "en"
