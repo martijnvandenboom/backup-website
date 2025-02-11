@@ -1354,11 +1354,11 @@ p.copyright {
     color: white; }
 
 /* Share Branding */
-.twitter {
+.x {
   background-color: #00acf0; }
-  .twitter:hover {
+  .x:hover {
     background-color: #0087bd; }
-  .twitter::before {
+  .x::before {
     font-family: "Font Awesome 5 Brands";
     content: ""; }
 

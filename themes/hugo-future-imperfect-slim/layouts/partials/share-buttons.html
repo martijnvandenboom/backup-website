@@ -5,7 +5,7 @@
 {{ range .Site.Params.socialShare }}
   {{ if eq . "X" }}
     <!-- TODO: Add Hashtags &amp;hashtags= -->
-    <a href="//x.com/share?text={{ $title }}&amp;url={{ $permalink }}" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//x.com/share?text={{ $title }}&amp;url={{ $permalink }}" target="_blank" rel="noopener" class="nav share-btn x">
         <p>X</p>
       </a>
   {{ else if eq . "facebook" }}
