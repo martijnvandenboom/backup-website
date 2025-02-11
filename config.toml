@@ -34,7 +34,7 @@ enableRobotsTXT         = true
   readingTime           = true
   imageStretch          = ""
   removeBlur            = false
-  socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+  socialShare           = ["X", "facebook", "reddit", "linkedin", "pinterest", "email"]
   hideEmptyStats        = false
 
   [params.meta]
@@ -257,3 +257,4 @@ section = "archive"
   #mastodon              = "example.com/@example"
   # Email
   email                 = "ingmacmvandenboom@gmail.com"
+  x                     = "https://x.com/ingvdboom"

@@ -29,9 +29,9 @@ title = "instagram"
 url = "https://www.instagram.com/ingmacmvandenboom/"
 
 [[params.socialIcons]]
-icon = "fab fa-twitter"
-title = "Twitter"
-url = "https://twitter.com/ingvdboom"
+icon = "fab fa-x-twitter"
+title = "X"
+url = "https://x.com/ingvdboom"
 
 [[params.socialIcons]]
 icon = "fab fa-youtube"
