@@ -6,7 +6,10 @@
         {{ if .Site.Params.footer.socialFooter }}{{ partial "socnet-icon" . }}{{ end }}
       </ul>
   {{ end }}
-  
+  <p class="copyright">
+    {{ .Site.Copyright | default (printf " - van den <span class=\"bold-rotate\">B</span>oom &copy; %d - " now.Year) | safeHTML }}
+  </p>
+
 </footer>
 
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

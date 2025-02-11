@@ -1,5 +1,5 @@
 /*!
- * Font Awesome 5 Free 5.10.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.10.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 .fa,
@@ -3946,12 +3946,6 @@ readers do not read off random characters that represent icons */
   content: "\f099"; }
 
 .fa-twitter-square:before {
-  content: "\f081"; }
-
-.fa-x:before {
-  content: "\f099"; }
-  
-.fa-x-square:before {
   content: "\f081"; }
 
 .fa-typo3:before {
