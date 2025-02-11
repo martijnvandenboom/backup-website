@@ -185,7 +185,7 @@ section = "archive"
       weight            = 5
 
     [[Languages.nl.menu.main]]
-      name              = "Animations"
+      name              = "Animaties"
       identifier        = "animations"
       url               = "/animations/"
       pre               = "<i class='fas fa-film'></i>"
