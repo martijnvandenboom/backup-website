@@ -1117,6 +1117,7 @@ p.copyright {
   
 .flame {
   width: 100px; /* Adjust the size of the flame */
+  padding: 10px;
   transform-origin: bottom center; /* Pivot the transformations at the bottom center */
   animation: flameAnimation 1.7s ease-in-out infinite;
 }
