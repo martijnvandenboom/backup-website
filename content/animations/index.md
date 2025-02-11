@@ -41,8 +41,8 @@ Let op: Deze service is gebaseerd op de bijdragen die door beide partijen zijn o
 
 Voorbeelden:
 
-<div class="flame-container">
-    <img src="https://vandenboom.netlify.app/images/flame-image-003.png" alt="Flame" class="flame">
+<div class="name-container">
+    "van den <span class="bold-rotate">B</span>oom Animations" dit is één van de eerste ideeën die bij me opkwamen toen ik begon met het verkennen van de wereld van webdesign en animaties. Een website vind ik veel vermakelijker en levendiger door deze kleine, maar krachtige aandachtspunten – de animaties die de gebruiker verrassen en de ervaring verrijken. Het toevoegen van subtiele bewegingen, zoals het laten draaien van een element of het laten oplichten van een afbeelding, zorgt voor een dynamischere en aantrekkelijkere website. Mijn doel is om die magie te brengen, zodat elke website die wij maken net dat beetje extra heeft, iets wat de bezoekers niet alleen opmerkt, maar ook waardeert.
 </div>
 
 
