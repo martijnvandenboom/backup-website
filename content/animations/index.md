@@ -20,7 +20,7 @@ Bij "van den <span class="bold-rotate">B</span>oom Animations" zijn we gespecial
 
 <u>Wat wij aanbieden:</u>
 
-Bij "van den <span class="bold-rotate">B</span>oom Animations" bieden we een breed scala aan animatiediensten die aansluiten bij iedere behoefte. Of je nu op zoek bent naar dynamische website-animaties, boeiende social media visuals of motion graphics voor je volgende videoproject, wij hebben alles in huis. Onze expertise omvat alles van logo-animaties tot 2D/3D motion graphics. We werken nauw met je samen om op maat gemaakte animaties te creëren die passen bij jouw merk, stijl en doelstellingen, zodat je boodschap op de meest boeiende manier wordt overgebracht.
+Wij bieden we een breed scala aan animatiediensten die aansluiten bij iedere behoefte. Of je nu op zoek bent naar dynamische website-animaties, boeiende social media visuals of motion graphics voor je volgende videoproject, wij hebben alles in huis. Onze expertise omvat alles van logo-animaties tot 2D/3D motion graphics. We werken nauw met je samen om op maat gemaakte animaties te creëren die passen bij jouw merk, stijl en doelstellingen, zodat je boodschap op de meest boeiende manier wordt overgebracht.
 
 <u>Hoe het werkt:</u>
 
