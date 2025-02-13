@@ -3943,16 +3943,16 @@ readers do not read off random characters that represent icons */
   content: "\f1e8"; }
 
 .fa-twitter:before {
-  content: "\f099"; }
+  content: "\e61b"; }
 
 .fa-twitter-square:before {
-  content: "\f081"; }
+  content: "\e61a"; }
 
 .fa-x-twitter:before {
-  content: "\f099"; }
+  content: "\e61b"; }
   
 .fa-x-twitter-square:before {
-  content: "\E61A"; }
+  content: "\e61a"; }
 
 .fa-typo3:before {
   content: "\f42b"; }
