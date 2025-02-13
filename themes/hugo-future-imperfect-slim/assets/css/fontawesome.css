@@ -3949,7 +3949,7 @@ readers do not read off random characters that represent icons */
   content: "\f081"; }
 
 .fa-x-twitter:before {
-  content: "\E61B"; }
+  content: "\f099"; }
   
 .fa-x-twitter-square:before {
   content: "\E61A"; }
