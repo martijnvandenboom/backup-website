@@ -3948,6 +3948,13 @@ readers do not read off random characters that represent icons */
 .fa-twitter-square:before {
   content: "\f081"; }
 
+.fa-x-twitter:before {
+  content: "\e61b"; }
+  
+.fa-twitter-square:before {
+  content: "\e61a"; }
+
+
 .fa-typo3:before {
   content: "\f42b"; }
 
