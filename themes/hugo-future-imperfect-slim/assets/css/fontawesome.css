@@ -3943,7 +3943,7 @@ readers do not read off random characters that represent icons */
   content: "\f1e8"; }
 
 .fa-twitter:before {
-  content: "\E61B"; }
+  background-image: url('https://vandenboom.netlify.app/images/x-twitter-brands-solid.svg'); }
 
 .fa-twitter-square:before {
   content: "\E61A"; }
