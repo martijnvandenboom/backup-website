@@ -8,7 +8,7 @@ layout = "about"
 
 Dear reader,
 
-In my academic journey, during my first year of architectural studies at the university, I encountered a subject that would forever alter the course of my life: Visual Basic programming. To my surprise, I excelled in this field, earning an impressive 9 as my grade. This achievement sharply contrasted with my performance in other subjects, where I may have barely managed a passing grade. It was a pivotal moment, an 'Eureka' experience that unequivocally pointed me in the direction I needed to pursue.
+In my professional journey, during my first year of architectural studies at the university, I encountered a subject that would forever alter the course of my life: Visual Basic programming. To my surprise, I excelled in this field, earning an impressive 9 as my grade. This achievement sharply contrasted with my performance in other subjects, where I may have barely managed a passing grade. It was a pivotal moment, an 'Eureka' experience that unequivocally pointed me in the direction I needed to pursue.
 
 I decided to follow my passion for computers, and I switched to an Electrical Engineering program. This choice not only provided me with more opportunities to hone my software skills but also granted me a profound understanding of hardware. It was a challenge I embraced wholeheartedly, knowing it was the most demanding HBO program I could select. For me, this simply represented a greater challenge and an opportunity for personal growth.
 
