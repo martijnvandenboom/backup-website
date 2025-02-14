@@ -1355,12 +1355,20 @@ p.copyright {
 
 /* Share Branding */
 .twitter {
-  background-color: #00acf0; }
+  background-color:rgb(0, 0, 0); }
   .twitter:hover {
-    background-color: #0087bd; }
+    background-color: #454545; }
   .twitter::before {
     font-family: "Font Awesome 6 Brands";
-    content: ""; }
+    content: "\e61b"; }
+
+.x-twitter {
+  background-color: #00acf0; }
+  .x-twitter:hover {
+    background-color: #0087bd; }
+  .x-twitter::before {
+    font-family: "Font Awesome 6 Brands";
+    content: "\e61b"; }
 
 .facebook {
   background-color: #3b5897; }
