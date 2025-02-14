@@ -142,6 +142,13 @@ section = "archive"
     pre               = "<i class='fas fa-archive'></i>"
     weight            = 7
 
+  [[menu.main]]
+    name              = "Contact"
+    identifier        = "contact"
+    url               = "/contact/"
+    pre               = "<i class='fas fa-contact'></i>"
+    weight            = 8
+
 [Languages]
 
   [Languages.nl]
@@ -198,6 +205,13 @@ section = "archive"
       pre               = "<i class='fas fa-archive'></i>"
       weight            = 7
 
+    [[Languages.nl.menu.main]]
+      name              = "Contact"
+      identifier        = "contact"
+      url               = "/contact/"
+      pre               = "<i class='fas fa-contact'></i>"
+      weight            = 8
+
   [Languages.en]
     LanguageCode        = "en"
     LanguageName        = "English"
@@ -206,12 +220,12 @@ section = "archive"
 [social]
   # Coding Communities
   github                = "martijnvandenboom"
-  #gitlab                = ""
+  #gitlab                 = ""
   stackoverflow         = "13417146" # User Number
   bitbucket             = "martijnvandenboom"
-  #jsfiddle              = ""
-  #codepen               = ""
-  docker				 = "martijnvandenboom"
+  #jsfiddle             = ""
+  #codepen              = ""
+  docker		            = "martijnvandenboom"
   # Visual Art Communities
   deviantart            = "ingvdboom"
   #flickr                = "example"
@@ -235,14 +249,14 @@ section = "archive"
   vimeo                 = "macmvandenboom"
   #whatsapp              = "" # WhatsApp Number
   # WeChat and QQ need testing.
-  #wechat              = ""
-  #qq                  = "" # User ID Number
+  #wechat                = ""
+  #qq                    = "" # User ID Number
   instagram             = "ingmacmvandenboom"
   #tumblr                = ""
   spotify               = "0d6z61v65xapwjgn7n416pc1j"
   soundcloud            = "ing-macm-van-den-boom"
-  lastfm				= "ingvdboom"
-  tiktok				= "martijn.vandenboom"
+  lastfm				        = "ingvdboom"
+  tiktok				        = "martijn.vandenboom"
   #strava                = ""
   skype                 = "mvdboom@live.com"
   snapchat              = "ingvdboom"
