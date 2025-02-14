@@ -146,7 +146,7 @@ section = "archive"
     name              = "Contact"
     identifier        = "contact"
     url               = "/contact/"
-    pre               = "<i class='fas fa-contact'></i>"
+    pre               = "<i class='fas fa-envelope'></i>"
     weight            = 8
 
 [Languages]
@@ -209,7 +209,7 @@ section = "archive"
       name              = "Contact"
       identifier        = "contact"
       url               = "/contact/"
-      pre               = "<i class='fas fa-contact'></i>"
+      pre               = "<i class='fas fa-envelope'></i>"
       weight            = 8
 
   [Languages.en]
