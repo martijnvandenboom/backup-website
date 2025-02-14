@@ -19,7 +19,7 @@
   other = "Contact"
 [contact_replies]
   one = "Antwoord gewoonlijk binnen 1 uur."
-  other = "Antwoord gewoonlijk binnen {{ .Count }} uur."
+  other = "Antwoord gewoonlijk binnen 24 uur."
 [blog]
   other = "Blog"
 [categories]
