@@ -7232,13 +7232,6 @@ readers do not read off random characters that represent icons */
   --fa: "\f39d"; }
 
 .fa-x-twitter {
-    font-family: 'Font Awesome 6 Brands';
-    content: '\e61b';
-    --fa: "\e61b"; }
-
-.fa-x-twitter::before {
-  font-family: 'Font Awesome 6 Brands';
-  content: '\e61b';
   --fa: "\e61b"; }
 
 .fa-cotton-bureau {
@@ -7881,7 +7874,7 @@ readers do not read off random characters that represent icons */
 .fa-solid {
   font-weight: 900; }
 @font-face {
-  font-family: 'Font Awesome 6 Brands';
+  font-family: '';
   font-display: block;
   font-weight: 400;
   src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.ttf") format("truetype"); }

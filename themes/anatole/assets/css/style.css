@@ -798,7 +798,7 @@ Language Switch
   color: #bd4226;
 }
 
-.x {
+.twitter {
   width: 32px;
   height: 32px;
   border-radius: 300px;
@@ -806,12 +806,12 @@ Language Switch
   margin-right: 5px;
 }
 
-.x a {
+.twitter a {
   color: #fff;
   padding: 9px;
 }
 
-.x a:hover {
+.twitter a:hover {
   color: #4b9ece;
 }
 
