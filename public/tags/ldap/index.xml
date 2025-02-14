@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LDAP on Notities</title><link>https://www.vandenboom.icu/tags/ldap/</link><description>Recent content in LDAP on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sat, 09 Mar 2024 17:38:50 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/ldap/index.xml" rel="self" type="application/rss+xml"/><item><title>Configure LDAP/IPA Server with Jenkins</title><link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-jenkins/</link><pubDate>Sat, 09 Mar 2024 17:38:50 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-jenkins/</guid><description>===
+Identity, Policy, and Audit (IPA) system
+===
+Jenkins
+2.319.2
+=﻿==
+Dashboard -&amp;gt; Security -&amp;gt; Configure Global Security
+Server:
+ldap://&amp;lt;IP_SERVER&amp;gt;:389
+root DN:
+dc=,dc=com
+User search base
+cn=users,cn=accounts
+User search filter
+uid={0}
+Group search base
+cn=groups,cn=accounts
+Group membership -&amp;gt; Search for LDAP groups containing user -&amp;gt; Group membership filter:
+(| (member={0}) (uniqueMember={0}) (memberUid={1}))
+Manager DN:
+uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=,dc=com</description></item><item><title>Configure LDAP/IPA Server with Nexus</title><link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-nexus/</link><pubDate>Sat, 09 Mar 2024 17:37:42 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-nexus/</guid><description>===
+Nexus
+Sonatype Nexus Repository
+OSS 3.60.0-02
+=﻿==
+LDAP
+ldap://&amp;lt;IP_SERVER&amp;gt;:389
+cn=users,cn=accounts,dc=,dc=com
+Simple Authentication
+uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=,dc=com
+Next
+=﻿==
+Select no template
+User relative DN = leeg
+User subtree = unchecked
+Object class: inetOrgPerson
+User filter = leeg
+User ID attribute = uid
+Real name attribute = cn
+Email attribute = mail
+Password attribute = leeg
+Map LDAP groups as roles = unchecked</description></item><item><title>Configure LDAP/IPA Server with Sonarqube</title><link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-sonarqube/</link><pubDate>Sat, 09 Mar 2024 17:35:22 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-sonarqube/</guid><description>Configure LDAP/IPA Server with Sonarqube
+===
+Sonarqube
+8.9.6
+sonar.properties
+sonarqube-8.9.6/conf/sonar.properties
+=﻿==
+sonar.security.realm=LDAP
+ldap.url=ldap://&amp;lt;IP_SERVER&amp;gt;:389
+ldap.bindDn=uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=,dc=com
+ldap.bindPassword=
+ldap.authentication=simple
+ldap.user.baseDn=cn=users,cn=accounts,dc=,dc=com
+# laat volgende default
+# ldap.user.request=
+# LDAP user request. (default: (&amp;amp;(objectClass=inetOrgPerson)(uid={login})) )
+ldap.group.baseDn=cn=groups,cn=accounts,dc=,dc=com
+# laat volgende default
+# ldap.group.request=
+# LDAP group request (default: (&amp;amp;(objectClass=groupOfUniqueNames)(uniqueMember={dn})) )</description></item><item><title>LDAP/IPA Server command line searches</title><link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-command-line-searches/</link><pubDate>Sat, 09 Mar 2024 17:34:27 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-command-line-searches/</guid><description>$ ldapsearch -H ldap://&amp;lt;FQDN_SERVER&amp;gt;/ -b dc=,dc=com -x
+$ ldapsearch -x -LLL -H ldap:/// -b dc=,dc=com dn
+$ ldapwhoami -x -H ldap:///
+$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;cn=users,cn=accounts,dc=,dc=com&amp;rdquo; -x -W
+$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;dc=,dc=com&amp;rdquo; -x -W -s one &amp;ldquo;(&amp;amp;(objectClass=organizationalUnit)
+$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=,dc=com&amp;rsquo; -W uid=&amp;lt;ADMIN_USER&amp;gt;
+$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=,cn=users,cn=compat,dc=,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=,dc=com&amp;rsquo; -W uid=</description></item><item><title>LDAP/IPA Server client installation</title><link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-client-installation/</link><pubDate>Sat, 09 Mar 2024 17:33:26 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-client-installation/</guid><description>===
+# yum install ipa-client
+# ipa-client-install &amp;ndash;server= &amp;ndash;domain= &amp;ndash;principal=admin -W
+# ipa-client-install &amp;ndash;server=&amp;lt;ipa-server.example.com&amp;gt; &amp;ndash;domain=&amp;lt;example.com&amp;gt; &amp;ndash;principal=admin -W</description></item><item><title>LDAP/IPA Server installation</title><link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-installation/</link><pubDate>Sat, 09 Mar 2024 17:31:40 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-installation/</guid><description>===
+# yum install ipa-server
+# ipa-server-install
+===
+Hosts file aanpassen
+De FQDN voor op, daarna pas de aliassen
+/etc/hosts
+&amp;lt;IP_SERVER&amp;gt; ()
+Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.</description></item><item><title>LDAP/IPA - Server op Red Hat Enterprise Linux 7</title><link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link><pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</guid><description>A﻿ls je gebruikt maakt van een hosts file, let dan goed op dat er FQDN&amp;rsquo;s in staan en de volgorde waarin.
+C﻿ontroleer de hosts file en pas deze eventueel aan:
+De FQDN voorop, daarna pas de aliassen.
+/etc/hosts 10.0.0.1 server1.example.com server1 applicatie1 Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.</description></item></channel></rss>

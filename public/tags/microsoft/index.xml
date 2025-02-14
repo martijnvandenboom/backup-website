@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>microsoft on Notities</title><link>https://www.vandenboom.icu/tags/microsoft/</link><description>Recent content in microsoft on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sun, 07 Jul 2024 20:49:33 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/microsoft/index.xml" rel="self" type="application/rss+xml"/><item><title>Putting the Microsoft EFI boot files on the EFI partition</title><link>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link><pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid><description>Boot into the Windows installer
+On the first screen press SHIFT + F10
+# diskpart # list disk # select disk 0 # list part Look for the Windows partition # select part 3 # assign letter=W # format quick fs=NTFS # list volume Look for the EFI volume # select volume 2 # assign letter=Z # exit # D: Goto the USB installer of Windows # cd D:\sources # dir install* The file install.</description></item><item><title>Microsoft maakt Office gratis beschikbaar op de website</title><link>https://www.vandenboom.icu/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</link><pubDate>Wed, 21 Jun 2023 16:46:56 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</guid><description>H﻿eb je al een Microsoft account?
+S﻿tap 1.: log in op de website: office.com
+S﻿tap 2.: klik op het icoontje met de 9 puntjes links bovenin beeld
+S﻿tap 3.: kies de office app die je wilt gebruiken
+A﻿ls je nog geen Microsoft account hebt kun je er een gratis aanmaken.
+S﻿tap 1.: ga naar de website: account.microsoft.com
+S﻿tap 2.: klik op de knop aanmelden
+S﻿tap 3.: klik op de link: Maak nu een account</description></item></channel></rss>

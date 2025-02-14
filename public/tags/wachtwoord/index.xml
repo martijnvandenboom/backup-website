@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wachtwoord on Notities</title><link>https://www.vandenboom.icu/tags/wachtwoord/</link><description>Recent content in wachtwoord on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Thu, 16 Feb 2023 10:56:24 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/wachtwoord/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows wachtwoord veranderen met behulp van een snelkoppeling</title><link>https://www.vandenboom.icu/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</link><pubDate>Thu, 16 Feb 2023 10:56:24 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</guid><description>Verander je Windows wachtwoord door gebruik te maken van een snelkoppeling op je bureaublad. (CTRL+ALT+DEL toetscombinatie door op een snelkoppeling te klikken)
+Klik met je rechtermuisknop op je bureaublad, kies voor nieuw en snelkoppeling
+Geef bij de locatie van het item het volgende commando op:
+C:\Windows\explorer.exe shell:::{2559a1f2-21d7-11d4-bdaf-00c04f60b9f0}
+Klik op: Volgende
+Geef de snelkoppeling bijv. de naam: Wachtwoord resetten
+Klik op: Voltooien</description></item></channel></rss>

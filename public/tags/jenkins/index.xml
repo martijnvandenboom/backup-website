@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jenkins on Notities</title><link>https://www.vandenboom.icu/tags/jenkins/</link><description>Recent content in jenkins on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sat, 09 Mar 2024 17:38:50 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/jenkins/index.xml" rel="self" type="application/rss+xml"/><item><title>Configure LDAP/IPA Server with Jenkins</title><link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-jenkins/</link><pubDate>Sat, 09 Mar 2024 17:38:50 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-jenkins/</guid><description>===
+Identity, Policy, and Audit (IPA) system
+===
+Jenkins
+2.319.2
+=﻿==
+Dashboard -&amp;gt; Security -&amp;gt; Configure Global Security
+Server:
+ldap://&amp;lt;IP_SERVER&amp;gt;:389
+root DN:
+dc=,dc=com
+User search base
+cn=users,cn=accounts
+User search filter
+uid={0}
+Group search base
+cn=groups,cn=accounts
+Group membership -&amp;gt; Search for LDAP groups containing user -&amp;gt; Group membership filter:
+(| (member={0}) (uniqueMember={0}) (memberUid={1}))
+Manager DN:
+uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=,dc=com</description></item></channel></rss>

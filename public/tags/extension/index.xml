@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>extension on Notities</title><link>https://www.vandenboom.icu/tags/extension/</link><description>Recent content in extension on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sun, 03 Apr 2022 19:55:44 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/extension/index.xml" rel="self" type="application/rss+xml"/><item><title>Stel de versie van de Python interpreter in voor de extensie: Code Runner in VSCodium</title><link>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link><pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid><description># File name: version_used.py
+# This prints the version of Python being used by the Code Runner extension in VSCodium
+# Set by going to: File -&amp;gt; Preferences -&amp;gt; Settings -&amp;gt; Search Settings -&amp;gt; code-runner.executorMap -&amp;gt; Edit in settings.json
+# &amp;ldquo;python&amp;rdquo;: &amp;ldquo;/bin/python3.9 -u&amp;rdquo;,\
+# To run this script press the little play button on the top right in the editor
+import sys
+print(sys.version)</description></item></channel></rss>

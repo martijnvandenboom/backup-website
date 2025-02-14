@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>when on Notities</title><link>https://www.vandenboom.icu/tags/when/</link><description>Recent content in when on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Thu, 01 Dec 2022 19:30:38 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/when/index.xml" rel="self" type="application/rss+xml"/><item><title>Prevent opening Windows 11 Store when typing the command python</title><link>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link><pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid><description>Step 1: Open Settings in Windows 11
+Step 2: Go to Apps
+Step 3: Go to Advanced app settings
+Step 4: Go to App execution aliases
+Step 5: Disable the option for python.exe and python3.exe</description></item></channel></rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sonarqube on Notities</title><link>https://www.vandenboom.icu/tags/sonarqube/</link><description>Recent content in sonarqube on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sat, 09 Mar 2024 17:35:22 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/sonarqube/index.xml" rel="self" type="application/rss+xml"/><item><title>Configure LDAP/IPA Server with Sonarqube</title><link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-sonarqube/</link><pubDate>Sat, 09 Mar 2024 17:35:22 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-sonarqube/</guid><description>Configure LDAP/IPA Server with Sonarqube
+===
+Sonarqube
+8.9.6
+sonar.properties
+sonarqube-8.9.6/conf/sonar.properties
+=﻿==
+sonar.security.realm=LDAP
+ldap.url=ldap://&amp;lt;IP_SERVER&amp;gt;:389
+ldap.bindDn=uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=,dc=com
+ldap.bindPassword=
+ldap.authentication=simple
+ldap.user.baseDn=cn=users,cn=accounts,dc=,dc=com
+# laat volgende default
+# ldap.user.request=
+# LDAP user request. (default: (&amp;amp;(objectClass=inetOrgPerson)(uid={login})) )
+ldap.group.baseDn=cn=groups,cn=accounts,dc=,dc=com
+# laat volgende default
+# ldap.group.request=
+# LDAP group request (default: (&amp;amp;(objectClass=groupOfUniqueNames)(uniqueMember={dn})) )</description></item></channel></rss>

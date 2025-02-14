@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>configure on Notities</title><link>https://www.vandenboom.icu/tags/configure/</link><description>Recent content in configure on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sat, 09 Mar 2024 17:38:50 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/configure/index.xml" rel="self" type="application/rss+xml"/><item><title>Configure LDAP/IPA Server with Jenkins</title><link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-jenkins/</link><pubDate>Sat, 09 Mar 2024 17:38:50 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-jenkins/</guid><description>===
+Identity, Policy, and Audit (IPA) system
+===
+Jenkins
+2.319.2
+=﻿==
+Dashboard -&amp;gt; Security -&amp;gt; Configure Global Security
+Server:
+ldap://&amp;lt;IP_SERVER&amp;gt;:389
+root DN:
+dc=,dc=com
+User search base
+cn=users,cn=accounts
+User search filter
+uid={0}
+Group search base
+cn=groups,cn=accounts
+Group membership -&amp;gt; Search for LDAP groups containing user -&amp;gt; Group membership filter:
+(| (member={0}) (uniqueMember={0}) (memberUid={1}))
+Manager DN:
+uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=,dc=com</description></item><item><title>Configure LDAP/IPA Server with Nexus</title><link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-nexus/</link><pubDate>Sat, 09 Mar 2024 17:37:42 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-nexus/</guid><description>===
+Nexus
+Sonatype Nexus Repository
+OSS 3.60.0-02
+=﻿==
+LDAP
+ldap://&amp;lt;IP_SERVER&amp;gt;:389
+cn=users,cn=accounts,dc=,dc=com
+Simple Authentication
+uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=,dc=com
+Next
+=﻿==
+Select no template
+User relative DN = leeg
+User subtree = unchecked
+Object class: inetOrgPerson
+User filter = leeg
+User ID attribute = uid
+Real name attribute = cn
+Email attribute = mail
+Password attribute = leeg
+Map LDAP groups as roles = unchecked</description></item><item><title>Configure LDAP/IPA Server with Sonarqube</title><link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-sonarqube/</link><pubDate>Sat, 09 Mar 2024 17:35:22 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-sonarqube/</guid><description>Configure LDAP/IPA Server with Sonarqube
+===
+Sonarqube
+8.9.6
+sonar.properties
+sonarqube-8.9.6/conf/sonar.properties
+=﻿==
+sonar.security.realm=LDAP
+ldap.url=ldap://&amp;lt;IP_SERVER&amp;gt;:389
+ldap.bindDn=uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=,dc=com
+ldap.bindPassword=
+ldap.authentication=simple
+ldap.user.baseDn=cn=users,cn=accounts,dc=,dc=com
+# laat volgende default
+# ldap.user.request=
+# LDAP user request. (default: (&amp;amp;(objectClass=inetOrgPerson)(uid={login})) )
+ldap.group.baseDn=cn=groups,cn=accounts,dc=,dc=com
+# laat volgende default
+# ldap.group.request=
+# LDAP group request (default: (&amp;amp;(objectClass=groupOfUniqueNames)(uniqueMember={dn})) )</description></item></channel></rss>

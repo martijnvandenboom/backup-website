@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>nexus on Notities</title><link>https://www.vandenboom.icu/tags/nexus/</link><description>Recent content in nexus on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sat, 09 Mar 2024 17:37:42 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/nexus/index.xml" rel="self" type="application/rss+xml"/><item><title>Configure LDAP/IPA Server with Nexus</title><link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-nexus/</link><pubDate>Sat, 09 Mar 2024 17:37:42 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-nexus/</guid><description>===
+Nexus
+Sonatype Nexus Repository
+OSS 3.60.0-02
+=﻿==
+LDAP
+ldap://&amp;lt;IP_SERVER&amp;gt;:389
+cn=users,cn=accounts,dc=,dc=com
+Simple Authentication
+uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=,dc=com
+Next
+=﻿==
+Select no template
+User relative DN = leeg
+User subtree = unchecked
+Object class: inetOrgPerson
+User filter = leeg
+User ID attribute = uid
+Real name attribute = cn
+Email attribute = mail
+Password attribute = leeg
+Map LDAP groups as roles = unchecked</description></item></channel></rss>
