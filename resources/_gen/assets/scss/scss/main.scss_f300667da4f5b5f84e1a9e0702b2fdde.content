@@ -1347,7 +1347,7 @@ p.copyright {
 .twitter {
   background-color:rgb(0, 0, 0); }
   .twitter:hover {
-    background-color: #454545; }
+    background-color:rgb(255, 255, 255); }
   .twitter::before {
     font-family: "Font Awesome 6 Brands";
     content: "\e61b"; }
