@@ -52,5 +52,41 @@
 	  }
 	</script>
 
+  <script type="text/javascript" defer>
+    let darkmode = localStorage.getItem('darkmode')
+
+    const themeSwitch = document.getElementById('theme-switch')
+
+    const enableDarkMode = () => {
+      document.body.classList.add('darkmode')
+      localStorage.setItem('darkmode', 'active')
+    }
+
+    const disableDarkMode = () => {
+      document.body.classList.remove('darkmode')
+      localStorage.setItem('darkmode', null)
+    }
+
+    // Function that toggles dark mode on button click
+    const toggleDarkMode = () => {
+      darkmode = localStorage.getItem('darkmode');
+      if (darkmode !== 'active') {
+        enableDarkMode();
+      } else {
+        disableDarkMode();
+      }
+    };
+
+    // Check if dark mode is active when the page loads
+    if (darkmode === 'active') enableDarkMode();
+
+    // Bind the toggleDarkMode function to the button click event
+    //document.getElementById('theme-switch').onclick = toggleDarkMode;
+
+  </script>
+
+
+
+
   </body>
 </html>
