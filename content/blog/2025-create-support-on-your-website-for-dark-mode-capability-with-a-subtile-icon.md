@@ -18,7 +18,7 @@ share: true
 ---
 D﻿ear reader,
 
-I﻿ would like to refer you to my GitHub page for a nice and simple project enabling the dark mode effect on a website. I want to share this with you so that it can inspire you and enable you to do a similar implementation your own website.
+I﻿ would like to refer you to my GitHub page for a nice and simple project enabling the dark mode effect on a website. I want to share this with you so that it can inspire you and enable you to do a similar implementation that you can use on your own website.
 
 S﻿ee: https://github.com/martijnvandenboom/darkmode-test
 
