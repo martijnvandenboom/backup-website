@@ -1,5 +1,5 @@
 ---
-title: Create support on your website for dark mode capability with a subtile icon
+title: Create support on your website for dark mode capability with a subtle icon
 date: 2025-02-15T21:17:06.389Z
 draft: false
 categories:
