@@ -6,6 +6,8 @@ date = "2020-12-11"
 layout = "about"
 +++
 
+Test123
+
 Beste lezer,
 
 In mijn professionele ontwikkelingsreis stuitte ik in mijn eerste jaar bouwkunde aan het HBO op een vak dat mijn leven voorgoed veranderde: Visual Basic programmeren. Tot mijn verbazing bleek ik hierin uit te blinken, met een indrukwekkende 9 als cijfer. Dit stond in schril contrast tot mijn prestaties in andere vakken, waar ik misschien net een mager zesje scoorde. Het was een keerpunt, een 'Eureka'-moment dat me ondubbelzinnig wees in welke richting ik moest gaan.
