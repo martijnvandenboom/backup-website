@@ -35,3 +35,5 @@ T﻿ry the following steps:
 >   Oracle VirtualBox
 >
 > $﻿ sudo install virtualbox-7.1
+
+D﻿ownload the Extension Pack frm the website: https://www.virtualbox.org/wiki/Downloads
