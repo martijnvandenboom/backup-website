@@ -20,6 +20,7 @@ T﻿o be able to use XRDP on Ubuntu Linux try the following instructions:
 > $ s﻿udo apt upgrade\
 > $ s﻿udo apt install xrdp\
 > $ echo "gnome-session --session=ubuntu" > ~/.xsession\
+> $ echo "export DISPLAY=:10.0" > ~/.bash_profile\
 > $ echo "xhost +" > ~/.bash_profile\
 > $﻿ ip a
 
