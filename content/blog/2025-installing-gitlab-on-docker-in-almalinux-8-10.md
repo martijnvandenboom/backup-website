@@ -133,8 +133,8 @@ Update gitlab.rb
 <pre><code>$ sudo vim /srv/gitlab/config/gitlab.rb
 
 external_url 'https://gitlab.vandenboom.local'
-nginx\['ssl_certificate'] = "/etc/gitlab/ssl/gitlab.vandenboom.local.crt"
-nginx\['ssl_certificate_key'] = "/etc/gitlab/ssl/gitlab.vandenboom.local.key"
+nginx['ssl_certificate'] = "/etc/gitlab/ssl/gitlab.vandenboom.local.crt"
+nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/gitlab.vandenboom.local.key"
 </code></pre>
 
 Reconfigure GitLab to apply changes:
