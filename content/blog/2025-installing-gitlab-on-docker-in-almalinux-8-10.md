@@ -15,6 +15,9 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
+
+test 
+
 Step 1: Update System
 
 > $ sudo dnf update\
@@ -29,7 +32,7 @@ Step 2: Install Docker from AlmaLinux Repo
 > $ sudo dnf clean all\
 > $ sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin\
 > $﻿ sudo systemctl enable --now docker\
-> $﻿ sudo systemctl status docker\
+> $﻿ sudo systemctl status docker\p
 > $﻿ sudo usermod -aG docker $USER
 >
 > Logout and back in\
