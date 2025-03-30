@@ -97,7 +97,7 @@ State or Province Name (full name) []:UTRECHT
 Locality Name (eg, city) [Default City]:UTRECHT
 Organization Name (eg, company) [Default Company Ltd]:https://www.vandenboom.icu
 Organizational Unit Name (eg, section) []:private
-Common Name (eg, your name or your server&#39;s hostname) []:gitlab.vandenboom.local
+Common Name (eg, your name or your server''s hostname) []:gitlab.vandenboom.local
 Email Address []:martijn.vandenboom@icloud.com
 </code></pre>
 
