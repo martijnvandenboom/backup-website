@@ -16,13 +16,41 @@ comments: true
 share: true
 ---
 
+    <style>
+        /* Style for the code block */
+        pre {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+
+        /* Style for the bash code */
+        code {
+            display: block;
+            white-space: pre-wrap; 
+            word-wrap: break-word;
+        }
+    </style>
+
+
+
+
+
+
+
+
 test 
 
 Step 1: Update System
 
-> $ sudo dnf update\
-> $ sudo dnf install epel-release\
-> $ sudo /usr/bin/crb enable
+<pre><code>
+$ sudo dnf update
+$ sudo dnf install epel-release
+$ sudo /usr/bin/crb enable
+</code></pre>
 
 Step 2: Install Docker from AlmaLinux Repo
 
