@@ -53,9 +53,8 @@ Step 5: Deploy GitLab with Docker
 $ mkdir gitlab
 $ cd gitlab
 $ vim docker-compose.yml
-</code></pre>
 
-<pre><code>version: '3'
+version: '3'
 services:
   gitlab:
     image: gitlab/gitlab-ce:latest
@@ -93,23 +92,25 @@ Generate SSL Certificates:
 $ cd /srv/gitlab/config/ssl
 $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout gitlab.vandenboom.local.key -out gitlab.vandenboom.local.crt
 
-Country Name (2 letter code) \[XX]:NL
-State or Province Name (full name) \[]:UTRECHT
-Locality Name (eg, city) \[Default City]:UTRECHT
-Organization Name (eg, company) \[Default Company Ltd]:vandenboom.local
-Organizational Unit Name (eg, section) \[]:private
-Common Name (eg, your name or your server's hostname) \[]:gitlab.vandenboom.local
-Email Address \[]:martijn.vandenboom@icloud.com
+Country Name (2 letter code) [XX]:NL
+State or Province Name (full name) []:UTRECHT
+Locality Name (eg, city) [Default City]:UTRECHT
+Organization Name (eg, company) [Default Company Ltd]:https://www.vandenboom.icu
+Organizational Unit Name (eg, section) []:private
+Common Name (eg, your name or your server's hostname) []:gitlab.vandenboom.local
+Email Address []:martijn.vandenboom@icloud.com
 </code></pre>
 
 Set Correct Permissions
-<pre><code>
-$ sudo chmod 600 /srv/gitlab/config/ssl/*
+<pre><code>$ sudo chmod 600 /srv/gitlab/config/ssl/*
 $ sudo chown 1000:1000 /srv/gitlab/config/ssl/*
 </code></pre>
 
 Update docker-compose.yml to Mount the SSL Directory
-<pre><code>version: '3'
+<pre><code>$ cd ~/Downloads/gitlab
+$ vim docker-compose
+
+version: '3'
 services:
   gitlab:
   image: gitlab/gitlab-ce:latest
@@ -137,7 +138,7 @@ nginx\['ssl_certificate_key'] = "/etc/gitlab/ssl/gitlab.vandenboom.local.key"
 </code></pre>
 
 Reconfigure GitLab to apply changes:
-<pre><code>$ cd ~/Downlaods/gitlab
+<pre><code>$ cd ~/Downloads/gitlab
 $ docker compose down
 $ docker compose up -d
 
@@ -166,12 +167,12 @@ Once logged in, go to Profile → Edit Profile → Password and set a new passwo
 Step 11: Ensure Docker Compose Services Restart on Boot
 <pre><code>$ sudo vim /etc/systemd/system/gitlab.service
 
-\[Unit]
+[Unit]
 Description=GitLab Docker Container
 Requires=docker.service
 After=docker.service
 
-\[Service]
+[Service]
 User=mboom
 Group=mboom
 Type=oneshot
@@ -181,7 +182,7 @@ WorkingDirectory=/home/mboom/Downloads/gitlab
 TimeoutStartSec=30s
 RemainAfterExit=yes
 
-\[Install]
+[Install]
 WantedBy=multi-user.target
 </code></pre>
 
