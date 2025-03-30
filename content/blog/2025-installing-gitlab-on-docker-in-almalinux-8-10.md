@@ -164,45 +164,46 @@ Step 10: Change Your Password (Recommended)
 Once logged in, go to Profile → Edit Profile → Password and set a new password.
 
 Step 11: Ensure Docker Compose Services Restart on Boot
+<pre><code>$ sudo vim /etc/systemd/system/gitlab.service
 
-> $ sudo vim /etc/systemd/system/gitlab.service
->
-> > \[Unit]\
-> > Description=GitLab Docker Container\
-> > Requires=docker.service\
-> > After=docker.service\
-> > \
-> > \[Service]\
-> > User=mboom\
-> > Group=mboom\
-> > Type=oneshot\
-> > ExecStart=/usr/bin/docker compose -f /home/mboom/Downloads/gitlab/docker-compose.yml up -d\
-> > ExecStop=/usr/bin/docker compose -f /home/mboom/Downloads/gitlab/docker-compose.yml down\
-> > WorkingDirectory=/home/mboom/Downloads/gitlab\
-> > TimeoutStartSec=30s\
-> > RemainAfterExit=yes
-> >
-> > \[Install]\
-> > WantedBy=multi-user.target
->
-> $ sudo systemctl daemon-reload\
-> $ sudo systemctl enable gitlab\
-> \
-> Verify GitLab starts after reboot:\
-> \
-> $ sudo reboot\
-> $ docker ps\
-> $ watch 'docker ps'\
-> \
-> Watch until the proces says: healthy, it take approx. 5 mins for it to be fully running
+\[Unit]
+Description=GitLab Docker Container
+Requires=docker.service
+After=docker.service
+
+\[Service]
+User=mboom
+Group=mboom
+Type=oneshot
+ExecStart=/usr/bin/docker compose -f /home/mboom/Downloads/gitlab/docker-compose.yml up -d
+ExecStop=/usr/bin/docker compose -f /home/mboom/Downloads/gitlab/docker-compose.yml down
+WorkingDirectory=/home/mboom/Downloads/gitlab
+TimeoutStartSec=30s
+RemainAfterExit=yes
+
+\[Install]
+WantedBy=multi-user.target
+</code></pre>
+
+<pre><code>$ sudo systemctl daemon-reload
+$ sudo systemctl enable gitlab
+
+Verify GitLab starts after reboot:
+$ sudo reboot
+$ docker ps
+$ watch 'docker ps'
+
+Watch until the proces says: healthy, it take approx. 5 mins for it to be fully running
+</code></pre>
 
 Step X: Updating GitLab
 
-> Make a backup of the volumes:\
-> $ sudo cp -a /srv/gitlab/config /srv/gitlab/config\_$(date +"%Y%m%d\_%H%M%S")\
-> $ sudo cp -a /srv/gitlab/logs /srv/gitlab/logs\_$(date +"%Y%m%d\_%H%M%S")\
-> $ sudo cp -a /srv/gitlab/data /srv/gitlab/data\_$(date +"%Y%m%d\_%H%M%S")\
-> \
-> $ docker compose down\
-> $ docker compose pull\
-> $ docker compose up -d
+<pre><code>Make a backup of the volumes:
+$ sudo cp -a /srv/gitlab/config /srv/gitlab/config\_$(date +"%Y%m%d\_%H%M%S")
+$ sudo cp -a /srv/gitlab/logs /srv/gitlab/logs\_$(date +"%Y%m%d\_%H%M%S")
+$ sudo cp -a /srv/gitlab/data /srv/gitlab/data\_$(date +"%Y%m%d\_%H%M%S")
+
+$ docker compose down
+$ docker compose pull
+$ docker compose up -d
+</code></pre>
