@@ -97,7 +97,7 @@ State or Province Name (full name) []:UTRECHT
 Locality Name (eg, city) [Default City]:UTRECHT
 Organization Name (eg, company) [Default Company Ltd]:https://www.vandenboom.icu
 Organizational Unit Name (eg, section) []:private
-Common Name (eg, your name or your server's hostname) []:gitlab.vandenboom.local
+Common Name (eg, your name or your server\'s hostname) []:gitlab.vandenboom.local
 Email Address []:martijn.vandenboom@icloud.com
 </code></pre>
 
@@ -200,9 +200,9 @@ Watch until the proces says: healthy, it take approx. 5 mins for it to be fully 
 Step X: Updating GitLab
 
 <pre><code>Make a backup of the volumes:
-$ sudo cp -a /srv/gitlab/config /srv/gitlab/config\_$(date +"%Y%m%d\_%H%M%S")
-$ sudo cp -a /srv/gitlab/logs /srv/gitlab/logs\_$(date +"%Y%m%d\_%H%M%S")
-$ sudo cp -a /srv/gitlab/data /srv/gitlab/data\_$(date +"%Y%m%d\_%H%M%S")
+$ sudo cp -a /srv/gitlab/config /srv/gitlab/config_$(date +"%Y%m%d_%H%M%S")
+$ sudo cp -a /srv/gitlab/logs /srv/gitlab/logs_$(date +"%Y%m%d_%H%M%S")
+$ sudo cp -a /srv/gitlab/data /srv/gitlab/data_$(date +"%Y%m%d_%H%M%S")
 
 $ docker compose down
 $ docker compose pull
