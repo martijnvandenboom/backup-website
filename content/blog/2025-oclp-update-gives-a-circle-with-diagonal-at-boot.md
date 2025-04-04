@@ -31,16 +31,17 @@ Luckily with my old USB stick that has OCLP 2.2.0 I booted of my USB. That worke
 Use the tool: MountEFI Available on GitHub: [https://github.com/corpnewt/MountEFI](https://github.com/corpnewt/MountEFI "https\://github.com/corpnewt/MountEFI")\
 \
 N﻿ow I have been able to fix it with the following settings in OCLP:\
-My iMac is a late 2015 27" with Model nr 17,1\
-In the OCLP utility in settings I put:
-Target Model: 17,1
-Build: Debug: Check all 3 options: Verbose, Kext Debugging and OpenCore Debugging
-Extra's: Check: 3rd Party NVMe PM
-Security: Check all the options under SIP
-SMBIOS: SMBIOS Spoof Level: Moderate and SMBIOS Spoof Model: iMac19,1
-Then I Build and Install OpenCore to disk
-
-By the way in the mean time OCLP was updated to 2.3.2 and I used this version.\
+My iMac is a late 2015 27" with Model nr 17,1</br>\
+In the OCLP utility in settings I put:</br>
+Target Model: 17,1</br>
+Build: Debug: Check all 3 options: Verbose, Kext Debugging and OpenCore Debugging</br>
+Extra's: Check: 3rd Party NVMe PM</br>
+Security: Check all the options under SIP</br>
+SMBIOS: SMBIOS Spoof Level: Moderate and SMBIOS Spoof Model: iMac19,1</br>
+Then I Build and Install OpenCore to disk</br>\
 \
-R﻿eboot.\
+By the way in the mean time OCLP was updated to 2.3.2 and I used this version.</br>
+
+\
+R﻿eboot.</br>\
 And voila it works!
