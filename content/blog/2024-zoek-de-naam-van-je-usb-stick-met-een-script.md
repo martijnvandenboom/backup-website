@@ -111,4 +111,6 @@ done
 EOF
 ```
 
-S﻿tap 3: Druk op: Enter
+S﻿tap 3: Druk op: Enter\
+S﻿tap 4: Onder de 3 === tekens staat nu de naam van je USB stick\
+S﻿tap 5: De naam van het volume kun je nu vervangen in het sudo commando van Apple
