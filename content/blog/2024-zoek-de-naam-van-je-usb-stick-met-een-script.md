@@ -69,8 +69,9 @@ done
 \
 S﻿tap 7: Maak het script executable, type: # chmod +x usbstick.sh\
 S﻿tap 8: Voer het script uit, type: # ./usbstick.sh\
-S﻿tap 9: Onder de 3 === tekens staat nu de naam van je USB stick\
-S﻿tap 10: De naam van het volume kun je nu vervangen in het sudo commando van Apple
+S﻿tap 9: Druk op: Enter\
+S﻿tap 10: Onder de 3 === tekens staat nu de naam van je USB stick\
+S﻿tap 11: De naam van het volume kun je nu vervangen in het sudo commando van Apple
 
 O﻿F
 
