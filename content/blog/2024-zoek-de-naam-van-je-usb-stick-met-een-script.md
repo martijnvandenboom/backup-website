@@ -71,3 +71,44 @@ S﻿tap 7: Maak het script executable, type: # chmod +x usbstick.sh\
 S﻿tap 8: Voer het script uit, type: # ./usbstick.sh\
 S﻿tap 9: Onder de 3 === tekens staat nu de naam van je USB stick\
 S﻿tap 10: De naam van het volume kun je nu vervangen in het sudo commando van Apple
+
+O﻿F
+
+S﻿tap 1: Open de Terminal applicatie\
+S﻿tap 2: Copy and paste het hele code block in de terminal
+
+```
+bash <<'EOF'
+# your entire script goes here
+external_disks=$(diskutil list external physical | grep '^/dev/' | awk '{print $1}')
+
+if [[ -z "$external_disks" ]]; then
+  echo ""
+  echo "Er zijn geen externe USB sticks aangesloten!"
+  echo ""
+  exit 0
+fi
+
+echo ""
+echo "==="
+echo "Externe USB volumes:"
+
+for disk in $external_disks; do
+  partitions=$(diskutil list "$disk" | grep '^   [0-9]' | awk '{print $NF}')
+  for part in $partitions; do
+    mount_point=$(diskutil info "$part" | awk -F: '/Mount Point/ {gsub(/^ +| +$/, "", $2); print $2}')
+    volume_name=$(diskutil info "$part" | awk -F: '/Volume Name/ {gsub(/^ +| +$/, "", $2); print $2}')
+    fs_type=$(diskutil info "$part" | awk -F: '/Type \(Bundle\)/ {gsub(/^ +| +$/, "", $2); print $2}')
+    
+    if [[ -n "$mount_point" && "$mount_point" != "Not mounted" ]]; then
+      echo "• Volume: $volume_name"
+      echo "  Mount point: $mount_point"
+      echo "  File system: $fs_type"
+      echo ""
+    fi
+  done
+done
+EOF
+```
+
+S﻿tap 3: Druk op: Enter
