@@ -1,5 +1,5 @@
 ---
-title: This version of boot camp is not intented for this computer
+title: This version of BootCamp is not intented for this computer
 date: 2025-04-28T16:04:39.408Z
 draft: false
 categories:
