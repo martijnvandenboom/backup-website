@@ -10,7 +10,7 @@ Notities
 
 ing. M.A.C.M. (Martijn) van den Boom</br>
 </br>
-Computer System Analyst</br>
+Computer Infrastructure Engineer</br>
 ingenieur, docent en mentor</br>
 </br>
 </br>
