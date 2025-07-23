@@ -5,6 +5,25 @@
   </header>
   <main>
     {{ with .Site.Params.intro.paragraph }}<p>{{ . | safeHTML }}</p>{{ end }}
+
+    <a href="https://amzn.to/4lOSBBw" class="amazon-button" target="_blank" rel="noopener noreferrer">
+      👉 Bekijk op Amazon
+    </a>
+
+    <style>
+      .amazon-button {
+        background-color: #ff9900;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .amazon-button:hover {
+        background-color: #e68a00;
+      }
+    </style>
+
   </main>
   {{ if or (.Site.Params.intro.rssIntro) (.Site.Params.intro.socialIntro) }}
     <footer>
