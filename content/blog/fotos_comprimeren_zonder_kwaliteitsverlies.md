@@ -2,7 +2,7 @@
 title = "Foto's comprimeren zonder kwaliteitsverlies voor elk platform"
 description = "Online tool om foto's te comprimeren zonder installatie"
 author = "van den Boom"
-date = 2025-09-13T18:25:00+01:00
+date = 2025-09-12T01:58:22+01:00
 tags = ["fotos", "comprimeren", "kwaliteit", "kwaliteitsverlies", "online", "platform", "utilities"]
 categories = ["windows", "linux", "macos", "tools", "utilities"]
 +++

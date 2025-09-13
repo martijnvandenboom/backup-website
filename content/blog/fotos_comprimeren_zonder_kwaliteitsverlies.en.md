@@ -1,22 +1,24 @@
 +++
-title = "Automatically log in to Windows"
+title = "Compress photos without quality loss for any platform"
 description = "Tools"
 author = "van den Boom"
-date = 2022-03-09T11:58:22+01:00
-tags = ["automatic", "automatically", "log", "login", "windows", "autologon", "actions", "tools", "utilities"]
-categories = ["windows", "actions", "tools", "utilities"]
+date = 2025-09-12T01:58:22+01:00
+tags = ["photos", "compress", "without", "quality", "loss", "any", "platform", "utilities"]
+categories = ["windows", "linux", "macos", "actions", "tools", "utilities"]
 +++
 
-Entering a password or PIN is not equally convenient for everyone.</br>
-Do you find it annoying to enter a password or PIN every time you log in to Windows?</br>
-You can also automatically log in to Windows. When the computer has finished starting up, you will immediately see the desktop.
-On the desktop you can make all your useful programs accessible and you have that immediately in front of you when you have turned on the computer.
-You can then immediately start using the computer, without having to enter a password or PIN first.</br>
+Do you want to make your photos smaller in size without losing quality?</br>
+Good news: you don’t need to install any software for that!</br>
+With the online tool **ImageCompressor**, you can simply upload your photos and compress them directly in your browser.</br>
+That means it doesn’t matter whether you’re working on **Windows, Linux, or macOS**—as long as you have an internet connection, you can easily compress your photos.</br>
 
-Log in to Windows automatically:</br>
-Microsoft has made a handy program especially available for this.</br>
-It's called: Autologon</br>
-Current version: v3.10</br>
-You can download it from Microsoft at this link: https://live.sysinternals.com/Autologon.exe</br>
+Advantages of compressed photos:</br>
+- Websites load much faster when you upload optimized photos.</br>
+- You save storage space on your computer, cloud, or mobile device.</br>
+- Sharing photos by email, chat, or social media becomes quicker and more convenient.</br>
+- Reduced data usage is especially useful when uploading or downloading with a limited connection.</br>
 
-P.S. Would you like someone to help you? Feel free to send me a message via the contact form of this website.</br>
+Try it right away: [ImageCompressor](https://www.websiteplanet.com/nl/webtools/imagecompressor/)</br>
+
+P.S. Special thanks to **Maria Isabel Rondini**  
+She inspired this article as part of the research for her thesis, where she could use some extra attention for the tool *ImageCompressor*.
