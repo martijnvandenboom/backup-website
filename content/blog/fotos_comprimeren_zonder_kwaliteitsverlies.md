@@ -16,11 +16,11 @@ Deze handige webtool werkt volledig online. Dat betekent dat je niets hoeft te d
 Of je nu op Windows, Linux of macOS werkt, het maakt niet uit – zolang je een internetverbinding hebt, kun je direct je foto’s uploaden en comprimeren.
 
 Voordelen van gecomprimeerde foto’s:</br>
-Sneller laden van websites → gecomprimeerde foto’s zijn kleiner in bestandsgrootte, waardoor pagina’s merkbaar sneller openen.</br>
-Minder dataverbruik → handig voor bezoekers die mobiel internet gebruiken.</br>
-Meer opslagruimte → gecomprimeerde foto’s nemen minder plaats in op je harde schijf of cloud.</br>
-Sneller delen → kleinere bestanden zijn eenvoudiger te versturen via e-mail, chat of sociale media.</br>
-Geen kwaliteitsverlies → de tool zorgt dat je foto er visueel net zo mooi uitziet, maar veel minder MB’s weegt.</br>
+- Sneller laden van websites → gecomprimeerde foto’s zijn kleiner in bestandsgrootte, waardoor pagina’s merkbaar sneller openen.</br>
+- Minder dataverbruik → handig voor bezoekers die mobiel internet gebruiken.</br>
+- Meer opslagruimte → gecomprimeerde foto’s nemen minder plaats in op je harde schijf of cloud.</br>
+- Sneller delen → kleinere bestanden zijn eenvoudiger te versturen via e-mail, chat of sociale media.</br>
+- Geen kwaliteitsverlies → de tool zorgt dat je foto er visueel net zo mooi uitziet, maar veel minder MB’s weegt.</br>
 </br>
 Met deze oplossing kun je dus overal en altijd je foto’s optimaliseren zonder gedoe.</br>
 </br>
