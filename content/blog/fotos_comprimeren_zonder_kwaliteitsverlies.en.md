@@ -7,6 +7,10 @@ tags = ["photos", "compress", "without", "quality", "loss", "any", "platform", "
 categories = ["windows", "linux", "macos", "actions", "tools", "utilities"]
 +++
 
+P.S. Special thanks to **Maria Isabel Rondini**  
+She inspired this article as part of the research for her thesis, where she could use some extra attention for the tool *ImageCompressor*.
+</br>
+
 Do you want to make your photos smaller in size without losing quality?</br>
 Good news: you don’t need to install any software for that!</br>
 With the online tool **ImageCompressor**, you can simply upload your photos and compress them directly in your browser.</br>
@@ -20,5 +24,3 @@ Advantages of compressed photos:</br>
 
 Try it right away: [ImageCompressor](https://www.websiteplanet.com/nl/webtools/imagecompressor/)</br>
 
-P.S. Special thanks to **Maria Isabel Rondini**  
-She inspired this article as part of the research for her thesis, where she could use some extra attention for the tool *ImageCompressor*.
