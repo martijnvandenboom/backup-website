@@ -1,14 +1,14 @@
 +++
 title = "About"
-description = "Notities"
+description = "Notities website"
 author = "van den Boom"
 date = "2020-12-11"
 layout = "about"
 +++
 
-## Biography - Martijn van den Boom
+## Biography
 
-Martijn van den Boom is an experienced IT professional with more than 26 years of experience in information technology, infrastructure management, and automation. Throughout his career, he has worked in complex enterprise and government environments, contributing to projects for organizations such as CGI, Rijkswaterstaat, ProRail, and the Municipality of 's-Hertogenbosch.
+Martijn is an experienced IT professional with more than 26 years of experience in information technology, infrastructure management, and automation. Throughout his career, he has worked in complex enterprise and government environments, contributing to projects for organizations such as CGI, Rijkswaterstaat, ProRail, and the Municipality of 's-Hertogenbosch.
 
 His work has focused on system administration, automation, monitoring, networking, and the design of reliable and scalable IT infrastructures.
 
