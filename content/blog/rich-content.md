@@ -34,8 +34,7 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ## Twitter Simple Shortcode
 
-<!-- Removed invalid twitter_simple call for Hugo >=0.154 compatibility. -->
-{{< x user="gohugoio" id="1085870671291310081" >}}
+[View post on X](https://x.com/gohugoio/status/1085870671291310081)
 
 <br>
 

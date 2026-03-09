@@ -1,19 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Versions on Notities</title>
-    <link>http://localhost:1313/tags/versions/</link>
-    <description>Recent content in Versions on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Wed, 27 Sep 2023 17:43:18 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/versions/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Multiple versions of Java on macOS</title>
-      <link>http://localhost:1313/blog/2023-multiple-versions-of-java-on-macos/</link>
-      <pubDate>Wed, 27 Sep 2023 17:43:18 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-multiple-versions-of-java-on-macos/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ls -al /usr/local/opt/ | grep -i openjdk&#xA;&#xA;$ brew install jenv&#xA;&#xA;$ jenv add /Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home/&#xA;&#xA;$ jenv versions&#xA;$ jenv local 1.8&#xA;$ java -version&#xA;$ jenv global 1.8&#xA;$ java -version&#xA;$ jenv shell 1.8&#xA;$ java -version&#xA;$ jenv versions&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Versions on Notities</title><link>https://www.vandenboom.icu/tags/versions/</link><description>Recent content in Versions on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Wed, 27 Sep 2023 17:43:18 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/versions/index.xml" rel="self" type="application/rss+xml"/><item><title>Multiple versions of Java on macOS</title><link>https://www.vandenboom.icu/blog/2023-multiple-versions-of-java-on-macos/</link><pubDate>Wed, 27 Sep 2023 17:43:18 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-multiple-versions-of-java-on-macos/</guid><description>&lt;pre tabindex="0"&gt;&lt;code&gt;$ ls -al /usr/local/opt/ | grep -i openjdk
+
+$ brew install jenv
+
+$ jenv add /Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home/
+
+$ jenv versions
+$ jenv local 1.8
+$ java -version
+$ jenv global 1.8
+$ java -version
+$ jenv shell 1.8
+$ java -version
+$ jenv versions
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

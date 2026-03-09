@@ -1,61 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Windows on Notities</title>
-    <link>http://localhost:1313/categories/windows/</link>
-    <description>Recent content in Windows on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Sat, 15 Nov 2025 15:40:22 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/windows/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Network routing naar LAN systemen met OpenVPN Server</title>
-      <link>http://localhost:1313/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link>
-      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid>
-      <description>&lt;p&gt;Om systemen op het LAN-netwerk te kunnen benaderen via de VPN-tunnel van de OpenVPN-server, moet het LAN-systeem weten dat verkeer bestemd voor het VPN-subnet via de OpenVPN-server moet worden verstuurd. Zonder deze extra route komt retourverkeer niet bij de VPN-clients terecht.&lt;/p&gt;&#xA;&lt;p&gt;In dit voorbeeld gebruiken we het subnet 10.0.8.0/24 als de IP-range die je hebt ingesteld voor de OpenVPN-tunnel. Dit is het netwerk waarin alle VPN-clients een IP-adres krijgen. Om ervoor te zorgen dat een apparaat op het LAN verkeer correct kan terugsturen naar deze VPN-clients, moet je op dat LAN-apparaat een statische route toevoegen.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Foto&#39;s comprimeren zonder kwaliteitsverlies voor elk platform</title>
-      <link>http://localhost:1313/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link>
-      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid>
-      <description>&lt;p&gt;P.S. Op speciaal verzoek van Maria Isabel Rondini, die voor het schrijven van haar scriptie deze tool extra onder de aandacht wilde brengen.&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wil je je foto’s kleiner maken zonder kwaliteitsverlies, en dat zonder extra software te hoeven installeren?&#xA;Dan is de Image Compressor tool ideaal.&lt;/p&gt;&#xA;&lt;p&gt;Deze handige webtool werkt volledig online. Dat betekent dat je niets hoeft te downloaden of te installeren.&#xA;Of je nu op Windows, Linux of macOS werkt, het maakt niet uit – zolang je een internetverbinding hebt, kun je direct je foto’s uploaden en comprimeren.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Maak een gratis website met GitHub Pages</title>
-      <link>http://localhost:1313/blog/maak_een_website_met_github_pages/</link>
-      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/maak_een_website_met_github_pages/</guid>
-      <description>&lt;p&gt;Maak een gratis website met GitHub&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://vandenboom.netlify.app/images/GitHub-Pages-NL.png&#34; alt=&#34;GitHub Pages en GitHub Desktop&#34; /&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via een van de Social Media Links op deze website.&lt;/br&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Automatisch inloggen in Windows</title>
-      <link>http://localhost:1313/blog/automatisch_inloggen_in_windows/</link>
-      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/automatisch_inloggen_in_windows/</guid>
-      <description>&lt;p&gt;Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig.&lt;/br&gt;&#xA;Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows?&lt;/br&gt;&#xA;Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien.&#xA;Op het bureaublad kun je al je handige programma&amp;rsquo;s bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.&#xA;Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of pincode in te hoeven toetsen.&lt;/br&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Gehele webpagina opslaan</title>
-      <link>http://localhost:1313/blog/gehele_webpagina_opslaan/</link>
-      <pubDate>Sun, 19 Dec 2021 09:50:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/gehele_webpagina_opslaan/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;In de webbrowser Microsoft Edge:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; klik rechtsboven in de hoek op de 3 puntjes: ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; kies voor de optie: Webopname (Ctrl+Shift+S)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; kies voor de optie: Volledige pagina vastleggen&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; klik op de knop: Opslaan&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; nu staat er een afbeelding van het type: .jpeg in je persoonlijke directory: Downloads&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>In- en uitzoomen op een website</title>
-      <link>http://localhost:1313/blog/zoomen_op_een_website/</link>
-      <pubDate>Sat, 18 Dec 2021 20:56:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/zoomen_op_een_website/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Houd de CTRL toets van het toetsenbord ingedrukt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;en draai aan het wieltje op de muis.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>Windows Update Snelkoppeling</title>
-      <link>http://localhost:1313/blog/windows-update-snelkoppeling/</link>
-      <pubDate>Thu, 16 Dec 2021 09:07:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/windows-update-snelkoppeling/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Windows Update snelkoppeling die iedereen op zijn bureaublad moet hebben&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Heb je bureaublad voor je&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Klik met de rechtermuisknop&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Kies voor: Nieuw&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Kies voor: Snelkoppeling&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Vul als locatie in:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (Op Windows 8)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  %windir%\explorer.exe shell:::{36eef7db-88ad-4e81-ad49-0e313f0c35f8} &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (Op Windows 10)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ms-settings:windowsupdate&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Klik op: Volgende&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Vul de naam in: Windows Update&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Klik op: Voltooien&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on Notities</title><link>https://www.vandenboom.icu/categories/windows/</link><description>Recent content in Windows on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Sat, 15 Nov 2025 15:40:22 +0100</lastBuildDate><atom:link href="https://www.vandenboom.icu/categories/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Network routing naar LAN systemen met OpenVPN Server</title><link>https://www.vandenboom.icu/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link><pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate><guid>https://www.vandenboom.icu/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid><description>&lt;p&gt;Om systemen op het LAN-netwerk te kunnen benaderen via de VPN-tunnel van de OpenVPN-server, moet het LAN-systeem weten dat verkeer bestemd voor het VPN-subnet via de OpenVPN-server moet worden verstuurd. Zonder deze extra route komt retourverkeer niet bij de VPN-clients terecht.&lt;/p&gt;
+&lt;p&gt;In dit voorbeeld gebruiken we het subnet 10.0.8.0/24 als de IP-range die je hebt ingesteld voor de OpenVPN-tunnel. Dit is het netwerk waarin alle VPN-clients een IP-adres krijgen. Om ervoor te zorgen dat een apparaat op het LAN verkeer correct kan terugsturen naar deze VPN-clients, moet je op dat LAN-apparaat een statische route toevoegen.&lt;/p&gt;</description></item><item><title>Foto's comprimeren zonder kwaliteitsverlies voor elk platform</title><link>https://www.vandenboom.icu/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link><pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid><description>&lt;p&gt;P.S. Op speciaal verzoek van Maria Isabel Rondini, die voor het schrijven van haar scriptie deze tool extra onder de aandacht wilde brengen.
+&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;Wil je je foto’s kleiner maken zonder kwaliteitsverlies, en dat zonder extra software te hoeven installeren?
+Dan is de Image Compressor tool ideaal.&lt;/p&gt;
+&lt;p&gt;Deze handige webtool werkt volledig online. Dat betekent dat je niets hoeft te downloaden of te installeren.
+Of je nu op Windows, Linux of macOS werkt, het maakt niet uit – zolang je een internetverbinding hebt, kun je direct je foto’s uploaden en comprimeren.&lt;/p&gt;</description></item><item><title>Maak een gratis website met GitHub Pages</title><link>https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/</guid><description>&lt;p&gt;Maak een gratis website met GitHub&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://vandenboom.netlify.app/images/GitHub-Pages-NL.png" alt="GitHub Pages en GitHub Desktop" /&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via een van de Social Media Links op deze website.&lt;/br&gt;&lt;/p&gt;</description></item><item><title>Automatisch inloggen in Windows</title><link>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</guid><description>&lt;p&gt;Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig.&lt;/br&gt;
+Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows?&lt;/br&gt;
+Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien.
+Op het bureaublad kun je al je handige programma&amp;rsquo;s bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.
+Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of pincode in te hoeven toetsen.&lt;/br&gt;&lt;/p&gt;</description></item><item><title>Gehele webpagina opslaan</title><link>https://www.vandenboom.icu/blog/gehele_webpagina_opslaan/</link><pubDate>Sun, 19 Dec 2021 09:50:22 +0100</pubDate><guid>https://www.vandenboom.icu/blog/gehele_webpagina_opslaan/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;In de webbrowser Microsoft Edge:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;gt; klik rechtsboven in de hoek op de 3 puntjes: ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;gt; kies voor de optie: Webopname (Ctrl+Shift+S)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;gt; kies voor de optie: Volledige pagina vastleggen
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;gt; klik op de knop: Opslaan
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;gt; nu staat er een afbeelding van het type: .jpeg in je persoonlijke directory: Downloads&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>In- en uitzoomen op een website</title><link>https://www.vandenboom.icu/blog/zoomen_op_een_website/</link><pubDate>Sat, 18 Dec 2021 20:56:00 +0100</pubDate><guid>https://www.vandenboom.icu/blog/zoomen_op_een_website/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Houd de CTRL toets van het toetsenbord ingedrukt
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;en draai aan het wieltje op de muis.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Windows Update Snelkoppeling</title><link>https://www.vandenboom.icu/blog/windows-update-snelkoppeling/</link><pubDate>Thu, 16 Dec 2021 09:07:17 +0000</pubDate><guid>https://www.vandenboom.icu/blog/windows-update-snelkoppeling/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Windows Update snelkoppeling die iedereen op zijn bureaublad moet hebben
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;* Heb je bureaublad voor je
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;* Klik met de rechtermuisknop
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;* Kies voor: Nieuw
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;* Kies voor: Snelkoppeling
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;* Vul als locatie in:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; (Op Windows 8)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; %windir%\explorer.exe shell:::{36eef7db-88ad-4e81-ad49-0e313f0c35f8} 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; (Op Windows 10)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ms-settings:windowsupdate
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;* Klik op: Volgende
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;* Vul de naam in: Windows Update
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;* Klik op: Voltooien&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>

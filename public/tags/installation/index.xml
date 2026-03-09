@@ -1,40 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Installation on Notities</title>
-    <link>http://localhost:1313/tags/installation/</link>
-    <description>Recent content in Installation on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Thu, 27 Jun 2024 22:27:46 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/installation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>rEFIt installation to EFI partition of an iMac</title>
-      <link>http://localhost:1313/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link>
-      <pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid>
-      <description>&lt;p&gt;F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac&lt;/p&gt;&#xA;&lt;p&gt;D﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below&lt;br&gt;&#xA;&lt;br&gt;&#xA;B﻿efore you do the bless command disable the SIP&lt;br&gt;&#xA;Boot in recovery mode&lt;br&gt;&#xA;#﻿ csrutil status&lt;br&gt;&#xA;#﻿ csrutil disable&lt;br&gt;&#xA;#﻿ reboot&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mkdir /efi&#xA;&#xA;sudo mount -t msdos /dev/disk0s1 /efi&#xA;&#xA;sudo bless --mount /efi --setBoot --file /efi/EFI/refit/refit.efi --labelfile /efi/EFI/refit/refit.vollabel&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    <item>
-      <title>LDAP/IPA Server client installation</title>
-      <link>http://localhost:1313/blog/2024-ldap-ipa-server-client-installation/</link>
-      <pubDate>Sat, 09 Mar 2024 17:33:26 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-client-installation/</guid>
-      <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;# yum install ipa-client&lt;/p&gt;&#xA;&lt;p&gt;# ipa-client-install &amp;ndash;server=&lt;FQDN&gt; &amp;ndash;domain=&lt;NETWORK&gt; &amp;ndash;principal=admin -W&lt;/p&gt;&#xA;&lt;p&gt;# ipa-client-install &amp;ndash;server=&amp;lt;&lt;a href=&#34;http://ipa-server.example.com&#34;&gt;ipa-server.example.com&lt;/a&gt;&amp;gt; &amp;ndash;domain=&amp;lt;example.com&amp;gt; &amp;ndash;principal=admin -W&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>LDAP/IPA Server installation</title>
-      <link>http://localhost:1313/blog/2024-ldap-ipa-server-installation/</link>
-      <pubDate>Sat, 09 Mar 2024 17:31:40 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-installation/</guid>
-      <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;# yum install ipa-server&lt;/p&gt;&#xA;&lt;p&gt;# ipa-server-install&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Hosts file aanpassen&lt;/p&gt;&#xA;&lt;p&gt;De FQDN voor op, daarna pas de aliassen&lt;/p&gt;&#xA;&lt;p&gt;/etc/hosts&lt;/p&gt;&#xA;&lt;p&gt;&amp;lt;IP_SERVER&amp;gt;   &lt;FQDN&gt; &lt;ALIAS1&gt; (&lt;ALIAS2&gt;)&lt;/p&gt;&#xA;&lt;p&gt;Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Checkmk installation on Rocky Linux 9.3</title>
-      <link>http://localhost:1313/blog/2024-checkmk-installation-on-rocky-linux-9-3/</link>
-      <pubDate>Tue, 16 Jan 2024 21:13:15 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-checkmk-installation-on-rocky-linux-9-3/</guid>
-      <description>&lt;p&gt;Checkmk installation on Rocky Linux 9.3&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;&#xA;setsebool -P httpd_can_network_connect 1&#xA;&#xA;firewall-cmd --zone=public --add-service=http --permanent&#xA;firewall-cmd --reload&#xA;&#xA;wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;&#xA;omd version&#xA;omd create monitoring&#xA;omd start monitoring&#xA;&#xA;http://localhost.localdomain/monitoring/&#xA;user: cmkadmin with password: &amp;lt;given&amp;gt;&#xA;&#xA;omd su monitoring (For command line administration of the site.)&#xA;cmk-passwd cmkadmin (After logging in, you can change the password for cmkadmin with.)&#xA;&#xA;(optional)&#xA;omd status&#xA;omd sites&#xA;omd help&#xA;&#xA;(optional for after reboot if you get the error: Unable to connect)&#xA;omd update-apache-config monitoring&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Installation on Notities</title><link>https://www.vandenboom.icu/tags/installation/</link><description>Recent content in Installation on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Thu, 27 Jun 2024 22:27:46 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>rEFIt installation to EFI partition of an iMac</title><link>https://www.vandenboom.icu/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link><pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid><description>&lt;p&gt;F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac&lt;/p&gt;
+&lt;p&gt;D﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below&lt;br&gt;
+&lt;br&gt;
+B﻿efore you do the bless command disable the SIP&lt;br&gt;
+Boot in recovery mode&lt;br&gt;
+#﻿ csrutil status&lt;br&gt;
+#﻿ csrutil disable&lt;br&gt;
+#﻿ reboot&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo mkdir /efi
+
+sudo mount -t msdos /dev/disk0s1 /efi
+
+sudo bless --mount /efi --setBoot --file /efi/EFI/refit/refit.efi --labelfile /efi/EFI/refit/refit.vollabel
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>LDAP/IPA Server client installation</title><link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-client-installation/</link><pubDate>Sat, 09 Mar 2024 17:33:26 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-client-installation/</guid><description>&lt;p&gt;===&lt;/p&gt;
+&lt;p&gt;# yum install ipa-client&lt;/p&gt;
+&lt;p&gt;# ipa-client-install &amp;ndash;server=&lt;FQDN&gt; &amp;ndash;domain=&lt;NETWORK&gt; &amp;ndash;principal=admin -W&lt;/p&gt;
+&lt;p&gt;# ipa-client-install &amp;ndash;server=&amp;lt;&lt;a href="http://ipa-server.example.com"&gt;ipa-server.example.com&lt;/a&gt;&amp;gt; &amp;ndash;domain=&amp;lt;example.com&amp;gt; &amp;ndash;principal=admin -W&lt;/p&gt;</description></item><item><title>LDAP/IPA Server installation</title><link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-installation/</link><pubDate>Sat, 09 Mar 2024 17:31:40 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-installation/</guid><description>&lt;p&gt;===&lt;/p&gt;
+&lt;p&gt;# yum install ipa-server&lt;/p&gt;
+&lt;p&gt;# ipa-server-install&lt;/p&gt;
+&lt;p&gt;===&lt;/p&gt;
+&lt;p&gt;Hosts file aanpassen&lt;/p&gt;
+&lt;p&gt;De FQDN voor op, daarna pas de aliassen&lt;/p&gt;
+&lt;p&gt;/etc/hosts&lt;/p&gt;
+&lt;p&gt;&amp;lt;IP_SERVER&amp;gt;   &lt;FQDN&gt; &lt;ALIAS1&gt; (&lt;ALIAS2&gt;)&lt;/p&gt;
+&lt;p&gt;Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.&lt;/p&gt;</description></item><item><title>Checkmk installation on Rocky Linux 9.3</title><link>https://www.vandenboom.icu/blog/2024-checkmk-installation-on-rocky-linux-9-3/</link><pubDate>Tue, 16 Jan 2024 21:13:15 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-checkmk-installation-on-rocky-linux-9-3/</guid><description>&lt;p&gt;Checkmk installation on Rocky Linux 9.3&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;dnf install epel-release
+
+setsebool -P httpd_can_network_connect 1
+
+firewall-cmd --zone=public --add-service=http --permanent
+firewall-cmd --reload
+
+wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm
+yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm
+
+omd version
+omd create monitoring
+omd start monitoring
+
+http://localhost.localdomain/monitoring/
+user: cmkadmin with password: &amp;lt;given&amp;gt;
+
+omd su monitoring (For command line administration of the site.)
+cmk-passwd cmkadmin (After logging in, you can change the password for cmkadmin with.)
+
+(optional)
+omd status
+omd sites
+omd help
+
+(optional for after reboot if you get the error: Unable to connect)
+omd update-apache-config monitoring
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

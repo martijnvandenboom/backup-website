@@ -1,19 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Repo on Notities</title>
-    <link>http://localhost:1313/tags/repo/</link>
-    <description>Recent content in Repo on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Sat, 22 Mar 2025 22:13:54 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/repo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Install Microsoft Visual Studio Code in Linux from the repo</title>
-      <link>http://localhost:1313/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link>
-      <pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid>
-      <description>&lt;p&gt;F﻿ollow the below steps to install Microsoft Visual Studio Code IDE on Linux from its repository:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;sudo rpm &amp;ndash;import &lt;a href=&#34;https://packages.microsoft.com/keys/microsoft.asc&#34;&gt;https://packages.microsoft.com/keys/microsoft.asc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;sudo sh -c &amp;rsquo;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &amp;gt; /etc/yum.repos.d/vscode.repo&#39;&lt;/p&gt;&#xA;&lt;p&gt;sudo dnf install code -y&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Repo on Notities</title><link>https://www.vandenboom.icu/tags/repo/</link><description>Recent content in Repo on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Sat, 22 Mar 2025 22:13:54 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/repo/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Microsoft Visual Studio Code in Linux from the repo</title><link>https://www.vandenboom.icu/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link><pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid><description>&lt;p&gt;F﻿ollow the below steps to install Microsoft Visual Studio Code IDE on Linux from its repository:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;sudo rpm &amp;ndash;import &lt;a href="https://packages.microsoft.com/keys/microsoft.asc"&gt;https://packages.microsoft.com/keys/microsoft.asc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;sudo sh -c &amp;rsquo;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &amp;gt; /etc/yum.repos.d/vscode.repo'&lt;/p&gt;
+&lt;p&gt;sudo dnf install code -y&lt;/p&gt;
+&lt;/blockquote&gt;</description></item></channel></rss>

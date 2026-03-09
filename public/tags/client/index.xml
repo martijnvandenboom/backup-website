@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Client on Notities</title>
-    <link>http://localhost:1313/tags/client/</link>
-    <description>Recent content in Client on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Sat, 09 Mar 2024 17:33:26 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/client/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>LDAP/IPA Server client installation</title>
-      <link>http://localhost:1313/blog/2024-ldap-ipa-server-client-installation/</link>
-      <pubDate>Sat, 09 Mar 2024 17:33:26 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-client-installation/</guid>
-      <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;# yum install ipa-client&lt;/p&gt;&#xA;&lt;p&gt;# ipa-client-install &amp;ndash;server=&lt;FQDN&gt; &amp;ndash;domain=&lt;NETWORK&gt; &amp;ndash;principal=admin -W&lt;/p&gt;&#xA;&lt;p&gt;# ipa-client-install &amp;ndash;server=&amp;lt;&lt;a href=&#34;http://ipa-server.example.com&#34;&gt;ipa-server.example.com&lt;/a&gt;&amp;gt; &amp;ndash;domain=&amp;lt;example.com&amp;gt; &amp;ndash;principal=admin -W&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Client on Notities</title><link>https://www.vandenboom.icu/tags/client/</link><description>Recent content in Client on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Sat, 09 Mar 2024 17:33:26 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/client/index.xml" rel="self" type="application/rss+xml"/><item><title>LDAP/IPA Server client installation</title><link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-client-installation/</link><pubDate>Sat, 09 Mar 2024 17:33:26 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-client-installation/</guid><description>&lt;p&gt;===&lt;/p&gt;
+&lt;p&gt;# yum install ipa-client&lt;/p&gt;
+&lt;p&gt;# ipa-client-install &amp;ndash;server=&lt;FQDN&gt; &amp;ndash;domain=&lt;NETWORK&gt; &amp;ndash;principal=admin -W&lt;/p&gt;
+&lt;p&gt;# ipa-client-install &amp;ndash;server=&amp;lt;&lt;a href="http://ipa-server.example.com"&gt;ipa-server.example.com&lt;/a&gt;&amp;gt; &amp;ndash;domain=&amp;lt;example.com&amp;gt; &amp;ndash;principal=admin -W&lt;/p&gt;</description></item></channel></rss>
