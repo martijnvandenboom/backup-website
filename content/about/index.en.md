@@ -6,49 +6,47 @@ date = "2020-12-11"
 layout = "about"
 +++
 
-Dear reader,
+## Biography - Martijn van den Boom
 
-In my professional journey, during my first year of architectural studies at the university, I encountered a subject that would forever alter the course of my life: Visual Basic programming. To my surprise, I excelled in this field, earning an impressive 9 as my grade. This achievement sharply contrasted with my performance in other subjects, where I may have barely managed a passing grade. It was a pivotal moment, an 'Eureka' experience that unequivocally pointed me in the direction I needed to pursue.
+Martijn van den Boom is an experienced IT professional with more than 26 years of experience in information technology, infrastructure management, and automation. Throughout his career, he has worked in complex enterprise and government environments, contributing to projects for organizations such as CGI, Rijkswaterstaat, ProRail, and the Municipality of 's-Hertogenbosch.
 
-I decided to follow my passion for computers, and I switched to an Electrical Engineering program. This choice not only provided me with more opportunities to hone my software skills but also granted me a profound understanding of hardware. It was a challenge I embraced wholeheartedly, knowing it was the most demanding HBO program I could select. For me, this simply represented a greater challenge and an opportunity for personal growth.
+His work has focused on system administration, automation, monitoring, networking, and the design of reliable and scalable IT infrastructures.
 
-For me, computers are not just a career; they are also my greatest hobby. I've been fortunate enough to turn my passion into my daily work. Each day, I approach my job with unwavering enthusiasm, driven by the potential for innovation and creativity, bringing both new and old ideas to life. In essence, computers are my life, and I relish every moment of this exhilarating journey.
+### Background
 
-As a continuation of my professional journey, I have a strong desire to share my experiences and insights with others. I believe in the power of sharing notes and knowledge to inspire individuals and spark innovative ideas. My aspiration is to connect with like-minded individuals and engage in meaningful conversations to exchange thoughts and viewpoints.
+Martijn's fascination with computers started during his Constructional Engineering studies (HBO Bouwkunde) in Tilburg in the late 1990s, when he was introduced to Microsoft Visual Basic programming. Building small applications and seeing how software could automate repetitive work sparked a lasting passion for computing and software development.
 
-I firmly believe that through open communication and collaboration, we can foster a vibrant intellectual community where ideas flourish and positive change is initiated. Whether it's through online platforms, seminars, or networking events, I am eager to contribute to this exchange of knowledge and ideas. I look forward to inspiring others and being inspired in return, creating a dynamic environment where we can all learn, grow, and innovate together.
+That curiosity gradually evolved into a long-term professional career in IT and automation.
 
-Best regards,
+### Core Expertise
 
-Martijn
+- Python development
+- Ansible automation
+- Bash and PowerShell scripting
+- Linux systems administration
+- Network management and monitoring platforms
+- CI/CD practices
 
-</br>
-</br>
-<u>Explanation:</u>
+Improving reliability and efficiency through automation has remained a central theme throughout his work.
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+### Mentoring and Education
 
-Hugo makes use of a variety of open source projects including:
+Alongside his professional career, Martijn has also been active in mentoring and education. Volunteer work has included teaching computer skills, mentoring secondary school students, and introducing programming concepts using C# (Visual Studio) and Python (Spyder/Anaconda).
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+### Sustainability and International Initiatives
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+Martijn is also involved in sustainability and international development initiatives. One example is a Black Soldier Fly (BSF) farming project in Uganda, developed in collaboration with Foundation Foods Ltd. The project focuses on producing sustainable insect protein for animal feed while recycling organic waste.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+In addition, Martijn has worked on the concept and design of the Planet Protection Polyethylene Waste Collection Payment System. This concept aims to improve plastic waste collection by allowing collectors to bring polyethylene waste to local collection points and receive digital payments based on weight, supporting both environmental protection and local economic opportunity.
 
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+### Personal
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Martijn currently lives in Utrecht, the Netherlands, together with his wife. Technology, automation, and sustainable innovation continue to be central motivations in both his professional work and personal initiatives.
 
-</br>
-</br>
-<u>Would you care to sponsor me?</u></br>
-<i>See page:</i></br>
-<a href='https://ko-fi.com/martijnvandenboom'>ko-fi.com/martijnvandenboom</a> </br>
-<a href='https://paypal.me/ingmacmvandenboom'>paypal.me/ingmacmvandenboom</a> </br>
-<a href='https://buymeacoffee.com/ingvdboom'>buymeacoffee.com/ingvdboom</a> </br>
-</br>
+### Sponsorship
+
+Would you like to support my work?
+
+- [ko-fi.com/martijnvandenboom](https://ko-fi.com/martijnvandenboom)
+- [paypal.me/ingmacmvandenboom](https://paypal.me/ingmacmvandenboom)
+- [buymeacoffee.com/ingvdboom](https://buymeacoffee.com/ingvdboom)

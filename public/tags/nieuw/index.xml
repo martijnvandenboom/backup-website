@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>nieuw on Notities</title><link>https://www.vandenboom.icu/tags/nieuw/</link><description>Recent content in nieuw on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Fri, 25 Feb 2022 11:09:02 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/nieuw/index.xml" rel="self" type="application/rss+xml"/><item><title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title><link>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link><pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid><description>Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nieuw on Notities</title>
+    <link>http://localhost:1313/tags/nieuw/</link>
+    <description>Recent content in Nieuw on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Fri, 25 Feb 2022 11:09:02 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nieuw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title>
+      <link>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
+      <pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
+      <description>&lt;p&gt;Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

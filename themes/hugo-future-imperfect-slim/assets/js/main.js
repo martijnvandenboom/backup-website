@@ -50,58 +50,110 @@ var $searchResults;     // The element on the page holding search results
 var $searchInput;       // The search box element
 
 window.onload = function () {
-  // Set up for an Ajax call to request the JSON data file that is created by
-  // Hugo's build process, with the template we added above
-  var request = new XMLHttpRequest();
-  var query = '';
-
   // Get dom objects for the elements we'll be interacting with
   $searchResults = document.getElementById('search-results');
   $searchInput   = document.getElementById('search-input');
 
-  var lang = document.documentElement.lang;
-  var pathArgs = ["{{ replaceRE "/$" "" .Site.BaseURL }}", "index.json"];
-  if (lang != "{{ .Site.Language }}") {
-    pathArgs.splice(1, 0, lang);
+  // Search UI may be disabled on some pages/configs.
+  if (!$searchResults || !$searchInput) {
+    return;
   }
-  path = pathArgs.join("/");
-  request.open("GET", path, true); // Request the JSON file created during build
-  request.onload = function() {
-    if (request.status >= 200 && request.status < 400) {
-      // Success response received in requesting the index.json file
-      var documents = JSON.parse(request.responseText);
 
-      // Build the index so Lunr can search it.  The `ref` field will hold the URL
-      // to the page/post.  title, excerpt, and body will be fields searched.
-      idx = lunr(function () {
-        this.ref('ref');
-        this.field('title');
-        this.field('data');
-        this.field('description');
-        this.field('body');
-
-        // Loop through all the items in the JSON file and add them to the index
-        // so they can be searched.
-        documents.forEach(function(doc) {
-            this.add(doc);
-            resultDetails[doc.ref] = {
-              'title': doc.title,
-              'date': doc.date,
-              'description': doc.description,
-            };
-        }, this);
-      });
-    } else {
-      $searchResults.innerHTML = '<article class="mini-post"><main><p>Error loading search results...</p></main></a></article>';
+  var searchDebug =
+    window.location.search.indexOf('debugSearch=1') > -1 ||
+    window.localStorage.getItem('debugSearch') === '1';
+  function logSearch() {
+    if (searchDebug && window.console && window.console.log) {
+      window.console.log.apply(window.console, arguments);
     }
-  };
+  }
 
-  request.onerror = function() {
-    $searchResults.innerHTML = '<article class="mini-post"><main><p>Error loading search results...</p></main></a></article>';
-  };
+  var searchAttempts = [];
+  function renderSearchError(reason) {
+    var detail = '';
+    if (searchAttempts.length > 0) {
+      var last = searchAttempts[searchAttempts.length - 1];
+      detail = ' Last attempt: ' + last.path + ' (' + last.status + ').';
+    }
+    $searchResults.innerHTML = '<article class="mini-post"><main><p>Error loading search results.' +
+      reason + detail + '</p></main></a></article>';
+    logSearch('[search] failed', reason, 'attempts', searchAttempts);
+  }
 
-  // Send the request to load the JSON
-  request.send();
+  var lang = (document.documentElement.lang || '').toLowerCase();
+  var langCode = lang.split('-')[0];
+  var pathLangMatch = (window.location.pathname || '').match(/^\/([a-z]{2})(\/|$)/i);
+  var pathLang = pathLangMatch ? pathLangMatch[1].toLowerCase() : '';
+
+  var candidatePaths = [];
+  if (pathLang) candidatePaths.push('/' + pathLang + '/index.json');
+  if (langCode) candidatePaths.push('/' + langCode + '/index.json');
+  candidatePaths.push('/index.json');
+
+  // Remove duplicates while preserving order.
+  candidatePaths = candidatePaths.filter(function (path, index, arr) {
+    return arr.indexOf(path) === index;
+  });
+
+  function buildIndex(documents) {
+    if (typeof lunr !== 'function') {
+      throw new Error('Lunr is not available');
+    }
+    idx = lunr(function () {
+      this.ref('ref');
+      this.field('title');
+      this.field('data');
+      this.field('description');
+      this.field('body');
+
+      documents.forEach(function(doc) {
+        if (!doc || !doc.ref) {
+          return;
+        }
+        this.add(doc);
+        resultDetails[doc.ref] = {
+          'title': doc.title,
+          'date': doc.date,
+          'description': doc.description,
+        };
+      }, this);
+    });
+  }
+
+  function tryLoadIndex(pathIndex) {
+    if (pathIndex >= candidatePaths.length) {
+      renderSearchError(' Tried ' + candidatePaths.length + ' index path(s).');
+      return;
+    }
+
+    var path = candidatePaths[pathIndex];
+    var request = new XMLHttpRequest();
+    request.open('GET', path, true);
+    request.onload = function() {
+      logSearch('[search] index request', path, 'status', request.status);
+      searchAttempts.push({ path: path, status: request.status });
+      if (request.status >= 200 && request.status < 400) {
+        try {
+          var documents = JSON.parse(request.responseText);
+          buildIndex(documents);
+          logSearch('[search] index loaded from', path, 'documents', documents.length);
+        } catch (e) {
+          logSearch('[search] invalid index payload at', path, e);
+          tryLoadIndex(pathIndex + 1);
+        }
+      } else {
+        tryLoadIndex(pathIndex + 1);
+      }
+    };
+    request.onerror = function() {
+      logSearch('[search] request failed for', path);
+      searchAttempts.push({ path: path, status: 'network-error' });
+      tryLoadIndex(pathIndex + 1);
+    };
+    request.send();
+  }
+
+  tryLoadIndex(0);
 
   // Register handler for the search input field
   registerSearchHandler();
@@ -146,5 +198,8 @@ function renderSearchResults(results) {
 }
 
 function search(query) {
+  if (!idx) {
+    return [];
+  }
   return idx.search(query);
 }

@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>handleiding on Notities</title><link>https://www.vandenboom.icu/tags/handleiding/</link><description>Recent content in handleiding on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Wed, 09 Mar 2022 19:18:22 +0100</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/handleiding/index.xml" rel="self" type="application/rss+xml"/><item><title>Maak een gratis website met GitHub Pages</title><link>https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/</guid><description>Maak een gratis website met GitHub
-P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via een van de Social Media Links op deze website.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Handleiding on Notities</title>
+    <link>http://localhost:1313/tags/handleiding/</link>
+    <description>Recent content in Handleiding on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Wed, 09 Mar 2022 19:18:22 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/handleiding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maak een gratis website met GitHub Pages</title>
+      <link>http://localhost:1313/blog/maak_een_website_met_github_pages/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>http://localhost:1313/blog/maak_een_website_met_github_pages/</guid>
+      <description>&lt;p&gt;Maak een gratis website met GitHub&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://vandenboom.netlify.app/images/GitHub-Pages-NL.png&#34; alt=&#34;GitHub Pages en GitHub Desktop&#34; /&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via een van de Social Media Links op deze website.&lt;/br&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

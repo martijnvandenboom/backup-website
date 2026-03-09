@@ -1,16 +1,96 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>windows on Notities</title><link>https://www.vandenboom.icu/tags/windows/</link><description>Recent content in windows on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Fri, 21 Jul 2023 17:04:59 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>How to burn an *.iso file to CD or DVD in Windows</title><link>https://www.vandenboom.icu/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</link><pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</guid><description>In File Explorer right-click on the *.ISO file and choose Properties.Then, click Change from the General tab, choose Windows Explorer, and click OK.Next, save the change by clicking Apply &amp;gt; OK Now right click on the *.ISO file and choose: Burn disc image or on: Show more options to find this.</description></item><item><title>Snelkoppeling maken met een icoontje op het bureaublad</title><link>https://www.vandenboom.icu/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</link><pubDate>Wed, 10 May 2023 19:09:51 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</guid><description>Deel 1: de snelkoppeling maken
-Ga naar de website die je handig vindt en waar je snel toegang toe wilt hebben Bijvoorbeeld: nu.nl , open in je browser: https:/www.nu.nl Klik (met de linkermuisknop) op de adresbalk waar het adres van de website staat, deze wordt nu blauw. Als het niet automatisch blauw wordt, moet je het adres selecteren en zelf blauw maken Klik (met de rechtermuisknop) op de blauwe tekst en kies voor: Kopieren Klik op het minteken om de webbrowser te minimaliseren, zodat je het bureaublad ziet Klik (met de rechtermuisknop) op het bureaublad en kies: Nieuw -&amp;gt; Snelkoppeling Klik (rechtermuisknop) in de rechthoek van de locatie en kies: Plakken Klik op volgende Geef de snelkoppeling de naam van de website en klik op: Voltooien Nu heb je je snelkoppeling Deel 2: het icoontje aanpassen naar het logo van de website</description></item><item><title>Maak een Windows - God Mode - snelkoppeling</title><link>https://www.vandenboom.icu/blog/2023-maak-een-windows-god-mode-snelkoppeling/</link><pubDate>Sun, 05 Mar 2023 13:40:14 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-maak-een-windows-god-mode-snelkoppeling/</guid><description> Klik met je rechtermuisknop op het Bureaublad Kies voor: New -&amp;gt; Folder Geef de map de naam: GodMode.{ED7BA470-8E54-465E-825C-99712043E01C} Open de map voor heel veel geavanceerde instellingen De snelkoppelingen in deze map kunnen gekopieerd worden naar bijv. het Bureaublad voor nog snellere toegang</description></item><item><title>Automatisch inloggen op een Linux server m.b.v. PuTTY onder Windows</title><link>https://www.vandenboom.icu/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</link><pubDate>Fri, 17 Feb 2023 14:51:15 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</guid><description>J﻿e kunt onder Windows met PuTTY automatisch op een Linux server inloggen door gebruik te maken van een key file. Hieronder leg ik stap voor stap uit hoe je dit doet.
-Maak een key aan: start: puttygen.exe Klik op: Generate Klik op: Save private key Ga naar PuTTY Configuration -&amp;gt; Session Laad een eerder gemaakte sessie of maak een nieuwe Ga naar: Connection -&amp;gt; SSH -&amp;gt; Auth -&amp;gt; Private key file for authentication -&amp;gt; Browse Selecteer je bestand met de private key: *.</description></item><item><title>Windows wachtwoord veranderen met behulp van een snelkoppeling</title><link>https://www.vandenboom.icu/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</link><pubDate>Thu, 16 Feb 2023 10:56:24 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</guid><description>Verander je Windows wachtwoord door gebruik te maken van een snelkoppeling op je bureaublad. (CTRL+ALT+DEL toetscombinatie door op een snelkoppeling te klikken)
-Klik met je rechtermuisknop op je bureaublad, kies voor nieuw en snelkoppeling
-Geef bij de locatie van het item het volgende commando op:
-C:\Windows\explorer.exe shell:::{2559a1f2-21d7-11d4-bdaf-00c04f60b9f0}
-Klik op: Volgende
-Geef de snelkoppeling bijv. de naam: Wachtwoord resetten
-Klik op: Voltooien</description></item><item><title>Prevent opening Windows 11 Store when typing the command python</title><link>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link><pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid><description>Step 1: Open Settings in Windows 11
-Step 2: Go to Apps
-Step 3: Go to Advanced app settings
-Step 4: Go to App execution aliases
-Step 5: Disable the option for python.exe and python3.exe</description></item><item><title>Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</title><link>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link><pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid><description>Stap 1: installeer Python
-Stap 2: zet de scripts folder en de boven liggende folder allebij in het path
-Stap 3: CMD&amp;gt; pip install pywin32</description></item><item><title>Any iMac as a second display with extended desktop</title><link>https://www.vandenboom.icu/blog/2022-imac-as-an-extened-display-with-windows/</link><pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-imac-as-an-extened-display-with-windows/</guid><description>Install Windows on your iMac and use the software utility spacedesk.
-Such a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.</description></item><item><title>Automatisch inloggen in Windows</title><link>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</guid><description>Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig. Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows? Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien. Op het bureaublad kun je al je handige programma&amp;rsquo;s bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.</description></item><item><title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title><link>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link><pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid><description>Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on Notities</title>
+    <link>http://localhost:1313/tags/windows/</link>
+    <description>Recent content in Windows on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Sun, 18 Jan 2026 18:55:54 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows packet capturing voor bijvoorbeeld een LDAPS verkeer analyse</title>
+      <link>http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</link>
+      <pubDate>Sun, 18 Jan 2026 18:55:54 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</guid>
+      <description>&lt;p&gt;Open een Windows Terminal of Command sessie As Administrator&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Check existing filters&#xA;# pktmon filter list&#xA;&#xA;Clear all filters&#xA;# pktmon filter remove&#xA;&#xA;Check capture status*&#xA;# pktmon status&#xA;&#xA;Add a filter for LDAPS&#xA;# pktmon filter add -p 636&#xA;&#xA;Start the capture&#xA;# pktmon start --etw&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Probeer opnieuw verbinding te maken met de LDAP server / Indien je een andere poort wilt monitoren herhaal dan het commando dat het netwerkverkeer genereert.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deskflow: Bedien meerdere computers met 1 keyboard en muis voor: macOS, Windows en Linux</title>
+      <link>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
+      <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
+      <description>&lt;p&gt;Met Deskflow bestuur je meerdere computers – macOS, Windows of Linux – met één muis en toetsenbord. Het werkt als een softwarematige KVM-switch (zonder video) en wordt gesponsord door Synergy. Dit programma is nog steeds actueel en goed onderhouden, met een intuïtieve interface die het gebruik simpel maakt. Tip: zet in de instellingen even TLS uit voor een soepele start.&lt;/p&gt;&#xA;&lt;p&gt;Download het via: &lt;a href=&#34;https://github.com/deskflow/deskflow/releases&#34;&gt;https://github.com/deskflow/deskflow/releases&lt;/a&gt;. Zoek naar de tag &amp;ldquo;latest&amp;rdquo; en check alle assets voor de juiste versie!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to burn an *.iso file to CD or DVD in Windows</title>
+      <link>http://localhost:1313/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</link>
+      <pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</guid>
+      <description>&lt;p&gt;In File Explorer right-click on the *.ISO file and choose Properties.&lt;/br&gt;Then, click Change from the General tab, choose Windows Explorer, and click OK.&lt;/br&gt;Next, save the change by clicking Apply &amp;gt; OK&lt;/br&gt; Now right click on the *.ISO file and choose: Burn disc image or on: Show more options to find this.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Snelkoppeling maken met een icoontje op het bureaublad</title>
+      <link>http://localhost:1313/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</link>
+      <pubDate>Wed, 10 May 2023 19:09:51 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</guid>
+      <description>&lt;p&gt;Deel 1: de snelkoppeling maken&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ga naar de website die je handig vindt en waar je snel toegang toe wilt hebben&#xA;&lt;/br&gt;Bijvoorbeeld: nu.nl , open in je browser: https:/www.nu.nl&lt;/li&gt;&#xA;&lt;li&gt;Klik (met de linkermuisknop) op de adresbalk waar het adres van de website staat, deze wordt nu blauw.&#xA;&lt;/br&gt;Als het niet automatisch blauw wordt, moet je het adres selecteren en zelf blauw maken&lt;/li&gt;&#xA;&lt;li&gt;Klik (met de rechtermuisknop) op de blauwe tekst en kies voor: Kopieren&lt;/li&gt;&#xA;&lt;li&gt;Klik op het minteken om de webbrowser te minimaliseren, zodat je het bureaublad ziet&lt;/li&gt;&#xA;&lt;li&gt;Klik (met de rechtermuisknop) op het bureaublad en kies: Nieuw -&amp;gt; Snelkoppeling&lt;/li&gt;&#xA;&lt;li&gt;Klik (rechtermuisknop) in de rechthoek van de locatie en kies: Plakken&lt;/li&gt;&#xA;&lt;li&gt;Klik op volgende&lt;/li&gt;&#xA;&lt;li&gt;Geef de snelkoppeling de naam van de website en klik op: Voltooien&#xA;&lt;/br&gt;&lt;/br&gt;Nu heb je je snelkoppeling&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Deel 2: het icoontje aanpassen naar het logo van de website&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Maak een Windows - God Mode - snelkoppeling</title>
+      <link>http://localhost:1313/blog/2023-maak-een-windows-god-mode-snelkoppeling/</link>
+      <pubDate>Sun, 05 Mar 2023 13:40:14 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-maak-een-windows-god-mode-snelkoppeling/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Klik met je rechtermuisknop op het Bureaublad&lt;/li&gt;&#xA;&lt;li&gt;Kies voor: New -&amp;gt; Folder&lt;/li&gt;&#xA;&lt;li&gt;Geef de map de naam: GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}&lt;/li&gt;&#xA;&lt;li&gt;Open de map voor heel veel geavanceerde instellingen&lt;/li&gt;&#xA;&lt;li&gt;De snelkoppelingen in deze map kunnen gekopieerd worden naar bijv. het Bureaublad voor nog snellere toegang&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Automatisch inloggen op een Linux server m.b.v. PuTTY onder Windows</title>
+      <link>http://localhost:1313/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</link>
+      <pubDate>Fri, 17 Feb 2023 14:51:15 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</guid>
+      <description>&lt;p&gt;J﻿e kunt onder Windows met PuTTY automatisch op een Linux server inloggen door gebruik te maken van een key file. Hieronder leg ik stap voor stap uit hoe je dit doet.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Maak een key aan: start: puttygen.exe&lt;/li&gt;&#xA;&lt;li&gt;Klik op: Generate&lt;/li&gt;&#xA;&lt;li&gt;Klik op: Save private key&lt;/li&gt;&#xA;&lt;li&gt;Ga naar PuTTY Configuration -&amp;gt; Session&lt;/li&gt;&#xA;&lt;li&gt;Laad een eerder gemaakte sessie of maak een nieuwe&lt;/li&gt;&#xA;&lt;li&gt;Ga naar: Connection -&amp;gt; SSH -&amp;gt; Auth -&amp;gt; Private key file for authentication -&amp;gt; Browse&lt;/li&gt;&#xA;&lt;li&gt;Selecteer je bestand met de private key: *.ppk&lt;/li&gt;&#xA;&lt;li&gt;Ga terug naar Session en klik op: Save&lt;/li&gt;&#xA;&lt;li&gt;Login op de Linux server m.b.v. de Saved Sessions en nog met je wachtwoord&lt;/li&gt;&#xA;&lt;li&gt;Maak in de home directory een nieuwe map: .ssh&lt;/li&gt;&#xA;&lt;li&gt;Geef deze map de juiste rechten: chmod 700 ~/.ssh&lt;/li&gt;&#xA;&lt;li&gt;Maak en edit het bestand authorized_keys: vi ~/ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Kopieer de Public key for pasting in de PuTTY Key Generator&lt;/li&gt;&#xA;&lt;li&gt;Plak deze in de file authorized_keys op de Linux server&lt;/li&gt;&#xA;&lt;li&gt;Save de authorized_keys file (voor vi type je :wq)&lt;/li&gt;&#xA;&lt;li&gt;Geef deze file de juiste rechten: chmod 600 ~/.ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Sluit de ingelogde sessie met PuTTY naar de Linux Server af&lt;/li&gt;&#xA;&lt;li&gt;Open de sessie opnieuw om te controleren dat je nu automatisch kunt inloggen&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Windows wachtwoord veranderen met behulp van een snelkoppeling</title>
+      <link>http://localhost:1313/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</link>
+      <pubDate>Thu, 16 Feb 2023 10:56:24 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</guid>
+      <description>&lt;p&gt;Verander je Windows wachtwoord door gebruik te maken van een snelkoppeling op je bureaublad. (CTRL+ALT+DEL toetscombinatie door op een snelkoppeling te klikken)&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik met je rechtermuisknop op je bureaublad, kies voor nieuw en snelkoppeling&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Geef bij de locatie van het item het volgende commando op:&lt;br&gt;&#xA;C:\Windows\explorer.exe shell:::{2559a1f2-21d7-11d4-bdaf-00c04f60b9f0}&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik op: Volgende&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Geef de snelkoppeling bijv. de naam: Wachtwoord resetten&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik op: Voltooien&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Prevent opening Windows 11 Store when typing the command python</title>
+      <link>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
+      <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
+      <description>&lt;p&gt;Step 1: Open Settings in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Step 2: Go to Apps&lt;/p&gt;&#xA;&lt;p&gt;Step 3: Go to Advanced app settings&lt;/p&gt;&#xA;&lt;p&gt;Step 4: Go to App execution aliases&lt;/p&gt;&#xA;&lt;p&gt;Step 5: Disable the option for python.exe and python3.exe&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</title>
+      <link>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
+      <pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
+      <description>&lt;p&gt;Stap 1: installeer Python&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: zet de scripts folder en de boven liggende folder allebij in het path&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: CMD&amp;gt; pip install pywin32&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Any iMac as a second display with extended desktop</title>
+      <link>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</link>
+      <pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</guid>
+      <description>&lt;p&gt;Install Windows on your iMac and use the software utility spacedesk.&lt;/p&gt;&#xA;&lt;p&gt;Such a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automatisch inloggen in Windows</title>
+      <link>http://localhost:1313/blog/automatisch_inloggen_in_windows/</link>
+      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/blog/automatisch_inloggen_in_windows/</guid>
+      <description>&lt;p&gt;Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig.&lt;/br&gt;&#xA;Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows?&lt;/br&gt;&#xA;Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien.&#xA;Op het bureaublad kun je al je handige programma&amp;rsquo;s bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.&#xA;Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of pincode in te hoeven toetsen.&lt;/br&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title>
+      <link>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
+      <pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
+      <description>&lt;p&gt;Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

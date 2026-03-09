@@ -18,7 +18,7 @@ share: true
 1. C﻿lose all Microsoft applications
 
 2. R﻿ename the cache folder in:\
-C:\Users\<User>\AppData\Local\Microsoft\OneNote\16.0
+C:\Users\\\<User>\AppData\Local\Microsoft\OneNote\16.0
 
 3. R﻿estart OneNote
 

@@ -4,6 +4,7 @@ description = "Notities"
 date = "2020-12-11"
 aliases = ["about-us", "about-martijn", "contact"]
 author = "van den Boom"
+url = "/about-legacy/"
 +++
 
 Notities

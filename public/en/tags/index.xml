@@ -1,1 +1,208 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Notities</title><link>https://www.vandenboom.icu/en/tags/</link><description>Recent content in Tags on Notities</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 09 Mar 2022 19:18:22 +0100</lastBuildDate><atom:link href="https://www.vandenboom.icu/en/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>create</title><link>https://www.vandenboom.icu/en/tags/create/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/create/</guid><description/></item><item><title>GitHub</title><link>https://www.vandenboom.icu/en/tags/github/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/github/</guid><description/></item><item><title>manual</title><link>https://www.vandenboom.icu/en/tags/manual/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/manual/</guid><description/></item><item><title>Pages</title><link>https://www.vandenboom.icu/en/tags/pages/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/pages/</guid><description/></item><item><title>tools</title><link>https://www.vandenboom.icu/en/tags/tools/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/tools/</guid><description/></item><item><title>tutorial</title><link>https://www.vandenboom.icu/en/tags/tutorial/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/tutorial/</guid><description/></item><item><title>utilities</title><link>https://www.vandenboom.icu/en/tags/utilities/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/utilities/</guid><description/></item><item><title>website</title><link>https://www.vandenboom.icu/en/tags/website/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/website/</guid><description/></item><item><title>actions</title><link>https://www.vandenboom.icu/en/tags/actions/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/actions/</guid><description/></item><item><title>autologon</title><link>https://www.vandenboom.icu/en/tags/autologon/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/autologon/</guid><description/></item><item><title>automatic</title><link>https://www.vandenboom.icu/en/tags/automatic/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/automatic/</guid><description/></item><item><title>automatically</title><link>https://www.vandenboom.icu/en/tags/automatically/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/automatically/</guid><description/></item><item><title>log</title><link>https://www.vandenboom.icu/en/tags/log/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/log/</guid><description/></item><item><title>login</title><link>https://www.vandenboom.icu/en/tags/login/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/login/</guid><description/></item><item><title>windows</title><link>https://www.vandenboom.icu/en/tags/windows/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/tags/windows/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Notities</title>
+    <link>http://localhost:1313/en/tags/</link>
+    <description>Recent content in Tags on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Nov 2025 15:40:22 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LAN</title>
+      <link>http://localhost:1313/en/tags/lan/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/lan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>http://localhost:1313/en/tags/network/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenVPN</title>
+      <link>http://localhost:1313/en/tags/openvpn/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/openvpn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Routing</title>
+      <link>http://localhost:1313/en/tags/routing/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/routing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Server</title>
+      <link>http://localhost:1313/en/tags/server/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/server/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systems</title>
+      <link>http://localhost:1313/en/tags/systems/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Any</title>
+      <link>http://localhost:1313/en/tags/any/</link>
+      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/any/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Compress</title>
+      <link>http://localhost:1313/en/tags/compress/</link>
+      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/compress/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loss</title>
+      <link>http://localhost:1313/en/tags/loss/</link>
+      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/loss/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Photos</title>
+      <link>http://localhost:1313/en/tags/photos/</link>
+      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/photos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Platform</title>
+      <link>http://localhost:1313/en/tags/platform/</link>
+      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/platform/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quality</title>
+      <link>http://localhost:1313/en/tags/quality/</link>
+      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/quality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Utilities</title>
+      <link>http://localhost:1313/en/tags/utilities/</link>
+      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/utilities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Without</title>
+      <link>http://localhost:1313/en/tags/without/</link>
+      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/without/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Create</title>
+      <link>http://localhost:1313/en/tags/create/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/create/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub</title>
+      <link>http://localhost:1313/en/tags/github/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manual</title>
+      <link>http://localhost:1313/en/tags/manual/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/manual/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pages</title>
+      <link>http://localhost:1313/en/tags/pages/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/pages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tools</title>
+      <link>http://localhost:1313/en/tags/tools/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/en/tags/tutorial/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Website</title>
+      <link>http://localhost:1313/en/tags/website/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/website/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Actions</title>
+      <link>http://localhost:1313/en/tags/actions/</link>
+      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/actions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Autologon</title>
+      <link>http://localhost:1313/en/tags/autologon/</link>
+      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/autologon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automatic</title>
+      <link>http://localhost:1313/en/tags/automatic/</link>
+      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/automatic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automatically</title>
+      <link>http://localhost:1313/en/tags/automatically/</link>
+      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/automatically/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Log</title>
+      <link>http://localhost:1313/en/tags/log/</link>
+      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/log/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Login</title>
+      <link>http://localhost:1313/en/tags/login/</link>
+      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/login/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/en/tags/windows/</link>
+      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/tags/windows/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

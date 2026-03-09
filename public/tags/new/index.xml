@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>new on Notities</title><link>https://www.vandenboom.icu/tags/new/</link><description>Recent content in new on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Wed, 03 Apr 2024 20:20:39 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/new/index.xml" rel="self" type="application/rss+xml"/><item><title>SSH in remote machine with SSH keys and run command in new Python 3</title><link>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</link><pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</guid><description>T﻿o make a script to run remote commands in a client server network.
-import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = ['ssh', f'{username}@{hostname}', command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(&amp;quot;Error:&amp;quot;, error) else: print(&amp;quot;Output:&amp;quot;, output) # Replace these with your actual credentials and command hostname = 'remote_host_address' username = 'your_username' command = 'ls -l' ssh_exec_command(hostname, username, command)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New on Notities</title>
+    <link>http://localhost:1313/tags/new/</link>
+    <description>Recent content in New on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Wed, 03 Apr 2024 20:20:39 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/new/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH in remote machine with SSH keys and run command in new Python 3</title>
+      <link>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</link>
+      <pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</guid>
+      <description>&lt;p&gt;T﻿o make a script to run remote commands in a client server network.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import subprocess&#xA;&#xA;def ssh_exec_command(hostname, username, command):&#xA;    ssh_cmd = [&amp;#39;ssh&amp;#39;, f&amp;#39;{username}@{hostname}&amp;#39;, command]&#xA;    ssh_process = subprocess.Popen(&#xA;        ssh_cmd,&#xA;        stdin=subprocess.PIPE,&#xA;        stdout=subprocess.PIPE,&#xA;        stderr=subprocess.PIPE,&#xA;        text=True&#xA;    )&#xA;    output, error = ssh_process.communicate()&#xA;&#xA;    if error:&#xA;        print(&amp;#34;Error:&amp;#34;, error)&#xA;    else:&#xA;        print(&amp;#34;Output:&amp;#34;, output)&#xA;&#xA;# Replace these with your actual credentials and command&#xA;hostname = &amp;#39;remote_host_address&amp;#39;&#xA;username = &amp;#39;your_username&amp;#39;&#xA;command = &amp;#39;ls -l&amp;#39;&#xA;&#xA;ssh_exec_command(hostname, username, command)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

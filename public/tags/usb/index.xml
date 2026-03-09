@@ -1,7 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>usb on Notities</title><link>https://www.vandenboom.icu/tags/usb/</link><description>Recent content in usb on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Thu, 18 Jul 2024 07:20:59 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/usb/index.xml" rel="self" type="application/rss+xml"/><item><title>Zoek de naam van je USB stick met een script</title><link>https://www.vandenboom.icu/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</link><pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</guid><description>D﻿it script kun je gebruiken voor het opvragen van de naam van je USB stick.
-De naam van je USB stick kun je gebruiken in het sudo commando van Apple om een USB installer te maken.
-S﻿tap 1: Open de Terminal applicatie
-S﻿tap 2: type: sudo echo
-S﻿tap 3: type je wachtwoord
-S﻿tap 4: kopieer onderstaande tekst en plak die in de Terminal applicatie en druk op Enter
-externe_disks=$(sudo diskutil list | grep external | awk '{print $1}') if [[ &amp;quot;$externe_disks&amp;quot; ]]; then echo &amp;quot;&amp;quot; echo &amp;quot;===&amp;quot; echo &amp;quot;Externe USB volumes:&amp;quot; for disk in $externe_disks; do #echo &amp;quot;$disk&amp;quot; sudo mount | grep $disk | awk -F' ' '$3 ~ &amp;quot;/Volumes/&amp;quot; {print $3, $4, $5, $6, $7, $8, $9, $10}' | awk -F'(' '{print $1}' | sed 's/^ *//; s/ *$//' | sed 's/ /\\ /g' done echo &amp;quot;&amp;quot; else echo &amp;quot;&amp;quot; echo &amp;quot;Er zijn geen externe USB sticks aangesloten!</description></item><item><title>Create a USB rEFIt boot disk</title><link>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</link><pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</guid><description># hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img # diskutil list # diskutil unmountDisk /dev/disk2 # sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m Using rdisk2 here seems to speed up things # diskutil eject /dev/disk2</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Usb on Notities</title>
+    <link>http://localhost:1313/tags/usb/</link>
+    <description>Recent content in Usb on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Thu, 18 Jul 2024 07:20:59 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/usb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zoek de naam van je USB stick met een script</title>
+      <link>http://localhost:1313/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</link>
+      <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</guid>
+      <description>&lt;p&gt;D﻿it script kun je gebruiken voor het opvragen van de naam van je USB stick.&lt;br&gt;&#xA;De naam van je USB stick kun je gebruiken in het sudo commando van Apple om een USB installer te maken.&lt;br&gt;&#xA;&lt;br&gt;&#xA;S﻿tap 1: Open de Terminal applicatie&lt;br&gt;&#xA;S﻿tap 2: Ga naar je home directory, type: # cd&lt;br&gt;&#xA;S﻿tap 3: Maak eventueel een directory scripts, type: # mkdir scripts&lt;br&gt;&#xA;S﻿tap 4: Ga naar de zojuist gemaakte scripts directory, type: # cd scripts&lt;br&gt;&#xA;Stap 5: Maak een bash script, type: # vim usbstick.sh&lt;br&gt;&#xA;Stap 6: Insert de volgende code:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Create a USB rEFIt boot disk</title>
+      <link>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</link>
+      <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img&#xA;# diskutil list&#xA;# diskutil unmountDisk /dev/disk2&#xA;# sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m&#xA;Using rdisk2 here seems to speed up things&#xA;&#xA;# diskutil eject /dev/disk2&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

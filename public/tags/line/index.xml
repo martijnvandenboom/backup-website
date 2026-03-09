@@ -1,7 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>line on Notities</title><link>https://www.vandenboom.icu/tags/line/</link><description>Recent content in line on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sat, 09 Mar 2024 17:34:27 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/line/index.xml" rel="self" type="application/rss+xml"/><item><title>LDAP/IPA Server command line searches</title><link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-command-line-searches/</link><pubDate>Sat, 09 Mar 2024 17:34:27 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-command-line-searches/</guid><description>$ ldapsearch -H ldap://&amp;lt;FQDN_SERVER&amp;gt;/ -b dc=,dc=com -x
-$ ldapsearch -x -LLL -H ldap:/// -b dc=,dc=com dn
-$ ldapwhoami -x -H ldap:///
-$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;cn=users,cn=accounts,dc=,dc=com&amp;rdquo; -x -W
-$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;dc=,dc=com&amp;rdquo; -x -W -s one &amp;ldquo;(&amp;amp;(objectClass=organizationalUnit)
-$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=,dc=com&amp;rsquo; -W uid=&amp;lt;ADMIN_USER&amp;gt;
-$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=,cn=users,cn=compat,dc=,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=,dc=com&amp;rsquo; -W uid=</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Line on Notities</title>
+    <link>http://localhost:1313/tags/line/</link>
+    <description>Recent content in Line on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Sat, 09 Mar 2024 17:34:27 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/line/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LDAP/IPA Server command line searches</title>
+      <link>http://localhost:1313/blog/2024-ldap-ipa-server-command-line-searches/</link>
+      <pubDate>Sat, 09 Mar 2024 17:34:27 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-command-line-searches/</guid>
+      <description>&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;FQDN_SERVER&amp;gt;/ -b dc=&lt;NETWORK&gt;,dc=com -x&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -x -LLL -H ldap:/// -b dc=&lt;NETWORK&gt;,dc=com dn&lt;/p&gt;&#xA;&lt;p&gt;$ ldapwhoami -x -H ldap:///&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -b &amp;ldquo;cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -x -W&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -b &amp;ldquo;dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -x -W -s one &amp;ldquo;(&amp;amp;(objectClass=organizationalUnit)&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -W uid=&amp;lt;ADMIN_USER&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&lt;USER&gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -W uid=&lt;USER&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

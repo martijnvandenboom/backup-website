@@ -6,49 +6,47 @@ date = "2020-12-11"
 layout = "about"
 +++
 
-Beste lezer,
+## Biografie - Martijn van den Boom
 
-In mijn professionele ontwikkelingsreis stuitte ik in mijn eerste jaar bouwkunde aan het HBO op een vak dat mijn leven voorgoed veranderde: Visual Basic programmeren. Tot mijn verbazing bleek ik hierin uit te blinken, met een indrukwekkende 9 als cijfer. Dit stond in schril contrast tot mijn prestaties in andere vakken, waar ik misschien net een mager zesje scoorde. Het was een keerpunt, een 'Eureka'-moment dat me ondubbelzinnig wees in welke richting ik moest gaan.
+Martijn van den Boom is een ervaren IT-professional met meer dan 26 jaar ervaring in informatietechnologie, infrastructuurbeheer en automatisering. In zijn loopbaan werkte hij in complexe enterprise- en overheidsomgevingen aan opdrachten voor onder andere CGI, Rijkswaterstaat, ProRail en de Gemeente 's-Hertogenbosch.
 
-Ik besloot mijn passie voor computers na te jagen en stapte over naar de opleiding Elektrotechniek. Deze keuze bood niet alleen meer mogelijkheden om mijn softwarevaardigheden te ontwikkelen, maar gaf me ook een diepgaand begrip van hardware. Het was een uitdaging die ik met open armen omhelsde, wetende dat het de zwaarste HBO-opleiding was die ik kon kiezen. Voor mij betekende dat simpelweg een nog grotere uitdaging en een kans om te groeien.
+Zijn werk richt zich op systeembeheer, automatisering, monitoring, netwerken en het ontwerpen van betrouwbare en schaalbare IT-infrastructuren.
 
-Voor mij zijn computers niet alleen een carrière, maar ook mijn grootste hobby. Ik heb het voorrecht gehad om mijn passie te veranderen in mijn dagelijkse werk. Elke dag ga ik met onverminderde energie naar mijn baan, gedreven door de mogelijkheid om te innoveren en te creëren, om zowel nieuwe als oude ideeën tot leven te brengen. Kortom, computers zijn mijn leven, en ik geniet van elke seconde van deze spannende reis.
+### Achtergrond
 
-Als voortzetting van mijn ontwikkelingsreis koester ik een sterke wens om mijn ervaringen en inzichten te delen met anderen. Ik geloof in de kracht van het delen van aantekeningen en kennis om individuen te inspireren en innovatieve ideeën te ontketenen. Mijn ambitie is om in contact te treden met gelijkgestemde personen en deel te nemen aan zinvolle gesprekken om gedachten en standpunten uit te wisselen.
+Zijn fascinatie voor computers begon tijdens zijn studie Bouwkunde (HBO) in Tilburg in de late jaren '90, toen hij in aanraking kwam met Microsoft Visual Basic. Het bouwen van kleine programma's en het automatiseren van repetitieve taken vormde het startpunt van een duurzame passie voor software en IT.
 
-Ik ben er stellig van overtuigd dat we door open communicatie en samenwerking een levendige intellectuele gemeenschap kunnen bevorderen, waar ideeën gedijen en positieve verandering in gang wordt gezet. Of het nu via online platforms, seminars of netwerkevenementen is, ik ben enthousiast om bij te dragen aan deze uitwisseling van kennis en ideeën. Ik kijk ernaar uit om anderen te inspireren en zelf geïnspireerd te worden, en zo een dynamische omgeving te creëren waarin we allemaal kunnen leren, groeien en samen innoveren.
+Die nieuwsgierigheid groeide uit tot een professionele loopbaan waarin techniek, structuur en continue verbetering centraal staan.
 
-Vriendelijke groet,
+### Kernexpertise
 
-Martijn
+- Python development
+- Ansible automation
+- Bash- en PowerShell-scripting
+- Linux systems administration
+- Netwerkbeheer en monitoringplatformen
+- CI/CD-praktijken
 
-</br>
-</br>
-<u>Toelichting:</u>
+Automatisering voor betrouwbaarheid en efficiency is daarbij een constante rode draad.
 
-In Go geschreven, is Hugo een open source statische site-generator die beschikbaar is onder de Apache Licentie 2.0. Hugo ondersteunt TOML, YAML en JSON databestandtypen, Markdown- en HTML-contentbestanden, en maakt gebruik van shortcodes om rijke inhoud toe te voegen. Andere opvallende functies zijn taxonomieën, meertalige modus, beeldverwerking, aangepaste uitvoerindelingen, HTML/CSS/JS minificatie en ondersteuning voor Sass SCSS-workflows.
+### Mentoring en onderwijs
 
-Hugo maakt gebruik van verschillende open source projecten, waaronder:
+Naast zijn professionele werkzaamheden is Martijn actief in mentoring en educatie. Als vrijwilliger gaf hij computerlessen, begeleidde hij middelbare scholieren en introduceerde hij programmeerconcepten met C# (Visual Studio) en Python (Spyder/Anaconda).
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+### Duurzaamheid en internationale projecten
 
-Hugo is ideaal voor blogs, bedrijfswebsites, creatieve portfolio's, online magazines, single page applicaties, of zelfs websites met duizenden pagina's.
+Martijn zet zich ook in voor duurzame en maatschappelijk relevante initiatieven. Een voorbeeld is een Black Soldier Fly (BSF)-project in Oeganda, ontwikkeld in samenwerking met Foundation Foods Ltd., gericht op duurzame eiwitproductie voor diervoeding en het hergebruik van organisch afval.
 
-Hugo is bedoeld voor mensen die hun eigen website met de hand willen coderen, zonder zich zorgen te maken over het opzetten van ingewikkelde runtimes, afhankelijkheden en databases.
+Daarnaast werkte hij aan het concept en ontwerp van het Planet Protection Polyethylene Waste Collection Payment System: een systeem waarbij verzamelaars polyethyleenafval inleveren bij lokale inzamelpunten en digitaal worden betaald op basis van gewicht. Het doel is zowel milieubescherming als economische kansen voor lokale gemeenschappen.
 
-Websites gebouwd met Hugo zijn extreem snel, veilig en kunnen overal worden ingezet, inclusief AWS, GitHub Pages, Heroku, Netlify en elke andere hostingprovider.
+### Persoonlijk
 
-Meer informatie en bijdragen op [GitHub](https://github.com/gohugoio).
+Martijn woont momenteel in Utrecht, Nederland, samen met zijn vrouw. Technologie, automatisering en duurzame innovatie vormen zowel in zijn werk als in zijn persoonlijke initiatieven blijvende drijfveren.
 
-</br>
-</br>
-<u>Wil je me sponsoren?</u> </br>
-<i>Het kan via:</i> </br>
-<a href='https://ko-fi.com/martijnvandenboom'>ko-fi.com/martijnvandenboom</a> </br>
-<a href='https://paypal.me/ingmacmvandenboom'>paypal.me/ingmacmvandenboom</a> </br>
-<a href='https://buymeacoffee.com/ingvdboom'>buymeacoffee.com/ingvdboom</a> </br>
-</br>
+### Sponsoring
+
+Wil je mijn werk steunen?
+
+- [ko-fi.com/martijnvandenboom](https://ko-fi.com/martijnvandenboom)
+- [paypal.me/ingmacmvandenboom](https://paypal.me/ingmacmvandenboom)
+- [buymeacoffee.com/ingvdboom](https://buymeacoffee.com/ingvdboom)

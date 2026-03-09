@@ -93,10 +93,14 @@
   {{- end -}}
   {{- .Scratch.Set "Permalink" .Permalink -}}
   {{- .Scratch.Set "Title" .Title -}}
-  {{- if .Params.Author -}}
+  {{- if .Params.author -}}
+    {{- .Scratch.Set "Author" .Params.author -}}
+  {{- else if .Params.Author -}}
     {{- .Scratch.Set "Author" .Params.Author -}}
+  {{- else if .Site.Params.author -}}
+    {{- .Scratch.Set "Author" .Site.Params.author -}}
   {{- else -}}
-    {{- .Scratch.Set "Author" .Author -}}
+    {{- .Scratch.Set "Author" "" -}}
   {{ end }}
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -156,23 +160,40 @@
     }
 
     .darkmode_button {
-      margin: 12px;
+      margin: 0;
+      border: 0;
+      border-left: 1px solid #e8ebed;
+    }
+
+    .darkmode .darkmode_button {
+      border-left-color: transparent;
+    }
+
+    .darkmode-search-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 61px;
+      height: 3.5em;
+      padding: 0;
+      margin-right: 0;
+    }
+
+    .darkmode-search-toggle i {
+      line-height: 1;
+      vertical-align: middle;
     }
 
     #theme-switch {
-      height: 34px;
-      width: 34px;
+      height: 3.5em;
+      width: 61px;
       padding: 0;
-      border-radius: 50%;
-      background-color: var(--base-variant);
+      border-radius: 0;
+      background-color: transparent;
       display: flex;
       justify-content: center;
       align-items: center;
-      /* position: fixed;
-      top: 20px;
-      right: 20px;
-      */
-      margin-right: 16px;
+      margin-right: 0;
       color: red;
     }
 
@@ -202,10 +223,11 @@
     }
 
     .absolute-position {
-      position: fixed; /* Absolutely positions the item */
-      top: 0px; /* Adjust as needed */
-      right: 112px; /* Adjust as needed */
-      z-index: 9999;
+      position: static;
+      display: flex;
+      align-items: center;
+      height: 3.5em;
+      z-index: auto;
     }
 
     html {

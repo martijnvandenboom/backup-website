@@ -1,19 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on Notities</title><link>https://www.vandenboom.icu/tags/python/</link><description>Recent content in python on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Wed, 03 Apr 2024 20:20:39 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>SSH in remote machine with SSH keys and run command in new Python 3</title><link>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</link><pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</guid><description>T﻿o make a script to run remote commands in a client server network.
-import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = ['ssh', f'{username}@{hostname}', command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(&amp;quot;Error:&amp;quot;, error) else: print(&amp;quot;Output:&amp;quot;, output) # Replace these with your actual credentials and command hostname = 'remote_host_address' username = 'your_username' command = 'ls -l' ssh_exec_command(hostname, username, command)</description></item><item><title>SSH in remote machine with SSH keys and run command in old Python 2</title><link>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</link><pubDate>Wed, 03 Apr 2024 20:12:58 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</guid><description>I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.
-import subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = ['ssh', '-i', private_key_path, '-o', 'StrictHostKeyChecking=no', f'{username}@{hostname}', command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE ) output, error = ssh_process.communicate() if error: print(&amp;quot;Error:&amp;quot;, error) else: print(&amp;quot;Output:&amp;quot;, output) # Replace these with your actual credentials and command hostname = 'remote_host_address' username = 'your_username' private_key_path = '/path/to/your/private_key' command = 'ls -l' ssh_exec_command(hostname, username, private_key_path, command)</description></item><item><title>Prevent opening Windows 11 Store when typing the command python</title><link>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link><pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid><description>Step 1: Open Settings in Windows 11
-Step 2: Go to Apps
-Step 3: Go to Advanced app settings
-Step 4: Go to App execution aliases
-Step 5: Disable the option for python.exe and python3.exe</description></item><item><title>Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</title><link>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link><pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid><description>Stap 1: installeer Python
-Stap 2: zet de scripts folder en de boven liggende folder allebij in het path
-Stap 3: CMD&amp;gt; pip install pywin32</description></item><item><title>Stel de versie van de Python interpreter in voor de extensie: Code Runner in VSCodium</title><link>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link><pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid><description># File name: version_used.py
-# This prints the version of Python being used by the Code Runner extension in VSCodium
-# Set by going to: File -&amp;gt; Preferences -&amp;gt; Settings -&amp;gt; Search Settings -&amp;gt; code-runner.executorMap -&amp;gt; Edit in settings.json
-# &amp;ldquo;python&amp;rdquo;: &amp;ldquo;/bin/python3.9 -u&amp;rdquo;,\
-# To run this script press the little play button on the top right in the editor
-import sys
-print(sys.version)</description></item><item><title>Installeer Python 3.9 op Ubuntu Linux</title><link>https://www.vandenboom.icu/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link><pubDate>Sun, 03 Apr 2022 18:55:18 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid><description>$ sudo apt install software-properties-common
-$ sudo add-apt-repository ppa:deadsnakes/ppa
-$ sudo apt update
-$ sudo apt install python3.9
-$ python3.9 —version</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Notities</title>
+    <link>http://localhost:1313/tags/python/</link>
+    <description>Recent content in Python on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Wed, 03 Apr 2024 20:20:39 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH in remote machine with SSH keys and run command in new Python 3</title>
+      <link>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</link>
+      <pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</guid>
+      <description>&lt;p&gt;T﻿o make a script to run remote commands in a client server network.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import subprocess&#xA;&#xA;def ssh_exec_command(hostname, username, command):&#xA;    ssh_cmd = [&amp;#39;ssh&amp;#39;, f&amp;#39;{username}@{hostname}&amp;#39;, command]&#xA;    ssh_process = subprocess.Popen(&#xA;        ssh_cmd,&#xA;        stdin=subprocess.PIPE,&#xA;        stdout=subprocess.PIPE,&#xA;        stderr=subprocess.PIPE,&#xA;        text=True&#xA;    )&#xA;    output, error = ssh_process.communicate()&#xA;&#xA;    if error:&#xA;        print(&amp;#34;Error:&amp;#34;, error)&#xA;    else:&#xA;        print(&amp;#34;Output:&amp;#34;, output)&#xA;&#xA;# Replace these with your actual credentials and command&#xA;hostname = &amp;#39;remote_host_address&amp;#39;&#xA;username = &amp;#39;your_username&amp;#39;&#xA;command = &amp;#39;ls -l&amp;#39;&#xA;&#xA;ssh_exec_command(hostname, username, command)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>SSH in remote machine with SSH keys and run command in old Python 2</title>
+      <link>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</link>
+      <pubDate>Wed, 03 Apr 2024 20:12:58 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</guid>
+      <description>&lt;p&gt;I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import subprocess&#xA;&#xA;def ssh_exec_command(hostname, username, private_key_path, command):&#xA;    ssh_cmd = [&amp;#39;ssh&amp;#39;, &amp;#39;-i&amp;#39;, private_key_path, &amp;#39;-o&amp;#39;, &amp;#39;StrictHostKeyChecking=no&amp;#39;, f&amp;#39;{username}@{hostname}&amp;#39;, command]&#xA;    ssh_process = subprocess.Popen(&#xA;        ssh_cmd,&#xA;        stdin=subprocess.PIPE,&#xA;        stdout=subprocess.PIPE,&#xA;        stderr=subprocess.PIPE&#xA;    )&#xA;    output, error = ssh_process.communicate()&#xA;&#xA;    if error:&#xA;        print(&amp;#34;Error:&amp;#34;, error)&#xA;    else:&#xA;        print(&amp;#34;Output:&amp;#34;, output)&#xA;&#xA;# Replace these with your actual credentials and command&#xA;hostname = &amp;#39;remote_host_address&amp;#39;&#xA;username = &amp;#39;your_username&amp;#39;&#xA;private_key_path = &amp;#39;/path/to/your/private_key&amp;#39;&#xA;command = &amp;#39;ls -l&amp;#39;&#xA;&#xA;ssh_exec_command(hostname, username, private_key_path, command)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Prevent opening Windows 11 Store when typing the command python</title>
+      <link>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
+      <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
+      <description>&lt;p&gt;Step 1: Open Settings in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Step 2: Go to Apps&lt;/p&gt;&#xA;&lt;p&gt;Step 3: Go to Advanced app settings&lt;/p&gt;&#xA;&lt;p&gt;Step 4: Go to App execution aliases&lt;/p&gt;&#xA;&lt;p&gt;Step 5: Disable the option for python.exe and python3.exe&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</title>
+      <link>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
+      <pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
+      <description>&lt;p&gt;Stap 1: installeer Python&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: zet de scripts folder en de boven liggende folder allebij in het path&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: CMD&amp;gt; pip install pywin32&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stel de versie van de Python interpreter in voor de extensie: Code Runner in VSCodium</title>
+      <link>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>
+      <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid>
+      <description>&lt;p&gt;# File name: version_used.py&lt;/p&gt;&#xA;&lt;p&gt;# This prints the version of Python being used by the Code Runner extension in VSCodium&lt;br&gt;&#xA;# Set by going to: File -&amp;gt; Preferences -&amp;gt; Settings -&amp;gt; Search Settings -&amp;gt; code-runner.executorMap -&amp;gt; Edit in settings.json&lt;br&gt;&#xA;# &amp;ldquo;python&amp;rdquo;: &amp;ldquo;/bin/python3.9 -u&amp;rdquo;,\&lt;/p&gt;&#xA;&lt;p&gt;# To run this script press the little play button on the top right in the editor&lt;/p&gt;&#xA;&lt;p&gt;import sys&lt;br&gt;&#xA;print(sys.version)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Installeer Python 3.9 op Ubuntu Linux</title>
+      <link>http://localhost:1313/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link>
+      <pubDate>Sun, 03 Apr 2022 18:55:18 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid>
+      <description>&lt;p&gt;$ sudo apt install software-properties-common&lt;/p&gt;&#xA;&lt;p&gt;$ sudo add-apt-repository ppa:deadsnakes/ppa&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install python3.9&lt;/p&gt;&#xA;&lt;p&gt;$ python3.9 —version&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

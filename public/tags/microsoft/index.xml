@@ -1,10 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>microsoft on Notities</title><link>https://www.vandenboom.icu/tags/microsoft/</link><description>Recent content in microsoft on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sun, 07 Jul 2024 20:49:33 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/microsoft/index.xml" rel="self" type="application/rss+xml"/><item><title>Putting the Microsoft EFI boot files on the EFI partition</title><link>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link><pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid><description>Boot into the Windows installer
-On the first screen press SHIFT + F10
-# diskpart # list disk # select disk 0 # list part Look for the Windows partition # select part 3 # assign letter=W # format quick fs=NTFS # list volume Look for the EFI volume # select volume 2 # assign letter=Z # exit # D: Goto the USB installer of Windows # cd D:\sources # dir install* The file install.</description></item><item><title>Microsoft maakt Office gratis beschikbaar op de website</title><link>https://www.vandenboom.icu/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</link><pubDate>Wed, 21 Jun 2023 16:46:56 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</guid><description>H﻿eb je al een Microsoft account?
-S﻿tap 1.: log in op de website: office.com
-S﻿tap 2.: klik op het icoontje met de 9 puntjes links bovenin beeld
-S﻿tap 3.: kies de office app die je wilt gebruiken
-A﻿ls je nog geen Microsoft account hebt kun je er een gratis aanmaken.
-S﻿tap 1.: ga naar de website: account.microsoft.com
-S﻿tap 2.: klik op de knop aanmelden
-S﻿tap 3.: klik op de link: Maak nu een account</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on Notities</title>
+    <link>http://localhost:1313/tags/microsoft/</link>
+    <description>Recent content in Microsoft on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Thu, 10 Apr 2025 08:48:17 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft OneNote search not working anymore</title>
+      <link>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</link>
+      <pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;C﻿lose all Microsoft applications&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;R﻿ename the cache folder in:&lt;br&gt;&#xA;C:\Users\&amp;lt;User&amp;gt;\AppData\Local\Microsoft\OneNote\16.0&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;R﻿estart OneNote&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;P﻿.S.&lt;br&gt;&#xA;D﻿on&amp;rsquo;t worry if the Notebooks seem empty, they will be regenerated.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install Microsoft Visual Studio Code in Linux from the repo</title>
+      <link>http://localhost:1313/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link>
+      <pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid>
+      <description>&lt;p&gt;F﻿ollow the below steps to install Microsoft Visual Studio Code IDE on Linux from its repository:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;sudo rpm &amp;ndash;import &lt;a href=&#34;https://packages.microsoft.com/keys/microsoft.asc&#34;&gt;https://packages.microsoft.com/keys/microsoft.asc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;sudo sh -c &amp;rsquo;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &amp;gt; /etc/yum.repos.d/vscode.repo&#39;&lt;/p&gt;&#xA;&lt;p&gt;sudo dnf install code -y&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Putting the Microsoft EFI boot files on the EFI partition</title>
+      <link>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
+      <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
+      <description>&lt;p&gt;Boot into the Windows installer&lt;/p&gt;&#xA;&lt;p&gt;On the first screen press SHIFT + F10&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&#xA;# diskpart&#xA;# list disk&#xA;# select disk 0&#xA;# list part&#xA;Look for the Windows partition&#xA;&#xA;# select part 3&#xA;# assign letter=W&#xA;# format quick fs=NTFS&#xA;# list volume&#xA;Look for the EFI volume&#xA;&#xA;# select volume 2&#xA;# assign letter=Z&#xA;# exit&#xA;&#xA;# D:&#xA;Goto the USB installer of Windows&#xA;# cd D:\sources&#xA;# dir install*&#xA;The file install.esd exists&#xA;&#xA;# dism /Get-WimInfo /WimFile:D:\Sources\install.esd&#xA;Select the Index of the version of Windows you want&#xA;&#xA;# dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\&#xA;# bcdboot W:\Windows /l en-us /s Z: /f UEFI&#xA;Shutdown your computer and remove the USB installer&#xA;Now we have the Microsoft EFI boot files in the EFI partition in its designated folder&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Follow the normal procedure of installing Windows&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microsoft maakt Office gratis beschikbaar op de website</title>
+      <link>http://localhost:1313/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</link>
+      <pubDate>Wed, 21 Jun 2023 16:46:56 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</guid>
+      <description>&lt;p&gt;H﻿eb je al een Microsoft account?&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 1.: log in op de website: office.com&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 2.: klik op het icoontje met de 9 puntjes links bovenin beeld&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 3.: kies de office app die je wilt gebruiken&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;A﻿ls je nog geen Microsoft account hebt kun je er een gratis aanmaken.&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 1.: ga naar de website: account.microsoft.com&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 2.: klik op de knop aanmelden&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 3.: klik op de link: Maak nu een account&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nieuwe on Notities</title><link>https://www.vandenboom.icu/tags/nieuwe/</link><description>Recent content in Nieuwe on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Fri, 25 Feb 2022 11:44:45 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/nieuwe/index.xml" rel="self" type="application/rss+xml"/><item><title>Nieuwe content voor je website via een webpagina</title><link>https://www.vandenboom.icu/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</link><pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</guid><description>Voeg Netlify CMS toe aan je website om nieuwe content toe te voegen via een webpagina in plaats van de command line.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nieuwe on Notities</title>
+    <link>http://localhost:1313/tags/nieuwe/</link>
+    <description>Recent content in Nieuwe on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Fri, 25 Feb 2022 11:44:45 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nieuwe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nieuwe content voor je website via een webpagina</title>
+      <link>http://localhost:1313/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</link>
+      <pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</guid>
+      <description>&lt;p&gt;Voeg Netlify CMS toe aan je website om nieuwe content toe te voegen via een webpagina in plaats van de command line.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

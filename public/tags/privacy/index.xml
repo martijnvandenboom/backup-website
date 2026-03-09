@@ -1,6 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>privacy on Notities</title><link>https://www.vandenboom.icu/tags/privacy/</link><description>Recent content in privacy on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Wed, 21 Jun 2023 17:10:45 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/privacy/index.xml" rel="self" type="application/rss+xml"/><item><title>Anoniem zoeken op het Internet, bescherm je privacy</title><link>https://www.vandenboom.icu/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</link><pubDate>Wed, 21 Jun 2023 17:10:45 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</guid><description>W﻿il je anoniem blijven als je op het Internet gaat zoeken?
-G﻿ebruik dan een andere webbrowser, de Tor Browser is speciaal ontwikkeld om anoniem te blijven.
-S﻿tap 1.: ga naar de website: https://www.torproject.org/
-S﻿tap 2.: download de Tor Browser
-S﻿tap 3.: installeer de nieuwe applicatie
-L﻿et op! Verander de grootte van het applicatie window niet, dit kan al informatie over jouw identiteit vrijgeven. Het advies, doe dit dus niet.</description></item><item><title>Rich Content</title><link>https://www.vandenboom.icu/blog/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><guid>https://www.vandenboom.icu/blog/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy on Notities</title>
+    <link>http://localhost:1313/tags/privacy/</link>
+    <description>Recent content in Privacy on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Wed, 21 Jun 2023 17:10:45 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anoniem zoeken op het Internet, bescherm je privacy</title>
+      <link>http://localhost:1313/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</link>
+      <pubDate>Wed, 21 Jun 2023 17:10:45 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</guid>
+      <description>&lt;p&gt;W﻿il je anoniem blijven als je op het Internet gaat zoeken?&lt;/p&gt;&#xA;&lt;p&gt;G﻿ebruik dan een andere webbrowser, de Tor Browser is speciaal ontwikkeld om anoniem te blijven.&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 1.: ga naar de website: &lt;a href=&#34;https://www.torproject.org/&#34;&gt;https://www.torproject.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 2.: download de Tor Browser&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 3.: installeer de nieuwe applicatie&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;L﻿et op! Verander de grootte van het applicatie window niet, dit kan al informatie over jouw identiteit vrijgeven. Het advies, doe dit dus niet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rich Content</title>
+      <link>http://localhost:1313/blog/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

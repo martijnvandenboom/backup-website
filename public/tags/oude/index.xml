@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>oude on Notities</title><link>https://www.vandenboom.icu/tags/oude/</link><description>Recent content in oude on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sun, 30 Apr 2023 12:53:36 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/oude/index.xml" rel="self" type="application/rss+xml"/><item><title>Breng een oude / 2e handse Apple Mac computer weer tot leven met OpenCore Legacy Patcher</title><link>https://www.vandenboom.icu/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</link><pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</guid><description>Is computeren je hobby en heb je altijd al een Apple Mac willen proberen? Een tip / aanrader is dan OpenCore Lagacy Patcher.
-Zie de officiele website: https://github.com/dortania/OpenCore-Legacy-Patcher/releases
-En het YouTube kanaal: https://www.youtube.com/@Mr.Macintosh
-Met deze tool kun je oudere / 2e hands en inmiddels goedkoper geworden hardware nog steeds met de nieuwste software gebruiken. Echt de moeite waard om een keer te proberen.</description></item><item><title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title><link>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link><pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid><description>Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oude on Notities</title>
+    <link>http://localhost:1313/tags/oude/</link>
+    <description>Recent content in Oude on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Sun, 30 Apr 2023 12:53:36 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/oude/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Breng een oude / 2e handse Apple Mac computer weer tot leven met OpenCore Legacy Patcher</title>
+      <link>http://localhost:1313/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</link>
+      <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</guid>
+      <description>&lt;p&gt;Is computeren je hobby en heb je altijd al een Apple Mac willen proberen? Een tip / aanrader is dan OpenCore Lagacy Patcher.&lt;/p&gt;&#xA;&lt;p&gt;Zie de officiele website: &lt;a href=&#34;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&#34;&gt;&lt;a href=&#34;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&#34;&gt;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;En het YouTube kanaal: &lt;a href=&#34;https://www.youtube.com/@Mr.Macintosh&#34;&gt;&lt;a href=&#34;https://www.youtube.com/@Mr.Macintosh&#34;&gt;https://www.youtube.com/@Mr.Macintosh&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Met deze tool kun je oudere / 2e hands en inmiddels goedkoper geworden hardware nog steeds met de nieuwste software gebruiken. Echt de moeite waard om een keer te proberen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title>
+      <link>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
+      <pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
+      <description>&lt;p&gt;Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

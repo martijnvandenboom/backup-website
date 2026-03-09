@@ -1,22 +1,81 @@
-{{- if .IsHome -}}
-  {{ $version := "2.0.0"}}
-  <div id="theme-message" style="background-color:#3c3b3b;color:#f4f4f4;margin:auto auto;padding:.25em 2em;width:75%;">
-    <p style="text-align:center;">This message, related to the development of the theme, only displays on the
-      <code>localhost</code> homepage to notify you of any important theme changes.</p>
-      <hr>
-      <h5 style="color:#f4f4f4;text-align:center;"><i class="fas fa-exclamation-triangle"></i>Version {{ $version }} - July 20, 2020<i class="fas fa-exclamation-triangle"></i></h5>
-    {{ string (partial "theme-message.md") | markdownify}}
+{{- if and .IsHome (.Site.Params.themeUpdate.enabled | default true) -}}
+  {{- $repo := .Site.Params.themeUpdate.repo | default "pacollins/hugo-future-imperfect-slim" -}}
+  {{- $currentVersion := .Site.Params.themeUpdate.currentVersion | default "2.0.0" -}}
+  {{- $currentDate := .Site.Params.themeUpdate.currentDate | default "2020-07-20" -}}
+  <div id="theme-message" style="display:none;background-color:#3c3b3b;color:#f4f4f4;margin:auto auto;padding:.25em 2em;width:75%;">
+    <p style="text-align:center;">Theme update check for <code>{{ $repo }}</code> (localhost only).</p>
+    <hr>
+    <div id="theme-message-body" style="text-align:center;margin-bottom:1em;">Checking upstream version...</div>
     <div style="text-align:center;">
-      <button onclick="removeBox()" class="button" style="color:#f4f4f4;margin-bottom:1em;">Close Notification Until Next Update</button>
+      <button id="theme-message-dismiss" class="button" style="color:#f4f4f4;margin-bottom:1em;">Close Notification Until Next Upstream Update</button>
     </div>
     <script>
-      if (window.location.href.indexOf('localhost:') < 1 || window.localStorage.getItem('HFIS-version') == '{{ $version }}') {
-        document.getElementsByTagName("body")[0].removeChild(document.getElementById("theme-message"));
-      }
-      function removeBox() {
-        window.localStorage.setItem('HFIS-version', '{{ $version }}');
-        document.getElementsByTagName("body")[0].removeChild(document.getElementById("theme-message"));
-      }
+      (function () {
+        var box = document.getElementById('theme-message');
+        var body = document.getElementById('theme-message-body');
+        var dismiss = document.getElementById('theme-message-dismiss');
+        if (!box || !body || !dismiss) return;
+
+        if (window.location.href.indexOf('localhost:') < 1) {
+          return;
+        }
+
+        var repo = {{ $repo | jsonify }};
+        var currentVersion = {{ $currentVersion | jsonify }};
+        var currentDate = new Date({{ $currentDate | jsonify }} + 'T00:00:00Z');
+        var storageKeyPrefix = 'HFIS-upstream:' + repo + ':';
+
+        function hideBox() {
+          if (box && box.parentNode) {
+            box.parentNode.removeChild(box);
+          }
+        }
+
+        fetch('https://api.github.com/repos/' + repo + '/commits?per_page=1', {
+          headers: { 'Accept': 'application/vnd.github+json' }
+        })
+          .then(function (response) {
+            if (!response.ok) throw new Error('Failed to fetch upstream data');
+            return response.json();
+          })
+          .then(function (data) {
+            if (!Array.isArray(data) || !data[0] || !data[0].sha || !data[0].commit || !data[0].commit.author) {
+              hideBox();
+              return;
+            }
+
+            var latestSha = String(data[0].sha).slice(0, 7);
+            var latestDateRaw = data[0].commit.author.date;
+            var latestDate = new Date(latestDateRaw);
+            var latestDateDisplay = isNaN(latestDate.getTime()) ? latestDateRaw : latestDate.toISOString().slice(0, 10);
+
+            if (window.localStorage.getItem(storageKeyPrefix + latestSha) === 'dismissed') {
+              hideBox();
+              return;
+            }
+
+            var hasUpdate = !isNaN(currentDate.getTime()) && !isNaN(latestDate.getTime()) && latestDate > currentDate;
+            if (!hasUpdate) {
+              hideBox();
+              return;
+            }
+
+            body.innerHTML =
+              '<strong>Newer theme revision detected.</strong><br>' +
+              'Current local baseline: v' + currentVersion + ' (' + {{ $currentDate | jsonify }} + ')<br>' +
+              'Latest upstream commit: <code>' + latestSha + '</code> (' + latestDateDisplay + ')';
+
+            dismiss.onclick = function () {
+              window.localStorage.setItem(storageKeyPrefix + latestSha, 'dismissed');
+              hideBox();
+            };
+
+            box.style.display = 'block';
+          })
+          .catch(function () {
+            hideBox();
+          });
+      })();
     </script>
   </div>
 {{- end -}}

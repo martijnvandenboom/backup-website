@@ -1,4 +1,5 @@
-{{ if .Site.DisqusShortname }}
+{{- $disqusShortname := .Site.Config.Services.Disqus.Shortname | default .Site.Params.disqusShortname -}}
+{{ if $disqusShortname }}
   <article class="post">
 
     <div id="disqus_thread"></div>
@@ -7,7 +8,7 @@
         if (window.location.hostname == "localhost")
           return;
       var d = document, s = d.createElement('script');
-      s.src = 'https://www-vandenboom-icu.disqus.com/embed.js';
+      s.src = 'https://' + {{ $disqusShortname | jsonify }} + '.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
       })();

@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Chrome on Notities</title><link>https://www.vandenboom.icu/tags/chrome/</link><description>Recent content in Chrome on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sun, 03 Apr 2022 11:51:54 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/chrome/index.xml" rel="self" type="application/rss+xml"/><item><title>Installeer de Google Chrome Web Browser op Ubuntu Linux</title><link>https://www.vandenboom.icu/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link><pubDate>Sun, 03 Apr 2022 11:51:54 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid><description>$ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-$ sudo sh -c &amp;lsquo;echo &amp;ldquo;deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main&amp;rdquo; &amp;raquo; /etc/apt/sources.list.d/google-chrome.list&amp;rsquo;
-$ sudo apt update
-$ sudo apt install google-chrome-stable</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chrome on Notities</title>
+    <link>http://localhost:1313/tags/chrome/</link>
+    <description>Recent content in Chrome on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Sun, 03 Apr 2022 11:51:54 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/chrome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installeer de Google Chrome Web Browser op Ubuntu Linux</title>
+      <link>http://localhost:1313/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link>
+      <pubDate>Sun, 03 Apr 2022 11:51:54 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid>
+      <description>&lt;p&gt;$ wget -q -O - &lt;a href=&#34;https://dl.google.com/linux/linux_signing_key.pub&#34;&gt;https://dl.google.com/linux/linux_signing_key.pub&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo sh -c &amp;rsquo;echo &amp;ldquo;deb [arch=amd64] &lt;a href=&#34;http://dl.google.com/linux/chrome/deb/&#34;&gt;http://dl.google.com/linux/chrome/deb/&lt;/a&gt; stable main&amp;rdquo; &amp;raquo; /etc/apt/sources.list.d/google-chrome.list&#39;&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install google-chrome-stable&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

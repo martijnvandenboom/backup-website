@@ -1,5 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>extended on Notities</title><link>https://www.vandenboom.icu/tags/extended/</link><description>Recent content in extended on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sun, 26 Nov 2023 15:16:27 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/extended/index.xml" rel="self" type="application/rss+xml"/><item><title>macOS desktop extended over 3 schermen: iMac, MacBook en iPad</title><link>https://www.vandenboom.icu/blog/2023-macos-desktop-extended-over-3-schermen/</link><pubDate>Sun, 26 Nov 2023 15:16:27 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-macos-desktop-extended-over-3-schermen/</guid><description>In de setup die ik gebruik heb ik de volgende 3 apparaten:
-iMac 27” late 2015 met OpenCore Legacy Patcher Sonoma: 14.1.1 MacBook Pro 15” late 2016 met OpenCore Legacy Patcher Sonoma: 14.1.1 iPad 10.2” 7th Gen met iPadOS-versie: 17.1.1 Ze zijn op hetzelfde WiFi netwerk verbonden.
-Stappen:
-Op de iMac ga naar: System Settings -&amp;gt; Displays Klik op het plusje rechts naast de Built-in Display Kies onder Mirror or Extend to: MacBook Pro Kies onder Link keyboard and mouse to: iPad Nu zie je onder de Displays de 3 schermen, maar het is nog niet extended over de 3 Klik op de iPad Kies bij de optie: “Use as” - voor: Extend or mirrored display Nu zie je op alle 3 de apparaten het zelfde bureaublad En kun je applicaties schuiven vanaf de iMac naar de MacBook of de iPad</description></item><item><title>Any iMac as a second display with extended desktop</title><link>https://www.vandenboom.icu/blog/2022-imac-as-an-extened-display-with-windows/</link><pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-imac-as-an-extened-display-with-windows/</guid><description>Install Windows on your iMac and use the software utility spacedesk.
-Such a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Extended on Notities</title>
+    <link>http://localhost:1313/tags/extended/</link>
+    <description>Recent content in Extended on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Sun, 26 Nov 2023 15:16:27 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/extended/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS desktop extended over 3 schermen: iMac, MacBook en iPad</title>
+      <link>http://localhost:1313/blog/2023-macos-desktop-extended-over-3-schermen/</link>
+      <pubDate>Sun, 26 Nov 2023 15:16:27 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-macos-desktop-extended-over-3-schermen/</guid>
+      <description>&lt;p&gt;In de setup die ik gebruik heb ik de volgende 3 apparaten:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;iMac 27” late 2015 met OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;MacBook Pro 15” late 2016 met OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;iPad 10.2” 7th Gen met iPadOS-versie: 17.1.1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Ze zijn op hetzelfde WiFi netwerk verbonden.&lt;/p&gt;&#xA;&lt;p&gt;Stappen:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Op de iMac ga naar: System Settings -&amp;gt; Displays&lt;/li&gt;&#xA;&lt;li&gt;Klik op het plusje rechts naast de Built-in Display&lt;/li&gt;&#xA;&lt;li&gt;Kies onder Mirror or Extend to: MacBook Pro&lt;/li&gt;&#xA;&lt;li&gt;Kies onder Link keyboard and mouse to: iPad&lt;/li&gt;&#xA;&lt;li&gt;Nu zie je onder de Displays de 3 schermen, maar het is nog niet extended over de 3&lt;/li&gt;&#xA;&lt;li&gt;Klik op de iPad&lt;/li&gt;&#xA;&lt;li&gt;Kies bij de optie: “Use as” - voor: Extend or mirrored display&lt;/li&gt;&#xA;&lt;li&gt;Nu zie je op alle 3 de apparaten het zelfde bureaublad&lt;/li&gt;&#xA;&lt;li&gt;En kun je applicaties schuiven vanaf de iMac naar de MacBook of de iPad&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Any iMac as a second display with extended desktop</title>
+      <link>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</link>
+      <pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</guid>
+      <description>&lt;p&gt;Install Windows on your iMac and use the software utility spacedesk.&lt;/p&gt;&#xA;&lt;p&gt;Such a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

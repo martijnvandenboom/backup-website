@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>codium on Notities</title><link>https://www.vandenboom.icu/tags/codium/</link><description>Recent content in codium on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sun, 03 Apr 2022 14:22:24 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/codium/index.xml" rel="self" type="application/rss+xml"/><item><title>Installeer de editor VSCodium op Ubuntu Linux</title><link>https://www.vandenboom.icu/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</link><pubDate>Sun, 03 Apr 2022 14:22:24 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</guid><description>$ wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
-$ sudo echo &amp;lsquo;deb https://vscodium.c7.ee/debs/ vscodium main&amp;rsquo; | sudo tee &amp;ndash;append /etc/apt/sources.list.d/vscodium.list
-$ sudo apt update
-$ sudo apt install codium</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codium on Notities</title>
+    <link>http://localhost:1313/tags/codium/</link>
+    <description>Recent content in Codium on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Sun, 03 Apr 2022 14:22:24 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/codium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installeer de editor VSCodium op Ubuntu Linux</title>
+      <link>http://localhost:1313/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</link>
+      <pubDate>Sun, 03 Apr 2022 14:22:24 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</guid>
+      <description>&lt;p&gt;$ wget -qO - &lt;a href=&#34;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&#34;&gt;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo echo &amp;lsquo;deb &lt;a href=&#34;https://vscodium.c7.ee/debs/&#34;&gt;https://vscodium.c7.ee/debs/&lt;/a&gt; vscodium main&amp;rsquo; | sudo tee &amp;ndash;append /etc/apt/sources.list.d/vscodium.list&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install codium&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

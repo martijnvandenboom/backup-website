@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>programma on Notities</title><link>https://www.vandenboom.icu/tags/programma/</link><description>Recent content in programma on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Wed, 31 Jan 2024 20:54:45 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/programma/index.xml" rel="self" type="application/rss+xml"/><item><title>Maak een Zombie proces in Linux m.b.v. een C programma</title><link>https://www.vandenboom.icu/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link><pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid><description>Hierbij de broncode van een C programma om een Zombie proces in Linux te maken en deze te kunnen analyseren.
-vim create_zombie_process.c #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;sys/types.h&amp;gt; #include &amp;lt;unistd.h&amp;gt; int main () { pid_t child_pid; child_pid = fork (); if (child_pid &amp;gt; 0) { sleep (60); } else { exit (0); } return 0; } C﻿ompileer de C broncode in een uitvoerbaar programma:
-gcc create_zombie_process.c S﻿tart het programma:
-./a.out O﻿pen een tweede Terminal en bekijk de proces lijst, hier zie je nu een proces met een STAT: Z en de tekst: defunct</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programma on Notities</title>
+    <link>http://localhost:1313/tags/programma/</link>
+    <description>Recent content in Programma on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Wed, 31 Jan 2024 20:54:45 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/programma/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maak een Zombie proces in Linux m.b.v. een C programma</title>
+      <link>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link>
+      <pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
+      <description>&lt;p&gt;Hierbij de broncode van een C programma om een Zombie proces in Linux te maken en deze te kunnen analyseren.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#include &amp;lt;stdlib.h&amp;gt;&#xA;#include &amp;lt;sys/types.h&amp;gt;&#xA;#include &amp;lt;unistd.h&amp;gt;&#xA;&#xA;int main ()&#xA;{&#xA;  pid_t child_pid;&#xA;&#xA;  child_pid = fork ();&#xA;  if (child_pid &amp;gt; 0) {&#xA;    sleep (60);&#xA;  }&#xA;  else {&#xA;    exit (0);&#xA;  }&#xA;  return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;C﻿ompileer de C broncode in een uitvoerbaar programma:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gcc create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;S﻿tart het programma:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./a.out&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O﻿pen een tweede Terminal en bekijk de proces lijst, hier zie je nu een proces met een STAT: Z en de tekst: defunct&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

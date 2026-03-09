@@ -1,8 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>refit on Notities</title><link>https://www.vandenboom.icu/tags/refit/</link><description>Recent content in refit on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Sun, 07 Jul 2024 20:45:53 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/refit/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a USB rEFIt boot disk</title><link>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</link><pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</guid><description># hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img # diskutil list # diskutil unmountDisk /dev/disk2 # sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m Using rdisk2 here seems to speed up things # diskutil eject /dev/disk2</description></item><item><title>rEFIt installation to EFI partition of an iMac</title><link>https://www.vandenboom.icu/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link><pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid><description>F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac
-D﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below
-B﻿efore you do the bless command disable the SIP
-Boot in recovery mode
-#﻿ csrutil status
-#﻿ csrutil disable
-#﻿ reboot
-sudo mkdir /efi sudo mount -t msdos /dev/disk0s1 /efi sudo bless --mount /efi --setBoot --file /efi/EFI/refit/refit.efi --labelfile /efi/EFI/refit/refit.vollabel</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Refit on Notities</title>
+    <link>http://localhost:1313/tags/refit/</link>
+    <description>Recent content in Refit on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Sun, 07 Jul 2024 20:45:53 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/refit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a USB rEFIt boot disk</title>
+      <link>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</link>
+      <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img&#xA;# diskutil list&#xA;# diskutil unmountDisk /dev/disk2&#xA;# sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m&#xA;Using rdisk2 here seems to speed up things&#xA;&#xA;# diskutil eject /dev/disk2&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>rEFIt installation to EFI partition of an iMac</title>
+      <link>http://localhost:1313/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link>
+      <pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid>
+      <description>&lt;p&gt;F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac&lt;/p&gt;&#xA;&lt;p&gt;D﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below&lt;br&gt;&#xA;&lt;br&gt;&#xA;B﻿efore you do the bless command disable the SIP&lt;br&gt;&#xA;Boot in recovery mode&lt;br&gt;&#xA;#﻿ csrutil status&lt;br&gt;&#xA;#﻿ csrutil disable&lt;br&gt;&#xA;#﻿ reboot&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mkdir /efi&#xA;&#xA;sudo mount -t msdos /dev/disk0s1 /efi&#xA;&#xA;sudo bless --mount /efi --setBoot --file /efi/EFI/refit/refit.efi --labelfile /efi/EFI/refit/refit.vollabel&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

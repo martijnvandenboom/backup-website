@@ -1,13 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>command on Notities</title><link>https://www.vandenboom.icu/tags/command/</link><description>Recent content in command on Notities</description><generator>Hugo -- gohugo.io</generator><language>nl</language><lastBuildDate>Wed, 03 Apr 2024 20:12:58 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/command/index.xml" rel="self" type="application/rss+xml"/><item><title>SSH in remote machine with SSH keys and run command in old Python 2</title><link>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</link><pubDate>Wed, 03 Apr 2024 20:12:58 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</guid><description>I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.
-import subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = ['ssh', '-i', private_key_path, '-o', 'StrictHostKeyChecking=no', f'{username}@{hostname}', command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE ) output, error = ssh_process.communicate() if error: print(&amp;quot;Error:&amp;quot;, error) else: print(&amp;quot;Output:&amp;quot;, output) # Replace these with your actual credentials and command hostname = 'remote_host_address' username = 'your_username' private_key_path = '/path/to/your/private_key' command = 'ls -l' ssh_exec_command(hostname, username, private_key_path, command)</description></item><item><title>LDAP/IPA Server command line searches</title><link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-command-line-searches/</link><pubDate>Sat, 09 Mar 2024 17:34:27 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-command-line-searches/</guid><description>$ ldapsearch -H ldap://&amp;lt;FQDN_SERVER&amp;gt;/ -b dc=,dc=com -x
-$ ldapsearch -x -LLL -H ldap:/// -b dc=,dc=com dn
-$ ldapwhoami -x -H ldap:///
-$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;cn=users,cn=accounts,dc=,dc=com&amp;rdquo; -x -W
-$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;dc=,dc=com&amp;rdquo; -x -W -s one &amp;ldquo;(&amp;amp;(objectClass=organizationalUnit)
-$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=,dc=com&amp;rsquo; -W uid=&amp;lt;ADMIN_USER&amp;gt;
-$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=,cn=users,cn=compat,dc=,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=,dc=com&amp;rsquo; -W uid=</description></item><item><title>The Linux mlocate command on macOS</title><link>https://www.vandenboom.icu/blog/2023-the-linux-mlocate-command-under-macos/</link><pubDate>Wed, 27 Sep 2023 17:40:13 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-the-linux-mlocate-command-under-macos/</guid><description>The Linux mlocate command under macOS
-sudo /usr/libexec/locate.updatedb sudo ln -s /usr/libexec/locate.updatedb /usr/local/bin/updatedb</description></item><item><title>Prevent opening Windows 11 Store when typing the command python</title><link>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link><pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid><description>Step 1: Open Settings in Windows 11
-Step 2: Go to Apps
-Step 3: Go to Advanced app settings
-Step 4: Go to App execution aliases
-Step 5: Disable the option for python.exe and python3.exe</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Command on Notities</title>
+    <link>http://localhost:1313/tags/command/</link>
+    <description>Recent content in Command on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Wed, 03 Apr 2024 20:12:58 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/command/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH in remote machine with SSH keys and run command in old Python 2</title>
+      <link>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</link>
+      <pubDate>Wed, 03 Apr 2024 20:12:58 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</guid>
+      <description>&lt;p&gt;I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import subprocess&#xA;&#xA;def ssh_exec_command(hostname, username, private_key_path, command):&#xA;    ssh_cmd = [&amp;#39;ssh&amp;#39;, &amp;#39;-i&amp;#39;, private_key_path, &amp;#39;-o&amp;#39;, &amp;#39;StrictHostKeyChecking=no&amp;#39;, f&amp;#39;{username}@{hostname}&amp;#39;, command]&#xA;    ssh_process = subprocess.Popen(&#xA;        ssh_cmd,&#xA;        stdin=subprocess.PIPE,&#xA;        stdout=subprocess.PIPE,&#xA;        stderr=subprocess.PIPE&#xA;    )&#xA;    output, error = ssh_process.communicate()&#xA;&#xA;    if error:&#xA;        print(&amp;#34;Error:&amp;#34;, error)&#xA;    else:&#xA;        print(&amp;#34;Output:&amp;#34;, output)&#xA;&#xA;# Replace these with your actual credentials and command&#xA;hostname = &amp;#39;remote_host_address&amp;#39;&#xA;username = &amp;#39;your_username&amp;#39;&#xA;private_key_path = &amp;#39;/path/to/your/private_key&amp;#39;&#xA;command = &amp;#39;ls -l&amp;#39;&#xA;&#xA;ssh_exec_command(hostname, username, private_key_path, command)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>LDAP/IPA Server command line searches</title>
+      <link>http://localhost:1313/blog/2024-ldap-ipa-server-command-line-searches/</link>
+      <pubDate>Sat, 09 Mar 2024 17:34:27 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-command-line-searches/</guid>
+      <description>&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;FQDN_SERVER&amp;gt;/ -b dc=&lt;NETWORK&gt;,dc=com -x&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -x -LLL -H ldap:/// -b dc=&lt;NETWORK&gt;,dc=com dn&lt;/p&gt;&#xA;&lt;p&gt;$ ldapwhoami -x -H ldap:///&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -b &amp;ldquo;cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -x -W&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -b &amp;ldquo;dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -x -W -s one &amp;ldquo;(&amp;amp;(objectClass=organizationalUnit)&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -W uid=&amp;lt;ADMIN_USER&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&lt;USER&gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -W uid=&lt;USER&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Linux mlocate command on macOS</title>
+      <link>http://localhost:1313/blog/2023-the-linux-mlocate-command-under-macos/</link>
+      <pubDate>Wed, 27 Sep 2023 17:40:13 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-the-linux-mlocate-command-under-macos/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;The Linux mlocate command under macOS&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo /usr/libexec/locate.updatedb&#xA;&#xA;sudo ln -s /usr/libexec/locate.updatedb /usr/local/bin/updatedb&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Prevent opening Windows 11 Store when typing the command python</title>
+      <link>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
+      <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
+      <description>&lt;p&gt;Step 1: Open Settings in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Step 2: Go to Apps&lt;/p&gt;&#xA;&lt;p&gt;Step 3: Go to Advanced app settings&lt;/p&gt;&#xA;&lt;p&gt;Step 4: Go to App execution aliases&lt;/p&gt;&#xA;&lt;p&gt;Step 5: Disable the option for python.exe and python3.exe&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

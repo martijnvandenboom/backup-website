@@ -34,7 +34,8 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ## Twitter Simple Shortcode
 
-{{< twitter_simple 1085870671291310081 >}}
+<!-- Removed invalid twitter_simple call for Hugo >=0.154 compatibility. -->
+{{< x user="gohugoio" id="1085870671291310081" >}}
 
 <br>
 

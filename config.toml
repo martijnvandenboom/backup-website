@@ -4,17 +4,19 @@ baseurl                 = "https://www.vandenboom.icu/"
 DefaultContentLanguage  = "nl"
 title                   = "Notities"
 theme                   = "hugo-future-imperfect-slim"
-paginate                = 6
 disqusShortname         = "www-vandenboom-icu"
 googleAnalytics         = "G-PX9BKD4YYT"
 pluralizeListTitles     = false
 disableLanguages        = []
 
-[permalinks]
-  archive = "/archive/"
+[pagination]
+  pagerSize             = 6
 
 # Build robots.txt file
 enableRobotsTXT         = true
+
+[permalinks]
+  archive = "/archive/"
 
 [markup.goldmark.renderer]
   unsafe                = true
@@ -36,6 +38,13 @@ enableRobotsTXT         = true
   removeBlur            = false
   socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
   hideEmptyStats        = false
+  section               = "archive"
+
+  [params.themeUpdate]
+    enabled             = false
+    repo                = "pacollins/hugo-future-imperfect-slim"
+    currentVersion      = "2.0.0"
+    currentDate         = "2020-07-20"
 
   [params.meta]
     description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
@@ -49,7 +58,7 @@ enableRobotsTXT         = true
   [params.header]
     navbarTitle         = "Notities"
     dynamicTitles       = true
-    searchMenu          = false
+    searchMenu          = true
     shareMenu           = true
     languageMenu        = true
 
@@ -88,8 +97,6 @@ enableRobotsTXT         = true
     [params.staticman.recaptcha]
       siteKey           = "6LeYtQYaAAAAAIRQjBkZTA59iEa3OBI3hxWWMFx_"
       encryptedKey      = "6LeYtQYaAAAAAK5CSKSbh_UvF5_ngEi5VS14GYqm"
-
-section = "archive"
 
 [menu]
 
@@ -217,7 +224,7 @@ section = "archive"
     LanguageName        = "English"
     weight              = 1
 
-[social]
+[params.Social]
   # Coding Communities
   github                = "martijnvandenboom"
   #gitlab                 = ""
