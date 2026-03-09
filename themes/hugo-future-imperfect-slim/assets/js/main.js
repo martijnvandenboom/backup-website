@@ -1,6 +1,7 @@
 // Flyout Menu Functions
 var toggles = {
   ".search-toggle": "#search-input",
+  ".theme-toggle": "#theme-menu",
   ".lang-toggle": "#lang-menu",
   ".share-toggle": "#share-menu",
   ".nav-toggle": "#site-nav-menu"
@@ -22,7 +23,7 @@ $.each(toggles, function(toggle, menu) {
 
 // Click anywhere outside a flyout to close
 $(document).on("click", function(e) {
-  if ($(e.target).is(".lang-toggle, .lang-toggle span, #lang-menu, .share-toggle, .share-toggle i, #share-menu, .search-toggle, .search-toggle i, #search-input, #search-results .mini-post, .nav-toggle, .nav-toggle i, #site-nav") === false) {
+  if ($(e.target).closest(".lang-toggle, #lang-menu, .share-toggle, #share-menu, .search-toggle, #search-input, #search-results .mini-post, .theme-toggle, #theme-menu, .nav-toggle, #site-nav").length === 0) {
     $(".menu").removeClass("active");
     $("#wrapper").removeClass('overlay');
   }

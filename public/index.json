@@ -497,17 +497,17 @@
     "body": "",
     "ref": "/posts/my-first-post/"
   },{
+    "title": "About",
+    "date": "",
+    "description": "Notities",
+    "body": "Notities\ning. M.A.C.M. (Martijn) van den Boom Computer Infrastructure Engineer ingenieur, docent en mentor Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.\nHugo makes use of a variety of open source projects including:\nhttps://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.\nHugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.\nWebsites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.\nLearn more and contribute on GitHub.\nSponsor je me? Het kan via: ko-fi.com/martijnvandenboom paypal.me/ingmacmvandenboom buymeacoffee.com/ingvdboom\n",
+    "ref": "/about-legacy/"
+  },{
     "title": "Chocolatey in Windows 10",
     "date": "",
     "description": "Commands",
     "body": "\u0026gt; choco version \u0026gt; choco update chocolatey \u0026gt; choco version all \u0026gt; choco outdated \u0026gt; choco upgrade \u0026lt;app\u0026gt; \u0026gt; choco upgrade all ",
     "ref": "/blog/december-2020/"
-  },{
-    "title": "Over",
-    "date": "",
-    "description": "Notities website",
-    "body": "Biografie Martijn is een ervaren IT-professional met meer dan 26 jaar ervaring in informatietechnologie, infrastructuurbeheer en automatisering. In zijn loopbaan werkte hij in complexe enterprise- en overheidsomgevingen aan opdrachten voor onder andere CGI, Rijkswaterstaat, ProRail en de Gemeente \u0026rsquo;s-Hertogenbosch.\nZijn werk richt zich op systeembeheer, automatisering, monitoring, netwerken en het ontwerpen van betrouwbare en schaalbare IT-infrastructuren.\nAchtergrond Zijn fascinatie voor computers begon tijdens zijn studie Bouwkunde (HBO) in Tilburg in de late jaren \u0026lsquo;90, toen hij in aanraking kwam met Microsoft Visual Basic. Het bouwen van kleine programma\u0026rsquo;s en het automatiseren van repetitieve taken vormde het startpunt van een duurzame passie voor software en IT.\nDie nieuwsgierigheid groeide uit tot een professionele loopbaan waarin techniek, structuur en continue verbetering centraal staan.\nKernexpertise Python development Ansible automation Bash- en PowerShell-scripting Linux systems administration Netwerkbeheer en monitoringplatformen CI/CD-praktijken Automatisering voor betrouwbaarheid en efficiency is daarbij een constante rode draad.\nMentoring en onderwijs Naast zijn professionele werkzaamheden is Martijn actief in mentoring en educatie. Als vrijwilliger gaf hij computerlessen, begeleidde hij middelbare scholieren en introduceerde hij programmeerconcepten met C# (Visual Studio) en Python (Spyder/Anaconda).\nDuurzaamheid en internationale projecten Martijn zet zich ook in voor duurzame en maatschappelijk relevante initiatieven. Een voorbeeld is een Black Soldier Fly (BSF)-project in Oeganda, ontwikkeld in samenwerking met Foundation Foods Ltd., gericht op duurzame eiwitproductie voor diervoeding en het hergebruik van organisch afval.\nDaarnaast werkte hij aan het concept en ontwerp van het Planet Protection Polyethylene Waste Collection Payment System: een systeem waarbij verzamelaars polyethyleenafval inleveren bij lokale inzamelpunten en digitaal worden betaald op basis van gewicht. Het doel is zowel milieubescherming als economische kansen voor lokale gemeenschappen.\nPersoonlijk Martijn woont momenteel in Utrecht, Nederland, samen met zijn vrouw. Technologie, automatisering en duurzame innovatie vormen zowel in zijn werk als in zijn persoonlijke initiatieven blijvende drijfveren.\nSponsoring Wil je mijn werk steunen?\nko-fi.com/martijnvandenboom paypal.me/ingmacmvandenboom buymeacoffee.com/ingvdboom ",
-    "ref": "/about/"
   },{
     "title": "Markdown Syntax Guide",
     "date": "",

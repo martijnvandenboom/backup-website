@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="nl">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8">
     <style>
         @keyframes rotate {
@@ -59,7 +59,7 @@
   <meta property="og:title" content="Over">
   <meta property="og:description" content="Notities website">
   <meta property="description" content="Notities website">
-  <meta property="og:url" content="http://localhost:1313/about/">
+  <meta property="og:url" content="https://www.vandenboom.icu/about/">
   <meta property="og:type" content="article">
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
@@ -187,15 +187,19 @@
      fill: #2eb8ac;
     }
 
-    #theme-switch svg:last-child {
+    #theme-switch svg {
       display: none;
     }
 
-    .darkmode #theme-switch svg:first-child {
-      display: none;
+    .theme-pref-system #theme-switch svg:nth-child(1) {
+      display: block;
     }
 
-    .darkmode #theme-switch svg:last-child {
+    .theme-pref-dark #theme-switch svg:nth-child(2) {
+      display: block;
+    }
+
+    .theme-pref-light #theme-switch svg:nth-child(3) {
       display: block;
     }
 
@@ -204,7 +208,51 @@
       display: flex;
       align-items: center;
       height: 3.5em;
+      position: relative;
       z-index: auto;
+    }
+
+    .theme-menu {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 2px);
+      background-color: var(--base-color);
+      border: 1px solid #e8ebed;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+      min-width: 190px;
+      padding: 6px 0;
+      display: none;
+      z-index: 10001;
+    }
+
+    .theme-menu.active {
+      display: block;
+    }
+
+    .theme-option {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      font-size: 0.78em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .theme-option:hover,
+    .theme-option.theme-option-active {
+      background: rgba(46, 184, 172, 0.15);
+      color: #2eb8ac;
+    }
+
+    .theme-option i {
+      width: 1.1em;
+      text-align: center;
     }
 
     html {
@@ -364,10 +412,16 @@
     </menu>
     <div class="absolute-position">
       <a href="#search-input" class="nav search-toggle darkmode-search-toggle" aria-label="Search"><i class="fas fa-search fa-2x"></i></a>
-      <button class="darkmode_button" id="theme-switch" onclick="toggleDarkMode()">
+      <button class="nav darkmode_button theme-toggle" id="theme-switch" type="button" aria-haspopup="true" aria-controls="theme-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-636q-121 15-200.5 105.5T160-480q0 122 79.5 212.5T440-162Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg> 
       </button>
+      <menu id="theme-menu" class="menu theme-menu">
+        <button type="button" class="theme-option" data-theme="light"><i class="fas fa-moon"></i><span>Light mode</span></button>
+        <button type="button" class="theme-option" data-theme="dark"><i class="fas fa-sun"></i><span>Dark mode</span></button>
+        <button type="button" class="theme-option" data-theme="system"><i class="fas fa-adjust"></i><span>Auto mode</span></button>
+      </menu>
     </div>
     <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
     <a href="#lang-menu" class="nav lang-toggle" lang="nl">nl</a>
@@ -380,7 +434,7 @@
   
   <a href="#" lang="nl" class="nav link active">Nederlands (nl)</a>
   
-      <a href="http://localhost:1313/en/about/" lang="en" class="nav link">English (en)</a>
+      <a href="https://www.vandenboom.icu/en/about/" lang="en" class="nav link">English (en)</a>
     
   
 
@@ -398,37 +452,37 @@
 
   
     
-    <a href="//x.com/share?text=Over&amp;url=http%3a%2f%2flocalhost%3a1313%2fabout%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//x.com/share?text=Over&amp;url=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>X</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fabout%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fabout%2f&amp;title=Over" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f&amp;title=Over" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fabout%2f&amp;title=Over" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f&amp;title=Over" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fabout%2f&amp;description=Over" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f&amp;description=Over" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van van%20den%20Boom&amp;body=http%3a%2f%2flocalhost%3a1313%2fabout%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van van%20den%20Boom&amp;body=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -765,7 +819,7 @@
 </div>
       <script src="/js/highlight.js"></script>
     
-    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.d3a585daa03a51703ddae9605de64f9ee66ea8f689cd3dc787b03bb264b6a23a.js" integrity="sha256-06WF2qA6UXA92ulgXeZPnuZuqPaJzT3Hh7A7smS2ojo="></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.902fea029f493fee24180403051c4ec69fe05cb0697c7a8796b5112d84a6d04c.js" integrity="sha256-kC/qAp9JP&#43;4kGAQDBRxOxp/gXLBpfHqHlrURLYSm0Ew="></script>
     <script src="/js/add-on.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9BKD4YYT"></script>
@@ -802,37 +856,79 @@
 	  }
 	</script>
 
-  <script type="text/javascript" defer>
-    let darkmode = localStorage.getItem('darkmode')
+  <script type="text/javascript">
+    (function () {
+      const themeSwitch = document.getElementById('theme-switch')
+      const themeOptions = document.querySelectorAll('.theme-option')
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+      const THEME_PREF_KEY = 'themePreference'
 
-    const themeSwitch = document.getElementById('theme-switch')
-
-    const enableDarkMode = () => {
-      document.body.classList.add('darkmode')
-      localStorage.setItem('darkmode', 'active')
-    }
-
-    const disableDarkMode = () => {
-      document.body.classList.remove('darkmode')
-      localStorage.setItem('darkmode', null)
-    }
-
-    
-    const toggleDarkMode = () => {
-      darkmode = localStorage.getItem('darkmode');
-      if (darkmode !== 'active') {
-        enableDarkMode();
-      } else {
-        disableDarkMode();
+      function getSavedThemePreference() {
+        const value = localStorage.getItem(THEME_PREF_KEY)
+        if (value === 'dark' || value === 'light' || value === 'system') {
+          return value
+        }
+        if (localStorage.getItem('darkmode') === 'active') {
+          return 'dark'
+        }
+        return 'system'
       }
-    };
 
-    
-    if (darkmode === 'active') enableDarkMode();
+      function isDarkThemeActive(preference) {
+        if (preference === 'dark') return true
+        if (preference === 'light') return false
+        return mediaQuery.matches
+      }
 
-    
-    
+      function applyThemePreference(preference) {
+        const enableDark = isDarkThemeActive(preference)
+        document.body.classList.toggle('darkmode', enableDark)
 
+        document.body.classList.remove('theme-pref-system', 'theme-pref-dark', 'theme-pref-light')
+        document.body.classList.add('theme-pref-' + preference)
+
+        localStorage.setItem(THEME_PREF_KEY, preference)
+        localStorage.removeItem('darkmode')
+
+        if (themeSwitch) {
+          const titleMap = {
+            system: 'Theme: System',
+            dark: 'Theme: Dark',
+            light: 'Theme: Light'
+          }
+          themeSwitch.setAttribute('title', titleMap[preference])
+          themeSwitch.setAttribute('aria-label', titleMap[preference])
+        }
+
+        themeOptions.forEach(function (option) {
+          option.classList.toggle('theme-option-active', option.getAttribute('data-theme') === preference)
+        })
+      }
+
+      const initialPreference = getSavedThemePreference()
+      applyThemePreference(initialPreference)
+
+      themeOptions.forEach(function (option) {
+        option.addEventListener('click', function () {
+          const selected = option.getAttribute('data-theme')
+          applyThemePreference(selected)
+        })
+      })
+
+      function handleSystemThemeChange() {
+        if (getSavedThemePreference() === 'system') {
+          applyThemePreference('system')
+        }
+      }
+
+      if (typeof mediaQuery.addEventListener === 'function') {
+        mediaQuery.addEventListener('change', handleSystemThemeChange)
+      } else if (typeof mediaQuery.addListener === 'function') {
+        mediaQuery.addListener(handleSystemThemeChange)
+      }
+
+      window.toggleDarkMode = function () {}
+    })()
   </script>
 
 

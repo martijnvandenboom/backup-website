@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Installatie on Notities</title><link>https://www.vandenboom.icu/tags/installatie/</link><description>Recent content in Installatie on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Thu, 01 Dec 2022 19:24:55 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/installatie/index.xml" rel="self" type="application/rss+xml"/><item><title>Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</title><link>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link><pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid><description>&lt;p&gt;Stap 1: installeer Python&lt;/p&gt;
-&lt;p&gt;Stap 2: zet de scripts folder en de boven liggende folder allebij in het path&lt;/p&gt;
-&lt;p&gt;Stap 3: CMD&amp;gt; pip install pywin32&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installatie on Notities</title>
+    <link>https://www.vandenboom.icu/tags/installatie/</link>
+    <description>Recent content in Installatie on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Thu, 01 Dec 2022 19:24:55 +0000</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/tags/installatie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</title>
+      <link>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
+      <pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
+      <description>&lt;p&gt;Stap 1: installeer Python&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: zet de scripts folder en de boven liggende folder allebij in het path&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: CMD&amp;gt; pip install pywin32&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

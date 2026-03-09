@@ -1,27 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Notities</title><link>https://www.vandenboom.icu/tags/docker/</link><description>Recent content in Docker on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Sat, 29 Mar 2025 20:21:32 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Installing GitLab on Docker in AlmaLinux 8.10</title><link>https://www.vandenboom.icu/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</link><pubDate>Sat, 29 Mar 2025 20:21:32 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</guid><description>&lt;p&gt;Step 1: Update System&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo dnf update
-$ sudo dnf install epel-release
-$ sudo /usr/bin/crb enable
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Step 2: Install Docker from AlmaLinux Repo&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
-$ sudo dnf remove -y podman podman-docker podman-plugins
-$ sudo dnf remove -y runc
-$ sudo dnf clean all
-$ sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
-$ sudo systemctl enable --now docker
-$ sudo systemctl status docker
-$ sudo usermod -aG docker $USER
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Step 3: Logout and back in&lt;/p&gt;</description></item><item><title>Concourse persistent PostgreSQL database in Docker</title><link>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</link><pubDate>Thu, 16 Jun 2022 18:50:41 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</guid><description>&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo docker-compose stop concourse-db
-
-$ sudo docker ps
-$ sudo docker cp -a &amp;lt;docker postgresql database id&amp;gt;:/database .\
-
-$ vim docker-compose.yml
-	image: postgres
-	volumes: \[&amp;#34;./database:/database&amp;#34;]
-	environment:
-
-$ sudo docker-compose up -d --no-deps concourse-db
-&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Notities</title>
+    <link>https://www.vandenboom.icu/tags/docker/</link>
+    <description>Recent content in Docker on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Sat, 29 Mar 2025 20:21:32 +0000</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing GitLab on Docker in AlmaLinux 8.10</title>
+      <link>https://www.vandenboom.icu/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</link>
+      <pubDate>Sat, 29 Mar 2025 20:21:32 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</guid>
+      <description>&lt;p&gt;Step 1: Update System&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo dnf update&#xA;$ sudo dnf install epel-release&#xA;$ sudo /usr/bin/crb enable&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Step 2: Install Docker from AlmaLinux Repo&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo&#xA;$ sudo dnf remove -y podman podman-docker podman-plugins&#xA;$ sudo dnf remove -y runc&#xA;$ sudo dnf clean all&#xA;$ sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin&#xA;$ sudo systemctl enable --now docker&#xA;$ sudo systemctl status docker&#xA;$ sudo usermod -aG docker $USER&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Step 3: Logout and back in&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Concourse persistent PostgreSQL database in Docker</title>
+      <link>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</link>
+      <pubDate>Thu, 16 Jun 2022 18:50:41 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo docker-compose stop concourse-db&#xA;&#xA;$ sudo docker ps&#xA;$ sudo docker cp -a &amp;lt;docker postgresql database id&amp;gt;:/database .\&#xA;&#xA;$ vim docker-compose.yml&#xA;&#x9;image: postgres&#xA;&#x9;volumes: \[&amp;#34;./database:/database&amp;#34;]&#xA;&#x9;environment:&#xA;&#xA;$ sudo docker-compose up -d --no-deps concourse-db&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

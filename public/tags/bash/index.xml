@@ -1,36 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bash on Notities</title><link>https://www.vandenboom.icu/tags/bash/</link><description>Recent content in Bash on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Thu, 18 Jul 2024 07:20:59 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Zoek de naam van je USB stick met een script</title><link>https://www.vandenboom.icu/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</link><pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</guid><description>&lt;p&gt;D﻿it script kun je gebruiken voor het opvragen van de naam van je USB stick.&lt;br&gt;
-De naam van je USB stick kun je gebruiken in het sudo commando van Apple om een USB installer te maken.&lt;br&gt;
-&lt;br&gt;
-S﻿tap 1: Open de Terminal applicatie&lt;br&gt;
-S﻿tap 2: Ga naar je home directory, type: # cd&lt;br&gt;
-S﻿tap 3: Maak eventueel een directory scripts, type: # mkdir scripts&lt;br&gt;
-S﻿tap 4: Ga naar de zojuist gemaakte scripts directory, type: # cd scripts&lt;br&gt;
-Stap 5: Maak een bash script, type: # vim usbstick.sh&lt;br&gt;
-Stap 6: Insert de volgende code:&lt;/p&gt;</description></item><item><title>Bash script met een SUCCES of FAILED melding aan het einde van de regel</title><link>https://www.vandenboom.icu/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/</link><pubDate>Wed, 31 Jan 2024 20:18:39 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/</guid><description>&lt;p&gt;Z﻿ie hieronder een voorbeeld script om aan het einde van de regel helemaal rechts uitgelijnd een SUCCES melding in het groen of een FAILED melding in het rood te krijgen.&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;#!/bin/bash
-
-# Set the message
-success_message=&amp;#34;Your command was successful&amp;#34;
-failed_message=&amp;#34;Your command failed&amp;#34;
-
-# Set the &amp;#34;OK&amp;#34; string in green
-ok=&amp;#34;$(tput setaf 2)[SUCCES]$(tput sgr0)&amp;#34;
-failed=&amp;#34;$(tput setaf 1)[FAILED]$(tput sgr0)&amp;#34;
-
-# Get the width of the terminal
-term_width=$(tput cols)+9
-
-# Calculate the number of dots needed
-success_dots_count=$((term_width - ${#success_message} - ${#ok}))
-failed_dots_count=$((term_width - ${#failed_message} - ${#failed}))
-
-# Create a string of dots for success and failed messages
-success_dots=$(printf &amp;#34;%0.s.&amp;#34; $(seq 1 $success_dots_count))
-failed_dots=$(printf &amp;#34;%0.s.&amp;#34; $(seq 1 $failed_dots_count))
-
-# Print the success message with dots and &amp;#34;OK&amp;#34; at the end of the line
-printf &amp;#34;%s%s%s\n&amp;#34; &amp;#34;$success_message &amp;#34; &amp;#34;$success_dots&amp;#34; &amp;#34; $ok&amp;#34;
-
-# Print the failed message with dots and &amp;#34;FAILED&amp;#34; at the end of the line
-printf &amp;#34;%s%s%s\n&amp;#34; &amp;#34;$failed_message &amp;#34; &amp;#34;$failed_dots&amp;#34; &amp;#34; $failed&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash on Notities</title>
+    <link>https://www.vandenboom.icu/tags/bash/</link>
+    <description>Recent content in Bash on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Thu, 18 Jul 2024 07:20:59 +0000</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zoek de naam van je USB stick met een script</title>
+      <link>https://www.vandenboom.icu/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</link>
+      <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</guid>
+      <description>&lt;p&gt;D﻿it script kun je gebruiken voor het opvragen van de naam van je USB stick.&lt;br&gt;&#xA;De naam van je USB stick kun je gebruiken in het sudo commando van Apple om een USB installer te maken.&lt;br&gt;&#xA;&lt;br&gt;&#xA;S﻿tap 1: Open de Terminal applicatie&lt;br&gt;&#xA;S﻿tap 2: Ga naar je home directory, type: # cd&lt;br&gt;&#xA;S﻿tap 3: Maak eventueel een directory scripts, type: # mkdir scripts&lt;br&gt;&#xA;S﻿tap 4: Ga naar de zojuist gemaakte scripts directory, type: # cd scripts&lt;br&gt;&#xA;Stap 5: Maak een bash script, type: # vim usbstick.sh&lt;br&gt;&#xA;Stap 6: Insert de volgende code:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bash script met een SUCCES of FAILED melding aan het einde van de regel</title>
+      <link>https://www.vandenboom.icu/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/</link>
+      <pubDate>Wed, 31 Jan 2024 20:18:39 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/</guid>
+      <description>&lt;p&gt;Z﻿ie hieronder een voorbeeld script om aan het einde van de regel helemaal rechts uitgelijnd een SUCCES melding in het groen of een FAILED melding in het rood te krijgen.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#!/bin/bash&#xA;&#xA;# Set the message&#xA;success_message=&amp;#34;Your command was successful&amp;#34;&#xA;failed_message=&amp;#34;Your command failed&amp;#34;&#xA;&#xA;# Set the &amp;#34;OK&amp;#34; string in green&#xA;ok=&amp;#34;$(tput setaf 2)[SUCCES]$(tput sgr0)&amp;#34;&#xA;failed=&amp;#34;$(tput setaf 1)[FAILED]$(tput sgr0)&amp;#34;&#xA;&#xA;# Get the width of the terminal&#xA;term_width=$(tput cols)+9&#xA;&#xA;# Calculate the number of dots needed&#xA;success_dots_count=$((term_width - ${#success_message} - ${#ok}))&#xA;failed_dots_count=$((term_width - ${#failed_message} - ${#failed}))&#xA;&#xA;# Create a string of dots for success and failed messages&#xA;success_dots=$(printf &amp;#34;%0.s.&amp;#34; $(seq 1 $success_dots_count))&#xA;failed_dots=$(printf &amp;#34;%0.s.&amp;#34; $(seq 1 $failed_dots_count))&#xA;&#xA;# Print the success message with dots and &amp;#34;OK&amp;#34; at the end of the line&#xA;printf &amp;#34;%s%s%s\n&amp;#34; &amp;#34;$success_message &amp;#34; &amp;#34;$success_dots&amp;#34; &amp;#34; $ok&amp;#34;&#xA;&#xA;# Print the failed message with dots and &amp;#34;FAILED&amp;#34; at the end of the line&#xA;printf &amp;#34;%s%s%s\n&amp;#34; &amp;#34;$failed_message &amp;#34; &amp;#34;$failed_dots&amp;#34; &amp;#34; $failed&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

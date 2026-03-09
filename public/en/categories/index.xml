@@ -1,1 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Notities</title><link>https://www.vandenboom.icu/en/categories/</link><description>Recent content in Categories on Notities</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 15 Nov 2025 15:40:22 +0100</lastBuildDate><atom:link href="https://www.vandenboom.icu/en/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux</title><link>https://www.vandenboom.icu/en/categories/linux/</link><pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/categories/linux/</guid><description/></item><item><title>Macos</title><link>https://www.vandenboom.icu/en/categories/macos/</link><pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/categories/macos/</guid><description/></item><item><title>Routing</title><link>https://www.vandenboom.icu/en/categories/routing/</link><pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/categories/routing/</guid><description/></item><item><title>Tools</title><link>https://www.vandenboom.icu/en/categories/tools/</link><pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/categories/tools/</guid><description/></item><item><title>Utilities</title><link>https://www.vandenboom.icu/en/categories/utilities/</link><pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/categories/utilities/</guid><description/></item><item><title>Windows</title><link>https://www.vandenboom.icu/en/categories/windows/</link><pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/categories/windows/</guid><description/></item><item><title>Actions</title><link>https://www.vandenboom.icu/en/categories/actions/</link><pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/categories/actions/</guid><description/></item><item><title>Manual</title><link>https://www.vandenboom.icu/en/categories/manual/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/categories/manual/</guid><description/></item><item><title>Tutorial</title><link>https://www.vandenboom.icu/en/categories/tutorial/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/categories/tutorial/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Notities</title>
+    <link>https://www.vandenboom.icu/en/categories/</link>
+    <description>Recent content in Categories on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Nov 2025 15:40:22 +0100</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://www.vandenboom.icu/en/categories/linux/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/categories/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Macos</title>
+      <link>https://www.vandenboom.icu/en/categories/macos/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/categories/macos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Routing</title>
+      <link>https://www.vandenboom.icu/en/categories/routing/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/categories/routing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tools</title>
+      <link>https://www.vandenboom.icu/en/categories/tools/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/categories/tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Utilities</title>
+      <link>https://www.vandenboom.icu/en/categories/utilities/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/categories/utilities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>https://www.vandenboom.icu/en/categories/windows/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/categories/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Actions</title>
+      <link>https://www.vandenboom.icu/en/categories/actions/</link>
+      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/categories/actions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manual</title>
+      <link>https://www.vandenboom.icu/en/categories/manual/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/categories/manual/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>https://www.vandenboom.icu/en/categories/tutorial/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/categories/tutorial/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

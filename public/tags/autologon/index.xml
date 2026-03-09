@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Autologon on Notities</title><link>https://www.vandenboom.icu/tags/autologon/</link><description>Recent content in Autologon on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Wed, 09 Mar 2022 11:58:22 +0100</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/autologon/index.xml" rel="self" type="application/rss+xml"/><item><title>Automatisch inloggen in Windows</title><link>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</guid><description>&lt;p&gt;Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig.&lt;/br&gt;
-Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows?&lt;/br&gt;
-Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien.
-Op het bureaublad kun je al je handige programma&amp;rsquo;s bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.
-Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of pincode in te hoeven toetsen.&lt;/br&gt;&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Autologon on Notities</title>
+    <link>https://www.vandenboom.icu/tags/autologon/</link>
+    <description>Recent content in Autologon on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Wed, 09 Mar 2022 11:58:22 +0100</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/tags/autologon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automatisch inloggen in Windows</title>
+      <link>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</link>
+      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</guid>
+      <description>&lt;p&gt;Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig.&lt;/br&gt;&#xA;Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows?&lt;/br&gt;&#xA;Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien.&#xA;Op het bureaublad kun je al je handige programma&amp;rsquo;s bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.&#xA;Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of pincode in te hoeven toetsen.&lt;/br&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

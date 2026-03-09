@@ -1,32 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Concourse on Notities</title><link>https://www.vandenboom.icu/tags/concourse/</link><description>Recent content in Concourse on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Thu, 16 Jun 2022 18:55:47 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/concourse/index.xml" rel="self" type="application/rss+xml"/><item><title>Concourse starting automatically at boot with systemctl service</title><link>https://www.vandenboom.icu/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</link><pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</guid><description>&lt;pre tabindex="0"&gt;&lt;code&gt;/home/martijn/Downloads/concourse
-$ curl -LO https://concourse-ci.org/docker-compose.yml
-
-$ cat /etc/systemd/system/docker-compose-concourse.service
-
-[Unit]
-Description=Docker Compose Application Service for Concourse
-Requires=docker.service
-After=docker.service
-
-[Service]
-Type=oneshot
-RemainAfterExit=yes
-WorkingDirectory=/home/martijn/Downloads/concourse
-ExecStart=/usr/bin/docker-compose up -d
-ExecStop=/usr/bin/docker-compose down
-TimeoutStartSec=0
-
-[Install]
-WantedBy=multi-user.target
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Concourse persistent PostgreSQL database in Docker</title><link>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</link><pubDate>Thu, 16 Jun 2022 18:50:41 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</guid><description>&lt;pre tabindex="0"&gt;&lt;code&gt;$ sudo docker-compose stop concourse-db
-
-$ sudo docker ps
-$ sudo docker cp -a &amp;lt;docker postgresql database id&amp;gt;:/database .\
-
-$ vim docker-compose.yml
-	image: postgres
-	volumes: \[&amp;#34;./database:/database&amp;#34;]
-	environment:
-
-$ sudo docker-compose up -d --no-deps concourse-db
-&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Concourse on Notities</title>
+    <link>https://www.vandenboom.icu/tags/concourse/</link>
+    <description>Recent content in Concourse on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Thu, 16 Jun 2022 18:55:47 +0000</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/tags/concourse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concourse starting automatically at boot with systemctl service</title>
+      <link>https://www.vandenboom.icu/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</link>
+      <pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/home/martijn/Downloads/concourse&#xA;$ curl -LO https://concourse-ci.org/docker-compose.yml&#xA;&#xA;$ cat /etc/systemd/system/docker-compose-concourse.service&#xA;&#xA;[Unit]&#xA;Description=Docker Compose Application Service for Concourse&#xA;Requires=docker.service&#xA;After=docker.service&#xA;&#xA;[Service]&#xA;Type=oneshot&#xA;RemainAfterExit=yes&#xA;WorkingDirectory=/home/martijn/Downloads/concourse&#xA;ExecStart=/usr/bin/docker-compose up -d&#xA;ExecStop=/usr/bin/docker-compose down&#xA;TimeoutStartSec=0&#xA;&#xA;[Install]&#xA;WantedBy=multi-user.target&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Concourse persistent PostgreSQL database in Docker</title>
+      <link>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</link>
+      <pubDate>Thu, 16 Jun 2022 18:50:41 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo docker-compose stop concourse-db&#xA;&#xA;$ sudo docker ps&#xA;$ sudo docker cp -a &amp;lt;docker postgresql database id&amp;gt;:/database .\&#xA;&#xA;$ vim docker-compose.yml&#xA;&#x9;image: postgres&#xA;&#x9;volumes: \[&amp;#34;./database:/database&amp;#34;]&#xA;&#x9;environment:&#xA;&#xA;$ sudo docker-compose up -d --no-deps concourse-db&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

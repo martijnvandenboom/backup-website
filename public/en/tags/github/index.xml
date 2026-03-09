@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GitHub on Notities</title><link>https://www.vandenboom.icu/en/tags/github/</link><description>Recent content in GitHub on Notities</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 09 Mar 2022 19:18:22 +0100</lastBuildDate><atom:link href="https://www.vandenboom.icu/en/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a website for free with GitHub Pages</title><link>https://www.vandenboom.icu/en/blog/maak_een_website_met_github_pages/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/blog/maak_een_website_met_github_pages/</guid><description>&lt;p&gt;Create a website for free with GitHub&lt;/br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://vandenboom.netlify.app/images/GitHub-Pages.png" alt="GitHub Pages en GitHub Desktop" /&gt;&lt;/br&gt;&lt;/p&gt;
-&lt;p&gt;P.S. Would you like somebody to help you? Feel free to send me a message on one of my Social Media Links available on this website.&lt;/br&gt;&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Notities</title>
+    <link>https://www.vandenboom.icu/en/tags/github/</link>
+    <description>Recent content in GitHub on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Mar 2022 19:18:22 +0100</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/en/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a website for free with GitHub Pages</title>
+      <link>https://www.vandenboom.icu/en/blog/maak_een_website_met_github_pages/</link>
+      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/blog/maak_een_website_met_github_pages/</guid>
+      <description>&lt;p&gt;Create a website for free with GitHub&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://vandenboom.netlify.app/images/GitHub-Pages.png&#34; alt=&#34;GitHub Pages en GitHub Desktop&#34; /&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;P.S. Would you like somebody to help you? Feel free to send me a message on one of my Social Media Links available on this website.&lt;/br&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
