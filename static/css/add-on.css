@@ -4,3 +4,16 @@
   is an official part of the theme (ex. Pull Requests) should be included in main.css
   and follow the formatting and style given.
 */
+
+/* About page: make subsection titles softer and closer to body text styling. */
+.post .about-content h3 {
+  color: inherit;
+  font-family: inherit !important;
+  font-size: 1em !important;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: normal !important;
+  line-height: 1.75;
+  margin: 1.5em 0 0.5em;
+  text-transform: none !important;
+}
