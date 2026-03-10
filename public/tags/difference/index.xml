@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Difference on Notities</title>
-    <link>https://www.vandenboom.icu/tags/difference/</link>
+    <link>http://localhost:1313/tags/difference/</link>
     <description>Recent content in Difference on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Tue, 05 Sep 2023 06:18:17 +0000</lastBuildDate>
-    <atom:link href="https://www.vandenboom.icu/tags/difference/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/difference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux locate lost storage space difference between results df and du</title>
-      <link>https://www.vandenboom.icu/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</link>
+      <link>http://localhost:1313/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</link>
       <pubDate>Tue, 05 Sep 2023 06:18:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</guid>
+      <guid>http://localhost:1313/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</guid>
       <description>&lt;p&gt;$ lsof | grep -E &amp;lsquo;^COM|deleted&amp;rsquo;&lt;/p&gt;</description>
     </item>
   </channel>

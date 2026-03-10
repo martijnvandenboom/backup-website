@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitLab on Notities</title>
-    <link>https://www.vandenboom.icu/tags/gitlab/</link>
+    <link>http://localhost:1313/tags/gitlab/</link>
     <description>Recent content in GitLab on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sat, 29 Mar 2025 20:21:32 +0000</lastBuildDate>
-    <atom:link href="https://www.vandenboom.icu/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing GitLab on Docker in AlmaLinux 8.10</title>
-      <link>https://www.vandenboom.icu/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</link>
+      <link>http://localhost:1313/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</link>
       <pubDate>Sat, 29 Mar 2025 20:21:32 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</guid>
+      <guid>http://localhost:1313/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</guid>
       <description>&lt;p&gt;Step 1: Update System&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo dnf update&#xA;$ sudo dnf install epel-release&#xA;$ sudo /usr/bin/crb enable&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Step 2: Install Docker from AlmaLinux Repo&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo&#xA;$ sudo dnf remove -y podman podman-docker podman-plugins&#xA;$ sudo dnf remove -y runc&#xA;$ sudo dnf clean all&#xA;$ sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin&#xA;$ sudo systemctl enable --now docker&#xA;$ sudo systemctl status docker&#xA;$ sudo usermod -aG docker $USER&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Step 3: Logout and back in&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Automatically on Notities</title>
-    <link>https://www.vandenboom.icu/en/tags/automatically/</link>
+    <link>http://localhost:1313/en/tags/automatically/</link>
     <description>Recent content in Automatically on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 09 Mar 2022 11:58:22 +0100</lastBuildDate>
-    <atom:link href="https://www.vandenboom.icu/en/tags/automatically/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/automatically/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automatically log in to Windows</title>
-      <link>https://www.vandenboom.icu/en/blog/automatisch_inloggen_in_windows/</link>
+      <link>http://localhost:1313/en/blog/automatisch_inloggen_in_windows/</link>
       <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/en/blog/automatisch_inloggen_in_windows/</guid>
+      <guid>http://localhost:1313/en/blog/automatisch_inloggen_in_windows/</guid>
       <description>&lt;p&gt;Entering a password or PIN is not equally convenient for everyone.&lt;/br&gt;&#xA;Do you find it annoying to enter a password or PIN every time you log in to Windows?&lt;/br&gt;&#xA;You can also automatically log in to Windows. When the computer has finished starting up, you will immediately see the desktop.&#xA;On the desktop you can make all your useful programs accessible and you have that immediately in front of you when you have turned on the computer.&#xA;You can then immediately start using the computer, without having to enter a password or PIN first.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
   </channel>

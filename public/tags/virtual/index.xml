@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virtual on Notities</title>
-    <link>https://www.vandenboom.icu/tags/virtual/</link>
+    <link>http://localhost:1313/tags/virtual/</link>
     <description>Recent content in Virtual on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Thu, 01 Dec 2022 21:20:43 +0000</lastBuildDate>
-    <atom:link href="https://www.vandenboom.icu/tags/virtual/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/virtual/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Virtual Machines on macOS Monterey OpenCore Legacy Patcher</title>
-      <link>https://www.vandenboom.icu/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</link>
+      <link>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</link>
       <pubDate>Thu, 01 Dec 2022 21:20:43 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</guid>
+      <guid>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</guid>
       <description>&lt;p&gt;Try Oracle VirtualBox version 6.1.40 the older version. In my home lab the newest version of VirtualBox 7.0.4 did not work due to the error: hv_vm_create() failed: 0xfae94001 (VERR_NEM_INIT_FAILED)&lt;/p&gt;&#xA;&lt;p&gt;In the older version this was not an issue.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title>
-      <link>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
+      <link>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
       <pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
+      <guid>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
       <description>&lt;p&gt;Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.&lt;/p&gt;</description>
     </item>
   </channel>
