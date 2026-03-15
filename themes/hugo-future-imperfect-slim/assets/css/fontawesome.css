@@ -124,7 +124,7 @@
   border-color: var(--fa-border-color, #eee);
   border-radius: var(--fa-border-radius, 0.1em);
   border-style: var(--fa-border-style, solid);
-  border-width: var(--fa-border-width, 0.08em);
+    border-width: 2px;
   padding: var(--fa-border-padding, 0.2em 0.25em 0.15em); }
 
 .fa-pull-left {

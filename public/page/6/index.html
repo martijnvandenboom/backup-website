@@ -64,7 +64,7 @@
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
   
-  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.09f54a4db138869bb013472d67306a41d1f4750b1816c0a146a6a08295a690e6.css" integrity="sha256-CfVKTbE4hpuwE0ctZzBqQdH0dQsYFsChRqaggpWmkOY="><link rel="stylesheet" href="/css/add-on.css">
+  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.0dd8bfa772807713514a7b63e90e172757a4bda106c33f98ecc55ce21e2be92e.css" integrity="sha256-Ddi/p3KAdxNRSntj6Q4XJ1ekvaEGwz&#43;Y7MVc4h4r6S4="><link rel="stylesheet" href="/css/add-on.css">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -324,25 +324,53 @@
   </style>
 
   <style>
-    #telegram-btn {
+    #telegram-btn, #back-to-top {
       position: fixed;
-      bottom: 60px;  
-      right: 8px;   
-      background-color: hsl(0, 0%, 0%);
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #000;
+      color: #fff;
       border-radius: 50%;
-      padding: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-      z-index: 9999;
+      z-index: 10000;
+      border: 2px solid #fff;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      padding: 0;
+    }
+
+    #back-to-top {
+      bottom: 20px;
+      border-bottom: 2px solid #fff;  
+    }
+
+    #telegram-btn {
+      bottom: 140px;
     }
 
     #telegram-btn svg {
-      fill: white;
-      width: 38px;  
-      height: 38px;  
+      fill: #fff;
+      width: 28px;
+      height: 28px;
     }
 
-    #telegram-btn:hover {
-      background-color: #2eb8ac;  
+    #back-to-top::before {
+      font-size: 24px;
+    }
+
+    #telegram-btn:hover, #back-to-top:hover {
+      background-color: #2eb8ac;
+      color: #fff !important;
+      border-color: #2eb8ac;
+      transform: none !important;
+    }
+
+    #telegram-btn:hover svg {
+      fill: #fff;
     }
   </style>
 
@@ -1137,7 +1165,7 @@ Op de iMac ga naar: System Settings -&gt; Displays Klik op het plusje rechts na
     <a href="https://t.me/ingvdboom" id="telegram-btn" target="_blank">
       
    
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/>
         </svg>
       
     </a>
@@ -1151,6 +1179,7 @@ Op de iMac ga naar: System Settings -&gt; Displays Klik op het plusje rechts na
     
     <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.902fea029f493fee24180403051c4ec69fe05cb0697c7a8796b5112d84a6d04c.js" integrity="sha256-kC/qAp9JP&#43;4kGAQDBRxOxp/gXLBpfHqHlrURLYSm0Ew="></script>
     <script src="/js/add-on.js"></script>
+    <script src="/js/accessibility.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9BKD4YYT"></script>
       <script>

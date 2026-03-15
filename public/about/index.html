@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="nl">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <style>
         @keyframes rotate {
@@ -55,11 +55,11 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.154.5"><meta property="og:site_name" content="Notities">
+<meta name="generator" content="Hugo 0.157.0"><meta property="og:site_name" content="Notities">
   <meta property="og:title" content="Over">
   <meta property="og:description" content="Notities website">
   <meta property="description" content="Notities website">
-  <meta property="og:url" content="https://www.vandenboom.icu/about/">
+  <meta property="og:url" content="http://localhost:1313/about/">
   <meta property="og:type" content="article">
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
@@ -82,7 +82,7 @@
   .footer {
      position: fixed;
      left: 0;
-     bottom: 0;
+      bottom: -1.125em;
      width: 25%;
      padding-left: 10px;
      font-family: source sans pro,Helvetica,sans-serif;
@@ -193,13 +193,20 @@
 
     .theme-pref-system #theme-switch svg:nth-child(1) {
       display: block;
+      fill: #050505;
+      filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.4));
     }
 
-    .theme-pref-dark #theme-switch svg:nth-child(2) {
+    .darkmode.theme-pref-system #theme-switch svg:nth-child(1) {
+      fill: #ffffff;
+      filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.6));
+    }
+
+    .theme-pref-light #theme-switch svg:nth-child(2) {
       display: block;
     }
 
-    .theme-pref-light #theme-switch svg:nth-child(3) {
+    .theme-pref-dark #theme-switch svg:nth-child(3) {
       display: block;
     }
 
@@ -319,8 +326,8 @@
   <style>
     #telegram-btn {
       position: fixed;
-      bottom: 60px;  
-      right: 8px;   
+      bottom: 80px;  
+      right: 25px;   
       background-color: hsl(0, 0%, 0%);
       border-radius: 50%;
       padding: 2px;
@@ -418,8 +425,8 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg> 
       </button>
       <menu id="theme-menu" class="menu theme-menu">
-        <button type="button" class="theme-option" data-theme="light"><i class="fas fa-moon"></i><span>Light mode</span></button>
-        <button type="button" class="theme-option" data-theme="dark"><i class="fas fa-sun"></i><span>Dark mode</span></button>
+        <button type="button" class="theme-option" data-theme="light"><i class="fas fa-sun"></i><span>Light mode</span></button>
+        <button type="button" class="theme-option" data-theme="dark"><i class="fas fa-moon"></i><span>Dark mode</span></button>
         <button type="button" class="theme-option" data-theme="system"><i class="fas fa-adjust"></i><span>Auto mode</span></button>
       </menu>
     </div>
@@ -434,7 +441,7 @@
   
   <a href="#" lang="nl" class="nav link active">Nederlands (nl)</a>
   
-      <a href="https://www.vandenboom.icu/en/about/" lang="en" class="nav link">English (en)</a>
+      <a href="http://localhost:1313/en/about/" lang="en" class="nav link">English (en)</a>
     
   
 
@@ -452,37 +459,37 @@
 
   
     
-    <a href="//x.com/share?text=Over&amp;url=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//x.com/share?text=Over&amp;url=http%3a%2f%2flocalhost%3a1313%2fabout%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>X</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fabout%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f&amp;title=Over" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fabout%2f&amp;title=Over" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f&amp;title=Over" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fabout%2f&amp;title=Over" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f&amp;description=Over" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fabout%2f&amp;description=Over" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van van%20den%20Boom&amp;body=https%3a%2f%2fwww.vandenboom.icu%2fabout%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van van%20den%20Boom&amp;body=http%3a%2f%2flocalhost%3a1313%2fabout%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -593,7 +600,7 @@
 	  </div>      
     </header>
 	  
-    <div id="content">
+    <div id="content" class="about-content">
 	  <h2 id="biografie">Biografie</h2>
 <p>Martijn is een ervaren IT-professional met meer dan 26 jaar ervaring in informatietechnologie, infrastructuurbeheer en automatisering. In zijn loopbaan werkte hij in complexe enterprise- en overheidsomgevingen aan opdrachten voor onder andere CGI, Rijkswaterstaat, ProRail en de Gemeente &rsquo;s-Hertogenbosch.</p>
 <p>Zijn werk richt zich op systeembeheer, automatisering, monitoring, netwerken en het ontwerpen van betrouwbare en schaalbare IT-infrastructuren.</p>
@@ -821,6 +828,7 @@
     
     <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.902fea029f493fee24180403051c4ec69fe05cb0697c7a8796b5112d84a6d04c.js" integrity="sha256-kC/qAp9JP&#43;4kGAQDBRxOxp/gXLBpfHqHlrURLYSm0Ew="></script>
     <script src="/js/add-on.js"></script>
+    <script src="/js/accessibility.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9BKD4YYT"></script>
       <script>
