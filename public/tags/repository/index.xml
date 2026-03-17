@@ -1,19 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Repository on Notities</title>
-    <link>http://localhost:1313/tags/repository/</link>
-    <description>Recent content in Repository on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Fri, 03 Jan 2025 22:23:19 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/repository/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Quick git commands to add a local repository in Visual Studio Code to GitHub</title>
-      <link>http://localhost:1313/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/</link>
-      <pubDate>Fri, 03 Jan 2025 22:23:19 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/</guid>
-      <description>&lt;p&gt;T﻿ype in the terminal of Visual Studio Code&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;#﻿ git init&lt;br&gt;&#xA;#﻿ git add .&lt;br&gt;&#xA;#﻿ git commit -m &amp;ldquo;initial commit&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;C﻿reate a new repository on GitHub&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;#﻿ git remote add origin &amp;lt;the new .git URL&amp;gt;&lt;br&gt;&#xA;Example: #﻿ git remote add orign &lt;a href=&#34;https://github.com/martijnvandenboom/Java_tools.git&#34;&gt;https://github.com/martijnvandenboom/Java_tools.git&lt;/a&gt;&lt;br&gt;&#xA;#﻿ git push -u origin main&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Repository on Notities</title><link>https://www.vandenboom.icu/tags/repository/</link><description>Recent content in Repository on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Fri, 03 Jan 2025 22:23:19 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/repository/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick git commands to add a local repository in Visual Studio Code to GitHub</title><link>https://www.vandenboom.icu/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/</link><pubDate>Fri, 03 Jan 2025 22:23:19 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/</guid><description>&lt;p&gt;T﻿ype in the terminal of Visual Studio Code&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#﻿ git init&lt;br&gt;
+#﻿ git add .&lt;br&gt;
+#﻿ git commit -m &amp;ldquo;initial commit&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;C﻿reate a new repository on GitHub&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#﻿ git remote add origin &amp;lt;the new .git URL&amp;gt;&lt;br&gt;
+Example: #﻿ git remote add orign &lt;a href="https://github.com/martijnvandenboom/Java_tools.git"&gt;https://github.com/martijnvandenboom/Java_tools.git&lt;/a&gt;&lt;br&gt;
+#﻿ git push -u origin main&lt;/p&gt;
+&lt;/blockquote&gt;</description></item></channel></rss>

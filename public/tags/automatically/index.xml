@@ -1,19 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Automatically on Notities</title>
-    <link>http://localhost:1313/tags/automatically/</link>
-    <description>Recent content in Automatically on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Thu, 16 Jun 2022 18:55:47 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/automatically/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Concourse starting automatically at boot with systemctl service</title>
-      <link>http://localhost:1313/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</link>
-      <pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/home/martijn/Downloads/concourse&#xA;$ curl -LO https://concourse-ci.org/docker-compose.yml&#xA;&#xA;$ cat /etc/systemd/system/docker-compose-concourse.service&#xA;&#xA;[Unit]&#xA;Description=Docker Compose Application Service for Concourse&#xA;Requires=docker.service&#xA;After=docker.service&#xA;&#xA;[Service]&#xA;Type=oneshot&#xA;RemainAfterExit=yes&#xA;WorkingDirectory=/home/martijn/Downloads/concourse&#xA;ExecStart=/usr/bin/docker-compose up -d&#xA;ExecStop=/usr/bin/docker-compose down&#xA;TimeoutStartSec=0&#xA;&#xA;[Install]&#xA;WantedBy=multi-user.target&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Automatically on Notities</title><link>https://www.vandenboom.icu/tags/automatically/</link><description>Recent content in Automatically on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Thu, 16 Jun 2022 18:55:47 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/automatically/index.xml" rel="self" type="application/rss+xml"/><item><title>Concourse starting automatically at boot with systemctl service</title><link>https://www.vandenboom.icu/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</link><pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</guid><description>&lt;pre tabindex="0"&gt;&lt;code&gt;/home/martijn/Downloads/concourse
+$ curl -LO https://concourse-ci.org/docker-compose.yml
+
+$ cat /etc/systemd/system/docker-compose-concourse.service
+
+[Unit]
+Description=Docker Compose Application Service for Concourse
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/martijn/Downloads/concourse
+ExecStart=/usr/bin/docker-compose up -d
+ExecStop=/usr/bin/docker-compose down
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

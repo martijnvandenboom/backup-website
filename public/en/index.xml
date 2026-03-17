@@ -1,75 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Notities</title>
-    <link>http://localhost:1313/en/</link>
-    <description>Recent content on Notities</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 15 Nov 2025 15:40:22 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Network routing to LAN systems with OpenVPN Server</title>
-      <link>http://localhost:1313/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link>
-      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
-      <guid>http://localhost:1313/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid>
-      <description>&lt;p&gt;To be able to access systems on the LAN network through the VPN tunnel of the OpenVPN server, the LAN system must know that traffic destined for the VPN subnet must be sent via the OpenVPN server. Without this additional route, return traffic will not reach the VPN clients.&lt;/p&gt;&#xA;&lt;p&gt;In this example, we use the subnet 10.0.8.0/24 as the IP range you have configured for the OpenVPN tunnel. This is the network in which all VPN clients receive an IP address. To ensure that a device on the LAN can correctly send traffic back to these VPN clients, you must add a static route on that LAN device.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Compress photos without quality loss for any platform</title>
-      <link>http://localhost:1313/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link>
-      <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>http://localhost:1313/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid>
-      <description>&lt;p&gt;P.S. Special thanks to &lt;strong&gt;Maria Isabel Rondini&lt;/strong&gt;&lt;br&gt;&#xA;She inspired this article as part of the research for her thesis, where she could use some extra attention for the tool &lt;em&gt;ImageCompressor&lt;/em&gt;.&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Do you want to make your photos smaller in size without losing quality?&lt;/br&gt;&#xA;Good news: you don’t need to install any software for that!&lt;/br&gt;&#xA;With the online tool &lt;strong&gt;ImageCompressor&lt;/strong&gt;, you can simply upload your photos and compress them directly in your browser.&lt;/br&gt;&#xA;That means it doesn’t matter whether you’re working on &lt;strong&gt;Windows, Linux, or macOS&lt;/strong&gt;—as long as you have an internet connection, you can easily compress your photos.&lt;/br&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>http://localhost:1313/en/contact/</link>
-      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/contact/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Animations</title>
-      <link>http://localhost:1313/en/animations/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/animations/</guid>
-      <description>&lt;p&gt;&lt;b&gt;&lt;a rel=&#34;noopener&#34; href=&#34;#creating_animations&#34;&gt;Creating animations service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a id=&#34;creating_animations&#34;&gt;&lt;/a&gt;&#xA;&lt;/br&gt;&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;b&gt;Creating animations service&lt;/b&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bring Your Ideas to Life with Stunning Animations&lt;/p&gt;&#xA;&lt;p&gt;At &amp;ldquo;van den &lt;span class=&#34;bold-rotate&#34;&gt;B&lt;/span&gt;oom Animations&amp;rdquo;, we specialize in crafting custom animations that captivate and engage your audience. Whether you&amp;rsquo;re looking to enhance your website, advertise your brand, or add an eye-catching effect to your project, our team is here to transform your vision into motion. From smooth transitions and dynamic visuals to attractive animations, we offer tailored solutions to make your content stand out. Let us help you tell your story through the magic of animation!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Services</title>
-      <link>http://localhost:1313/en/services/</link>
-      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/services/</guid>
-      <description>&lt;p&gt;&lt;b&gt;&lt;a rel=&#34;noopener&#34; href=&#34;#web_design_and_development_service&#34;&gt;1. Web Design and Development Service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;&#xA;&lt;b&gt;&lt;a rel=&#34;noopener&#34; href=&#34;#floppy_disk_recovery_service&#34;&gt;2. Floppy Disk Recovery Service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;&#xA;&lt;b&gt;&lt;a rel=&#34;noopener&#34; href=&#34;#dia_scan_service&#34;&gt;3. Dia Scan Service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;&#xA;&lt;b&gt;&lt;a rel=&#34;noopener&#34; href=&#34;#upgrade_service&#34;&gt;4. Upgrade Service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;&#xA;&lt;b&gt;&lt;a rel=&#34;noopener&#34; href=&#34;#usb_service&#34;&gt;5. USB Service&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a id=&#34;web_design_and_development_service&#34;&gt;&lt;/a&gt;&#xA;&lt;/br&gt;&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;b&gt;1. Web Design and Development Service&lt;/b&gt;&lt;/p&gt;&#xA;&lt;p&gt;We are passionate about building websites that not only look great but also function smoothly. In our service, we prefer static HTML websites, and we offer this service on a voluntary basis, with the option for a voluntary contribution.&lt;/p&gt;&#xA;&lt;p&gt;&lt;u&gt;What We Offer:&lt;/u&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Create a website for free with GitHub Pages</title>
-      <link>http://localhost:1313/en/blog/maak_een_website_met_github_pages/</link>
-      <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>http://localhost:1313/en/blog/maak_een_website_met_github_pages/</guid>
-      <description>&lt;p&gt;Create a website for free with GitHub&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://vandenboom.netlify.app/images/GitHub-Pages.png&#34; alt=&#34;GitHub Pages en GitHub Desktop&#34; /&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;P.S. Would you like somebody to help you? Feel free to send me a message on one of my Social Media Links available on this website.&lt;/br&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Automatically log in to Windows</title>
-      <link>http://localhost:1313/en/blog/automatisch_inloggen_in_windows/</link>
-      <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
-      <guid>http://localhost:1313/en/blog/automatisch_inloggen_in_windows/</guid>
-      <description>&lt;p&gt;Entering a password or PIN is not equally convenient for everyone.&lt;/br&gt;&#xA;Do you find it annoying to enter a password or PIN every time you log in to Windows?&lt;/br&gt;&#xA;You can also automatically log in to Windows. When the computer has finished starting up, you will immediately see the desktop.&#xA;On the desktop you can make all your useful programs accessible and you have that immediately in front of you when you have turned on the computer.&#xA;You can then immediately start using the computer, without having to enter a password or PIN first.&lt;/br&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/en/about/</link>
-      <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/about/</guid>
-      <description>&lt;h2 id=&#34;biography&#34;&gt;Biography&lt;/h2&gt;&#xA;&lt;p&gt;Martijn is an experienced IT professional with more than 26 years of experience in information technology, infrastructure management, and automation. Throughout his career, he has worked in complex enterprise and government environments, contributing to projects for organizations such as CGI, Rijkswaterstaat, ProRail, and the Municipality of &amp;rsquo;s-Hertogenbosch.&lt;/p&gt;&#xA;&lt;p&gt;His work has focused on system administration, automation, monitoring, networking, and the design of reliable and scalable IT infrastructures.&lt;/p&gt;&#xA;&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;&#xA;&lt;p&gt;Martijn&amp;rsquo;s fascination with computers started during his Constructional Engineering studies (HBO Bouwkunde) in Tilburg in the late 1990s, when he was introduced to Microsoft Visual Basic programming. Building small applications and seeing how software could automate repetitive work sparked a lasting passion for computing and software development.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Posts Archive</title>
-      <link>http://localhost:1313/en/archive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/archive/</guid>
-      <description></description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notities</title><link>https://www.vandenboom.icu/en/</link><description>Recent content on Notities</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 15 Nov 2025 15:40:22 +0100</lastBuildDate><atom:link href="https://www.vandenboom.icu/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Network routing to LAN systems with OpenVPN Server</title><link>https://www.vandenboom.icu/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link><pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid><description>&lt;p&gt;To be able to access systems on the LAN network through the VPN tunnel of the OpenVPN server, the LAN system must know that traffic destined for the VPN subnet must be sent via the OpenVPN server. Without this additional route, return traffic will not reach the VPN clients.&lt;/p&gt;
+&lt;p&gt;In this example, we use the subnet 10.0.8.0/24 as the IP range you have configured for the OpenVPN tunnel. This is the network in which all VPN clients receive an IP address. To ensure that a device on the LAN can correctly send traffic back to these VPN clients, you must add a static route on that LAN device.&lt;/p&gt;</description></item><item><title>Compress photos without quality loss for any platform</title><link>https://www.vandenboom.icu/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link><pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid><description>&lt;p&gt;P.S. Special thanks to &lt;strong&gt;Maria Isabel Rondini&lt;/strong&gt;&lt;br&gt;
+She inspired this article as part of the research for her thesis, where she could use some extra attention for the tool &lt;em&gt;ImageCompressor&lt;/em&gt;.
+&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;Do you want to make your photos smaller in size without losing quality?&lt;/br&gt;
+Good news: you don’t need to install any software for that!&lt;/br&gt;
+With the online tool &lt;strong&gt;ImageCompressor&lt;/strong&gt;, you can simply upload your photos and compress them directly in your browser.&lt;/br&gt;
+That means it doesn’t matter whether you’re working on &lt;strong&gt;Windows, Linux, or macOS&lt;/strong&gt;—as long as you have an internet connection, you can easily compress your photos.&lt;/br&gt;&lt;/p&gt;</description></item><item><title>Contact</title><link>https://www.vandenboom.icu/en/contact/</link><pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate><guid>https://www.vandenboom.icu/en/contact/</guid><description/></item><item><title>Animations</title><link>https://www.vandenboom.icu/en/animations/</link><pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate><guid>https://www.vandenboom.icu/en/animations/</guid><description>&lt;p&gt;&lt;b&gt;&lt;a rel="noopener" href="#creating_animations"&gt;Creating animations service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="creating_animations"&gt;&lt;/a&gt;
+&lt;/br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Creating animations service&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Bring Your Ideas to Life with Stunning Animations&lt;/p&gt;
+&lt;p&gt;At &amp;ldquo;van den &lt;span class="bold-rotate"&gt;B&lt;/span&gt;oom Animations&amp;rdquo;, we specialize in crafting custom animations that captivate and engage your audience. Whether you&amp;rsquo;re looking to enhance your website, advertise your brand, or add an eye-catching effect to your project, our team is here to transform your vision into motion. From smooth transitions and dynamic visuals to attractive animations, we offer tailored solutions to make your content stand out. Let us help you tell your story through the magic of animation!&lt;/p&gt;</description></item><item><title>Services</title><link>https://www.vandenboom.icu/en/services/</link><pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate><guid>https://www.vandenboom.icu/en/services/</guid><description>&lt;p&gt;&lt;b&gt;&lt;a rel="noopener" href="#web_design_and_development_service"&gt;1. Web Design and Development Service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;
+&lt;b&gt;&lt;a rel="noopener" href="#floppy_disk_recovery_service"&gt;2. Floppy Disk Recovery Service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;
+&lt;b&gt;&lt;a rel="noopener" href="#dia_scan_service"&gt;3. Dia Scan Service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;
+&lt;b&gt;&lt;a rel="noopener" href="#upgrade_service"&gt;4. Upgrade Service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;
+&lt;b&gt;&lt;a rel="noopener" href="#usb_service"&gt;5. USB Service&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id="web_design_and_development_service"&gt;&lt;/a&gt;
+&lt;/br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;1. Web Design and Development Service&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;We are passionate about building websites that not only look great but also function smoothly. In our service, we prefer static HTML websites, and we offer this service on a voluntary basis, with the option for a voluntary contribution.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;What We Offer:&lt;/u&gt;&lt;/p&gt;</description></item><item><title>Create a website for free with GitHub Pages</title><link>https://www.vandenboom.icu/en/blog/maak_een_website_met_github_pages/</link><pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/blog/maak_een_website_met_github_pages/</guid><description>&lt;p&gt;Create a website for free with GitHub&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://vandenboom.netlify.app/images/GitHub-Pages.png" alt="GitHub Pages en GitHub Desktop" /&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;P.S. Would you like somebody to help you? Feel free to send me a message on one of my Social Media Links available on this website.&lt;/br&gt;&lt;/p&gt;</description></item><item><title>Automatically log in to Windows</title><link>https://www.vandenboom.icu/en/blog/automatisch_inloggen_in_windows/</link><pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/blog/automatisch_inloggen_in_windows/</guid><description>&lt;p&gt;Entering a password or PIN is not equally convenient for everyone.&lt;/br&gt;
+Do you find it annoying to enter a password or PIN every time you log in to Windows?&lt;/br&gt;
+You can also automatically log in to Windows. When the computer has finished starting up, you will immediately see the desktop.
+On the desktop you can make all your useful programs accessible and you have that immediately in front of you when you have turned on the computer.
+You can then immediately start using the computer, without having to enter a password or PIN first.&lt;/br&gt;&lt;/p&gt;</description></item><item><title>About</title><link>https://www.vandenboom.icu/en/about/</link><pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate><guid>https://www.vandenboom.icu/en/about/</guid><description>&lt;h2 id="biography"&gt;Biography&lt;/h2&gt;
+&lt;p&gt;Martijn is an experienced IT professional with more than 26 years of experience in information technology, infrastructure management, and automation. Throughout his career, he has worked in complex enterprise and government environments, contributing to projects for organizations such as CGI, Rijkswaterstaat, ProRail, and the Municipality of &amp;rsquo;s-Hertogenbosch.&lt;/p&gt;
+&lt;p&gt;His work has focused on system administration, automation, monitoring, networking, and the design of reliable and scalable IT infrastructures.&lt;/p&gt;
+&lt;h3 id="background"&gt;Background&lt;/h3&gt;
+&lt;p&gt;Martijn&amp;rsquo;s fascination with computers started during his Constructional Engineering studies (HBO Bouwkunde) in Tilburg in the late 1990s, when he was introduced to Microsoft Visual Basic programming. Building small applications and seeing how software could automate repetitive work sparked a lasting passion for computing and software development.&lt;/p&gt;</description></item><item><title>Posts Archive</title><link>https://www.vandenboom.icu/en/archive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.vandenboom.icu/en/archive/</guid><description/></item></channel></rss>

@@ -1,19 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Search on Notities</title>
-    <link>http://localhost:1313/tags/search/</link>
-    <description>Recent content in Search on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Thu, 10 Apr 2025 08:48:17 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/search/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Microsoft OneNote search not working anymore</title>
-      <link>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</link>
-      <pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</guid>
-      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;C﻿lose all Microsoft applications&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;R﻿ename the cache folder in:&lt;br&gt;&#xA;C:\Users\&amp;lt;User&amp;gt;\AppData\Local\Microsoft\OneNote\16.0&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;R﻿estart OneNote&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;P﻿.S.&lt;br&gt;&#xA;D﻿on&amp;rsquo;t worry if the Notebooks seem empty, they will be regenerated.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Search on Notities</title><link>https://www.vandenboom.icu/tags/search/</link><description>Recent content in Search on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Thu, 10 Apr 2025 08:48:17 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/search/index.xml" rel="self" type="application/rss+xml"/><item><title>Microsoft OneNote search not working anymore</title><link>https://www.vandenboom.icu/blog/2025-microsoft-onenote-search-not-working-anymore/</link><pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2025-microsoft-onenote-search-not-working-anymore/</guid><description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;C﻿lose all Microsoft applications&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;R﻿ename the cache folder in:&lt;br&gt;
+C:\Users\&amp;lt;User&amp;gt;\AppData\Local\Microsoft\OneNote\16.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;R﻿estart OneNote&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;P﻿.S.&lt;br&gt;
+D﻿on&amp;rsquo;t worry if the Notebooks seem empty, they will be regenerated.&lt;/p&gt;</description></item></channel></rss>

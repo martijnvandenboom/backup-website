@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>2e Handse on Notities</title>
-    <link>http://localhost:1313/tags/2e-handse/</link>
-    <description>Recent content in 2e Handse on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Sun, 30 Apr 2023 12:53:36 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/2e-handse/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Breng een oude / 2e handse Apple Mac computer weer tot leven met OpenCore Legacy Patcher</title>
-      <link>http://localhost:1313/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</link>
-      <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</guid>
-      <description>&lt;p&gt;Is computeren je hobby en heb je altijd al een Apple Mac willen proberen? Een tip / aanrader is dan OpenCore Lagacy Patcher.&lt;/p&gt;&#xA;&lt;p&gt;Zie de officiele website: &lt;a href=&#34;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&#34;&gt;&lt;a href=&#34;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&#34;&gt;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;En het YouTube kanaal: &lt;a href=&#34;https://www.youtube.com/@Mr.Macintosh&#34;&gt;&lt;a href=&#34;https://www.youtube.com/@Mr.Macintosh&#34;&gt;https://www.youtube.com/@Mr.Macintosh&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Met deze tool kun je oudere / 2e hands en inmiddels goedkoper geworden hardware nog steeds met de nieuwste software gebruiken. Echt de moeite waard om een keer te proberen.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2e Handse on Notities</title><link>https://www.vandenboom.icu/tags/2e-handse/</link><description>Recent content in 2e Handse on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Sun, 30 Apr 2023 12:53:36 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/2e-handse/index.xml" rel="self" type="application/rss+xml"/><item><title>Breng een oude / 2e handse Apple Mac computer weer tot leven met OpenCore Legacy Patcher</title><link>https://www.vandenboom.icu/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</link><pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</guid><description>&lt;p&gt;Is computeren je hobby en heb je altijd al een Apple Mac willen proberen? Een tip / aanrader is dan OpenCore Lagacy Patcher.&lt;/p&gt;
+&lt;p&gt;Zie de officiele website: &lt;a href="https://github.com/dortania/OpenCore-Legacy-Patcher/releases"&gt;&lt;a href="https://github.com/dortania/OpenCore-Legacy-Patcher/releases"&gt;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En het YouTube kanaal: &lt;a href="https://www.youtube.com/@Mr.Macintosh"&gt;&lt;a href="https://www.youtube.com/@Mr.Macintosh"&gt;https://www.youtube.com/@Mr.Macintosh&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Met deze tool kun je oudere / 2e hands en inmiddels goedkoper geworden hardware nog steeds met de nieuwste software gebruiken. Echt de moeite waard om een keer te proberen.&lt;/p&gt;</description></item></channel></rss>

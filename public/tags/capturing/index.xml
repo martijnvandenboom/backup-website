@@ -1,19 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Capturing on Notities</title>
-    <link>http://localhost:1313/tags/capturing/</link>
-    <description>Recent content in Capturing on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Sun, 18 Jan 2026 18:55:54 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/capturing/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Windows packet capturing voor bijvoorbeeld een LDAPS verkeer analyse</title>
-      <link>http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</link>
-      <pubDate>Sun, 18 Jan 2026 18:55:54 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</guid>
-      <description>&lt;p&gt;Open een Windows Terminal of Command sessie As Administrator&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Check existing filters&#xA;# pktmon filter list&#xA;&#xA;Clear all filters&#xA;# pktmon filter remove&#xA;&#xA;Check capture status*&#xA;# pktmon status&#xA;&#xA;Add a filter for LDAPS&#xA;# pktmon filter add -p 636&#xA;&#xA;Start the capture&#xA;# pktmon start --etw&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Probeer opnieuw verbinding te maken met de LDAP server / Indien je een andere poort wilt monitoren herhaal dan het commando dat het netwerkverkeer genereert.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Capturing on Notities</title><link>https://www.vandenboom.icu/tags/capturing/</link><description>Recent content in Capturing on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Sun, 18 Jan 2026 18:55:54 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/capturing/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows packet capturing voor bijvoorbeeld een LDAPS verkeer analyse</title><link>https://www.vandenboom.icu/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</link><pubDate>Sun, 18 Jan 2026 18:55:54 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</guid><description>&lt;p&gt;Open een Windows Terminal of Command sessie As Administrator&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Check existing filters
+# pktmon filter list
+
+Clear all filters
+# pktmon filter remove
+
+Check capture status*
+# pktmon status
+
+Add a filter for LDAPS
+# pktmon filter add -p 636
+
+Start the capture
+# pktmon start --etw
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Probeer opnieuw verbinding te maken met de LDAP server / Indien je een andere poort wilt monitoren herhaal dan het commando dat het netwerkverkeer genereert.&lt;/p&gt;</description></item></channel></rss>

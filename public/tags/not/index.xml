@@ -1,26 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Not on Notities</title>
-    <link>http://localhost:1313/tags/not/</link>
-    <description>Recent content in Not on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Mon, 28 Apr 2025 16:04:39 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/not/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>This version of BootCamp is not intented for this computer</title>
-      <link>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
-      <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
-      <description>&lt;p&gt;D﻿ear reader,&lt;br&gt;&#xA;&lt;br&gt;&#xA;R﻿ecently I updated my Windows version of my MacBook Pro 16,1 BootCamp setup to Windows 11. Now I ran into the problem that my build in keyboard and trackpad were not working anymore. I had to overcome this issue by connecting a separate keyboard and mouse on a USB port.&lt;/p&gt;&#xA;&lt;p&gt;I﻿ downloaded the software in the BootCamp utility on macOS that is compatible with my laptop, in this case version: Boot Camp drivers 6.1.6655. But when trying to startup the setup.exe I get the following error: This version of boot camp is not intented for this computer.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Microsoft OneNote search not working anymore</title>
-      <link>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</link>
-      <pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</guid>
-      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;C﻿lose all Microsoft applications&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;R﻿ename the cache folder in:&lt;br&gt;&#xA;C:\Users\&amp;lt;User&amp;gt;\AppData\Local\Microsoft\OneNote\16.0&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;R﻿estart OneNote&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;P﻿.S.&lt;br&gt;&#xA;D﻿on&amp;rsquo;t worry if the Notebooks seem empty, they will be regenerated.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Not on Notities</title><link>https://www.vandenboom.icu/tags/not/</link><description>Recent content in Not on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Mon, 28 Apr 2025 16:04:39 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/not/index.xml" rel="self" type="application/rss+xml"/><item><title>This version of BootCamp is not intented for this computer</title><link>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link><pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid><description>&lt;p&gt;D﻿ear reader,&lt;br&gt;
+&lt;br&gt;
+R﻿ecently I updated my Windows version of my MacBook Pro 16,1 BootCamp setup to Windows 11. Now I ran into the problem that my build in keyboard and trackpad were not working anymore. I had to overcome this issue by connecting a separate keyboard and mouse on a USB port.&lt;/p&gt;
+&lt;p&gt;I﻿ downloaded the software in the BootCamp utility on macOS that is compatible with my laptop, in this case version: Boot Camp drivers 6.1.6655. But when trying to startup the setup.exe I get the following error: This version of boot camp is not intented for this computer.&lt;/p&gt;</description></item><item><title>Microsoft OneNote search not working anymore</title><link>https://www.vandenboom.icu/blog/2025-microsoft-onenote-search-not-working-anymore/</link><pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2025-microsoft-onenote-search-not-working-anymore/</guid><description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;C﻿lose all Microsoft applications&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;R﻿ename the cache folder in:&lt;br&gt;
+C:\Users\&amp;lt;User&amp;gt;\AppData\Local\Microsoft\OneNote\16.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;R﻿estart OneNote&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;P﻿.S.&lt;br&gt;
+D﻿on&amp;rsquo;t worry if the Notebooks seem empty, they will be regenerated.&lt;/p&gt;</description></item></channel></rss>

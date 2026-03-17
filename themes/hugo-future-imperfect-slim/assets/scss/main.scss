@@ -878,7 +878,7 @@ figcaption {
   position: fixed;
   top: 0;
   transition: $hover-slow;
-  z-index: 20;
+  z-index: 100005;
   &.active {
     box-shadow: $shadow-2;
     right: 0 !important;

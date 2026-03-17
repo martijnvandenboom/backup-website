@@ -1,19 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>God on Notities</title>
-    <link>http://localhost:1313/tags/god/</link>
-    <description>Recent content in God on Notities</description>
-    <generator>Hugo</generator>
-    <language>nl</language>
-    <lastBuildDate>Sun, 05 Mar 2023 13:40:14 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/god/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Maak een Windows - God Mode - snelkoppeling</title>
-      <link>http://localhost:1313/blog/2023-maak-een-windows-god-mode-snelkoppeling/</link>
-      <pubDate>Sun, 05 Mar 2023 13:40:14 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-maak-een-windows-god-mode-snelkoppeling/</guid>
-      <description>&lt;ol&gt;&#xA;&lt;li&gt;Klik met je rechtermuisknop op het Bureaublad&lt;/li&gt;&#xA;&lt;li&gt;Kies voor: New -&amp;gt; Folder&lt;/li&gt;&#xA;&lt;li&gt;Geef de map de naam: GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}&lt;/li&gt;&#xA;&lt;li&gt;Open de map voor heel veel geavanceerde instellingen&lt;/li&gt;&#xA;&lt;li&gt;De snelkoppelingen in deze map kunnen gekopieerd worden naar bijv. het Bureaublad voor nog snellere toegang&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>God on Notities</title><link>https://www.vandenboom.icu/tags/god/</link><description>Recent content in God on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Sun, 05 Mar 2023 13:40:14 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/god/index.xml" rel="self" type="application/rss+xml"/><item><title>Maak een Windows - God Mode - snelkoppeling</title><link>https://www.vandenboom.icu/blog/2023-maak-een-windows-god-mode-snelkoppeling/</link><pubDate>Sun, 05 Mar 2023 13:40:14 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-maak-een-windows-god-mode-snelkoppeling/</guid><description>&lt;ol&gt;
+&lt;li&gt;Klik met je rechtermuisknop op het Bureaublad&lt;/li&gt;
+&lt;li&gt;Kies voor: New -&amp;gt; Folder&lt;/li&gt;
+&lt;li&gt;Geef de map de naam: GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}&lt;/li&gt;
+&lt;li&gt;Open de map voor heel veel geavanceerde instellingen&lt;/li&gt;
+&lt;li&gt;De snelkoppelingen in deze map kunnen gekopieerd worden naar bijv. het Bureaublad voor nog snellere toegang&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>

@@ -30,8 +30,8 @@ $(document).on("click", function(e) {
 });
 
 // Check to see if the window is top if not then display button
-$(window).scroll(function() {
-  if ($(this).scrollTop()) {
+$(window).on("scroll load", function() {
+  if ($(this).scrollTop() > 100) {
     $('#back-to-top').fadeIn();
   } else {
     $('#back-to-top').fadeOut();
