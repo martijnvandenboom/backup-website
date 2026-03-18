@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wachtwoord on Notities</title>
-    <link>https://www.vandenboom.icu/tags/wachtwoord/</link>
+    <link>http://localhost:1313/tags/wachtwoord/</link>
     <description>Recent content in Wachtwoord on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Thu, 16 Feb 2023 10:56:24 +0000</lastBuildDate>
-    <atom:link href="https://www.vandenboom.icu/tags/wachtwoord/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/wachtwoord/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows wachtwoord veranderen met behulp van een snelkoppeling</title>
-      <link>https://www.vandenboom.icu/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</link>
+      <link>http://localhost:1313/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</link>
       <pubDate>Thu, 16 Feb 2023 10:56:24 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</guid>
+      <guid>http://localhost:1313/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</guid>
       <description>&lt;p&gt;Verander je Windows wachtwoord door gebruik te maken van een snelkoppeling op je bureaublad. (CTRL+ALT+DEL toetscombinatie door op een snelkoppeling te klikken)&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik met je rechtermuisknop op je bureaublad, kies voor nieuw en snelkoppeling&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Geef bij de locatie van het item het volgende commando op:&lt;br&gt;&#xA;C:\Windows\explorer.exe shell:::{2559a1f2-21d7-11d4-bdaf-00c04f60b9f0}&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik op: Volgende&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Geef de snelkoppeling bijv. de naam: Wachtwoord resetten&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik op: Voltooien&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
   </channel>

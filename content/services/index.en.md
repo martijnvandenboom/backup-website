@@ -10,7 +10,8 @@ layout = "services"
 <b><a rel="noopener" href="#floppy_disk_recovery_service">2. Floppy Disk Recovery Service</a></b></br>
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
-<b><a rel="noopener" href="#usb_service">5. USB Service</a></b>
+<b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
+<b><a rel="noopener" href="#guidance_and_tutoring_service">6. Personal Guidance and Tutoring Service</a></b>
 
 <a id="web_design_and_development_service"></a>
 </br>
@@ -140,6 +141,29 @@ Contact us and choose the right installation stick for your needs, and enjoy the
 Trust us for your installation needs and experience the convenience of our high-quality USB installation sticks.</br>
 </br>
 
+
+<a id="begeleiding_en_bijles_service"></a>
+</br>
+</br>
+
+<b>6. Personal Coach / Trainer and Tutoring Service</b>
+
+For your development I offer personal guidance and tutoring across a wide range of technical subjects. Whether you are a beginner or looking to deepen your skills, I am happy to help you further.
+
+<u>Topics I can help with:</u>
+
+- **Operating Systems**: Linux, Windows, macOS, Android and iOS
+- **Programming**: .NET, Visual Basic, C#, C++ and Java
+- **Scripting**: Bash, Python, PowerShell and Ansible
+- **Website Development**: Static websites with Hugo, or using frameworks such as Next.js, Angular and React
+- **General Computer Software**: Libre/OpenOffice and Microsoft Office
+
+For more information about my offerings in Linux, Windows, macOS, Android and iOS, I would like to refer you to my profile on Superprof:
+
+<a rel="noopener" target="_blank" href="https://www.super-prof.nl/zowel-zakelijk-prive-houd-bezig-met-diverse-operating-systems-software-die-computers-tablets-smart-phones-alle.html">Personal guidance on super-prof.nl</a>
+</br>
+</br>
+
 Best regards,
 
 Martijn</br>
@@ -154,6 +178,7 @@ Please note: Our services are based on voluntary contributions. If we manage to 
 <b><a rel="noopener" href="#floppy_disk_recovery_service">2. Floppy Disk Recovery Service</a></b></br>
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
-<b><a rel="noopener" href="#usb_service">5. USB Service</a></b>
+<b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
+<b><a rel="noopener" href="#guidance_and_tutoring_service">6. Personal Guidance and Tutoring Service</a></b>
 </br>
 </br>   

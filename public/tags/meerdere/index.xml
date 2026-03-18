@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meerdere on Notities</title>
-    <link>https://www.vandenboom.icu/tags/meerdere/</link>
+    <link>http://localhost:1313/tags/meerdere/</link>
     <description>Recent content in Meerdere on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Mon, 24 Mar 2025 17:57:51 +0000</lastBuildDate>
-    <atom:link href="https://www.vandenboom.icu/tags/meerdere/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/meerdere/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deskflow: Bedien meerdere computers met 1 keyboard en muis voor: macOS, Windows en Linux</title>
-      <link>https://www.vandenboom.icu/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
+      <link>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
+      <guid>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
       <description>&lt;p&gt;Met Deskflow bestuur je meerdere computers – macOS, Windows of Linux – met één muis en toetsenbord. Het werkt als een softwarematige KVM-switch (zonder video) en wordt gesponsord door Synergy. Dit programma is nog steeds actueel en goed onderhouden, met een intuïtieve interface die het gebruik simpel maakt. Tip: zet in de instellingen even TLS uit voor een soepele start.&lt;/p&gt;&#xA;&lt;p&gt;Download het via: &lt;a href=&#34;https://github.com/deskflow/deskflow/releases&#34;&gt;https://github.com/deskflow/deskflow/releases&lt;/a&gt;. Zoek naar de tag &amp;ldquo;latest&amp;rdquo; en check alle assets voor de juiste versie!&lt;/p&gt;</description>
     </item>
   </channel>

@@ -10,7 +10,8 @@ layout = "services"
 <b><a rel="noopener" href="#floppy_disk_recovery_service">2. Floppy Disk Recovery Service</a></b></br>
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b><br>
-<b><a rel="noopener" href="#usb_service">5. USB Service</a></b>
+<b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
+<b><a rel="noopener" href="#begeleiding_en_bijles_service">6. Persoonlijke Begeleiding en Bijles Service</a></b>
 
 <a id="webdesign_en_ontwikkeling_service"></a>
 </br>
@@ -139,6 +140,29 @@ Vertrouw op ons voor uw installatiebehoeften en ervaar het gemak van onze hoogwa
 </br>
 
 
+<a id="begeleiding_en_bijles_service"></a>
+</br>
+</br>
+
+<b>6. Persoonlijke Begeleiding en Bijles Service</b>
+
+Hierbij bied ik persoonlijke begeleiding en bijles aan voor een breed scala aan technische onderwerpen. Of je nu een beginner bent of je vaardigheden wilt verdiepen, ik help je graag verder.
+
+<u>Onderwerpen waar ik bij kan helpen:</u>
+
+- **Operating Systems**: Linux, Windows, macOS, Android en iOS
+- **Programmeren**: .NET, Visual Basic, C#, C++ en Java
+- **Scripting**: Bash, Python, Powershell en Ansible
+- **Websites maken**: Static websites met Hugo, of met frameworks zoals Next.js, Angular en React
+- **Algemene computer software**: Libre/OpenOffice en Microsoft Office
+
+Voor meer informatie over mijn aanbod op het gebied van Linux, Windows, macOS, Android en iOS, verwijs ik je graag naar mijn profiel op Superprof:
+
+<a rel="noopener" target="_blank" href="https://www.super-prof.nl/zowel-zakelijk-prive-houd-bezig-met-diverse-operating-systems-software-die-computers-tablets-smart-phones-alle.html">Persoonlijke begeleiding op super-prof.nl</a>
+</br>
+</br>
+
+
 Vriendelijke groet,
 
 Martijn</br>
@@ -153,6 +177,7 @@ Let op: Onze services zijn gebaseerd op vrijwillige bijdragen. Als we erin slage
 <b><a rel="noopener" href="#floppy_disk_recovery_service">2. Floppy Disk Recovery Service</a></b></br>
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
-<b><a rel="noopener" href="#usb_service">5. USB Service</a></b>
+<b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
+<b><a rel="noopener" href="#begeleiding_en_bijles_service">6. Persoonlijke Begeleiding en Bijles Service</a></b>
 </br>
 </br>

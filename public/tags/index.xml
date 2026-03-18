@@ -2,1823 +2,1823 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Notities</title>
-    <link>https://www.vandenboom.icu/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sun, 18 Jan 2026 18:55:54 +0000</lastBuildDate>
-    <atom:link href="https://www.vandenboom.icu/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analyse</title>
-      <link>https://www.vandenboom.icu/tags/analyse/</link>
+      <link>http://localhost:1313/tags/analyse/</link>
       <pubDate>Sun, 18 Jan 2026 18:55:54 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/analyse/</guid>
+      <guid>http://localhost:1313/tags/analyse/</guid>
       <description></description>
     </item>
     <item>
       <title>Capturing</title>
-      <link>https://www.vandenboom.icu/tags/capturing/</link>
+      <link>http://localhost:1313/tags/capturing/</link>
       <pubDate>Sun, 18 Jan 2026 18:55:54 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/capturing/</guid>
+      <guid>http://localhost:1313/tags/capturing/</guid>
       <description></description>
     </item>
     <item>
       <title>LDAPS</title>
-      <link>https://www.vandenboom.icu/tags/ldaps/</link>
+      <link>http://localhost:1313/tags/ldaps/</link>
       <pubDate>Sun, 18 Jan 2026 18:55:54 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/ldaps/</guid>
+      <guid>http://localhost:1313/tags/ldaps/</guid>
       <description></description>
     </item>
     <item>
       <title>Packet</title>
-      <link>https://www.vandenboom.icu/tags/packet/</link>
+      <link>http://localhost:1313/tags/packet/</link>
       <pubDate>Sun, 18 Jan 2026 18:55:54 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/packet/</guid>
+      <guid>http://localhost:1313/tags/packet/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>https://www.vandenboom.icu/tags/windows/</link>
+      <link>http://localhost:1313/tags/windows/</link>
       <pubDate>Sun, 18 Jan 2026 18:55:54 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/windows/</guid>
+      <guid>http://localhost:1313/tags/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>LAN</title>
-      <link>https://www.vandenboom.icu/tags/lan/</link>
+      <link>http://localhost:1313/tags/lan/</link>
       <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/lan/</guid>
+      <guid>http://localhost:1313/tags/lan/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
-      <link>https://www.vandenboom.icu/tags/network/</link>
+      <link>http://localhost:1313/tags/network/</link>
       <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/network/</guid>
+      <guid>http://localhost:1313/tags/network/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenVPN</title>
-      <link>https://www.vandenboom.icu/tags/openvpn/</link>
+      <link>http://localhost:1313/tags/openvpn/</link>
       <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/openvpn/</guid>
+      <guid>http://localhost:1313/tags/openvpn/</guid>
       <description></description>
     </item>
     <item>
       <title>Routing</title>
-      <link>https://www.vandenboom.icu/tags/routing/</link>
+      <link>http://localhost:1313/tags/routing/</link>
       <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/routing/</guid>
+      <guid>http://localhost:1313/tags/routing/</guid>
       <description></description>
     </item>
     <item>
       <title>Server</title>
-      <link>https://www.vandenboom.icu/tags/server/</link>
+      <link>http://localhost:1313/tags/server/</link>
       <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/server/</guid>
+      <guid>http://localhost:1313/tags/server/</guid>
       <description></description>
     </item>
     <item>
       <title>Systemen</title>
-      <link>https://www.vandenboom.icu/tags/systemen/</link>
+      <link>http://localhost:1313/tags/systemen/</link>
       <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/systemen/</guid>
+      <guid>http://localhost:1313/tags/systemen/</guid>
       <description></description>
     </item>
     <item>
       <title>Comprimeren</title>
-      <link>https://www.vandenboom.icu/tags/comprimeren/</link>
+      <link>http://localhost:1313/tags/comprimeren/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/comprimeren/</guid>
+      <guid>http://localhost:1313/tags/comprimeren/</guid>
       <description></description>
     </item>
     <item>
       <title>Fotos</title>
-      <link>https://www.vandenboom.icu/tags/fotos/</link>
+      <link>http://localhost:1313/tags/fotos/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/fotos/</guid>
+      <guid>http://localhost:1313/tags/fotos/</guid>
       <description></description>
     </item>
     <item>
       <title>Kwaliteit</title>
-      <link>https://www.vandenboom.icu/tags/kwaliteit/</link>
+      <link>http://localhost:1313/tags/kwaliteit/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/kwaliteit/</guid>
+      <guid>http://localhost:1313/tags/kwaliteit/</guid>
       <description></description>
     </item>
     <item>
       <title>Kwaliteitsverlies</title>
-      <link>https://www.vandenboom.icu/tags/kwaliteitsverlies/</link>
+      <link>http://localhost:1313/tags/kwaliteitsverlies/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/kwaliteitsverlies/</guid>
+      <guid>http://localhost:1313/tags/kwaliteitsverlies/</guid>
       <description></description>
     </item>
     <item>
       <title>Online</title>
-      <link>https://www.vandenboom.icu/tags/online/</link>
+      <link>http://localhost:1313/tags/online/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/online/</guid>
+      <guid>http://localhost:1313/tags/online/</guid>
       <description></description>
     </item>
     <item>
       <title>Platform</title>
-      <link>https://www.vandenboom.icu/tags/platform/</link>
+      <link>http://localhost:1313/tags/platform/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/platform/</guid>
+      <guid>http://localhost:1313/tags/platform/</guid>
       <description></description>
     </item>
     <item>
       <title>Utilities</title>
-      <link>https://www.vandenboom.icu/tags/utilities/</link>
+      <link>http://localhost:1313/tags/utilities/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/utilities/</guid>
+      <guid>http://localhost:1313/tags/utilities/</guid>
       <description></description>
     </item>
     <item>
       <title>API</title>
-      <link>https://www.vandenboom.icu/tags/api/</link>
+      <link>http://localhost:1313/tags/api/</link>
       <pubDate>Tue, 01 Jul 2025 08:30:05 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/api/</guid>
+      <guid>http://localhost:1313/tags/api/</guid>
       <description></description>
     </item>
     <item>
       <title>VBoxWebSrv</title>
-      <link>https://www.vandenboom.icu/tags/vboxwebsrv/</link>
+      <link>http://localhost:1313/tags/vboxwebsrv/</link>
       <pubDate>Tue, 01 Jul 2025 08:30:05 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/vboxwebsrv/</guid>
+      <guid>http://localhost:1313/tags/vboxwebsrv/</guid>
       <description></description>
     </item>
     <item>
       <title>VirtualBox</title>
-      <link>https://www.vandenboom.icu/tags/virtualbox/</link>
+      <link>http://localhost:1313/tags/virtualbox/</link>
       <pubDate>Tue, 01 Jul 2025 08:30:05 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/virtualbox/</guid>
+      <guid>http://localhost:1313/tags/virtualbox/</guid>
       <description></description>
     </item>
     <item>
       <title>Web-Based</title>
-      <link>https://www.vandenboom.icu/tags/web-based/</link>
+      <link>http://localhost:1313/tags/web-based/</link>
       <pubDate>Tue, 01 Jul 2025 08:30:05 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/web-based/</guid>
+      <guid>http://localhost:1313/tags/web-based/</guid>
       <description></description>
     </item>
     <item>
       <title>Boot</title>
-      <link>https://www.vandenboom.icu/tags/boot/</link>
+      <link>http://localhost:1313/tags/boot/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/boot/</guid>
+      <guid>http://localhost:1313/tags/boot/</guid>
       <description></description>
     </item>
     <item>
       <title>Camp</title>
-      <link>https://www.vandenboom.icu/tags/camp/</link>
+      <link>http://localhost:1313/tags/camp/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/camp/</guid>
+      <guid>http://localhost:1313/tags/camp/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer</title>
-      <link>https://www.vandenboom.icu/tags/computer/</link>
+      <link>http://localhost:1313/tags/computer/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/computer/</guid>
+      <guid>http://localhost:1313/tags/computer/</guid>
       <description></description>
     </item>
     <item>
       <title>Intended</title>
-      <link>https://www.vandenboom.icu/tags/intended/</link>
+      <link>http://localhost:1313/tags/intended/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/intended/</guid>
+      <guid>http://localhost:1313/tags/intended/</guid>
       <description></description>
     </item>
     <item>
       <title>Not</title>
-      <link>https://www.vandenboom.icu/tags/not/</link>
+      <link>http://localhost:1313/tags/not/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/not/</guid>
+      <guid>http://localhost:1313/tags/not/</guid>
       <description></description>
     </item>
     <item>
       <title>This</title>
-      <link>https://www.vandenboom.icu/tags/this/</link>
+      <link>http://localhost:1313/tags/this/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/this/</guid>
+      <guid>http://localhost:1313/tags/this/</guid>
       <description></description>
     </item>
     <item>
       <title>Version</title>
-      <link>https://www.vandenboom.icu/tags/version/</link>
+      <link>http://localhost:1313/tags/version/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/version/</guid>
+      <guid>http://localhost:1313/tags/version/</guid>
       <description></description>
     </item>
     <item>
       <title>Microsoft</title>
-      <link>https://www.vandenboom.icu/tags/microsoft/</link>
+      <link>http://localhost:1313/tags/microsoft/</link>
       <pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/microsoft/</guid>
+      <guid>http://localhost:1313/tags/microsoft/</guid>
       <description></description>
     </item>
     <item>
       <title>OneNote</title>
-      <link>https://www.vandenboom.icu/tags/onenote/</link>
+      <link>http://localhost:1313/tags/onenote/</link>
       <pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/onenote/</guid>
+      <guid>http://localhost:1313/tags/onenote/</guid>
       <description></description>
     </item>
     <item>
       <title>Search</title>
-      <link>https://www.vandenboom.icu/tags/search/</link>
+      <link>http://localhost:1313/tags/search/</link>
       <pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/search/</guid>
+      <guid>http://localhost:1313/tags/search/</guid>
       <description></description>
     </item>
     <item>
       <title>Working</title>
-      <link>https://www.vandenboom.icu/tags/working/</link>
+      <link>http://localhost:1313/tags/working/</link>
       <pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/working/</guid>
+      <guid>http://localhost:1313/tags/working/</guid>
       <description></description>
     </item>
     <item>
       <title>Circle</title>
-      <link>https://www.vandenboom.icu/tags/circle/</link>
+      <link>http://localhost:1313/tags/circle/</link>
       <pubDate>Fri, 04 Apr 2025 14:27:55 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/circle/</guid>
+      <guid>http://localhost:1313/tags/circle/</guid>
       <description></description>
     </item>
     <item>
       <title>Diagonal</title>
-      <link>https://www.vandenboom.icu/tags/diagonal/</link>
+      <link>http://localhost:1313/tags/diagonal/</link>
       <pubDate>Fri, 04 Apr 2025 14:27:55 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/diagonal/</guid>
+      <guid>http://localhost:1313/tags/diagonal/</guid>
       <description></description>
     </item>
     <item>
       <title>OCLP</title>
-      <link>https://www.vandenboom.icu/tags/oclp/</link>
+      <link>http://localhost:1313/tags/oclp/</link>
       <pubDate>Fri, 04 Apr 2025 14:27:55 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/oclp/</guid>
+      <guid>http://localhost:1313/tags/oclp/</guid>
       <description></description>
     </item>
     <item>
       <title>Update</title>
-      <link>https://www.vandenboom.icu/tags/update/</link>
+      <link>http://localhost:1313/tags/update/</link>
       <pubDate>Fri, 04 Apr 2025 14:27:55 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/update/</guid>
+      <guid>http://localhost:1313/tags/update/</guid>
       <description></description>
     </item>
     <item>
       <title>8.10</title>
-      <link>https://www.vandenboom.icu/tags/8.10/</link>
+      <link>http://localhost:1313/tags/8.10/</link>
       <pubDate>Sat, 29 Mar 2025 20:21:32 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/8.10/</guid>
+      <guid>http://localhost:1313/tags/8.10/</guid>
       <description></description>
     </item>
     <item>
-      <title>AlmaLinux</title>
-      <link>https://www.vandenboom.icu/tags/almalinux/</link>
+      <title>Almalinux</title>
+      <link>http://localhost:1313/tags/almalinux/</link>
       <pubDate>Sat, 29 Mar 2025 20:21:32 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/almalinux/</guid>
+      <guid>http://localhost:1313/tags/almalinux/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>https://www.vandenboom.icu/tags/docker/</link>
+      <link>http://localhost:1313/tags/docker/</link>
       <pubDate>Sat, 29 Mar 2025 20:21:32 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/docker/</guid>
+      <guid>http://localhost:1313/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>GitLab</title>
-      <link>https://www.vandenboom.icu/tags/gitlab/</link>
+      <link>http://localhost:1313/tags/gitlab/</link>
       <pubDate>Sat, 29 Mar 2025 20:21:32 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/gitlab/</guid>
+      <guid>http://localhost:1313/tags/gitlab/</guid>
       <description></description>
     </item>
     <item>
       <title>Install</title>
-      <link>https://www.vandenboom.icu/tags/install/</link>
+      <link>http://localhost:1313/tags/install/</link>
       <pubDate>Sat, 29 Mar 2025 20:21:32 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/install/</guid>
+      <guid>http://localhost:1313/tags/install/</guid>
       <description></description>
     </item>
     <item>
       <title>Additions</title>
-      <link>https://www.vandenboom.icu/tags/additions/</link>
+      <link>http://localhost:1313/tags/additions/</link>
       <pubDate>Sat, 29 Mar 2025 20:16:41 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/additions/</guid>
+      <guid>http://localhost:1313/tags/additions/</guid>
       <description></description>
     </item>
     <item>
       <title>Guest</title>
-      <link>https://www.vandenboom.icu/tags/guest/</link>
+      <link>http://localhost:1313/tags/guest/</link>
       <pubDate>Sat, 29 Mar 2025 20:16:41 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/guest/</guid>
+      <guid>http://localhost:1313/tags/guest/</guid>
       <description></description>
     </item>
     <item>
       <title>1</title>
-      <link>https://www.vandenboom.icu/tags/1/</link>
+      <link>http://localhost:1313/tags/1/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/1/</guid>
+      <guid>http://localhost:1313/tags/1/</guid>
       <description></description>
     </item>
     <item>
       <title>Bedienen</title>
-      <link>https://www.vandenboom.icu/tags/bedienen/</link>
+      <link>http://localhost:1313/tags/bedienen/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/bedienen/</guid>
+      <guid>http://localhost:1313/tags/bedienen/</guid>
       <description></description>
     </item>
     <item>
       <title>Computers</title>
-      <link>https://www.vandenboom.icu/tags/computers/</link>
+      <link>http://localhost:1313/tags/computers/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/computers/</guid>
+      <guid>http://localhost:1313/tags/computers/</guid>
       <description></description>
     </item>
     <item>
       <title>Deskflow</title>
-      <link>https://www.vandenboom.icu/tags/deskflow/</link>
+      <link>http://localhost:1313/tags/deskflow/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/deskflow/</guid>
+      <guid>http://localhost:1313/tags/deskflow/</guid>
       <description></description>
     </item>
     <item>
       <title>Keyboard</title>
-      <link>https://www.vandenboom.icu/tags/keyboard/</link>
+      <link>http://localhost:1313/tags/keyboard/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/keyboard/</guid>
+      <guid>http://localhost:1313/tags/keyboard/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>https://www.vandenboom.icu/tags/linux/</link>
+      <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
-      <title>Macos</title>
-      <link>https://www.vandenboom.icu/tags/macos/</link>
+      <title>MacOS</title>
+      <link>http://localhost:1313/tags/macos/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/macos/</guid>
+      <guid>http://localhost:1313/tags/macos/</guid>
       <description></description>
     </item>
     <item>
       <title>Meerdere</title>
-      <link>https://www.vandenboom.icu/tags/meerdere/</link>
+      <link>http://localhost:1313/tags/meerdere/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/meerdere/</guid>
+      <guid>http://localhost:1313/tags/meerdere/</guid>
       <description></description>
     </item>
     <item>
       <title>Muis</title>
-      <link>https://www.vandenboom.icu/tags/muis/</link>
+      <link>http://localhost:1313/tags/muis/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/muis/</guid>
+      <guid>http://localhost:1313/tags/muis/</guid>
       <description></description>
     </item>
     <item>
       <title>Installing</title>
-      <link>https://www.vandenboom.icu/tags/installing/</link>
+      <link>http://localhost:1313/tags/installing/</link>
       <pubDate>Sun, 23 Mar 2025 13:20:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/installing/</guid>
+      <guid>http://localhost:1313/tags/installing/</guid>
       <description></description>
     </item>
     <item>
       <title>Oracle</title>
-      <link>https://www.vandenboom.icu/tags/oracle/</link>
+      <link>http://localhost:1313/tags/oracle/</link>
       <pubDate>Sun, 23 Mar 2025 13:20:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/oracle/</guid>
+      <guid>http://localhost:1313/tags/oracle/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu</title>
-      <link>https://www.vandenboom.icu/tags/ubuntu/</link>
+      <link>http://localhost:1313/tags/ubuntu/</link>
       <pubDate>Sun, 23 Mar 2025 13:20:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/ubuntu/</guid>
+      <guid>http://localhost:1313/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Tips</title>
-      <link>https://www.vandenboom.icu/tags/tips/</link>
+      <link>http://localhost:1313/tags/tips/</link>
       <pubDate>Sun, 23 Mar 2025 12:51:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/tips/</guid>
+      <guid>http://localhost:1313/tags/tips/</guid>
       <description></description>
     </item>
     <item>
       <title>Xrdp</title>
-      <link>https://www.vandenboom.icu/tags/xrdp/</link>
+      <link>http://localhost:1313/tags/xrdp/</link>
       <pubDate>Sun, 23 Mar 2025 12:51:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/xrdp/</guid>
+      <guid>http://localhost:1313/tags/xrdp/</guid>
       <description></description>
     </item>
     <item>
       <title>Code</title>
-      <link>https://www.vandenboom.icu/tags/code/</link>
+      <link>http://localhost:1313/tags/code/</link>
       <pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/code/</guid>
+      <guid>http://localhost:1313/tags/code/</guid>
       <description></description>
     </item>
     <item>
       <title>Repo</title>
-      <link>https://www.vandenboom.icu/tags/repo/</link>
+      <link>http://localhost:1313/tags/repo/</link>
       <pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/repo/</guid>
+      <guid>http://localhost:1313/tags/repo/</guid>
       <description></description>
     </item>
     <item>
       <title>Visual Studio</title>
-      <link>https://www.vandenboom.icu/tags/visual-studio/</link>
+      <link>http://localhost:1313/tags/visual-studio/</link>
       <pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/visual-studio/</guid>
+      <guid>http://localhost:1313/tags/visual-studio/</guid>
       <description></description>
     </item>
     <item>
       <title>C</title>
-      <link>https://www.vandenboom.icu/tags/c/</link>
+      <link>http://localhost:1313/tags/c/</link>
       <pubDate>Sat, 22 Mar 2025 19:32:21 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/c/</guid>
+      <guid>http://localhost:1313/tags/c/</guid>
       <description></description>
     </item>
     <item>
       <title>C&#43;&#43;</title>
-      <link>https://www.vandenboom.icu/tags/c&#43;&#43;/</link>
+      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
       <pubDate>Sat, 22 Mar 2025 19:32:21 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/c&#43;&#43;/</guid>
+      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>https://www.vandenboom.icu/tags/go/</link>
+      <link>http://localhost:1313/tags/go/</link>
       <pubDate>Sat, 22 Mar 2025 19:32:21 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/go/</guid>
+      <guid>http://localhost:1313/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>Golang</title>
-      <link>https://www.vandenboom.icu/tags/golang/</link>
+      <link>http://localhost:1313/tags/golang/</link>
       <pubDate>Sat, 22 Mar 2025 19:32:21 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/golang/</guid>
+      <guid>http://localhost:1313/tags/golang/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>https://www.vandenboom.icu/tags/java/</link>
+      <link>http://localhost:1313/tags/java/</link>
       <pubDate>Sat, 22 Mar 2025 19:32:21 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/java/</guid>
+      <guid>http://localhost:1313/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>https://www.vandenboom.icu/tags/rust/</link>
+      <link>http://localhost:1313/tags/rust/</link>
       <pubDate>Sat, 22 Mar 2025 19:32:21 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/rust/</guid>
+      <guid>http://localhost:1313/tags/rust/</guid>
       <description></description>
     </item>
     <item>
       <title>Dark</title>
-      <link>https://www.vandenboom.icu/tags/dark/</link>
+      <link>http://localhost:1313/tags/dark/</link>
       <pubDate>Sat, 15 Feb 2025 21:17:06 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/dark/</guid>
+      <guid>http://localhost:1313/tags/dark/</guid>
       <description></description>
     </item>
     <item>
       <title>Icon</title>
-      <link>https://www.vandenboom.icu/tags/icon/</link>
+      <link>http://localhost:1313/tags/icon/</link>
       <pubDate>Sat, 15 Feb 2025 21:17:06 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/icon/</guid>
+      <guid>http://localhost:1313/tags/icon/</guid>
       <description></description>
     </item>
     <item>
       <title>Mode</title>
-      <link>https://www.vandenboom.icu/tags/mode/</link>
+      <link>http://localhost:1313/tags/mode/</link>
       <pubDate>Sat, 15 Feb 2025 21:17:06 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/mode/</guid>
+      <guid>http://localhost:1313/tags/mode/</guid>
       <description></description>
     </item>
     <item>
       <title>Styling</title>
-      <link>https://www.vandenboom.icu/tags/styling/</link>
+      <link>http://localhost:1313/tags/styling/</link>
       <pubDate>Sat, 15 Feb 2025 21:17:06 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/styling/</guid>
+      <guid>http://localhost:1313/tags/styling/</guid>
       <description></description>
     </item>
     <item>
       <title>Support</title>
-      <link>https://www.vandenboom.icu/tags/support/</link>
+      <link>http://localhost:1313/tags/support/</link>
       <pubDate>Sat, 15 Feb 2025 21:17:06 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/support/</guid>
+      <guid>http://localhost:1313/tags/support/</guid>
       <description></description>
     </item>
     <item>
       <title>Website</title>
-      <link>https://www.vandenboom.icu/tags/website/</link>
+      <link>http://localhost:1313/tags/website/</link>
       <pubDate>Sat, 15 Feb 2025 21:17:06 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/website/</guid>
+      <guid>http://localhost:1313/tags/website/</guid>
       <description></description>
     </item>
     <item>
       <title>Convert</title>
-      <link>https://www.vandenboom.icu/tags/convert/</link>
+      <link>http://localhost:1313/tags/convert/</link>
       <pubDate>Sun, 05 Jan 2025 20:09:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/convert/</guid>
+      <guid>http://localhost:1313/tags/convert/</guid>
       <description></description>
     </item>
     <item>
       <title>Country</title>
-      <link>https://www.vandenboom.icu/tags/country/</link>
+      <link>http://localhost:1313/tags/country/</link>
       <pubDate>Sun, 05 Jan 2025 20:09:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/country/</guid>
+      <guid>http://localhost:1313/tags/country/</guid>
       <description></description>
     </item>
     <item>
       <title>Format</title>
-      <link>https://www.vandenboom.icu/tags/format/</link>
+      <link>http://localhost:1313/tags/format/</link>
       <pubDate>Sun, 05 Jan 2025 20:09:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/format/</guid>
+      <guid>http://localhost:1313/tags/format/</guid>
       <description></description>
     </item>
     <item>
       <title>Price</title>
-      <link>https://www.vandenboom.icu/tags/price/</link>
+      <link>http://localhost:1313/tags/price/</link>
       <pubDate>Sun, 05 Jan 2025 20:09:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/price/</guid>
+      <guid>http://localhost:1313/tags/price/</guid>
       <description></description>
     </item>
     <item>
       <title>Printed</title>
-      <link>https://www.vandenboom.icu/tags/printed/</link>
+      <link>http://localhost:1313/tags/printed/</link>
       <pubDate>Sun, 05 Jan 2025 20:09:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/printed/</guid>
+      <guid>http://localhost:1313/tags/printed/</guid>
       <description></description>
     </item>
     <item>
       <title>Settings</title>
-      <link>https://www.vandenboom.icu/tags/settings/</link>
+      <link>http://localhost:1313/tags/settings/</link>
       <pubDate>Sun, 05 Jan 2025 20:09:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/settings/</guid>
+      <guid>http://localhost:1313/tags/settings/</guid>
       <description></description>
     </item>
     <item>
       <title>Variable</title>
-      <link>https://www.vandenboom.icu/tags/variable/</link>
+      <link>http://localhost:1313/tags/variable/</link>
       <pubDate>Sun, 05 Jan 2025 20:09:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/variable/</guid>
+      <guid>http://localhost:1313/tags/variable/</guid>
       <description></description>
     </item>
     <item>
       <title>Commands</title>
-      <link>https://www.vandenboom.icu/tags/commands/</link>
+      <link>http://localhost:1313/tags/commands/</link>
       <pubDate>Fri, 03 Jan 2025 22:23:19 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/commands/</guid>
+      <guid>http://localhost:1313/tags/commands/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>https://www.vandenboom.icu/tags/git/</link>
+      <link>http://localhost:1313/tags/git/</link>
       <pubDate>Fri, 03 Jan 2025 22:23:19 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/git/</guid>
+      <guid>http://localhost:1313/tags/git/</guid>
       <description></description>
     </item>
     <item>
-      <title>GitHub</title>
-      <link>https://www.vandenboom.icu/tags/github/</link>
+      <title>Github</title>
+      <link>http://localhost:1313/tags/github/</link>
       <pubDate>Fri, 03 Jan 2025 22:23:19 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/github/</guid>
+      <guid>http://localhost:1313/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Quick</title>
-      <link>https://www.vandenboom.icu/tags/quick/</link>
+      <link>http://localhost:1313/tags/quick/</link>
       <pubDate>Fri, 03 Jan 2025 22:23:19 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/quick/</guid>
+      <guid>http://localhost:1313/tags/quick/</guid>
       <description></description>
     </item>
     <item>
       <title>Repository</title>
-      <link>https://www.vandenboom.icu/tags/repository/</link>
+      <link>http://localhost:1313/tags/repository/</link>
       <pubDate>Fri, 03 Jan 2025 22:23:19 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/repository/</guid>
+      <guid>http://localhost:1313/tags/repository/</guid>
       <description></description>
     </item>
     <item>
       <title>Visualstudiocode</title>
-      <link>https://www.vandenboom.icu/tags/visualstudiocode/</link>
+      <link>http://localhost:1313/tags/visualstudiocode/</link>
       <pubDate>Fri, 03 Jan 2025 22:23:19 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/visualstudiocode/</guid>
+      <guid>http://localhost:1313/tags/visualstudiocode/</guid>
       <description></description>
     </item>
     <item>
       <title>Bash</title>
-      <link>https://www.vandenboom.icu/tags/bash/</link>
+      <link>http://localhost:1313/tags/bash/</link>
       <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/bash/</guid>
+      <guid>http://localhost:1313/tags/bash/</guid>
       <description></description>
     </item>
     <item>
       <title>Naam</title>
-      <link>https://www.vandenboom.icu/tags/naam/</link>
+      <link>http://localhost:1313/tags/naam/</link>
       <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/naam/</guid>
+      <guid>http://localhost:1313/tags/naam/</guid>
       <description></description>
     </item>
     <item>
       <title>Script</title>
-      <link>https://www.vandenboom.icu/tags/script/</link>
+      <link>http://localhost:1313/tags/script/</link>
       <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/script/</guid>
+      <guid>http://localhost:1313/tags/script/</guid>
       <description></description>
     </item>
     <item>
       <title>Stick</title>
-      <link>https://www.vandenboom.icu/tags/stick/</link>
+      <link>http://localhost:1313/tags/stick/</link>
       <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/stick/</guid>
+      <guid>http://localhost:1313/tags/stick/</guid>
       <description></description>
     </item>
     <item>
       <title>Usb</title>
-      <link>https://www.vandenboom.icu/tags/usb/</link>
+      <link>http://localhost:1313/tags/usb/</link>
       <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/usb/</guid>
+      <guid>http://localhost:1313/tags/usb/</guid>
       <description></description>
     </item>
     <item>
       <title>Zoek</title>
-      <link>https://www.vandenboom.icu/tags/zoek/</link>
+      <link>http://localhost:1313/tags/zoek/</link>
       <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/zoek/</guid>
+      <guid>http://localhost:1313/tags/zoek/</guid>
       <description></description>
     </item>
     <item>
       <title>Efi</title>
-      <link>https://www.vandenboom.icu/tags/efi/</link>
+      <link>http://localhost:1313/tags/efi/</link>
       <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/efi/</guid>
+      <guid>http://localhost:1313/tags/efi/</guid>
       <description></description>
     </item>
     <item>
       <title>Files</title>
-      <link>https://www.vandenboom.icu/tags/files/</link>
+      <link>http://localhost:1313/tags/files/</link>
       <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/files/</guid>
+      <guid>http://localhost:1313/tags/files/</guid>
       <description></description>
     </item>
     <item>
       <title>Partition</title>
-      <link>https://www.vandenboom.icu/tags/partition/</link>
+      <link>http://localhost:1313/tags/partition/</link>
       <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/partition/</guid>
+      <guid>http://localhost:1313/tags/partition/</guid>
       <description></description>
     </item>
     <item>
       <title>Putting</title>
-      <link>https://www.vandenboom.icu/tags/putting/</link>
+      <link>http://localhost:1313/tags/putting/</link>
       <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/putting/</guid>
+      <guid>http://localhost:1313/tags/putting/</guid>
       <description></description>
     </item>
     <item>
       <title>Triple</title>
-      <link>https://www.vandenboom.icu/tags/triple/</link>
+      <link>http://localhost:1313/tags/triple/</link>
       <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/triple/</guid>
+      <guid>http://localhost:1313/tags/triple/</guid>
       <description></description>
     </item>
     <item>
       <title>Create</title>
-      <link>https://www.vandenboom.icu/tags/create/</link>
+      <link>http://localhost:1313/tags/create/</link>
       <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/create/</guid>
+      <guid>http://localhost:1313/tags/create/</guid>
       <description></description>
     </item>
     <item>
       <title>Disk</title>
-      <link>https://www.vandenboom.icu/tags/disk/</link>
+      <link>http://localhost:1313/tags/disk/</link>
       <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/disk/</guid>
+      <guid>http://localhost:1313/tags/disk/</guid>
       <description></description>
     </item>
     <item>
       <title>Refit</title>
-      <link>https://www.vandenboom.icu/tags/refit/</link>
+      <link>http://localhost:1313/tags/refit/</link>
       <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/refit/</guid>
+      <guid>http://localhost:1313/tags/refit/</guid>
       <description></description>
     </item>
     <item>
       <title>Disable</title>
-      <link>https://www.vandenboom.icu/tags/disable/</link>
+      <link>http://localhost:1313/tags/disable/</link>
       <pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/disable/</guid>
+      <guid>http://localhost:1313/tags/disable/</guid>
       <description></description>
     </item>
     <item>
       <title>Installation</title>
-      <link>https://www.vandenboom.icu/tags/installation/</link>
+      <link>http://localhost:1313/tags/installation/</link>
       <pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/installation/</guid>
+      <guid>http://localhost:1313/tags/installation/</guid>
       <description></description>
     </item>
     <item>
       <title>Sip</title>
-      <link>https://www.vandenboom.icu/tags/sip/</link>
+      <link>http://localhost:1313/tags/sip/</link>
       <pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/sip/</guid>
+      <guid>http://localhost:1313/tags/sip/</guid>
       <description></description>
     </item>
     <item>
       <title>Keys</title>
-      <link>https://www.vandenboom.icu/tags/keys/</link>
+      <link>http://localhost:1313/tags/keys/</link>
       <pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/keys/</guid>
+      <guid>http://localhost:1313/tags/keys/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine</title>
-      <link>https://www.vandenboom.icu/tags/machine/</link>
+      <link>http://localhost:1313/tags/machine/</link>
       <pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/machine/</guid>
+      <guid>http://localhost:1313/tags/machine/</guid>
       <description></description>
     </item>
     <item>
       <title>New</title>
-      <link>https://www.vandenboom.icu/tags/new/</link>
+      <link>http://localhost:1313/tags/new/</link>
       <pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/new/</guid>
+      <guid>http://localhost:1313/tags/new/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://www.vandenboom.icu/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Remote</title>
-      <link>https://www.vandenboom.icu/tags/remote/</link>
+      <link>http://localhost:1313/tags/remote/</link>
       <pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/remote/</guid>
+      <guid>http://localhost:1313/tags/remote/</guid>
       <description></description>
     </item>
     <item>
       <title>Ssh</title>
-      <link>https://www.vandenboom.icu/tags/ssh/</link>
+      <link>http://localhost:1313/tags/ssh/</link>
       <pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/ssh/</guid>
+      <guid>http://localhost:1313/tags/ssh/</guid>
       <description></description>
     </item>
     <item>
       <title>Command</title>
-      <link>https://www.vandenboom.icu/tags/command/</link>
+      <link>http://localhost:1313/tags/command/</link>
       <pubDate>Wed, 03 Apr 2024 20:12:58 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/command/</guid>
+      <guid>http://localhost:1313/tags/command/</guid>
       <description></description>
     </item>
     <item>
       <title>Old</title>
-      <link>https://www.vandenboom.icu/tags/old/</link>
+      <link>http://localhost:1313/tags/old/</link>
       <pubDate>Wed, 03 Apr 2024 20:12:58 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/old/</guid>
+      <guid>http://localhost:1313/tags/old/</guid>
       <description></description>
     </item>
     <item>
       <title>Configure</title>
-      <link>https://www.vandenboom.icu/tags/configure/</link>
+      <link>http://localhost:1313/tags/configure/</link>
       <pubDate>Sat, 09 Mar 2024 17:38:50 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/configure/</guid>
+      <guid>http://localhost:1313/tags/configure/</guid>
       <description></description>
     </item>
     <item>
       <title>Ipa</title>
-      <link>https://www.vandenboom.icu/tags/ipa/</link>
+      <link>http://localhost:1313/tags/ipa/</link>
       <pubDate>Sat, 09 Mar 2024 17:38:50 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/ipa/</guid>
+      <guid>http://localhost:1313/tags/ipa/</guid>
       <description></description>
     </item>
     <item>
       <title>Jenkins</title>
-      <link>https://www.vandenboom.icu/tags/jenkins/</link>
+      <link>http://localhost:1313/tags/jenkins/</link>
       <pubDate>Sat, 09 Mar 2024 17:38:50 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/jenkins/</guid>
+      <guid>http://localhost:1313/tags/jenkins/</guid>
       <description></description>
     </item>
     <item>
-      <title>Ldap</title>
-      <link>https://www.vandenboom.icu/tags/ldap/</link>
+      <title>LDAP</title>
+      <link>http://localhost:1313/tags/ldap/</link>
       <pubDate>Sat, 09 Mar 2024 17:38:50 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/ldap/</guid>
+      <guid>http://localhost:1313/tags/ldap/</guid>
       <description></description>
     </item>
     <item>
       <title>Nexus</title>
-      <link>https://www.vandenboom.icu/tags/nexus/</link>
+      <link>http://localhost:1313/tags/nexus/</link>
       <pubDate>Sat, 09 Mar 2024 17:37:42 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/nexus/</guid>
+      <guid>http://localhost:1313/tags/nexus/</guid>
       <description></description>
     </item>
     <item>
       <title>Sonarqube</title>
-      <link>https://www.vandenboom.icu/tags/sonarqube/</link>
+      <link>http://localhost:1313/tags/sonarqube/</link>
       <pubDate>Sat, 09 Mar 2024 17:35:22 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/sonarqube/</guid>
+      <guid>http://localhost:1313/tags/sonarqube/</guid>
       <description></description>
     </item>
     <item>
       <title>Line</title>
-      <link>https://www.vandenboom.icu/tags/line/</link>
+      <link>http://localhost:1313/tags/line/</link>
       <pubDate>Sat, 09 Mar 2024 17:34:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/line/</guid>
+      <guid>http://localhost:1313/tags/line/</guid>
       <description></description>
     </item>
     <item>
       <title>Searches</title>
-      <link>https://www.vandenboom.icu/tags/searches/</link>
+      <link>http://localhost:1313/tags/searches/</link>
       <pubDate>Sat, 09 Mar 2024 17:34:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/searches/</guid>
+      <guid>http://localhost:1313/tags/searches/</guid>
       <description></description>
     </item>
     <item>
       <title>Client</title>
-      <link>https://www.vandenboom.icu/tags/client/</link>
+      <link>http://localhost:1313/tags/client/</link>
       <pubDate>Sat, 09 Mar 2024 17:33:26 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/client/</guid>
+      <guid>http://localhost:1313/tags/client/</guid>
       <description></description>
     </item>
     <item>
       <title>7</title>
-      <link>https://www.vandenboom.icu/tags/7/</link>
+      <link>http://localhost:1313/tags/7/</link>
       <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/7/</guid>
+      <guid>http://localhost:1313/tags/7/</guid>
       <description></description>
     </item>
     <item>
       <title>Hat</title>
-      <link>https://www.vandenboom.icu/tags/hat/</link>
+      <link>http://localhost:1313/tags/hat/</link>
       <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/hat/</guid>
+      <guid>http://localhost:1313/tags/hat/</guid>
       <description></description>
     </item>
     <item>
       <title>Red</title>
-      <link>https://www.vandenboom.icu/tags/red/</link>
+      <link>http://localhost:1313/tags/red/</link>
       <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/red/</guid>
+      <guid>http://localhost:1313/tags/red/</guid>
       <description></description>
     </item>
     <item>
       <title>Rhel</title>
-      <link>https://www.vandenboom.icu/tags/rhel/</link>
+      <link>http://localhost:1313/tags/rhel/</link>
       <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/rhel/</guid>
+      <guid>http://localhost:1313/tags/rhel/</guid>
       <description></description>
     </item>
     <item>
       <title>Proces</title>
-      <link>https://www.vandenboom.icu/tags/proces/</link>
+      <link>http://localhost:1313/tags/proces/</link>
       <pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/proces/</guid>
+      <guid>http://localhost:1313/tags/proces/</guid>
       <description></description>
     </item>
     <item>
       <title>Programma</title>
-      <link>https://www.vandenboom.icu/tags/programma/</link>
+      <link>http://localhost:1313/tags/programma/</link>
       <pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/programma/</guid>
+      <guid>http://localhost:1313/tags/programma/</guid>
       <description></description>
     </item>
     <item>
       <title>Zombie</title>
-      <link>https://www.vandenboom.icu/tags/zombie/</link>
+      <link>http://localhost:1313/tags/zombie/</link>
       <pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/zombie/</guid>
+      <guid>http://localhost:1313/tags/zombie/</guid>
       <description></description>
     </item>
     <item>
       <title>Einde</title>
-      <link>https://www.vandenboom.icu/tags/einde/</link>
+      <link>http://localhost:1313/tags/einde/</link>
       <pubDate>Wed, 31 Jan 2024 20:18:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/einde/</guid>
+      <guid>http://localhost:1313/tags/einde/</guid>
       <description></description>
     </item>
     <item>
       <title>Failed</title>
-      <link>https://www.vandenboom.icu/tags/failed/</link>
+      <link>http://localhost:1313/tags/failed/</link>
       <pubDate>Wed, 31 Jan 2024 20:18:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/failed/</guid>
+      <guid>http://localhost:1313/tags/failed/</guid>
       <description></description>
     </item>
     <item>
       <title>Melding</title>
-      <link>https://www.vandenboom.icu/tags/melding/</link>
+      <link>http://localhost:1313/tags/melding/</link>
       <pubDate>Wed, 31 Jan 2024 20:18:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/melding/</guid>
+      <guid>http://localhost:1313/tags/melding/</guid>
       <description></description>
     </item>
     <item>
       <title>Regel</title>
-      <link>https://www.vandenboom.icu/tags/regel/</link>
+      <link>http://localhost:1313/tags/regel/</link>
       <pubDate>Wed, 31 Jan 2024 20:18:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/regel/</guid>
+      <guid>http://localhost:1313/tags/regel/</guid>
       <description></description>
     </item>
     <item>
       <title>Succes</title>
-      <link>https://www.vandenboom.icu/tags/succes/</link>
+      <link>http://localhost:1313/tags/succes/</link>
       <pubDate>Wed, 31 Jan 2024 20:18:39 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/succes/</guid>
+      <guid>http://localhost:1313/tags/succes/</guid>
       <description></description>
     </item>
     <item>
       <title>9.3</title>
-      <link>https://www.vandenboom.icu/tags/9.3/</link>
+      <link>http://localhost:1313/tags/9.3/</link>
       <pubDate>Tue, 16 Jan 2024 21:13:15 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/9.3/</guid>
+      <guid>http://localhost:1313/tags/9.3/</guid>
       <description></description>
     </item>
     <item>
       <title>Checkmk</title>
-      <link>https://www.vandenboom.icu/tags/checkmk/</link>
+      <link>http://localhost:1313/tags/checkmk/</link>
       <pubDate>Tue, 16 Jan 2024 21:13:15 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/checkmk/</guid>
+      <guid>http://localhost:1313/tags/checkmk/</guid>
       <description></description>
     </item>
     <item>
       <title>Rocky</title>
-      <link>https://www.vandenboom.icu/tags/rocky/</link>
+      <link>http://localhost:1313/tags/rocky/</link>
       <pubDate>Tue, 16 Jan 2024 21:13:15 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/rocky/</guid>
+      <guid>http://localhost:1313/tags/rocky/</guid>
       <description></description>
     </item>
     <item>
       <title>Advanced</title>
-      <link>https://www.vandenboom.icu/tags/advanced/</link>
+      <link>http://localhost:1313/tags/advanced/</link>
       <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/advanced/</guid>
+      <guid>http://localhost:1313/tags/advanced/</guid>
       <description></description>
     </item>
     <item>
       <title>Cpu</title>
-      <link>https://www.vandenboom.icu/tags/cpu/</link>
+      <link>http://localhost:1313/tags/cpu/</link>
       <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/cpu/</guid>
+      <guid>http://localhost:1313/tags/cpu/</guid>
       <description></description>
     </item>
     <item>
       <title>Information</title>
-      <link>https://www.vandenboom.icu/tags/information/</link>
+      <link>http://localhost:1313/tags/information/</link>
       <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/information/</guid>
+      <guid>http://localhost:1313/tags/information/</guid>
       <description></description>
     </item>
     <item>
       <title>Memory</title>
-      <link>https://www.vandenboom.icu/tags/memory/</link>
+      <link>http://localhost:1313/tags/memory/</link>
       <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/memory/</guid>
+      <guid>http://localhost:1313/tags/memory/</guid>
       <description></description>
     </item>
     <item>
       <title>Monitor</title>
-      <link>https://www.vandenboom.icu/tags/monitor/</link>
+      <link>http://localhost:1313/tags/monitor/</link>
       <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/monitor/</guid>
+      <guid>http://localhost:1313/tags/monitor/</guid>
       <description></description>
     </item>
     <item>
       <title>Percentage</title>
-      <link>https://www.vandenboom.icu/tags/percentage/</link>
+      <link>http://localhost:1313/tags/percentage/</link>
       <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/percentage/</guid>
+      <guid>http://localhost:1313/tags/percentage/</guid>
       <description></description>
     </item>
     <item>
-      <title>PowerShell</title>
-      <link>https://www.vandenboom.icu/tags/powershell/</link>
+      <title>Powershell</title>
+      <link>http://localhost:1313/tags/powershell/</link>
       <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/powershell/</guid>
+      <guid>http://localhost:1313/tags/powershell/</guid>
       <description></description>
     </item>
     <item>
       <title>Resource</title>
-      <link>https://www.vandenboom.icu/tags/resource/</link>
+      <link>http://localhost:1313/tags/resource/</link>
       <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/resource/</guid>
+      <guid>http://localhost:1313/tags/resource/</guid>
       <description></description>
     </item>
     <item>
       <title>Apparaten</title>
-      <link>https://www.vandenboom.icu/tags/apparaten/</link>
+      <link>http://localhost:1313/tags/apparaten/</link>
       <pubDate>Sun, 26 Nov 2023 15:16:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/apparaten/</guid>
+      <guid>http://localhost:1313/tags/apparaten/</guid>
       <description></description>
     </item>
     <item>
       <title>Desktop</title>
-      <link>https://www.vandenboom.icu/tags/desktop/</link>
+      <link>http://localhost:1313/tags/desktop/</link>
       <pubDate>Sun, 26 Nov 2023 15:16:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/desktop/</guid>
+      <guid>http://localhost:1313/tags/desktop/</guid>
       <description></description>
     </item>
     <item>
       <title>Extended</title>
-      <link>https://www.vandenboom.icu/tags/extended/</link>
+      <link>http://localhost:1313/tags/extended/</link>
       <pubDate>Sun, 26 Nov 2023 15:16:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/extended/</guid>
+      <guid>http://localhost:1313/tags/extended/</guid>
       <description></description>
     </item>
     <item>
       <title>Meedere</title>
-      <link>https://www.vandenboom.icu/tags/meedere/</link>
+      <link>http://localhost:1313/tags/meedere/</link>
       <pubDate>Sun, 26 Nov 2023 15:16:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/meedere/</guid>
+      <guid>http://localhost:1313/tags/meedere/</guid>
       <description></description>
     </item>
     <item>
       <title>Schermen</title>
-      <link>https://www.vandenboom.icu/tags/schermen/</link>
+      <link>http://localhost:1313/tags/schermen/</link>
       <pubDate>Sun, 26 Nov 2023 15:16:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/schermen/</guid>
+      <guid>http://localhost:1313/tags/schermen/</guid>
       <description></description>
     </item>
     <item>
       <title>Multiple</title>
-      <link>https://www.vandenboom.icu/tags/multiple/</link>
+      <link>http://localhost:1313/tags/multiple/</link>
       <pubDate>Wed, 27 Sep 2023 17:43:18 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/multiple/</guid>
+      <guid>http://localhost:1313/tags/multiple/</guid>
       <description></description>
     </item>
     <item>
       <title>Versions</title>
-      <link>https://www.vandenboom.icu/tags/versions/</link>
+      <link>http://localhost:1313/tags/versions/</link>
       <pubDate>Wed, 27 Sep 2023 17:43:18 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/versions/</guid>
+      <guid>http://localhost:1313/tags/versions/</guid>
       <description></description>
     </item>
     <item>
       <title>Mlocate</title>
-      <link>https://www.vandenboom.icu/tags/mlocate/</link>
+      <link>http://localhost:1313/tags/mlocate/</link>
       <pubDate>Wed, 27 Sep 2023 17:40:13 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/mlocate/</guid>
+      <guid>http://localhost:1313/tags/mlocate/</guid>
       <description></description>
     </item>
     <item>
       <title>MS-DOS</title>
-      <link>https://www.vandenboom.icu/tags/ms-dos/</link>
+      <link>http://localhost:1313/tags/ms-dos/</link>
       <pubDate>Sun, 17 Sep 2023 12:29:24 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/ms-dos/</guid>
+      <guid>http://localhost:1313/tags/ms-dos/</guid>
       <description></description>
     </item>
     <item>
       <title>Sharing</title>
-      <link>https://www.vandenboom.icu/tags/sharing/</link>
+      <link>http://localhost:1313/tags/sharing/</link>
       <pubDate>Sun, 17 Sep 2023 12:29:24 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/sharing/</guid>
+      <guid>http://localhost:1313/tags/sharing/</guid>
       <description></description>
     </item>
     <item>
       <title>Cannot</title>
-      <link>https://www.vandenboom.icu/tags/cannot/</link>
+      <link>http://localhost:1313/tags/cannot/</link>
       <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/cannot/</guid>
+      <guid>http://localhost:1313/tags/cannot/</guid>
       <description></description>
     </item>
     <item>
       <title>Clearly</title>
-      <link>https://www.vandenboom.icu/tags/clearly/</link>
+      <link>http://localhost:1313/tags/clearly/</link>
       <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/clearly/</guid>
+      <guid>http://localhost:1313/tags/clearly/</guid>
       <description></description>
     </item>
     <item>
       <title>Denied</title>
-      <link>https://www.vandenboom.icu/tags/denied/</link>
+      <link>http://localhost:1313/tags/denied/</link>
       <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/denied/</guid>
+      <guid>http://localhost:1313/tags/denied/</guid>
       <description></description>
     </item>
     <item>
       <title>Excluding</title>
-      <link>https://www.vandenboom.icu/tags/excluding/</link>
+      <link>http://localhost:1313/tags/excluding/</link>
       <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/excluding/</guid>
+      <guid>http://localhost:1313/tags/excluding/</guid>
       <description></description>
     </item>
     <item>
       <title>Messages</title>
-      <link>https://www.vandenboom.icu/tags/messages/</link>
+      <link>http://localhost:1313/tags/messages/</link>
       <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/messages/</guid>
+      <guid>http://localhost:1313/tags/messages/</guid>
       <description></description>
     </item>
     <item>
       <title>Space</title>
-      <link>https://www.vandenboom.icu/tags/space/</link>
+      <link>http://localhost:1313/tags/space/</link>
       <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/space/</guid>
+      <guid>http://localhost:1313/tags/space/</guid>
       <description></description>
     </item>
     <item>
       <title>Df</title>
-      <link>https://www.vandenboom.icu/tags/df/</link>
+      <link>http://localhost:1313/tags/df/</link>
       <pubDate>Tue, 05 Sep 2023 06:18:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/df/</guid>
+      <guid>http://localhost:1313/tags/df/</guid>
       <description></description>
     </item>
     <item>
       <title>Difference</title>
-      <link>https://www.vandenboom.icu/tags/difference/</link>
+      <link>http://localhost:1313/tags/difference/</link>
       <pubDate>Tue, 05 Sep 2023 06:18:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/difference/</guid>
+      <guid>http://localhost:1313/tags/difference/</guid>
       <description></description>
     </item>
     <item>
       <title>Du</title>
-      <link>https://www.vandenboom.icu/tags/du/</link>
+      <link>http://localhost:1313/tags/du/</link>
       <pubDate>Tue, 05 Sep 2023 06:18:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/du/</guid>
+      <guid>http://localhost:1313/tags/du/</guid>
       <description></description>
     </item>
     <item>
       <title>Locate</title>
-      <link>https://www.vandenboom.icu/tags/locate/</link>
+      <link>http://localhost:1313/tags/locate/</link>
       <pubDate>Tue, 05 Sep 2023 06:18:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/locate/</guid>
+      <guid>http://localhost:1313/tags/locate/</guid>
       <description></description>
     </item>
     <item>
       <title>Lost</title>
-      <link>https://www.vandenboom.icu/tags/lost/</link>
+      <link>http://localhost:1313/tags/lost/</link>
       <pubDate>Tue, 05 Sep 2023 06:18:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/lost/</guid>
+      <guid>http://localhost:1313/tags/lost/</guid>
       <description></description>
     </item>
     <item>
       <title>Storage</title>
-      <link>https://www.vandenboom.icu/tags/storage/</link>
+      <link>http://localhost:1313/tags/storage/</link>
       <pubDate>Tue, 05 Sep 2023 06:18:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/storage/</guid>
+      <guid>http://localhost:1313/tags/storage/</guid>
       <description></description>
     </item>
     <item>
       <title>Burn</title>
-      <link>https://www.vandenboom.icu/tags/burn/</link>
+      <link>http://localhost:1313/tags/burn/</link>
       <pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/burn/</guid>
+      <guid>http://localhost:1313/tags/burn/</guid>
       <description></description>
     </item>
     <item>
       <title>Cd</title>
-      <link>https://www.vandenboom.icu/tags/cd/</link>
+      <link>http://localhost:1313/tags/cd/</link>
       <pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/cd/</guid>
+      <guid>http://localhost:1313/tags/cd/</guid>
       <description></description>
     </item>
     <item>
       <title>Dvd</title>
-      <link>https://www.vandenboom.icu/tags/dvd/</link>
+      <link>http://localhost:1313/tags/dvd/</link>
       <pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/dvd/</guid>
+      <guid>http://localhost:1313/tags/dvd/</guid>
       <description></description>
     </item>
     <item>
       <title>File</title>
-      <link>https://www.vandenboom.icu/tags/file/</link>
+      <link>http://localhost:1313/tags/file/</link>
       <pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/file/</guid>
+      <guid>http://localhost:1313/tags/file/</guid>
       <description></description>
     </item>
     <item>
       <title>Iso</title>
-      <link>https://www.vandenboom.icu/tags/iso/</link>
+      <link>http://localhost:1313/tags/iso/</link>
       <pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/iso/</guid>
+      <guid>http://localhost:1313/tags/iso/</guid>
       <description></description>
     </item>
     <item>
       <title>Opslaan</title>
-      <link>https://www.vandenboom.icu/tags/opslaan/</link>
+      <link>http://localhost:1313/tags/opslaan/</link>
       <pubDate>Wed, 05 Jul 2023 18:02:27 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/opslaan/</guid>
+      <guid>http://localhost:1313/tags/opslaan/</guid>
       <description></description>
     </item>
     <item>
       <title>Anoniem</title>
-      <link>https://www.vandenboom.icu/tags/anoniem/</link>
+      <link>http://localhost:1313/tags/anoniem/</link>
       <pubDate>Wed, 21 Jun 2023 17:10:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/anoniem/</guid>
+      <guid>http://localhost:1313/tags/anoniem/</guid>
       <description></description>
     </item>
     <item>
       <title>Bescherm</title>
-      <link>https://www.vandenboom.icu/tags/bescherm/</link>
+      <link>http://localhost:1313/tags/bescherm/</link>
       <pubDate>Wed, 21 Jun 2023 17:10:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/bescherm/</guid>
+      <guid>http://localhost:1313/tags/bescherm/</guid>
       <description></description>
     </item>
     <item>
       <title>Internet</title>
-      <link>https://www.vandenboom.icu/tags/internet/</link>
+      <link>http://localhost:1313/tags/internet/</link>
       <pubDate>Wed, 21 Jun 2023 17:10:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/internet/</guid>
+      <guid>http://localhost:1313/tags/internet/</guid>
       <description></description>
     </item>
     <item>
       <title>Privacy</title>
-      <link>https://www.vandenboom.icu/tags/privacy/</link>
+      <link>http://localhost:1313/tags/privacy/</link>
       <pubDate>Wed, 21 Jun 2023 17:10:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/privacy/</guid>
+      <guid>http://localhost:1313/tags/privacy/</guid>
       <description></description>
     </item>
     <item>
       <title>Zoeken</title>
-      <link>https://www.vandenboom.icu/tags/zoeken/</link>
+      <link>http://localhost:1313/tags/zoeken/</link>
       <pubDate>Wed, 21 Jun 2023 17:10:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/zoeken/</guid>
+      <guid>http://localhost:1313/tags/zoeken/</guid>
       <description></description>
     </item>
     <item>
       <title>Gratis</title>
-      <link>https://www.vandenboom.icu/tags/gratis/</link>
+      <link>http://localhost:1313/tags/gratis/</link>
       <pubDate>Wed, 21 Jun 2023 16:46:56 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/gratis/</guid>
+      <guid>http://localhost:1313/tags/gratis/</guid>
       <description></description>
     </item>
     <item>
       <title>Office</title>
-      <link>https://www.vandenboom.icu/tags/office/</link>
+      <link>http://localhost:1313/tags/office/</link>
       <pubDate>Wed, 21 Jun 2023 16:46:56 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/office/</guid>
+      <guid>http://localhost:1313/tags/office/</guid>
       <description></description>
     </item>
     <item>
       <title>Bureaublad</title>
-      <link>https://www.vandenboom.icu/tags/bureaublad/</link>
+      <link>http://localhost:1313/tags/bureaublad/</link>
       <pubDate>Wed, 10 May 2023 19:09:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/bureaublad/</guid>
+      <guid>http://localhost:1313/tags/bureaublad/</guid>
       <description></description>
     </item>
     <item>
       <title>Icoontje</title>
-      <link>https://www.vandenboom.icu/tags/icoontje/</link>
+      <link>http://localhost:1313/tags/icoontje/</link>
       <pubDate>Wed, 10 May 2023 19:09:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/icoontje/</guid>
+      <guid>http://localhost:1313/tags/icoontje/</guid>
       <description></description>
     </item>
     <item>
       <title>Snelkoppeling</title>
-      <link>https://www.vandenboom.icu/tags/snelkoppeling/</link>
+      <link>http://localhost:1313/tags/snelkoppeling/</link>
       <pubDate>Wed, 10 May 2023 19:09:51 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/snelkoppeling/</guid>
+      <guid>http://localhost:1313/tags/snelkoppeling/</guid>
       <description></description>
     </item>
     <item>
       <title>Antwoorden</title>
-      <link>https://www.vandenboom.icu/tags/antwoorden/</link>
+      <link>http://localhost:1313/tags/antwoorden/</link>
       <pubDate>Sun, 30 Apr 2023 13:15:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/antwoorden/</guid>
+      <guid>http://localhost:1313/tags/antwoorden/</guid>
       <description></description>
     </item>
     <item>
       <title>ChatGPT</title>
-      <link>https://www.vandenboom.icu/tags/chatgpt/</link>
+      <link>http://localhost:1313/tags/chatgpt/</link>
       <pubDate>Sun, 30 Apr 2023 13:15:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/chatgpt/</guid>
+      <guid>http://localhost:1313/tags/chatgpt/</guid>
       <description></description>
     </item>
     <item>
       <title>Moeilijke</title>
-      <link>https://www.vandenboom.icu/tags/moeilijke/</link>
+      <link>http://localhost:1313/tags/moeilijke/</link>
       <pubDate>Sun, 30 Apr 2023 13:15:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/moeilijke/</guid>
+      <guid>http://localhost:1313/tags/moeilijke/</guid>
       <description></description>
     </item>
     <item>
       <title>Vinden</title>
-      <link>https://www.vandenboom.icu/tags/vinden/</link>
+      <link>http://localhost:1313/tags/vinden/</link>
       <pubDate>Sun, 30 Apr 2023 13:15:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/vinden/</guid>
+      <guid>http://localhost:1313/tags/vinden/</guid>
       <description></description>
     </item>
     <item>
       <title>Vragen</title>
-      <link>https://www.vandenboom.icu/tags/vragen/</link>
+      <link>http://localhost:1313/tags/vragen/</link>
       <pubDate>Sun, 30 Apr 2023 13:15:53 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/vragen/</guid>
+      <guid>http://localhost:1313/tags/vragen/</guid>
       <description></description>
     </item>
     <item>
       <title>2e Handse</title>
-      <link>https://www.vandenboom.icu/tags/2e-handse/</link>
+      <link>http://localhost:1313/tags/2e-handse/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/2e-handse/</guid>
+      <guid>http://localhost:1313/tags/2e-handse/</guid>
       <description></description>
     </item>
     <item>
       <title>Apple</title>
-      <link>https://www.vandenboom.icu/tags/apple/</link>
+      <link>http://localhost:1313/tags/apple/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/apple/</guid>
+      <guid>http://localhost:1313/tags/apple/</guid>
       <description></description>
     </item>
     <item>
       <title>IMac</title>
-      <link>https://www.vandenboom.icu/tags/imac/</link>
+      <link>http://localhost:1313/tags/imac/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/imac/</guid>
+      <guid>http://localhost:1313/tags/imac/</guid>
       <description></description>
     </item>
     <item>
       <title>Leven</title>
-      <link>https://www.vandenboom.icu/tags/leven/</link>
+      <link>http://localhost:1313/tags/leven/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/leven/</guid>
+      <guid>http://localhost:1313/tags/leven/</guid>
       <description></description>
     </item>
     <item>
       <title>Mac</title>
-      <link>https://www.vandenboom.icu/tags/mac/</link>
+      <link>http://localhost:1313/tags/mac/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/mac/</guid>
+      <guid>http://localhost:1313/tags/mac/</guid>
       <description></description>
     </item>
     <item>
       <title>Mac Mini</title>
-      <link>https://www.vandenboom.icu/tags/mac-mini/</link>
+      <link>http://localhost:1313/tags/mac-mini/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/mac-mini/</guid>
+      <guid>http://localhost:1313/tags/mac-mini/</guid>
       <description></description>
     </item>
     <item>
       <title>Macbook</title>
-      <link>https://www.vandenboom.icu/tags/macbook/</link>
+      <link>http://localhost:1313/tags/macbook/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/macbook/</guid>
+      <guid>http://localhost:1313/tags/macbook/</guid>
       <description></description>
     </item>
     <item>
-      <title>OpenCore Legacy Patcher</title>
-      <link>https://www.vandenboom.icu/tags/opencore-legacy-patcher/</link>
+      <title>Opencore Legacy Patcher</title>
+      <link>http://localhost:1313/tags/opencore-legacy-patcher/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/opencore-legacy-patcher/</guid>
+      <guid>http://localhost:1313/tags/opencore-legacy-patcher/</guid>
       <description></description>
     </item>
     <item>
       <title>Oude</title>
-      <link>https://www.vandenboom.icu/tags/oude/</link>
+      <link>http://localhost:1313/tags/oude/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/oude/</guid>
+      <guid>http://localhost:1313/tags/oude/</guid>
       <description></description>
     </item>
     <item>
       <title>God</title>
-      <link>https://www.vandenboom.icu/tags/god/</link>
+      <link>http://localhost:1313/tags/god/</link>
       <pubDate>Sun, 05 Mar 2023 13:40:14 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/god/</guid>
+      <guid>http://localhost:1313/tags/god/</guid>
       <description></description>
     </item>
     <item>
       <title>Automatisch</title>
-      <link>https://www.vandenboom.icu/tags/automatisch/</link>
+      <link>http://localhost:1313/tags/automatisch/</link>
       <pubDate>Fri, 17 Feb 2023 14:51:15 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/automatisch/</guid>
+      <guid>http://localhost:1313/tags/automatisch/</guid>
       <description></description>
     </item>
     <item>
       <title>Inloggen</title>
-      <link>https://www.vandenboom.icu/tags/inloggen/</link>
+      <link>http://localhost:1313/tags/inloggen/</link>
       <pubDate>Fri, 17 Feb 2023 14:51:15 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/inloggen/</guid>
+      <guid>http://localhost:1313/tags/inloggen/</guid>
       <description></description>
     </item>
     <item>
       <title>Putty</title>
-      <link>https://www.vandenboom.icu/tags/putty/</link>
+      <link>http://localhost:1313/tags/putty/</link>
       <pubDate>Fri, 17 Feb 2023 14:51:15 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/putty/</guid>
+      <guid>http://localhost:1313/tags/putty/</guid>
       <description></description>
     </item>
     <item>
       <title>Wachtwoord</title>
-      <link>https://www.vandenboom.icu/tags/wachtwoord/</link>
+      <link>http://localhost:1313/tags/wachtwoord/</link>
       <pubDate>Thu, 16 Feb 2023 10:56:24 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/wachtwoord/</guid>
+      <guid>http://localhost:1313/tags/wachtwoord/</guid>
       <description></description>
     </item>
     <item>
       <title>Machines</title>
-      <link>https://www.vandenboom.icu/tags/machines/</link>
+      <link>http://localhost:1313/tags/machines/</link>
       <pubDate>Thu, 01 Dec 2022 21:20:43 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/machines/</guid>
+      <guid>http://localhost:1313/tags/machines/</guid>
       <description></description>
     </item>
     <item>
       <title>Monterey</title>
-      <link>https://www.vandenboom.icu/tags/monterey/</link>
+      <link>http://localhost:1313/tags/monterey/</link>
       <pubDate>Thu, 01 Dec 2022 21:20:43 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/monterey/</guid>
+      <guid>http://localhost:1313/tags/monterey/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtual</title>
-      <link>https://www.vandenboom.icu/tags/virtual/</link>
+      <link>http://localhost:1313/tags/virtual/</link>
       <pubDate>Thu, 01 Dec 2022 21:20:43 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/virtual/</guid>
+      <guid>http://localhost:1313/tags/virtual/</guid>
       <description></description>
     </item>
     <item>
       <title>Opening</title>
-      <link>https://www.vandenboom.icu/tags/opening/</link>
+      <link>http://localhost:1313/tags/opening/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/opening/</guid>
+      <guid>http://localhost:1313/tags/opening/</guid>
       <description></description>
     </item>
     <item>
       <title>Prevent</title>
-      <link>https://www.vandenboom.icu/tags/prevent/</link>
+      <link>http://localhost:1313/tags/prevent/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/prevent/</guid>
+      <guid>http://localhost:1313/tags/prevent/</guid>
       <description></description>
     </item>
     <item>
       <title>Store</title>
-      <link>https://www.vandenboom.icu/tags/store/</link>
+      <link>http://localhost:1313/tags/store/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/store/</guid>
+      <guid>http://localhost:1313/tags/store/</guid>
       <description></description>
     </item>
     <item>
       <title>Typing</title>
-      <link>https://www.vandenboom.icu/tags/typing/</link>
+      <link>http://localhost:1313/tags/typing/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/typing/</guid>
+      <guid>http://localhost:1313/tags/typing/</guid>
       <description></description>
     </item>
     <item>
       <title>When</title>
-      <link>https://www.vandenboom.icu/tags/when/</link>
+      <link>http://localhost:1313/tags/when/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/when/</guid>
+      <guid>http://localhost:1313/tags/when/</guid>
       <description></description>
     </item>
     <item>
       <title>Dependencies</title>
-      <link>https://www.vandenboom.icu/tags/dependencies/</link>
+      <link>http://localhost:1313/tags/dependencies/</link>
       <pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/dependencies/</guid>
+      <guid>http://localhost:1313/tags/dependencies/</guid>
       <description></description>
     </item>
     <item>
       <title>Installatie</title>
-      <link>https://www.vandenboom.icu/tags/installatie/</link>
+      <link>http://localhost:1313/tags/installatie/</link>
       <pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/installatie/</guid>
+      <guid>http://localhost:1313/tags/installatie/</guid>
       <description></description>
     </item>
     <item>
       <title>Display</title>
-      <link>https://www.vandenboom.icu/tags/display/</link>
+      <link>http://localhost:1313/tags/display/</link>
       <pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/display/</guid>
+      <guid>http://localhost:1313/tags/display/</guid>
       <description></description>
     </item>
     <item>
       <title>Automatically</title>
-      <link>https://www.vandenboom.icu/tags/automatically/</link>
+      <link>http://localhost:1313/tags/automatically/</link>
       <pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/automatically/</guid>
+      <guid>http://localhost:1313/tags/automatically/</guid>
       <description></description>
     </item>
     <item>
       <title>Concourse</title>
-      <link>https://www.vandenboom.icu/tags/concourse/</link>
+      <link>http://localhost:1313/tags/concourse/</link>
       <pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/concourse/</guid>
+      <guid>http://localhost:1313/tags/concourse/</guid>
       <description></description>
     </item>
     <item>
       <title>Service</title>
-      <link>https://www.vandenboom.icu/tags/service/</link>
+      <link>http://localhost:1313/tags/service/</link>
       <pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/service/</guid>
+      <guid>http://localhost:1313/tags/service/</guid>
       <description></description>
     </item>
     <item>
       <title>Starting</title>
-      <link>https://www.vandenboom.icu/tags/starting/</link>
+      <link>http://localhost:1313/tags/starting/</link>
       <pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/starting/</guid>
+      <guid>http://localhost:1313/tags/starting/</guid>
       <description></description>
     </item>
     <item>
       <title>Systemctl</title>
-      <link>https://www.vandenboom.icu/tags/systemctl/</link>
+      <link>http://localhost:1313/tags/systemctl/</link>
       <pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/systemctl/</guid>
+      <guid>http://localhost:1313/tags/systemctl/</guid>
       <description></description>
     </item>
     <item>
       <title>Database</title>
-      <link>https://www.vandenboom.icu/tags/database/</link>
+      <link>http://localhost:1313/tags/database/</link>
       <pubDate>Thu, 16 Jun 2022 18:50:41 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/database/</guid>
+      <guid>http://localhost:1313/tags/database/</guid>
       <description></description>
     </item>
     <item>
       <title>Persistent</title>
-      <link>https://www.vandenboom.icu/tags/persistent/</link>
+      <link>http://localhost:1313/tags/persistent/</link>
       <pubDate>Thu, 16 Jun 2022 18:50:41 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/persistent/</guid>
+      <guid>http://localhost:1313/tags/persistent/</guid>
       <description></description>
     </item>
     <item>
       <title>PostgreSQL</title>
-      <link>https://www.vandenboom.icu/tags/postgresql/</link>
+      <link>http://localhost:1313/tags/postgresql/</link>
       <pubDate>Thu, 16 Jun 2022 18:50:41 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/postgresql/</guid>
+      <guid>http://localhost:1313/tags/postgresql/</guid>
       <description></description>
     </item>
     <item>
       <title>Afsluiten</title>
-      <link>https://www.vandenboom.icu/tags/afsluiten/</link>
+      <link>http://localhost:1313/tags/afsluiten/</link>
       <pubDate>Thu, 02 Jun 2022 09:41:34 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/afsluiten/</guid>
+      <guid>http://localhost:1313/tags/afsluiten/</guid>
       <description></description>
     </item>
     <item>
       <title>Browser</title>
-      <link>https://www.vandenboom.icu/tags/browser/</link>
+      <link>http://localhost:1313/tags/browser/</link>
       <pubDate>Thu, 02 Jun 2022 09:41:34 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/browser/</guid>
+      <guid>http://localhost:1313/tags/browser/</guid>
       <description></description>
     </item>
     <item>
       <title>Cookies</title>
-      <link>https://www.vandenboom.icu/tags/cookies/</link>
+      <link>http://localhost:1313/tags/cookies/</link>
       <pubDate>Thu, 02 Jun 2022 09:41:34 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/cookies/</guid>
+      <guid>http://localhost:1313/tags/cookies/</guid>
       <description></description>
     </item>
     <item>
       <title>Opruimen</title>
-      <link>https://www.vandenboom.icu/tags/opruimen/</link>
+      <link>http://localhost:1313/tags/opruimen/</link>
       <pubDate>Thu, 02 Jun 2022 09:41:34 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/opruimen/</guid>
+      <guid>http://localhost:1313/tags/opruimen/</guid>
       <description></description>
     </item>
     <item>
       <title>Web</title>
-      <link>https://www.vandenboom.icu/tags/web/</link>
+      <link>http://localhost:1313/tags/web/</link>
       <pubDate>Thu, 02 Jun 2022 09:41:34 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/web/</guid>
+      <guid>http://localhost:1313/tags/web/</guid>
       <description></description>
     </item>
     <item>
       <title>Coderunner</title>
-      <link>https://www.vandenboom.icu/tags/coderunner/</link>
+      <link>http://localhost:1313/tags/coderunner/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/coderunner/</guid>
+      <guid>http://localhost:1313/tags/coderunner/</guid>
       <description></description>
     </item>
     <item>
       <title>Extensie</title>
-      <link>https://www.vandenboom.icu/tags/extensie/</link>
+      <link>http://localhost:1313/tags/extensie/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/extensie/</guid>
+      <guid>http://localhost:1313/tags/extensie/</guid>
       <description></description>
     </item>
     <item>
       <title>Extension</title>
-      <link>https://www.vandenboom.icu/tags/extension/</link>
+      <link>http://localhost:1313/tags/extension/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/extension/</guid>
+      <guid>http://localhost:1313/tags/extension/</guid>
       <description></description>
     </item>
     <item>
       <title>Python3</title>
-      <link>https://www.vandenboom.icu/tags/python3/</link>
+      <link>http://localhost:1313/tags/python3/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/python3/</guid>
+      <guid>http://localhost:1313/tags/python3/</guid>
       <description></description>
     </item>
     <item>
       <title>Python3.9</title>
-      <link>https://www.vandenboom.icu/tags/python3.9/</link>
+      <link>http://localhost:1313/tags/python3.9/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/python3.9/</guid>
+      <guid>http://localhost:1313/tags/python3.9/</guid>
       <description></description>
     </item>
     <item>
       <title>Versie</title>
-      <link>https://www.vandenboom.icu/tags/versie/</link>
+      <link>http://localhost:1313/tags/versie/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/versie/</guid>
+      <guid>http://localhost:1313/tags/versie/</guid>
       <description></description>
     </item>
     <item>
       <title>Vscodium</title>
-      <link>https://www.vandenboom.icu/tags/vscodium/</link>
+      <link>http://localhost:1313/tags/vscodium/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/vscodium/</guid>
+      <guid>http://localhost:1313/tags/vscodium/</guid>
       <description></description>
     </item>
     <item>
       <title>Installeer</title>
-      <link>https://www.vandenboom.icu/tags/installeer/</link>
+      <link>http://localhost:1313/tags/installeer/</link>
       <pubDate>Sun, 03 Apr 2022 18:55:18 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/installeer/</guid>
+      <guid>http://localhost:1313/tags/installeer/</guid>
       <description></description>
     </item>
     <item>
       <title>Codium</title>
-      <link>https://www.vandenboom.icu/tags/codium/</link>
+      <link>http://localhost:1313/tags/codium/</link>
       <pubDate>Sun, 03 Apr 2022 14:22:24 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/codium/</guid>
+      <guid>http://localhost:1313/tags/codium/</guid>
       <description></description>
     </item>
     <item>
       <title>Editor</title>
-      <link>https://www.vandenboom.icu/tags/editor/</link>
+      <link>http://localhost:1313/tags/editor/</link>
       <pubDate>Sun, 03 Apr 2022 14:22:24 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/editor/</guid>
+      <guid>http://localhost:1313/tags/editor/</guid>
       <description></description>
     </item>
     <item>
       <title>Chrome</title>
-      <link>https://www.vandenboom.icu/tags/chrome/</link>
+      <link>http://localhost:1313/tags/chrome/</link>
       <pubDate>Sun, 03 Apr 2022 11:51:54 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/chrome/</guid>
+      <guid>http://localhost:1313/tags/chrome/</guid>
       <description></description>
     </item>
     <item>
       <title>Google</title>
-      <link>https://www.vandenboom.icu/tags/google/</link>
+      <link>http://localhost:1313/tags/google/</link>
       <pubDate>Sun, 03 Apr 2022 11:51:54 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/google/</guid>
+      <guid>http://localhost:1313/tags/google/</guid>
       <description></description>
     </item>
     <item>
       <title>Handelingen</title>
-      <link>https://www.vandenboom.icu/tags/handelingen/</link>
+      <link>http://localhost:1313/tags/handelingen/</link>
       <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/handelingen/</guid>
+      <guid>http://localhost:1313/tags/handelingen/</guid>
       <description></description>
     </item>
     <item>
       <title>Handleiding</title>
-      <link>https://www.vandenboom.icu/tags/handleiding/</link>
+      <link>http://localhost:1313/tags/handleiding/</link>
       <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/handleiding/</guid>
+      <guid>http://localhost:1313/tags/handleiding/</guid>
       <description></description>
     </item>
     <item>
       <title>Maak</title>
-      <link>https://www.vandenboom.icu/tags/maak/</link>
+      <link>http://localhost:1313/tags/maak/</link>
       <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/maak/</guid>
+      <guid>http://localhost:1313/tags/maak/</guid>
       <description></description>
     </item>
     <item>
       <title>Pages</title>
-      <link>https://www.vandenboom.icu/tags/pages/</link>
+      <link>http://localhost:1313/tags/pages/</link>
       <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/pages/</guid>
+      <guid>http://localhost:1313/tags/pages/</guid>
       <description></description>
     </item>
     <item>
       <title>Tools</title>
-      <link>https://www.vandenboom.icu/tags/tools/</link>
+      <link>http://localhost:1313/tags/tools/</link>
       <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/tools/</guid>
+      <guid>http://localhost:1313/tags/tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Autologon</title>
-      <link>https://www.vandenboom.icu/tags/autologon/</link>
+      <link>http://localhost:1313/tags/autologon/</link>
       <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/autologon/</guid>
+      <guid>http://localhost:1313/tags/autologon/</guid>
       <description></description>
     </item>
     <item>
       <title>CMS</title>
-      <link>https://www.vandenboom.icu/tags/cms/</link>
+      <link>http://localhost:1313/tags/cms/</link>
       <pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/cms/</guid>
+      <guid>http://localhost:1313/tags/cms/</guid>
       <description></description>
     </item>
     <item>
       <title>Content</title>
-      <link>https://www.vandenboom.icu/tags/content/</link>
+      <link>http://localhost:1313/tags/content/</link>
       <pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/content/</guid>
+      <guid>http://localhost:1313/tags/content/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://www.vandenboom.icu/tags/hugo/</link>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Netlify</title>
-      <link>https://www.vandenboom.icu/tags/netlify/</link>
+      <link>http://localhost:1313/tags/netlify/</link>
       <pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/netlify/</guid>
+      <guid>http://localhost:1313/tags/netlify/</guid>
       <description></description>
     </item>
     <item>
       <title>Nieuwe</title>
-      <link>https://www.vandenboom.icu/tags/nieuwe/</link>
+      <link>http://localhost:1313/tags/nieuwe/</link>
       <pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/nieuwe/</guid>
+      <guid>http://localhost:1313/tags/nieuwe/</guid>
       <description></description>
     </item>
     <item>
       <title>Webpagina</title>
-      <link>https://www.vandenboom.icu/tags/webpagina/</link>
+      <link>http://localhost:1313/tags/webpagina/</link>
       <pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/webpagina/</guid>
+      <guid>http://localhost:1313/tags/webpagina/</guid>
       <description></description>
     </item>
     <item>
       <title>Nieuw</title>
-      <link>https://www.vandenboom.icu/tags/nieuw/</link>
+      <link>http://localhost:1313/tags/nieuw/</link>
       <pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/nieuw/</guid>
+      <guid>http://localhost:1313/tags/nieuw/</guid>
       <description></description>
     </item>
     <item>
       <title>Afbeelding</title>
-      <link>https://www.vandenboom.icu/tags/afbeelding/</link>
+      <link>http://localhost:1313/tags/afbeelding/</link>
       <pubDate>Sun, 19 Dec 2021 09:50:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/afbeelding/</guid>
+      <guid>http://localhost:1313/tags/afbeelding/</guid>
       <description></description>
     </item>
     <item>
       <title>Html</title>
-      <link>https://www.vandenboom.icu/tags/html/</link>
+      <link>http://localhost:1313/tags/html/</link>
       <pubDate>Sun, 19 Dec 2021 09:50:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/html/</guid>
+      <guid>http://localhost:1313/tags/html/</guid>
       <description></description>
     </item>
     <item>
       <title>Toetsenbord</title>
-      <link>https://www.vandenboom.icu/tags/toetsenbord/</link>
+      <link>http://localhost:1313/tags/toetsenbord/</link>
       <pubDate>Sat, 18 Dec 2021 20:56:00 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/toetsenbord/</guid>
+      <guid>http://localhost:1313/tags/toetsenbord/</guid>
       <description></description>
     </item>
     <item>
       <title>App</title>
-      <link>https://www.vandenboom.icu/tags/app/</link>
+      <link>http://localhost:1313/tags/app/</link>
       <pubDate>Thu, 16 Dec 2021 09:07:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/app/</guid>
+      <guid>http://localhost:1313/tags/app/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>https://www.vandenboom.icu/tags/markdown/</link>
+      <link>http://localhost:1313/tags/markdown/</link>
       <pubDate>Thu, 16 Dec 2021 09:07:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/markdown/</guid>
+      <guid>http://localhost:1313/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Themes</title>
-      <link>https://www.vandenboom.icu/tags/themes/</link>
+      <link>http://localhost:1313/tags/themes/</link>
       <pubDate>Thu, 16 Dec 2021 09:07:17 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/themes/</guid>
+      <guid>http://localhost:1313/tags/themes/</guid>
       <description></description>
     </item>
     <item>
       <title>Css</title>
-      <link>https://www.vandenboom.icu/tags/css/</link>
+      <link>http://localhost:1313/tags/css/</link>
       <pubDate>Mon, 13 Dec 2021 19:12:03 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/tags/css/</guid>
+      <guid>http://localhost:1313/tags/css/</guid>
       <description></description>
     </item>
     <item>
       <title>Shortcodes</title>
-      <link>https://www.vandenboom.icu/tags/shortcodes/</link>
+      <link>http://localhost:1313/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/shortcodes/</guid>
+      <guid>http://localhost:1313/tags/shortcodes/</guid>
       <description></description>
     </item>
     <item>
       <title>Text</title>
-      <link>https://www.vandenboom.icu/tags/text/</link>
+      <link>http://localhost:1313/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/text/</guid>
+      <guid>http://localhost:1313/tags/text/</guid>
       <description></description>
     </item>
     <item>
       <title>Emoji</title>
-      <link>https://www.vandenboom.icu/tags/emoji/</link>
+      <link>http://localhost:1313/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/tags/emoji/</guid>
+      <guid>http://localhost:1313/tags/emoji/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rust on Notities</title>
-    <link>https://www.vandenboom.icu/tags/rust/</link>
+    <link>http://localhost:1313/tags/rust/</link>
     <description>Recent content in Rust on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sat, 22 Mar 2025 19:32:21 +0000</lastBuildDate>
-    <atom:link href="https://www.vandenboom.icu/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use of Golang, Java, C/C&#43;&#43;, or Rust: A Quick Guide</title>
-      <link>https://www.vandenboom.icu/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</link>
+      <link>http://localhost:1313/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</link>
       <pubDate>Sat, 22 Mar 2025 19:32:21 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</guid>
+      <guid>http://localhost:1313/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</guid>
       <description>&lt;p&gt;For &lt;strong&gt;real-time applications&lt;/strong&gt;, &lt;strong&gt;Go&lt;/strong&gt; and &lt;strong&gt;Rust&lt;/strong&gt; are the top choices due to their lightweight concurrency and memory efficiency. Combine them for a balanced approach: Go for high-level logic and Rust for performance-critical tasks. Use &lt;strong&gt;C/C++&lt;/strong&gt; for legacy systems and &lt;strong&gt;Java&lt;/strong&gt; for enterprise-level applications where real-time performance is less critical.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When using Go&lt;/strong&gt;, the chance of classic concurrency errors like &lt;strong&gt;race conditions&lt;/strong&gt;, &lt;strong&gt;deadlocks&lt;/strong&gt;, and &lt;strong&gt;resource leaks&lt;/strong&gt; is significantly reduced. This is thanks to Go&amp;rsquo;s use of &lt;strong&gt;channels&lt;/strong&gt; for safe communication between goroutines and its built-in garbage collector, which works seamlessly with the goroutine scheduler. This makes Go not only efficient but also more reliable and easier to debug in high-concurrency scenarios.&lt;/p&gt;</description>
     </item>
   </channel>

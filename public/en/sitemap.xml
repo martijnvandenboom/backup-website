@@ -2,493 +2,493 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.vandenboom.icu/en/categories/</loc>
+    <loc>http://localhost:1313/en/categories/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/lan/</loc>
+    <loc>http://localhost:1313/en/tags/lan/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/lan/"
+                href="http://localhost:1313/tags/lan/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/lan/"
+                href="http://localhost:1313/en/tags/lan/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/categories/linux/</loc>
+    <loc>http://localhost:1313/en/categories/linux/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/categories/linux/"
+                href="http://localhost:1313/categories/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/categories/linux/"
+                href="http://localhost:1313/en/categories/linux/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/categories/macos/</loc>
+    <loc>http://localhost:1313/en/categories/macos/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/categories/macos/"
+                href="http://localhost:1313/categories/macos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/categories/macos/"
+                href="http://localhost:1313/en/categories/macos/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/network/</loc>
+    <loc>http://localhost:1313/en/tags/network/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/network/"
+                href="http://localhost:1313/tags/network/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/network/"
+                href="http://localhost:1313/en/tags/network/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</loc>
+    <loc>http://localhost:1313/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/blog/network-routing-naar-lan-systemen-met-openvpn-server/"
+                href="http://localhost:1313/blog/network-routing-naar-lan-systemen-met-openvpn-server/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/"
+                href="http://localhost:1313/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/</loc>
+    <loc>http://localhost:1313/en/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/"
+                href="http://localhost:1313/en/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/openvpn/</loc>
+    <loc>http://localhost:1313/en/tags/openvpn/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/openvpn/"
+                href="http://localhost:1313/tags/openvpn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/openvpn/"
+                href="http://localhost:1313/en/tags/openvpn/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/categories/routing/</loc>
+    <loc>http://localhost:1313/en/categories/routing/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/categories/routing/"
+                href="http://localhost:1313/categories/routing/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/categories/routing/"
+                href="http://localhost:1313/en/categories/routing/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/routing/</loc>
+    <loc>http://localhost:1313/en/tags/routing/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/routing/"
+                href="http://localhost:1313/tags/routing/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/routing/"
+                href="http://localhost:1313/en/tags/routing/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/server/</loc>
+    <loc>http://localhost:1313/en/tags/server/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/server/"
+                href="http://localhost:1313/tags/server/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/server/"
+                href="http://localhost:1313/en/tags/server/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/systems/</loc>
+    <loc>http://localhost:1313/en/tags/systems/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/</loc>
-    <lastmod>2025-11-15T15:40:22+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/"
-                />
-  </url><url>
-    <loc>https://www.vandenboom.icu/en/categories/tools/</loc>
+    <loc>http://localhost:1313/en/tags/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/categories/tools/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/categories/tools/"
+                href="http://localhost:1313/en/tags/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/categories/utilities/</loc>
+    <loc>http://localhost:1313/en/categories/tools/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/categories/utilities/"
+                href="http://localhost:1313/categories/tools/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/categories/utilities/"
+                href="http://localhost:1313/en/categories/tools/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/categories/windows/</loc>
+    <loc>http://localhost:1313/en/categories/utilities/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/categories/windows/"
+                href="http://localhost:1313/categories/utilities/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/categories/windows/"
+                href="http://localhost:1313/en/categories/utilities/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/categories/actions/</loc>
+    <loc>http://localhost:1313/en/categories/windows/</loc>
+    <lastmod>2025-11-15T15:40:22+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/categories/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/windows/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/actions/</loc>
     <lastmod>2025-09-12T01:58:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/any/</loc>
+    <loc>http://localhost:1313/en/tags/any/</loc>
     <lastmod>2025-09-12T01:58:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/compress/</loc>
+    <loc>http://localhost:1313/en/tags/compress/</loc>
     <lastmod>2025-09-12T01:58:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</loc>
-    <lastmod>2025-09-12T01:58:22+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/blog/fotos_comprimeren_zonder_kwaliteitsverlies/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/"
-                />
-  </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/loss/</loc>
-    <lastmod>2025-09-12T01:58:22+01:00</lastmod>
-  </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/photos/</loc>
-    <lastmod>2025-09-12T01:58:22+01:00</lastmod>
-  </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/platform/</loc>
+    <loc>http://localhost:1313/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</loc>
     <lastmod>2025-09-12T01:58:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/platform/"
+                href="http://localhost:1313/blog/fotos_comprimeren_zonder_kwaliteitsverlies/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/platform/"
+                href="http://localhost:1313/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/quality/</loc>
+    <loc>http://localhost:1313/en/tags/loss/</loc>
     <lastmod>2025-09-12T01:58:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/utilities/</loc>
+    <loc>http://localhost:1313/en/tags/photos/</loc>
+    <lastmod>2025-09-12T01:58:22+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/platform/</loc>
     <lastmod>2025-09-12T01:58:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/utilities/"
+                href="http://localhost:1313/tags/platform/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/utilities/"
+                href="http://localhost:1313/en/tags/platform/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/without/</loc>
+    <loc>http://localhost:1313/en/tags/quality/</loc>
     <lastmod>2025-09-12T01:58:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/contact/</loc>
+    <loc>http://localhost:1313/en/tags/utilities/</loc>
+    <lastmod>2025-09-12T01:58:22+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/utilities/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/utilities/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/without/</loc>
+    <lastmod>2025-09-12T01:58:22+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/contact/</loc>
     <lastmod>2025-02-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/contact/"
+                href="http://localhost:1313/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/contact/"
+                href="http://localhost:1313/en/contact/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/thank-you/</loc>
+    <loc>http://localhost:1313/en/thank-you/</loc>
     <lastmod>2025-02-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/thank-you/"
+                href="http://localhost:1313/thank-you/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/thank-you/"
+                href="http://localhost:1313/en/thank-you/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/animations/</loc>
+    <loc>http://localhost:1313/en/animations/</loc>
     <lastmod>2025-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/animations/"
+                href="http://localhost:1313/animations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/animations/"
+                href="http://localhost:1313/en/animations/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/services/</loc>
+    <loc>http://localhost:1313/en/services/</loc>
     <lastmod>2023-10-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/services/"
+                href="http://localhost:1313/services/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/services/"
+                href="http://localhost:1313/en/services/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/create/</loc>
+    <loc>http://localhost:1313/en/tags/create/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/create/"
+                href="http://localhost:1313/tags/create/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/create/"
+                href="http://localhost:1313/en/tags/create/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/blog/maak_een_website_met_github_pages/</loc>
+    <loc>http://localhost:1313/en/blog/maak_een_website_met_github_pages/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/"
+                href="http://localhost:1313/blog/maak_een_website_met_github_pages/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/blog/maak_een_website_met_github_pages/"
+                href="http://localhost:1313/en/blog/maak_een_website_met_github_pages/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/github/</loc>
+    <loc>http://localhost:1313/en/tags/github/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/github/"
+                href="http://localhost:1313/tags/github/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/github/"
+                href="http://localhost:1313/en/tags/github/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/categories/manual/</loc>
+    <loc>http://localhost:1313/en/categories/manual/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/manual/</loc>
+    <loc>http://localhost:1313/en/tags/manual/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/pages/</loc>
+    <loc>http://localhost:1313/en/tags/pages/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/pages/"
+                href="http://localhost:1313/tags/pages/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/pages/"
+                href="http://localhost:1313/en/tags/pages/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/tools/</loc>
+    <loc>http://localhost:1313/en/tags/tools/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/tools/"
+                href="http://localhost:1313/tags/tools/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/tools/"
+                href="http://localhost:1313/en/tags/tools/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/categories/tutorial/</loc>
+    <loc>http://localhost:1313/en/categories/tutorial/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/tutorial/</loc>
+    <loc>http://localhost:1313/en/tags/tutorial/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/website/</loc>
+    <loc>http://localhost:1313/en/tags/website/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/website/"
+                href="http://localhost:1313/tags/website/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/website/"
+                href="http://localhost:1313/en/tags/website/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/actions/</loc>
+    <loc>http://localhost:1313/en/tags/actions/</loc>
     <lastmod>2022-03-09T11:58:22+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/autologon/</loc>
-    <lastmod>2022-03-09T11:58:22+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/tags/autologon/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/autologon/"
-                />
-  </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/automatic/</loc>
-    <lastmod>2022-03-09T11:58:22+01:00</lastmod>
-  </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/automatically/</loc>
+    <loc>http://localhost:1313/en/tags/autologon/</loc>
     <lastmod>2022-03-09T11:58:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/automatically/"
+                href="http://localhost:1313/tags/autologon/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/automatically/"
+                href="http://localhost:1313/en/tags/autologon/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/blog/automatisch_inloggen_in_windows/</loc>
+    <loc>http://localhost:1313/en/tags/automatic/</loc>
+    <lastmod>2022-03-09T11:58:22+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/automatically/</loc>
     <lastmod>2022-03-09T11:58:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/"
+                href="http://localhost:1313/tags/automatically/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/blog/automatisch_inloggen_in_windows/"
+                href="http://localhost:1313/en/tags/automatically/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/log/</loc>
-    <lastmod>2022-03-09T11:58:22+01:00</lastmod>
-  </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/login/</loc>
-    <lastmod>2022-03-09T11:58:22+01:00</lastmod>
-  </url><url>
-    <loc>https://www.vandenboom.icu/en/tags/windows/</loc>
+    <loc>http://localhost:1313/en/blog/automatisch_inloggen_in_windows/</loc>
     <lastmod>2022-03-09T11:58:22+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/tags/windows/"
+                href="http://localhost:1313/blog/automatisch_inloggen_in_windows/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/windows/"
+                href="http://localhost:1313/en/blog/automatisch_inloggen_in_windows/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/about/</loc>
+    <loc>http://localhost:1313/en/tags/log/</loc>
+    <lastmod>2022-03-09T11:58:22+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/login/</loc>
+    <lastmod>2022-03-09T11:58:22+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/windows/</loc>
+    <lastmod>2022-03-09T11:58:22+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/windows/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/about/</loc>
     <lastmod>2020-12-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/about-legacy/"
+                href="http://localhost:1313/about-legacy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/about/"
+                href="http://localhost:1313/en/about/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/en/archive/</loc>
+    <loc>http://localhost:1313/en/archive/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.vandenboom.icu/archive/"
+                href="http://localhost:1313/archive/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.vandenboom.icu/en/archive/"
+                href="http://localhost:1313/en/archive/"
                 />
   </url>
 </urlset>

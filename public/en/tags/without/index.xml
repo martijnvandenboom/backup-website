@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Without on Notities</title>
-    <link>https://www.vandenboom.icu/en/tags/without/</link>
+    <link>http://localhost:1313/en/tags/without/</link>
     <description>Recent content in Without on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 12 Sep 2025 01:58:22 +0100</lastBuildDate>
-    <atom:link href="https://www.vandenboom.icu/en/tags/without/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/without/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Compress photos without quality loss for any platform</title>
-      <link>https://www.vandenboom.icu/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link>
+      <link>http://localhost:1313/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>https://www.vandenboom.icu/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid>
+      <guid>http://localhost:1313/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid>
       <description>&lt;p&gt;P.S. Special thanks to &lt;strong&gt;Maria Isabel Rondini&lt;/strong&gt;&lt;br&gt;&#xA;She inspired this article as part of the research for her thesis, where she could use some extra attention for the tool &lt;em&gt;ImageCompressor&lt;/em&gt;.&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Do you want to make your photos smaller in size without losing quality?&lt;/br&gt;&#xA;Good news: you don’t need to install any software for that!&lt;/br&gt;&#xA;With the online tool &lt;strong&gt;ImageCompressor&lt;/strong&gt;, you can simply upload your photos and compress them directly in your browser.&lt;/br&gt;&#xA;That means it doesn’t matter whether you’re working on &lt;strong&gt;Windows, Linux, or macOS&lt;/strong&gt;—as long as you have an internet connection, you can easily compress your photos.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zombie on Notities</title>
-    <link>https://www.vandenboom.icu/tags/zombie/</link>
+    <link>http://localhost:1313/tags/zombie/</link>
     <description>Recent content in Zombie on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Wed, 31 Jan 2024 20:54:45 +0000</lastBuildDate>
-    <atom:link href="https://www.vandenboom.icu/tags/zombie/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/zombie/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Maak een Zombie proces in Linux m.b.v. een C programma</title>
-      <link>https://www.vandenboom.icu/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link>
+      <link>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link>
       <pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate>
-      <guid>https://www.vandenboom.icu/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
+      <guid>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
       <description>&lt;p&gt;Hierbij de broncode van een C programma om een Zombie proces in Linux te maken en deze te kunnen analyseren.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#include &amp;lt;stdlib.h&amp;gt;&#xA;#include &amp;lt;sys/types.h&amp;gt;&#xA;#include &amp;lt;unistd.h&amp;gt;&#xA;&#xA;int main ()&#xA;{&#xA;  pid_t child_pid;&#xA;&#xA;  child_pid = fork ();&#xA;  if (child_pid &amp;gt; 0) {&#xA;    sleep (60);&#xA;  }&#xA;  else {&#xA;    exit (0);&#xA;  }&#xA;  return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;C﻿ompileer de C broncode in een uitvoerbaar programma:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gcc create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;S﻿tart het programma:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./a.out&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O﻿pen een tweede Terminal en bekijk de proces lijst, hier zie je nu een proces met een STAT: Z en de tekst: defunct&lt;/p&gt;</description>
     </item>
   </channel>
