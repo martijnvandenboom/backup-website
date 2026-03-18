@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Systems on Notities</title><link>https://www.vandenboom.icu/en/tags/systems/</link><description>Recent content in Systems on Notities</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 15 Nov 2025 15:40:22 +0100</lastBuildDate><atom:link href="https://www.vandenboom.icu/en/tags/systems/index.xml" rel="self" type="application/rss+xml"/><item><title>Network routing to LAN systems with OpenVPN Server</title><link>https://www.vandenboom.icu/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link><pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate><guid>https://www.vandenboom.icu/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid><description>&lt;p&gt;To be able to access systems on the LAN network through the VPN tunnel of the OpenVPN server, the LAN system must know that traffic destined for the VPN subnet must be sent via the OpenVPN server. Without this additional route, return traffic will not reach the VPN clients.&lt;/p&gt;
-&lt;p&gt;In this example, we use the subnet 10.0.8.0/24 as the IP range you have configured for the OpenVPN tunnel. This is the network in which all VPN clients receive an IP address. To ensure that a device on the LAN can correctly send traffic back to these VPN clients, you must add a static route on that LAN device.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Systems on Notities</title>
+    <link>https://www.vandenboom.icu/en/tags/systems/</link>
+    <description>Recent content in Systems on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Nov 2025 15:40:22 +0100</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/en/tags/systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network routing to LAN systems with OpenVPN Server</title>
+      <link>https://www.vandenboom.icu/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link>
+      <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
+      <guid>https://www.vandenboom.icu/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid>
+      <description>&lt;p&gt;To be able to access systems on the LAN network through the VPN tunnel of the OpenVPN server, the LAN system must know that traffic destined for the VPN subnet must be sent via the OpenVPN server. Without this additional route, return traffic will not reach the VPN clients.&lt;/p&gt;&#xA;&lt;p&gt;In this example, we use the subnet 10.0.8.0/24 as the IP range you have configured for the OpenVPN tunnel. This is the network in which all VPN clients receive an IP address. To ensure that a device on the LAN can correctly send traffic back to these VPN clients, you must add a static route on that LAN device.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

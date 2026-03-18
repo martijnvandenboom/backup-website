@@ -1,7 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hat on Notities</title><link>https://www.vandenboom.icu/tags/hat/</link><description>Recent content in Hat on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Thu, 15 Feb 2024 10:47:28 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/hat/index.xml" rel="self" type="application/rss+xml"/><item><title>LDAP/IPA - Server op Red Hat Enterprise Linux 7</title><link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link><pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</guid><description>&lt;p&gt;A﻿ls je gebruikt maakt van een hosts file, let dan goed op dat er FQDN&amp;rsquo;s in staan en de volgorde waarin.&lt;/p&gt;
-&lt;p&gt;C﻿ontroleer de hosts file en pas deze eventueel aan:&lt;/p&gt;
-&lt;p&gt;De FQDN voorop, daarna pas de aliassen.&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;/etc/hosts
-
-10.0.0.1   server1.example.com server1 applicatie1
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hat on Notities</title>
+    <link>https://www.vandenboom.icu/tags/hat/</link>
+    <description>Recent content in Hat on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Thu, 15 Feb 2024 10:47:28 +0000</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/tags/hat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LDAP/IPA - Server op Red Hat Enterprise Linux 7</title>
+      <link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link>
+      <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</guid>
+      <description>&lt;p&gt;A﻿ls je gebruikt maakt van een hosts file, let dan goed op dat er FQDN&amp;rsquo;s in staan en de volgorde waarin.&lt;/p&gt;&#xA;&lt;p&gt;C﻿ontroleer de hosts file en pas deze eventueel aan:&lt;/p&gt;&#xA;&lt;p&gt;De FQDN voorop, daarna pas de aliassen.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/etc/hosts&#xA;&#xA;10.0.0.1   server1.example.com    server1    applicatie1&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

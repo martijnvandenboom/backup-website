@@ -1,47 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Files on Notities</title><link>https://www.vandenboom.icu/tags/files/</link><description>Recent content in Files on Notities</description><generator>Hugo</generator><language>nl</language><lastBuildDate>Sun, 07 Jul 2024 20:49:33 +0000</lastBuildDate><atom:link href="https://www.vandenboom.icu/tags/files/index.xml" rel="self" type="application/rss+xml"/><item><title>Putting the Microsoft EFI boot files on the EFI partition</title><link>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link><pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid><description>&lt;p&gt;Boot into the Windows installer&lt;/p&gt;
-&lt;p&gt;On the first screen press SHIFT + F10&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;
-# diskpart
-# list disk
-# select disk 0
-# list part
-Look for the Windows partition
-
-# select part 3
-# assign letter=W
-# format quick fs=NTFS
-# list volume
-Look for the EFI volume
-
-# select volume 2
-# assign letter=Z
-# exit
-
-# D:
-Goto the USB installer of Windows
-# cd D:\sources
-# dir install*
-The file install.esd exists
-
-# dism /Get-WimInfo /WimFile:D:\Sources\install.esd
-Select the Index of the version of Windows you want
-
-# dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\
-# bcdboot W:\Windows /l en-us /s Z: /f UEFI
-Shutdown your computer and remove the USB installer
-Now we have the Microsoft EFI boot files in the EFI partition in its designated folder
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Follow the normal procedure of installing Windows&lt;/p&gt;</description></item><item><title>Sharing files with MS-DOS 6.22 in VirtualBox and macOS</title><link>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link><pubDate>Sun, 17 Sep 2023 12:29:24 +0000</pubDate><guid>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid><description>&lt;p&gt;How to create an ISO file of a directory on macOS that can be mounted as a CDROM in MS-DOS 6.22 ?&lt;/p&gt;
-&lt;p&gt;Start Disk Utility on macOS&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Go to: File -&amp;gt; New Image -&amp;gt; Image from Folder&lt;/li&gt;
-&lt;li&gt;Choose the directory and press Choose&lt;/li&gt;
-&lt;li&gt;Set Image Format to: DVD/CD master and press Save&lt;/li&gt;
-&lt;li&gt;A *.cdr file will be created&lt;/li&gt;
-&lt;li&gt;Go to the command line&lt;/li&gt;
-&lt;li&gt;Cd to the directory with the *.cdr file&lt;/li&gt;
-&lt;li&gt;Type the command: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr&lt;/li&gt;
-&lt;li&gt;Go to your virtual machine running MS-DOS 6.22 and mount the newly created *.iso file&lt;/li&gt;
-&lt;li&gt;In the MS-DOS 6.22 virtual machine you can now access the contents on drive D: &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/br&gt;
-&lt;p&gt;Any questions?&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Files on Notities</title>
+    <link>https://www.vandenboom.icu/tags/files/</link>
+    <description>Recent content in Files on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Sun, 07 Jul 2024 20:49:33 +0000</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/tags/files/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Putting the Microsoft EFI boot files on the EFI partition</title>
+      <link>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
+      <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
+      <description>&lt;p&gt;Boot into the Windows installer&lt;/p&gt;&#xA;&lt;p&gt;On the first screen press SHIFT + F10&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&#xA;# diskpart&#xA;# list disk&#xA;# select disk 0&#xA;# list part&#xA;Look for the Windows partition&#xA;&#xA;# select part 3&#xA;# assign letter=W&#xA;# format quick fs=NTFS&#xA;# list volume&#xA;Look for the EFI volume&#xA;&#xA;# select volume 2&#xA;# assign letter=Z&#xA;# exit&#xA;&#xA;# D:&#xA;Goto the USB installer of Windows&#xA;# cd D:\sources&#xA;# dir install*&#xA;The file install.esd exists&#xA;&#xA;# dism /Get-WimInfo /WimFile:D:\Sources\install.esd&#xA;Select the Index of the version of Windows you want&#xA;&#xA;# dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\&#xA;# bcdboot W:\Windows /l en-us /s Z: /f UEFI&#xA;Shutdown your computer and remove the USB installer&#xA;Now we have the Microsoft EFI boot files in the EFI partition in its designated folder&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Follow the normal procedure of installing Windows&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sharing files with MS-DOS 6.22 in VirtualBox and macOS</title>
+      <link>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link>
+      <pubDate>Sun, 17 Sep 2023 12:29:24 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid>
+      <description>&lt;p&gt;How to create an ISO file of a directory on macOS that can be mounted as a CDROM in MS-DOS 6.22 ?&lt;/p&gt;&#xA;&lt;p&gt;Start Disk Utility on macOS&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Go to: File -&amp;gt; New Image -&amp;gt; Image from Folder&lt;/li&gt;&#xA;&lt;li&gt;Choose the directory and press Choose&lt;/li&gt;&#xA;&lt;li&gt;Set Image Format to: DVD/CD master and press Save&lt;/li&gt;&#xA;&lt;li&gt;A *.cdr file will be created&lt;/li&gt;&#xA;&lt;li&gt;Go to the command line&lt;/li&gt;&#xA;&lt;li&gt;Cd to the directory with the *.cdr file&lt;/li&gt;&#xA;&lt;li&gt;Type the command: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr&lt;/li&gt;&#xA;&lt;li&gt;Go to your virtual machine running MS-DOS 6.22 and mount the newly created *.iso file&lt;/li&gt;&#xA;&lt;li&gt;In the MS-DOS 6.22 virtual machine you can now access the contents on drive D: &lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/br&gt;&#xA;&lt;p&gt;Any questions?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
