@@ -6,8 +6,15 @@
     <description>Recent content in Martijn&#39;s on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
-    <lastBuildDate>Sun, 18 Jan 2026 18:55:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Server 2022 — Active Directory en DNS installatie</title>
+      <link>http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/</guid>
+      <description>&lt;p&gt;In dit artikel beschrijf ik stap voor stap hoe ik Active Directory Domain Services (AD DS) en DNS heb geïnstalleerd op een Windows Server 2022 Datacenter VM in een VMware Fusion lab omgeving. Het resultaat is een volledig functionele domeincontroller voor het domein &lt;strong&gt;lab.local&lt;/strong&gt;, als basis voor een Windows DevOps lab.&lt;/p&gt;&#xA;&lt;h2 id=&#34;omgeving&#34;&gt;Omgeving&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Onderdeel&lt;/th&gt;&#xA;          &lt;th&gt;Waarde&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Virtualisatie&lt;/td&gt;&#xA;          &lt;td&gt;VMware Fusion (macOS)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Gastbesturingssysteem&lt;/td&gt;&#xA;          &lt;td&gt;Windows Server 2022 Datacenter (Desktop Experience)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Hostnaam&lt;/td&gt;&#xA;          &lt;td&gt;DC01&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Domeinnaam&lt;/td&gt;&#xA;          &lt;td&gt;lab.local&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NetBIOS naam&lt;/td&gt;&#xA;          &lt;td&gt;LAB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Lab-netwerk adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet1 — 172.16.37.10 (vast IP)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Internet adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet0 — DHCP via VMware NAT&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;stap-1--netwerk-instellen&#34;&gt;Stap 1 — Netwerk instellen&lt;/h2&gt;&#xA;&lt;p&gt;Voordat Active Directory wordt geïnstalleerd, heeft de domeincontroller een vast (statisch) IP-adres nodig. AD DS en DNS zijn afhankelijk van een stabiel adres.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Windows packet capturing voor bijvoorbeeld een LDAPS verkeer analyse</title>
       <link>http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</link>
@@ -590,18 +597,18 @@
       <description></description>
     </item>
     <item>
-      <title>About</title>
-      <link>http://localhost:1313/about-legacy/</link>
-      <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about-legacy/</guid>
-      <description>&lt;p&gt;Notities&lt;/p&gt;&#xA;&lt;p&gt;ing. M.A.C.M. (Martijn) van den Boom&lt;/br&gt;&#xA;&lt;/br&gt;&#xA;Computer Infrastructure Engineer&lt;/br&gt;&#xA;ingenieur, docent en mentor&lt;/br&gt;&#xA;&lt;/br&gt;&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Chocolatey in Windows 10</title>
       <link>http://localhost:1313/blog/december-2020/</link>
       <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/december-2020/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco version&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco update chocolatey&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco version all&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco outdated&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco upgrade &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;app&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco upgrade all&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Over</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;biografie&#34;&gt;Biografie&lt;/h2&gt;&#xA;&lt;p&gt;Martijn is een ervaren IT-professional met meer dan 26 jaar ervaring in informatietechnologie, infrastructuurbeheer en automatisering. In zijn loopbaan werkte hij in complexe enterprise- en overheidsomgevingen aan opdrachten voor onder andere CGI, Rijkswaterstaat, ProRail en de Gemeente &amp;rsquo;s-Hertogenbosch.&lt;/p&gt;&#xA;&lt;p&gt;Zijn werk richt zich op systeembeheer, automatisering, monitoring, netwerken en het ontwerpen van betrouwbare en schaalbare IT-infrastructuren.&lt;/p&gt;&#xA;&lt;h3 id=&#34;achtergrond&#34;&gt;Achtergrond&lt;/h3&gt;&#xA;&lt;p&gt;Zijn fascinatie voor computers begon tijdens zijn studie Bouwkunde (HBO) in Tilburg in de late jaren &amp;lsquo;90, toen hij in aanraking kwam met Microsoft Visual Basic. Het bouwen van kleine programma&amp;rsquo;s en het automatiseren van repetitieve taken vormde het startpunt van een duurzame passie voor software en IT.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Markdown Syntax Guide</title>

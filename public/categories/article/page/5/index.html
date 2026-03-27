@@ -55,7 +55,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.157.0"><meta property="og:site_name" content="Notities">
+<meta name="generator" content="Hugo 0.159.1"><meta property="og:site_name" content="Notities">
   <meta property="og:title" content="Article">
   <meta property="og:description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
   <meta property="description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
@@ -64,7 +64,7 @@
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
   
-  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.a694a0de4d12f03f7239d4eb60fd6f210f9713402aa21c902e52435f0e0ffb85.css" integrity="sha256-ppSg3k0S8D9yOdTrYP1vIQ&#43;XE0AqohyQLlJDXw4P&#43;4U="><link rel="stylesheet" href="/css/add-on.css">
+  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.0f15b9691a96d1d59cc15ff1724700d27a2df35e7a8bedad77e02c9c426450c7.css" integrity="sha256-DxW5aRqW0dWcwV/xckcA0not8156i&#43;2td&#43;AsnEJkUMc="><link rel="stylesheet" href="/css/add-on.css">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -632,6 +632,75 @@
   <header>
   <div class="title">
     
+      <h2><a href="/blog/2024-configure-ldap-ipa-server-with-sonarqube/">Configure LDAP/IPA Server with Sonarqube</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-03-09 17:35:22.094 &#43;0000 UTC">9 Maart 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1 minuut leestijd</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Configure LDAP/IPA Server with Sonarqube
+===
+Sonarqube
+8.9.6
+sonar.properties
+sonarqube-8.9.6/conf/sonar.properties
+=﻿==
+sonar.security.realm=LDAP
+ldap.url=ldap://&lt;IP_SERVER&gt;:389
+ldap.bindDn=uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com
+ldap.bindPassword=
+ldap.authentication=simple
+ldap.user.baseDn=cn=users,cn=accounts,dc=,dc=com
+# laat volgende default
+# ldap.user.request=
+# LDAP user request. (default: (&amp;(objectClass=inetOrgPerson)(uid={login})) )...
+  </div>
+  <footer>
+    <a href="/blog/2024-configure-ldap-ipa-server-with-sonarqube/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/configure/">configure</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/ldap/">LDAP</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/ipa/">IPA</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/sonarqube/">sonarqube</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/blog/2024-ldap-ipa-server-command-line-searches/">LDAP/IPA Server command line searches</a></h2>
     
     
@@ -928,65 +997,6 @@ gcc create_zombie_process.c S﻿tart het programma:
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/">Bash script met een SUCCES of FAILED melding aan het einde van de regel</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-01-31 20:18:39.918 &#43;0000 UTC">31 Januari 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1 minuut leestijd</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    Z﻿ie hieronder een voorbeeld script om aan het einde van de regel helemaal rechts uitgelijnd een SUCCES melding in het groen of een FAILED melding in het rood te krijgen.
-#!/bin/bash # Set the message success_message=&amp;#34;Your command was successful&amp;#34; failed_message=&amp;#34;Your command failed&amp;#34; # Set the &amp;#34;OK&amp;#34; string in green ok=&amp;#34;$(tput setaf 2)[SUCCES]$(tput sgr0)&amp;#34; failed=&amp;#34;$(tput setaf 1)[FAILED]$(tput sgr0)&amp;#34; # Get the width of the terminal term_width=$(tput cols)&#43;9 #...
-  </div>
-  <footer>
-    <a href="/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/" class="button big">Lees verder</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/bash/">bash</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/script/">script</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/succes/">succes</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/failed/">failed</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/melding/">melding</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/einde/">einde</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/regel/">regel</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/categories/article/page/4/" class="button left"><span>Vorige Pagina</span></a>
@@ -1003,6 +1013,14 @@ gcc create_zombie_process.c S﻿tart het programma:
       <header>
         <h1>Recente berichten</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory en DNS installatie</a></h2>
+          <time class="published" datetime="2026-03-27 00:00:00 &#43;0100 CET">27 Maart 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1036,14 +1054,6 @@ gcc create_zombie_process.c S﻿tart het programma:
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/">This version of BootCamp is not intented for this computer</a></h2>
-          <time class="published" datetime="2025-04-28 16:04:39.408 &#43;0000 UTC">28 April 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/blog/" class="button">Toon meer</a>
@@ -1063,7 +1073,7 @@ gcc create_zombie_process.c S﻿tart het programma:
           
           
           <li>
-              <a href="/categories/article/">article<span class="count">62</span></a>
+              <a href="/categories/article/">article<span class="count">63</span></a>
           
           <li>
               <a href="/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1072,7 +1082,7 @@ gcc create_zombie_process.c S﻿tart het programma:
               <a href="/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/categories/windows/">windows<span class="count">7</span></a>
+              <a href="/categories/windows/">windows<span class="count">8</span></a>
           
           <li>
               <a href="/categories/tools/">tools<span class="count">4</span></a>

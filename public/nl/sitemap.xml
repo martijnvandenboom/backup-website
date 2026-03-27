@@ -2,20 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/analyse/</loc>
-    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <loc>http://localhost:1313/tags/active-directory/</loc>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/article/</loc>
-    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/capturing/</loc>
-    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,11 +24,20 @@
                 href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/ldaps/</loc>
-    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <loc>http://localhost:1313/tags/devops/</loc>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dns/</loc>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/domeincontroller/</loc>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lab/</loc>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,11 +49,8 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/packet/</loc>
-    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -59,8 +62,24 @@
                 href="http://localhost:1313/tags/"
                 />
   </url><url>
+    <loc>http://localhost:1313/tags/vmware/</loc>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/windows/</loc>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/categories/windows/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tags/windows/</loc>
-    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -71,6 +90,24 @@
                 hreflang="nl"
                 href="http://localhost:1313/tags/windows/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/</loc>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/windows-server-2022/</loc>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/analyse/</loc>
+    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/capturing/</loc>
+    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ldaps/</loc>
+    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/packet/</loc>
+    <lastmod>2026-01-18T18:55:54+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</loc>
     <lastmod>2026-01-18T18:55:54+00:00</lastmod>
@@ -219,19 +256,6 @@
                 rel="alternate"
                 hreflang="nl"
                 href="http://localhost:1313/categories/utilities/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/windows/</loc>
-    <lastmod>2025-11-15T15:40:22+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/categories/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/categories/windows/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/comprimeren/</loc>
@@ -1390,7 +1414,10 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2020-12-11T22:23:48+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about-legacy/</loc>
+    <loc>http://localhost:1313/blog/december-2020/</loc>
+    <lastmod>2020-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2020-12-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -1400,11 +1427,8 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="http://localhost:1313/about-legacy/"
+                href="http://localhost:1313/about/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/blog/december-2020/</loc>
-    <lastmod>2020-12-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/markdown-syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>

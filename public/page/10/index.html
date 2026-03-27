@@ -55,7 +55,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.157.0"><meta property="og:site_name" content="Notities">
+<meta name="generator" content="Hugo 0.159.1"><meta property="og:site_name" content="Notities">
   <meta property="og:title" content="Martijn&#39;s">
   <meta property="og:description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
   <meta property="description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
@@ -64,7 +64,7 @@
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
   
-  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.a694a0de4d12f03f7239d4eb60fd6f210f9713402aa21c902e52435f0e0ffb85.css" integrity="sha256-ppSg3k0S8D9yOdTrYP1vIQ&#43;XE0AqohyQLlJDXw4P&#43;4U="><link rel="stylesheet" href="/css/add-on.css">
+  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.0f15b9691a96d1d59cc15ff1724700d27a2df35e7a8bedad77e02c9c426450c7.css" integrity="sha256-DxW5aRqW0dWcwV/xckcA0not8156i&#43;2td&#43;AsnEJkUMc="><link rel="stylesheet" href="/css/add-on.css">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -373,6 +373,29 @@
     #telegram-btn:hover svg {
       fill: #fff;
     }
+
+     
+    .darkmode table {
+      background-color: #101425;
+      color: var(--text-color);
+    }
+
+    .darkmode table > thead {
+      background-color: #1a1f35;
+    }
+
+    .darkmode table > tbody > tr > td:first-child {
+      background-color: #1a1f35;
+      color: var(--text-color);
+    }
+
+    .darkmode table > tbody > tr:nth-child(even) {
+      background-color: #0d1126;
+    }
+
+    .darkmode table > tbody > tr:hover {
+      background-color: #1e2640;
+    }
   </style>
 
 
@@ -622,6 +645,65 @@
       <main id="site-main">
         
   
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/">Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2022-12-01 19:24:55.818 &#43;0000 UTC">1 December 2022</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1 minuut leestijd</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Stap 1: installeer Python
+Stap 2: zet de scripts folder en de boven liggende folder allebij in het path
+Stap 3: CMD&gt; pip install pywin32
+
+  </div>
+  <footer>
+    <a href="/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/dependencies/">dependencies</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/python/">python</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/installatie/">installatie</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/oracle/">oracle</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/virtualbox/">virtualbox</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
   
     <article class="post">
   <header>
@@ -913,69 +995,6 @@ print(sys.version)
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/blog/2022-installeer-python-3-9-op-ubuntu-linux/">Installeer Python 3.9 op Ubuntu Linux</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2022-04-03 18:55:18.763 &#43;0000 UTC">3 April 2022</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1 minuut leestijd</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    $ sudo apt install software-properties-common
-$ sudo add-apt-repository ppa:deadsnakes/ppa
-$ sudo apt update
-$ sudo apt install python3.9
-$ python3.9 —version
-
-  </div>
-  <footer>
-    <a href="/blog/2022-installeer-python-3-9-op-ubuntu-linux/" class="button big">Lees verder</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/install/">install</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/installeer/">installeer</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/python/">python</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/python3/">python3</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/python3.9/">python3.9</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/ubuntu/">ubuntu</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/linux/">linux</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/page/9/" class="button left"><span>Vorige Pagina</span></a>
@@ -992,6 +1011,14 @@ $ python3.9 —version
       <header>
         <h1>Recente berichten</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory en DNS installatie</a></h2>
+          <time class="published" datetime="2026-03-27 00:00:00 &#43;0100 CET">27 Maart 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1025,14 +1052,6 @@ $ python3.9 —version
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/">This version of BootCamp is not intented for this computer</a></h2>
-          <time class="published" datetime="2025-04-28 16:04:39.408 &#43;0000 UTC">28 April 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/blog/" class="button">Toon meer</a>
@@ -1052,7 +1071,7 @@ $ python3.9 —version
           
           
           <li>
-              <a href="/categories/article/">article<span class="count">62</span></a>
+              <a href="/categories/article/">article<span class="count">63</span></a>
           
           <li>
               <a href="/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1061,7 +1080,7 @@ $ python3.9 —version
               <a href="/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/categories/windows/">windows<span class="count">7</span></a>
+              <a href="/categories/windows/">windows<span class="count">8</span></a>
           
           <li>
               <a href="/categories/tools/">tools<span class="count">4</span></a>

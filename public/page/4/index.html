@@ -55,7 +55,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.157.0"><meta property="og:site_name" content="Notities">
+<meta name="generator" content="Hugo 0.159.1"><meta property="og:site_name" content="Notities">
   <meta property="og:title" content="Martijn&#39;s">
   <meta property="og:description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
   <meta property="description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
@@ -64,7 +64,7 @@
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
   
-  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.a694a0de4d12f03f7239d4eb60fd6f210f9713402aa21c902e52435f0e0ffb85.css" integrity="sha256-ppSg3k0S8D9yOdTrYP1vIQ&#43;XE0AqohyQLlJDXw4P&#43;4U="><link rel="stylesheet" href="/css/add-on.css">
+  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.0f15b9691a96d1d59cc15ff1724700d27a2df35e7a8bedad77e02c9c426450c7.css" integrity="sha256-DxW5aRqW0dWcwV/xckcA0not8156i&#43;2td&#43;AsnEJkUMc="><link rel="stylesheet" href="/css/add-on.css">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -373,6 +373,29 @@
     #telegram-btn:hover svg {
       fill: #fff;
     }
+
+     
+    .darkmode table {
+      background-color: #101425;
+      color: var(--text-color);
+    }
+
+    .darkmode table > thead {
+      background-color: #1a1f35;
+    }
+
+    .darkmode table > tbody > tr > td:first-child {
+      background-color: #1a1f35;
+      color: var(--text-color);
+    }
+
+    .darkmode table > tbody > tr:nth-child(even) {
+      background-color: #0d1126;
+    }
+
+    .darkmode table > tbody > tr:hover {
+      background-color: #1e2640;
+    }
   </style>
 
 
@@ -622,6 +645,70 @@
       <main id="site-main">
         
   
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/">Zoek de naam van je USB stick met een script</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-07-18 07:20:59.657 &#43;0000 UTC">18 Juli 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>3 minuten leestijd</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    D﻿it script kun je gebruiken voor het opvragen van de naam van je USB stick.
+De naam van je USB stick kun je gebruiken in het sudo commando van Apple om een USB installer te maken.
+S﻿tap 1: Open de Terminal applicatie
+S﻿tap 2: Ga naar je home directory, type: # cd
+S﻿tap 3: Maak eventueel een directory scripts, type: # mkdir scripts
+S﻿tap 4: Ga naar de zojuist gemaakte scripts directory, type: # cd scripts
+Stap 5: Maak een bash script, type: # vim usbstick.sh
+Stap 6: Insert de volgende code:
+
+  </div>
+  <footer>
+    <a href="/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/zoek/">zoek</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/naam/">naam</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/usb/">usb</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/stick/">stick</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/bash/">bash</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/script/">script</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
   
     <article class="post">
   <header>
@@ -920,80 +1007,6 @@ import subprocess def ssh_exec_command(hostname, username, private_key_path, com
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/blog/2024-configure-ldap-ipa-server-with-jenkins/">Configure LDAP/IPA Server with Jenkins </a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-03-09 17:38:50.197 &#43;0000 UTC">9 Maart 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1 minuut leestijd</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    ===
-Identity, Policy, and Audit (IPA) system
-===
-Jenkins
-2.319.2
-=﻿==
-Dashboard -&gt; Security -&gt; Configure Global Security
-Server:
-ldap://&lt;IP_SERVER&gt;:389
-root DN:
-dc=,dc=com
-User search base
-cn=users,cn=accounts
-User search filter
-uid={0}
-Group search base
-cn=groups,cn=accounts
-Group membership -&gt; Search for LDAP groups containing user -&gt; Group membership filter:
-(| (member={0}) (uniqueMember={0}) (memberUid={1}))
-Manager DN:
-uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com...
-  </div>
-  <footer>
-    <a href="/blog/2024-configure-ldap-ipa-server-with-jenkins/" class="button big">Lees verder</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/configure/">configure</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/ldap/">LDAP</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/ipa/">IPA</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/server/">server</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/jenkins/">jenkins</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/page/3/" class="button left"><span>Vorige Pagina</span></a>
@@ -1010,6 +1023,14 @@ uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com...
       <header>
         <h1>Recente berichten</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory en DNS installatie</a></h2>
+          <time class="published" datetime="2026-03-27 00:00:00 &#43;0100 CET">27 Maart 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1043,14 +1064,6 @@ uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com...
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/">This version of BootCamp is not intented for this computer</a></h2>
-          <time class="published" datetime="2025-04-28 16:04:39.408 &#43;0000 UTC">28 April 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/blog/" class="button">Toon meer</a>
@@ -1070,7 +1083,7 @@ uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com...
           
           
           <li>
-              <a href="/categories/article/">article<span class="count">62</span></a>
+              <a href="/categories/article/">article<span class="count">63</span></a>
           
           <li>
               <a href="/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1079,7 +1092,7 @@ uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com...
               <a href="/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/categories/windows/">windows<span class="count">7</span></a>
+              <a href="/categories/windows/">windows<span class="count">8</span></a>
           
           <li>
               <a href="/categories/tools/">tools<span class="count">4</span></a>

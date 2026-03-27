@@ -6,8 +6,15 @@
     <description>Recent content in Article on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
-    <lastBuildDate>Sun, 18 Jan 2026 18:55:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Server 2022 — Active Directory en DNS installatie</title>
+      <link>http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/</guid>
+      <description>&lt;p&gt;In dit artikel beschrijf ik stap voor stap hoe ik Active Directory Domain Services (AD DS) en DNS heb geïnstalleerd op een Windows Server 2022 Datacenter VM in een VMware Fusion lab omgeving. Het resultaat is een volledig functionele domeincontroller voor het domein &lt;strong&gt;lab.local&lt;/strong&gt;, als basis voor een Windows DevOps lab.&lt;/p&gt;&#xA;&lt;h2 id=&#34;omgeving&#34;&gt;Omgeving&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Onderdeel&lt;/th&gt;&#xA;          &lt;th&gt;Waarde&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Virtualisatie&lt;/td&gt;&#xA;          &lt;td&gt;VMware Fusion (macOS)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Gastbesturingssysteem&lt;/td&gt;&#xA;          &lt;td&gt;Windows Server 2022 Datacenter (Desktop Experience)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Hostnaam&lt;/td&gt;&#xA;          &lt;td&gt;DC01&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Domeinnaam&lt;/td&gt;&#xA;          &lt;td&gt;lab.local&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NetBIOS naam&lt;/td&gt;&#xA;          &lt;td&gt;LAB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Lab-netwerk adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet1 — 172.16.37.10 (vast IP)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Internet adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet0 — DHCP via VMware NAT&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;stap-1--netwerk-instellen&#34;&gt;Stap 1 — Netwerk instellen&lt;/h2&gt;&#xA;&lt;p&gt;Voordat Active Directory wordt geïnstalleerd, heeft de domeincontroller een vast (statisch) IP-adres nodig. AD DS en DNS zijn afhankelijk van een stabiel adres.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Windows packet capturing voor bijvoorbeeld een LDAPS verkeer analyse</title>
       <link>http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</link>

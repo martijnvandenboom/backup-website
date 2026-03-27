@@ -55,7 +55,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.157.0"><meta property="og:site_name" content="Notities">
+<meta name="generator" content="Hugo 0.159.1"><meta property="og:site_name" content="Notities">
   <meta property="og:title" content="Martijn&#39;s">
   <meta property="og:description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
   <meta property="description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
@@ -64,7 +64,7 @@
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
   
-  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.a694a0de4d12f03f7239d4eb60fd6f210f9713402aa21c902e52435f0e0ffb85.css" integrity="sha256-ppSg3k0S8D9yOdTrYP1vIQ&#43;XE0AqohyQLlJDXw4P&#43;4U="><link rel="stylesheet" href="/css/add-on.css">
+  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.0f15b9691a96d1d59cc15ff1724700d27a2df35e7a8bedad77e02c9c426450c7.css" integrity="sha256-DxW5aRqW0dWcwV/xckcA0not8156i&#43;2td&#43;AsnEJkUMc="><link rel="stylesheet" href="/css/add-on.css">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -373,6 +373,29 @@
     #telegram-btn:hover svg {
       fill: #fff;
     }
+
+     
+    .darkmode table {
+      background-color: #101425;
+      color: var(--text-color);
+    }
+
+    .darkmode table > thead {
+      background-color: #1a1f35;
+    }
+
+    .darkmode table > tbody > tr > td:first-child {
+      background-color: #1a1f35;
+      color: var(--text-color);
+    }
+
+    .darkmode table > tbody > tr:nth-child(even) {
+      background-color: #0d1126;
+    }
+
+    .darkmode table > tbody > tr:hover {
+      background-color: #1e2640;
+    }
   </style>
 
 
@@ -622,6 +645,70 @@
       <main id="site-main">
         
   
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/">LDAP/IPA - Server op Red Hat Enterprise Linux 7</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-02-15 10:47:28.702 &#43;0000 UTC">15 Februari 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1 minuut leestijd</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    A﻿ls je gebruikt maakt van een hosts file, let dan goed op dat er FQDN&#39;s in staan en de volgorde waarin.
+C﻿ontroleer de hosts file en pas deze eventueel aan:
+De FQDN voorop, daarna pas de aliassen.
+/etc/hosts 10.0.0.1 server1.example.com server1 applicatie1 Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.
+
+  </div>
+  <footer>
+    <a href="/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/ldap/">ldap</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/ipa/">ipa</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/rhel/">rhel</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/red/">red</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/hat/">hat</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/7/">7</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
   
     <article class="post">
   <header>
@@ -918,65 +1005,6 @@ PowerShell Resource monitor $app=&amp;#34;notepad&amp;#34; $ids = Get-Process $a
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/blog/2023-macos-desktop-extended-over-3-schermen/">macOS desktop extended over 3 schermen: iMac, MacBook en iPad</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2023-11-26 15:16:27.719 &#43;0000 UTC">26 November 2023</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1 minuut leestijd</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    In de setup die ik gebruik heb ik de volgende 3 apparaten:
-iMac 27” late 2015 met OpenCore Legacy Patcher Sonoma: 14.1.1 MacBook Pro 15” late 2016 met OpenCore Legacy Patcher Sonoma: 14.1.1 iPad 10.2” 7th Gen met iPadOS-versie: 17.1.1 Ze zijn op hetzelfde WiFi netwerk verbonden.
-Stappen:
-Op de iMac ga naar: System Settings -&gt; Displays Klik op het plusje rechts naast de Built-in Display Kies onder Mirror or Extend to: MacBook Pro Kies onder Link keyboard and mouse to: iPad Nu zie je onder de...
-  </div>
-  <footer>
-    <a href="/blog/2023-macos-desktop-extended-over-3-schermen/" class="button big">Lees verder</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/macos/">macos</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/desktop/">desktop</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/extended/">extended</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/meedere/">meedere</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/schermen/">schermen</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/apparaten/">apparaten</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/page/5/" class="button left"><span>Vorige Pagina</span></a>
@@ -993,6 +1021,14 @@ Op de iMac ga naar: System Settings -&gt; Displays Klik op het plusje rechts na
       <header>
         <h1>Recente berichten</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory en DNS installatie</a></h2>
+          <time class="published" datetime="2026-03-27 00:00:00 &#43;0100 CET">27 Maart 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1026,14 +1062,6 @@ Op de iMac ga naar: System Settings -&gt; Displays Klik op het plusje rechts na
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/">This version of BootCamp is not intented for this computer</a></h2>
-          <time class="published" datetime="2025-04-28 16:04:39.408 &#43;0000 UTC">28 April 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/blog/" class="button">Toon meer</a>
@@ -1053,7 +1081,7 @@ Op de iMac ga naar: System Settings -&gt; Displays Klik op het plusje rechts na
           
           
           <li>
-              <a href="/categories/article/">article<span class="count">62</span></a>
+              <a href="/categories/article/">article<span class="count">63</span></a>
           
           <li>
               <a href="/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1062,7 +1090,7 @@ Op de iMac ga naar: System Settings -&gt; Displays Klik op het plusje rechts na
               <a href="/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/categories/windows/">windows<span class="count">7</span></a>
+              <a href="/categories/windows/">windows<span class="count">8</span></a>
           
           <li>
               <a href="/categories/tools/">tools<span class="count">4</span></a>
