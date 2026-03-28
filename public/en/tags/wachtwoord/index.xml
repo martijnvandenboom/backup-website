@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wachtwoord on Notities</title>
+    <link>http://localhost:1313/en/tags/wachtwoord/</link>
+    <description>Recent content in Wachtwoord on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Feb 2023 10:56:24 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/wachtwoord/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change your Windows password using a shortcut</title>
+      <link>http://localhost:1313/en/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</link>
+      <pubDate>Thu, 16 Feb 2023 10:56:24 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</guid>
+      <description>&lt;p&gt;Change your Windows password by using a shortcut on your desktop. (CTRL+ALT+DEL key combination by clicking a shortcut)&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Right-click on your desktop, choose New and then Shortcut&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Enter the following command for the item location:&lt;br&gt;&#xA;C:\Windows\explorer.exe shell:::{2559a1f2-21d7-11d4-bdaf-00c04f60b9f0}&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click: Next&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Give the shortcut a name, for example: Reset password&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click: Finish&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gratis on Notities</title>
+    <link>http://localhost:1313/en/tags/gratis/</link>
+    <description>Recent content in Gratis on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 21 Jun 2023 16:46:56 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/gratis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft makes Office available for free on the website</title>
+      <link>http://localhost:1313/en/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</link>
+      <pubDate>Wed, 21 Jun 2023 16:46:56 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</guid>
+      <description>&lt;p&gt;Do you already have a Microsoft account?&lt;/p&gt;&#xA;&lt;p&gt;Step 1.: log in to the website: office.com&lt;/p&gt;&#xA;&lt;p&gt;Step 2.: click on the icon with the 9 dots in the top left of the screen&lt;/p&gt;&#xA;&lt;p&gt;Step 3.: choose the Office app you want to use&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you don&amp;rsquo;t have a Microsoft account yet you can create one for free.&lt;/p&gt;&#xA;&lt;p&gt;Step 1.: go to the website: account.microsoft.com&lt;/p&gt;&#xA;&lt;p&gt;Step 2.: click the sign in button&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

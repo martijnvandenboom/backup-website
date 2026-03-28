@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mode on Notities</title>
+    <link>http://localhost:1313/en/tags/mode/</link>
+    <description>Recent content in Mode on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 05 Mar 2023 13:40:14 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/mode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a Windows - God Mode - shortcut</title>
+      <link>http://localhost:1313/en/blog/2023-maak-een-windows-god-mode-snelkoppeling/</link>
+      <pubDate>Sun, 05 Mar 2023 13:40:14 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-maak-een-windows-god-mode-snelkoppeling/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Right-click on the Desktop&lt;/li&gt;&#xA;&lt;li&gt;Choose: New -&amp;gt; Folder&lt;/li&gt;&#xA;&lt;li&gt;Name the folder: GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}&lt;/li&gt;&#xA;&lt;li&gt;Open the folder for a huge number of advanced settings&lt;/li&gt;&#xA;&lt;li&gt;The shortcuts in this folder can be copied to, for example, the Desktop for even faster access&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

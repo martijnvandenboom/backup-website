@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Desktop on Notities</title>
+    <link>http://localhost:1313/en/tags/desktop/</link>
+    <description>Recent content in Desktop on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Nov 2023 15:16:27 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/desktop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS desktop extended across 3 screens: iMac, MacBook and iPad</title>
+      <link>http://localhost:1313/en/blog/2023-macos-desktop-extended-over-3-schermen/</link>
+      <pubDate>Sun, 26 Nov 2023 15:16:27 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-macos-desktop-extended-over-3-schermen/</guid>
+      <description>&lt;p&gt;In the setup I use I have the following 3 devices:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;iMac 27&amp;quot; late 2015 with OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;MacBook Pro 15&amp;quot; late 2016 with OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;iPad 10.2&amp;quot; 7th Gen with iPadOS version: 17.1.1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;They are connected to the same WiFi network.&lt;/p&gt;&#xA;&lt;p&gt;Steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;On the iMac go to: System Settings -&amp;gt; Displays&lt;/li&gt;&#xA;&lt;li&gt;Click the plus sign to the right of the Built-in Display&lt;/li&gt;&#xA;&lt;li&gt;Choose under Mirror or Extend to: MacBook Pro&lt;/li&gt;&#xA;&lt;li&gt;Choose under Link keyboard and mouse to: iPad&lt;/li&gt;&#xA;&lt;li&gt;You now see the 3 screens under Displays, but it is not yet extended across all 3&lt;/li&gt;&#xA;&lt;li&gt;Click on the iPad&lt;/li&gt;&#xA;&lt;li&gt;Choose for the option: &amp;ldquo;Use as&amp;rdquo; - select: Extend or mirrored display&lt;/li&gt;&#xA;&lt;li&gt;You now see the same desktop on all 3 devices&lt;/li&gt;&#xA;&lt;li&gt;And you can drag applications from the iMac to the MacBook or the iPad&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

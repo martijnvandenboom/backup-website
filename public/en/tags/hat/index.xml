@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hat on Notities</title>
+    <link>http://localhost:1313/en/tags/hat/</link>
+    <description>Recent content in Hat on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Feb 2024 10:47:28 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/hat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LDAP/IPA - Server on Red Hat Enterprise Linux 7</title>
+      <link>http://localhost:1313/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link>
+      <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</guid>
+      <description>&lt;p&gt;If you are using a hosts file, make sure it contains FQDNs and pay close attention to the order in which they appear.&lt;/p&gt;&#xA;&lt;p&gt;Check the hosts file and adjust it if necessary:&lt;/p&gt;&#xA;&lt;p&gt;The FQDN must come first, followed by any aliases.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/etc/hosts&#xA;&#xA;10.0.0.1   server1.example.com    server1    application1&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If an alias is listed before the FQDN, you may encounter error messages that are not immediately traceable to this cause.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

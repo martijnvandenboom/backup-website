@@ -4,9 +4,29 @@
   <url>
     <loc>http://localhost:1313/tags/active-directory/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/active-directory/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/active-directory/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/article/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/article/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/categories/article/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
@@ -26,15 +46,45 @@
   </url><url>
     <loc>http://localhost:1313/tags/devops/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/devops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/devops/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/dns/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/dns/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/dns/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/domeincontroller/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/lab/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/lab/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/lab/"
+                />
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
@@ -64,6 +114,16 @@
   </url><url>
     <loc>http://localhost:1313/tags/vmware/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/vmware/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/vmware/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/windows/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
@@ -93,24 +153,94 @@
   </url><url>
     <loc>http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2026-windows-server-2022-active-directory-dns-installatie/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/windows-server-2022/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/windows-server-2022/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/windows-server-2022/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/analyse/</loc>
     <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/analyse/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/analyse/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/capturing/</loc>
     <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/capturing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/capturing/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/ldaps/</loc>
     <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ldaps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/ldaps/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/packet/</loc>
     <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/packet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/packet/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</loc>
     <lastmod>2026-01-18T18:55:54+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/lan/</loc>
     <lastmod>2025-11-15T15:40:22+01:00</lastmod>
@@ -323,6 +453,16 @@
   </url><url>
     <loc>http://localhost:1313/tags/virtualbox/</loc>
     <lastmod>2025-07-01T08:30:05+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/virtualbox/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/virtualbox/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/web-based/</loc>
     <lastmod>2025-07-01T08:30:05+00:00</lastmod>
@@ -335,6 +475,16 @@
   </url><url>
     <loc>http://localhost:1313/tags/computer/</loc>
     <lastmod>2025-04-28T16:04:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/computer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/computer/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/intended/</loc>
     <lastmod>2025-04-28T16:04:39+00:00</lastmod>
@@ -350,9 +500,29 @@
   </url><url>
     <loc>http://localhost:1313/tags/version/</loc>
     <lastmod>2025-04-28T16:04:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/version/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/version/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/microsoft/</loc>
     <lastmod>2025-04-10T08:48:17+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/microsoft/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/microsoft/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</loc>
     <lastmod>2025-04-10T08:48:17+00:00</lastmod>
@@ -395,6 +565,16 @@
   </url><url>
     <loc>http://localhost:1313/tags/install/</loc>
     <lastmod>2025-03-29T20:21:32+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/install/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/install/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</loc>
     <lastmod>2025-03-29T20:21:32+00:00</lastmod>
@@ -410,33 +590,133 @@
   </url><url>
     <loc>http://localhost:1313/tags/1/</loc>
     <lastmod>2025-03-24T17:57:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/1/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/bedienen/</loc>
     <lastmod>2025-03-24T17:57:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/bedienen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/bedienen/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/computers/</loc>
     <lastmod>2025-03-24T17:57:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/computers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/computers/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/deskflow/</loc>
     <lastmod>2025-03-24T17:57:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/deskflow/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/deskflow/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</loc>
     <lastmod>2025-03-24T17:57:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/keyboard/</loc>
     <lastmod>2025-03-24T17:57:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/keyboard/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/keyboard/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2025-03-24T17:57:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/linux/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/macos/</loc>
     <lastmod>2025-03-24T17:57:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/macos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/macos/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/meerdere/</loc>
     <lastmod>2025-03-24T17:57:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/meerdere/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/meerdere/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/muis/</loc>
     <lastmod>2025-03-24T17:57:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/muis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/muis/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/installing/</loc>
     <lastmod>2025-03-23T13:20:53+00:00</lastmod>
@@ -446,9 +726,29 @@
   </url><url>
     <loc>http://localhost:1313/tags/oracle/</loc>
     <lastmod>2025-03-23T13:20:53+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/oracle/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/oracle/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/ubuntu/</loc>
     <lastmod>2025-03-23T13:20:53+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ubuntu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/ubuntu/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/tips/</loc>
     <lastmod>2025-03-23T12:51:59+00:00</lastmod>
@@ -473,6 +773,16 @@
   </url><url>
     <loc>http://localhost:1313/tags/c/</loc>
     <lastmod>2025-03-22T19:32:21+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/c/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/c/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
     <lastmod>2025-03-22T19:32:21+00:00</lastmod>
@@ -503,6 +813,16 @@
   </url><url>
     <loc>http://localhost:1313/tags/mode/</loc>
     <lastmod>2025-02-15T21:17:06+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/mode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/mode/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/styling/</loc>
     <lastmod>2025-02-15T21:17:06+00:00</lastmod>
@@ -619,24 +939,94 @@
   </url><url>
     <loc>http://localhost:1313/tags/bash/</loc>
     <lastmod>2024-07-18T07:20:59+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/bash/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/bash/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/naam/</loc>
     <lastmod>2024-07-18T07:20:59+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/naam/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/naam/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/script/</loc>
     <lastmod>2024-07-18T07:20:59+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/script/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/script/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/stick/</loc>
     <lastmod>2024-07-18T07:20:59+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/stick/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/stick/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/usb/</loc>
     <lastmod>2024-07-18T07:20:59+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/usb/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/usb/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/zoek/</loc>
     <lastmod>2024-07-18T07:20:59+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/zoek/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/zoek/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</loc>
     <lastmod>2024-07-18T07:20:59+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/efi/</loc>
     <lastmod>2024-07-07T20:49:33+00:00</lastmod>
@@ -701,6 +1091,16 @@
   </url><url>
     <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2024-04-03T20:20:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/python/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/remote/</loc>
     <lastmod>2024-04-03T20:20:39+00:00</lastmod>
@@ -728,12 +1128,32 @@
   </url><url>
     <loc>http://localhost:1313/tags/ipa/</loc>
     <lastmod>2024-03-09T17:38:50+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ipa/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/ipa/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/jenkins/</loc>
     <lastmod>2024-03-09T17:38:50+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ldap/</loc>
     <lastmod>2024-03-09T17:38:50+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ldap/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/ldap/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-nexus/</loc>
     <lastmod>2024-03-09T17:37:42+00:00</lastmod>
@@ -767,48 +1187,198 @@
   </url><url>
     <loc>http://localhost:1313/tags/7/</loc>
     <lastmod>2024-02-15T10:47:28+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/7/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/hat/</loc>
     <lastmod>2024-02-15T10:47:28+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/hat/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/hat/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</loc>
     <lastmod>2024-02-15T10:47:28+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/red/</loc>
     <lastmod>2024-02-15T10:47:28+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/red/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/red/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/rhel/</loc>
     <lastmod>2024-02-15T10:47:28+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/rhel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/rhel/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</loc>
     <lastmod>2024-01-31T20:54:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/proces/</loc>
     <lastmod>2024-01-31T20:54:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/proces/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/proces/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/programma/</loc>
     <lastmod>2024-01-31T20:54:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/programma/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/programma/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/zombie/</loc>
     <lastmod>2024-01-31T20:54:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/zombie/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/zombie/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/</loc>
     <lastmod>2024-01-31T20:18:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/einde/</loc>
     <lastmod>2024-01-31T20:18:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/einde/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/einde/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/failed/</loc>
     <lastmod>2024-01-31T20:18:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/failed/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/failed/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/melding/</loc>
     <lastmod>2024-01-31T20:18:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/melding/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/melding/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/regel/</loc>
     <lastmod>2024-01-31T20:18:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/regel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/regel/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/succes/</loc>
     <lastmod>2024-01-31T20:18:39+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/succes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/succes/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/9.3/</loc>
     <lastmod>2024-01-16T21:13:15+00:00</lastmod>
@@ -845,6 +1415,16 @@
   </url><url>
     <loc>http://localhost:1313/tags/powershell/</loc>
     <lastmod>2024-01-04T22:21:38+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/powershell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/powershell/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/</loc>
     <lastmod>2024-01-04T22:21:38+00:00</lastmod>
@@ -854,21 +1434,81 @@
   </url><url>
     <loc>http://localhost:1313/tags/apparaten/</loc>
     <lastmod>2023-11-26T15:16:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/apparaten/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/apparaten/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/desktop/</loc>
     <lastmod>2023-11-26T15:16:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/desktop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/desktop/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/extended/</loc>
     <lastmod>2023-11-26T15:16:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/extended/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/extended/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2023-macos-desktop-extended-over-3-schermen/</loc>
     <lastmod>2023-11-26T15:16:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2023-macos-desktop-extended-over-3-schermen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2023-macos-desktop-extended-over-3-schermen/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/meedere/</loc>
     <lastmod>2023-11-26T15:16:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/meedere/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/meedere/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/schermen/</loc>
     <lastmod>2023-11-26T15:16:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/schermen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/schermen/"
+                />
   </url><url>
     <loc>http://localhost:1313/services/</loc>
     <lastmod>2023-10-29T00:00:00+00:00</lastmod>
@@ -969,132 +1609,542 @@
   </url><url>
     <loc>http://localhost:1313/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</loc>
     <lastmod>2023-07-05T18:02:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/opslaan/</loc>
     <lastmod>2023-07-05T18:02:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/opslaan/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/opslaan/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/anoniem/</loc>
     <lastmod>2023-06-21T17:10:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/anoniem/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/anoniem/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</loc>
     <lastmod>2023-06-21T17:10:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/bescherm/</loc>
     <lastmod>2023-06-21T17:10:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/bescherm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/bescherm/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/internet/</loc>
     <lastmod>2023-06-21T17:10:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/internet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/internet/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/privacy/</loc>
     <lastmod>2023-06-21T17:10:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/privacy/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/zoeken/</loc>
     <lastmod>2023-06-21T17:10:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/zoeken/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/zoeken/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/gratis/</loc>
     <lastmod>2023-06-21T16:46:56+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/gratis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/gratis/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</loc>
     <lastmod>2023-06-21T16:46:56+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/office/</loc>
     <lastmod>2023-06-21T16:46:56+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/office/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/office/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/bureaublad/</loc>
     <lastmod>2023-05-10T19:09:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/bureaublad/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/bureaublad/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/icoontje/</loc>
     <lastmod>2023-05-10T19:09:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/icoontje/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/icoontje/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/snelkoppeling/</loc>
     <lastmod>2023-05-10T19:09:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/snelkoppeling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/snelkoppeling/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</loc>
     <lastmod>2023-05-10T19:09:51+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2023-al-gehoord-van-chatgpt-vind-antwoorden-op-al-je-moeilijke-vragen/</loc>
     <lastmod>2023-04-30T13:15:53+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2023-al-gehoord-van-chatgpt-vind-antwoorden-op-al-je-moeilijke-vragen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2023-al-gehoord-van-chatgpt-vind-antwoorden-op-al-je-moeilijke-vragen/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/antwoorden/</loc>
     <lastmod>2023-04-30T13:15:53+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/antwoorden/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/antwoorden/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/chatgpt/</loc>
     <lastmod>2023-04-30T13:15:53+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/chatgpt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/chatgpt/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/moeilijke/</loc>
     <lastmod>2023-04-30T13:15:53+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/moeilijke/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/moeilijke/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/vinden/</loc>
     <lastmod>2023-04-30T13:15:53+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/vinden/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/vinden/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/vragen/</loc>
     <lastmod>2023-04-30T13:15:53+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/vragen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/vragen/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/2e-handse/</loc>
     <lastmod>2023-04-30T12:53:36+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/2e-handse/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/2e-handse/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/apple/</loc>
     <lastmod>2023-04-30T12:53:36+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/apple/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/apple/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</loc>
     <lastmod>2023-04-30T12:53:36+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/imac/</loc>
     <lastmod>2023-04-30T12:53:36+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/imac/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/imac/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/leven/</loc>
     <lastmod>2023-04-30T12:53:36+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/leven/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/leven/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/mac/</loc>
     <lastmod>2023-04-30T12:53:36+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/mac/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/mac/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/mac-mini/</loc>
     <lastmod>2023-04-30T12:53:36+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/mac-mini/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/mac-mini/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/macbook/</loc>
     <lastmod>2023-04-30T12:53:36+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/macbook/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/macbook/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/opencore-legacy-patcher/</loc>
     <lastmod>2023-04-30T12:53:36+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/opencore-legacy-patcher/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/opencore-legacy-patcher/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/oude/</loc>
     <lastmod>2023-04-30T12:53:36+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/oude/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/oude/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/god/</loc>
     <lastmod>2023-03-05T13:40:14+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/god/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/god/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2023-maak-een-windows-god-mode-snelkoppeling/</loc>
     <lastmod>2023-03-05T13:40:14+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2023-maak-een-windows-god-mode-snelkoppeling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2023-maak-een-windows-god-mode-snelkoppeling/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/automatisch/</loc>
     <lastmod>2023-02-17T14:51:15+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/automatisch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/automatisch/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</loc>
     <lastmod>2023-02-17T14:51:15+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/inloggen/</loc>
     <lastmod>2023-02-17T14:51:15+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/inloggen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/inloggen/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/putty/</loc>
     <lastmod>2023-02-17T14:51:15+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/putty/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/putty/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/wachtwoord/</loc>
     <lastmod>2023-02-16T10:56:24+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/wachtwoord/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/wachtwoord/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</loc>
     <lastmod>2023-02-16T10:56:24+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</loc>
     <lastmod>2022-12-01T21:20:43+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/machines/</loc>
     <lastmod>2022-12-01T21:20:43+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/machines/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/machines/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/monterey/</loc>
     <lastmod>2022-12-01T21:20:43+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/virtual/</loc>
     <lastmod>2022-12-01T21:20:43+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/virtual/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/virtual/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/opening/</loc>
     <lastmod>2022-12-01T19:30:38+00:00</lastmod>
@@ -1116,12 +2166,42 @@
   </url><url>
     <loc>http://localhost:1313/tags/dependencies/</loc>
     <lastmod>2022-12-01T19:24:55+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/dependencies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/dependencies/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</loc>
     <lastmod>2022-12-01T19:24:55+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/installatie/</loc>
     <lastmod>2022-12-01T19:24:55+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/installatie/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/installatie/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</loc>
     <lastmod>2022-10-31T17:55:56+00:00</lastmod>
@@ -1171,72 +2251,302 @@
   </url><url>
     <loc>http://localhost:1313/tags/afsluiten/</loc>
     <lastmod>2022-06-02T09:41:34+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/afsluiten/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/afsluiten/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/browser/</loc>
     <lastmod>2022-06-02T09:41:34+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/browser/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/browser/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/cookies/</loc>
     <lastmod>2022-06-02T09:41:34+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/cookies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/cookies/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/</loc>
     <lastmod>2022-06-02T09:41:34+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/opruimen/</loc>
     <lastmod>2022-06-02T09:41:34+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/opruimen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/opruimen/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/web/</loc>
     <lastmod>2022-06-02T09:41:34+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/web/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/web/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/coderunner/</loc>
     <lastmod>2022-04-03T19:55:44+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/coderunner/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/coderunner/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/extensie/</loc>
     <lastmod>2022-04-03T19:55:44+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/extensie/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/extensie/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/extension/</loc>
     <lastmod>2022-04-03T19:55:44+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/extension/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/extension/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/python3/</loc>
     <lastmod>2022-04-03T19:55:44+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/python3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/python3/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/python3.9/</loc>
     <lastmod>2022-04-03T19:55:44+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/python3.9/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/python3.9/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</loc>
     <lastmod>2022-04-03T19:55:44+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/versie/</loc>
     <lastmod>2022-04-03T19:55:44+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/versie/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/versie/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/vscodium/</loc>
     <lastmod>2022-04-03T19:55:44+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/vscodium/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/vscodium/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/installeer/</loc>
     <lastmod>2022-04-03T18:55:18+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/installeer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/installeer/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2022-installeer-python-3-9-op-ubuntu-linux/</loc>
     <lastmod>2022-04-03T18:55:18+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2022-installeer-python-3-9-op-ubuntu-linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2022-installeer-python-3-9-op-ubuntu-linux/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/codium/</loc>
     <lastmod>2022-04-03T14:22:24+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/codium/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/codium/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/editor/</loc>
     <lastmod>2022-04-03T14:22:24+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/editor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/editor/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</loc>
     <lastmod>2022-04-03T14:22:24+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/chrome/</loc>
     <lastmod>2022-04-03T11:51:54+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/chrome/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/chrome/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/google/</loc>
     <lastmod>2022-04-03T11:51:54+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/google/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/google/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</loc>
     <lastmod>2022-04-03T11:51:54+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/handelingen/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/handelingen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/categories/handelingen/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/handelingen/</loc>
     <lastmod>2022-03-09T19:18:22+01:00</lastmod>
@@ -1314,72 +2624,302 @@
   </url><url>
     <loc>http://localhost:1313/tags/cms/</loc>
     <lastmod>2022-02-25T11:44:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/cms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/cms/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/content/</loc>
     <lastmod>2022-02-25T11:44:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/content/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/content/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2022-02-25T11:44:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/hugo/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/netlify/</loc>
     <lastmod>2022-02-25T11:44:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/netlify/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/netlify/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/nieuwe/</loc>
     <lastmod>2022-02-25T11:44:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/nieuwe/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/nieuwe/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</loc>
     <lastmod>2022-02-25T11:44:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/webpagina/</loc>
     <lastmod>2022-02-25T11:44:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/webpagina/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/webpagina/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/nieuw/</loc>
     <lastmod>2022-02-25T11:09:02+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/nieuw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/nieuw/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</loc>
     <lastmod>2022-02-25T11:09:02+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/afbeelding/</loc>
     <lastmod>2021-12-19T09:50:22+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/afbeelding/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/afbeelding/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/gehele_webpagina_opslaan/</loc>
     <lastmod>2021-12-19T09:50:22+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/gehele_webpagina_opslaan/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/gehele_webpagina_opslaan/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/html/</loc>
     <lastmod>2021-12-19T09:50:22+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/html/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/html/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/zoomen_op_een_website/</loc>
     <lastmod>2021-12-18T20:56:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/zoomen_op_een_website/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/zoomen_op_een_website/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/toetsenbord/</loc>
     <lastmod>2021-12-18T20:56:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/toetsenbord/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/toetsenbord/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/app/</loc>
     <lastmod>2021-12-16T09:07:17+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/app/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/markdown/</loc>
     <lastmod>2021-12-16T09:07:17+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/markdown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/markdown/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/syntax/</loc>
     <lastmod>2021-12-16T09:07:17+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/syntax/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/categories/syntax/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/themes/</loc>
     <lastmod>2021-12-16T09:07:17+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/themes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/categories/themes/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/themes/</loc>
     <lastmod>2021-12-16T09:07:17+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/themes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/themes/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/windows-update-snelkoppeling/</loc>
     <lastmod>2021-12-16T09:07:17+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/windows-update-snelkoppeling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/windows-update-snelkoppeling/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/css/</loc>
     <lastmod>2021-12-13T19:12:03+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/css/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/css/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/powershell-clean-memory/</loc>
     <lastmod>2021-12-13T19:12:03+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/blog/powershell-clean-memory/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/blog/powershell-clean-memory/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/scripting/</loc>
     <lastmod>2021-12-13T19:12:03+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/scripting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/categories/scripting/"
+                />
   </url><url>
     <loc>http://localhost:1313/blog/wordpress-no-ftp/</loc>
     <lastmod>2020-12-19T11:22:46+01:00</lastmod>

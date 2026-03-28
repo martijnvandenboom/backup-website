@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Notities</title>
+    <link>http://localhost:1313/en/tags/linux/</link>
+    <description>Recent content in Linux on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 24 Mar 2025 17:57:51 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</title>
+      <link>http://localhost:1313/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
+      <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
+      <description>&lt;p&gt;With Deskflow you control multiple computers — macOS, Windows or Linux — using a single mouse and keyboard. It works as a software-based KVM switch (without video) and is sponsored by Synergy. This program is still actively maintained, with an intuitive interface that makes it easy to use. Tip: disable TLS in the settings for a smooth start.&lt;/p&gt;&#xA;&lt;p&gt;Download it via: &lt;a href=&#34;https://github.com/deskflow/deskflow/releases&#34;&gt;https://github.com/deskflow/deskflow/releases&lt;/a&gt;. Look for the &amp;ldquo;latest&amp;rdquo; tag and check all assets for the correct version!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LDAP/IPA - Server on Red Hat Enterprise Linux 7</title>
+      <link>http://localhost:1313/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link>
+      <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</guid>
+      <description>&lt;p&gt;If you are using a hosts file, make sure it contains FQDNs and pay close attention to the order in which they appear.&lt;/p&gt;&#xA;&lt;p&gt;Check the hosts file and adjust it if necessary:&lt;/p&gt;&#xA;&lt;p&gt;The FQDN must come first, followed by any aliases.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/etc/hosts&#xA;&#xA;10.0.0.1   server1.example.com    server1    application1&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If an alias is listed before the FQDN, you may encounter error messages that are not immediately traceable to this cause.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Create a Zombie process in Linux using a C program</title>
+      <link>http://localhost:1313/en/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link>
+      <pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
+      <description>&lt;p&gt;Below is the source code of a C program to create a Zombie process in Linux and analyse it.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;sys/types.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;unistd.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt; ()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;pid_t&lt;/span&gt; child_pid;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  child_pid &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fork&lt;/span&gt; ();&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (child_pid &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;exit&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Compile the C source code into an executable program:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gcc create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Start the program:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./a.out&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open a second Terminal and view the process list. You will now see a process with STAT: Z and the text: defunct&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automatically log in to a Linux server using PuTTY on Windows</title>
+      <link>http://localhost:1313/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</link>
+      <pubDate>Fri, 17 Feb 2023 14:51:15 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</guid>
+      <description>&lt;p&gt;You can automatically log in to a Linux server on Windows using PuTTY by making use of a key file. Below I explain step by step how to do this.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a key: start: puttygen.exe&lt;/li&gt;&#xA;&lt;li&gt;Click on: Generate&lt;/li&gt;&#xA;&lt;li&gt;Click on: Save private key&lt;/li&gt;&#xA;&lt;li&gt;Go to PuTTY Configuration -&amp;gt; Session&lt;/li&gt;&#xA;&lt;li&gt;Load a previously created session or create a new one&lt;/li&gt;&#xA;&lt;li&gt;Go to: Connection -&amp;gt; SSH -&amp;gt; Auth -&amp;gt; Private key file for authentication -&amp;gt; Browse&lt;/li&gt;&#xA;&lt;li&gt;Select your file with the private key: *.ppk&lt;/li&gt;&#xA;&lt;li&gt;Go back to Session and click on: Save&lt;/li&gt;&#xA;&lt;li&gt;Log in to the Linux server using the Saved Sessions and still with your password&lt;/li&gt;&#xA;&lt;li&gt;Create a new directory in the home directory: .ssh&lt;/li&gt;&#xA;&lt;li&gt;Give this directory the correct permissions: chmod 700 ~/.ssh&lt;/li&gt;&#xA;&lt;li&gt;Create and edit the file authorized_keys: vi ~/ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Copy the Public key for pasting from the PuTTY Key Generator&lt;/li&gt;&#xA;&lt;li&gt;Paste it into the authorized_keys file on the Linux server&lt;/li&gt;&#xA;&lt;li&gt;Save the authorized_keys file (for vi type: :wq)&lt;/li&gt;&#xA;&lt;li&gt;Give this file the correct permissions: chmod 600 ~/.ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Close the logged-in PuTTY session to the Linux Server&lt;/li&gt;&#xA;&lt;li&gt;Open the session again to verify that you can now log in automatically&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Install Python 3.9 on Ubuntu Linux</title>
+      <link>http://localhost:1313/en/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link>
+      <pubDate>Sun, 03 Apr 2022 18:55:18 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid>
+      <description>&lt;p&gt;$ sudo apt install software-properties-common&lt;/p&gt;&#xA;&lt;p&gt;$ sudo add-apt-repository ppa:deadsnakes/ppa&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install python3.9&lt;/p&gt;&#xA;&lt;p&gt;$ python3.9 &amp;ndash;version&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install the editor VSCodium on Ubuntu Linux</title>
+      <link>http://localhost:1313/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</link>
+      <pubDate>Sun, 03 Apr 2022 14:22:24 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</guid>
+      <description>&lt;p&gt;$ wget -qO - &lt;a href=&#34;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&#34;&gt;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo echo &amp;lsquo;deb &lt;a href=&#34;https://vscodium.c7.ee/debs/&#34;&gt;https://vscodium.c7.ee/debs/&lt;/a&gt; vscodium main&amp;rsquo; | sudo tee &amp;ndash;append /etc/apt/sources.list.d/vscodium.list&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install codium&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install the Google Chrome Web Browser on Ubuntu Linux</title>
+      <link>http://localhost:1313/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link>
+      <pubDate>Sun, 03 Apr 2022 11:51:54 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid>
+      <description>&lt;p&gt;$ wget -q -O - &lt;a href=&#34;https://dl.google.com/linux/linux_signing_key.pub&#34;&gt;https://dl.google.com/linux/linux_signing_key.pub&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo sh -c &amp;rsquo;echo &amp;ldquo;deb [arch=amd64] &lt;a href=&#34;http://dl.google.com/linux/chrome/deb/&#34;&gt;http://dl.google.com/linux/chrome/deb/&lt;/a&gt; stable main&amp;rdquo; &amp;raquo; /etc/apt/sources.list.d/google-chrome.list&#39;&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install google-chrome-stable&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New life in an old Apple computer (iMac, MacBook)</title>
+      <link>http://localhost:1313/en/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
+      <pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
+      <description>&lt;p&gt;Install the VirtualBox application and run a virtual machine inside it with the latest version of Linux or Windows. In many cases this can solve problems with browsing the internet — for example, making it possible to visit websites that no longer work in the old Apple environment.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

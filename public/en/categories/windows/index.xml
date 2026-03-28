@@ -6,8 +6,15 @@
     <description>Recent content in Windows on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Nov 2025 15:40:22 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/en/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Server 2022 — Active Directory and DNS Installation</title>
+      <link>http://localhost:1313/en/blog/2026-windows-server-2022-active-directory-dns-installatie/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/en/blog/2026-windows-server-2022-active-directory-dns-installatie/</guid>
+      <description>&lt;p&gt;In this article I describe step by step how I installed Active Directory Domain Services (AD DS) and DNS on a Windows Server 2022 Datacenter VM in a VMware Fusion lab environment. The result is a fully functional domain controller for the domain &lt;strong&gt;lab.local&lt;/strong&gt;, as the foundation for a Windows DevOps lab.&lt;/p&gt;&#xA;&lt;h2 id=&#34;environment&#34;&gt;Environment&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Component&lt;/th&gt;&#xA;          &lt;th&gt;Value&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Virtualisation&lt;/td&gt;&#xA;          &lt;td&gt;VMware Fusion (macOS)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Guest operating system&lt;/td&gt;&#xA;          &lt;td&gt;Windows Server 2022 Datacenter (Desktop Experience)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Hostname&lt;/td&gt;&#xA;          &lt;td&gt;DC01&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Domain name&lt;/td&gt;&#xA;          &lt;td&gt;lab.local&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NetBIOS name&lt;/td&gt;&#xA;          &lt;td&gt;LAB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Lab network adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet1 — 172.16.37.10 (static IP)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Internet adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet0 — DHCP via VMware NAT&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;step-1--configure-networking&#34;&gt;Step 1 — Configure Networking&lt;/h2&gt;&#xA;&lt;p&gt;Before installing Active Directory, the domain controller needs a static IP address. AD DS and DNS depend on a stable address.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Network routing to LAN systems with OpenVPN Server</title>
       <link>http://localhost:1313/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link>
@@ -35,6 +42,27 @@
       <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
       <guid>http://localhost:1313/en/blog/automatisch_inloggen_in_windows/</guid>
       <description>&lt;p&gt;Entering a password or PIN is not equally convenient for everyone.&lt;/br&gt;&#xA;Do you find it annoying to enter a password or PIN every time you log in to Windows?&lt;/br&gt;&#xA;You can also automatically log in to Windows. When the computer has finished starting up, you will immediately see the desktop.&#xA;On the desktop you can make all your useful programs accessible and you have that immediately in front of you when you have turned on the computer.&#xA;You can then immediately start using the computer, without having to enter a password or PIN first.&lt;/br&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Save an entire webpage</title>
+      <link>http://localhost:1313/en/blog/gehele_webpagina_opslaan/</link>
+      <pubDate>Sun, 19 Dec 2021 09:50:22 +0100</pubDate>
+      <guid>http://localhost:1313/en/blog/gehele_webpagina_opslaan/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;In the web browser Microsoft Edge:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; click the 3 dots in the top right corner: ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choose the option: Web capture (Ctrl+Shift+S)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choose the option: Capture full page&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; click the button: Save&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; an image of type .jpeg will now be saved in your personal directory: Downloads&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Zooming in and out on a website</title>
+      <link>http://localhost:1313/en/blog/zoomen_op_een_website/</link>
+      <pubDate>Sat, 18 Dec 2021 20:56:00 +0100</pubDate>
+      <guid>http://localhost:1313/en/blog/zoomen_op_een_website/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hold down the CTRL key on the keyboard&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;and scroll with the wheel on the mouse.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Windows Update Shortcut</title>
+      <link>http://localhost:1313/en/blog/windows-update-snelkoppeling/</link>
+      <pubDate>Thu, 16 Dec 2021 09:07:17 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/windows-update-snelkoppeling/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Windows Update shortcut that everyone should have on their desktop&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Have your desktop in front of you&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Right-click&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Choose: New&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Choose: Shortcut&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Enter the following as the location:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (On Windows 8)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  %windir%\explorer.exe shell:::{36eef7db-88ad-4e81-ad49-0e313f0c35f8}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (On Windows 10)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ms-settings:windowsupdate&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Click: Next&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Enter the name: Windows Update&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Click: Finish&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

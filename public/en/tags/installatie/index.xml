@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installatie on Notities</title>
+    <link>http://localhost:1313/en/tags/installatie/</link>
+    <description>Recent content in Installatie on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Dec 2022 19:24:55 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/installatie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python dependencies when installing Oracle VirtualBox on Windows 11</title>
+      <link>http://localhost:1313/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
+      <pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
+      <description>&lt;p&gt;Step 1: install Python&lt;/p&gt;&#xA;&lt;p&gt;Step 2: add both the scripts folder and its parent folder to the path&lt;/p&gt;&#xA;&lt;p&gt;Step 3: CMD&amp;gt; pip install pywin32&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

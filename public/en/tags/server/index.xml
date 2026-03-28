@@ -15,5 +15,19 @@
       <guid>http://localhost:1313/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid>
       <description>&lt;p&gt;To be able to access systems on the LAN network through the VPN tunnel of the OpenVPN server, the LAN system must know that traffic destined for the VPN subnet must be sent via the OpenVPN server. Without this additional route, return traffic will not reach the VPN clients.&lt;/p&gt;&#xA;&lt;p&gt;In this example, we use the subnet 10.0.8.0/24 as the IP range you have configured for the OpenVPN tunnel. This is the network in which all VPN clients receive an IP address. To ensure that a device on the LAN can correctly send traffic back to these VPN clients, you must add a static route on that LAN device.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>LDAP/IPA - Server on Red Hat Enterprise Linux 7</title>
+      <link>http://localhost:1313/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link>
+      <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</guid>
+      <description>&lt;p&gt;If you are using a hosts file, make sure it contains FQDNs and pay close attention to the order in which they appear.&lt;/p&gt;&#xA;&lt;p&gt;Check the hosts file and adjust it if necessary:&lt;/p&gt;&#xA;&lt;p&gt;The FQDN must come first, followed by any aliases.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/etc/hosts&#xA;&#xA;10.0.0.1   server1.example.com    server1    application1&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If an alias is listed before the FQDN, you may encounter error messages that are not immediately traceable to this cause.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automatically log in to a Linux server using PuTTY on Windows</title>
+      <link>http://localhost:1313/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</link>
+      <pubDate>Fri, 17 Feb 2023 14:51:15 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</guid>
+      <description>&lt;p&gt;You can automatically log in to a Linux server on Windows using PuTTY by making use of a key file. Below I explain step by step how to do this.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a key: start: puttygen.exe&lt;/li&gt;&#xA;&lt;li&gt;Click on: Generate&lt;/li&gt;&#xA;&lt;li&gt;Click on: Save private key&lt;/li&gt;&#xA;&lt;li&gt;Go to PuTTY Configuration -&amp;gt; Session&lt;/li&gt;&#xA;&lt;li&gt;Load a previously created session or create a new one&lt;/li&gt;&#xA;&lt;li&gt;Go to: Connection -&amp;gt; SSH -&amp;gt; Auth -&amp;gt; Private key file for authentication -&amp;gt; Browse&lt;/li&gt;&#xA;&lt;li&gt;Select your file with the private key: *.ppk&lt;/li&gt;&#xA;&lt;li&gt;Go back to Session and click on: Save&lt;/li&gt;&#xA;&lt;li&gt;Log in to the Linux server using the Saved Sessions and still with your password&lt;/li&gt;&#xA;&lt;li&gt;Create a new directory in the home directory: .ssh&lt;/li&gt;&#xA;&lt;li&gt;Give this directory the correct permissions: chmod 700 ~/.ssh&lt;/li&gt;&#xA;&lt;li&gt;Create and edit the file authorized_keys: vi ~/ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Copy the Public key for pasting from the PuTTY Key Generator&lt;/li&gt;&#xA;&lt;li&gt;Paste it into the authorized_keys file on the Linux server&lt;/li&gt;&#xA;&lt;li&gt;Save the authorized_keys file (for vi type: :wq)&lt;/li&gt;&#xA;&lt;li&gt;Give this file the correct permissions: chmod 600 ~/.ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Close the logged-in PuTTY session to the Linux Server&lt;/li&gt;&#xA;&lt;li&gt;Open the session again to verify that you can now log in automatically&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
   </channel>
 </rss>

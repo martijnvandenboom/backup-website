@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vscodium on Notities</title>
+    <link>http://localhost:1313/en/tags/vscodium/</link>
+    <description>Recent content in Vscodium on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 03 Apr 2022 19:55:44 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/vscodium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set the Python interpreter version for the extension: Code Runner in VSCodium</title>
+      <link>http://localhost:1313/en/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>
+      <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# File name: version_used.py&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# This prints the version of Python being used by the Code Runner extension in VSCodium&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Set by going to: File -&amp;gt; Preferences -&amp;gt; Settings -&amp;gt; Search Settings -&amp;gt; code-runner.executorMap -&amp;gt; Edit in settings.json&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# &amp;#34;python&amp;#34;: &amp;#34;/bin/python3.9 -u&amp;#34;,&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# To run this script press the little play button on the top right in the editor&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; sys&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(sys&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;version)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Install the editor VSCodium on Ubuntu Linux</title>
+      <link>http://localhost:1313/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</link>
+      <pubDate>Sun, 03 Apr 2022 14:22:24 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</guid>
+      <description>&lt;p&gt;$ wget -qO - &lt;a href=&#34;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&#34;&gt;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo echo &amp;lsquo;deb &lt;a href=&#34;https://vscodium.c7.ee/debs/&#34;&gt;https://vscodium.c7.ee/debs/&lt;/a&gt; vscodium main&amp;rsquo; | sudo tee &amp;ndash;append /etc/apt/sources.list.d/vscodium.list&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install codium&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

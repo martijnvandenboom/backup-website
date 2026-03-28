@@ -6,14 +6,35 @@
     <description>Recent content in Website on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Mar 2022 19:18:22 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jul 2023 18:02:27 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/en/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Saving a website exactly as it looks</title>
+      <link>http://localhost:1313/en/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</link>
+      <pubDate>Wed, 05 Jul 2023 18:02:27 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</guid>
+      <description>&lt;p&gt;Saving a website exactly as it looks &lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;(1) With the Microsoft Edge Browser:&lt;/p&gt;&#xA;&lt;p&gt;step 1.: are you on the website you want to save? Or navigate to it.&lt;/p&gt;&#xA;&lt;p&gt;step 2.: click on the 3 dots in the top right of the screen &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;step 3.: click on: Web capture (with the camera icon)&lt;/p&gt;&#xA;&lt;p&gt;step 4.: choose the option: Capture full page&lt;/p&gt;&#xA;&lt;p&gt;step 5.: click the disk icon (Save) in the top right of the screen&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microsoft makes Office available for free on the website</title>
+      <link>http://localhost:1313/en/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</link>
+      <pubDate>Wed, 21 Jun 2023 16:46:56 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</guid>
+      <description>&lt;p&gt;Do you already have a Microsoft account?&lt;/p&gt;&#xA;&lt;p&gt;Step 1.: log in to the website: office.com&lt;/p&gt;&#xA;&lt;p&gt;Step 2.: click on the icon with the 9 dots in the top left of the screen&lt;/p&gt;&#xA;&lt;p&gt;Step 3.: choose the Office app you want to use&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you don&amp;rsquo;t have a Microsoft account yet you can create one for free.&lt;/p&gt;&#xA;&lt;p&gt;Step 1.: go to the website: account.microsoft.com&lt;/p&gt;&#xA;&lt;p&gt;Step 2.: click the sign in button&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Create a website for free with GitHub Pages</title>
       <link>http://localhost:1313/en/blog/maak_een_website_met_github_pages/</link>
       <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
       <guid>http://localhost:1313/en/blog/maak_een_website_met_github_pages/</guid>
       <description>&lt;p&gt;Create a website for free with GitHub&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://vandenboom.netlify.app/images/GitHub-Pages.png&#34; alt=&#34;GitHub Pages en GitHub Desktop&#34; /&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;P.S. Would you like somebody to help you? Feel free to send me a message on one of my Social Media Links available on this website.&lt;/br&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New content for your website via a web page</title>
+      <link>http://localhost:1313/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</link>
+      <pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</guid>
+      <description>&lt;p&gt;Add Netlify CMS to your website to add new content via a web page instead of the command line.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

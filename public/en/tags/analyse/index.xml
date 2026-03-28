@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analyse on Notities</title>
+    <link>http://localhost:1313/en/tags/analyse/</link>
+    <description>Recent content in Analyse on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 18 Jan 2026 18:55:54 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/analyse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows packet capturing for example for an LDAPS traffic analysis</title>
+      <link>http://localhost:1313/en/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</link>
+      <pubDate>Sun, 18 Jan 2026 18:55:54 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</guid>
+      <description>&lt;p&gt;Open a Windows Terminal or Command session As Administrator&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Check existing filters&#xA;# pktmon filter list&#xA;&#xA;Clear all filters&#xA;# pktmon filter remove&#xA;&#xA;Check capture status&#xA;# pktmon status&#xA;&#xA;Add a filter for LDAPS&#xA;# pktmon filter add -p 636&#xA;&#xA;Start the capture&#xA;# pktmon start --etw&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Try to connect again to the LDAP server / If you want to monitor a different port, repeat the command that generates the network traffic.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
