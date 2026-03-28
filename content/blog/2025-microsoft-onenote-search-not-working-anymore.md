@@ -1,5 +1,5 @@
 ---
-title: Microsoft OneNote search not working anymore
+title: Microsoft OneNote zoekfunctie werkt niet meer
 date: 2025-04-10T08:48:17.167Z
 draft: false
 categories:
@@ -15,12 +15,12 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-1. C﻿lose all Microsoft applications
+1. S﻿luit alle Microsoft-applicaties
 
-2. R﻿ename the cache folder in:\
-C:\Users\\\<User>\AppData\Local\Microsoft\OneNote\16.0
+2. H﻿ernoem de cachemap in:\
+C:\Users\\\<Gebruiker>\AppData\Local\Microsoft\OneNote\16.0
 
-3. R﻿estart OneNote
+3. H﻿erstart OneNote
 
 P﻿.S.\
-D﻿on't worry if the Notebooks seem empty, they will be regenerated.
+M﻿aak u geen zorgen als de notitieboeken leeg lijken, ze worden opnieuw aangemaakt.

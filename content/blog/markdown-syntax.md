@@ -1,6 +1,6 @@
 +++
-title = "Markdown Syntax Guide"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+title = "Markdown-syntaxgids"
+description = "Voorbeeldartikel met basisopmaak voor Markdown en HTML-elementen."
 author = "Hugo Authors"
 date = "2019-03-11"
 tags = ["markdown", "css", "html", "themes"]
@@ -8,12 +8,12 @@ categories = ["themes", "syntax"]
 
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+Dit artikel biedt een overzicht van de basisopmaak van Markdown die kan worden gebruikt in Hugo-inhoudsbestanden, en toont ook hoe basale HTML-elementen worden opgemaakt met CSS in een Hugo-thema.
 <!--more-->
 
-## Headings
+## Koppen
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+De volgende HTML `<h1>`—`<h6>` elementen vertegenwoordigen zes niveaus van sectiekoppen. `<h1>` is het hoogste niveau en `<h6>` het laagste.
 
 # H1
 ## H2
@@ -22,46 +22,46 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 ##### H5
 ###### H6
 
-## Paragraph
+## Alinea
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
 Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
-## Blockquotes
+## Blokcitaten
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+Het blokcitaat-element vertegenwoordigt inhoud die is geciteerd uit een andere bron, optioneel met een vermelding die binnen een `footer`- of `cite`-element moet staan, en optioneel met inline wijzigingen zoals annotaties en afkortingen.
 
-#### Blockquote without attribution
+#### Blokcitaat zonder toewijzing
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
+> **Let op** dat u *Markdown-syntaxis* kunt gebruiken in een blokcitaat.
 
-#### Blockquote with attribution
+#### Blokcitaat met toewijzing
 
 > Don't communicate by sharing memory, share memory by communicating.</p>
 > — <cite>Rob Pike[^1]</cite>
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+[^1]: Het bovenstaande citaat is afkomstig uit de [lezing](https://www.youtube.com/watch?v=PAAkCSZUG1c) van Rob Pike tijdens Gopherfest, 18 november 2015.
 
-## Tables
+## Tabellen
 
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
+Tabellen maken geen deel uit van de kern-Markdown-specificatie, maar Hugo ondersteunt ze standaard.
 
-   Name | Age
+   Naam | Leeftijd
 --------|------
     Bob | 27
   Alice | 23
 
-#### Inline Markdown within tables
+#### Inline Markdown in tabellen
 
-| Inline&nbsp;&nbsp;&nbsp;     | Markdown&nbsp;&nbsp;&nbsp;  | In&nbsp;&nbsp;&nbsp;                | Table      |
+| Inline&nbsp;&nbsp;&nbsp;     | Markdown&nbsp;&nbsp;&nbsp;  | In&nbsp;&nbsp;&nbsp;                | Tabel      |
 | ---------- | --------- | ----------------- | ---------- |
-| *italics*  | **bold**  | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code`     |
+| *cursief*  | **vet**  | ~~doorhalen~~&nbsp;&nbsp;&nbsp; | `code`     |
 
-## Code Blocks
+## Codeblokken
 
-#### Code block with backticks
+#### Codeblok met backticks
 
 ```
 <!DOCTYPE html>
@@ -75,7 +75,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </body>
 </html>
 ```
-#### Code block indented with four spaces
+#### Codeblok ingesprongen met vier spaties
 
     <!DOCTYPE html>
     <html lang="en">
@@ -88,7 +88,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
     </body>
     </html>
 
-#### Code block with Hugo's internal highlight shortcode
+#### Codeblok met Hugo's interne highlight-shortcode
 {{< highlight html >}}
 <!DOCTYPE html>
 <html lang="en">
@@ -102,34 +102,34 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 </html>
 {{< /highlight >}}
 
-## List Types
+## Lijsttypen
 
-#### Ordered List
+#### Geordende lijst
 
-1. First item
-2. Second item
-3. Third item
+1. Eerste item
+2. Tweede item
+3. Derde item
 
-#### Unordered List
+#### Ongeordende lijst
 
-* List item
-* Another item
-* And another item
+* Lijstitem
+* Nog een item
+* En nog een item
 
-#### Nested list
+#### Geneste lijst
 
 * Item
-    1. First Sub-item
-    2. Second Sub-item
+    1. Eerste subitem
+    2. Tweede subitem
 
-## Other Elements — abbr, sub, sup, kbd, mark
+## Overige elementen — abbr, sub, sup, kbd, mark
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+<abbr title="Graphics Interchange Format">GIF</abbr> is een bitmap-afbeeldingsformaat.
 
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
+Druk op <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> om de sessie te beëindigen.
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+De meeste <mark>salamanders</mark> zijn nachtdieren en jagen op insecten, wormen en andere kleine dieren.

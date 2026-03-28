@@ -1,5 +1,5 @@
 ---
-title: Sharing files with MS-DOS 6.22 in VirtualBox and macOS
+title: Bestanden delen met MS-DOS 6.22 in VirtualBox en macOS
 date: 2023-09-17T12:29:24.472Z
 draft: false
 categories:
@@ -15,24 +15,24 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-How to create an ISO file of a directory on macOS that can be mounted as a CDROM in MS-DOS 6.22 ?
+Hoe maak je een ISO-bestand van een map op macOS dat als CDROM gekoppeld kan worden in MS-DOS 6.22?
 
-Start Disk Utility on macOS
+Start Schijfhulpprogramma op macOS
 
-1. Go to: File -> New Image -> Image from Folder
-2. Choose the directory and press Choose
-3. Set Image Format to: DVD/CD master and press Save
-4. A *.cdr file will be created
-5. Go to the command line
-6. Cd to the directory with the *.cdr file
-7. Type the command: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr
-8. Go to your virtual machine running MS-DOS 6.22 and mount the newly created *.iso file
-9. In the MS-DOS 6.22 virtual machine you can now access the contents on drive D: 
+1. Ga naar: Archief -> Nieuwe afbeelding -> Afbeelding van map
+2. Kies de map en druk op Kies
+3. Stel Afbeeldingsformaat in op: DVD/CD-master en druk op Bewaar
+4. Er wordt een *.cdr-bestand aangemaakt
+5. Ga naar de opdrachtregel
+6. Navigeer naar de map met het *.cdr-bestand
+7. Typ het commando: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr
+8. Ga naar je virtuele machine met MS-DOS 6.22 en koppel het nieuw aangemaakte *.iso-bestand
+9. In de MS-DOS 6.22 virtuele machine heb je nu toegang tot de inhoud op station D:
 
 </br>
 
-Any questions?
+Vragen?
 
-Let me know!
+Laat het me weten!
 
-Contact me on my Social Media links.
+Neem contact met me op via mijn sociale media-links.

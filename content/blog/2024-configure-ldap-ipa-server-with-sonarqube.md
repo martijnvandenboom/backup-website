@@ -1,5 +1,5 @@
 ---
-title: Configure LDAP/IPA Server with Sonarqube
+title: LDAP/IPA Server configureren met Sonarqube
 date: 2024-03-09T17:35:22.094Z
 draft: false
 categories:
@@ -15,7 +15,7 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-**Configure LDAP/IPA Server with Sonarqube**
+**LDAP/IPA Server configureren met Sonarqube**
 
 \===
 
@@ -27,7 +27,7 @@ sonar.properties
 
 sonarqube-8.9.6/conf/sonar.properties
 
-\=﻿==
+\===
 
 sonar.security.realm=LDAP
 
@@ -45,7 +45,7 @@ ldap.user.baseDn=cn=users,cn=accounts,dc=<NETWORK>,dc=com
 
 \# ldap.user.request=
 
-\# LDAP user request. (default: (&(objectClass=inetOrgPerson)(uid={login})) )
+\# LDAP gebruikersverzoek. (standaard: (&(objectClass=inetOrgPerson)(uid={login})) )
 
 ldap.group.baseDn=cn=groups,cn=accounts,dc=<NETWORK>,dc=com
 
@@ -53,4 +53,4 @@ ldap.group.baseDn=cn=groups,cn=accounts,dc=<NETWORK>,dc=com
 
 \# ldap.group.request=
 
-\# LDAP group request (default: (&(objectClass=groupOfUniqueNames)(uniqueMember={dn})) )
+\# LDAP groepsverzoek (standaard: (&(objectClass=groupOfUniqueNames)(uniqueMember={dn})) )

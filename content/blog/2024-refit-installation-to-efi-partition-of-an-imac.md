@@ -1,5 +1,5 @@
 ---
-title: rEFIt installation to EFI partition of an iMac
+title: rEFIt installeren op de EFI-partitie van een iMac
 date: 2024-06-27T22:27:46.468Z
 draft: false
 categories:
@@ -16,12 +16,12 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac
+V﻿olg de onderstaande stappen om rEFIt te installeren op de EFI-partitie van een iMac
 
-D﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below\
+D﻿ownload rEFIt en kopieer de efi-map naar de /efi-map zoals hieronder uitgelegd\
 \
-B﻿efore you do the bless command disable the SIP\
-Boot in recovery mode\
+V﻿oordat u het bless-commando uitvoert, schakelt u de SIP uit\
+Start op in herstelmodus\
 #﻿ csrutil status\
 #﻿ csrutil disable\
 #﻿ reboot

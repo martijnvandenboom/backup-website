@@ -1,5 +1,5 @@
 ---
-title: Installing the VirtualBox Guest Additions on Rocky Linux 9.3
+title: De VirtualBox Guest Additions installeren op Rocky Linux 9.3
 date: 2024-01-16T21:08:26.966Z
 draft: false
 categories:
@@ -17,23 +17,23 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-**Installing the VirtualBox Guest Additions on Rocky Linux 9.3**
+**De VirtualBox Guest Additions installeren op Rocky Linux 9.3**
 
 ```
 dnf install epel-release
 dnf update --refresh
 dnf update kernel-*
-reboot (optional)
+reboot (optioneel)
 
 dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel
 
 rpm -q kernel-devel
 uname -r
 
-Top menu: Devices -> Insert Guest Additions CD-Image
-Run
+Bovenmenu: Apparaten -> Gast-uitbreidingen CD-image invoegen
+Uitvoeren
 
-(optional)
+(optioneel)
 cd /run/media/
 ./VBoxLinuxAdditions.run
 ```

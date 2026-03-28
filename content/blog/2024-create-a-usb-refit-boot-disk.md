@@ -1,5 +1,5 @@
 ---
-title: Create a USB rEFIt boot disk
+title: Maak een USB rEFIt opstartschijf
 date: 2024-07-07T20:45:53.867Z
 draft: false
 categories:
@@ -23,7 +23,7 @@ share: true
 # diskutil list
 # diskutil unmountDisk /dev/disk2
 # sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m
-Using rdisk2 here seems to speed up things
+Het gebruik van rdisk2 hier lijkt de zaken te versnellen
 
 # diskutil eject /dev/disk2
 ```

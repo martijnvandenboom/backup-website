@@ -1,6 +1,6 @@
 +++
-title = "Rich Content"
-description = "A brief description of Hugo Shortcodes"
+title = "Rijke inhoud"
+description = "Een korte beschrijving van Hugo Shortcodes"
 author = "Hugo Authors"
 date = "2019-03-10"
 tags = ["shortcodes", "privacy"]
@@ -10,7 +10,7 @@ tags = ["shortcodes", "privacy"]
   stretch = "Vertical"
 +++
 
-Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) for rich content, along with a [Privacy Config](https://gohugo.io/about/hugo-and-gdpr/) and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
+Hugo wordt geleverd met verschillende [ingebouwde Shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) voor rijke inhoud, samen met een [Privacyconfiguratie](https://gohugo.io/about/hugo-and-gdpr/) en een set eenvoudige Shortcodes die statische versies zonder JavaScript bieden voor verschillende sociale media-insluitingen.
 <!--more-->
 ---
 
@@ -34,7 +34,7 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ## Twitter Simple Shortcode
 
-[View post on X](https://x.com/gohugoio/status/1085870671291310081)
+[Bekijk bericht op X](https://x.com/gohugoio/status/1085870671291310081)
 
 <br>
 

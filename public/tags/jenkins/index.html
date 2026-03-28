@@ -493,12 +493,7 @@
   
   <a href="#" lang="nl" class="nav link active">Nederlands (nl)</a>
   
-    
-      
-        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
-      
-    
-      
+      <a href="http://localhost:1313/en/tags/jenkins/" lang="en" class="nav link">English (en)</a>
     
   
 
@@ -655,7 +650,7 @@
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-configure-ldap-ipa-server-with-jenkins/">Configure LDAP/IPA Server with Jenkins </a></h2>
+      <h2><a href="/blog/2024-configure-ldap-ipa-server-with-jenkins/">LDAP/IPA Server configureren met Jenkins</a></h2>
     
     
   </div>
@@ -669,26 +664,25 @@
   <div class="content">
     
     ===
-Identity, Policy, and Audit (IPA) system
+Identity, Policy, and Audit (IPA) systeem
 ===
 Jenkins
 2.319.2
-=﻿==
-Dashboard -&gt; Security -&gt; Configure Global Security
+===
+Dashboard -&gt; Beveiliging -&gt; Globale beveiliging configureren
 Server:
 ldap://&lt;IP_SERVER&gt;:389
-root DN:
+Basis-DN:
 dc=,dc=com
-User search base
+Zoekbasis gebruikers
 cn=users,cn=accounts
-User search filter
+Zoekfilter gebruikers
 uid={0}
-Group search base
+Zoekbasis groepen
 cn=groups,cn=accounts
-Group membership -&gt; Search for LDAP groups containing user -&gt; Group membership filter:
+Groepslidmaatschap -&gt; Zoeken naar LDAP-groepen die gebruiker bevatten -&gt; Groepslidmaatschapsfilter:
 (| (member={0}) (uniqueMember={0}) (memberUid={1}))
-Manager DN:
-uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com...
+Beheerder-DN:...
   </div>
   <footer>
     <a href="/blog/2024-configure-ldap-ipa-server-with-jenkins/" class="button big">Lees verder</a>
@@ -773,7 +767,7 @@ uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com...
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</a></h2>
           <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">1 Juli 2025</time>
         </header>
       </article>

@@ -1,5 +1,5 @@
 ---
-title: LDAP/IPA Server installation
+title: LDAP/IPA Server installatie
 date: 2024-03-09T17:31:40.399Z
 draft: false
 categories:
@@ -22,12 +22,12 @@ share: true
 
 \===
 
-Hosts file aanpassen
+Hosts bestand aanpassen
 
 De FQDN voor op, daarna pas de aliassen
 
 /etc/hosts
 
-<IP_SERVER>   <FQDN> <ALIAS1> (<ALIAS2>)
+<IP_SERVER>   <FQDN> <ALIAS1> (<ALIAS2>)
 
 Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.

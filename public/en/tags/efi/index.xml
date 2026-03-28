@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Efi on Notities</title>
+    <link>http://localhost:1313/en/tags/efi/</link>
+    <description>Recent content in Efi on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 07 Jul 2024 20:49:33 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/efi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Putting the Microsoft EFI boot files on the EFI partition</title>
+      <link>http://localhost:1313/en/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
+      <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
+      <description>&lt;p&gt;Boot into the Windows installer&lt;/p&gt;&#xA;&lt;p&gt;On the first screen press SHIFT + F10&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&#xA;# diskpart&#xA;# list disk&#xA;# select disk 0&#xA;# list part&#xA;Look for the Windows partition&#xA;&#xA;# select part 3&#xA;# assign letter=W&#xA;# format quick fs=NTFS&#xA;# list volume&#xA;Look for the EFI volume&#xA;&#xA;# select volume 2&#xA;# assign letter=Z&#xA;# exit&#xA;&#xA;# D:&#xA;Goto the USB installer of Windows&#xA;# cd D:\sources&#xA;# dir install*&#xA;The file install.esd exists&#xA;&#xA;# dism /Get-WimInfo /WimFile:D:\Sources\install.esd&#xA;Select the Index of the version of Windows you want&#xA;&#xA;# dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\&#xA;# bcdboot W:\Windows /l en-us /s Z: /f UEFI&#xA;Shutdown your computer and remove the USB installer&#xA;Now we have the Microsoft EFI boot files in the EFI partition in its designated folder&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Follow the normal procedure of installing Windows&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>rEFIt installation to EFI partition of an iMac</title>
+      <link>http://localhost:1313/en/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link>
+      <pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid>
+      <description>&lt;p&gt;F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac&lt;/p&gt;&#xA;&lt;p&gt;D﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below&lt;br&gt;&#xA;&lt;br&gt;&#xA;B﻿efore you do the bless command disable the SIP&lt;br&gt;&#xA;Boot in recovery mode&lt;br&gt;&#xA;#﻿ csrutil status&lt;br&gt;&#xA;#﻿ csrutil disable&lt;br&gt;&#xA;#﻿ reboot&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mkdir /efi&#xA;&#xA;sudo mount -t msdos /dev/disk0s1 /efi&#xA;&#xA;sudo bless --mount /efi --setBoot --file /efi/EFI/refit/refit.efi --labelfile /efi/EFI/refit/refit.vollabel&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

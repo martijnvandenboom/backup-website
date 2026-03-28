@@ -9,25 +9,25 @@
     <lastBuildDate>Thu, 10 Apr 2025 08:48:17 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Microsoft OneNote search not working anymore</title>
+      <title>Microsoft OneNote zoekfunctie werkt niet meer</title>
       <link>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</link>
       <pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate>
       <guid>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</guid>
-      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;C﻿lose all Microsoft applications&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;R﻿ename the cache folder in:&lt;br&gt;&#xA;C:\Users\&amp;lt;User&amp;gt;\AppData\Local\Microsoft\OneNote\16.0&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;R﻿estart OneNote&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;P﻿.S.&lt;br&gt;&#xA;D﻿on&amp;rsquo;t worry if the Notebooks seem empty, they will be regenerated.&lt;/p&gt;</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;S﻿luit alle Microsoft-applicaties&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;H﻿ernoem de cachemap in:&lt;br&gt;&#xA;C:\Users\&amp;lt;Gebruiker&amp;gt;\AppData\Local\Microsoft\OneNote\16.0&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;H﻿erstart OneNote&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;P﻿.S.&lt;br&gt;&#xA;M﻿aak u geen zorgen als de notitieboeken leeg lijken, ze worden opnieuw aangemaakt.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Install Microsoft Visual Studio Code in Linux from the repo</title>
+      <title>Microsoft Visual Studio Code installeren in Linux vanuit de repository</title>
       <link>http://localhost:1313/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link>
       <pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate>
       <guid>http://localhost:1313/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid>
-      <description>&lt;p&gt;F﻿ollow the below steps to install Microsoft Visual Studio Code IDE on Linux from its repository:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;sudo rpm &amp;ndash;import &lt;a href=&#34;https://packages.microsoft.com/keys/microsoft.asc&#34;&gt;https://packages.microsoft.com/keys/microsoft.asc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;sudo sh -c &amp;rsquo;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &amp;gt; /etc/yum.repos.d/vscode.repo&#39;&lt;/p&gt;&#xA;&lt;p&gt;sudo dnf install code -y&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;V﻿olg de onderstaande stappen om Microsoft Visual Studio Code IDE op Linux te installeren vanuit de repository:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;sudo rpm &amp;ndash;import &lt;a href=&#34;https://packages.microsoft.com/keys/microsoft.asc&#34;&gt;https://packages.microsoft.com/keys/microsoft.asc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;sudo sh -c &amp;rsquo;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &amp;gt; /etc/yum.repos.d/vscode.repo&#39;&lt;/p&gt;&#xA;&lt;p&gt;sudo dnf install code -y&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
-      <title>Putting the Microsoft EFI boot files on the EFI partition</title>
+      <title>De Microsoft EFI-opstartbestanden op de EFI-partitie plaatsen</title>
       <link>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
       <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
       <guid>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
-      <description>&lt;p&gt;Boot into the Windows installer&lt;/p&gt;&#xA;&lt;p&gt;On the first screen press SHIFT + F10&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&#xA;# diskpart&#xA;# list disk&#xA;# select disk 0&#xA;# list part&#xA;Look for the Windows partition&#xA;&#xA;# select part 3&#xA;# assign letter=W&#xA;# format quick fs=NTFS&#xA;# list volume&#xA;Look for the EFI volume&#xA;&#xA;# select volume 2&#xA;# assign letter=Z&#xA;# exit&#xA;&#xA;# D:&#xA;Goto the USB installer of Windows&#xA;# cd D:\sources&#xA;# dir install*&#xA;The file install.esd exists&#xA;&#xA;# dism /Get-WimInfo /WimFile:D:\Sources\install.esd&#xA;Select the Index of the version of Windows you want&#xA;&#xA;# dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\&#xA;# bcdboot W:\Windows /l en-us /s Z: /f UEFI&#xA;Shutdown your computer and remove the USB installer&#xA;Now we have the Microsoft EFI boot files in the EFI partition in its designated folder&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Follow the normal procedure of installing Windows&lt;/p&gt;</description>
+      <description>&lt;p&gt;Start op via het Windows-installatieprogramma&lt;/p&gt;&#xA;&lt;p&gt;Druk op het eerste scherm op SHIFT + F10&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&#xA;# diskpart&#xA;# list disk&#xA;# select disk 0&#xA;# list part&#xA;Zoek naar de Windows-partitie&#xA;&#xA;# select part 3&#xA;# assign letter=W&#xA;# format quick fs=NTFS&#xA;# list volume&#xA;Zoek naar het EFI-volume&#xA;&#xA;# select volume 2&#xA;# assign letter=Z&#xA;# exit&#xA;&#xA;# D:&#xA;Ga naar de USB-installatieschijf van Windows&#xA;# cd D:\sources&#xA;# dir install*&#xA;Het bestand install.esd bestaat&#xA;&#xA;# dism /Get-WimInfo /WimFile:D:\Sources\install.esd&#xA;Selecteer de Index van de gewenste Windows-versie&#xA;&#xA;# dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\&#xA;# bcdboot W:\Windows /l en-us /s Z: /f UEFI&#xA;Zet uw computer uit en verwijder de USB-installatieschijf&#xA;Nu hebben we de Microsoft EFI-opstartbestanden op de EFI-partitie in de daarvoor bestemde map&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Volg de normale procedure voor het installeren van Windows&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microsoft maakt Office gratis beschikbaar op de website</title>

@@ -6,8 +6,15 @@
     <description>Recent content in Automatically on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Mar 2022 11:58:22 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jun 2022 18:55:47 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/en/tags/automatically/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concourse starting automatically at boot with systemctl service</title>
+      <link>http://localhost:1313/en/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</link>
+      <pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/home/martijn/Downloads/concourse&#xA;$ curl -LO https://concourse-ci.org/docker-compose.yml&#xA;&#xA;$ cat /etc/systemd/system/docker-compose-concourse.service&#xA;&#xA;[Unit]&#xA;Description=Docker Compose Application Service for Concourse&#xA;Requires=docker.service&#xA;After=docker.service&#xA;&#xA;[Service]&#xA;Type=oneshot&#xA;RemainAfterExit=yes&#xA;WorkingDirectory=/home/martijn/Downloads/concourse&#xA;ExecStart=/usr/bin/docker-compose up -d&#xA;ExecStop=/usr/bin/docker-compose down&#xA;TimeoutStartSec=0&#xA;&#xA;[Install]&#xA;WantedBy=multi-user.target&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     <item>
       <title>Automatically log in to Windows</title>
       <link>http://localhost:1313/en/blog/automatisch_inloggen_in_windows/</link>

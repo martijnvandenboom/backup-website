@@ -1,5 +1,5 @@
 ---
-title: SSH in remote machine with SSH keys and run command in new Python 3
+title: SSH naar een externe machine met SSH-sleutels en commando uitvoeren in nieuw Python 3
 date: 2024-04-03T20:20:39.976Z
 draft: false
 categories:
@@ -17,7 +17,7 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-T﻿o make a script to run remote commands in a client server network.
+O﻿m een script te maken voor het uitvoeren van externe commando's in een client-servernetwerk.
 
 ```
 import subprocess
@@ -38,7 +38,7 @@ def ssh_exec_command(hostname, username, command):
     else:
         print("Output:", output)
 
-# Replace these with your actual credentials and command
+# Vervang deze door uw werkelijke inloggegevens en commando
 hostname = 'remote_host_address'
 username = 'your_username'
 command = 'ls -l'

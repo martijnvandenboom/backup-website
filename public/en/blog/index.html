@@ -55,7 +55,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.157.0"><meta property="og:site_name" content="Notities">
+<meta name="generator" content="Hugo 0.159.1"><meta property="og:site_name" content="Notities">
   <meta property="og:title" content="Blog">
   <meta property="og:description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
   <meta property="description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
@@ -64,7 +64,7 @@
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
   
-  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.a694a0de4d12f03f7239d4eb60fd6f210f9713402aa21c902e52435f0e0ffb85.css" integrity="sha256-ppSg3k0S8D9yOdTrYP1vIQ&#43;XE0AqohyQLlJDXw4P&#43;4U="><link rel="stylesheet" href="/css/add-on.css">
+  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.0f15b9691a96d1d59cc15ff1724700d27a2df35e7a8bedad77e02c9c426450c7.css" integrity="sha256-DxW5aRqW0dWcwV/xckcA0not8156i&#43;2td&#43;AsnEJkUMc="><link rel="stylesheet" href="/css/add-on.css">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -373,6 +373,29 @@
     #telegram-btn:hover svg {
       fill: #fff;
     }
+
+     
+    .darkmode table {
+      background-color: #101425;
+      color: var(--text-color);
+    }
+
+    .darkmode table > thead {
+      background-color: #1a1f35;
+    }
+
+    .darkmode table > tbody > tr > td:first-child {
+      background-color: #1a1f35;
+      color: var(--text-color);
+    }
+
+    .darkmode table > tbody > tr:nth-child(even) {
+      background-color: #0d1126;
+    }
+
+    .darkmode table > tbody > tr:hover {
+      background-color: #1e2640;
+    }
   </style>
 
 
@@ -627,6 +650,127 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory and DNS Installation</a></h2>
+    
+    
+      <p>Step-by-step installation guide for Active Directory Domain Services and DNS on Windows Server 2022 in a VMware Fusion lab environment. With screenshots of every step.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2026-03-27 00:00:00 &#43;0100 CET">March 27, 2026</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>5-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    In this article I describe step by step how I installed Active Directory Domain Services (AD DS) and DNS on a Windows Server 2022 Datacenter VM in a VMware Fusion lab environment. The result is a fully functional domain controller for the domain lab.local, as the foundation for a Windows DevOps lab.
+Environment Component Value Virtualisation VMware Fusion (macOS) Guest operating system Windows Server 2022 Datacenter (Desktop Experience) Hostname DC01 Domain name lab.local NetBIOS name LAB Lab...
+  </div>
+  <footer>
+    <a href="/en/blog/2026-windows-server-2022-active-directory-dns-installatie/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/active-directory/">active-directory</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/dns/">dns</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/windows-server-2022/">windows-server-2022</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/vmware/">vmware</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/lab/">lab</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/devops/">devops</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/domain-controller/">domain-controller</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/">Windows packet capturing for example for an LDAPS traffic analysis</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2026-01-18 18:55:54.439 &#43;0000 UTC">January 18, 2026</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Open a Windows Terminal or Command session As Administrator
+Check existing filters # pktmon filter list Clear all filters # pktmon filter remove Check capture status # pktmon status Add a filter for LDAPS # pktmon filter add -p 636 Start the capture # pktmon start --etw Try to connect again to the LDAP server / If you want to monitor a different port, repeat the command that generates the network traffic.
+
+  </div>
+  <footer>
+    <a href="/en/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/packet/">packet</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/capturing/">capturing</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ldaps/">LDAPS</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/analyse/">analyse</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/">Network routing to LAN systems with OpenVPN Server</a></h2>
     
     
@@ -769,41 +913,32 @@ She inspired this article as part of the research for her thesis, where she coul
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/maak_een_website_met_github_pages/">Create a website for free with GitHub Pages</a></h2>
+      <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
     
-    
-      <p>Manual</p>
     
   </div>
   <div class="meta">
-    <time datetime="2022-03-09 19:18:22 &#43;0100 CET">March 9, 2022</time>
-    <p>van den Boom</p>
+    <time datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
 </header>
 
   <div class="content">
     
-    Create a website for free with GitHub
-P.S. Would you like somebody to help you? Feel free to send me a message on one of my Social Media Links available on this website.
-
+    VBoxWebSrv is the VirtualBox Web Service that allows you to manage your VirtualBox virtual machines remotely through a web-based API. It is commonly used with tools like phpVirtualBox to provide a full web interface for VM control.
+By running VBoxWebSrv as a Windows service, you ensure it starts automatically with your system and runs continuously in the background.
+Installing VBoxWebSrv as a Windows Service with NSSM
+Download NSSM (Non-Sucking Service Manager) from https://nssm.cc/download and...
   </div>
   <footer>
-    <a href="/en/blog/maak_een_website_met_github_pages/" class="button big">Read More</a>
+    <a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
       
         
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/tutorial/">tutorial</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/manual/">manual</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/utilities/">utilities</a></li>
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
         
       
     </ul>
@@ -812,21 +947,13 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/create/">create</a></li>
+          <li><a class="article-terms-link" href="/en/tags/virtualbox/">VirtualBox</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/website/">website</a></li>
+          <li><a class="article-terms-link" href="/en/tags/web-based/">web-based</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/github/">GitHub</a></li>
+          <li><a class="article-terms-link" href="/en/tags/api/">API</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/pages/">Pages</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/tutorial/">tutorial</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/manual/">manual</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/utilities/">utilities</a></li>
+          <li><a class="article-terms-link" href="/en/tags/vboxwebsrv/">VBoxWebSrv</a></li>
         
       
     </ul>
@@ -841,37 +968,31 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/automatisch_inloggen_in_windows/">Automatically log in to Windows</a></h2>
+      <h2><a href="/en/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/">This version of BootCamp is not intented for this computer</a></h2>
     
-    
-      <p>Tools</p>
     
   </div>
   <div class="meta">
-    <time datetime="2022-03-09 11:58:22 &#43;0100 CET">March 9, 2022</time>
-    <p>van den Boom</p>
+    <time datetime="2025-04-28 16:04:39.408 &#43;0000 UTC">April 28, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
 </header>
 
   <div class="content">
     
-    Entering a password or PIN is not equally convenient for everyone. Do you find it annoying to enter a password or PIN every time you log in to Windows? You can also automatically log in to Windows. When the computer has finished starting up, you will immediately see the desktop. On the desktop you can make all your useful programs accessible and you have that immediately in front of you when you have turned on the computer. You can then immediately start using the computer, without having to...
+    D﻿ear reader,
+R﻿ecently I updated my Windows version of my MacBook Pro 16,1 BootCamp setup to Windows 11. Now I ran into the problem that my build in keyboard and trackpad were not working anymore. I had to overcome this issue by connecting a separate keyboard and mouse on a USB port.
+I﻿ downloaded the software in the BootCamp utility on macOS that is compatible with my laptop, in this case version: Boot Camp drivers 6.1.6655. But when trying to startup the setup.exe I get the following error:...
   </div>
   <footer>
-    <a href="/en/blog/automatisch_inloggen_in_windows/" class="button big">Read More</a>
+    <a href="/en/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
       
         
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/actions/">actions</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/utilities/">utilities</a></li>
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
         
       
     </ul>
@@ -880,23 +1001,19 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/automatic/">automatic</a></li>
+          <li><a class="article-terms-link" href="/en/tags/version/">version</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/automatically/">automatically</a></li>
+          <li><a class="article-terms-link" href="/en/tags/boot/">boot</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/log/">log</a></li>
+          <li><a class="article-terms-link" href="/en/tags/camp/">camp</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/login/">login</a></li>
+          <li><a class="article-terms-link" href="/en/tags/not/">not</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
+          <li><a class="article-terms-link" href="/en/tags/intended/">intended</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/autologon/">autologon</a></li>
+          <li><a class="article-terms-link" href="/en/tags/this/">this</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/actions/">actions</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/utilities/">utilities</a></li>
+          <li><a class="article-terms-link" href="/en/tags/computer/">computer</a></li>
         
       
     </ul>
@@ -910,6 +1027,8 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
   <div class="pagination">
     
     
+      <a href="/en/blog/page/2/" class="button right"><span>Next Page</span></a>
+    
   </div>
 
       </main>
@@ -919,6 +1038,22 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
       <header>
         <h1>Recent Posts:</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory and DNS Installation</a></h2>
+          <time class="published" datetime="2026-03-27 00:00:00 &#43;0100 CET">March 27, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/">Windows packet capturing for example for an LDAPS traffic analysis</a></h2>
+          <time class="published" datetime="2026-01-18 18:55:54.439 &#43;0000 UTC">January 18, 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -939,24 +1074,8 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/maak_een_website_met_github_pages/">Create a website for free with GitHub Pages</a></h2>
-          <time class="published" datetime="2022-03-09 19:18:22 &#43;0100 CET">March 9, 2022</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/automatisch_inloggen_in_windows/">Automatically log in to Windows</a></h2>
-          <time class="published" datetime="2022-03-09 11:58:22 &#43;0100 CET">March 9, 2022</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/archive/">Posts Archive</a></h2>
-          <time class="published" datetime="0001-01-01 00:00:00 &#43;0000 UTC">January 1, 0001</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -979,13 +1098,22 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
           
           
           <li>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/windows/">windows<span class="count">8</span></a>
+          
+          <li>
               <a href="/en/categories/tools/">tools<span class="count">4</span></a>
           
           <li>
               <a href="/en/categories/utilities/">utilities<span class="count">4</span></a>
-          
-          <li>
-              <a href="/en/categories/windows/">windows<span class="count">4</span></a>
           
           <li>
               <a href="/en/categories/actions/">actions<span class="count">2</span></a>
@@ -997,10 +1125,16 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
           
           <li>
+              <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>
+          
+          <li>
               <a href="/en/categories/manual/">manual<span class="count">1</span></a>
           
           <li>
               <a href="/en/categories/routing/">routing<span class="count">1</span></a>
+          
+          <li>
+              <a href="/en/categories/scripting/">scripting<span class="count">1</span></a>
           
           <li>
               <a href="/en/categories/tutorial/">tutorial<span class="count">1</span></a>

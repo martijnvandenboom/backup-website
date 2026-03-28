@@ -39,7 +39,7 @@
 
 
   <meta charset="utf-8">
-<title>Powershell - Notities</title>
+<title>PowerShell - Notities</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -56,7 +56,7 @@
   <meta name="theme-color" content="#ffffff">
 
 <meta name="generator" content="Hugo 0.159.1"><meta property="og:site_name" content="Notities">
-  <meta property="og:title" content="Powershell">
+  <meta property="og:title" content="PowerShell">
   <meta property="og:description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
   <meta property="description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
   <meta property="og:url" content="http://localhost:1313/en/tags/powershell/">
@@ -511,7 +511,7 @@
 
   
     
-    <a href="//x.com/share?text=Powershell&amp;url=http%3a%2f%2flocalhost%3a1313%2fen%2ftags%2fpowershell%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//x.com/share?text=PowerShell&amp;url=http%3a%2f%2flocalhost%3a1313%2fen%2ftags%2fpowershell%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>X</p>
       </a>
   
@@ -523,19 +523,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fen%2ftags%2fpowershell%2f&amp;title=Powershell" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fen%2ftags%2fpowershell%2f&amp;title=PowerShell" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fen%2ftags%2fpowershell%2f&amp;title=Powershell" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fen%2ftags%2fpowershell%2f&amp;title=PowerShell" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fen%2ftags%2fpowershell%2f&amp;description=Powershell" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fen%2ftags%2fpowershell%2f&amp;description=PowerShell" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
@@ -650,6 +650,71 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/">PowerShell computer resource monitor script with cpu percentage and advanced memory information</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-01-04 22:21:38.732 &#43;0000 UTC">January 4, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    PowerShell computer resource monitor script with cpu percentage and advanced memory information
+PowerShell Resource monitor $app=&amp;#34;notepad&amp;#34; $ids = Get-Process $app | Select-Object -Property Id | ForEach-Object {$_.Id} $filedate = Get-Date -format &amp;#34;yyyy-MM-dd&amp;#34; #echo $pids foreach ($id in $ids) { $date = Get-Date -format &amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34; # process CPU information $ProcessId = $id $Process = Get-WmiObject -Query &amp;#34;SELECT * FROM Win32_PerfFormattedData_PerfProc_Process...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/powershell/">PowerShell</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/computer/">computer</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/resource/">resource</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/monitor/">monitor</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/script/">script</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/cpu/">cpu</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/percentage/">percentage</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/advanced/">advanced</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/memory/">memory</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/information/">information</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/powershell-clean-memory/">Powershell Clean Memory</a></h2>
     
     
@@ -754,8 +819,8 @@
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -778,7 +843,13 @@
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -797,12 +868,6 @@
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

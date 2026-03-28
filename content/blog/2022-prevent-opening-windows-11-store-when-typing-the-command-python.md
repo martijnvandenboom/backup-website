@@ -1,5 +1,5 @@
 ---
-title: Prevent opening Windows 11 Store when typing the command python
+title: Voorkom dat de Windows 11 Store opent wanneer je het commando python typt
 date: 2022-12-01T19:30:38.507Z
 draft: false
 categories:
@@ -18,12 +18,12 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-Step 1: Open Settings in Windows 11
+Stap 1: Open Instellingen in Windows 11
 
-Step 2: Go to Apps
+Stap 2: Ga naar Apps
 
-Step 3: Go to Advanced app settings
+Stap 3: Ga naar Geavanceerde app-instellingen
 
-Step 4: Go to App execution aliases
+Stap 4: Ga naar App-uitvoeringsaliassen
 
-Step 5: Disable the option for python.exe and python3.exe
+Stap 5: Schakel de optie voor python.exe en python3.exe uit

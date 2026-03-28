@@ -1,5 +1,5 @@
 ---
-title: Multiple versions of Java on macOS
+title: Meerdere versies van Java op macOS
 date: 2023-09-27T17:43:18.381Z
 draft: false
 categories:

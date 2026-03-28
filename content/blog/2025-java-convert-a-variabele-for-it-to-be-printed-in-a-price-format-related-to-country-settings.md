@@ -1,6 +1,6 @@
 ---
-title: Java convert a variabele for it to be printed in a price format related
-  to country settings
+title: Java een variabele omzetten om af te drukken in een prijsnotatie gerelateerd
+  aan landinstellingen
 date: 2025-01-05T20:09:27.423Z
 draft: false
 categories:
@@ -19,9 +19,9 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-F﻿or Dutch Euro use: .getCurrencyInstance(new Locale("nl", "NL"))
+V﻿oor Nederlandse euro gebruik: .getCurrencyInstance(new Locale("nl", "NL"))
 
-F﻿or Swiss Franc use: .getCurrencyInstance(new Locale("de", "CH"))
+V﻿oor Zwitserse frank gebruik: .getCurrencyInstance(new Locale("de", "CH"))
 
 ```java
 import java.text.NumberFormat;
@@ -29,7 +29,7 @@ import java.util.Locale;
 
 
 public class prog_002_variables {
-    
+
     public static void main(String[] args){
 
         String message;
@@ -40,9 +40,9 @@ public class prog_002_variables {
         year = 2025;
         prijs = 2.50;
 
-        // Combine the creation of the Locale and the NumberFormat in one line
+        // Combineer het aanmaken van de Locale en NumberFormat op één regel
         NumberFormat currencyFormat;
-        
+
         currencyFormat = NumberFormat.getCurrencyInstance(new Locale("nl", "NL"));
         System.out.println(message + year + ", een frikandel kost nu: " + currencyFormat.format(prijs));
 

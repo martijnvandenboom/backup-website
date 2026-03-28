@@ -650,31 +650,33 @@
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/zoomen_op_een_website/">Zooming in and out on a website</a></h2>
+      <h2><a href="/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/">LDAP/IPA - Server on Red Hat Enterprise Linux 7</a></h2>
     
-    
-      <p>Commands</p>
     
   </div>
   <div class="meta">
-    <time datetime="2021-12-18 20:56:00 &#43;0100 CET">December 18, 2021</time>
-    <p>van den Boom</p>
+    <time datetime="2024-02-15 10:47:28.702 &#43;0000 UTC">February 15, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
 </header>
 
   <div class="content">
     
-    Hold down the CTRL key on the keyboard and scroll with the wheel on the mouse.
+    If you are using a hosts file, make sure it contains FQDNs and pay close attention to the order in which they appear.
+Check the hosts file and adjust it if necessary:
+The FQDN must come first, followed by any aliases.
+/etc/hosts 10.0.0.1 server1.example.com server1 application1 If an alias is listed before the FQDN, you may encounter error messages that are not immediately traceable to this cause.
+
   </div>
   <footer>
-    <a href="/en/blog/zoomen_op_een_website/" class="button big">Read More</a>
+    <a href="/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
       
         
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
         
       
     </ul>
@@ -683,11 +685,21 @@
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/snelkoppeling/">snelkoppeling</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ldap/">ldap</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/toetsenbord/">toetsenbord</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ipa/">ipa</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/muis/">muis</a></li>
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/rhel/">rhel</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/red/">red</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/hat/">hat</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/7/">7</a></li>
         
       
     </ul>
@@ -702,35 +714,32 @@
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/windows-update-snelkoppeling/">Windows Update Shortcut</a></h2>
+      <h2><a href="/en/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/">Create a Zombie process in Linux using a C program</a></h2>
     
-    
-      <p>Commands</p>
     
   </div>
   <div class="meta">
-    <time datetime="2021-12-16 09:07:17 &#43;0000 UTC">December 16, 2021</time>
-    <p>van den Boom</p>
+    <time datetime="2024-01-31 20:54:45.709 &#43;0000 UTC">January 31, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
 </header>
 
   <div class="content">
     
-    Windows Update shortcut that everyone should have on their desktop * Have your desktop in front of you * Right-click * Choose: New * Choose: Shortcut * Enter the following as the location: (On Windows 8) %windir%\explorer.exe shell:::{36eef7db-88ad-4e81-ad49-0e313f0c35f8} (On Windows 10) ms-settings:windowsupdate * Click: Next * Enter the name: Windows Update * Click: Finish
+    Below is the source code of a C program to create a Zombie process in Linux and analyse it.
+vim create_zombie_process.c #include &lt;stdlib.h&gt; #include &lt;sys/types.h&gt; #include &lt;unistd.h&gt; int main () { pid_t child_pid; child_pid = fork (); if (child_pid &gt; 0) { sleep (60); } else { exit (0); } return 0; } Compile the C source code into an executable program:
+gcc create_zombie_process.c Start the program:
+./a.out Open a second Terminal and view the process list. You will now see a...
   </div>
   <footer>
-    <a href="/en/blog/windows-update-snelkoppeling/" class="button big">Read More</a>
+    <a href="/en/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
       
         
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/themes/">themes</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/syntax/">syntax</a></li>
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
         
       
     </ul>
@@ -739,13 +748,15 @@
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/snelkoppeling/">snelkoppeling</a></li>
+          <li><a class="article-terms-link" href="/en/tags/zombie/">zombie</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/app/">app</a></li>
+          <li><a class="article-terms-link" href="/en/tags/proces/">proces</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/markdown/">markdown</a></li>
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/themes/">themes</a></li>
+          <li><a class="article-terms-link" href="/en/tags/c/">C</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/programma/">programma</a></li>
         
       
     </ul>
@@ -760,35 +771,30 @@
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/powershell-clean-memory/">Powershell Clean Memory</a></h2>
+      <h2><a href="/en/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/">Bash script with a SUCCESS or FAILED message at the end of the line</a></h2>
     
-    
-      <p>Commands</p>
     
   </div>
   <div class="meta">
-    <time datetime="2021-12-13 19:12:03 &#43;0100 CET">December 13, 2021</time>
-    <p>van den Boom</p>
+    <time datetime="2024-01-31 20:18:39.918 &#43;0000 UTC">January 31, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
 </header>
 
   <div class="content">
     
-    Function Clean-Memory { Get-PSSession | Remove-PSSession [System.GC]::Collect() [GC]::Collect() [GC]::WaitForPendingFinalizers() Get-Variable | #Where-Object { $startupVariables -notcontains $_.Name } | ForEach-Object { try { Clear-Variable -Name &amp;#34;$($_.Name)&amp;#34; -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue Remove-Variable -Name &amp;#34;$($_.Name)&amp;#34; -Force -Scope &amp;#34;global&amp;#34; -ErrorAction SilentlyContinue -WarningAction SilentlyContinue Remove-Variable -Name...
+    See below an example script to display a SUCCESS message in green or a FAILED message in red, right-aligned at the end of the line.
+#!/bin/bash # Set the message success_message=&amp;#34;Your command was successful&amp;#34; failed_message=&amp;#34;Your command failed&amp;#34; # Set the &amp;#34;OK&amp;#34; string in green ok=&amp;#34;$(tput setaf 2)[SUCCES]$(tput sgr0)&amp;#34; failed=&amp;#34;$(tput setaf 1)[FAILED]$(tput sgr0)&amp;#34; # Get the width of the terminal term_width=$(tput cols)&#43;9 # Calculate the number of dots needed...
   </div>
   <footer>
-    <a href="/en/blog/powershell-clean-memory/" class="button big">Read More</a>
+    <a href="/en/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
       
         
-          <li><a class="article-terms-link" href="/en/categories/scripting/">scripting</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/themes/">themes</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/syntax/">syntax</a></li>
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
         
       
     </ul>
@@ -797,15 +803,19 @@
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/powershell/">powershell</a></li>
+          <li><a class="article-terms-link" href="/en/tags/bash/">bash</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/markdown/">markdown</a></li>
+          <li><a class="article-terms-link" href="/en/tags/script/">script</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/css/">css</a></li>
+          <li><a class="article-terms-link" href="/en/tags/succes/">succes</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/html/">html</a></li>
+          <li><a class="article-terms-link" href="/en/tags/failed/">failed</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/themes/">themes</a></li>
+          <li><a class="article-terms-link" href="/en/tags/melding/">melding</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/einde/">einde</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/regel/">regel</a></li>
         
       
     </ul>
@@ -820,34 +830,173 @@
   <header>
   <div class="title">
     
-      <h2><a href="/en/archive/">Posts Archive</a></h2>
+      <h2><a href="/en/blog/2024-checkmk-installation-on-rocky-linux-9-3/">Checkmk installation on Rocky Linux 9.3</a></h2>
     
-    
-      <p>Archive of historical posts.</p>
     
   </div>
   <div class="meta">
-    <time datetime="0001-01-01 00:00:00 &#43;0000 UTC">January 1, 0001</time>
-    
-    <p>0-Minute Read</p>
+    <time datetime="2024-01-16 21:13:15.512 &#43;0000 UTC">January 16, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
   </div>
 </header>
 
   <div class="content">
     
-    
+    Checkmk installation on Rocky Linux 9.3
+dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd --zone=public --add-service=http --permanent firewall-cmd --reload wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm omd version omd create monitoring omd start monitoring http://localhost.localdomain/monitoring/ user: cmkadmin with password: &lt;given&gt; omd su monitoring (For command...
   </div>
   <footer>
-    <a href="/en/archive/" class="button big">Read More</a>
+    <a href="/en/blog/2024-checkmk-installation-on-rocky-linux-9-3/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
-      <li>None</li>
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
     </ul>
   
   
     <ul class="tags">
-      <li>None</li>
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/checkmk/">checkmk</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/installation/">installation</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/rocky/">rocky</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/9.3/">9.3</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/">Installing the VirtualBox Guest Additions on Rocky Linux 9.3</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-01-16 21:08:26.966 &#43;0000 UTC">January 16, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Installing the VirtualBox Guest Additions on Rocky Linux 9.3
+dnf install epel-release dnf update --refresh dnf update kernel-* reboot (optional) dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel rpm -q kernel-devel uname -r Top menu: Devices -&gt; Insert Guest Additions CD-Image Run (optional) cd /run/media/ ./VBoxLinuxAdditions.run 
+  </div>
+  <footer>
+    <a href="/en/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/installing/">installing</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/virtualbox/">virtualbox</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/guest/">guest</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/additions/">additions</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/rocky/">rocky</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/9.3/">9.3</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/">PowerShell computer resource monitor script with cpu percentage and advanced memory information</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-01-04 22:21:38.732 &#43;0000 UTC">January 4, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    PowerShell computer resource monitor script with cpu percentage and advanced memory information
+PowerShell Resource monitor $app=&amp;#34;notepad&amp;#34; $ids = Get-Process $app | Select-Object -Property Id | ForEach-Object {$_.Id} $filedate = Get-Date -format &amp;#34;yyyy-MM-dd&amp;#34; #echo $pids foreach ($id in $ids) { $date = Get-Date -format &amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34; # process CPU information $ProcessId = $id $Process = Get-WmiObject -Query &amp;#34;SELECT * FROM Win32_PerfFormattedData_PerfProc_Process...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/powershell/">PowerShell</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/computer/">computer</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/resource/">resource</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/monitor/">monitor</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/script/">script</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/cpu/">cpu</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/percentage/">percentage</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/advanced/">advanced</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/memory/">memory</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/information/">information</a></li>
+        
+      
     </ul>
   
 </div>
@@ -860,6 +1009,8 @@
     
       <a href="/en/page/5/" class="button left"><span>Previous Page</span></a>
     
+    
+      <a href="/en/page/7/" class="button right"><span>Next Page</span></a>
     
   </div>
 
@@ -906,8 +1057,8 @@
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -930,7 +1081,13 @@
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -949,12 +1106,6 @@
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

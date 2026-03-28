@@ -1,5 +1,5 @@
 ---
-title: "Configure LDAP/IPA Server with Jenkins "
+title: "LDAP/IPA Server configureren met Jenkins"
 date: 2024-03-09T17:38:50.197Z
 draft: false
 categories:
@@ -17,7 +17,7 @@ share: true
 ---
 \===
 
-Identity, Policy, and Audit (IPA) system
+Identity, Policy, and Audit (IPA) systeem
 
 \===
 
@@ -25,9 +25,9 @@ Jenkins
 
 2.319.2
 
-\=﻿==
+\===
 
-Dashboard -> Security -> Configure Global Security
+Dashboard -> Beveiliging -> Globale beveiliging configureren
 
 
 
@@ -37,36 +37,36 @@ ldap://<IP_SERVER>:389
 
 
 
-root DN:
+Basis-DN:
 
 dc=<NETWORK>,dc=com
 
 
 
-User search base
+Zoekbasis gebruikers
 
 cn=users,cn=accounts
 
 
 
-User search filter
+Zoekfilter gebruikers
 
 uid={0}
 
 
 
-Group search base
+Zoekbasis groepen
 
 cn=groups,cn=accounts
 
 
 
-Group membership -> Search for LDAP groups containing user -> Group membership filter:
+Groepslidmaatschap -> Zoeken naar LDAP-groepen die gebruiker bevatten -> Groepslidmaatschapsfilter:
 
 (| (member={0}) (uniqueMember={0}) (memberUid={1}))
 
 
 
-Manager DN:
+Beheerder-DN:
 
 uid=<ADMIN_USER>,cn=users,cn=accounts,dc=<NETWORK>,dc=com

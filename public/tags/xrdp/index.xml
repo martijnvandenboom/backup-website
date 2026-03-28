@@ -9,11 +9,11 @@
     <lastBuildDate>Sun, 23 Mar 2025 12:51:59 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/xrdp/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tips for using XRDP on Ubuntu Linux</title>
+      <title>Tips voor het gebruik van XRDP op Ubuntu Linux</title>
       <link>http://localhost:1313/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</link>
       <pubDate>Sun, 23 Mar 2025 12:51:59 +0000</pubDate>
       <guid>http://localhost:1313/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</guid>
-      <description>&lt;p&gt;T﻿o be able to use XRDP on Ubuntu Linux try the following instructions:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$ s﻿udo apt update &lt;br&gt;&#xA;$ s﻿udo apt upgrade&lt;br&gt;&#xA;$ s﻿udo apt install xrdp&lt;br&gt;&#xA;$ echo &amp;ldquo;gnome-session &amp;ndash;session=ubuntu&amp;rdquo; &amp;gt; ~/.xsession&lt;br&gt;&#xA;$ echo &amp;ldquo;export DISPLAY=:10.0&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$ echo &amp;ldquo;xhost +&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$﻿ ip a&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;R﻿emember write down your IP address of your system and to log out of your graphical user session.&lt;/p&gt;&#xA;&lt;p&gt;N﻿ow try to login to your system with a RDP tool.&lt;/p&gt;</description>
+      <description>&lt;p&gt;O﻿m XRDP op Ubuntu Linux te kunnen gebruiken, volgt u de onderstaande instructies:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$ s﻿udo apt update &lt;br&gt;&#xA;$ s﻿udo apt upgrade&lt;br&gt;&#xA;$ s﻿udo apt install xrdp&lt;br&gt;&#xA;$ echo &amp;ldquo;gnome-session &amp;ndash;session=ubuntu&amp;rdquo; &amp;gt; ~/.xsession&lt;br&gt;&#xA;$ echo &amp;ldquo;export DISPLAY=:10.0&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$ echo &amp;ldquo;xhost +&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$﻿ ip a&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;O﻿nthoud dat u uw IP-adres noteert en uitlogt uit uw grafische gebruikerssessie.&lt;/p&gt;&#xA;&lt;p&gt;P﻿robeer nu in te loggen op uw systeem met een RDP-tool.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

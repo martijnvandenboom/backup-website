@@ -493,12 +493,7 @@
   
   <a href="#" lang="nl" class="nav link active">Nederlands (nl)</a>
   
-    
-      
-        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
-      
-    
-      
+      <a href="http://localhost:1313/en/blog/" lang="en" class="nav link">English (en)</a>
     
   
 
@@ -835,7 +830,7 @@ gcc create_zombie_process.c S﻿tart het programma:
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-checkmk-installation-on-rocky-linux-9-3/">Checkmk installation on Rocky Linux 9.3</a></h2>
+      <h2><a href="/blog/2024-checkmk-installation-on-rocky-linux-9-3/">Checkmk installatie op Rocky Linux 9.3</a></h2>
     
     
   </div>
@@ -848,8 +843,8 @@ gcc create_zombie_process.c S﻿tart het programma:
 
   <div class="content">
     
-    Checkmk installation on Rocky Linux 9.3
-dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd --zone=public --add-service=http --permanent firewall-cmd --reload wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm omd version omd create monitoring omd start monitoring http://localhost.localdomain/monitoring/ user: cmkadmin with password: &lt;given&gt; omd su monitoring (For command...
+    Checkmk installatie op Rocky Linux 9.3
+dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd --zone=public --add-service=http --permanent firewall-cmd --reload wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm omd version omd create monitoring omd start monitoring http://localhost.localdomain/monitoring/ gebruiker: cmkadmin met wachtwoord: &lt;opgegeven&gt; omd su monitoring...
   </div>
   <footer>
     <a href="/blog/2024-checkmk-installation-on-rocky-linux-9-3/" class="button big">Lees verder</a>
@@ -890,7 +885,7 @@ dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd -
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/">Installing the VirtualBox Guest Additions on Rocky Linux 9.3</a></h2>
+      <h2><a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/">De VirtualBox Guest Additions installeren op Rocky Linux 9.3</a></h2>
     
     
   </div>
@@ -903,8 +898,8 @@ dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd -
 
   <div class="content">
     
-    Installing the VirtualBox Guest Additions on Rocky Linux 9.3
-dnf install epel-release dnf update --refresh dnf update kernel-* reboot (optional) dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel rpm -q kernel-devel uname -r Top menu: Devices -&gt; Insert Guest Additions CD-Image Run (optional) cd /run/media/ ./VBoxLinuxAdditions.run 
+    De VirtualBox Guest Additions installeren op Rocky Linux 9.3
+dnf install epel-release dnf update --refresh dnf update kernel-* reboot (optioneel) dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel rpm -q kernel-devel uname -r Bovenmenu: Apparaten -&gt; Gast-uitbreidingen CD-image invoegen Uitvoeren (optioneel) cd /run/media/ ./VBoxLinuxAdditions.run 
   </div>
   <footer>
     <a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/" class="button big">Lees verder</a>
@@ -949,7 +944,7 @@ dnf install epel-release dnf update --refresh dnf update kernel-* reboot (option
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/">PowerShell computer resource monitor script with cpu percentage and advanced memory information</a></h2>
+      <h2><a href="/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/">PowerShell computerresourcemonitor-script met cpu-percentage en uitgebreide geheugeninformatie</a></h2>
     
     
   </div>
@@ -962,8 +957,8 @@ dnf install epel-release dnf update --refresh dnf update kernel-* reboot (option
 
   <div class="content">
     
-    PowerShell computer resource monitor script with cpu percentage and advanced memory information
-PowerShell Resource monitor $app=&amp;#34;notepad&amp;#34; $ids = Get-Process $app | Select-Object -Property Id | ForEach-Object {$_.Id} $filedate = Get-Date -format &amp;#34;yyyy-MM-dd&amp;#34; #echo $pids foreach ($id in $ids) { $date = Get-Date -format &amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34; # process CPU information $ProcessId = $id $Process = Get-WmiObject -Query &amp;#34;SELECT * FROM Win32_PerfFormattedData_PerfProc_Process...
+    PowerShell computerresourcemonitor-script met cpu-percentage en uitgebreide geheugeninformatie
+PowerShell Resourcemonitor $app=&amp;#34;notepad&amp;#34; $ids = Get-Process $app | Select-Object -Property Id | ForEach-Object {$_.Id} $filedate = Get-Date -format &amp;#34;yyyy-MM-dd&amp;#34; #echo $pids foreach ($id in $ids) { $date = Get-Date -format &amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34; # CPU-informatie van het proces $ProcessId = $id $Process = Get-WmiObject -Query &amp;#34;SELECT * FROM...
   </div>
   <footer>
     <a href="/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/" class="button big">Lees verder</a>
@@ -1062,7 +1057,7 @@ PowerShell Resource monitor $app=&amp;#34;notepad&amp;#34; $ids = Get-Process $a
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</a></h2>
           <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">1 Juli 2025</time>
         </header>
       </article>

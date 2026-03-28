@@ -1,6 +1,6 @@
 +++
-title = "hugo in Windows 10"
-description = "Commands"
+title = "Hugo in Windows 10"
+description = "Opdrachten"
 author = "van den Boom"
 date = "2020-12-12"
 tags = ["markdown", "css", "html", "themes"]

@@ -650,6 +650,62 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/">Concourse starting automatically at boot with systemctl service</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2022-06-16 18:55:47.207 &#43;0000 UTC">June 16, 2022</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    /home/martijn/Downloads/concourse $ curl -LO https://concourse-ci.org/docker-compose.yml $ cat /etc/systemd/system/docker-compose-concourse.service [Unit] Description=Docker Compose Application Service for Concourse Requires=docker.service After=docker.service [Service] Type=oneshot RemainAfterExit=yes WorkingDirectory=/home/martijn/Downloads/concourse ExecStart=/usr/bin/docker-compose up -d ExecStop=/usr/bin/docker-compose down TimeoutStartSec=0 [Install] WantedBy=multi-user.target 
+  </div>
+  <footer>
+    <a href="/en/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/concourse/">Concourse</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/starting/">starting</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/automatically/">automatically</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/boot/">boot</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/systemctl/">systemctl</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/service/">service</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/automatisch_inloggen_in_windows/">Automatically log in to Windows</a></h2>
     
     
@@ -764,8 +820,8 @@
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -788,7 +844,13 @@
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -807,12 +869,6 @@
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

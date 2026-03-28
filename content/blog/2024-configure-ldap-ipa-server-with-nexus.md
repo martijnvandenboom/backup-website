@@ -1,5 +1,5 @@
 ---
-title: Configure LDAP/IPA Server with Nexus
+title: LDAP/IPA Server configureren met Nexus
 date: 2024-03-09T17:37:42.650Z
 draft: false
 categories:
@@ -23,7 +23,7 @@ Sonatype Nexus Repository
 
 OSS 3.60.0-02
 
-\=﻿==
+\===
 
 LDAP
 
@@ -31,32 +31,32 @@ ldap://<IP_SERVER>:389
 
 cn=users,cn=accounts,dc=<NETWORK>,dc=com
 
-Simple Authentication
+Eenvoudige verificatie
 
 uid=<ADMIN_USER>,cn=users,cn=accounts,dc=<NETWORK>,dc=com
 
 <pw>
 
-Next
+Volgende
 
-\=﻿==
+\===
 
-Select no template
+Geen sjabloon selecteren
 
-User relative DN = leeg
+Relatieve DN gebruikers = leeg
 
-User subtree = unchecked
+Gebruikerssubstructuur = uitgeschakeld
 
-Object class: inetOrgPerson
+Objectklasse: inetOrgPerson
 
-User filter = leeg
+Gebruikersfilter = leeg
 
-User ID attribute = uid
+Gebruikers-ID attribuut = uid
 
-Real name attribute = cn
+Echte naam attribuut = cn
 
-Email attribute = mail
+E-mail attribuut = mail
 
-Password attribute = leeg
+Wachtwoord attribuut = leeg
 
-Map LDAP groups as roles = unchecked
+LDAP-groepen als rollen koppelen = uitgeschakeld

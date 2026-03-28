@@ -1,6 +1,6 @@
 +++
 title = "Chocolatey in Windows 10"
-description = "Commands"
+description = "Opdrachten"
 author = "van den Boom"
 date = "2020-12-11"
 tags = ["markdown", "css", "html", "themes"]

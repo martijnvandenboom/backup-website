@@ -1,5 +1,5 @@
 ---
-title: How to activate the VirtualBox web-based API - VBoxWebSrv
+title: De webgebaseerde VirtualBox-API activeren - VBoxWebSrv
 date: 2025-07-01T08:30:05.765Z
 draft: false
 categories:
@@ -14,36 +14,36 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-**VBoxWebSrv** is the VirtualBox Web Service that allows you to manage your VirtualBox virtual machines remotely through a web-based API. It is commonly used with tools like **phpVirtualBox** to provide a full web interface for VM control.
+**VBoxWebSrv** is de VirtualBox-webservice waarmee u uw VirtualBox-virtuele machines op afstand kunt beheren via een webgebaseerde API. Het wordt vaak gebruikt met tools zoals **phpVirtualBox** om een volledige webinterface te bieden voor VM-beheer.
 
-By running VBoxWebSrv as a Windows service, you ensure it starts automatically with your system and runs continuously in the background.
+Door VBoxWebSrv als Windows-service uit te voeren, zorgt u ervoor dat het automatisch start met uw systeem en continu op de achtergrond draait.
 
-Installing VBoxWebSrv as a Windows Service with NSSM
+VBoxWebSrv installeren als Windows-service met NSSM
 
-1. Download NSSM (Non-Sucking Service Manager) from https://nssm.cc/download and extract it.
-2. Open Command Prompt as Administrator and run:
+1. Download NSSM (Non-Sucking Service Manager) van https://nssm.cc/download en pak het uit.
+2. Open de opdrachtprompt als beheerder en voer uit:
 
    ```
    C:\nssm\win64\nssm.exe install VBoxWebSrv
    ```
-3. In the NSSM GUI:
+3. In de NSSM-GUI:
 
-   Set Path to
+   Stel Pad in op
    C:\Progra~1\Oracle\VirtualBox\VBoxWebSrv.exe
 
-   Set Startup directory to
+   Stel de opstartmap in op
    C:\Progra~1\Oracle\VirtualBox
 
-   Add arguments \
-   -H 0.0.0.0 -p 18083 
-4. Click Install service
-5. Start the service with:
+   Voeg argumenten toe \
+   -H 0.0.0.0 -p 18083
+4. Klik op Install service
+5. Start de service met:
 
    ```
    C:\nssm\win64\net start VBoxWebSrv
    ```
-6. O﻿pen the port 18083 in the Windows Firewall
-7. T﻿est if the service is available
+6. O﻿pen poort 18083 in de Windows Firewall
+7. T﻿est of de service beschikbaar is
 
    ```
    C:\nssm\win64\netstat -an | findstr 18083

@@ -6,8 +6,15 @@
     <description>Recent content in Version on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 03 Apr 2022 19:55:44 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 16:04:39 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/en/tags/version/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>This version of BootCamp is not intented for this computer</title>
+      <link>http://localhost:1313/en/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
+      <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
+      <description>&lt;p&gt;D﻿ear reader,&lt;br&gt;&#xA;&lt;br&gt;&#xA;R﻿ecently I updated my Windows version of my MacBook Pro 16,1 BootCamp setup to Windows 11. Now I ran into the problem that my build in keyboard and trackpad were not working anymore. I had to overcome this issue by connecting a separate keyboard and mouse on a USB port.&lt;/p&gt;&#xA;&lt;p&gt;I﻿ downloaded the software in the BootCamp utility on macOS that is compatible with my laptop, in this case version: Boot Camp drivers 6.1.6655. But when trying to startup the setup.exe I get the following error: This version of boot camp is not intented for this computer.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Set the Python interpreter version for the extension: Code Runner in VSCodium</title>
       <link>http://localhost:1313/en/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>

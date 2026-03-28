@@ -39,7 +39,7 @@
 
 
   <meta charset="utf-8">
-<title>VirtualBox - Notities</title>
+<title>Virtualbox - Notities</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -56,7 +56,7 @@
   <meta name="theme-color" content="#ffffff">
 
 <meta name="generator" content="Hugo 0.159.1"><meta property="og:site_name" content="Notities">
-  <meta property="og:title" content="VirtualBox">
+  <meta property="og:title" content="Virtualbox">
   <meta property="og:description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
   <meta property="description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
   <meta property="og:url" content="http://localhost:1313/tags/virtualbox/">
@@ -511,7 +511,7 @@
 
   
     
-    <a href="//x.com/share?text=VirtualBox&amp;url=http%3a%2f%2flocalhost%3a1313%2ftags%2fvirtualbox%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//x.com/share?text=Virtualbox&amp;url=http%3a%2f%2flocalhost%3a1313%2ftags%2fvirtualbox%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>X</p>
       </a>
   
@@ -523,19 +523,19 @@
   
 
   
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2ftags%2fvirtualbox%2f&amp;title=VirtualBox" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2ftags%2fvirtualbox%2f&amp;title=Virtualbox" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2ftags%2fvirtualbox%2f&amp;title=VirtualBox" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2ftags%2fvirtualbox%2f&amp;title=Virtualbox" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2ftags%2fvirtualbox%2f&amp;description=VirtualBox" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2ftags%2fvirtualbox%2f&amp;description=Virtualbox" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
@@ -650,7 +650,7 @@
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+      <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</a></h2>
     
     
   </div>
@@ -663,10 +663,10 @@
 
   <div class="content">
     
-    VBoxWebSrv is the VirtualBox Web Service that allows you to manage your VirtualBox virtual machines remotely through a web-based API. It is commonly used with tools like phpVirtualBox to provide a full web interface for VM control.
-By running VBoxWebSrv as a Windows service, you ensure it starts automatically with your system and runs continuously in the background.
-Installing VBoxWebSrv as a Windows Service with NSSM
-Download NSSM (Non-Sucking Service Manager) from https://nssm.cc/download and...
+    VBoxWebSrv is de VirtualBox-webservice waarmee u uw VirtualBox-virtuele machines op afstand kunt beheren via een webgebaseerde API. Het wordt vaak gebruikt met tools zoals phpVirtualBox om een volledige webinterface te bieden voor VM-beheer.
+Door VBoxWebSrv als Windows-service uit te voeren, zorgt u ervoor dat het automatisch start met uw systeem en continu op de achtergrond draait.
+VBoxWebSrv installeren als Windows-service met NSSM
+Download NSSM (Non-Sucking Service Manager) van...
   </div>
   <footer>
     <a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/" class="button big">Lees verder</a>
@@ -705,7 +705,7 @@ Download NSSM (Non-Sucking Service Manager) from https://nssm.cc/download and...
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/">Installing VirtualBox Guest Additions on AlmaLinux 8.10</a></h2>
+      <h2><a href="/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/">VirtualBox Guest Additions installeren op AlmaLinux 8.10</a></h2>
     
     
   </div>
@@ -720,18 +720,18 @@ Download NSSM (Non-Sucking Service Manager) from https://nssm.cc/download and...
     
      $ sudo dnf update
 $ sudo reboot
-(So any new installed kernel will be loaded)
+(Zodat een nieuw geïnstalleerde kernel wordt geladen)
 $ sudo dnf install gcc kernel-devel kernel-headers make bzip2 perl
-Go to the VirtualBox Menu &gt; Devices &gt; Insert Guest Additions CD image
-Automated:
-Press Run
-Manual:
-$ cd /run/media/$USER/VBox_GAs_*/ # Adjust path if needed
+Ga naar het VirtualBox-menu &gt; Apparaten &gt; Guest Additions-cd-image invoegen
+Automatisch:
+Klik op Uitvoeren
+Handmatig:
+$ cd /run/media/$USER/VBox_GAs_*/ # Pas het pad aan indien nodig
 $ sudo ./VBoxLinuxAdditions.run
 $ sudo reboot
-Verification:
+Verificatie:
 $ lsmod | grep vbox
-(Check to see if vboxguest is listed)
+(Controleer of vboxguest wordt vermeld)
 
   </div>
   <footer>
@@ -775,7 +775,7 @@ $ lsmod | grep vbox
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/">Installing Oracle VirtualBox on Ubuntu Linux</a></h2>
+      <h2><a href="/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/">Oracle VirtualBox installeren op Ubuntu Linux</a></h2>
     
     
   </div>
@@ -788,14 +788,14 @@ $ lsmod | grep vbox
 
   <div class="content">
     
-    T﻿ry the following steps:
+    P﻿robeer de volgende stappen:
 $﻿ sudo apt update
 $﻿ sudo apt upgrade
 $﻿ sudo apt install curl
 $﻿ curl -fsSL https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg &amp;ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg
 $﻿ echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] http://download.virtualbox.org/virtualbox/debian noble contrib&amp;rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list
 $﻿ sudo apt update
-$﻿ sudo search virtualbox...
+$﻿ sudo search...
   </div>
   <footer>
     <a href="/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/" class="button big">Lees verder</a>
@@ -836,7 +836,7 @@ $﻿ sudo search virtualbox...
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/">Installing the VirtualBox Guest Additions on Rocky Linux 9.3</a></h2>
+      <h2><a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/">De VirtualBox Guest Additions installeren op Rocky Linux 9.3</a></h2>
     
     
   </div>
@@ -849,8 +849,8 @@ $﻿ sudo search virtualbox...
 
   <div class="content">
     
-    Installing the VirtualBox Guest Additions on Rocky Linux 9.3
-dnf install epel-release dnf update --refresh dnf update kernel-* reboot (optional) dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel rpm -q kernel-devel uname -r Top menu: Devices -&gt; Insert Guest Additions CD-Image Run (optional) cd /run/media/ ./VBoxLinuxAdditions.run 
+    De VirtualBox Guest Additions installeren op Rocky Linux 9.3
+dnf install epel-release dnf update --refresh dnf update kernel-* reboot (optioneel) dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel rpm -q kernel-devel uname -r Bovenmenu: Apparaten -&gt; Gast-uitbreidingen CD-image invoegen Uitvoeren (optioneel) cd /run/media/ ./VBoxLinuxAdditions.run 
   </div>
   <footer>
     <a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/" class="button big">Lees verder</a>
@@ -895,7 +895,7 @@ dnf install epel-release dnf update --refresh dnf update kernel-* reboot (option
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/">Sharing files with MS-DOS 6.22 in VirtualBox and macOS</a></h2>
+      <h2><a href="/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/">Bestanden delen met MS-DOS 6.22 in VirtualBox en macOS</a></h2>
     
     
   </div>
@@ -908,9 +908,9 @@ dnf install epel-release dnf update --refresh dnf update kernel-* reboot (option
 
   <div class="content">
     
-    How to create an ISO file of a directory on macOS that can be mounted as a CDROM in MS-DOS 6.22 ?
-Start Disk Utility on macOS
-Go to: File -&gt; New Image -&gt; Image from Folder Choose the directory and press Choose Set Image Format to: DVD/CD master and press Save A *.cdr file will be created Go to the command line Cd to the directory with the *.cdr file Type the command: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr Go to your virtual machine running MS-DOS 6.22 and mount the newly...
+    Hoe maak je een ISO-bestand van een map op macOS dat als CDROM gekoppeld kan worden in MS-DOS 6.22?
+Start Schijfhulpprogramma op macOS
+Ga naar: Archief -&gt; Nieuwe afbeelding -&gt; Afbeelding van map Kies de map en druk op Kies Stel Afbeeldingsformaat in op: DVD/CD-master en druk op Bewaar Er wordt een *.cdr-bestand aangemaakt Ga naar de opdrachtregel Navigeer naar de map met het *.cdr-bestand Typ het commando: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr Ga naar je virtuele machine met...
   </div>
   <footer>
     <a href="/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/" class="button big">Lees verder</a>
@@ -951,7 +951,7 @@ Go to: File -&gt; New Image -&gt; Image from Folder Choose the directory and pre
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/">Installing Virtual Machines on macOS Monterey OpenCore Legacy Patcher</a></h2>
+      <h2><a href="/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/">Virtuele machines installeren op macOS Monterey met OpenCore Legacy Patcher</a></h2>
     
     
   </div>
@@ -964,8 +964,8 @@ Go to: File -&gt; New Image -&gt; Image from Folder Choose the directory and pre
 
   <div class="content">
     
-    Try Oracle VirtualBox version 6.1.40 the older version. In my home lab the newest version of VirtualBox 7.0.4 did not work due to the error: hv_vm_create() failed: 0xfae94001 (VERR_NEM_INIT_FAILED)
-In the older version this was not an issue.
+    Probeer Oracle VirtualBox versie 6.1.40, de oudere versie. In mijn thuislab werkte de nieuwste versie VirtualBox 7.0.4 niet vanwege de foutmelding: hv_vm_create() failed: 0xfae94001 (VERR_NEM_INIT_FAILED)
+In de oudere versie was dit geen probleem.
 
   </div>
   <footer>
@@ -1061,7 +1061,7 @@ In the older version this was not an issue.
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</a></h2>
           <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">1 Juli 2025</time>
         </header>
       </article>

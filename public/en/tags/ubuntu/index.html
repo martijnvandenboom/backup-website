@@ -650,6 +650,128 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/">Installing Oracle VirtualBox on Ubuntu Linux</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2025-03-23 13:20:53.4 &#43;0000 UTC">March 23, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    T﻿ry the following steps:
+$﻿ sudo apt update
+$﻿ sudo apt upgrade
+$﻿ sudo apt install curl
+$﻿ curl -fsSL https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg &amp;ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg
+$﻿ echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] http://download.virtualbox.org/virtualbox/debian noble contrib&amp;rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list
+$﻿ sudo apt update
+$﻿ sudo search virtualbox...
+  </div>
+  <footer>
+    <a href="/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/installing/">installing</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/oracle/">Oracle</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/virtualbox/">VirtualBox</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ubuntu/">Ubuntu</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">Linux</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/">Tips for using XRDP on Ubuntu Linux</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2025-03-23 12:51:59.295 &#43;0000 UTC">March 23, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    T﻿o be able to use XRDP on Ubuntu Linux try the following instructions:
+$ s﻿udo apt update $ s﻿udo apt upgrade
+$ s﻿udo apt install xrdp
+$ echo &amp;ldquo;gnome-session &amp;ndash;session=ubuntu&amp;rdquo; &gt; ~/.xsession
+$ echo &amp;ldquo;export DISPLAY=:10.0&amp;rdquo; &gt; ~/.bash_profile
+$ echo &amp;ldquo;xhost &#43;&amp;rdquo; &gt; ~/.bash_profile
+$﻿ ip a
+R﻿emember write down your IP address of your system and to log out of your graphical user session.
+N﻿ow try to login to your system with a RDP tool.
+
+  </div>
+  <footer>
+    <a href="/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/tips/">tips</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/xrdp/">xrdp</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ubuntu/">ubuntu</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2022-installeer-python-3-9-op-ubuntu-linux/">Install Python 3.9 on Ubuntu Linux</a></h2>
     
     
@@ -877,8 +999,8 @@ $ sudo apt install google-chrome-stable
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -901,7 +1023,13 @@ $ sudo apt install google-chrome-stable
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -920,12 +1048,6 @@ $ sudo apt install google-chrome-stable
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

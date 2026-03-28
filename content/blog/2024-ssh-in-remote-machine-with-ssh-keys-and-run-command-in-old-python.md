@@ -1,5 +1,5 @@
 ---
-title: SSH in remote machine with SSH keys and run command in old Python 2
+title: SSH naar een externe machine met SSH-sleutels en commando uitvoeren in oud Python 2
 date: 2024-04-03T20:12:58.290Z
 draft: false
 categories:
@@ -17,7 +17,7 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.
+I﻿n het geval u een oud legacysysteem heeft waarop nog Python 2 wordt gebruikt en u een script wilt maken om bepaalde commando's uit te voeren in een client-servernetwerk.
 
 ```
 import subprocess
@@ -37,7 +37,7 @@ def ssh_exec_command(hostname, username, private_key_path, command):
     else:
         print("Output:", output)
 
-# Replace these with your actual credentials and command
+# Vervang deze door uw werkelijke inloggegevens en commando
 hostname = 'remote_host_address'
 username = 'your_username'
 private_key_path = '/path/to/your/private_key'

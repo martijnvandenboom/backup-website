@@ -16,11 +16,11 @@
       <description>&lt;p&gt;W﻿il je anoniem blijven als je op het Internet gaat zoeken?&lt;/p&gt;&#xA;&lt;p&gt;G﻿ebruik dan een andere webbrowser, de Tor Browser is speciaal ontwikkeld om anoniem te blijven.&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 1.: ga naar de website: &lt;a href=&#34;https://www.torproject.org/&#34;&gt;https://www.torproject.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 2.: download de Tor Browser&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 3.: installeer de nieuwe applicatie&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;L﻿et op! Verander de grootte van het applicatie window niet, dit kan al informatie over jouw identiteit vrijgeven. Het advies, doe dit dus niet.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Rich Content</title>
+      <title>Rijke inhoud</title>
       <link>http://localhost:1313/blog/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugo wordt geleverd met verschillende &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;ingebouwde Shortcodes&lt;/a&gt; voor rijke inhoud, samen met een &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacyconfiguratie&lt;/a&gt; en een set eenvoudige Shortcodes die statische versies zonder JavaScript bieden voor verschillende sociale media-insluitingen.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

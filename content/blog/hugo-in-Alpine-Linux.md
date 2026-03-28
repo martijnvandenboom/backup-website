@@ -1,6 +1,6 @@
 +++
 title = "Hugo in Alpine Linux"
-description = "Commands"
+description = "Opdrachten"
 author = "van den Boom"
 date = 2020-12-12T19:59:50+01:00
 tags = ["markdown", "css", "html", "themes"]
@@ -21,7 +21,7 @@ Hugo in Alpine Linux
 > apk add glibc-2.32-r0.apk
 
 > wget https://github.com/gohugoio/hugo/releases/download/v0.79.0/hugo_0.79.0_Linux-32bit.tar.gz
-> tar -xvzf hugo_0.79.0_Linux-32bit.tar.gz 
+> tar -xvzf hugo_0.79.0_Linux-32bit.tar.gz
 > ./hugo
 > ./hugo version
 
@@ -29,7 +29,7 @@ Hugo in Alpine Linux
 > vim .bash_profile
 export PATH=$PATH:/hugo/bin
 
-> source .bash_profile 
+> source .bash_profile
 > which hugo
 
 > cd website/

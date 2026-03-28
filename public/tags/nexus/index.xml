@@ -9,11 +9,11 @@
     <lastBuildDate>Sat, 09 Mar 2024 17:37:42 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/nexus/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Configure LDAP/IPA Server with Nexus</title>
+      <title>LDAP/IPA Server configureren met Nexus</title>
       <link>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-nexus/</link>
       <pubDate>Sat, 09 Mar 2024 17:37:42 +0000</pubDate>
       <guid>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-nexus/</guid>
-      <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Nexus&lt;/p&gt;&#xA;&lt;p&gt;Sonatype Nexus Repository&lt;/p&gt;&#xA;&lt;p&gt;OSS 3.60.0-02&lt;/p&gt;&#xA;&lt;p&gt;=﻿==&lt;/p&gt;&#xA;&lt;p&gt;LDAP&lt;/p&gt;&#xA;&lt;p&gt;ldap://&amp;lt;IP_SERVER&amp;gt;:389&lt;/p&gt;&#xA;&lt;p&gt;cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;p&gt;Simple Authentication&lt;/p&gt;&#xA;&lt;p&gt;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;pw&gt;&#xA;&lt;p&gt;Next&lt;/p&gt;&#xA;&lt;p&gt;=﻿==&lt;/p&gt;&#xA;&lt;p&gt;Select no template&lt;/p&gt;&#xA;&lt;p&gt;User relative DN = leeg&lt;/p&gt;&#xA;&lt;p&gt;User subtree = unchecked&lt;/p&gt;&#xA;&lt;p&gt;Object class: inetOrgPerson&lt;/p&gt;&#xA;&lt;p&gt;User filter = leeg&lt;/p&gt;&#xA;&lt;p&gt;User ID attribute = uid&lt;/p&gt;&#xA;&lt;p&gt;Real name attribute = cn&lt;/p&gt;&#xA;&lt;p&gt;Email attribute = mail&lt;/p&gt;&#xA;&lt;p&gt;Password attribute = leeg&lt;/p&gt;&#xA;&lt;p&gt;Map LDAP groups as roles = unchecked&lt;/p&gt;</description>
+      <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Nexus&lt;/p&gt;&#xA;&lt;p&gt;Sonatype Nexus Repository&lt;/p&gt;&#xA;&lt;p&gt;OSS 3.60.0-02&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;LDAP&lt;/p&gt;&#xA;&lt;p&gt;ldap://&amp;lt;IP_SERVER&amp;gt;:389&lt;/p&gt;&#xA;&lt;p&gt;cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;p&gt;Eenvoudige verificatie&lt;/p&gt;&#xA;&lt;p&gt;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;pw&gt;&#xA;&lt;p&gt;Volgende&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Geen sjabloon selecteren&lt;/p&gt;&#xA;&lt;p&gt;Relatieve DN gebruikers = leeg&lt;/p&gt;&#xA;&lt;p&gt;Gebruikerssubstructuur = uitgeschakeld&lt;/p&gt;&#xA;&lt;p&gt;Objectklasse: inetOrgPerson&lt;/p&gt;&#xA;&lt;p&gt;Gebruikersfilter = leeg&lt;/p&gt;&#xA;&lt;p&gt;Gebruikers-ID attribuut = uid&lt;/p&gt;&#xA;&lt;p&gt;Echte naam attribuut = cn&lt;/p&gt;&#xA;&lt;p&gt;E-mail attribuut = mail&lt;/p&gt;&#xA;&lt;p&gt;Wachtwoord attribuut = leeg&lt;/p&gt;&#xA;&lt;p&gt;LDAP-groepen als rollen koppelen = uitgeschakeld&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

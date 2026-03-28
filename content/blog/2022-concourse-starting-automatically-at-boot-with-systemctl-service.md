@@ -1,5 +1,5 @@
 ---
-title: Concourse starting automatically at boot with systemctl service
+title: Concourse automatisch opstarten bij het booten met een systemctl-service
 date: 2022-06-16T18:55:47.207Z
 draft: false
 categories:

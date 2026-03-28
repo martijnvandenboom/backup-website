@@ -9,11 +9,11 @@
     <lastBuildDate>Tue, 01 Jul 2025 08:30:05 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/vboxwebsrv/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to activate the VirtualBox web-based API - VBoxWebSrv</title>
+      <title>De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</title>
       <link>http://localhost:1313/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</link>
       <pubDate>Tue, 01 Jul 2025 08:30:05 +0000</pubDate>
       <guid>http://localhost:1313/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;VBoxWebSrv&lt;/strong&gt; is the VirtualBox Web Service that allows you to manage your VirtualBox virtual machines remotely through a web-based API. It is commonly used with tools like &lt;strong&gt;phpVirtualBox&lt;/strong&gt; to provide a full web interface for VM control.&lt;/p&gt;&#xA;&lt;p&gt;By running VBoxWebSrv as a Windows service, you ensure it starts automatically with your system and runs continuously in the background.&lt;/p&gt;&#xA;&lt;p&gt;Installing VBoxWebSrv as a Windows Service with NSSM&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Download NSSM (Non-Sucking Service Manager) from &lt;a href=&#34;https://nssm.cc/download&#34;&gt;https://nssm.cc/download&lt;/a&gt; and extract it.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;VBoxWebSrv&lt;/strong&gt; is de VirtualBox-webservice waarmee u uw VirtualBox-virtuele machines op afstand kunt beheren via een webgebaseerde API. Het wordt vaak gebruikt met tools zoals &lt;strong&gt;phpVirtualBox&lt;/strong&gt; om een volledige webinterface te bieden voor VM-beheer.&lt;/p&gt;&#xA;&lt;p&gt;Door VBoxWebSrv als Windows-service uit te voeren, zorgt u ervoor dat het automatisch start met uw systeem en continu op de achtergrond draait.&lt;/p&gt;&#xA;&lt;p&gt;VBoxWebSrv installeren als Windows-service met NSSM&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Download NSSM (Non-Sucking Service Manager) van &lt;a href=&#34;https://nssm.cc/download&#34;&gt;https://nssm.cc/download&lt;/a&gt; en pak het uit.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

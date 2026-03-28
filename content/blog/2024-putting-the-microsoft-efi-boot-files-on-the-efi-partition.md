@@ -1,5 +1,5 @@
 ---
-title: Putting the Microsoft EFI boot files on the EFI partition
+title: De Microsoft EFI-opstartbestanden op de EFI-partitie plaatsen
 date: 2024-07-07T20:49:33.290Z
 draft: false
 categories:
@@ -17,9 +17,9 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-Boot into the Windows installer
+Start op via het Windows-installatieprogramma
 
-On the first screen press SHIFT + F10
+Druk op het eerste scherm op SHIFT + F10
 
 ```
 
@@ -27,32 +27,32 @@ On the first screen press SHIFT + F10
 # list disk
 # select disk 0
 # list part
-Look for the Windows partition
+Zoek naar de Windows-partitie
 
 # select part 3
 # assign letter=W
 # format quick fs=NTFS
 # list volume
-Look for the EFI volume
+Zoek naar het EFI-volume
 
 # select volume 2
 # assign letter=Z
 # exit
 
 # D:
-Goto the USB installer of Windows
+Ga naar de USB-installatieschijf van Windows
 # cd D:\sources
 # dir install*
-The file install.esd exists
+Het bestand install.esd bestaat
 
 # dism /Get-WimInfo /WimFile:D:\Sources\install.esd
-Select the Index of the version of Windows you want
+Selecteer de Index van de gewenste Windows-versie
 
 # dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\
 # bcdboot W:\Windows /l en-us /s Z: /f UEFI
-Shutdown your computer and remove the USB installer
-Now we have the Microsoft EFI boot files in the EFI partition in its designated folder
+Zet uw computer uit en verwijder de USB-installatieschijf
+Nu hebben we de Microsoft EFI-opstartbestanden op de EFI-partitie in de daarvoor bestemde map
 
 ```
 
-Follow the normal procedure of installing Windows
+Volg de normale procedure voor het installeren van Windows

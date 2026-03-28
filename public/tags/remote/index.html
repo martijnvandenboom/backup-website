@@ -493,12 +493,7 @@
   
   <a href="#" lang="nl" class="nav link active">Nederlands (nl)</a>
   
-    
-      
-        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
-      
-    
-      
+      <a href="http://localhost:1313/en/tags/remote/" lang="en" class="nav link">English (en)</a>
     
   
 
@@ -655,7 +650,7 @@
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/">SSH in remote machine with SSH keys and run command in new Python 3</a></h2>
+      <h2><a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/">SSH naar een externe machine met SSH-sleutels en commando uitvoeren in nieuw Python 3</a></h2>
     
     
   </div>
@@ -668,8 +663,8 @@
 
   <div class="content">
     
-    T﻿o make a script to run remote commands in a client server network.
-import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [&#39;ssh&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(&amp;#34;Error:&amp;#34;, error) else: print(&amp;#34;Output:&amp;#34;, output) # Replace these with your actual credentials...
+    O﻿m een script te maken voor het uitvoeren van externe commando&#39;s in een client-servernetwerk.
+import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [&#39;ssh&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(&amp;#34;Error:&amp;#34;, error) else: print(&amp;#34;Output:&amp;#34;, output) # Vervang deze...
   </div>
   <footer>
     <a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/" class="button big">Lees verder</a>
@@ -714,7 +709,7 @@ import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/">SSH in remote machine with SSH keys and run command in old Python 2</a></h2>
+      <h2><a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/">SSH naar een externe machine met SSH-sleutels en commando uitvoeren in oud Python 2</a></h2>
     
     
   </div>
@@ -727,8 +722,8 @@ import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [
 
   <div class="content">
     
-    I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.
-import subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = [&#39;ssh&#39;, &#39;-i&#39;, private_key_path, &#39;-o&#39;, &#39;StrictHostKeyChecking=no&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE )...
+    I﻿n het geval u een oud legacysysteem heeft waarop nog Python 2 wordt gebruikt en u een script wilt maken om bepaalde commando&#39;s uit te voeren in een client-servernetwerk.
+import subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = [&#39;ssh&#39;, &#39;-i&#39;, private_key_path, &#39;-o&#39;, &#39;StrictHostKeyChecking=no&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE,...
   </div>
   <footer>
     <a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/" class="button big">Lees verder</a>
@@ -817,7 +812,7 @@ import subprocess def ssh_exec_command(hostname, username, private_key_path, com
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</a></h2>
           <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">1 Juli 2025</time>
         </header>
       </article>

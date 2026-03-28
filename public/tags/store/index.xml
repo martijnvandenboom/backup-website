@@ -9,11 +9,11 @@
     <lastBuildDate>Thu, 01 Dec 2022 19:30:38 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/store/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Prevent opening Windows 11 Store when typing the command python</title>
+      <title>Voorkom dat de Windows 11 Store opent wanneer je het commando python typt</title>
       <link>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
       <guid>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
-      <description>&lt;p&gt;Step 1: Open Settings in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Step 2: Go to Apps&lt;/p&gt;&#xA;&lt;p&gt;Step 3: Go to Advanced app settings&lt;/p&gt;&#xA;&lt;p&gt;Step 4: Go to App execution aliases&lt;/p&gt;&#xA;&lt;p&gt;Step 5: Disable the option for python.exe and python3.exe&lt;/p&gt;</description>
+      <description>&lt;p&gt;Stap 1: Open Instellingen in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: Ga naar Apps&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: Ga naar Geavanceerde app-instellingen&lt;/p&gt;&#xA;&lt;p&gt;Stap 4: Ga naar App-uitvoeringsaliassen&lt;/p&gt;&#xA;&lt;p&gt;Stap 5: Schakel de optie voor python.exe en python3.exe uit&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

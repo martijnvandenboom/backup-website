@@ -1,5 +1,5 @@
 ---
-title: Install Microsoft Visual Studio Code in Linux from the repo
+title: Microsoft Visual Studio Code installeren in Linux vanuit de repository
 date: 2025-03-22T22:13:54.381Z
 draft: false
 categories:
@@ -16,7 +16,7 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-F﻿ollow the below steps to install Microsoft Visual Studio Code IDE on Linux from its repository:
+V﻿olg de onderstaande stappen om Microsoft Visual Studio Code IDE op Linux te installeren vanuit de repository:
 
 > sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 >

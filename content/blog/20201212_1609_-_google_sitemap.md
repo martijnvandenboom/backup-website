@@ -1,6 +1,6 @@
 +++
 title = "Google sitemap"
-description = "Commands"
+description = "Opdrachten"
 author = "van den Boom"
 date = 2020-12-13T20:13:00+01:00
 tags = ["markdown", "css", "html", "themes"]

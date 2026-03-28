@@ -650,30 +650,31 @@
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/">Change your Windows password using a shortcut</a></h2>
+      <h2><a href="/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/">Find the name of your USB stick with a script</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2023-02-16 10:56:24.374 &#43;0000 UTC">February 16, 2023</time>
+    <time datetime="2024-07-18 07:20:59.657 &#43;0000 UTC">July 18, 2024</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
+    <p>3-Minute Read</p>
   </div>
 </header>
 
   <div class="content">
     
-    Change your Windows password by using a shortcut on your desktop. (CTRL&#43;ALT&#43;DEL key combination by clicking a shortcut)
-Right-click on your desktop, choose New and then Shortcut
-Enter the following command for the item location:
-C:\Windows\explorer.exe shell:::{2559a1f2-21d7-11d4-bdaf-00c04f60b9f0}
-Click: Next
-Give the shortcut a name, for example: Reset password
-Click: Finish
+    You can use this script to retrieve the name of your USB stick.
+The name of your USB stick can be used in Apple&#39;s sudo command to create a USB installer.
+Step 1: Open the Terminal application
+Step 2: Go to your home directory, type: # cd
+Step 3: Optionally create a scripts directory, type: # mkdir scripts
+Step 4: Navigate to the newly created scripts directory, type: # cd scripts
+Step 5: Create a bash script, type: # vim usbstick.sh
+Step 6: Insert the following code:
 
   </div>
   <footer>
-    <a href="/en/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/" class="button big">Read More</a>
+    <a href="/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -688,11 +689,17 @@ Click: Finish
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
+          <li><a class="article-terms-link" href="/en/tags/zoek/">zoek</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/wachtwoord/">wachtwoord</a></li>
+          <li><a class="article-terms-link" href="/en/tags/naam/">naam</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/snelkoppeling/">snelkoppeling</a></li>
+          <li><a class="article-terms-link" href="/en/tags/usb/">usb</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/stick/">stick</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/bash/">bash</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/script/">script</a></li>
         
       
     </ul>
@@ -707,12 +714,12 @@ Click: Finish
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/">Python dependencies when installing Oracle VirtualBox on Windows 11</a></h2>
+      <h2><a href="/en/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/">Putting the Microsoft EFI boot files on the EFI partition</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2022-12-01 19:24:55.818 &#43;0000 UTC">December 1, 2022</time>
+    <time datetime="2024-07-07 20:49:33.29 &#43;0000 UTC">July 7, 2024</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
@@ -720,13 +727,12 @@ Click: Finish
 
   <div class="content">
     
-    Step 1: install Python
-Step 2: add both the scripts folder and its parent folder to the path
-Step 3: CMD&gt; pip install pywin32
-
+    Boot into the Windows installer
+On the first screen press SHIFT &#43; F10
+# diskpart # list disk # select disk 0 # list part Look for the Windows partition # select part 3 # assign letter=W # format quick fs=NTFS # list volume Look for the EFI volume # select volume 2 # assign letter=Z # exit # D: Goto the USB installer of Windows # cd D:\sources # dir install* The file install.esd exists # dism /Get-WimInfo /WimFile:D:\Sources\install.esd Select the Index of the version of Windows you want # dism...
   </div>
   <footer>
-    <a href="/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/" class="button big">Read More</a>
+    <a href="/en/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -741,18 +747,198 @@ Step 3: CMD&gt; pip install pywin32
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/dependencies/">dependencies</a></li>
+          <li><a class="article-terms-link" href="/en/tags/putting/">putting</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/microsoft/">microsoft</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/efi/">efi</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/boot/">boot</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/files/">files</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/partition/">partition</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/triple/">triple</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-create-a-usb-refit-boot-disk/">Create a USB rEFIt boot disk</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-07-07 20:45:53.867 &#43;0000 UTC">July 7, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    # hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img # diskutil list # diskutil unmountDisk /dev/disk2 # sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m Using rdisk2 here seems to speed up things # diskutil eject /dev/disk2 
+  </div>
+  <footer>
+    <a href="/en/blog/2024-create-a-usb-refit-boot-disk/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/create/">create</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/usb/">usb</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/refit/">refit</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/boot/">boot</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/disk/">disk</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/triple/">triple</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-refit-installation-to-efi-partition-of-an-imac/">rEFIt installation to EFI partition of an iMac</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-06-27 22:27:46.468 &#43;0000 UTC">June 27, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac
+D﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below
+B﻿efore you do the bless command disable the SIP
+Boot in recovery mode
+#﻿ csrutil status
+#﻿ csrutil disable
+#﻿ reboot
+sudo mkdir /efi sudo mount -t msdos /dev/disk0s1 /efi sudo bless --mount /efi --setBoot --file /efi/EFI/refit/refit.efi --labelfile /efi/EFI/refit/refit.vollabel 
+  </div>
+  <footer>
+    <a href="/en/blog/2024-refit-installation-to-efi-partition-of-an-imac/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/refit/">refit</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/installation/">installation</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/efi/">efi</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/partition/">partition</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/sip/">sip</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/disable/">disable</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/">SSH in remote machine with SSH keys and run command in new Python 3</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-04-03 20:20:39.976 &#43;0000 UTC">April 3, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    T﻿o make a script to run remote commands in a client server network.
+import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [&#39;ssh&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(&amp;#34;Error:&amp;#34;, error) else: print(&amp;#34;Output:&amp;#34;, output) # Replace these with your actual credentials...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ssh/">ssh</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/remote/">remote</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/machine/">machine</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/keys/">keys</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/commands/">commands</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/new/">new</a></li>
         
           <li><a class="article-terms-link" href="/en/tags/python/">python</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/installatie/">installatie</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/oracle/">oracle</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/virtualbox/">virtualbox</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
-        
       
     </ul>
   
@@ -766,12 +952,12 @@ Step 3: CMD&gt; pip install pywin32
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/">Clearing cookies when closing your web browser</a></h2>
+      <h2><a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/">SSH in remote machine with SSH keys and run command in old Python 2</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2022-06-02 09:41:34.247 &#43;0000 UTC">June 2, 2022</time>
+    <time datetime="2024-04-03 20:12:58.29 &#43;0000 UTC">April 3, 2024</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
@@ -779,13 +965,11 @@ Step 3: CMD&gt; pip install pywin32
 
   <div class="content">
     
-     Google Chrome: https://youtu.be/FAKQyjzLXrA
-Microsoft Edge: https://youtu.be/nj3eNmNeip4
-Safari on iPad: https://youtu.be/dymKWea_600
-
+    I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.
+import subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = [&#39;ssh&#39;, &#39;-i&#39;, private_key_path, &#39;-o&#39;, &#39;StrictHostKeyChecking=no&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE )...
   </div>
   <footer>
-    <a href="/en/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/" class="button big">Read More</a>
+    <a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -800,200 +984,19 @@ Safari on iPad: https://youtu.be/dymKWea_600
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/cookies/">Cookies</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ssh/">ssh</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/opruimen/">opruimen</a></li>
+          <li><a class="article-terms-link" href="/en/tags/remote/">remote</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/afsluiten/">afsluiten</a></li>
+          <li><a class="article-terms-link" href="/en/tags/machine/">machine</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/web/">web</a></li>
+          <li><a class="article-terms-link" href="/en/tags/keys/">keys</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/browser/">browser</a></li>
+          <li><a class="article-terms-link" href="/en/tags/command/">command</a></li>
         
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/">Set the Python interpreter version for the extension: Code Runner in VSCodium</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2022-04-03 19:55:44.371 &#43;0000 UTC">April 3, 2022</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    # File name: version_used.py # This prints the version of Python being used by the Code Runner extension in VSCodium # Set by going to: File -&gt; Preferences -&gt; Settings -&gt; Search Settings -&gt; code-runner.executorMap -&gt; Edit in settings.json # &amp;#34;python&amp;#34;: &amp;#34;/bin/python3.9 -u&amp;#34;, # To run this script press the little play button on the top right in the editor import sys print(sys.version) 
-  </div>
-  <footer>
-    <a href="/en/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/versie/">versie</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/version/">version</a></li>
+          <li><a class="article-terms-link" href="/en/tags/old/">old</a></li>
         
           <li><a class="article-terms-link" href="/en/tags/python/">python</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/python3/">python3</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/python3.9/">python3.9</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/coderunner/">coderunner</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/extensie/">extensie</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/extension/">extension</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/vscodium/">vscodium</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2022-installeer-python-3-9-op-ubuntu-linux/">Install Python 3.9 on Ubuntu Linux</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2022-04-03 18:55:18.763 &#43;0000 UTC">April 3, 2022</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    $ sudo apt install software-properties-common
-$ sudo add-apt-repository ppa:deadsnakes/ppa
-$ sudo apt update
-$ sudo apt install python3.9
-$ python3.9 &amp;ndash;version
-
-  </div>
-  <footer>
-    <a href="/en/blog/2022-installeer-python-3-9-op-ubuntu-linux/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/install/">install</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/installeer/">installeer</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/python/">python</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/python3/">python3</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/python3.9/">python3.9</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/ubuntu/">ubuntu</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/">Install the editor VSCodium on Ubuntu Linux</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2022-04-03 14:22:24.193 &#43;0000 UTC">April 3, 2022</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    $ wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
-$ sudo echo &amp;lsquo;deb https://vscodium.c7.ee/debs/ vscodium main&#39; | sudo tee &amp;ndash;append /etc/apt/sources.list.d/vscodium.list
-$ sudo apt update
-$ sudo apt install codium
-
-  </div>
-  <footer>
-    <a href="/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/installeer/">installeer</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/editor/">editor</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/vscodium/">vscodium</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/codium/">codium</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/ubuntu/">ubuntu</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
         
       
     </ul>
@@ -1056,8 +1059,8 @@ $ sudo apt install codium
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -1080,7 +1083,13 @@ $ sudo apt install codium
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -1099,12 +1108,6 @@ $ sudo apt install codium
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

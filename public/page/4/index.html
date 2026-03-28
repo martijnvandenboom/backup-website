@@ -714,7 +714,7 @@ Stap 6: Insert de volgende code:
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/">Putting the Microsoft EFI boot files on the EFI partition</a></h2>
+      <h2><a href="/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/">De Microsoft EFI-opstartbestanden op de EFI-partitie plaatsen</a></h2>
     
     
   </div>
@@ -727,9 +727,9 @@ Stap 6: Insert de volgende code:
 
   <div class="content">
     
-    Boot into the Windows installer
-On the first screen press SHIFT &#43; F10
-# diskpart # list disk # select disk 0 # list part Look for the Windows partition # select part 3 # assign letter=W # format quick fs=NTFS # list volume Look for the EFI volume # select volume 2 # assign letter=Z # exit # D: Goto the USB installer of Windows # cd D:\sources # dir install* The file install.esd exists # dism /Get-WimInfo /WimFile:D:\Sources\install.esd Select the Index of the version of Windows you want # dism...
+    Start op via het Windows-installatieprogramma
+Druk op het eerste scherm op SHIFT &#43; F10
+# diskpart # list disk # select disk 0 # list part Zoek naar de Windows-partitie # select part 3 # assign letter=W # format quick fs=NTFS # list volume Zoek naar het EFI-volume # select volume 2 # assign letter=Z # exit # D: Ga naar de USB-installatieschijf van Windows # cd D:\sources # dir install* Het bestand install.esd bestaat # dism /Get-WimInfo /WimFile:D:\Sources\install.esd Selecteer de Index van de...
   </div>
   <footer>
     <a href="/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/" class="button big">Lees verder</a>
@@ -774,7 +774,7 @@ On the first screen press SHIFT &#43; F10
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-create-a-usb-refit-boot-disk/">Create a USB rEFIt boot disk</a></h2>
+      <h2><a href="/blog/2024-create-a-usb-refit-boot-disk/">Maak een USB rEFIt opstartschijf</a></h2>
     
     
   </div>
@@ -787,7 +787,7 @@ On the first screen press SHIFT &#43; F10
 
   <div class="content">
     
-    # hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img # diskutil list # diskutil unmountDisk /dev/disk2 # sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m Using rdisk2 here seems to speed up things # diskutil eject /dev/disk2 
+    # hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img # diskutil list # diskutil unmountDisk /dev/disk2 # sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m Het gebruik van rdisk2 hier lijkt de zaken te versnellen # diskutil eject /dev/disk2 
   </div>
   <footer>
     <a href="/blog/2024-create-a-usb-refit-boot-disk/" class="button big">Lees verder</a>
@@ -830,7 +830,7 @@ On the first screen press SHIFT &#43; F10
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-refit-installation-to-efi-partition-of-an-imac/">rEFIt installation to EFI partition of an iMac</a></h2>
+      <h2><a href="/blog/2024-refit-installation-to-efi-partition-of-an-imac/">rEFIt installeren op de EFI-partitie van een iMac</a></h2>
     
     
   </div>
@@ -843,10 +843,10 @@ On the first screen press SHIFT &#43; F10
 
   <div class="content">
     
-    F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac
-D﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below
-B﻿efore you do the bless command disable the SIP
-Boot in recovery mode
+    V﻿olg de onderstaande stappen om rEFIt te installeren op de EFI-partitie van een iMac
+D﻿ownload rEFIt en kopieer de efi-map naar de /efi-map zoals hieronder uitgelegd
+V﻿oordat u het bless-commando uitvoert, schakelt u de SIP uit
+Start op in herstelmodus
 #﻿ csrutil status
 #﻿ csrutil disable
 #﻿ reboot
@@ -893,7 +893,7 @@ sudo mkdir /efi sudo mount -t msdos /dev/disk0s1 /efi sudo bless --mount /efi --
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/">SSH in remote machine with SSH keys and run command in new Python 3</a></h2>
+      <h2><a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/">SSH naar een externe machine met SSH-sleutels en commando uitvoeren in nieuw Python 3</a></h2>
     
     
   </div>
@@ -906,8 +906,8 @@ sudo mkdir /efi sudo mount -t msdos /dev/disk0s1 /efi sudo bless --mount /efi --
 
   <div class="content">
     
-    T﻿o make a script to run remote commands in a client server network.
-import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [&#39;ssh&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(&amp;#34;Error:&amp;#34;, error) else: print(&amp;#34;Output:&amp;#34;, output) # Replace these with your actual credentials...
+    O﻿m een script te maken voor het uitvoeren van externe commando&#39;s in een client-servernetwerk.
+import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [&#39;ssh&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(&amp;#34;Error:&amp;#34;, error) else: print(&amp;#34;Output:&amp;#34;, output) # Vervang deze...
   </div>
   <footer>
     <a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/" class="button big">Lees verder</a>
@@ -952,7 +952,7 @@ import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/">SSH in remote machine with SSH keys and run command in old Python 2</a></h2>
+      <h2><a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/">SSH naar een externe machine met SSH-sleutels en commando uitvoeren in oud Python 2</a></h2>
     
     
   </div>
@@ -965,8 +965,8 @@ import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [
 
   <div class="content">
     
-    I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.
-import subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = [&#39;ssh&#39;, &#39;-i&#39;, private_key_path, &#39;-o&#39;, &#39;StrictHostKeyChecking=no&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE )...
+    I﻿n het geval u een oud legacysysteem heeft waarop nog Python 2 wordt gebruikt en u een script wilt maken om bepaalde commando&#39;s uit te voeren in een client-servernetwerk.
+import subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = [&#39;ssh&#39;, &#39;-i&#39;, private_key_path, &#39;-o&#39;, &#39;StrictHostKeyChecking=no&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE,...
   </div>
   <footer>
     <a href="/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/" class="button big">Lees verder</a>
@@ -1059,7 +1059,7 @@ import subprocess def ssh_exec_command(hostname, username, private_key_path, com
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</a></h2>
           <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">1 Juli 2025</time>
         </header>
       </article>

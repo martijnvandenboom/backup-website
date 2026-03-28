@@ -1,5 +1,5 @@
 ---
-title: Installing Oracle VirtualBox on Ubuntu Linux
+title: Oracle VirtualBox installeren op Ubuntu Linux
 date: 2025-03-23T13:20:53.400Z
 draft: false
 categories:
@@ -15,7 +15,7 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-T﻿ry the following steps:
+P﻿robeer de volgende stappen:
 
 > $﻿ sudo apt update\
 > $﻿ sudo apt upgrade\
@@ -36,4 +36,4 @@ T﻿ry the following steps:
 >
 > $﻿ sudo install virtualbox-7.1
 
-D﻿ownload the Extension Pack frm the website: https://www.virtualbox.org/wiki/Downloads
+D﻿ownload het Extension Pack van de website: https://www.virtualbox.org/wiki/Downloads

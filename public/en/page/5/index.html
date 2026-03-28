@@ -650,12 +650,12 @@
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/">Install the Google Chrome Web Browser on Ubuntu Linux</a></h2>
+      <h2><a href="/en/blog/2024-configure-ldap-ipa-server-with-jenkins/">Configure LDAP/IPA Server with Jenkins </a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2022-04-03 11:51:54.59 &#43;0000 UTC">April 3, 2022</time>
+    <time datetime="2024-03-09 17:38:50.197 &#43;0000 UTC">March 9, 2024</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
@@ -663,14 +663,30 @@
 
   <div class="content">
     
-    $ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-$ sudo sh -c &#39;echo &amp;ldquo;deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main&amp;rdquo; &amp;raquo; /etc/apt/sources.list.d/google-chrome.list&#39;
-$ sudo apt update
-$ sudo apt install google-chrome-stable
-
+    ===
+Identity, Policy, and Audit (IPA) system
+===
+Jenkins
+2.319.2
+=﻿==
+Dashboard -&gt; Security -&gt; Configure Global Security
+Server:
+ldap://&lt;IP_SERVER&gt;:389
+root DN:
+dc=,dc=com
+User search base
+cn=users,cn=accounts
+User search filter
+uid={0}
+Group search base
+cn=groups,cn=accounts
+Group membership -&gt; Search for LDAP groups containing user -&gt; Group membership filter:
+(| (member={0}) (uniqueMember={0}) (memberUid={1}))
+Manager DN:
+uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com...
   </div>
   <footer>
-    <a href="/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/" class="button big">Read More</a>
+    <a href="/en/blog/2024-configure-ldap-ipa-server-with-jenkins/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -685,17 +701,15 @@ $ sudo apt install google-chrome-stable
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/google/">Google</a></li>
+          <li><a class="article-terms-link" href="/en/tags/configure/">configure</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/chrome/">Chrome</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/web/">Web</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/browser/">Browser</a></li>
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/ubuntu/">Ubuntu</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/linux/">Linux</a></li>
+          <li><a class="article-terms-link" href="/en/tags/jenkins/">jenkins</a></li>
         
       
     </ul>
@@ -710,154 +724,12 @@ $ sudo apt install google-chrome-stable
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/maak_een_website_met_github_pages/">Create a website for free with GitHub Pages</a></h2>
-    
-    
-      <p>Manual</p>
-    
-  </div>
-  <div class="meta">
-    <time datetime="2022-03-09 19:18:22 &#43;0100 CET">March 9, 2022</time>
-    <p>van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    Create a website for free with GitHub
-P.S. Would you like somebody to help you? Feel free to send me a message on one of my Social Media Links available on this website.
-
-  </div>
-  <footer>
-    <a href="/en/blog/maak_een_website_met_github_pages/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/tutorial/">tutorial</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/manual/">manual</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/utilities/">utilities</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/create/">create</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/website/">website</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/github/">GitHub</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/pages/">Pages</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/tutorial/">tutorial</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/manual/">manual</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/utilities/">utilities</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/automatisch_inloggen_in_windows/">Automatically log in to Windows</a></h2>
-    
-    
-      <p>Tools</p>
-    
-  </div>
-  <div class="meta">
-    <time datetime="2022-03-09 11:58:22 &#43;0100 CET">March 9, 2022</time>
-    <p>van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    Entering a password or PIN is not equally convenient for everyone. Do you find it annoying to enter a password or PIN every time you log in to Windows? You can also automatically log in to Windows. When the computer has finished starting up, you will immediately see the desktop. On the desktop you can make all your useful programs accessible and you have that immediately in front of you when you have turned on the computer. You can then immediately start using the computer, without having to...
-  </div>
-  <footer>
-    <a href="/en/blog/automatisch_inloggen_in_windows/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/actions/">actions</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/utilities/">utilities</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/automatic/">automatic</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/automatically/">automatically</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/log/">log</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/login/">login</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/autologon/">autologon</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/actions/">actions</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/utilities/">utilities</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/">New content for your website via a web page</a></h2>
+      <h2><a href="/en/blog/2024-configure-ldap-ipa-server-with-nexus/">Configure LDAP/IPA Server with Nexus</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2022-02-25 11:44:45.912 &#43;0000 UTC">February 25, 2022</time>
+    <time datetime="2024-03-09 17:37:42.65 &#43;0000 UTC">March 9, 2024</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
@@ -865,11 +737,32 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
 
   <div class="content">
     
-    Add Netlify CMS to your website to add new content via a web page instead of the command line.
+    ===
+Nexus
+Sonatype Nexus Repository
+OSS 3.60.0-02
+=﻿==
+LDAP
+ldap://&lt;IP_SERVER&gt;:389
+cn=users,cn=accounts,dc=,dc=com
+Simple Authentication
+uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com
+Next
+=﻿==
+Select no template
+User relative DN = leeg
+User subtree = unchecked
+Object class: inetOrgPerson
+User filter = leeg
+User ID attribute = uid
+Real name attribute = cn
+Email attribute = mail
+Password attribute = leeg
+Map LDAP groups as roles = unchecked
 
   </div>
   <footer>
-    <a href="/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/" class="button big">Read More</a>
+    <a href="/en/blog/2024-configure-ldap-ipa-server-with-nexus/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -884,19 +777,15 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/nieuwe/">Nieuwe</a></li>
+          <li><a class="article-terms-link" href="/en/tags/configure/">configure</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/content/">content</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/hugo/">Hugo</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/website/">website</a></li>
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/webpagina/">webpagina</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/netlify/">Netlify</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/cms/">CMS</a></li>
+          <li><a class="article-terms-link" href="/en/tags/nexus/">nexus</a></li>
         
       
     </ul>
@@ -911,12 +800,12 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/">New life in an old Apple computer (iMac, MacBook)</a></h2>
+      <h2><a href="/en/blog/2024-configure-ldap-ipa-server-with-sonarqube/">Configure LDAP/IPA Server with Sonarqube</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2022-02-25 11:09:02.25 &#43;0000 UTC">February 25, 2022</time>
+    <time datetime="2024-03-09 17:35:22.094 &#43;0000 UTC">March 9, 2024</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
@@ -924,11 +813,25 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
 
   <div class="content">
     
-    Install the VirtualBox application and run a virtual machine inside it with the latest version of Linux or Windows. In many cases this can solve problems with browsing the internet — for example, making it possible to visit websites that no longer work in the old Apple environment.
-
+    Configure LDAP/IPA Server with Sonarqube
+===
+Sonarqube
+8.9.6
+sonar.properties
+sonarqube-8.9.6/conf/sonar.properties
+=﻿==
+sonar.security.realm=LDAP
+ldap.url=ldap://&lt;IP_SERVER&gt;:389
+ldap.bindDn=uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com
+ldap.bindPassword=
+ldap.authentication=simple
+ldap.user.baseDn=cn=users,cn=accounts,dc=,dc=com
+# laat volgende default
+# ldap.user.request=
+# LDAP user request. (default: (&amp;(objectClass=inetOrgPerson)(uid={login})) )...
   </div>
   <footer>
-    <a href="/en/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/" class="button big">Read More</a>
+    <a href="/en/blog/2024-configure-ldap-ipa-server-with-sonarqube/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -943,33 +846,15 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/nieuw/">nieuw</a></li>
+          <li><a class="article-terms-link" href="/en/tags/configure/">configure</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/leven/">leven</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/oude/">oude</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/apple/">Apple</a></li>
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/computer/">computer</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/mac/">Mac</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/imac/">iMac</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/macbook/">Macbook</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/macos/">macOS</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/virtual/">virtual</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/machines/">machines</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/virtualbox/">VirtualBox</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/linux/">Linux</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/windows/">Windows</a></li>
+          <li><a class="article-terms-link" href="/en/tags/sonarqube/">sonarqube</a></li>
         
       
     </ul>
@@ -984,33 +869,33 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/gehele_webpagina_opslaan/">Save an entire webpage</a></h2>
+      <h2><a href="/en/blog/2024-ldap-ipa-server-command-line-searches/">LDAP/IPA Server command line searches</a></h2>
     
-    
-      <p>Commands</p>
     
   </div>
   <div class="meta">
-    <time datetime="2021-12-19 09:50:22 &#43;0100 CET">December 19, 2021</time>
-    <p>van den Boom</p>
+    <time datetime="2024-03-09 17:34:27.901 &#43;0000 UTC">March 9, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
 </header>
 
   <div class="content">
     
-    In the web browser Microsoft Edge: &gt; click the 3 dots in the top right corner: ... &gt; choose the option: Web capture (Ctrl&#43;Shift&#43;S) &gt; choose the option: Capture full page &gt; click the button: Save &gt; an image of type .jpeg will now be saved in your personal directory: Downloads
+    $ ldapsearch -H ldap://&lt;FQDN_SERVER&gt;/ -b dc=,dc=com -x
+$ ldapsearch -x -LLL -H ldap:/// -b dc=,dc=com dn
+$ ldapwhoami -x -H ldap:///
+$ ldapsearch -H ldap://&lt;IP_SERVER&gt; -D &amp;ldquo;uid=&lt;ADMIN_USER&gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;cn=users,cn=accounts,dc=,dc=com&amp;rdquo; -x -W
+$ ldapsearch -H ldap://&lt;IP_SERVER&gt; -D &amp;ldquo;uid=&lt;ADMIN_USER&gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;dc=,dc=com&amp;rdquo; -x -W -s one...
   </div>
   <footer>
-    <a href="/en/blog/gehele_webpagina_opslaan/" class="button big">Read More</a>
+    <a href="/en/blog/2024-ldap-ipa-server-command-line-searches/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
       
         
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/handelingen/">handelingen</a></li>
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
         
       
     </ul>
@@ -1019,13 +904,136 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/webpagina/">webpagina</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/opslaan/">opslaan</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/html/">html</a></li>
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/afbeelding/">afbeelding</a></li>
+          <li><a class="article-terms-link" href="/en/tags/command/">command</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/line/">line</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/searches/">searches</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-ldap-ipa-server-client-installation/">LDAP/IPA Server client installation</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-03-09 17:33:26.773 &#43;0000 UTC">March 9, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    ===
+# yum install ipa-client
+# ipa-client-install &amp;ndash;server= &amp;ndash;domain= &amp;ndash;principal=admin -W
+# ipa-client-install &amp;ndash;server=&lt;ipa-server.example.com&gt; &amp;ndash;domain=&lt;example.com&gt; &amp;ndash;principal=admin -W
+
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ldap-ipa-server-client-installation/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/client/">client</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/installation/">installation</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-ldap-ipa-server-installation/">LDAP/IPA Server installation</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-03-09 17:31:40.399 &#43;0000 UTC">March 9, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    ===
+# yum install ipa-server
+# ipa-server-install
+===
+Hosts file aanpassen
+De FQDN voor op, daarna pas de aliassen
+/etc/hosts
+&lt;IP_SERVER&gt; ()
+Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.
+
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ldap-ipa-server-installation/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/installation/">installation</a></li>
         
       
     </ul>
@@ -1088,8 +1096,8 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -1112,7 +1120,13 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -1131,12 +1145,6 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

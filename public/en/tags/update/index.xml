@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Update on Notities</title>
+    <link>http://localhost:1313/en/tags/update/</link>
+    <description>Recent content in Update on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Apr 2025 14:27:55 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/update/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OCLP update gives a circle with diagonal at boot</title>
+      <link>http://localhost:1313/en/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/</link>
+      <pubDate>Fri, 04 Apr 2025 14:27:55 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/</guid>
+      <description>&lt;p&gt;What Mac are you using?&lt;br&gt;&#xA;iMac (Retina 5K, 27-inch, Late 2015)&lt;br&gt;&#xA;Model Identifiers: iMac17,1&lt;br&gt;&#xA;&lt;br&gt;&#xA;What version of OCLP are you using?&lt;br&gt;&#xA;2.3.1&lt;br&gt;&#xA;&lt;br&gt;&#xA;What OS version do you have installed or are trying to install?&lt;br&gt;&#xA;Installed: Sequoia 15.3.2 (24D81)&lt;br&gt;&#xA;&lt;br&gt;&#xA;What exactly is the problem you are facing?&lt;br&gt;&#xA;After installing OCLP 2.3.1 to disk my iMac refuses to boot. At boot I press the Option key to get the menu I choose the blue OCLP icon. Normally it proceeds with the apple logo but now it shows a circle with a diagonal. &lt;br&gt;&#xA;Luckily with my old USB stick that has OCLP 2.2.0 I booted of my USB. That worked fine. Then I mounted my EFI removed the OC folder and replaced it with the one from my USB stick. So now my iMac boots again but with 2.2.0&lt;br&gt;&#xA;Use the tool: MountEFI Available on GitHub: &lt;a href=&#34;https://github.com/corpnewt/MountEFI&#34; title=&#34;https\://github.com/corpnewt/MountEFI&#34;&gt;https://github.com/corpnewt/MountEFI&lt;/a&gt;&lt;br&gt;&#xA;&lt;br&gt;&#xA;N﻿ow I have been able to fix it with the following settings in OCLP:&lt;br&gt;&#xA;My iMac is a late 2015 27&amp;quot; with Model nr 17,1&lt;/br&gt;&lt;br&gt;&#xA;In the OCLP utility in settings I put:&lt;/br&gt;&#xA;Target Model: 17,1&lt;/br&gt;&#xA;Build: Debug: Check all 3 options: Verbose, Kext Debugging and OpenCore Debugging&lt;/br&gt;&#xA;Extra&amp;rsquo;s: Check: 3rd Party NVMe PM&lt;/br&gt;&#xA;Security: Check all the options under SIP&lt;/br&gt;&#xA;SMBIOS: SMBIOS Spoof Level: Moderate and SMBIOS Spoof Model: iMac19,1&lt;/br&gt;&#xA;Then I Build and Install OpenCore to disk&lt;/br&gt;&lt;br&gt;&#xA;&lt;br&gt;&#xA;By the way in the mean time OCLP was updated to 2.3.2 and I used this version.&lt;/br&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -493,12 +493,7 @@
   
   <a href="#" lang="nl" class="nav link active">Nederlands (nl)</a>
   
-    
-      
-        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
-      
-    
-      
+      <a href="http://localhost:1313/en/tags/guest/" lang="en" class="nav link">English (en)</a>
     
   
 
@@ -655,7 +650,7 @@
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/">Installing VirtualBox Guest Additions on AlmaLinux 8.10</a></h2>
+      <h2><a href="/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/">VirtualBox Guest Additions installeren op AlmaLinux 8.10</a></h2>
     
     
   </div>
@@ -670,18 +665,18 @@
     
      $ sudo dnf update
 $ sudo reboot
-(So any new installed kernel will be loaded)
+(Zodat een nieuw geïnstalleerde kernel wordt geladen)
 $ sudo dnf install gcc kernel-devel kernel-headers make bzip2 perl
-Go to the VirtualBox Menu &gt; Devices &gt; Insert Guest Additions CD image
-Automated:
-Press Run
-Manual:
-$ cd /run/media/$USER/VBox_GAs_*/ # Adjust path if needed
+Ga naar het VirtualBox-menu &gt; Apparaten &gt; Guest Additions-cd-image invoegen
+Automatisch:
+Klik op Uitvoeren
+Handmatig:
+$ cd /run/media/$USER/VBox_GAs_*/ # Pas het pad aan indien nodig
 $ sudo ./VBoxLinuxAdditions.run
 $ sudo reboot
-Verification:
+Verificatie:
 $ lsmod | grep vbox
-(Check to see if vboxguest is listed)
+(Controleer of vboxguest wordt vermeld)
 
   </div>
   <footer>
@@ -725,7 +720,7 @@ $ lsmod | grep vbox
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/">Installing the VirtualBox Guest Additions on Rocky Linux 9.3</a></h2>
+      <h2><a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/">De VirtualBox Guest Additions installeren op Rocky Linux 9.3</a></h2>
     
     
   </div>
@@ -738,8 +733,8 @@ $ lsmod | grep vbox
 
   <div class="content">
     
-    Installing the VirtualBox Guest Additions on Rocky Linux 9.3
-dnf install epel-release dnf update --refresh dnf update kernel-* reboot (optional) dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel rpm -q kernel-devel uname -r Top menu: Devices -&gt; Insert Guest Additions CD-Image Run (optional) cd /run/media/ ./VBoxLinuxAdditions.run 
+    De VirtualBox Guest Additions installeren op Rocky Linux 9.3
+dnf install epel-release dnf update --refresh dnf update kernel-* reboot (optioneel) dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel rpm -q kernel-devel uname -r Bovenmenu: Apparaten -&gt; Gast-uitbreidingen CD-image invoegen Uitvoeren (optioneel) cd /run/media/ ./VBoxLinuxAdditions.run 
   </div>
   <footer>
     <a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/" class="button big">Lees verder</a>
@@ -828,7 +823,7 @@ dnf install epel-release dnf update --refresh dnf update kernel-* reboot (option
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</a></h2>
           <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">1 Juli 2025</time>
         </header>
       </article>

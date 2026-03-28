@@ -650,12 +650,12 @@
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/">LDAP/IPA - Server on Red Hat Enterprise Linux 7</a></h2>
+      <h2><a href="/en/blog/2024-configure-ldap-ipa-server-with-jenkins/">Configure LDAP/IPA Server with Jenkins </a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2024-02-15 10:47:28.702 &#43;0000 UTC">February 15, 2024</time>
+    <time datetime="2024-03-09 17:38:50.197 &#43;0000 UTC">March 9, 2024</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
@@ -663,14 +663,30 @@
 
   <div class="content">
     
-    If you are using a hosts file, make sure it contains FQDNs and pay close attention to the order in which they appear.
-Check the hosts file and adjust it if necessary:
-The FQDN must come first, followed by any aliases.
-/etc/hosts 10.0.0.1 server1.example.com server1 application1 If an alias is listed before the FQDN, you may encounter error messages that are not immediately traceable to this cause.
-
+    ===
+Identity, Policy, and Audit (IPA) system
+===
+Jenkins
+2.319.2
+=﻿==
+Dashboard -&gt; Security -&gt; Configure Global Security
+Server:
+ldap://&lt;IP_SERVER&gt;:389
+root DN:
+dc=,dc=com
+User search base
+cn=users,cn=accounts
+User search filter
+uid={0}
+Group search base
+cn=groups,cn=accounts
+Group membership -&gt; Search for LDAP groups containing user -&gt; Group membership filter:
+(| (member={0}) (uniqueMember={0}) (memberUid={1}))
+Manager DN:
+uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com...
   </div>
   <footer>
-    <a href="/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/" class="button big">Read More</a>
+    <a href="/en/blog/2024-configure-ldap-ipa-server-with-jenkins/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -685,21 +701,339 @@ The FQDN must come first, followed by any aliases.
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/ldap/">ldap</a></li>
+          <li><a class="article-terms-link" href="/en/tags/configure/">configure</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/ipa/">ipa</a></li>
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
         
           <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/rhel/">rhel</a></li>
+          <li><a class="article-terms-link" href="/en/tags/jenkins/">jenkins</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/red/">red</a></li>
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-configure-ldap-ipa-server-with-nexus/">Configure LDAP/IPA Server with Nexus</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-03-09 17:37:42.65 &#43;0000 UTC">March 9, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    ===
+Nexus
+Sonatype Nexus Repository
+OSS 3.60.0-02
+=﻿==
+LDAP
+ldap://&lt;IP_SERVER&gt;:389
+cn=users,cn=accounts,dc=,dc=com
+Simple Authentication
+uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com
+Next
+=﻿==
+Select no template
+User relative DN = leeg
+User subtree = unchecked
+Object class: inetOrgPerson
+User filter = leeg
+User ID attribute = uid
+Real name attribute = cn
+Email attribute = mail
+Password attribute = leeg
+Map LDAP groups as roles = unchecked
+
+  </div>
+  <footer>
+    <a href="/en/blog/2024-configure-ldap-ipa-server-with-nexus/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
         
-          <li><a class="article-terms-link" href="/en/tags/hat/">hat</a></li>
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
         
-          <li><a class="article-terms-link" href="/en/tags/7/">7</a></li>
+          <li><a class="article-terms-link" href="/en/tags/configure/">configure</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/nexus/">nexus</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-configure-ldap-ipa-server-with-sonarqube/">Configure LDAP/IPA Server with Sonarqube</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-03-09 17:35:22.094 &#43;0000 UTC">March 9, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Configure LDAP/IPA Server with Sonarqube
+===
+Sonarqube
+8.9.6
+sonar.properties
+sonarqube-8.9.6/conf/sonar.properties
+=﻿==
+sonar.security.realm=LDAP
+ldap.url=ldap://&lt;IP_SERVER&gt;:389
+ldap.bindDn=uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com
+ldap.bindPassword=
+ldap.authentication=simple
+ldap.user.baseDn=cn=users,cn=accounts,dc=,dc=com
+# laat volgende default
+# ldap.user.request=
+# LDAP user request. (default: (&amp;(objectClass=inetOrgPerson)(uid={login})) )...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-configure-ldap-ipa-server-with-sonarqube/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/configure/">configure</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/sonarqube/">sonarqube</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-ldap-ipa-server-command-line-searches/">LDAP/IPA Server command line searches</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-03-09 17:34:27.901 &#43;0000 UTC">March 9, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    $ ldapsearch -H ldap://&lt;FQDN_SERVER&gt;/ -b dc=,dc=com -x
+$ ldapsearch -x -LLL -H ldap:/// -b dc=,dc=com dn
+$ ldapwhoami -x -H ldap:///
+$ ldapsearch -H ldap://&lt;IP_SERVER&gt; -D &amp;ldquo;uid=&lt;ADMIN_USER&gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;cn=users,cn=accounts,dc=,dc=com&amp;rdquo; -x -W
+$ ldapsearch -H ldap://&lt;IP_SERVER&gt; -D &amp;ldquo;uid=&lt;ADMIN_USER&gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;dc=,dc=com&amp;rdquo; -x -W -s one...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ldap-ipa-server-command-line-searches/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/command/">command</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/line/">line</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/searches/">searches</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-ldap-ipa-server-client-installation/">LDAP/IPA Server client installation</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-03-09 17:33:26.773 &#43;0000 UTC">March 9, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    ===
+# yum install ipa-client
+# ipa-client-install &amp;ndash;server= &amp;ndash;domain= &amp;ndash;principal=admin -W
+# ipa-client-install &amp;ndash;server=&lt;ipa-server.example.com&gt; &amp;ndash;domain=&lt;example.com&gt; &amp;ndash;principal=admin -W
+
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ldap-ipa-server-client-installation/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/client/">client</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/installation/">installation</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-ldap-ipa-server-installation/">LDAP/IPA Server installation</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-03-09 17:31:40.399 &#43;0000 UTC">March 9, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    ===
+# yum install ipa-server
+# ipa-server-install
+===
+Hosts file aanpassen
+De FQDN voor op, daarna pas de aliassen
+/etc/hosts
+&lt;IP_SERVER&gt; ()
+Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.
+
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ldap-ipa-server-installation/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/installation/">installation</a></li>
         
       
     </ul>
@@ -712,6 +1046,8 @@ The FQDN must come first, followed by any aliases.
   
   <div class="pagination">
     
+    
+      <a href="/en/tags/ipa/page/2/" class="button right"><span>Next Page</span></a>
     
   </div>
 
@@ -758,8 +1094,8 @@ The FQDN must come first, followed by any aliases.
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -782,7 +1118,13 @@ The FQDN must come first, followed by any aliases.
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -801,12 +1143,6 @@ The FQDN must come first, followed by any aliases.
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

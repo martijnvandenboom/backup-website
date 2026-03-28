@@ -9,11 +9,11 @@
     <lastBuildDate>Sun, 17 Sep 2023 12:29:24 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ms-dos/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Sharing files with MS-DOS 6.22 in VirtualBox and macOS</title>
+      <title>Bestanden delen met MS-DOS 6.22 in VirtualBox en macOS</title>
       <link>http://localhost:1313/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link>
       <pubDate>Sun, 17 Sep 2023 12:29:24 +0000</pubDate>
       <guid>http://localhost:1313/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid>
-      <description>&lt;p&gt;How to create an ISO file of a directory on macOS that can be mounted as a CDROM in MS-DOS 6.22 ?&lt;/p&gt;&#xA;&lt;p&gt;Start Disk Utility on macOS&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Go to: File -&amp;gt; New Image -&amp;gt; Image from Folder&lt;/li&gt;&#xA;&lt;li&gt;Choose the directory and press Choose&lt;/li&gt;&#xA;&lt;li&gt;Set Image Format to: DVD/CD master and press Save&lt;/li&gt;&#xA;&lt;li&gt;A *.cdr file will be created&lt;/li&gt;&#xA;&lt;li&gt;Go to the command line&lt;/li&gt;&#xA;&lt;li&gt;Cd to the directory with the *.cdr file&lt;/li&gt;&#xA;&lt;li&gt;Type the command: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr&lt;/li&gt;&#xA;&lt;li&gt;Go to your virtual machine running MS-DOS 6.22 and mount the newly created *.iso file&lt;/li&gt;&#xA;&lt;li&gt;In the MS-DOS 6.22 virtual machine you can now access the contents on drive D: &lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/br&gt;&#xA;&lt;p&gt;Any questions?&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hoe maak je een ISO-bestand van een map op macOS dat als CDROM gekoppeld kan worden in MS-DOS 6.22?&lt;/p&gt;&#xA;&lt;p&gt;Start Schijfhulpprogramma op macOS&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ga naar: Archief -&amp;gt; Nieuwe afbeelding -&amp;gt; Afbeelding van map&lt;/li&gt;&#xA;&lt;li&gt;Kies de map en druk op Kies&lt;/li&gt;&#xA;&lt;li&gt;Stel Afbeeldingsformaat in op: DVD/CD-master en druk op Bewaar&lt;/li&gt;&#xA;&lt;li&gt;Er wordt een *.cdr-bestand aangemaakt&lt;/li&gt;&#xA;&lt;li&gt;Ga naar de opdrachtregel&lt;/li&gt;&#xA;&lt;li&gt;Navigeer naar de map met het *.cdr-bestand&lt;/li&gt;&#xA;&lt;li&gt;Typ het commando: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr&lt;/li&gt;&#xA;&lt;li&gt;Ga naar je virtuele machine met MS-DOS 6.22 en koppel het nieuw aangemaakte *.iso-bestand&lt;/li&gt;&#xA;&lt;li&gt;In de MS-DOS 6.22 virtuele machine heb je nu toegang tot de inhoud op station D:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/br&gt;&#xA;&lt;p&gt;Vragen?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 ---
-title: The Linux mlocate command on macOS
+title: Het Linux mlocate-commando op macOS
 date: 2023-09-27T17:40:13.885Z
 draft: false
 categories:
@@ -14,7 +14,7 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-**The Linux mlocate command under macOS**
+**Het Linux mlocate-commando op macOS**
 
 ```
 sudo /usr/libexec/locate.updatedb

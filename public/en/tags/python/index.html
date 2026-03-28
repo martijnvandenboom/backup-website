@@ -650,6 +650,189 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/">SSH in remote machine with SSH keys and run command in new Python 3</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-04-03 20:20:39.976 &#43;0000 UTC">April 3, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    T﻿o make a script to run remote commands in a client server network.
+import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [&#39;ssh&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(&amp;#34;Error:&amp;#34;, error) else: print(&amp;#34;Output:&amp;#34;, output) # Replace these with your actual credentials...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ssh/">ssh</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/remote/">remote</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/machine/">machine</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/keys/">keys</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/commands/">commands</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/new/">new</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/python/">python</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/">SSH in remote machine with SSH keys and run command in old Python 2</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-04-03 20:12:58.29 &#43;0000 UTC">April 3, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.
+import subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = [&#39;ssh&#39;, &#39;-i&#39;, private_key_path, &#39;-o&#39;, &#39;StrictHostKeyChecking=no&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE )...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ssh/">ssh</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/remote/">remote</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/machine/">machine</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/keys/">keys</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/command/">command</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/old/">old</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/python/">python</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/">Prevent opening Windows 11 Store when typing the command python</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2022-12-01 19:30:38.507 &#43;0000 UTC">December 1, 2022</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Step 1: Open Settings in Windows 11
+Step 2: Go to Apps
+Step 3: Go to Advanced app settings
+Step 4: Go to App execution aliases
+Step 5: Disable the option for python.exe and python3.exe
+
+  </div>
+  <footer>
+    <a href="/en/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/prevent/">prevent</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/opening/">opening</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/store/">store</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/when/">when</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/typing/">typing</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/command/">command</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/python/">python</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/">Python dependencies when installing Oracle VirtualBox on Windows 11</a></h2>
     
     
@@ -878,8 +1061,8 @@ $ python3.9 &amp;ndash;version
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -902,7 +1085,13 @@ $ python3.9 &amp;ndash;version
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -921,12 +1110,6 @@ $ python3.9 &amp;ndash;version
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

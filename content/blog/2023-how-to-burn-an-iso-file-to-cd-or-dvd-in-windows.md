@@ -1,5 +1,5 @@
 ---
-title: How to burn an *.iso file to CD or DVD in Windows
+title: Hoe brand je een *.iso-bestand naar cd of dvd in Windows
 date: 2023-07-21T17:04:59.537Z
 draft: false
 categories:
@@ -16,4 +16,4 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-In File Explorer right-click on the \*.ISO file and choose Properties.</br>Then, click Change from the General tab, choose Windows Explorer, and click OK.</br>Next, save the change by clicking Apply > OK</br> Now right click on the \*.ISO file and choose: Burn disc image or on: Show more options to find this.
+Klik in Verkenner met de rechtermuisknop op het \*.ISO-bestand en kies Eigenschappen.</br>Klik vervolgens op Wijzigen op het tabblad Algemeen, kies Windows Verkenner en klik op OK.</br>Sla de wijziging daarna op door op Toepassen > OK te klikken.</br> Klik nu met de rechtermuisknop op het \*.ISO-bestand en kies: Schijfimage branden, of kies: Meer opties weergeven om dit te vinden.

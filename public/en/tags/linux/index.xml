@@ -16,6 +16,27 @@
       <description>&lt;p&gt;With Deskflow you control multiple computers — macOS, Windows or Linux — using a single mouse and keyboard. It works as a software-based KVM switch (without video) and is sponsored by Synergy. This program is still actively maintained, with an intuitive interface that makes it easy to use. Tip: disable TLS in the settings for a smooth start.&lt;/p&gt;&#xA;&lt;p&gt;Download it via: &lt;a href=&#34;https://github.com/deskflow/deskflow/releases&#34;&gt;https://github.com/deskflow/deskflow/releases&lt;/a&gt;. Look for the &amp;ldquo;latest&amp;rdquo; tag and check all assets for the correct version!&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Installing Oracle VirtualBox on Ubuntu Linux</title>
+      <link>http://localhost:1313/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
+      <pubDate>Sun, 23 Mar 2025 13:20:53 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
+      <description>&lt;p&gt;T﻿ry the following steps:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo apt upgrade&lt;br&gt;&#xA;$﻿ sudo apt install curl&lt;br&gt;&#xA;$﻿ curl -fsSL &lt;a href=&#34;https://www.virtualbox.org/download/oracle_vbox_2016.asc&#34;&gt;https://www.virtualbox.org/download/oracle_vbox_2016.asc&lt;/a&gt; | sudo gpg &amp;ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg&lt;br&gt;&#xA;$﻿ echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] &lt;a href=&#34;http://download.virtualbox.org/virtualbox/debian&#34;&gt;http://download.virtualbox.org/virtualbox/debian&lt;/a&gt; noble contrib&amp;rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list&lt;br&gt;&#xA;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo search virtualbox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox/noble-updates 7.0.16-dfsg-2ubuntu1.1 amd64&#xA;x86 virtualization solution - base binaries&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.0/unknown 7.0.24-167081~Ubuntu~noble amd64&#xA;Oracle VM VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.1/unknown 7.1.6-167084~Ubuntu~noble amd64&#xA;Oracle VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;$﻿ sudo install virtualbox-7.1&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;D﻿ownload the Extension Pack frm the website: &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;https://www.virtualbox.org/wiki/Downloads&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tips for using XRDP on Ubuntu Linux</title>
+      <link>http://localhost:1313/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</link>
+      <pubDate>Sun, 23 Mar 2025 12:51:59 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</guid>
+      <description>&lt;p&gt;T﻿o be able to use XRDP on Ubuntu Linux try the following instructions:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$ s﻿udo apt update &lt;br&gt;&#xA;$ s﻿udo apt upgrade&lt;br&gt;&#xA;$ s﻿udo apt install xrdp&lt;br&gt;&#xA;$ echo &amp;ldquo;gnome-session &amp;ndash;session=ubuntu&amp;rdquo; &amp;gt; ~/.xsession&lt;br&gt;&#xA;$ echo &amp;ldquo;export DISPLAY=:10.0&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$ echo &amp;ldquo;xhost +&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$﻿ ip a&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;R﻿emember write down your IP address of your system and to log out of your graphical user session.&lt;/p&gt;&#xA;&lt;p&gt;N﻿ow try to login to your system with a RDP tool.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install Microsoft Visual Studio Code in Linux from the repo</title>
+      <link>http://localhost:1313/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link>
+      <pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid>
+      <description>&lt;p&gt;F﻿ollow the below steps to install Microsoft Visual Studio Code IDE on Linux from its repository:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;sudo rpm &amp;ndash;import &lt;a href=&#34;https://packages.microsoft.com/keys/microsoft.asc&#34;&gt;https://packages.microsoft.com/keys/microsoft.asc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;sudo sh -c &amp;rsquo;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &amp;gt; /etc/yum.repos.d/vscode.repo&#39;&lt;/p&gt;&#xA;&lt;p&gt;sudo dnf install code -y&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
       <title>LDAP/IPA - Server on Red Hat Enterprise Linux 7</title>
       <link>http://localhost:1313/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link>
       <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
@@ -28,6 +49,41 @@
       <pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate>
       <guid>http://localhost:1313/en/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
       <description>&lt;p&gt;Below is the source code of a C program to create a Zombie process in Linux and analyse it.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;sys/types.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;unistd.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt; ()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;pid_t&lt;/span&gt; child_pid;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  child_pid &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fork&lt;/span&gt; ();&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (child_pid &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;sleep&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;exit&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Compile the C source code into an executable program:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gcc create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Start the program:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./a.out&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open a second Terminal and view the process list. You will now see a process with STAT: Z and the text: defunct&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Checkmk installation on Rocky Linux 9.3</title>
+      <link>http://localhost:1313/en/blog/2024-checkmk-installation-on-rocky-linux-9-3/</link>
+      <pubDate>Tue, 16 Jan 2024 21:13:15 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2024-checkmk-installation-on-rocky-linux-9-3/</guid>
+      <description>&lt;p&gt;Checkmk installation on Rocky Linux 9.3&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;&#xA;setsebool -P httpd_can_network_connect 1&#xA;&#xA;firewall-cmd --zone=public --add-service=http --permanent&#xA;firewall-cmd --reload&#xA;&#xA;wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;&#xA;omd version&#xA;omd create monitoring&#xA;omd start monitoring&#xA;&#xA;http://localhost.localdomain/monitoring/&#xA;user: cmkadmin with password: &amp;lt;given&amp;gt;&#xA;&#xA;omd su monitoring (For command line administration of the site.)&#xA;cmk-passwd cmkadmin (After logging in, you can change the password for cmkadmin with.)&#xA;&#xA;(optional)&#xA;omd status&#xA;omd sites&#xA;omd help&#xA;&#xA;(optional for after reboot if you get the error: Unable to connect)&#xA;omd update-apache-config monitoring&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Installing the VirtualBox Guest Additions on Rocky Linux 9.3</title>
+      <link>http://localhost:1313/en/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
+      <pubDate>Tue, 16 Jan 2024 21:08:26 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Installing the VirtualBox Guest Additions on Rocky Linux 9.3&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;dnf update --refresh&#xA;dnf update kernel-*&#xA;reboot (optional)&#xA;&#xA;dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel&#xA;&#xA;rpm -q kernel-devel&#xA;uname -r&#xA;&#xA;Top menu: Devices -&amp;gt; Insert Guest Additions CD-Image&#xA;Run&#xA;&#xA;(optional)&#xA;cd /run/media/&#xA;./VBoxLinuxAdditions.run&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>The Linux mlocate command on macOS</title>
+      <link>http://localhost:1313/en/blog/2023-the-linux-mlocate-command-under-macos/</link>
+      <pubDate>Wed, 27 Sep 2023 17:40:13 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-the-linux-mlocate-command-under-macos/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;The Linux mlocate command under macOS&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo /usr/libexec/locate.updatedb&#xA;&#xA;sudo ln -s /usr/libexec/locate.updatedb /usr/local/bin/updatedb&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Linux disk space information more clearly excluding the denied and cannot messages</title>
+      <link>http://localhost:1313/en/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</link>
+      <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</guid>
+      <description>&lt;p&gt;$ du -hs * 2&amp;gt; &amp;gt;(egrep -iv &amp;lsquo;permission denied|cannot access&amp;rsquo;) | sort -n&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux locate lost storage space difference between results df and du</title>
+      <link>http://localhost:1313/en/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</link>
+      <pubDate>Tue, 05 Sep 2023 06:18:17 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</guid>
+      <description>&lt;p&gt;$ lsof | grep -E &amp;lsquo;^COM|deleted&amp;rsquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automatically log in to a Linux server using PuTTY on Windows</title>

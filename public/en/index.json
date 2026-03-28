@@ -23,11 +23,77 @@
     "body": "P.S. Special thanks to Maria Isabel Rondini\nShe inspired this article as part of the research for her thesis, where she could use some extra attention for the tool ImageCompressor. Do you want to make your photos smaller in size without losing quality? Good news: you don’t need to install any software for that! With the online tool ImageCompressor, you can simply upload your photos and compress them directly in your browser. That means it doesn’t matter whether you’re working on Windows, Linux, or macOS—as long as you have an internet connection, you can easily compress your photos.\nAdvantages of compressed photos:\nWebsites load much faster when you upload optimized photos. You save storage space on your computer, cloud, or mobile device. Sharing photos by email, chat, or social media becomes quicker and more convenient. Reduced data usage is especially useful when uploading or downloading with a limited connection. Try it right away: ImageCompressor\n",
     "ref": "/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/"
   },{
+    "title": "How to activate the VirtualBox web-based API - VBoxWebSrv",
+    "date": "",
+    "description": "",
+    "body": "VBoxWebSrv is the VirtualBox Web Service that allows you to manage your VirtualBox virtual machines remotely through a web-based API. It is commonly used with tools like phpVirtualBox to provide a full web interface for VM control.\nBy running VBoxWebSrv as a Windows service, you ensure it starts automatically with your system and runs continuously in the background.\nInstalling VBoxWebSrv as a Windows Service with NSSM\nDownload NSSM (Non-Sucking Service Manager) from https://nssm.cc/download and extract it.\nOpen Command Prompt as Administrator and run:\nC:\\nssm\\win64\\nssm.exe install VBoxWebSrv In the NSSM GUI:\nSet Path to C:\\Progra~1\\Oracle\\VirtualBox\\VBoxWebSrv.exe\nSet Startup directory to C:\\Progra~1\\Oracle\\VirtualBox\nAdd arguments -H 0.0.0.0 -p 18083\nClick Install service\nStart the service with:\nC:\\nssm\\win64\\net start VBoxWebSrv O﻿pen the port 18083 in the Windows Firewall\nT﻿est if the service is available\nC:\\nssm\\win64\\netstat -an | findstr 18083 C:\\nssm\\win64\\curl http://localhost:18083/ C:\\nssm\\win64\\telnet localhost 18083 ",
+    "ref": "/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/"
+  },{
+    "title": "This version of BootCamp is not intented for this computer",
+    "date": "",
+    "description": "",
+    "body": "D﻿ear reader,\nR﻿ecently I updated my Windows version of my MacBook Pro 16,1 BootCamp setup to Windows 11. Now I ran into the problem that my build in keyboard and trackpad were not working anymore. I had to overcome this issue by connecting a separate keyboard and mouse on a USB port.\nI﻿ downloaded the software in the BootCamp utility on macOS that is compatible with my laptop, in this case version: Boot Camp drivers 6.1.6655. But when trying to startup the setup.exe I get the following error: This version of boot camp is not intented for this computer.\nT﻿o come around this follow the instructions below:\nInstallation via Command Line\nNavigate to the Boot Camp directory: Open a command prompt with administrator privileges # cd BootCamp\\Drivers\\Apple List the contents to confirm: # dir Force install the BootCamp drivers: #msiexec /i BootCamp.msi N﻿ow it starts the BootCamp driver installation procedure for all the Apple devices without the fatal error it presented before.\nE﻿njoy\n",
+    "ref": "/en/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/"
+  },{
+    "title": "Microsoft OneNote search not working anymore",
+    "date": "",
+    "description": "",
+    "body": " C﻿lose all Microsoft applications\nR﻿ename the cache folder in:\nC:\\Users\\\u0026lt;User\u0026gt;\\AppData\\Local\\Microsoft\\OneNote\\16.0\nR﻿estart OneNote\nP﻿.S.\nD﻿on\u0026rsquo;t worry if the Notebooks seem empty, they will be regenerated.\n",
+    "ref": "/en/blog/2025-microsoft-onenote-search-not-working-anymore/"
+  },{
+    "title": "OCLP update gives a circle with diagonal at boot",
+    "date": "",
+    "description": "",
+    "body": "What Mac are you using?\niMac (Retina 5K, 27-inch, Late 2015)\nModel Identifiers: iMac17,1\nWhat version of OCLP are you using?\n2.3.1\nWhat OS version do you have installed or are trying to install?\nInstalled: Sequoia 15.3.2 (24D81)\nWhat exactly is the problem you are facing?\nAfter installing OCLP 2.3.1 to disk my iMac refuses to boot. At boot I press the Option key to get the menu I choose the blue OCLP icon. Normally it proceeds with the apple logo but now it shows a circle with a diagonal. Luckily with my old USB stick that has OCLP 2.2.0 I booted of my USB. That worked fine. Then I mounted my EFI removed the OC folder and replaced it with the one from my USB stick. So now my iMac boots again but with 2.2.0\nUse the tool: MountEFI Available on GitHub: https://github.com/corpnewt/MountEFI\nN﻿ow I have been able to fix it with the following settings in OCLP:\nMy iMac is a late 2015 27\u0026quot; with Model nr 17,1\nIn the OCLP utility in settings I put: Target Model: 17,1 Build: Debug: Check all 3 options: Verbose, Kext Debugging and OpenCore Debugging Extra\u0026rsquo;s: Check: 3rd Party NVMe PM Security: Check all the options under SIP SMBIOS: SMBIOS Spoof Level: Moderate and SMBIOS Spoof Model: iMac19,1 Then I Build and Install OpenCore to disk\nBy the way in the mean time OCLP was updated to 2.3.2 and I used this version.\nR﻿eboot.\nAnd voila it works!\n",
+    "ref": "/en/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/"
+  },{
+    "title": "Installing GitLab on Docker in AlmaLinux 8.10",
+    "date": "",
+    "description": "",
+    "body": "Step 1: Update System\n$ sudo dnf update $ sudo dnf install epel-release $ sudo /usr/bin/crb enable Step 2: Install Docker from AlmaLinux Repo\n$ sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo $ sudo dnf remove -y podman podman-docker podman-plugins $ sudo dnf remove -y runc $ sudo dnf clean all $ sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin $ sudo systemctl enable --now docker $ sudo systemctl status docker $ sudo usermod -aG docker $USER Step 3: Logout and back in\n$ docker compose version Step 4: Set Up Persistent Storage\n$ sudo mkdir -p /srv/gitlab/{config,logs,data} $ sudo chown -R 1000:1000 /srv/gitlab $ sudo chmod -R 755 /srv/gitlab Step 5: Deploy GitLab with Docker\n$ cd Downloads $ mkdir gitlab $ cd gitlab $ vim docker-compose.yml version: '3' services: gitlab: image: gitlab/gitlab-ce:latest container_name: gitlab restart: always hostname: gitlab.example.com ports: - \"80:80\" - \"443:443\" - “2222:22\" volumes: - /srv/gitlab/config:/etc/gitlab - /srv/gitlab/logs:/var/log/gitlab - /srv/gitlab/data:/var/opt/gitlab shm_size: \"256m\" Step 6: Start GitLab\n$ docker compose up -d $ docker logs -f gitlab Step 7: Retrieve the Initial Root Password\n$ sudo cat /srv/gitlab/config/initial_root_password Step 8: (Optional) Enable HTTPS for Secure Access\nIf you have a .local domain Use a Self-Signed SSL Certificate Generate SSL Certificates:\n$ sudo mkdir -p /srv/gitlab/config/ssl $ cd /srv/gitlab/config/ssl $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout gitlab.vandenboom.local.key -out gitlab.vandenboom.local.crt Country Name (2 letter code) [XX]:NL State or Province Name (full name) []:UTRECHT Locality Name (eg, city) [Default City]:UTRECHT Organization Name (eg, company) [Default Company Ltd]:https://www.vandenboom.icu Organizational Unit Name (eg, section) []:private Common Name (eg, your name or your server''s hostname) []:gitlab.vandenboom.local Email Address []:martijn.vandenboom@icloud.com Set Correct Permissions\n$ sudo chmod 600 /srv/gitlab/config/ssl/* $ sudo chown 1000:1000 /srv/gitlab/config/ssl/* Update docker-compose.yml to Mount the SSL Directory\n$ cd ~/Downloads/gitlab $ vim docker-compose version: '3' services: gitlab: image: gitlab/gitlab-ce:latest container_name: gitlab restart: always hostname: gitlab.vandenboom.local ports: - \"80:80\" - \"443:443\" - \"2222:22\" # Avoid conflict with system SSH volumes: - /srv/gitlab/config:/etc/gitlab - /srv/gitlab/logs:/var/log/gitlab - /srv/gitlab/data:/var/opt/gitlab - /srv/gitlab/config/ssl:/etc/gitlab/ssl # Mount SSL directory correctly shm_size: \"256m\" Update gitlab.rb\n$ sudo vim /srv/gitlab/config/gitlab.rb external_url 'https://gitlab.vandenboom.local' nginx['ssl_certificate'] = \"/etc/gitlab/ssl/gitlab.vandenboom.local.crt\" nginx['ssl_certificate_key'] = \"/etc/gitlab/ssl/gitlab.vandenboom.local.key\" Reconfigure GitLab to apply changes:\n$ cd ~/Downloads/gitlab $ docker compose down $ docker compose up -d Reconfigure GitLab inside the container: $ docker exec -it gitlab gitlab-ctl reconfigure Restart GitLab: $ docker restart gitlab Step 9: Login to GitLab\nIn a browser open the link: http(s)://gitlab.example.com\nFor .local domain and self-signed certificates: Since it\u0026rsquo;s a self-signed certificate, your browser will show a security warning. You\u0026rsquo;ll need to manually trust the certificate.\nUsername: root Password: (Use the password from the previous step 7)\nStep 10: Change Your Password (Recommended)\nOnce logged in, go to Profile → Edit Profile → Password and set a new password.\nStep 11: Ensure Docker Compose Services Restart on Boot\n$ sudo vim /etc/systemd/system/gitlab.service [Unit] Description=GitLab Docker Container Requires=docker.service After=docker.service [Service] User=mboom Group=mboom Type=oneshot ExecStart=/usr/bin/docker compose -f /home/mboom/Downloads/gitlab/docker-compose.yml up -d ExecStop=/usr/bin/docker compose -f /home/mboom/Downloads/gitlab/docker-compose.yml down WorkingDirectory=/home/mboom/Downloads/gitlab TimeoutStartSec=30s RemainAfterExit=yes [Install] WantedBy=multi-user.target $ sudo systemctl daemon-reload $ sudo systemctl enable gitlab Verify GitLab starts after reboot: $ sudo reboot $ docker ps $ watch 'docker ps' Watch until the proces says: healthy, it take approx. 5 mins for it to be fully running Step X: Updating GitLab\nMake a backup of the volumes: $ sudo cp -a /srv/gitlab/config /srv/gitlab/config_$(date +\"%Y%m%d_%H%M%S\") $ sudo cp -a /srv/gitlab/logs /srv/gitlab/logs_$(date +\"%Y%m%d_%H%M%S\") $ sudo cp -a /srv/gitlab/data /srv/gitlab/data_$(date +\"%Y%m%d_%H%M%S\") $ docker compose down $ docker compose pull $ docker compose up -d ",
+    "ref": "/en/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/"
+  },{
+    "title": "Installing VirtualBox Guest Additions on AlmaLinux 8.10",
+    "date": "",
+    "description": "",
+    "body": " $ sudo dnf update\n$ sudo reboot\n(So any new installed kernel will be loaded)\n$ sudo dnf install gcc kernel-devel kernel-headers make bzip2 perl\nGo to the VirtualBox Menu \u0026gt; Devices \u0026gt; Insert Guest Additions CD image\nAutomated:\nPress Run\nManual:\n$ cd /run/media/$USER/VBox_GAs_*/ # Adjust path if needed\n$ sudo ./VBoxLinuxAdditions.run\n$ sudo reboot\nVerification:\n$ lsmod | grep vbox\n(Check to see if vboxguest is listed)\n",
+    "ref": "/en/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/"
+  },{
     "title": "Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux",
     "date": "",
     "description": "",
     "body": "With Deskflow you control multiple computers — macOS, Windows or Linux — using a single mouse and keyboard. It works as a software-based KVM switch (without video) and is sponsored by Synergy. This program is still actively maintained, with an intuitive interface that makes it easy to use. Tip: disable TLS in the settings for a smooth start.\nDownload it via: https://github.com/deskflow/deskflow/releases. Look for the \u0026ldquo;latest\u0026rdquo; tag and check all assets for the correct version!\n",
     "ref": "/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/"
+  },{
+    "title": "Installing Oracle VirtualBox on Ubuntu Linux",
+    "date": "",
+    "description": "",
+    "body": "T﻿ry the following steps:\n$﻿ sudo apt update\n$﻿ sudo apt upgrade\n$﻿ sudo apt install curl\n$﻿ curl -fsSL https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg \u0026ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg\n$﻿ echo \u0026ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] http://download.virtualbox.org/virtualbox/debian noble contrib\u0026rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list\n$﻿ sudo apt update\n$﻿ sudo search virtualbox\nvirtualbox/noble-updates 7.0.16-dfsg-2ubuntu1.1 amd64 x86 virtualization solution - base binaries\nvirtualbox-7.0/unknown 7.0.24-167081~Ubuntu~noble amd64 Oracle VM VirtualBox\nvirtualbox-7.1/unknown 7.1.6-167084~Ubuntu~noble amd64 Oracle VirtualBox\n$﻿ sudo install virtualbox-7.1\nD﻿ownload the Extension Pack frm the website: https://www.virtualbox.org/wiki/Downloads\n",
+    "ref": "/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/"
+  },{
+    "title": "Tips for using XRDP on Ubuntu Linux",
+    "date": "",
+    "description": "",
+    "body": "T﻿o be able to use XRDP on Ubuntu Linux try the following instructions:\n$ s﻿udo apt update $ s﻿udo apt upgrade\n$ s﻿udo apt install xrdp\n$ echo \u0026ldquo;gnome-session \u0026ndash;session=ubuntu\u0026rdquo; \u0026gt; ~/.xsession\n$ echo \u0026ldquo;export DISPLAY=:10.0\u0026rdquo; \u0026gt; ~/.bash_profile\n$ echo \u0026ldquo;xhost +\u0026rdquo; \u0026gt; ~/.bash_profile\n$﻿ ip a\nR﻿emember write down your IP address of your system and to log out of your graphical user session.\nN﻿ow try to login to your system with a RDP tool.\n",
+    "ref": "/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/"
+  },{
+    "title": "Install Microsoft Visual Studio Code in Linux from the repo",
+    "date": "",
+    "description": "",
+    "body": "F﻿ollow the below steps to install Microsoft Visual Studio Code IDE on Linux from its repository:\nsudo rpm \u0026ndash;import https://packages.microsoft.com/keys/microsoft.asc\nsudo sh -c \u0026rsquo;echo -e \u0026ldquo;[code]\\nname=Visual Studio Code\\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\\nenabled=1\\ngpgcheck=1\\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc\u0026rdquo; \u0026gt; /etc/yum.repos.d/vscode.repo'\nsudo dnf install code -y\n",
+    "ref": "/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/"
+  },{
+    "title": "Use of Golang, Java, C/C++, or Rust: A Quick Guide",
+    "date": "",
+    "description": "",
+    "body": "For real-time applications, Go and Rust are the top choices due to their lightweight concurrency and memory efficiency. Combine them for a balanced approach: Go for high-level logic and Rust for performance-critical tasks. Use C/C++ for legacy systems and Java for enterprise-level applications where real-time performance is less critical.\nWhen using Go, the chance of classic concurrency errors like race conditions, deadlocks, and resource leaks is significantly reduced. This is thanks to Go\u0026rsquo;s use of channels for safe communication between goroutines and its built-in garbage collector, which works seamlessly with the goroutine scheduler. This makes Go not only efficient but also more reliable and easier to debug in high-concurrency scenarios.\nChoose Go for simplicity and safety in real-time systems, and complement it with Rust or C/C++ when maximum performance and low-level control are required.\nM﻿emory per Thread Language Memory per Thread Use Case Real-Time Suitability Go ~2–8 KB Microservices, APIs, concurrency High (lightweight) Java ~1 MB Enterprise apps, Android Low (heavy threads) C/C++ ~1–2 KB Systems programming, games High (manual control) Rust ~1–2 KB Safe systems, real-time systems High (memory safety) ",
+    "ref": "/en/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/"
+  },{
+    "title": "Create support on your website for dark mode capability with a subtle icon",
+    "date": "",
+    "description": "",
+    "body": "D﻿ear reader,\nI﻿ would like to refer you to my GitHub page for a nice and simple project enabling the dark mode effect on a website. I want to share this with you so that it can inspire you and enable you to do a similar implementation that you can use on your own website.\nS﻿ee: https://github.com/martijnvandenboom/darkmode-test\nB﻿est regards,\nM﻿artijn\nP﻿.S. leave a message I would like to hear from from you\n",
+    "ref": "/en/blog/2025-create-support-on-your-website-for-dark-mode-capability-with-a-subtile-icon/"
   },{
     "title": "Contact",
     "date": "",
@@ -41,11 +107,89 @@
     "body": "Creating animations service\nCreating animations service\nBring Your Ideas to Life with Stunning Animations\nAt \u0026ldquo;van den Boom Animations\u0026rdquo;, we specialize in crafting custom animations that captivate and engage your audience. Whether you\u0026rsquo;re looking to enhance your website, advertise your brand, or add an eye-catching effect to your project, our team is here to transform your vision into motion. From smooth transitions and dynamic visuals to attractive animations, we offer tailored solutions to make your content stand out. Let us help you tell your story through the magic of animation!\nWhat We Offer:\nWe offer a wide range of animation services to suit every need. Whether you\u0026rsquo;re looking for dynamic website animations, engaging social media visuals, or motion graphics for your next video project, we’ve got you covered. Our expertise includes everything from logo animations to 2D/3D motion graphics. We work closely with you to create custom animations that align with your brand, style, and goals, ensuring your message is delivered in the most captivating way possible.\nHow It Works:\nGetting started with us is simple and hassle-free. First, we’ll have a conversation to understand your vision, project goals, and the animation style you\u0026rsquo;re looking for. Then, our creative team will craft a concept tailored to your needs and share initial designs or storyboards. Once you’re happy with the direction, we move into production, where we bring the animation to life with attention to detail and quality. Throughout the process, we keep you involved with regular updates, ensuring the final result exceeds your expectations. From start to finish, we’re here to make your animation experience smooth and enjoyable. Best regards,\nMartijn P.S. Please note: This service is based on the contributions agreed upon by both parties. If we successfully provide you with excellent service and you are satisfied with the outcome, we would greatly appreciate positive feedback that we can showcase publicly and include in our portfolio. Creating animations service\nExamples:\n1. The rotating letter: \"van den Boom Animations\" this rotating letter \"B\" is one of the first ideas that came to me when I started exploring the world of web design and animations. A website can become much more entertaining and lively through these small yet powerful details – the animations that surprise the user and enrich the experience. Adding subtle movements, such as rotating an element or making an image glow, creates a more dynamic and engaging website. My goal is to bring that magic, so every website we create has that little extra touch, something that visitors not only notice but also appreciate. 2. The burning flame: Our flame animation symbolizes the burning creativity that we put into every project. Just like a flame that constantly dances and changes, we give your ideas energy and movement. Whether you're looking for a dynamic element for your website or a visual effect that captures attention, our flames elevate your project to the next level. Watch how the flame lights up and moves, just like our creative processes! ",
     "ref": "/en/animations/"
   },{
+    "title": "Java convert a variabele for it to be printed in a price format related to country settings",
+    "date": "",
+    "description": "",
+    "body": "F﻿or Dutch Euro use: .getCurrencyInstance(new Locale(\u0026ldquo;nl\u0026rdquo;, \u0026ldquo;NL\u0026rdquo;))\nF﻿or Swiss Franc use: .getCurrencyInstance(new Locale(\u0026ldquo;de\u0026rdquo;, \u0026ldquo;CH\u0026rdquo;))\nimport java.text.NumberFormat; import java.util.Locale; public class prog_002_variables { public static void main(String[] args){ String message; int year; double prijs; message = \u0026#34;De beste wensen voor: \u0026#34;; year = 2025; prijs = 2.50; // Combine the creation of the Locale and the NumberFormat in one line NumberFormat currencyFormat; currencyFormat = NumberFormat.getCurrencyInstance(new Locale(\u0026#34;nl\u0026#34;, \u0026#34;NL\u0026#34;)); System.out.println(message + year + \u0026#34;, een frikandel kost nu: \u0026#34; + currencyFormat.format(prijs)); currencyFormat = NumberFormat.getCurrencyInstance(new Locale(\u0026#34;de\u0026#34;, \u0026#34;CH\u0026#34;)); System.out.println(message + year + \u0026#34;, een frikandel kost nu: \u0026#34; + currencyFormat.format(prijs)); } } ",
+    "ref": "/en/blog/2025-java-convert-a-variabele-for-it-to-be-printed-in-a-price-format-related-to-country-settings/"
+  },{
+    "title": "Quick git commands to add a local repository in Visual Studio Code to GitHub",
+    "date": "",
+    "description": "",
+    "body": "T﻿ype in the terminal of Visual Studio Code\n#﻿ git init\n#﻿ git add .\n#﻿ git commit -m \u0026ldquo;initial commit\u0026rdquo;\nC﻿reate a new repository on GitHub\n#﻿ git remote add origin \u0026lt;the new .git URL\u0026gt;\nExample: #﻿ git remote add orign https://github.com/martijnvandenboom/Java_tools.git\n#﻿ git push -u origin main\n",
+    "ref": "/en/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/"
+  },{
     "title": "Find the name of your USB stick with a script",
     "date": "",
     "description": "",
     "body": "You can use this script to retrieve the name of your USB stick.\nThe name of your USB stick can be used in Apple\u0026rsquo;s sudo command to create a USB installer.\nStep 1: Open the Terminal application\nStep 2: Go to your home directory, type: # cd\nStep 3: Optionally create a scripts directory, type: # mkdir scripts\nStep 4: Navigate to the newly created scripts directory, type: # cd scripts\nStep 5: Create a bash script, type: # vim usbstick.sh\nStep 6: Insert the following code:\n#!/bin/bash # Get list of all external physical disks external_disks=$(diskutil list external physical | grep \u0026#39;^/dev/\u0026#39; | awk \u0026#39;{print $1}\u0026#39;) # Check if any were found if [[ -z \u0026#34;$external_disks\u0026#34; ]]; then echo \u0026#34;\u0026#34; echo \u0026#34;No external USB sticks are connected!\u0026#34; echo \u0026#34;\u0026#34; exit 0 fi echo \u0026#34;\u0026#34; echo \u0026#34;===\u0026#34; echo \u0026#34;External USB volumes:\u0026#34; # Loop through each disk for disk in $external_disks; do # Get all partitions for the disk partitions=$(diskutil list \u0026#34;$disk\u0026#34; | grep \u0026#39;^ [0-9]\u0026#39; | awk \u0026#39;{print $NF}\u0026#39;) for part in $partitions; do # Get mount info mount_point=$(diskutil info \u0026#34;$part\u0026#34; | awk -F: \u0026#39;/Mount Point/ {gsub(/^ +| +$/, \u0026#34;\u0026#34;, $2); print $2}\u0026#39;) volume_name=$(diskutil info \u0026#34;$part\u0026#34; | awk -F: \u0026#39;/Volume Name/ {gsub(/^ +| +$/, \u0026#34;\u0026#34;, $2); print $2}\u0026#39;) fs_type=$(diskutil info \u0026#34;$part\u0026#34; | awk -F: \u0026#39;/Type \\(Bundle\\)/ {gsub(/^ +| +$/, \u0026#34;\u0026#34;, $2); print $2}\u0026#39;) # Only show if it\u0026#39;s mounted if [[ -n \u0026#34;$mount_point\u0026#34; \u0026amp;\u0026amp; \u0026#34;$mount_point\u0026#34; != \u0026#34;Not mounted\u0026#34; ]]; then echo \u0026#34;• Volume: $volume_name\u0026#34; echo \u0026#34; Mount point: $mount_point\u0026#34; echo \u0026#34; File system: $fs_type\u0026#34; echo \u0026#34;\u0026#34; fi done done Step 7: Make the script executable, type: # chmod +x usbstick.sh\nStep 8: Run the script, type: # ./usbstick.sh\nStep 9: Press: Enter\nStep 10: Below the 3 === characters the name of your USB stick will now appear\nStep 11: You can now substitute the volume name in Apple\u0026rsquo;s sudo command\nOR\nStep 1: Open the Terminal application\nStep 2: Copy and paste the entire code block into the terminal\nbash \u0026lt;\u0026lt;\u0026#39;EOF\u0026#39; external_disks=$(diskutil list external physical | grep \u0026#39;^/dev/\u0026#39; | awk \u0026#39;{print $1}\u0026#39;) if [[ -z \u0026#34;$external_disks\u0026#34; ]]; then echo \u0026#34;\u0026#34; echo \u0026#34;No external USB sticks are connected!\u0026#34; echo \u0026#34;\u0026#34; exit 0 fi echo \u0026#34;\u0026#34; echo \u0026#34;===\u0026#34; echo \u0026#34;External USB volumes:\u0026#34; for disk in $external_disks; do partitions=$(diskutil list \u0026#34;$disk\u0026#34; | grep \u0026#39;^ [0-9]\u0026#39; | awk \u0026#39;{print $NF}\u0026#39;) for part in $partitions; do mount_point=$(diskutil info \u0026#34;$part\u0026#34; | awk -F: \u0026#39;/Mount Point/ {gsub(/^ +| +$/, \u0026#34;\u0026#34;, $2); print $2}\u0026#39;) volume_name=$(diskutil info \u0026#34;$part\u0026#34; | awk -F: \u0026#39;/Volume Name/ {gsub(/^ +| +$/, \u0026#34;\u0026#34;, $2); print $2}\u0026#39;) fs_type=$(diskutil info \u0026#34;$part\u0026#34; | awk -F: \u0026#39;/Type \\(Bundle\\)/ {gsub(/^ +| +$/, \u0026#34;\u0026#34;, $2); print $2}\u0026#39;) if [[ -n \u0026#34;$mount_point\u0026#34; \u0026amp;\u0026amp; \u0026#34;$mount_point\u0026#34; != \u0026#34;Not mounted\u0026#34; ]]; then echo \u0026#34;• Volume: $volume_name\u0026#34; echo \u0026#34; Mount point: $mount_point\u0026#34; echo \u0026#34; File system: $fs_type\u0026#34; echo \u0026#34;\u0026#34; fi done done EOF Step 3: Press: Enter\nStep 4: Below the 3 === characters the name of your USB stick will now appear\nStep 5: You can now substitute the volume name in Apple\u0026rsquo;s sudo command\n",
     "ref": "/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/"
+  },{
+    "title": "Putting the Microsoft EFI boot files on the EFI partition",
+    "date": "",
+    "description": "",
+    "body": "Boot into the Windows installer\nOn the first screen press SHIFT + F10\n# diskpart # list disk # select disk 0 # list part Look for the Windows partition # select part 3 # assign letter=W # format quick fs=NTFS # list volume Look for the EFI volume # select volume 2 # assign letter=Z # exit # D: Goto the USB installer of Windows # cd D:\\sources # dir install* The file install.esd exists # dism /Get-WimInfo /WimFile:D:\\Sources\\install.esd Select the Index of the version of Windows you want # dism /Apply-image /ImageFile:D:\\Sources\\install.esd /index:6 /ApplyDir:W:\\ # bcdboot W:\\Windows /l en-us /s Z: /f UEFI Shutdown your computer and remove the USB installer Now we have the Microsoft EFI boot files in the EFI partition in its designated folder Follow the normal procedure of installing Windows\n",
+    "ref": "/en/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/"
+  },{
+    "title": "Create a USB rEFIt boot disk",
+    "date": "",
+    "description": "",
+    "body": "# hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img # diskutil list # diskutil unmountDisk /dev/disk2 # sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m Using rdisk2 here seems to speed up things # diskutil eject /dev/disk2 ",
+    "ref": "/en/blog/2024-create-a-usb-refit-boot-disk/"
+  },{
+    "title": "rEFIt installation to EFI partition of an iMac",
+    "date": "",
+    "description": "",
+    "body": "F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac\nD﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below\nB﻿efore you do the bless command disable the SIP\nBoot in recovery mode\n#﻿ csrutil status\n#﻿ csrutil disable\n#﻿ reboot\nsudo mkdir /efi sudo mount -t msdos /dev/disk0s1 /efi sudo bless --mount /efi --setBoot --file /efi/EFI/refit/refit.efi --labelfile /efi/EFI/refit/refit.vollabel ",
+    "ref": "/en/blog/2024-refit-installation-to-efi-partition-of-an-imac/"
+  },{
+    "title": "SSH in remote machine with SSH keys and run command in new Python 3",
+    "date": "",
+    "description": "",
+    "body": "T﻿o make a script to run remote commands in a client server network.\nimport subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [\u0026#39;ssh\u0026#39;, f\u0026#39;{username}@{hostname}\u0026#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(\u0026#34;Error:\u0026#34;, error) else: print(\u0026#34;Output:\u0026#34;, output) # Replace these with your actual credentials and command hostname = \u0026#39;remote_host_address\u0026#39; username = \u0026#39;your_username\u0026#39; command = \u0026#39;ls -l\u0026#39; ssh_exec_command(hostname, username, command) ",
+    "ref": "/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/"
+  },{
+    "title": "SSH in remote machine with SSH keys and run command in old Python 2",
+    "date": "",
+    "description": "",
+    "body": "I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.\nimport subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = [\u0026#39;ssh\u0026#39;, \u0026#39;-i\u0026#39;, private_key_path, \u0026#39;-o\u0026#39;, \u0026#39;StrictHostKeyChecking=no\u0026#39;, f\u0026#39;{username}@{hostname}\u0026#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE ) output, error = ssh_process.communicate() if error: print(\u0026#34;Error:\u0026#34;, error) else: print(\u0026#34;Output:\u0026#34;, output) # Replace these with your actual credentials and command hostname = \u0026#39;remote_host_address\u0026#39; username = \u0026#39;your_username\u0026#39; private_key_path = \u0026#39;/path/to/your/private_key\u0026#39; command = \u0026#39;ls -l\u0026#39; ssh_exec_command(hostname, username, private_key_path, command) ",
+    "ref": "/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/"
+  },{
+    "title": "Configure LDAP/IPA Server with Jenkins ",
+    "date": "",
+    "description": "",
+    "body": "===\nIdentity, Policy, and Audit (IPA) system\n===\nJenkins\n2.319.2\n=﻿==\nDashboard -\u0026gt; Security -\u0026gt; Configure Global Security\nServer:\nldap://\u0026lt;IP_SERVER\u0026gt;:389\nroot DN:\ndc=,dc=com\nUser search base\ncn=users,cn=accounts\nUser search filter\nuid={0}\nGroup search base\ncn=groups,cn=accounts\nGroup membership -\u0026gt; Search for LDAP groups containing user -\u0026gt; Group membership filter:\n(| (member={0}) (uniqueMember={0}) (memberUid={1}))\nManager DN:\nuid=\u0026lt;ADMIN_USER\u0026gt;,cn=users,cn=accounts,dc=,dc=com\n",
+    "ref": "/en/blog/2024-configure-ldap-ipa-server-with-jenkins/"
+  },{
+    "title": "Configure LDAP/IPA Server with Nexus",
+    "date": "",
+    "description": "",
+    "body": "===\nNexus\nSonatype Nexus Repository\nOSS 3.60.0-02\n=﻿==\nLDAP\nldap://\u0026lt;IP_SERVER\u0026gt;:389\ncn=users,cn=accounts,dc=,dc=com\nSimple Authentication\nuid=\u0026lt;ADMIN_USER\u0026gt;,cn=users,cn=accounts,dc=,dc=com\nNext\n=﻿==\nSelect no template\nUser relative DN = leeg\nUser subtree = unchecked\nObject class: inetOrgPerson\nUser filter = leeg\nUser ID attribute = uid\nReal name attribute = cn\nEmail attribute = mail\nPassword attribute = leeg\nMap LDAP groups as roles = unchecked\n",
+    "ref": "/en/blog/2024-configure-ldap-ipa-server-with-nexus/"
+  },{
+    "title": "Configure LDAP/IPA Server with Sonarqube",
+    "date": "",
+    "description": "",
+    "body": "Configure LDAP/IPA Server with Sonarqube\n===\nSonarqube\n8.9.6\nsonar.properties\nsonarqube-8.9.6/conf/sonar.properties\n=﻿==\nsonar.security.realm=LDAP\nldap.url=ldap://\u0026lt;IP_SERVER\u0026gt;:389\nldap.bindDn=uid=\u0026lt;ADMIN_USER\u0026gt;,cn=users,cn=accounts,dc=,dc=com\nldap.bindPassword=\nldap.authentication=simple\nldap.user.baseDn=cn=users,cn=accounts,dc=,dc=com\n# laat volgende default\n# ldap.user.request=\n# LDAP user request. (default: (\u0026amp;(objectClass=inetOrgPerson)(uid={login})) )\nldap.group.baseDn=cn=groups,cn=accounts,dc=,dc=com\n# laat volgende default\n# ldap.group.request=\n# LDAP group request (default: (\u0026amp;(objectClass=groupOfUniqueNames)(uniqueMember={dn})) )\n",
+    "ref": "/en/blog/2024-configure-ldap-ipa-server-with-sonarqube/"
+  },{
+    "title": "LDAP/IPA Server command line searches",
+    "date": "",
+    "description": "",
+    "body": "$ ldapsearch -H ldap://\u0026lt;FQDN_SERVER\u0026gt;/ -b dc=,dc=com -x\n$ ldapsearch -x -LLL -H ldap:/// -b dc=,dc=com dn\n$ ldapwhoami -x -H ldap:///\n$ ldapsearch -H ldap://\u0026lt;IP_SERVER\u0026gt; -D \u0026ldquo;uid=\u0026lt;ADMIN_USER\u0026gt;,cn=users,cn=compat,dc=,dc=com\u0026rdquo; -b \u0026ldquo;cn=users,cn=accounts,dc=,dc=com\u0026rdquo; -x -W\n$ ldapsearch -H ldap://\u0026lt;IP_SERVER\u0026gt; -D \u0026ldquo;uid=\u0026lt;ADMIN_USER\u0026gt;,cn=users,cn=compat,dc=,dc=com\u0026rdquo; -b \u0026ldquo;dc=,dc=com\u0026rdquo; -x -W -s one \u0026ldquo;(\u0026amp;(objectClass=organizationalUnit)\n$ ldapsearch -h \u0026lt;FQDN_SERVER\u0026gt; -D \u0026lsquo;uid=\u0026lt;ADMIN_USER\u0026gt;,cn=users,cn=compat,dc=,dc=com\u0026rsquo; -o ldif-wrap=no -b \u0026lsquo;dc=,dc=com\u0026rsquo; -W uid=\u0026lt;ADMIN_USER\u0026gt;\n$ ldapsearch -h \u0026lt;FQDN_SERVER\u0026gt; -D \u0026lsquo;uid=,cn=users,cn=compat,dc=,dc=com\u0026rsquo; -o ldif-wrap=no -b \u0026lsquo;dc=,dc=com\u0026rsquo; -W uid=\n",
+    "ref": "/en/blog/2024-ldap-ipa-server-command-line-searches/"
+  },{
+    "title": "LDAP/IPA Server client installation",
+    "date": "",
+    "description": "",
+    "body": "===\n# yum install ipa-client\n# ipa-client-install \u0026ndash;server= \u0026ndash;domain= \u0026ndash;principal=admin -W\n# ipa-client-install \u0026ndash;server=\u0026lt;ipa-server.example.com\u0026gt; \u0026ndash;domain=\u0026lt;example.com\u0026gt; \u0026ndash;principal=admin -W\n",
+    "ref": "/en/blog/2024-ldap-ipa-server-client-installation/"
+  },{
+    "title": "LDAP/IPA Server installation",
+    "date": "",
+    "description": "",
+    "body": "===\n# yum install ipa-server\n# ipa-server-install\n===\nHosts file aanpassen\nDe FQDN voor op, daarna pas de aliassen\n/etc/hosts\n\u0026lt;IP_SERVER\u0026gt; ()\nMocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.\n",
+    "ref": "/en/blog/2024-ldap-ipa-server-installation/"
   },{
     "title": "LDAP/IPA - Server on Red Hat Enterprise Linux 7",
     "date": "",
@@ -65,6 +209,24 @@
     "body": "See below an example script to display a SUCCESS message in green or a FAILED message in red, right-aligned at the end of the line.\n#!/bin/bash # Set the message success_message=\u0026#34;Your command was successful\u0026#34; failed_message=\u0026#34;Your command failed\u0026#34; # Set the \u0026#34;OK\u0026#34; string in green ok=\u0026#34;$(tput setaf 2)[SUCCES]$(tput sgr0)\u0026#34; failed=\u0026#34;$(tput setaf 1)[FAILED]$(tput sgr0)\u0026#34; # Get the width of the terminal term_width=$(tput cols)+9 # Calculate the number of dots needed success_dots_count=$((term_width - ${#success_message} - ${#ok})) failed_dots_count=$((term_width - ${#failed_message} - ${#failed})) # Create a string of dots for success and failed messages success_dots=$(printf \u0026#34;%0.s.\u0026#34; $(seq 1 $success_dots_count)) failed_dots=$(printf \u0026#34;%0.s.\u0026#34; $(seq 1 $failed_dots_count)) # Print the success message with dots and \u0026#34;OK\u0026#34; at the end of the line printf \u0026#34;%s%s%s\\n\u0026#34; \u0026#34;$success_message \u0026#34; \u0026#34;$success_dots\u0026#34; \u0026#34; $ok\u0026#34; # Print the failed message with dots and \u0026#34;FAILED\u0026#34; at the end of the line printf \u0026#34;%s%s%s\\n\u0026#34; \u0026#34;$failed_message \u0026#34; \u0026#34;$failed_dots\u0026#34; \u0026#34; $failed\u0026#34; ",
     "ref": "/en/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/"
   },{
+    "title": "Checkmk installation on Rocky Linux 9.3",
+    "date": "",
+    "description": "",
+    "body": "Checkmk installation on Rocky Linux 9.3\ndnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd --zone=public --add-service=http --permanent firewall-cmd --reload wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm omd version omd create monitoring omd start monitoring http://localhost.localdomain/monitoring/ user: cmkadmin with password: \u0026lt;given\u0026gt; omd su monitoring (For command line administration of the site.) cmk-passwd cmkadmin (After logging in, you can change the password for cmkadmin with.) (optional) omd status omd sites omd help (optional for after reboot if you get the error: Unable to connect) omd update-apache-config monitoring ",
+    "ref": "/en/blog/2024-checkmk-installation-on-rocky-linux-9-3/"
+  },{
+    "title": "Installing the VirtualBox Guest Additions on Rocky Linux 9.3",
+    "date": "",
+    "description": "",
+    "body": "Installing the VirtualBox Guest Additions on Rocky Linux 9.3\ndnf install epel-release dnf update --refresh dnf update kernel-* reboot (optional) dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel rpm -q kernel-devel uname -r Top menu: Devices -\u0026gt; Insert Guest Additions CD-Image Run (optional) cd /run/media/ ./VBoxLinuxAdditions.run ",
+    "ref": "/en/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/"
+  },{
+    "title": "PowerShell computer resource monitor script with cpu percentage and advanced memory information",
+    "date": "",
+    "description": "",
+    "body": "PowerShell computer resource monitor script with cpu percentage and advanced memory information\nPowerShell Resource monitor $app=\u0026#34;notepad\u0026#34; $ids = Get-Process $app | Select-Object -Property Id | ForEach-Object {$_.Id} $filedate = Get-Date -format \u0026#34;yyyy-MM-dd\u0026#34; #echo $pids foreach ($id in $ids) { $date = Get-Date -format \u0026#34;yyyy-MM-dd HH:mm:ss\u0026#34; # process CPU information $ProcessId = $id $Process = Get-WmiObject -Query \u0026#34;SELECT * FROM Win32_PerfFormattedData_PerfProc_Process WHERE IDProcess = $ProcessId\u0026#34; $usage = $Process.PercentProcessorTime # process Mem information $TotalMemory = (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory / 1GB $ProcessMem = Get-CIMInstance Win32_Process -Filter \u0026#34;ProcessId = \u0026#39;$id\u0026#39;\u0026#34; $MemSizeInKB = $ProcessMem.WS/1KB $PeakWorkingSetInKB = $Process.PeakWorkingSet/1KB $PageCountInKB = $ProcessMem.PrivatePageCount/1KB $NonPagedPoolInKB = $ProcessMem.QuotaNonPagedPoolUsage/1KB $PagedPoolInKB = $ProcessMem.QuotaPagedPoolUsage/1KB $TotalMemory = \u0026#34;{0:n3}\u0026#34; -f $TotalMemory $MemSizeInKB = \u0026#34;{0:n3}\u0026#34; -f $MemSizeInKB $PeakWorkingSetInKB = \u0026#34;{0:n3}\u0026#34; -f $PeakWorkingSetInKB $PageCountInKB = \u0026#34;{0:n3}\u0026#34; -f $PageCountInKB $NonPagedPoolInKB = \u0026#34;{0:n3}\u0026#34; -f $NonPagedPoolInKB $PagedPoolInKB = \u0026#34;{0:n3}\u0026#34; -f $PagedPoolInKB #write-host \u0026#34;$TotalMemory\u0026#34; #write-host \u0026#34;$MemSizeInKB\u0026#34; #write-host \u0026#34;$PeakWorkingSetInKB\u0026#34; #write-host \u0026#34;$PageCountInKB\u0026#34; #write-host \u0026#34;$NonPagedPoolInKB\u0026#34; #write-host \u0026#34;$PagedPoolInKB\u0026#34; # commandline information $commandline = (Get-CimInstance Win32_Process -Filter \u0026#34;ProcessId=$id\u0026#34;).CommandLine $FileName = $filedate+\u0026#34;_memory_usage.txt\u0026#34; $FullPath = Join-Path -Path \u0026#34;C:\\Users\\mvdbo\\OneDrive\\Documenten\\PowerShell\u0026#34; -ChildPath $FileName $regel = \u0026#34;$date - pid: $id - cpu: $usage % - mem: $MemSizeInKB KB - pws: $PeakWorkingSetInKB KB - pc: $PageCountInKB KB - pp: $PagedPoolInKB KB - command: $commandline\u0026#34; $regel | Out-File -FilePath $FullPath -Encoding utf8 -Append } # Sources # https://learn.microsoft.com/en-us/windows/win32/psapi/process-memory-usage-information ",
+    "ref": "/en/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/"
+  },{
     "title": "macOS desktop extended across 3 screens: iMac, MacBook and iPad",
     "date": "",
     "description": "",
@@ -76,6 +238,42 @@
     "description": "Available services",
     "body": "1. Web Design and Development Service 2. Floppy Disk Recovery Service 3. Dia Scan Service 4. Upgrade Service 5. USB Service 6. Personal Guidance and Tutoring Service\n1. Web Design and Development Service\nWe are passionate about building websites that not only look great but also function smoothly. In our service, we prefer static HTML websites, and we offer this service on a voluntary basis, with the option for a voluntary contribution.\nWhat We Offer:\nIn our web design and development service, we believe in the power of simplicity. We offer:\nBeautiful Static HTML Websites: We design websites that showcase your brand and content, simple and elegant.\nCustomized Solutions: Every project starts with a deep understanding of your goals. We develop websites that perfectly match your needs.\nFast and Reliable: Our websites are fast and reliable, ensuring an optimal user experience and attracting more website visitors.\nHow It Works:\nIf you are interested in our service, you can contact us via email at ingmacmvandenboom@gmail.com.\nDescribe Your Vision: Tell us about your project and goals. How do you envision your website? What functionalities do you need?\nDesign and Development: Our team of volunteers collaborates with you to address the design and development. We make sure your vision becomes a reality.\nReview and Adjustments: After the design and development are complete, we discuss it with you and make any necessary changes.\nPublication: Your website is prepared for publication. We ensure a smooth launch.\nDo you want your project to flourish with a beautiful static HTML website? Contact us, and let us support you. Together, we can bring your vision to life. 2. Floppy Disk Recovery Service\nRecovery of 5.25\u0026quot;, 3.5\u0026quot; floppies and Iomega Zip Disks (super floppy) - A Voluntary Service\nDo you have old floppy disks lying around with precious memories and important documents? We understand the value of these old disks, and that\u0026rsquo;s why we offer a voluntary service for floppy disk recovery.\nWhat We Offer:\nRecovery of 5.25\u0026quot;, 3.5\u0026quot; and Zip floppy disks: Our team of experts has the necessary experience and technology to recover data from both 5.25\u0026quot;, 3.5\u0026quot; and Zip floppy disks. We handle disks that may have seemed lost with care and attention.\nDedicated volunteers: Our service is run by passionate volunteers committed to retrieving lost data. We understand that these disks often contain a treasure trove of personal and historical information, and we do our best to assist you.\nHow Does It Work?\nIf you\u0026rsquo;re interested in our service, you can contact us via email at ingmacmvandenboom@gmail.com. Send us a message with a description of your situation and the floppy disks you want to recover. We will respond as soon as possible and work with you to find the best possible solution.\nPlease note: Our service is based on voluntary contributions. If we successfully recover your data and you are satisfied with the result, we appreciate any voluntary donations to support our efforts and keep the service available for others.\nFeel free to reach out if you have any questions or if you are interested in recovering your floppy disks. We are here to help you preserve your precious memories. 3. Dia Scan Service\nWelcome to our Slide Scan Service, where we offer you a leading solution for digitizing your precious slide collections. Our mission is to preserve and share your valuable memories and visual treasures.\nWhat We Offer:\nAt our Slide Scan Service, you can expect a careful and professional approach. We promise:\nHigh-Quality Digitization: We emphasize quality, color accuracy, and detail when converting your slides into digital files.\nSafety and Care: We handle your slides with the utmost care and keep them secure throughout the entire process.\nCustomization: You have the freedom to choose from various digital formats and resolutions that suit your needs.\nHow It Works:\nContacting Us: Send an email to ingmacmvandenboom@gmail.com, expressing your interest and questions. We will get in touch with you as soon as possible to discuss the next steps.\nScanning Process: Our professional team begins the digitization of your slides using advanced equipment and technology.\nQuality Control: Each digital scan is meticulously inspected for quality and accuracy.\nWith our Slide Scan Service, we aim to breathe new life into your slide collections and make them accessible in the digital world. If you are interested in our services, do not hesitate to contact us. We look forward to helping you preserve and share your memories. 4. Upgrade Service\nIs your computer feeling sluggish? Give it a new lease on life with our refresh service! Revamp your old computer with our specialized refresh service and experience a renewed performance boost. Whether it\u0026rsquo;s a desktop, laptop, or even an older iMac, we can optimize your system to make it feel like new again.\nWith a clean installation of your operating system – be it Windows, macOS, or Linux – we\u0026rsquo;ll ensure faster performance and more efficient operation. We\u0026rsquo;ll also replace your old hard drive with a speedy SSD for a significant boost in overall speed. Your old hard drive can be repurposed as an external backup via a USB cable, so you won\u0026rsquo;t lose any data and will always have access to your files.\nOur service will bring your computer back up to date, with improved performance and functionality tailored to your needs. Let us give your computer a second life with the right upgrades and enjoy a smooth, efficient user experience once again.\nContact us today for a consultation and discover the possibilities for your system! 5. USB Service\nOur USB installation sticks offer the perfect solution! We provide ready-to-use sticks for macOS, Windows, and Linux installations.\nEach stick is carefully configured to ensure a seamless installation. Whether you\u0026rsquo;re setting up a new computer or breathing new life into an old machine, our installation sticks make the process quick and easy.\nOptions:\nmacOS Installation Stick: Suitable for all recent versions of macOS. Perfect for reinstalling or upgrading your Mac. Windows Installation Stick: Includes the latest versions of Windows, ideal for a clean install or recovering your current Windows system. Linux Installation Stick: For various Linux distributions like Ubuntu, Fedora, and Debian. A great choice for both beginners and experienced users who want to experiment with Linux. Multiboot USB Stick with Ventoy: Choose a multiboot USB stick with Ventoy to have multiple installation options for different versions of Windows and Linux. Multiboot for macOS; up to 6 different versions can fit on a 128GB stick. OCLP Version of macOS: We can also provide an OCLP (OpenCore Legacy Patcher) version of macOS, so you can bring your old Mac back to life. You only pay for the USB stick. Contact us and choose the right installation stick for your needs, and enjoy the benefits of a smoothly running computer without any hassle.\nTrust us for your installation needs and experience the convenience of our high-quality USB installation sticks. 6. Personal Coach / Trainer and Tutoring Service\nFor your development I offer personal guidance and tutoring across a wide range of technical subjects. Whether you are a beginner or looking to deepen your skills, I am happy to help you further.\nTopics I can help with:\nOperating Systems: Linux, Windows, macOS, Android and iOS Programming: .NET, Visual Basic, C#, C++ and Java Scripting: Bash, Python, PowerShell and Ansible Website Development: Static websites with Hugo, or using frameworks such as Next.js, Angular and React General Computer Software: Libre/OpenOffice and Microsoft Office For more information about my offerings in Linux, Windows, macOS, Android and iOS, I would like to refer you to my profile on Superprof:\nPersonal guidance on super-prof.nl Best regards,\nMartijn P.S. Please note: Our services are based on voluntary contributions. If we manage to provide you with good service and you are satisfied with the result, we appreciate a voluntary donation to support our efforts and keep the services available for others. 1. Web Design and Development Service 2. Floppy Disk Recovery Service 3. Dia Scan Service 4. Upgrade Service 5. USB Service 6. Personal Guidance and Tutoring Service ",
     "ref": "/en/services/"
+  },{
+    "title": "Multiple versions of Java on macOS",
+    "date": "",
+    "description": "",
+    "body": "$ ls -al /usr/local/opt/ | grep -i openjdk $ brew install jenv $ jenv add /Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home/ $ jenv versions $ jenv local 1.8 $ java -version $ jenv global 1.8 $ java -version $ jenv shell 1.8 $ java -version $ jenv versions ",
+    "ref": "/en/blog/2023-multiple-versions-of-java-on-macos/"
+  },{
+    "title": "The Linux mlocate command on macOS",
+    "date": "",
+    "description": "",
+    "body": "The Linux mlocate command under macOS\nsudo /usr/libexec/locate.updatedb sudo ln -s /usr/libexec/locate.updatedb /usr/local/bin/updatedb ",
+    "ref": "/en/blog/2023-the-linux-mlocate-command-under-macos/"
+  },{
+    "title": "Sharing files with MS-DOS 6.22 in VirtualBox and macOS",
+    "date": "",
+    "description": "",
+    "body": "How to create an ISO file of a directory on macOS that can be mounted as a CDROM in MS-DOS 6.22 ?\nStart Disk Utility on macOS\nGo to: File -\u0026gt; New Image -\u0026gt; Image from Folder Choose the directory and press Choose Set Image Format to: DVD/CD master and press Save A *.cdr file will be created Go to the command line Cd to the directory with the *.cdr file Type the command: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr Go to your virtual machine running MS-DOS 6.22 and mount the newly created *.iso file In the MS-DOS 6.22 virtual machine you can now access the contents on drive D: Any questions?\nLet me know!\nContact me on my Social Media links.\n",
+    "ref": "/en/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/"
+  },{
+    "title": "Linux disk space information more clearly excluding the denied and cannot messages",
+    "date": "",
+    "description": "",
+    "body": "$ du -hs * 2\u0026gt; \u0026gt;(egrep -iv \u0026lsquo;permission denied|cannot access\u0026rsquo;) | sort -n\n",
+    "ref": "/en/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/"
+  },{
+    "title": "Linux locate lost storage space difference between results df and du",
+    "date": "",
+    "description": "",
+    "body": "$ lsof | grep -E \u0026lsquo;^COM|deleted\u0026rsquo;\n",
+    "ref": "/en/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/"
+  },{
+    "title": "How to burn an *.iso file to CD or DVD in Windows",
+    "date": "",
+    "description": "",
+    "body": "In File Explorer right-click on the *.ISO file and choose Properties.Then, click Change from the General tab, choose Windows Explorer, and click OK.Next, save the change by clicking Apply \u0026gt; OK Now right click on the *.ISO file and choose: Burn disc image or on: Show more options to find this.\n",
+    "ref": "/en/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/"
   },{
     "title": "Saving a website exactly as it looks",
     "date": "",
@@ -131,11 +329,41 @@
     "body": "Change your Windows password by using a shortcut on your desktop. (CTRL+ALT+DEL key combination by clicking a shortcut)\nRight-click on your desktop, choose New and then Shortcut\nEnter the following command for the item location:\nC:\\Windows\\explorer.exe shell:::{2559a1f2-21d7-11d4-bdaf-00c04f60b9f0}\nClick: Next\nGive the shortcut a name, for example: Reset password\nClick: Finish\n",
     "ref": "/en/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/"
   },{
+    "title": "Installing Virtual Machines on macOS Monterey OpenCore Legacy Patcher",
+    "date": "",
+    "description": "",
+    "body": "Try Oracle VirtualBox version 6.1.40 the older version. In my home lab the newest version of VirtualBox 7.0.4 did not work due to the error: hv_vm_create() failed: 0xfae94001 (VERR_NEM_INIT_FAILED)\nIn the older version this was not an issue.\n",
+    "ref": "/en/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/"
+  },{
+    "title": "Prevent opening Windows 11 Store when typing the command python",
+    "date": "",
+    "description": "",
+    "body": "Step 1: Open Settings in Windows 11\nStep 2: Go to Apps\nStep 3: Go to Advanced app settings\nStep 4: Go to App execution aliases\nStep 5: Disable the option for python.exe and python3.exe\n",
+    "ref": "/en/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/"
+  },{
     "title": "Python dependencies when installing Oracle VirtualBox on Windows 11",
     "date": "",
     "description": "",
     "body": "Step 1: install Python\nStep 2: add both the scripts folder and its parent folder to the path\nStep 3: CMD\u0026gt; pip install pywin32\n",
     "ref": "/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/"
+  },{
+    "title": "Any iMac as a second display with extended desktop",
+    "date": "",
+    "description": "",
+    "body": "Install Windows on your iMac and use the software utility spacedesk.\nSuch a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.\n",
+    "ref": "/en/blog/2022-imac-as-an-extened-display-with-windows/"
+  },{
+    "title": "Concourse starting automatically at boot with systemctl service",
+    "date": "",
+    "description": "",
+    "body": "/home/martijn/Downloads/concourse $ curl -LO https://concourse-ci.org/docker-compose.yml $ cat /etc/systemd/system/docker-compose-concourse.service [Unit] Description=Docker Compose Application Service for Concourse Requires=docker.service After=docker.service [Service] Type=oneshot RemainAfterExit=yes WorkingDirectory=/home/martijn/Downloads/concourse ExecStart=/usr/bin/docker-compose up -d ExecStop=/usr/bin/docker-compose down TimeoutStartSec=0 [Install] WantedBy=multi-user.target ",
+    "ref": "/en/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/"
+  },{
+    "title": "Concourse persistent PostgreSQL database in Docker",
+    "date": "",
+    "description": "",
+    "body": "$ sudo docker-compose stop concourse-db $ sudo docker ps $ sudo docker cp -a \u0026lt;docker postgresql database id\u0026gt;:/database .\\ $ vim docker-compose.yml image: postgres volumes: \\[\u0026#34;./database:/database\u0026#34;] environment: $ sudo docker-compose up -d --no-deps concourse-db ",
+    "ref": "/en/blog/2022-concourse-persistent-postgresql-database-in-docker/"
   },{
     "title": "Clearing cookies when closing your web browser",
     "date": "",
@@ -215,11 +443,95 @@
     "body": "Function Clean-Memory { Get-PSSession | Remove-PSSession [System.GC]::Collect() [GC]::Collect() [GC]::WaitForPendingFinalizers() Get-Variable | #Where-Object { $startupVariables -notcontains $_.Name } | ForEach-Object { try { Clear-Variable -Name \u0026#34;$($_.Name)\u0026#34; -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue Remove-Variable -Name \u0026#34;$($_.Name)\u0026#34; -Force -Scope \u0026#34;global\u0026#34; -ErrorAction SilentlyContinue -WarningAction SilentlyContinue Remove-Variable -Name \u0026#34;$($_.Name)\u0026#34; -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue #Write-Host \u0026#34;Variable \u0026#39;$($_.Name)\u0026#39; has been cleaned up.\u0026#34; } catch [Exception] { if ($_.Name -notlike \u0026#39;\u0026#39;) { Write-Host \u0026#34;An error has occured. Error Details: $($_.Exception.Message)\u0026#34; } } } #Get-Variable } ",
     "ref": "/en/blog/powershell-clean-memory/"
   },{
+    "title": "Wordpress no FTP needed",
+    "date": "",
+    "description": "Commands",
+    "body": "add this line to: wp-config.php define(\u0026#39;FS_METHOD\u0026#39;, \u0026#39;direct\u0026#39;); ",
+    "ref": "/en/blog/wordpress-no-ftp/"
+  },{
+    "title": "Postgresql Insert Loop",
+    "date": "",
+    "description": "Commands",
+    "body": " do $$ declare counter integer := 0; begin while counter \u0026lt; 100000 loop insert into public.person (first_name, last_name) values (\u0026#39;Jack\u0026#39;, \u0026#39;Twin\u0026#39;); counter := counter + 1; end loop; end$$; ",
+    "ref": "/en/blog/postgresql-insert-loop/"
+  },{
+    "title": "Google sitemap",
+    "date": "",
+    "description": "Commands",
+    "body": "Google sitemap http://www.google.com/ping?sitemap=https://vandenboom.icu/sitemap.xml http://www.google.com/webmasters/tools/ ",
+    "ref": "/en/blog/20201212_1609_-_google_sitemap/"
+  },{
+    "title": "Hugo in Alpine Linux",
+    "date": "",
+    "description": "Commands",
+    "body": "Hugo in Alpine Linux \u0026gt; apk update \u0026gt; apk upgrade \u0026gt; apk add git \u0026gt; apk add go \u0026gt; wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub \u0026gt; wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.32-r0/glibc-2.32-r0.apk \u0026gt; apk add glibc-2.32-r0.apk \u0026gt; wget https://github.com/gohugoio/hugo/releases/download/v0.79.0/hugo_0.79.0_Linux-32bit.tar.gz \u0026gt; tar -xvzf hugo_0.79.0_Linux-32bit.tar.gz \u0026gt; ./hugo \u0026gt; ./hugo version \u0026gt; echo $SHELL \u0026gt; vim .bash_profile export PATH=$PATH:/hugo/bin \u0026gt; source .bash_profile \u0026gt; which hugo \u0026gt; cd website/ \u0026gt; hugo new blog/time-in-alpine.md \u0026gt; vim ./content/blog/time-in-alpine.md \u0026gt; git add --all \u0026gt; git commit -m \u0026#34;set time in Alpine Linux\u0026#34; \u0026gt; git push ",
+    "ref": "/en/blog/hugo-in-alpine-linux/"
+  },{
+    "title": "Time in Alpine Linux",
+    "date": "",
+    "description": "Commands",
+    "body": "\u0026gt; Time in Alpine Linux \u0026gt; apk add tzdata \u0026gt; cp /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime \u0026gt; echo \u0026#34;Europe/Amsterdam\u0026#34; \u0026gt; /etc/timezone \u0026gt; date ",
+    "ref": "/en/blog/time-in-alpine/"
+  },{
+    "title": "Bitlocker keys",
+    "date": "",
+    "description": "Commands",
+    "body": "BitLocker recovery keys onedrive.live.com/RecoveryKey ",
+    "ref": "/en/blog/december-2020-bitlocker/"
+  },{
+    "title": "From ESD to WIM File in Windows 10",
+    "date": "",
+    "description": "Commands",
+    "body": "from ESD to WIM file \u0026gt; dism /Get-WimInfo /WimFile:install.esd \u0026gt; dism /export-image /SourceImageFile:install.esd /SourceIndex:4 /DestinationImageFile:install.wim /Compress:max /CheckIntegrity ",
+    "ref": "/en/blog/december-2020-from-esd-to-wim-file/"
+  },{
+    "title": "Git commands",
+    "date": "",
+    "description": "Commands",
+    "body": "Git commands \u0026gt; cd content/blog/ \u0026gt; cp december-2020-Bitlocker.md 20201212_1609_-_git.md \u0026gt; vim 20201212_1609_-_git.md \u0026gt; git add --all \u0026gt; git commit -m \u0026#34;edited title\u0026#34; \u0026gt; git status \u0026gt; git push \u0026gt; git pull \u0026gt; git reset --hard HEAD \u0026gt; git pull \u0026gt; git fetch --all \u0026gt; git reset --hard origin/main \u0026gt; git status \u0026gt; git fetch origin \u0026gt; git checkout main \u0026gt; git pull origin main \u0026gt; git fetch --all \u0026gt; git merge \u0026gt; git pull \u0026gt; hugo server -D ",
+    "ref": "/en/blog/20201212_1609_-_git/"
+  },{
+    "title": "hugo in Windows 10",
+    "date": "",
+    "description": "Commands",
+    "body": "\u0026gt; hugo new site vandenboom.icu \u0026gt; cd vandenboom.icu \u0026gt; git init \u0026gt; git submodule add https://github.com/lxndrblz/anatole.git themes/anatole \u0026gt; cd themes \u0026gt; git submodule add https://github.com/pacollins/hugo-future-imperfect-slim.git \u0026gt; cd .. \u0026gt; hugo new blog/december-2020.md \u0026gt; hugo server -D ",
+    "ref": "/en/blog/december-2020-hugo/"
+  },{
     "title": "About",
     "date": "",
     "description": "Notities website",
     "body": "Biography Martijn is an experienced IT professional with more than 26 years of experience in information technology, infrastructure management, and automation. Throughout his career, he has worked in complex enterprise and government environments, contributing to projects for organizations such as CGI, Rijkswaterstaat, ProRail, and the Municipality of \u0026rsquo;s-Hertogenbosch.\nHis work has focused on system administration, automation, monitoring, networking, and the design of reliable and scalable IT infrastructures.\nBackground Martijn\u0026rsquo;s fascination with computers started during his Constructional Engineering studies (HBO Bouwkunde) in Tilburg in the late 1990s, when he was introduced to Microsoft Visual Basic programming. Building small applications and seeing how software could automate repetitive work sparked a lasting passion for computing and software development.\nThat curiosity gradually evolved into a long-term professional career in IT and automation.\nCore Expertise Python development Ansible automation Bash and PowerShell scripting Linux systems administration Network management and monitoring platforms CI/CD practices Improving reliability and efficiency through automation has remained a central theme throughout his work.\nMentoring and Education Alongside his professional career, Martijn has also been active in mentoring and education. Volunteer work has included teaching computer skills, mentoring secondary school students, and introducing programming concepts using C# (Visual Studio) and Python (Spyder/Anaconda).\nSustainability and International Initiatives Martijn is also involved in sustainability and international development initiatives. One example is a Black Soldier Fly (BSF) farming project in Uganda, developed in collaboration with Foundation Foods Ltd. The project focuses on producing sustainable insect protein for animal feed while recycling organic waste.\nIn addition, Martijn has worked on the concept and design of the Planet Protection Polyethylene Waste Collection Payment System. This concept aims to improve plastic waste collection by allowing collectors to bring polyethylene waste to local collection points and receive digital payments based on weight, supporting both environmental protection and local economic opportunity.\nPersonal Martijn currently lives in Utrecht, the Netherlands, together with his wife. Technology, automation, and sustainable innovation continue to be central motivations in both his professional work and personal initiatives.\nSponsorship Would you like to support my work?\nko-fi.com/martijnvandenboom paypal.me/ingmacmvandenboom buymeacoffee.com/ingvdboom ",
     "ref": "/en/about/"
+  },{
+    "title": "Chocolatey in Windows 10",
+    "date": "",
+    "description": "Commands",
+    "body": "\u0026gt; choco version \u0026gt; choco update chocolatey \u0026gt; choco version all \u0026gt; choco outdated \u0026gt; choco upgrade \u0026lt;app\u0026gt; \u0026gt; choco upgrade all ",
+    "ref": "/en/blog/december-2020/"
+  },{
+    "title": "Markdown Syntax Guide",
+    "date": "",
+    "description": "Sample article showcasing basic Markdown syntax and formatting for HTML elements.",
+    "body": "This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.\nHeadings The following HTML \u0026lt;h1\u0026gt;—\u0026lt;h6\u0026gt; elements represent six levels of section headings. \u0026lt;h1\u0026gt; is the highest section level while \u0026lt;h6\u0026gt; is the lowest.\nH1 H2 H3 H4 H5 H6 Paragraph Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.\nItatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.\nBlockquotes The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element, and optionally with in-line changes such as annotations and abbreviations.\nBlockquote without attribution Tiam, ad mint andaepu dandae nostion secatur sequo quae. Note that you can use Markdown syntax within a blockquote.\nBlockquote with attribution Don\u0026rsquo;t communicate by sharing memory, share memory by communicating.\n— Rob Pike1\nTables Tables aren\u0026rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.\nName Age Bob 27 Alice 23 Inline Markdown within tables Inline Markdown In Table italics bold strikethrough code Code Blocks Code block with backticks \u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html lang=\u0026#34;en\u0026#34;\u0026gt; \u0026lt;head\u0026gt; \u0026lt;meta charset=\u0026#34;UTF-8\u0026#34;\u0026gt; \u0026lt;title\u0026gt;Example HTML5 Document\u0026lt;/title\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;p\u0026gt;Test\u0026lt;/p\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; Code block indented with four spaces \u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html lang=\u0026quot;en\u0026quot;\u0026gt; \u0026lt;head\u0026gt; \u0026lt;meta charset=\u0026quot;UTF-8\u0026quot;\u0026gt; \u0026lt;title\u0026gt;Example HTML5 Document\u0026lt;/title\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;p\u0026gt;Test\u0026lt;/p\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; Code block with Hugo\u0026rsquo;s internal highlight shortcode \u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html lang=\u0026#34;en\u0026#34;\u0026gt; \u0026lt;head\u0026gt; \u0026lt;meta charset=\u0026#34;UTF-8\u0026#34;\u0026gt; \u0026lt;title\u0026gt;Example HTML5 Document\u0026lt;/title\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;p\u0026gt;Test\u0026lt;/p\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; List Types Ordered List First item Second item Third item Unordered List List item Another item And another item Nested list Item First Sub-item Second Sub-item Other Elements — abbr, sub, sup, kbd, mark GIF is a bitmap image format.\nH2O\nXn + Yn = Zn\nPress CTRL+ALT+Delete to end the session.\nMost salamanders are nocturnal, and hunt for insects, worms, and other small creatures.\nThe above quote is excerpted from Rob Pike\u0026rsquo;s talk during Gopherfest, November 18, 2015.\u0026#160;\u0026#x21a9;\u0026#xfe0e;\n",
+    "ref": "/en/blog/markdown-syntax/"
+  },{
+    "title": "Rich Content",
+    "date": "",
+    "description": "A brief description of Hugo Shortcodes",
+    "body": "Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.\nYouTube Privacy Enhanced Shortcode Twitter Simple Shortcode View post on X\nVimeo Simple Shortcode ",
+    "ref": "/en/blog/rich-content/"
+  },{
+    "title": "Placeholder Text",
+    "date": "",
+    "description": "Lorem Ipsum Dolor Si Amet",
+    "body": "Lorem est tota propiore conpellat pectoribus de pectora summo.\nRedit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.\nExierant elisi ambit vivere dedere Duce pollice Eris modo Spargitque ferrea quos palude Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.\nComas hunc haec pietate fetum procerum dixit Post torum vates letum Tiresia Flumen querellas Arcanaque montibus omnes Quidem et Vagus elidunt The Van de Graaf Canon\nMane refeci capiebant unda mulcebat Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. Faces illo pepulere tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.\nIubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.\nEurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel mitis temploque vocatus, inque alis, oculos nomen non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides parte.\n",
+    "ref": "/en/blog/placeholder-text/"
+  },{
+    "title": "Emoji Support",
+    "date": "",
+    "description": "Guide to emoji usage in Hugo",
+    "body": "Emoji can be enabled in a Hugo project in a number of ways.\nThe emojify function can be called directly in templates or Inline Shortcodes.\nTo enable emoji globally, set enableEmoji to true in your site’s configuration and then you can type emoji shorthand codes directly in content files; e.g.\n🙈 :see_no_evil: 🙉 :hear_no_evil: 🙊 :speak_no_evil:\nThe Emoji cheat sheet is a useful reference for emoji shorthand codes.\nN.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.\n.emoji { font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols; }",
+    "ref": "/en/blog/emoji-support/"
   },{
     "title": "Posts Archive",
     "date": "",

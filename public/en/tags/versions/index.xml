@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Versions on Notities</title>
+    <link>http://localhost:1313/en/tags/versions/</link>
+    <description>Recent content in Versions on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 Sep 2023 17:43:18 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/versions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multiple versions of Java on macOS</title>
+      <link>http://localhost:1313/en/blog/2023-multiple-versions-of-java-on-macos/</link>
+      <pubDate>Wed, 27 Sep 2023 17:43:18 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-multiple-versions-of-java-on-macos/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ls -al /usr/local/opt/ | grep -i openjdk&#xA;&#xA;$ brew install jenv&#xA;&#xA;$ jenv add /Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home/&#xA;&#xA;$ jenv versions&#xA;$ jenv local 1.8&#xA;$ java -version&#xA;$ jenv global 1.8&#xA;$ java -version&#xA;$ jenv shell 1.8&#xA;$ java -version&#xA;$ jenv versions&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

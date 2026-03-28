@@ -1,5 +1,5 @@
 ---
-title: "Use of Golang, Java, C/C++, or Rust: A Quick Guide"
+title: "Gebruik van Golang, Java, C/C++ of Rust: een beknopte gids"
 date: 2025-03-22T19:32:21.532Z
 draft: false
 categories:
@@ -16,17 +16,17 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-For **real-time applications**, **Go** and **Rust** are the top choices due to their lightweight concurrency and memory efficiency. Combine them for a balanced approach: Go for high-level logic and Rust for performance-critical tasks. Use **C/C++** for legacy systems and **Java** for enterprise-level applications where real-time performance is less critical.
+Voor **realtime-toepassingen** zijn **Go** en **Rust** de beste keuzes vanwege hun lichtgewicht gelijktijdigheid en geheugenefficiëntie. Combineer ze voor een evenwichtige aanpak: Go voor logica op hoog niveau en Rust voor prestatiekritische taken. Gebruik **C/C++** voor legacysystemen en **Java** voor bedrijfstoepassingen waarbij realtime-prestaties minder kritisch zijn.
 
-**When using Go**, the chance of classic concurrency errors like **race conditions**, **deadlocks**, and **resource leaks** is significantly reduced. This is thanks to Go's use of **channels** for safe communication between goroutines and its built-in garbage collector, which works seamlessly with the goroutine scheduler. This makes Go not only efficient but also more reliable and easier to debug in high-concurrency scenarios.
+**Bij gebruik van Go** is de kans op klassieke gelijktijdigheidsproblemen zoals **race conditions**, **deadlocks** en **resource leaks** aanzienlijk kleiner. Dit komt door Go's gebruik van **channels** voor veilige communicatie tussen goroutines en de ingebouwde garbage collector, die naadloos samenwerkt met de goroutine-planner. Dit maakt Go niet alleen efficiënt maar ook betrouwbaarder en eenvoudiger te debuggen in scenario's met hoge gelijktijdigheid.
 
-Choose **Go** for simplicity and safety in real-time systems, and complement it with **Rust** or **C/C++** when maximum performance and low-level control are required.
+Kies **Go** voor eenvoud en veiligheid in realtime-systemen, en combineer dit met **Rust** of **C/C++** wanneer maximale prestaties en controle op laag niveau vereist zijn.
 
-### **M﻿emory per Thread**
+### **G﻿eheugen per thread**
 
-| Language  | Memory per Thread | Use Case                         | Real-Time Suitability |
-| --------- | ----------------- | -------------------------------- | --------------------- |
-| **Go**    | ~2–8 KB           | Microservices, APIs, concurrency | High (lightweight)    |
-| **Java**  | ~1 MB             | Enterprise apps, Android         | Low (heavy threads)   |
-| **C/C++** | ~1–2 KB           | Systems programming, games       | High (manual control) |
-| **Rust**  | ~1–2 KB           | Safe systems, real-time systems  | High (memory safety)  |
+| Taal      | Geheugen per thread | Gebruiksscenario                      | Geschiktheid voor realtime |
+| --------- | ------------------- | ------------------------------------- | -------------------------- |
+| **Go**    | ~2–8 KB             | Microservices, API's, gelijktijdigheid | Hoog (lichtgewicht)        |
+| **Java**  | ~1 MB               | Bedrijfsapps, Android                 | Laag (zware threads)       |
+| **C/C++** | ~1–2 KB             | Systeemprogrammering, games           | Hoog (handmatige controle) |
+| **Rust**  | ~1–2 KB             | Veilige systemen, realtime-systemen   | Hoog (geheugenbeveiliging) |

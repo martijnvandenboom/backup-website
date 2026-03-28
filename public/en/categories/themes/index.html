@@ -764,8 +764,234 @@
 </article>
 
   
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/wordpress-no-ftp/">Wordpress no FTP needed</a></h2>
+    
+    
+      <p>Commands</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2020-12-19 11:22:46 &#43;0100 CET">December 19, 2020</time>
+    <p>van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    add this line to: wp-config.php define(&#39;FS_METHOD&#39;, &#39;direct&#39;);
+  </div>
+  <footer>
+    <a href="/en/blog/wordpress-no-ftp/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/themes/">themes</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/syntax/">syntax</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/markdown/">markdown</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/css/">css</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/html/">html</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/themes/">themes</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/postgresql-insert-loop/">Postgresql Insert Loop</a></h2>
+    
+    
+      <p>Commands</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2020-12-16 19:21:18 &#43;0100 CET">December 16, 2020</time>
+    <p>van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+     do $$ declare counter integer := 0; begin while counter &lt; 100000 loop insert into public.person (first_name, last_name) values (&#39;Jack&#39;, &#39;Twin&#39;); counter := counter &#43; 1; end loop; end$$; 
+  </div>
+  <footer>
+    <a href="/en/blog/postgresql-insert-loop/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/themes/">themes</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/syntax/">syntax</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/markdown/">markdown</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/css/">css</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/html/">html</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/themes/">themes</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/20201212_1609_-_google_sitemap/">Google sitemap</a></h2>
+    
+    
+      <p>Commands</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2020-12-13 20:13:00 &#43;0100 CET">December 13, 2020</time>
+    <p>van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Google sitemap http://www.google.com/ping?sitemap=https://vandenboom.icu/sitemap.xml http://www.google.com/webmasters/tools/
+  </div>
+  <footer>
+    <a href="/en/blog/20201212_1609_-_google_sitemap/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/themes/">themes</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/syntax/">syntax</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/markdown/">markdown</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/css/">css</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/html/">html</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/themes/">themes</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/hugo-in-alpine-linux/">Hugo in Alpine Linux</a></h2>
+    
+    
+      <p>Commands</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2020-12-12 19:59:50 &#43;0100 CET">December 12, 2020</time>
+    <p>van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Hugo in Alpine Linux &gt; apk update &gt; apk upgrade &gt; apk add git &gt; apk add go &gt; wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub &gt; wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.32-r0/glibc-2.32-r0.apk &gt; apk add glibc-2.32-r0.apk &gt; wget https://github.com/gohugoio/hugo/releases/download/v0.79.0/hugo_0.79.0_Linux-32bit.tar.gz &gt; tar -xvzf hugo_0.79.0_Linux-32bit.tar.gz &gt; ./hugo &gt; ./hugo version &gt;...
+  </div>
+  <footer>
+    <a href="/en/blog/hugo-in-alpine-linux/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/themes/">themes</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/syntax/">syntax</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/markdown/">markdown</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/css/">css</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/html/">html</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/themes/">themes</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
   <div class="pagination">
     
+    
+      <a href="/en/categories/themes/page/2/" class="button right"><span>Next Page</span></a>
     
   </div>
 
@@ -812,8 +1038,8 @@
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -836,7 +1062,13 @@
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -855,12 +1087,6 @@
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

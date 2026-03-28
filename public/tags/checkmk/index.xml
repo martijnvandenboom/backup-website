@@ -9,11 +9,11 @@
     <lastBuildDate>Tue, 16 Jan 2024 21:13:15 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/checkmk/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Checkmk installation on Rocky Linux 9.3</title>
+      <title>Checkmk installatie op Rocky Linux 9.3</title>
       <link>http://localhost:1313/blog/2024-checkmk-installation-on-rocky-linux-9-3/</link>
       <pubDate>Tue, 16 Jan 2024 21:13:15 +0000</pubDate>
       <guid>http://localhost:1313/blog/2024-checkmk-installation-on-rocky-linux-9-3/</guid>
-      <description>&lt;p&gt;Checkmk installation on Rocky Linux 9.3&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;&#xA;setsebool -P httpd_can_network_connect 1&#xA;&#xA;firewall-cmd --zone=public --add-service=http --permanent&#xA;firewall-cmd --reload&#xA;&#xA;wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;&#xA;omd version&#xA;omd create monitoring&#xA;omd start monitoring&#xA;&#xA;http://localhost.localdomain/monitoring/&#xA;user: cmkadmin with password: &amp;lt;given&amp;gt;&#xA;&#xA;omd su monitoring (For command line administration of the site.)&#xA;cmk-passwd cmkadmin (After logging in, you can change the password for cmkadmin with.)&#xA;&#xA;(optional)&#xA;omd status&#xA;omd sites&#xA;omd help&#xA;&#xA;(optional for after reboot if you get the error: Unable to connect)&#xA;omd update-apache-config monitoring&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;p&gt;Checkmk installatie op Rocky Linux 9.3&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;&#xA;setsebool -P httpd_can_network_connect 1&#xA;&#xA;firewall-cmd --zone=public --add-service=http --permanent&#xA;firewall-cmd --reload&#xA;&#xA;wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;&#xA;omd version&#xA;omd create monitoring&#xA;omd start monitoring&#xA;&#xA;http://localhost.localdomain/monitoring/&#xA;gebruiker: cmkadmin met wachtwoord: &amp;lt;opgegeven&amp;gt;&#xA;&#xA;omd su monitoring (Voor beheer via de opdrachtregel van de site.)&#xA;cmk-passwd cmkadmin (Na het inloggen kun je het wachtwoord voor cmkadmin wijzigen met.)&#xA;&#xA;(optioneel)&#xA;omd status&#xA;omd sites&#xA;omd help&#xA;&#xA;(optioneel na herstart als je de foutmelding krijgt: Unable to connect)&#xA;omd update-apache-config monitoring&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>

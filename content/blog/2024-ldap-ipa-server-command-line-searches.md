@@ -1,5 +1,5 @@
 ---
-title: LDAP/IPA Server command line searches
+title: LDAP/IPA Server zoekopdrachten via de opdrachtregel
 date: 2024-03-09T17:34:27.901Z
 draft: false
 categories:

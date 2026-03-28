@@ -9,11 +9,11 @@
     <lastBuildDate>Sat, 09 Mar 2024 17:38:50 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Configure LDAP/IPA Server with Jenkins </title>
+      <title>LDAP/IPA Server configureren met Jenkins</title>
       <link>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-jenkins/</link>
       <pubDate>Sat, 09 Mar 2024 17:38:50 +0000</pubDate>
       <guid>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-jenkins/</guid>
-      <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Identity, Policy, and Audit (IPA) system&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Jenkins&lt;/p&gt;&#xA;&lt;p&gt;2.319.2&lt;/p&gt;&#xA;&lt;p&gt;=﻿==&lt;/p&gt;&#xA;&lt;p&gt;Dashboard -&amp;gt; Security -&amp;gt; Configure Global Security&lt;/p&gt;&#xA;&lt;p&gt;Server:&lt;/p&gt;&#xA;&lt;p&gt;ldap://&amp;lt;IP_SERVER&amp;gt;:389&lt;/p&gt;&#xA;&lt;p&gt;root DN:&lt;/p&gt;&#xA;&lt;p&gt;dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;p&gt;User search base&lt;/p&gt;&#xA;&lt;p&gt;cn=users,cn=accounts&lt;/p&gt;&#xA;&lt;p&gt;User search filter&lt;/p&gt;&#xA;&lt;p&gt;uid={0}&lt;/p&gt;&#xA;&lt;p&gt;Group search base&lt;/p&gt;&#xA;&lt;p&gt;cn=groups,cn=accounts&lt;/p&gt;&#xA;&lt;p&gt;Group membership -&amp;gt; Search for LDAP groups containing user -&amp;gt; Group membership filter:&lt;/p&gt;&#xA;&lt;p&gt;(| (member={0}) (uniqueMember={0}) (memberUid={1}))&lt;/p&gt;&#xA;&lt;p&gt;Manager DN:&lt;/p&gt;&#xA;&lt;p&gt;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;</description>
+      <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Identity, Policy, and Audit (IPA) systeem&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Jenkins&lt;/p&gt;&#xA;&lt;p&gt;2.319.2&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Dashboard -&amp;gt; Beveiliging -&amp;gt; Globale beveiliging configureren&lt;/p&gt;&#xA;&lt;p&gt;Server:&lt;/p&gt;&#xA;&lt;p&gt;ldap://&amp;lt;IP_SERVER&amp;gt;:389&lt;/p&gt;&#xA;&lt;p&gt;Basis-DN:&lt;/p&gt;&#xA;&lt;p&gt;dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;p&gt;Zoekbasis gebruikers&lt;/p&gt;&#xA;&lt;p&gt;cn=users,cn=accounts&lt;/p&gt;&#xA;&lt;p&gt;Zoekfilter gebruikers&lt;/p&gt;&#xA;&lt;p&gt;uid={0}&lt;/p&gt;&#xA;&lt;p&gt;Zoekbasis groepen&lt;/p&gt;&#xA;&lt;p&gt;cn=groups,cn=accounts&lt;/p&gt;&#xA;&lt;p&gt;Groepslidmaatschap -&amp;gt; Zoeken naar LDAP-groepen die gebruiker bevatten -&amp;gt; Groepslidmaatschapsfilter:&lt;/p&gt;&#xA;&lt;p&gt;(| (member={0}) (uniqueMember={0}) (memberUid={1}))&lt;/p&gt;&#xA;&lt;p&gt;Beheerder-DN:&lt;/p&gt;&#xA;&lt;p&gt;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

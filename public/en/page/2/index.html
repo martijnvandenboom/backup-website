@@ -650,12 +650,12 @@
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/">LDAP/IPA - Server on Red Hat Enterprise Linux 7</a></h2>
+      <h2><a href="/en/blog/2025-microsoft-onenote-search-not-working-anymore/">Microsoft OneNote search not working anymore</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2024-02-15 10:47:28.702 &#43;0000 UTC">February 15, 2024</time>
+    <time datetime="2025-04-10 08:48:17.167 &#43;0000 UTC">April 10, 2025</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
@@ -663,14 +663,16 @@
 
   <div class="content">
     
-    If you are using a hosts file, make sure it contains FQDNs and pay close attention to the order in which they appear.
-Check the hosts file and adjust it if necessary:
-The FQDN must come first, followed by any aliases.
-/etc/hosts 10.0.0.1 server1.example.com server1 application1 If an alias is listed before the FQDN, you may encounter error messages that are not immediately traceable to this cause.
+     C﻿lose all Microsoft applications
+R﻿ename the cache folder in:
+C:\Users\&lt;User&gt;\AppData\Local\Microsoft\OneNote\16.0
+R﻿estart OneNote
+P﻿.S.
+D﻿on&#39;t worry if the Notebooks seem empty, they will be regenerated.
 
   </div>
   <footer>
-    <a href="/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/" class="button big">Read More</a>
+    <a href="/en/blog/2025-microsoft-onenote-search-not-working-anymore/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -685,21 +687,15 @@ The FQDN must come first, followed by any aliases.
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/ldap/">ldap</a></li>
+          <li><a class="article-terms-link" href="/en/tags/microsoft/">Microsoft</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/ipa/">ipa</a></li>
+          <li><a class="article-terms-link" href="/en/tags/onenote/">OneNote</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+          <li><a class="article-terms-link" href="/en/tags/search/">search</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/rhel/">rhel</a></li>
+          <li><a class="article-terms-link" href="/en/tags/not/">not</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/red/">red</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/hat/">hat</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/7/">7</a></li>
+          <li><a class="article-terms-link" href="/en/tags/working/">working</a></li>
         
       
     </ul>
@@ -714,26 +710,31 @@ The FQDN must come first, followed by any aliases.
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/">Create a Zombie process in Linux using a C program</a></h2>
+      <h2><a href="/en/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/">OCLP update gives a circle with diagonal at boot</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2024-01-31 20:54:45.709 &#43;0000 UTC">January 31, 2024</time>
+    <time datetime="2025-04-04 14:27:55.743 &#43;0000 UTC">April 4, 2025</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
+    <p>2-Minute Read</p>
   </div>
 </header>
 
   <div class="content">
     
-    Below is the source code of a C program to create a Zombie process in Linux and analyse it.
-vim create_zombie_process.c #include &lt;stdlib.h&gt; #include &lt;sys/types.h&gt; #include &lt;unistd.h&gt; int main () { pid_t child_pid; child_pid = fork (); if (child_pid &gt; 0) { sleep (60); } else { exit (0); } return 0; } Compile the C source code into an executable program:
-gcc create_zombie_process.c Start the program:
-./a.out Open a second Terminal and view the process list. You will now see a...
+    What Mac are you using?
+iMac (Retina 5K, 27-inch, Late 2015)
+Model Identifiers: iMac17,1
+What version of OCLP are you using?
+2.3.1
+What OS version do you have installed or are trying to install?
+Installed: Sequoia 15.3.2 (24D81)
+What exactly is the problem you are facing?
+After installing OCLP 2.3.1 to disk my iMac refuses to boot. At boot I press the Option key to get the menu I choose the blue OCLP icon. Normally it proceeds with the apple logo but now it shows a circle with a diagonal....
   </div>
   <footer>
-    <a href="/en/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/" class="button big">Read More</a>
+    <a href="/en/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -748,74 +749,15 @@ gcc create_zombie_process.c Start the program:
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/zombie/">zombie</a></li>
+          <li><a class="article-terms-link" href="/en/tags/oclp/">OCLP</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/proces/">proces</a></li>
+          <li><a class="article-terms-link" href="/en/tags/update/">update</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+          <li><a class="article-terms-link" href="/en/tags/circle/">circle</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/c/">C</a></li>
+          <li><a class="article-terms-link" href="/en/tags/diagonal/">diagonal</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/programma/">programma</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/">Bash script with a SUCCESS or FAILED message at the end of the line</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-01-31 20:18:39.918 &#43;0000 UTC">January 31, 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    See below an example script to display a SUCCESS message in green or a FAILED message in red, right-aligned at the end of the line.
-#!/bin/bash # Set the message success_message=&amp;#34;Your command was successful&amp;#34; failed_message=&amp;#34;Your command failed&amp;#34; # Set the &amp;#34;OK&amp;#34; string in green ok=&amp;#34;$(tput setaf 2)[SUCCES]$(tput sgr0)&amp;#34; failed=&amp;#34;$(tput setaf 1)[FAILED]$(tput sgr0)&amp;#34; # Get the width of the terminal term_width=$(tput cols)&#43;9 # Calculate the number of dots needed...
-  </div>
-  <footer>
-    <a href="/en/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/bash/">bash</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/script/">script</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/succes/">succes</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/failed/">failed</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/melding/">melding</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/einde/">einde</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/regel/">regel</a></li>
+          <li><a class="article-terms-link" href="/en/tags/boot/">boot</a></li>
         
       
     </ul>
@@ -830,71 +772,12 @@ gcc create_zombie_process.c Start the program:
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2023-macos-desktop-extended-over-3-schermen/">macOS desktop extended across 3 screens: iMac, MacBook and iPad</a></h2>
+      <h2><a href="/en/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/">Installing GitLab on Docker in AlmaLinux 8.10</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2023-11-26 15:16:27.719 &#43;0000 UTC">November 26, 2023</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    In the setup I use I have the following 3 devices:
-iMac 27&amp;quot; late 2015 with OpenCore Legacy Patcher Sonoma: 14.1.1 MacBook Pro 15&amp;quot; late 2016 with OpenCore Legacy Patcher Sonoma: 14.1.1 iPad 10.2&amp;quot; 7th Gen with iPadOS version: 17.1.1 They are connected to the same WiFi network.
-Steps:
-On the iMac go to: System Settings -&gt; Displays Click the plus sign to the right of the Built-in Display Choose under Mirror or Extend to: MacBook Pro Choose under Link keyboard and mouse to: iPad You...
-  </div>
-  <footer>
-    <a href="/en/blog/2023-macos-desktop-extended-over-3-schermen/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/macos/">macos</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/desktop/">desktop</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/extended/">extended</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/meedere/">meedere</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/schermen/">schermen</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/apparaten/">apparaten</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/">Saving a website exactly as it looks</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2023-07-05 18:02:27.747 &#43;0000 UTC">July 5, 2023</time>
+    <time datetime="2025-03-29 20:21:32.13 &#43;0000 UTC">March 29, 2025</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>3-Minute Read</p>
   </div>
@@ -902,16 +785,12 @@ On the iMac go to: System Settings -&gt; Displays Click the plus sign to the rig
 
   <div class="content">
     
-    Saving a website exactly as it looks (1) With the Microsoft Edge Browser:
-step 1.: are you on the website you want to save? Or navigate to it.
-step 2.: click on the 3 dots in the top right of the screen &amp;hellip;
-step 3.: click on: Web capture (with the camera icon)
-step 4.: choose the option: Capture full page
-step 5.: click the disk icon (Save) in the top right of the screen
-
+    Step 1: Update System
+$ sudo dnf update $ sudo dnf install epel-release $ sudo /usr/bin/crb enable Step 2: Install Docker from AlmaLinux Repo
+$ sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo $ sudo dnf remove -y podman podman-docker podman-plugins $ sudo dnf remove -y runc $ sudo dnf clean all $ sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin $ sudo systemctl enable --now docker $ sudo systemctl status docker $ sudo...
   </div>
   <footer>
-    <a href="/en/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/" class="button big">Read More</a>
+    <a href="/en/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -926,9 +805,15 @@ step 5.: click the disk icon (Save) in the top right of the screen
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/website/">website</a></li>
+          <li><a class="article-terms-link" href="/en/tags/install/">install</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/opslaan/">opslaan</a></li>
+          <li><a class="article-terms-link" href="/en/tags/gitlab/">GitLab</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/docker/">Docker</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/almalinux/">AlmaLinux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/8.10/">8.10</a></li>
         
       
     </ul>
@@ -943,12 +828,12 @@ step 5.: click the disk icon (Save) in the top right of the screen
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/">Search the Internet anonymously, protect your privacy</a></h2>
+      <h2><a href="/en/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/">Installing VirtualBox Guest Additions on AlmaLinux 8.10</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2023-06-21 17:10:45.383 &#43;0000 UTC">June 21, 2023</time>
+    <time datetime="2025-03-29 20:16:41.155 &#43;0000 UTC">March 29, 2025</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
@@ -956,16 +841,24 @@ step 5.: click the disk icon (Save) in the top right of the screen
 
   <div class="content">
     
-    Do you want to stay anonymous when searching the Internet?
-Then use a different web browser. The Tor Browser was specifically developed to stay anonymous.
-Step 1.: go to the website: https://www.torproject.org/
-Step 2.: download the Tor Browser
-Step 3.: install the new application
-Please note! Do not change the size of the application window, as this can already reveal information about your identity. The advice: do not do this.
+     $ sudo dnf update
+$ sudo reboot
+(So any new installed kernel will be loaded)
+$ sudo dnf install gcc kernel-devel kernel-headers make bzip2 perl
+Go to the VirtualBox Menu &gt; Devices &gt; Insert Guest Additions CD image
+Automated:
+Press Run
+Manual:
+$ cd /run/media/$USER/VBox_GAs_*/ # Adjust path if needed
+$ sudo ./VBoxLinuxAdditions.run
+$ sudo reboot
+Verification:
+$ lsmod | grep vbox
+(Check to see if vboxguest is listed)
 
   </div>
   <footer>
-    <a href="/en/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/" class="button big">Read More</a>
+    <a href="/en/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -980,15 +873,144 @@ Please note! Do not change the size of the application window, as this can alrea
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/anoniem/">anoniem</a></li>
+          <li><a class="article-terms-link" href="/en/tags/install/">install</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/zoeken/">zoeken</a></li>
+          <li><a class="article-terms-link" href="/en/tags/virtualbox/">virtualbox</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/internet/">internet</a></li>
+          <li><a class="article-terms-link" href="/en/tags/guest/">guest</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/bescherm/">bescherm</a></li>
+          <li><a class="article-terms-link" href="/en/tags/additions/">additions</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/privacy/">privacy</a></li>
+          <li><a class="article-terms-link" href="/en/tags/almalinux/">almalinux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/8.10/">8.10</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    With Deskflow you control multiple computers — macOS, Windows or Linux — using a single mouse and keyboard. It works as a software-based KVM switch (without video) and is sponsored by Synergy. This program is still actively maintained, with an intuitive interface that makes it easy to use. Tip: disable TLS in the settings for a smooth start.
+Download it via: https://github.com/deskflow/deskflow/releases. Look for the &amp;ldquo;latest&amp;rdquo; tag and check all assets for the correct version!
+
+  </div>
+  <footer>
+    <a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/deskflow/">deskflow</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/bedienen/">bedienen</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/meerdere/">meerdere</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/computers/">computers</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/1/">1</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/keyboard/">keyboard</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/muis/">muis</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/macos/">macos</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/">Installing Oracle VirtualBox on Ubuntu Linux</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2025-03-23 13:20:53.4 &#43;0000 UTC">March 23, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    T﻿ry the following steps:
+$﻿ sudo apt update
+$﻿ sudo apt upgrade
+$﻿ sudo apt install curl
+$﻿ curl -fsSL https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg &amp;ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg
+$﻿ echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] http://download.virtualbox.org/virtualbox/debian noble contrib&amp;rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list
+$﻿ sudo apt update
+$﻿ sudo search virtualbox...
+  </div>
+  <footer>
+    <a href="/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/installing/">installing</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/oracle/">Oracle</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/virtualbox/">VirtualBox</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ubuntu/">Ubuntu</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">Linux</a></li>
         
       
     </ul>
@@ -1051,8 +1073,8 @@ Please note! Do not change the size of the application window, as this can alrea
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -1075,7 +1097,13 @@ Please note! Do not change the size of the application window, as this can alrea
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -1094,12 +1122,6 @@ Please note! Do not change the size of the application window, as this can alrea
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

@@ -1,5 +1,5 @@
 ---
-title: LDAP/IPA Server client installation
+title: LDAP/IPA Server clientinstallatie
 date: 2024-03-09T17:33:26.773Z
 draft: false
 categories:

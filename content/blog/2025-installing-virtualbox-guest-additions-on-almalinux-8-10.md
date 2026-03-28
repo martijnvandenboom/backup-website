@@ -1,5 +1,5 @@
 ---
-title: Installing VirtualBox Guest Additions on AlmaLinux 8.10
+title: VirtualBox Guest Additions installeren op AlmaLinux 8.10
 date: 2025-03-29T20:16:41.155Z
 draft: false
 categories:
@@ -18,21 +18,21 @@ share: true
 ---
 > $ sudo dnf update\
 > $ sudo reboot\
-> (So any new installed kernel will be loaded)\
+> (Zodat een nieuw geïnstalleerde kernel wordt geladen)\
 > \
 > $ sudo dnf install gcc kernel-devel kernel-headers make bzip2 perl\
 > \
-> Go to the VirtualBox Menu > Devices > Insert Guest Additions CD image\
+> Ga naar het VirtualBox-menu > Apparaten > Guest Additions-cd-image invoegen\
 > \
-> Automated:\
-> Press Run\
+> Automatisch:\
+> Klik op Uitvoeren\
 > \
-> Manual:\
-> $ cd /run/media/$USER/VBox\_GAs\_*/   # Adjust path if needed\
+> Handmatig:\
+> $ cd /run/media/$USER/VBox\_GAs\_*/   # Pas het pad aan indien nodig\
 > $ sudo ./VBoxLinuxAdditions.run\
 > \
 > $ sudo reboot\
 > \
-> Verification:\
+> Verificatie:\
 > $ lsmod | grep vbox\
-> (Check to see if vboxguest is listed)
+> (Controleer of vboxguest wordt vermeld)

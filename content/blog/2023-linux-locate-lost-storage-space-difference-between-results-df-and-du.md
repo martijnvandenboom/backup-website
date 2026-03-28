@@ -1,5 +1,5 @@
 ---
-title: Linux locate lost storage space difference between results df and du
+title: Linux zoek verloren opslagruimte op door het verschil tussen df en du te achterhalen
 date: 2023-09-05T06:18:17.459Z
 draft: false
 categories:

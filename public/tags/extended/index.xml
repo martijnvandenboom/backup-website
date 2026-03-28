@@ -16,11 +16,11 @@
       <description>&lt;p&gt;In de setup die ik gebruik heb ik de volgende 3 apparaten:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;iMac 27” late 2015 met OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;MacBook Pro 15” late 2016 met OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;iPad 10.2” 7th Gen met iPadOS-versie: 17.1.1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Ze zijn op hetzelfde WiFi netwerk verbonden.&lt;/p&gt;&#xA;&lt;p&gt;Stappen:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Op de iMac ga naar: System Settings -&amp;gt; Displays&lt;/li&gt;&#xA;&lt;li&gt;Klik op het plusje rechts naast de Built-in Display&lt;/li&gt;&#xA;&lt;li&gt;Kies onder Mirror or Extend to: MacBook Pro&lt;/li&gt;&#xA;&lt;li&gt;Kies onder Link keyboard and mouse to: iPad&lt;/li&gt;&#xA;&lt;li&gt;Nu zie je onder de Displays de 3 schermen, maar het is nog niet extended over de 3&lt;/li&gt;&#xA;&lt;li&gt;Klik op de iPad&lt;/li&gt;&#xA;&lt;li&gt;Kies bij de optie: “Use as” - voor: Extend or mirrored display&lt;/li&gt;&#xA;&lt;li&gt;Nu zie je op alle 3 de apparaten het zelfde bureaublad&lt;/li&gt;&#xA;&lt;li&gt;En kun je applicaties schuiven vanaf de iMac naar de MacBook of de iPad&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
-      <title>Any iMac as a second display with extended desktop</title>
+      <title>Elke iMac als tweede scherm met uitgebreid bureaublad</title>
       <link>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</link>
       <pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate>
       <guid>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</guid>
-      <description>&lt;p&gt;Install Windows on your iMac and use the software utility spacedesk.&lt;/p&gt;&#xA;&lt;p&gt;Such a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Installeer Windows op je iMac en gebruik de softwaretool spacedesk.&lt;/p&gt;&#xA;&lt;p&gt;Zo eenvoudig is het om elke iMac te gebruiken als tweede (of zelfs derde of meer) scherm om je bureaublad uit te breiden.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

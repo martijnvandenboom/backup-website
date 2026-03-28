@@ -1,6 +1,6 @@
 +++
-title = "Emoji Support"
-description = "Guide to emoji usage in Hugo"
+title = "Emoji-ondersteuning"
+description = "Handleiding voor het gebruik van emoji in Hugo"
 author = "Hugo Authors"
 date = "2019-03-05"
 tags = ["emoji"]
@@ -10,21 +10,21 @@ tags = ["emoji"]
   stretch = "stretchH"
 +++
 
-Emoji can be enabled in a Hugo project in a number of ways.
+Emoji kan op verschillende manieren worden ingeschakeld in een Hugo-project.
 <!--more-->
-The [`emojify`](https://gohugo.io/functions/emojify/) function can be called directly in templates or [Inline Shortcodes](https://gohugo.io/templates/shortcode-templates/#inline-shortcodes).
+De functie [`emojify`](https://gohugo.io/functions/emojify/) kan rechtstreeks worden aangeroepen in sjablonen of [Inline Shortcodes](https://gohugo.io/templates/shortcode-templates/#inline-shortcodes).
 
-To enable emoji globally, set `enableEmoji` to `true` in your site’s [configuration](https://gohugo.io/getting-started/configuration/) and then you can type emoji shorthand codes directly in content files; e.g.
+Om emoji globaal in te schakelen, stelt u `enableEmoji` in op `true` in de [configuratie](https://gohugo.io/getting-started/configuration/) van uw site, waarna u emoji-afkortingen rechtstreeks in inhoudsbestanden kunt typen; bijv.
 
 
 <p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
 <br>
 
-The [Emoji cheat sheet](http://www.emoji-cheat-sheet.com/) is a useful reference for emoji shorthand codes.
+Het [Emoji-spiekbriefje](http://www.emoji-cheat-sheet.com/) is een handig naslagwerk voor emoji-afkortingen.
 
 ***
 
-**N.B.** The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.
+**N.B.** De bovenstaande stappen schakelen Unicode-standaard emoji-tekens en -reeksen in Hugo in, maar de weergave van deze glyphs hangt af van de browser en het platform. Om de emoji op te maken kunt u een emoji-lettertype van derden of een lettertypestapel gebruiken; bijv.
 
 {{< highlight html >}}
 .emoji {

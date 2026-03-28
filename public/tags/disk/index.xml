@@ -9,14 +9,14 @@
     <lastBuildDate>Sun, 07 Jul 2024 20:45:53 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/disk/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Create a USB rEFIt boot disk</title>
+      <title>Maak een USB rEFIt opstartschijf</title>
       <link>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</link>
       <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
       <guid>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img&#xA;# diskutil list&#xA;# diskutil unmountDisk /dev/disk2&#xA;# sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m&#xA;Using rdisk2 here seems to speed up things&#xA;&#xA;# diskutil eject /dev/disk2&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img&#xA;# diskutil list&#xA;# diskutil unmountDisk /dev/disk2&#xA;# sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m&#xA;Het gebruik van rdisk2 hier lijkt de zaken te versnellen&#xA;&#xA;# diskutil eject /dev/disk2&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
-      <title>Linux disk space information more clearly excluding the denied and cannot messages</title>
+      <title>Linux schijfruimte-informatie overzichtelijker weergeven zonder de geweigerd- en kan-niet-berichten</title>
       <link>http://localhost:1313/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</link>
       <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
       <guid>http://localhost:1313/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</guid>

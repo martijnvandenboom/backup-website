@@ -1,5 +1,5 @@
 ---
-title: Tips for using XRDP on Ubuntu Linux
+title: Tips voor het gebruik van XRDP op Ubuntu Linux
 date: 2025-03-23T12:51:59.295Z
 draft: false
 categories:
@@ -14,7 +14,7 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-T﻿o be able to use XRDP on Ubuntu Linux try the following instructions:
+O﻿m XRDP op Ubuntu Linux te kunnen gebruiken, volgt u de onderstaande instructies:
 
 > $ s﻿udo apt update \
 > $ s﻿udo apt upgrade\
@@ -24,6 +24,6 @@ T﻿o be able to use XRDP on Ubuntu Linux try the following instructions:
 > $ echo "xhost +" > ~/.bash_profile\
 > $﻿ ip a
 
-R﻿emember write down your IP address of your system and to log out of your graphical user session.
+O﻿nthoud dat u uw IP-adres noteert en uitlogt uit uw grafische gebruikerssessie.
 
-N﻿ow try to login to your system with a RDP tool.
+P﻿robeer nu in te loggen op uw systeem met een RDP-tool.

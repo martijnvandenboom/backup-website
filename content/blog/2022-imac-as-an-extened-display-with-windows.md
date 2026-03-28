@@ -1,5 +1,5 @@
 ---
-title: Any iMac as a second display with extended desktop
+title: Elke iMac als tweede scherm met uitgebreid bureaublad
 date: 2022-10-31T17:55:56.563Z
 draft: false
 categories:
@@ -14,6 +14,6 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-Install Windows on your iMac and use the software utility spacedesk.
+Installeer Windows op je iMac en gebruik de softwaretool spacedesk.
 
-Such a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.
+Zo eenvoudig is het om elke iMac te gebruiken als tweede (of zelfs derde of meer) scherm om je bureaublad uit te breiden.

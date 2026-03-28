@@ -30,11 +30,11 @@
       <description>&lt;p&gt;Met Deskflow bestuur je meerdere computers – macOS, Windows of Linux – met één muis en toetsenbord. Het werkt als een softwarematige KVM-switch (zonder video) en wordt gesponsord door Synergy. Dit programma is nog steeds actueel en goed onderhouden, met een intuïtieve interface die het gebruik simpel maakt. Tip: zet in de instellingen even TLS uit voor een soepele start.&lt;/p&gt;&#xA;&lt;p&gt;Download het via: &lt;a href=&#34;https://github.com/deskflow/deskflow/releases&#34;&gt;https://github.com/deskflow/deskflow/releases&lt;/a&gt;. Zoek naar de tag &amp;ldquo;latest&amp;rdquo; en check alle assets voor de juiste versie!&lt;/p&gt;</description>
     </item>
     <item>
-      <title>How to burn an *.iso file to CD or DVD in Windows</title>
+      <title>Hoe brand je een *.iso-bestand naar cd of dvd in Windows</title>
       <link>http://localhost:1313/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</link>
       <pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate>
       <guid>http://localhost:1313/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</guid>
-      <description>&lt;p&gt;In File Explorer right-click on the *.ISO file and choose Properties.&lt;/br&gt;Then, click Change from the General tab, choose Windows Explorer, and click OK.&lt;/br&gt;Next, save the change by clicking Apply &amp;gt; OK&lt;/br&gt; Now right click on the *.ISO file and choose: Burn disc image or on: Show more options to find this.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Klik in Verkenner met de rechtermuisknop op het *.ISO-bestand en kies Eigenschappen.&lt;/br&gt;Klik vervolgens op Wijzigen op het tabblad Algemeen, kies Windows Verkenner en klik op OK.&lt;/br&gt;Sla de wijziging daarna op door op Toepassen &amp;gt; OK te klikken.&lt;/br&gt; Klik nu met de rechtermuisknop op het *.ISO-bestand en kies: Schijfimage branden, of kies: Meer opties weergeven om dit te vinden.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Snelkoppeling maken met een icoontje op het bureaublad</title>
@@ -65,11 +65,11 @@
       <description>&lt;p&gt;Verander je Windows wachtwoord door gebruik te maken van een snelkoppeling op je bureaublad. (CTRL+ALT+DEL toetscombinatie door op een snelkoppeling te klikken)&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik met je rechtermuisknop op je bureaublad, kies voor nieuw en snelkoppeling&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Geef bij de locatie van het item het volgende commando op:&lt;br&gt;&#xA;C:\Windows\explorer.exe shell:::{2559a1f2-21d7-11d4-bdaf-00c04f60b9f0}&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik op: Volgende&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Geef de snelkoppeling bijv. de naam: Wachtwoord resetten&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik op: Voltooien&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
-      <title>Prevent opening Windows 11 Store when typing the command python</title>
+      <title>Voorkom dat de Windows 11 Store opent wanneer je het commando python typt</title>
       <link>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
       <guid>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
-      <description>&lt;p&gt;Step 1: Open Settings in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Step 2: Go to Apps&lt;/p&gt;&#xA;&lt;p&gt;Step 3: Go to Advanced app settings&lt;/p&gt;&#xA;&lt;p&gt;Step 4: Go to App execution aliases&lt;/p&gt;&#xA;&lt;p&gt;Step 5: Disable the option for python.exe and python3.exe&lt;/p&gt;</description>
+      <description>&lt;p&gt;Stap 1: Open Instellingen in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: Ga naar Apps&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: Ga naar Geavanceerde app-instellingen&lt;/p&gt;&#xA;&lt;p&gt;Stap 4: Ga naar App-uitvoeringsaliassen&lt;/p&gt;&#xA;&lt;p&gt;Stap 5: Schakel de optie voor python.exe en python3.exe uit&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</title>
@@ -79,11 +79,11 @@
       <description>&lt;p&gt;Stap 1: installeer Python&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: zet de scripts folder en de boven liggende folder allebij in het path&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: CMD&amp;gt; pip install pywin32&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Any iMac as a second display with extended desktop</title>
+      <title>Elke iMac als tweede scherm met uitgebreid bureaublad</title>
       <link>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</link>
       <pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate>
       <guid>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</guid>
-      <description>&lt;p&gt;Install Windows on your iMac and use the software utility spacedesk.&lt;/p&gt;&#xA;&lt;p&gt;Such a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Installeer Windows op je iMac en gebruik de softwaretool spacedesk.&lt;/p&gt;&#xA;&lt;p&gt;Zo eenvoudig is het om elke iMac te gebruiken als tweede (of zelfs derde of meer) scherm om je bureaublad uit te breiden.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automatisch inloggen in Windows</title>

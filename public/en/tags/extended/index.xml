@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/en/blog/2023-macos-desktop-extended-over-3-schermen/</guid>
       <description>&lt;p&gt;In the setup I use I have the following 3 devices:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;iMac 27&amp;quot; late 2015 with OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;MacBook Pro 15&amp;quot; late 2016 with OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;iPad 10.2&amp;quot; 7th Gen with iPadOS version: 17.1.1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;They are connected to the same WiFi network.&lt;/p&gt;&#xA;&lt;p&gt;Steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;On the iMac go to: System Settings -&amp;gt; Displays&lt;/li&gt;&#xA;&lt;li&gt;Click the plus sign to the right of the Built-in Display&lt;/li&gt;&#xA;&lt;li&gt;Choose under Mirror or Extend to: MacBook Pro&lt;/li&gt;&#xA;&lt;li&gt;Choose under Link keyboard and mouse to: iPad&lt;/li&gt;&#xA;&lt;li&gt;You now see the 3 screens under Displays, but it is not yet extended across all 3&lt;/li&gt;&#xA;&lt;li&gt;Click on the iPad&lt;/li&gt;&#xA;&lt;li&gt;Choose for the option: &amp;ldquo;Use as&amp;rdquo; - select: Extend or mirrored display&lt;/li&gt;&#xA;&lt;li&gt;You now see the same desktop on all 3 devices&lt;/li&gt;&#xA;&lt;li&gt;And you can drag applications from the iMac to the MacBook or the iPad&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
+    <item>
+      <title>Any iMac as a second display with extended desktop</title>
+      <link>http://localhost:1313/en/blog/2022-imac-as-an-extened-display-with-windows/</link>
+      <pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2022-imac-as-an-extened-display-with-windows/</guid>
+      <description>&lt;p&gt;Install Windows on your iMac and use the software utility spacedesk.&lt;/p&gt;&#xA;&lt;p&gt;Such a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

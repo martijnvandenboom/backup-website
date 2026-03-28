@@ -1,5 +1,5 @@
 ---
-title: Checkmk installation on Rocky Linux 9.3
+title: Checkmk installatie op Rocky Linux 9.3
 date: 2024-01-16T21:13:15.512Z
 draft: false
 categories:
@@ -15,7 +15,7 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-Checkmk installation on Rocky Linux 9.3
+Checkmk installatie op Rocky Linux 9.3
 
 ```
 dnf install epel-release
@@ -33,16 +33,16 @@ omd create monitoring
 omd start monitoring
 
 http://localhost.localdomain/monitoring/
-user: cmkadmin with password: <given>
+gebruiker: cmkadmin met wachtwoord: <opgegeven>
 
-omd su monitoring (For command line administration of the site.)
-cmk-passwd cmkadmin (After logging in, you can change the password for cmkadmin with.)
+omd su monitoring (Voor beheer via de opdrachtregel van de site.)
+cmk-passwd cmkadmin (Na het inloggen kun je het wachtwoord voor cmkadmin wijzigen met.)
 
-(optional)
+(optioneel)
 omd status
 omd sites
 omd help
 
-(optional for after reboot if you get the error: Unable to connect)
+(optioneel na herstart als je de foutmelding krijgt: Unable to connect)
 omd update-apache-config monitoring
 ```

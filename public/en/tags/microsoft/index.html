@@ -650,6 +650,186 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2025-microsoft-onenote-search-not-working-anymore/">Microsoft OneNote search not working anymore</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2025-04-10 08:48:17.167 &#43;0000 UTC">April 10, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+     C﻿lose all Microsoft applications
+R﻿ename the cache folder in:
+C:\Users\&lt;User&gt;\AppData\Local\Microsoft\OneNote\16.0
+R﻿estart OneNote
+P﻿.S.
+D﻿on&#39;t worry if the Notebooks seem empty, they will be regenerated.
+
+  </div>
+  <footer>
+    <a href="/en/blog/2025-microsoft-onenote-search-not-working-anymore/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/microsoft/">Microsoft</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/onenote/">OneNote</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/search/">search</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/not/">not</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/working/">working</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/">Install Microsoft Visual Studio Code in Linux from the repo</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2025-03-22 22:13:54.381 &#43;0000 UTC">March 22, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    F﻿ollow the below steps to install Microsoft Visual Studio Code IDE on Linux from its repository:
+sudo rpm &amp;ndash;import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c &#39;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &gt; /etc/yum.repos.d/vscode.repo&#39;
+sudo dnf install code -y
+
+  </div>
+  <footer>
+    <a href="/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/install/">install</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/microsoft/">microsoft</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/visual-studio/">visual studio</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/code/">code</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/repo/">repo</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/">Putting the Microsoft EFI boot files on the EFI partition</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-07-07 20:49:33.29 &#43;0000 UTC">July 7, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Boot into the Windows installer
+On the first screen press SHIFT &#43; F10
+# diskpart # list disk # select disk 0 # list part Look for the Windows partition # select part 3 # assign letter=W # format quick fs=NTFS # list volume Look for the EFI volume # select volume 2 # assign letter=Z # exit # D: Goto the USB installer of Windows # cd D:\sources # dir install* The file install.esd exists # dism /Get-WimInfo /WimFile:D:\Sources\install.esd Select the Index of the version of Windows you want # dism...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/putting/">putting</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/microsoft/">microsoft</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/efi/">efi</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/boot/">boot</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/files/">files</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/partition/">partition</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/triple/">triple</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/">Microsoft makes Office available for free on the website</a></h2>
     
     
@@ -753,8 +933,8 @@ Step 2.: click the sign in button
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -777,7 +957,13 @@ Step 2.: click the sign in button
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -796,12 +982,6 @@ Step 2.: click the sign in button
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Excluding on Notities</title>
+    <link>http://localhost:1313/en/tags/excluding/</link>
+    <description>Recent content in Excluding on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Sep 2023 06:23:38 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/excluding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux disk space information more clearly excluding the denied and cannot messages</title>
+      <link>http://localhost:1313/en/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</link>
+      <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</guid>
+      <description>&lt;p&gt;$ du -hs * 2&amp;gt; &amp;gt;(egrep -iv &amp;lsquo;permission denied|cannot access&amp;rsquo;) | sort -n&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

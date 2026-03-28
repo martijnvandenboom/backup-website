@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/en/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</guid>
       <description>&lt;p&gt;Do you want to stay anonymous when searching the Internet?&lt;/p&gt;&#xA;&lt;p&gt;Then use a different web browser. The Tor Browser was specifically developed to stay anonymous.&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Step 1.: go to the website: &lt;a href=&#34;https://www.torproject.org/&#34;&gt;https://www.torproject.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Step 2.: download the Tor Browser&lt;/p&gt;&#xA;&lt;p&gt;Step 3.: install the new application&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Please note! Do not change the size of the application window, as this can already reveal information about your identity. The advice: do not do this.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Rich Content</title>
+      <link>http://localhost:1313/en/blog/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

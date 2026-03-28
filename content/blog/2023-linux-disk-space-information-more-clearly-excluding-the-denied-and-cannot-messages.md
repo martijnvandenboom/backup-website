@@ -1,6 +1,5 @@
 ---
-title: Linux disk space information more clearly excluding the denied and cannot
-  messages
+title: Linux schijfruimte-informatie overzichtelijker weergeven zonder de geweigerd- en kan-niet-berichten
 date: 2023-09-05T06:23:38.580Z
 draft: false
 categories:

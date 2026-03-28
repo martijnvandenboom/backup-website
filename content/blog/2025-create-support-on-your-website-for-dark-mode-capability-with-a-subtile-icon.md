@@ -1,5 +1,5 @@
 ---
-title: Create support on your website for dark mode capability with a subtle icon
+title: Ondersteuning toevoegen voor dark mode op uw website met een subtiel icoon
 date: 2025-02-15T21:17:06.389Z
 draft: false
 categories:
@@ -16,14 +16,14 @@ authorImage: uploads/Martijn_001.jpg
 comments: true
 share: true
 ---
-D﻿ear reader,
+D﻿ ear lezer,
 
-I﻿ would like to refer you to my GitHub page for a nice and simple project enabling the dark mode effect on a website. I want to share this with you so that it can inspire you and enable you to do a similar implementation that you can use on your own website.
+I﻿k verwijs u graag naar mijn GitHub-pagina voor een mooi en eenvoudig project waarmee u het dark mode-effect op een website kunt inschakelen. Ik deel dit graag met u zodat het u kan inspireren en u een soortgelijke implementatie kunt maken die u op uw eigen website kunt gebruiken.
 
-S﻿ee: https://github.com/martijnvandenboom/darkmode-test
+Z﻿ie: https://github.com/martijnvandenboom/darkmode-test
 
-B﻿est regards,
+M﻿et vriendelijke groet,
 
 M﻿artijn
 
-P﻿.S. leave a message I would like to hear from from you
+P﻿.S. laat een berichtje achter, ik hoor graag van u

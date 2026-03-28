@@ -650,12 +650,12 @@
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/">Install the Google Chrome Web Browser on Ubuntu Linux</a></h2>
+      <h2><a href="/en/blog/2024-checkmk-installation-on-rocky-linux-9-3/">Checkmk installation on Rocky Linux 9.3</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2022-04-03 11:51:54.59 &#43;0000 UTC">April 3, 2022</time>
+    <time datetime="2024-01-16 21:13:15.512 &#43;0000 UTC">January 16, 2024</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
@@ -663,14 +663,11 @@
 
   <div class="content">
     
-    $ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-$ sudo sh -c &#39;echo &amp;ldquo;deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main&amp;rdquo; &amp;raquo; /etc/apt/sources.list.d/google-chrome.list&#39;
-$ sudo apt update
-$ sudo apt install google-chrome-stable
-
+    Checkmk installation on Rocky Linux 9.3
+dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd --zone=public --add-service=http --permanent firewall-cmd --reload wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm omd version omd create monitoring omd start monitoring http://localhost.localdomain/monitoring/ user: cmkadmin with password: &lt;given&gt; omd su monitoring (For command...
   </div>
   <footer>
-    <a href="/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/" class="button big">Read More</a>
+    <a href="/en/blog/2024-checkmk-installation-on-rocky-linux-9-3/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -685,17 +682,15 @@ $ sudo apt install google-chrome-stable
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/google/">Google</a></li>
+          <li><a class="article-terms-link" href="/en/tags/checkmk/">checkmk</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/chrome/">Chrome</a></li>
+          <li><a class="article-terms-link" href="/en/tags/installation/">installation</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/web/">Web</a></li>
+          <li><a class="article-terms-link" href="/en/tags/rocky/">rocky</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/browser/">Browser</a></li>
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/ubuntu/">Ubuntu</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/linux/">Linux</a></li>
+          <li><a class="article-terms-link" href="/en/tags/9.3/">9.3</a></li>
         
       
     </ul>
@@ -710,12 +705,12 @@ $ sudo apt install google-chrome-stable
   <header>
   <div class="title">
     
-      <h2><a href="/en/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/">New life in an old Apple computer (iMac, MacBook)</a></h2>
+      <h2><a href="/en/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/">Installing the VirtualBox Guest Additions on Rocky Linux 9.3</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2022-02-25 11:09:02.25 &#43;0000 UTC">February 25, 2022</time>
+    <time datetime="2024-01-16 21:08:26.966 &#43;0000 UTC">January 16, 2024</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
     <p>1-Minute Read</p>
   </div>
@@ -723,11 +718,11 @@ $ sudo apt install google-chrome-stable
 
   <div class="content">
     
-    Install the VirtualBox application and run a virtual machine inside it with the latest version of Linux or Windows. In many cases this can solve problems with browsing the internet — for example, making it possible to visit websites that no longer work in the old Apple environment.
-
+    Installing the VirtualBox Guest Additions on Rocky Linux 9.3
+dnf install epel-release dnf update --refresh dnf update kernel-* reboot (optional) dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel rpm -q kernel-devel uname -r Top menu: Devices -&gt; Insert Guest Additions CD-Image Run (optional) cd /run/media/ ./VBoxLinuxAdditions.run 
   </div>
   <footer>
-    <a href="/en/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/" class="button big">Read More</a>
+    <a href="/en/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/" class="button big">Read More</a>
     <div class="stats">
   
     <ul class="categories">
@@ -742,33 +737,253 @@ $ sudo apt install google-chrome-stable
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/en/tags/nieuw/">nieuw</a></li>
+          <li><a class="article-terms-link" href="/en/tags/installing/">installing</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/leven/">leven</a></li>
+          <li><a class="article-terms-link" href="/en/tags/virtualbox/">virtualbox</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/oude/">oude</a></li>
+          <li><a class="article-terms-link" href="/en/tags/guest/">guest</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/apple/">Apple</a></li>
+          <li><a class="article-terms-link" href="/en/tags/additions/">additions</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/computer/">computer</a></li>
+          <li><a class="article-terms-link" href="/en/tags/rocky/">rocky</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/mac/">Mac</a></li>
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/imac/">iMac</a></li>
+          <li><a class="article-terms-link" href="/en/tags/9.3/">9.3</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/macbook/">Macbook</a></li>
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2023-the-linux-mlocate-command-under-macos/">The Linux mlocate command on macOS</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2023-09-27 17:40:13.885 &#43;0000 UTC">September 27, 2023</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    The Linux mlocate command under macOS
+sudo /usr/libexec/locate.updatedb sudo ln -s /usr/libexec/locate.updatedb /usr/local/bin/updatedb 
+  </div>
+  <footer>
+    <a href="/en/blog/2023-the-linux-mlocate-command-under-macos/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
         
-          <li><a class="article-terms-link" href="/en/tags/macos/">macOS</a></li>
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/virtual/">virtual</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/machines/">machines</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/virtualbox/">VirtualBox</a></li>
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
         
           <li><a class="article-terms-link" href="/en/tags/linux/">Linux</a></li>
         
-          <li><a class="article-terms-link" href="/en/tags/windows/">Windows</a></li>
+          <li><a class="article-terms-link" href="/en/tags/mlocate/">mlocate</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/command/">command</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/macos/">macOS</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/">Linux disk space information more clearly excluding the denied and cannot messages</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2023-09-05 06:23:38.58 &#43;0000 UTC">September 5, 2023</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    $ du -hs * 2&gt; &gt;(egrep -iv &amp;lsquo;permission denied|cannot access&#39;) | sort -n
+
+  </div>
+  <footer>
+    <a href="/en/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/disk/">disk</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/space/">space</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/information/">information</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/clearly/">clearly</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/excluding/">excluding</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/denied/">denied</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/cannot/">cannot</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/messages/">messages</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/">Linux locate lost storage space difference between results df and du</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2023-09-05 06:18:17.459 &#43;0000 UTC">September 5, 2023</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    $ lsof | grep -E &amp;lsquo;^COM|deleted&#39;
+
+  </div>
+  <footer>
+    <a href="/en/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/locate/">locate</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/lost/">lost</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/storage/">storage</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/space/">space</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/difference/">difference</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/df/">df</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/du/">du</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/">Automatically log in to a Linux server using PuTTY on Windows</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2023-02-17 14:51:15.829 &#43;0000 UTC">February 17, 2023</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    You can automatically log in to a Linux server on Windows using PuTTY by making use of a key file. Below I explain step by step how to do this.
+Create a key: start: puttygen.exe Click on: Generate Click on: Save private key Go to PuTTY Configuration -&gt; Session Load a previously created session or create a new one Go to: Connection -&gt; SSH -&gt; Auth -&gt; Private key file for authentication -&gt; Browse Select your file with the private key: *.ppk Go back to Session and click on: Save Log...
+  </div>
+  <footer>
+    <a href="/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/automatisch/">automatisch</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/inloggen/">inloggen</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/putty/">putty</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
         
       
     </ul>
@@ -783,6 +998,8 @@ $ sudo apt install google-chrome-stable
     
       <a href="/en/tags/linux/" class="button left"><span>Previous Page</span></a>
     
+    
+      <a href="/en/tags/linux/page/3/" class="button right"><span>Next Page</span></a>
     
   </div>
 
@@ -829,8 +1046,8 @@ $ sudo apt install google-chrome-stable
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/">Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</a></h2>
-          <time class="published" datetime="2025-03-24 17:57:51.655 &#43;0000 UTC">March 24, 2025</time>
+          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -853,7 +1070,13 @@ $ sudo apt install google-chrome-stable
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">25</span></a>
+              <a href="/en/categories/article/">article<span class="count">63</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
               <a href="/en/categories/windows/">windows<span class="count">8</span></a>
@@ -872,12 +1095,6 @@ $ sudo apt install google-chrome-stable
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/syntax/">syntax<span class="count">2</span></a>
-          
-          <li>
-              <a href="/en/categories/themes/">themes<span class="count">2</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

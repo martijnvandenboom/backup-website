@@ -493,12 +493,7 @@
   
   <a href="#" lang="nl" class="nav link active">Nederlands (nl)</a>
   
-    
-      
-        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
-      
-    
-      
+      <a href="http://localhost:1313/en/tags/efi/" lang="en" class="nav link">English (en)</a>
     
   
 
@@ -655,7 +650,7 @@
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/">Putting the Microsoft EFI boot files on the EFI partition</a></h2>
+      <h2><a href="/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/">De Microsoft EFI-opstartbestanden op de EFI-partitie plaatsen</a></h2>
     
     
   </div>
@@ -668,9 +663,9 @@
 
   <div class="content">
     
-    Boot into the Windows installer
-On the first screen press SHIFT &#43; F10
-# diskpart # list disk # select disk 0 # list part Look for the Windows partition # select part 3 # assign letter=W # format quick fs=NTFS # list volume Look for the EFI volume # select volume 2 # assign letter=Z # exit # D: Goto the USB installer of Windows # cd D:\sources # dir install* The file install.esd exists # dism /Get-WimInfo /WimFile:D:\Sources\install.esd Select the Index of the version of Windows you want # dism...
+    Start op via het Windows-installatieprogramma
+Druk op het eerste scherm op SHIFT &#43; F10
+# diskpart # list disk # select disk 0 # list part Zoek naar de Windows-partitie # select part 3 # assign letter=W # format quick fs=NTFS # list volume Zoek naar het EFI-volume # select volume 2 # assign letter=Z # exit # D: Ga naar de USB-installatieschijf van Windows # cd D:\sources # dir install* Het bestand install.esd bestaat # dism /Get-WimInfo /WimFile:D:\Sources\install.esd Selecteer de Index van de...
   </div>
   <footer>
     <a href="/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/" class="button big">Lees verder</a>
@@ -715,7 +710,7 @@ On the first screen press SHIFT &#43; F10
   <header>
   <div class="title">
     
-      <h2><a href="/blog/2024-refit-installation-to-efi-partition-of-an-imac/">rEFIt installation to EFI partition of an iMac</a></h2>
+      <h2><a href="/blog/2024-refit-installation-to-efi-partition-of-an-imac/">rEFIt installeren op de EFI-partitie van een iMac</a></h2>
     
     
   </div>
@@ -728,10 +723,10 @@ On the first screen press SHIFT &#43; F10
 
   <div class="content">
     
-    F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac
-D﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below
-B﻿efore you do the bless command disable the SIP
-Boot in recovery mode
+    V﻿olg de onderstaande stappen om rEFIt te installeren op de EFI-partitie van een iMac
+D﻿ownload rEFIt en kopieer de efi-map naar de /efi-map zoals hieronder uitgelegd
+V﻿oordat u het bless-commando uitvoert, schakelt u de SIP uit
+Start op in herstelmodus
 #﻿ csrutil status
 #﻿ csrutil disable
 #﻿ reboot
@@ -822,7 +817,7 @@ sudo mkdir /efi sudo mount -t msdos /dev/disk0s1 /efi sudo bless --mount /efi --
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
+          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</a></h2>
           <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">1 Juli 2025</time>
         </header>
       </article>
