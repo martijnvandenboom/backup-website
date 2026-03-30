@@ -6,6 +6,7 @@ date = "2025-02-11"
 layout = "animations"
 categories = ["animations"]
 tags = ["animation", "css", "javascript", "webdesign"]
+comments = false
 +++
 
 <b><a rel="noopener" href="#creating_animations">Creating animations service</a></b></br>
