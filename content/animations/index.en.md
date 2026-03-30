@@ -4,6 +4,8 @@ description = "Creating animations"
 author = "van den Boom"
 date = "2025-02-11"
 layout = "animations"
+categories = ["animations"]
+tags = ["animation", "css", "javascript", "webdesign"]
 +++
 
 <b><a rel="noopener" href="#creating_animations">Creating animations service</a></b></br>
@@ -48,12 +50,82 @@ Examples:</br>
 </br>
 
 <div class="flame-container">
-    <div class="left-div">2. The burning flame:
+    <div class="left-div">2. The burning flame:</br>
         Our flame animation symbolizes the burning creativity that we put into every project. Just like a flame that constantly dances and changes, we give your ideas energy and movement. Whether you're looking for a dynamic element for your website or a visual effect that captures attention, our flames elevate your project to the next level. Watch how the flame lights up and moves, just like our creative processes!
     </div>
     <div class="right-div">
         <img src="https://vandenboom.netlify.app/images/flame-image-003.png" alt="Flame" class="flame">
     </div>
-    
+
 </div></br>
+</br>
+
+<style>
+    .company_logo {
+        font-family: "DejaVu Sans Mono", monospace;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+    .prefix-container {
+        width: 7ch;
+        display: flex;
+        align-items: center;
+    }
+    .logo-right {
+        margin-left: 20px;
+        color: #000000;
+    }
+    #cursor {
+        animation: blink 1s step-end infinite;
+        color: #000000;
+    }
+    @keyframes blink {
+        from, to { opacity: 1; }
+        50% { opacity: 0; }
+    }
+</style>
+
+<div>3. The company logo:</br>
+    Our company logo is itself a living animation. The text <code>&lt;VDB/&gt;</code> is typed out character by character — like a developer writing code — followed by a gently blinking cursor. After a brief pause, the sequence starts over, a constant reminder that we are always building something new. The combination of programming-language syntax and monospace typography reflects exactly who we are: a technical company that brings creativity and craftsmanship together in every solution we deliver.
+</div>
+
+<div class="company_logo">
+    <div class="prefix-container">
+        <span id="typed"></span><span id="cursor">_</span>
+    </div>
+    <div>
+        <span id="static" class="logo-right">Digital Services</span>
+    </div>
+</div>
+
+<script>
+const text = "<VDB/>";
+const typedElement = document.getElementById("typed");
+let i = 0;
+
+function startAnimation() {
+    typedElement.textContent = "";
+    i = 0;
+    setTimeout(typeNext, 4000);
+}
+
+function typeNext() {
+    if (i < text.length) {
+        typedElement.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeNext, 120);
+    } else {
+        setTimeout(startAnimation, 8000);
+    }
+}
+
+startAnimation();
+</script>
+</br>
+</br>
+</br>
 </br>

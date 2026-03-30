@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Virtualbox on Notities</title>
+    <title>VirtualBox on Notities</title>
     <link>http://localhost:1313/en/tags/virtualbox/</link>
-    <description>Recent content in Virtualbox on Notities</description>
+    <description>Recent content in VirtualBox on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Jul 2025 08:30:05 +0000</lastBuildDate>

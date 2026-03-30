@@ -4,6 +4,8 @@ description = "Animatie creatie"
 author = "van den Boom"
 date = "2025-02-11"
 layout = "animaties"
+categories = ["animaties"]
+tags = ["animatie", "css", "javascript", "webdesign"]
 +++
 
 <b><a rel="noopener" href="#creating_animations">Animatie creatie service</a></b></br>
@@ -54,6 +56,76 @@ Voorbeelden:</br>
     <div class="right-div">
         <img src="https://vandenboom.netlify.app/images/flame-image-003.png" alt="Flame" class="flame">
     </div>
-    
+
 </div></br>
+</br>
+
+<style>
+    .company_logo {
+        font-family: "DejaVu Sans Mono", monospace;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+    .prefix-container {
+        width: 7ch;
+        display: flex;
+        align-items: center;
+    }
+    .logo-right {
+        margin-left: 20px;
+        color: #000000;
+    }
+    #cursor {
+        animation: blink 1s step-end infinite;
+        color: #000000;
+    }
+    @keyframes blink {
+        from, to { opacity: 1; }
+        50% { opacity: 0; }
+    }
+</style>
+
+<div>3. Het bedrijfslogo:</br>
+    Ons bedrijfslogo is zelf een levende animatie. De tekst <code>&lt;VDB/&gt;</code> wordt karakter voor karakter ingetypt — als een developer die code schrijft — gevolgd door een rustig knipperend cursortje. Na een korte pauze begint het proces opnieuw, als een eindeloze reminder dat wij altijd bezig zijn iets nieuws te bouwen. De combinatie van de programmeertaal-syntaxis en de monospace typografie weerspiegelt precies wie wij zijn: een technisch bedrijf dat creativiteit en vakmanschap samenbrengt in elke oplossing die we leveren.
+</div>
+
+<div class="company_logo">
+    <div class="prefix-container">
+        <span id="typed"></span><span id="cursor">_</span>
+    </div>
+    <div>
+        <span id="static" class="logo-right">Digital Services</span>
+    </div>
+</div>
+
+<script>
+const text = "<VDB/>";
+const typedElement = document.getElementById("typed");
+let i = 0;
+
+function startAnimation() {
+    typedElement.textContent = "";
+    i = 0;
+    setTimeout(typeNext, 4000);
+}
+
+function typeNext() {
+    if (i < text.length) {
+        typedElement.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeNext, 120);
+    } else {
+        setTimeout(startAnimation, 8000);
+    }
+}
+
+startAnimation();
+</script>
+</br>
+</br>
+</br>
 </br>

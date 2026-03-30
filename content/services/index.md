@@ -9,7 +9,7 @@ layout = "services"
 <b><a rel="noopener" href="#webdesign_en_ontwikkeling_service">1. Webdesign en Ontwikkeling Service</a></b></br>
 <b><a rel="noopener" href="#floppy_disk_recovery_service">2. Floppy Disk Recovery Service</a></b></br>
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
-<b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b><br>
+<b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
 <b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
 <b><a rel="noopener" href="#begeleiding_en_bijles_service">6. Persoonlijke Begeleiding en Bijles Service</a></b>
 

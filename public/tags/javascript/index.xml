@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Notities</title>
+    <link>http://localhost:1313/tags/javascript/</link>
+    <description>Recent content in Javascript on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Animaties</title>
+      <link>http://localhost:1313/animations/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/animations/</guid>
+      <description>&lt;p&gt;&lt;b&gt;&lt;a rel=&#34;noopener&#34; href=&#34;#creating_animations&#34;&gt;Animatie creatie service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a id=&#34;creating_animations&#34;&gt;&lt;/a&gt;&#xA;&lt;/br&gt;&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;b&gt;Animatie creatie service&lt;/b&gt;&lt;/p&gt;&#xA;&lt;p&gt;Breng je ideeën tot leven met verbluffende animaties&lt;/p&gt;&#xA;&lt;p&gt;Bij &amp;ldquo;van den &lt;span class=&#34;bold-rotate&#34;&gt;B&lt;/span&gt;oom Animations&amp;rdquo; zijn we gespecialiseerd in het creëren van op maat gemaakte animaties die je publiek boeien en engageren. Of je nu je website wilt verbeteren, je merk wilt adverteren of een oogverblindend effect aan je project wilt toevoegen, ons team staat klaar om jouw visie om te zetten in beweging. Van soepele overgangen en dynamische visuals tot aantrekkelijke animaties, wij bieden op maat gemaakte oplossingen om jouw content te laten opvallen. Laat ons je helpen je verhaal te vertellen door de magie van animatie!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
