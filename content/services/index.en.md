@@ -4,6 +4,7 @@ description = "Available services"
 author = "van den Boom"
 date = "2023-10-29"
 layout = "services"
+comments = false
 +++
 
 <b><a rel="noopener" href="#web_design_and_development_service">1. Web Design and Development Service</a></b></br>
