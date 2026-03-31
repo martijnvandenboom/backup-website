@@ -1,6 +1,6 @@
 ---
 title: "Proxmox Lab — Windows Server 2022 Template voorbereiding"
-date: 2026-03-31T00:00:00+01:00
+date: 2026-03-31T10:00:00+01:00
 description: "Van eerste opstart tot Sysprep — stap voor stap handleiding voor het voorbereiden van een Windows Server 2022 VM als herbruikbaar Proxmox-template. Inclusief VirtIO-drivers, Windows Update via PowerShell, prestatieoptimalisaties en Sysprep."
 categories:
   - article

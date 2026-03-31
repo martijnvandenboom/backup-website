@@ -650,6 +650,73 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+    
+    
+      <p>From first boot to Sysprep — step-by-step guide for preparing a Windows Server 2022 VM as a reusable Proxmox template. Covers VirtIO drivers, Windows Update via PowerShell, performance tweaks, and Sysprep.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2026-03-31 10:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>6-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    This guide covers the complete process of preparing a freshly installed Windows Server 2022 VM as a reusable Proxmox template. All future VMs (CA server, member servers, etc.) are cloned from this template, saving significant time and ensuring a consistent baseline across the entire lab.
+📄 Download the full guide with screenshots: WS2022-in-Proxmox-Template-Preparation-Guide.docx
+Overview The full process consists of these steps:
+Install VirtIO guest drivers Run Windows Update — fully patch the...
+  </div>
+  <footer>
+    <a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/proxmox/">proxmox</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/windows-server-2022/">windows-server-2022</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/sysprep/">sysprep</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/virtio/">virtio</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/powershell/">powershell</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/template/">template</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/lab/">lab</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/hypervisor/">hypervisor</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
     
     
@@ -696,73 +763,6 @@ Environment Component Details Proxmox Host macpro2013.local — Mac Pro 2013 Tra
           <li><a class="article-terms-link" href="/en/tags/vm/">vm</a></li>
         
           <li><a class="article-terms-link" href="/en/tags/virtio/">virtio</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/lab/">lab</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/hypervisor/">hypervisor</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
-    
-    
-      <p>From first boot to Sysprep — step-by-step guide for preparing a Windows Server 2022 VM as a reusable Proxmox template. Covers VirtIO drivers, Windows Update via PowerShell, performance tweaks, and Sysprep.</p>
-    
-  </div>
-  <div class="meta">
-    <time datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>6-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    This guide covers the complete process of preparing a freshly installed Windows Server 2022 VM as a reusable Proxmox template. All future VMs (CA server, member servers, etc.) are cloned from this template, saving significant time and ensuring a consistent baseline across the entire lab.
-📄 Download the full guide with screenshots: WS2022-in-Proxmox-Template-Preparation-Guide.docx
-Overview The full process consists of these steps:
-Install VirtIO guest drivers Run Windows Update — fully patch the...
-  </div>
-  <footer>
-    <a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/proxmox/">proxmox</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/windows-server-2022/">windows-server-2022</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/sysprep/">sysprep</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/virtio/">virtio</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/powershell/">powershell</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/template/">template</a></li>
         
           <li><a class="article-terms-link" href="/en/tags/lab/">lab</a></li>
         
@@ -1058,15 +1058,15 @@ She inspired this article as part of the research for her thesis, where she coul
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
-          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+          <time class="published" datetime="2026-03-31 10:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
         </header>
       </article>
       
       <article class="mini-post">
           
         <header>
-          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
           <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
         </header>
       </article>

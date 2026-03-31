@@ -1,6 +1,6 @@
 ---
 title: "Proxmox Lab — Windows Server 2022 Template Preparation"
-date: 2026-03-31T00:00:00+01:00
+date: 2026-03-31T10:00:00+01:00
 description: "From first boot to Sysprep — step-by-step guide for preparing a Windows Server 2022 VM as a reusable Proxmox template. Covers VirtIO drivers, Windows Update via PowerShell, performance tweaks, and Sysprep."
 categories:
   - article
