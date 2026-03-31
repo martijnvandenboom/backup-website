@@ -817,6 +817,8 @@
 <h2 id="step-1--install-virtio-guest-drivers">Step 1 — Install VirtIO Guest Drivers</h2>
 <p>VirtIO guest drivers are required for Windows to function correctly on Proxmox. They cover the storage controller, network adapter, memory balloon, display, and other paravirtualized devices.</p>
 <p>Open <strong>File Explorer</strong> inside the Windows VM and navigate to the VirtIO CD drive (D: or E:). Scroll to the bottom of the file list and double-click <strong>virtio-win-guest-tools.exe</strong> (the Application file, approximately 30 MB). This single installer handles all required drivers in one pass. Accept the defaults and let it complete.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/virtio-file-explorer.png" alt="VirtIO CD contents with virtio-win-guest-tools.exe visible">
+<em>The VirtIO CD drive in File Explorer. The <code>virtio-win-guest-tools.exe</code> installer is visible near the bottom of the list.</em></p>
 <blockquote>
 <p><strong>Tip:</strong> Always use <code>virtio-win-guest-tools.exe</code> rather than installing individual drivers from the subfolders. It is faster and ensures nothing is missed.</p>
 </blockquote>
@@ -825,25 +827,43 @@
 <p>Fully patching the OS before Sysprep means every cloned VM starts up-to-date without needing to run updates individually.</p>
 <h3 id="21-starting-windows-update">2.1 Starting Windows Update</h3>
 <p>Open <strong>Settings → Update &amp; Security → Windows Update</strong> and click <strong>Check for updates</strong>. Available updates will begin downloading and installing.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-update-running.png" alt="Windows Update downloading and installing updates">
+<em>Windows Update actively downloading and installing patches.</em></p>
 <h3 id="22-windows-update-gui-hangs--known-issue">2.2 Windows Update GUI Hangs — Known Issue</h3>
 <p>The Windows Update GUI in Server 2022 VMs is unreliable. Buttons frequently stop responding and downloads appear to hang. This is a known issue in VM environments.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-update-stuck.png" alt="Windows Update GUI stuck">
+<em>A typical case where the Windows Update GUI appears to hang and stops responding properly.</em></p>
 <blockquote>
 <p><strong>Warning:</strong> When the Windows Update GUI hangs, do NOT attempt to fix it through the GUI. Switch to the PowerShell method described below.</p>
 </blockquote>
 <h3 id="23-preferred-method--pswindowsupdate-via-powershell">2.3 Preferred Method — PSWindowsUpdate via PowerShell</h3>
 <p>Open <strong>PowerShell as Administrator</strong> (right-click Start → Windows PowerShell (Admin)):</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/powershell-wuauclt.png" alt="PowerShell ready for PSWindowsUpdate commands">
+<em>PowerShell running as Administrator and ready for the update commands.</em></p>
 <p><strong>Step 1 — Install the PSWindowsUpdate module:</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Install-Module PSWindowsUpdate -Force -Confirm:$false
-</span></span></code></pre></div><p>Type <code>Y</code> and press Enter when prompted to install the NuGet provider or trust PSGallery.</p>
+</span></span></code></pre></div><p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/pswu-install.png" alt="Installing the PSWindowsUpdate module">
+<em>Installing the PSWindowsUpdate module. If prompted, answer <code>Y</code> to trust the repository or install the NuGet provider.</em></p>
+<p>Type <code>Y</code> and press Enter when prompted to install the NuGet provider or trust PSGallery.</p>
 <p><strong>Step 2 — Import the module and run all updates:</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Import-Module PSWindowsUpdate
 </span></span><span style="display:flex;"><span>Get-WindowsUpdate -Install -AcceptAll -AutoReboot
-</span></span></code></pre></div><p>The VM will reboot automatically if required. After reboot, log back in and run the command again until no updates remain:</p>
+</span></span></code></pre></div><p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/pswu-running.png" alt="PSWindowsUpdate running through the available KB updates">
+<em>PSWindowsUpdate working through the available updates and KB packages.</em></p>
+<p>The VM will reboot automatically if required. After reboot, log back in and run the command again until no updates remain:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-update-30pct.png" alt="Windows applying updates during reboot">
+<em>Windows applying updates during reboot. Let this finish without interruption.</em></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsUpdate -Install -AcceptAll -AutoReboot
 </span></span></code></pre></div><p>Run Windows Update a second time to confirm nothing was missed. Some updates only become available after others are installed.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-uptodate-1.png" alt="Windows Update says you’re up to date after the first round">
+<em>The first pass may already report the machine as up to date.</em></p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-uptodate-final.png" alt="Windows Update confirmed fully up to date after a second check">
+<em>Always run a second check to confirm no additional updates appear afterward.</em></p>
 <blockquote>
 <p><strong>Tip:</strong> Some updates (such as KB890830 — Windows Malicious Software Removal Tool) may persistently fail in VM environments. This is known and harmless — it does not affect server functionality and can be safely skipped.</p>
 </blockquote>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-update-error.png" alt="Example of a Windows Update error that can be ignored in a lab VM">
+<em>Example of an update failure that may appear in lab VMs without affecting the server&rsquo;s usefulness.</em></p>
 <hr>
 <h2 id="step-3--performance-tweaks">Step 3 — Performance Tweaks</h2>
 <p>Apply these tweaks in PowerShell (Admin) before Sysprep so every cloned VM benefits automatically:</p>
@@ -885,7 +905,9 @@
 <p>After rebooting, verify RDP is working from the Proxmox host shell:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ping 192.168.178.11           <span style="color:#75715e"># Responds with 0% packet loss</span>
 </span></span><span style="display:flex;"><span>nc -zv 192.168.178.11 <span style="color:#ae81ff">3389</span>    <span style="color:#75715e"># Port open confirms RDP is listening</span>
-</span></span></code></pre></div><blockquote>
+</span></span></code></pre></div><p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/rdp-verification.png" alt="RDP connectivity verification from the Proxmox host">
+<em>RDP verification from the Proxmox host: successful ping, open port 3389, and the expected Remote Desktop firewall rules enabled in Windows.</em></p>
+<blockquote>
 <p><strong>Tip:</strong> If <code>nc</code> shows <em>Connection refused</em> after enabling RDP, a reboot is needed. RDP does not start listening until after a restart.</p>
 </blockquote>
 <hr>

@@ -741,7 +741,7 @@
   <div class="meta">
     <time datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
     <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>6-Minute Read</p>
+    <p>7-Minute Read</p>
   </div>
 </header>
 
@@ -836,6 +836,8 @@
 <blockquote>
 <p><strong>Note:</strong> The Proxmox WebUI shows an SSL certificate warning because Proxmox uses a self-signed certificate by default. This is the motivation for setting up an internal Certificate Authority (CA) later — once the CA is in place, a proper trusted certificate can be issued for Proxmox.</p>
 </blockquote>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/proxmox-ssl-warning.png" alt="Safari SSL warning for macpro2013.local">
+<em>Safari shows an SSL warning for macpro2013.local. This disappears once your internal CA is in place and Proxmox uses a trusted certificate.</em></p>
 <hr>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>Before creating a VM, ensure the following ISO images are uploaded to Proxmox local storage (<strong>Proxmox WebUI → local → ISO Images</strong>):</p>
@@ -880,7 +882,9 @@
 </span></span><span style="display:flex;"><span>qm set &lt;VMID&gt; --name &lt;NEW-NAME&gt;
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Example — rename VM 100:</span>
 </span></span><span style="display:flex;"><span>qm set <span style="color:#ae81ff">100</span> --name WS2022-LAB01-AD-DNS
-</span></span></code></pre></div><hr>
+</span></span></code></pre></div><p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/proxmox-overview-both-vms.png" alt="Proxmox overview with both VMs correctly named">
+<em>The Proxmox side panel after both VMs were created and renamed: WS2022-LAB01-AD-DNS as VM 100 and WS2022-TEMPLATE-BASE as VM 900.</em></p>
+<hr>
 <h2 id="step-1--create-the-vm-via-the-proxmox-wizard">Step 1 — Create the VM via the Proxmox Wizard</h2>
 <p>In the Proxmox WebUI, click <strong>Create VM</strong> (blue button, top right). Work through each tab in order as described below.</p>
 <h3 id="11-general-tab">1.1 General Tab</h3>
@@ -1130,6 +1134,8 @@
 <hr>
 <h2 id="step-2--verify-hardware-before-booting">Step 2 — Verify Hardware Before Booting</h2>
 <p>After clicking Finish, do <strong>not</strong> start the VM immediately. First verify the hardware config by clicking the VM in the left panel and selecting <strong>Hardware</strong>. Confirm all of the following:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/proxmox-vm900-hardware.png" alt="Proxmox Hardware tab for VM 900">
+<em>VM 900 shown in the Hardware tab with the intended template configuration, including <code>balloon=0</code>, <code>host</code> CPU type, EFI disk, TPM state, both ISOs, and the 60 GB VirtIO-backed disk.</em></p>
 <ul>
 <li><strong>Memory:</strong> 4.00 GiB [balloon=0] — balloon=0 confirms ballooning is disabled</li>
 <li><strong>Processors:</strong> 2 (1 socket, 2 cores) [host] — confirms host CPU type</li>
@@ -1142,6 +1148,9 @@
 <li><strong>Network:</strong> vmbr0, firewall=1</li>
 <li><strong>EFI Disk</strong> and <strong>TPM State</strong> present on local-lvm</li>
 </ul>
+<p>If you already created your first lab VM as well, the hardware view should look similar there too:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/proxmox-vm100-hardware.png" alt="Proxmox Hardware tab for VM 100">
+<em>VM 100 hardware overview after creation. The exact role name differs, but the main VM settings remain the same.</em></p>
 <hr>
 <h2 id="step-3--start-the-vm-and-install-windows">Step 3 — Start the VM and Install Windows</h2>
 <p>Click <strong>Start</strong> and immediately open the <strong>Console</strong>. When you see the following message, click inside the console window first (to capture keyboard focus) and press any key:</p>
@@ -1149,7 +1158,11 @@
 </code></pre><blockquote>
 <p><strong>Warning:</strong> If you miss this prompt, the VM falls through to PXE boot. Simply reset the VM and try again — be ready at the console before clicking Start.</p>
 </blockquote>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/proxmox-boot-pxe.png" alt="PXE boot fallback when the CD boot prompt is missed">
+<em>If you do not press a key in time, the VM falls through to PXE boot. Reset the VM and try again.</em></p>
 <p>When you catch the prompt in time, the <strong>Windows Boot Manager</strong> appears. Select <strong>Windows Setup [EMS Enabled]</strong> and press Enter to continue.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/windows-boot-manager.png" alt="Windows Boot Manager">
+<em>Windows Boot Manager with Windows Setup selected.</em></p>
 <hr>
 <h2 id="step-4--edition-selection">Step 4 — Edition Selection</h2>
 <p>When prompted to select an edition, choose:</p>
@@ -1160,6 +1173,8 @@
 <hr>
 <h2 id="step-5--loading-the-virtio-storage-driver">Step 5 — Loading the VirtIO Storage Driver</h2>
 <p>On the <em>Where do you want to install the operating system?</em> screen, the disk list will be empty. This is expected — Windows cannot see the VirtIO SCSI disk without the driver.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/windows-no-disk.png" alt="Windows Setup with no disk visible yet">
+<em>This is the normal empty-disk screen before the VirtIO SCSI driver is loaded.</em></p>
 <p>Follow these steps to load the driver:</p>
 <ol>
 <li>Click <strong>Load driver</strong></li>
@@ -1171,9 +1186,13 @@
 <li>Click <strong>Next</strong></li>
 </ol>
 <p>The 60 GB disk will now appear in the list. Select it and continue. Windows installation begins.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/windows-installing.png" alt="Windows Server 2022 installation in progress">
+<em>Windows Setup after the storage driver is loaded and installation has started.</em></p>
 <hr>
 <h2 id="step-6--after-installation">Step 6 — After Installation</h2>
 <p>After Windows installs and reboots, you will land at the <strong>Server Manager Dashboard</strong>. Close the Windows Admin Center popup (tick <em>Don&rsquo;t show this message again</em>).</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/windows-server-manager.png" alt="Server Manager Dashboard after Windows Server 2022 installation">
+<em>Server Manager shown after the first successful boot of Windows Server 2022 Datacenter.</em></p>
 <p>The VM is now ready for the next step: preparing it as a reusable Proxmox template. Refer to the companion guide:</p>
 <blockquote>
 <p>📄 <strong><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></strong></p>
