@@ -19,7 +19,7 @@ author: "ing. M.A.C.M. (Martijn) van den Boom"
 Deze handleiding beschrijft het volledige proces voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Gebaseerd op praktijkervaring inclusief alle correcties en geleerde lessen tijdens de opbouw van een thuislab.
 
 > 📄 **Download de volledige handleiding met screenshots:**
-> [WS2022-in-Proxmox-VM-Creation-Guide.docx](/documents/WS2022-in-Proxmox-VM-Creation-Guide.docx)
+> [WS2022-in-Proxmox-VM-Creation-Guide-NL.docx](/documents/WS2022-in-Proxmox-VM-Creation-Guide-NL.docx)
 
 ---
 
@@ -234,7 +234,7 @@ De VM is nu klaar voor de volgende stap: het voorbereiden als herbruikbaar Proxm
 ---
 
 > 📄 **Download de volledige handleiding met screenshots:**
-> [WS2022-in-Proxmox-VM-Creation-Guide.docx](/documents/WS2022-in-Proxmox-VM-Creation-Guide.docx)
+> [WS2022-in-Proxmox-VM-Creation-Guide-NL.docx](/documents/WS2022-in-Proxmox-VM-Creation-Guide-NL.docx)
 
 Vriendelijke groeten,
 

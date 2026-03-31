@@ -20,7 +20,7 @@ author: "ing. M.A.C.M. (Martijn) van den Boom"
 Deze handleiding beschrijft het volledige proces voor het voorbereiden van een vers geïnstalleerde Windows Server 2022 VM als herbruikbaar Proxmox-template. Alle toekomstige VM's (CA-server, lidservers, enzovoort) worden gekloond vanuit dit template, wat aanzienlijk tijd bespaart en een consistente basisinstallatie garandeert.
 
 > 📄 **Download de volledige handleiding met screenshots:**
-> [WS2022-in-Proxmox-Template-Preparation-Guide.docx](/documents/WS2022-in-Proxmox-Template-Preparation-Guide.docx)
+> [WS2022-in-Proxmox-Template-Preparation-Guide-NL.docx](/documents/WS2022-in-Proxmox-Template-Preparation-Guide-NL.docx)
 
 ---
 
@@ -222,7 +222,7 @@ Na het klonen start de nieuwe VM op in Windows OOBE (eerste installatie), waar j
 ---
 
 > 📄 **Download de volledige handleiding met screenshots:**
-> [WS2022-in-Proxmox-Template-Preparation-Guide.docx](/documents/WS2022-in-Proxmox-Template-Preparation-Guide.docx)
+> [WS2022-in-Proxmox-Template-Preparation-Guide-NL.docx](/documents/WS2022-in-Proxmox-Template-Preparation-Guide-NL.docx)
 
 Vriendelijke groeten,
 

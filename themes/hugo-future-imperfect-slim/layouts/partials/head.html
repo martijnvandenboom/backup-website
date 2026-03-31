@@ -23,6 +23,7 @@
 
 
   {{ partial "meta" . }}
+  {{ partial "seo" . }}
   {{- hugo.Generator -}}
 
   {{ with .Site.Title }}<meta property="og:site_name" content="{{ . }}">{{ end }}
