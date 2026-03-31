@@ -4720,19 +4720,6 @@
     <loc>https://www.vandenboom.icu/posts/</loc>
     <lastmod>2020-12-11T22:23:48+01:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/about-legacy/</loc>
-    <lastmod>2020-12-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/about-legacy/"
-                />
-  </url><url>
     <loc>https://www.vandenboom.icu/blog/december-2020/</loc>
     <lastmod>2020-12-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -4744,6 +4731,19 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://www.vandenboom.icu/blog/december-2020/"
+                />
+  </url><url>
+    <loc>https://www.vandenboom.icu/about/</loc>
+    <lastmod>2020-12-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/about/"
                 />
   </url><url>
     <loc>https://www.vandenboom.icu/blog/markdown-syntax/</loc>

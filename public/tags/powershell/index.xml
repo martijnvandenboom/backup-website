@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PowerShell on Notities</title>
+    <title>Powershell on Notities</title>
     <link>https://www.vandenboom.icu/tags/powershell/</link>
-    <description>Recent content in PowerShell on Notities</description>
+    <description>Recent content in Powershell on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0000</lastBuildDate>
