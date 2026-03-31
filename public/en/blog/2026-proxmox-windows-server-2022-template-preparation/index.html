@@ -968,19 +968,72 @@
 <p>After cloning, the new VM boots into Windows OOBE (first-time setup) where you configure the Administrator password, computer name, and network settings before joining the domain.</p>
 <hr>
 <h2 id="summary-checklist">Summary Checklist</h2>
-<ol>
-<li>Install virtio-win-guest-tools.exe from VirtIO CD drive ☐</li>
-<li>Run PSWindowsUpdate until fully patched — repeat after each reboot ☐</li>
-<li>Set High Performance power plan via powercfg ☐</li>
-<li>Disable WSearch and SysMain services ☐</li>
-<li>Change Proxmox Display to VirtIO-GPU in Hardware tab ☐</li>
-<li>Set timezone to W. Europe Standard Time ☐</li>
-<li>Enable RDP and disable NLA ☐</li>
-<li>Disable IE Enhanced Security Configuration ☐</li>
-<li>Reboot and verify RDP on port 3389 via nc ☐</li>
-<li>Run Sysprep /oobe /generalize /shutdown ☐</li>
-<li>Convert VM to template in Proxmox immediately after shutdown ☐</li>
-</ol>
+<table>
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>Task</th>
+          <th>Done</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Install <code>virtio-win-guest-tools.exe</code> from the VirtIO CD drive</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Run PSWindowsUpdate until the OS is fully patched — repeat after each reboot</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Set the High Performance power plan via <code>powercfg</code></td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Disable the <code>WSearch</code> and <code>SysMain</code> services</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Change the Proxmox Display to <code>VirtIO-GPU</code> in the Hardware tab</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Set the timezone to <code>W. Europe Standard Time</code></td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Enable RDP and disable NLA</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Disable IE Enhanced Security Configuration</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Reboot and verify RDP on port 3389 via <code>nc</code></td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>Run Sysprep with <code>/oobe /generalize /shutdown</code></td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>Convert the VM to a template in Proxmox immediately after shutdown</td>
+          <td>☐</td>
+      </tr>
+  </tbody>
+</table>
 <hr>
 <blockquote>
 <p>📄 <strong>Download the full guide with screenshots:</strong>

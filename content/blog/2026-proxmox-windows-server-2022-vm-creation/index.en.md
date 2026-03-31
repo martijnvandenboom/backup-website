@@ -250,15 +250,17 @@ The VM is now ready for the next step: preparing it as a reusable Proxmox templa
 
 ## Summary Checklist
 
-1. Upload Windows Server 2022 ISO to Proxmox local storage ☐
-2. Upload VirtIO drivers ISO to Proxmox local storage ☐
-3. Create VM with correct settings across all wizard tabs ☐
-4. Verify hardware config in Proxmox Hardware tab before booting ☐
-5. Boot VM — catch CD boot prompt immediately in Console ☐
-6. Select Windows Server 2022 Datacenter (Desktop Experience) ☐
-7. Load VirtIO SCSI driver (vioscsi/w2k22/amd64) before disk selection ☐
-8. Complete Windows installation ☐
-9. Proceed to the Template Preparation guide ☐
+| # | Task | Done |
+| --- | --- | --- |
+| 1 | Upload the Windows Server 2022 ISO to Proxmox local storage | ☐ |
+| 2 | Upload the VirtIO drivers ISO to Proxmox local storage | ☐ |
+| 3 | Create the VM with the correct settings across all wizard tabs | ☐ |
+| 4 | Verify the hardware configuration in the Proxmox Hardware tab before booting | ☐ |
+| 5 | Start the VM and catch the CD boot prompt immediately in the Console | ☐ |
+| 6 | Select Windows Server 2022 Datacenter (Desktop Experience) | ☐ |
+| 7 | Load the VirtIO SCSI driver (`vioscsi/w2k22/amd64`) before disk selection | ☐ |
+| 8 | Complete the Windows installation | ☐ |
+| 9 | Continue to Part 2 — Template Preparation | ☐ |
 
 ---
 

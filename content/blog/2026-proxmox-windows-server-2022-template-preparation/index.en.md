@@ -240,17 +240,19 @@ After cloning, the new VM boots into Windows OOBE (first-time setup) where you c
 
 ## Summary Checklist
 
-1. Install virtio-win-guest-tools.exe from VirtIO CD drive ☐
-2. Run PSWindowsUpdate until fully patched — repeat after each reboot ☐
-3. Set High Performance power plan via powercfg ☐
-4. Disable WSearch and SysMain services ☐
-5. Change Proxmox Display to VirtIO-GPU in Hardware tab ☐
-6. Set timezone to W. Europe Standard Time ☐
-7. Enable RDP and disable NLA ☐
-8. Disable IE Enhanced Security Configuration ☐
-9. Reboot and verify RDP on port 3389 via nc ☐
-10. Run Sysprep /oobe /generalize /shutdown ☐
-11. Convert VM to template in Proxmox immediately after shutdown ☐
+| # | Task | Done |
+| --- | --- | --- |
+| 1 | Install `virtio-win-guest-tools.exe` from the VirtIO CD drive | ☐ |
+| 2 | Run PSWindowsUpdate until the OS is fully patched — repeat after each reboot | ☐ |
+| 3 | Set the High Performance power plan via `powercfg` | ☐ |
+| 3 | Disable the `WSearch` and `SysMain` services | ☐ |
+| 3 | Change the Proxmox Display to `VirtIO-GPU` in the Hardware tab | ☐ |
+| 4 | Set the timezone to `W. Europe Standard Time` | ☐ |
+| 4 | Enable RDP and disable NLA | ☐ |
+| 4 | Disable IE Enhanced Security Configuration | ☐ |
+| 4 | Reboot and verify RDP on port 3389 via `nc` | ☐ |
+| 5 | Run Sysprep with `/oobe /generalize /shutdown` | ☐ |
+| 6 | Convert the VM to a template in Proxmox immediately after shutdown | ☐ |
 
 ---
 
