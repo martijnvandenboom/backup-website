@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Notities</title>
-    <link>http://localhost:1313/tags/go/</link>
+    <link>https://www.vandenboom.icu/tags/go/</link>
     <description>Recent content in Go on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sat, 22 Mar 2025 19:32:21 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gebruik van Golang, Java, C/C&#43;&#43; of Rust: een beknopte gids</title>
-      <link>http://localhost:1313/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</link>
+      <link>https://www.vandenboom.icu/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</link>
       <pubDate>Sat, 22 Mar 2025 19:32:21 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</guid>
       <description>&lt;p&gt;Voor &lt;strong&gt;realtime-toepassingen&lt;/strong&gt; zijn &lt;strong&gt;Go&lt;/strong&gt; en &lt;strong&gt;Rust&lt;/strong&gt; de beste keuzes vanwege hun lichtgewicht gelijktijdigheid en geheugenefficiëntie. Combineer ze voor een evenwichtige aanpak: Go voor logica op hoog niveau en Rust voor prestatiekritische taken. Gebruik &lt;strong&gt;C/C++&lt;/strong&gt; voor legacysystemen en &lt;strong&gt;Java&lt;/strong&gt; voor bedrijfstoepassingen waarbij realtime-prestaties minder kritisch zijn.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bij gebruik van Go&lt;/strong&gt; is de kans op klassieke gelijktijdigheidsproblemen zoals &lt;strong&gt;race conditions&lt;/strong&gt;, &lt;strong&gt;deadlocks&lt;/strong&gt; en &lt;strong&gt;resource leaks&lt;/strong&gt; aanzienlijk kleiner. Dit komt door Go&amp;rsquo;s gebruik van &lt;strong&gt;channels&lt;/strong&gt; voor veilige communicatie tussen goroutines en de ingebouwde garbage collector, die naadloos samenwerkt met de goroutine-planner. Dit maakt Go niet alleen efficiënt maar ook betrouwbaarder en eenvoudiger te debuggen in scenario&amp;rsquo;s met hoge gelijktijdigheid.&lt;/p&gt;</description>
     </item>
   </channel>

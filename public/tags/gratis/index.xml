@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gratis on Notities</title>
-    <link>http://localhost:1313/tags/gratis/</link>
+    <link>https://www.vandenboom.icu/tags/gratis/</link>
     <description>Recent content in Gratis on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Wed, 21 Jun 2023 16:46:56 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gratis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/gratis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microsoft maakt Office gratis beschikbaar op de website</title>
-      <link>http://localhost:1313/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</link>
+      <link>https://www.vandenboom.icu/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</link>
       <pubDate>Wed, 21 Jun 2023 16:46:56 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</guid>
       <description>&lt;p&gt;H﻿eb je al een Microsoft account?&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 1.: log in op de website: office.com&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 2.: klik op het icoontje met de 9 puntjes links bovenin beeld&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 3.: kies de office app die je wilt gebruiken&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;A﻿ls je nog geen Microsoft account hebt kun je er een gratis aanmaken.&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 1.: ga naar de website: account.microsoft.com&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 2.: klik op de knop aanmelden&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 3.: klik op de link: Maak nu een account&lt;/p&gt;</description>
     </item>
   </channel>

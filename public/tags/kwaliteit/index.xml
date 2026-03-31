@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kwaliteit on Notities</title>
-    <link>http://localhost:1313/tags/kwaliteit/</link>
+    <link>https://www.vandenboom.icu/tags/kwaliteit/</link>
     <description>Recent content in Kwaliteit on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Fri, 12 Sep 2025 01:58:22 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/kwaliteit/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/kwaliteit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Foto&#39;s comprimeren zonder kwaliteitsverlies voor elk platform</title>
-      <link>http://localhost:1313/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link>
+      <link>https://www.vandenboom.icu/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid>
+      <guid>https://www.vandenboom.icu/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid>
       <description>&lt;p&gt;P.S. Op speciaal verzoek van Maria Isabel Rondini, die voor het schrijven van haar scriptie deze tool extra onder de aandacht wilde brengen.&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wil je je foto’s kleiner maken zonder kwaliteitsverlies, en dat zonder extra software te hoeven installeren?&#xA;Dan is de Image Compressor tool ideaal.&lt;/p&gt;&#xA;&lt;p&gt;Deze handige webtool werkt volledig online. Dat betekent dat je niets hoeft te downloaden of te installeren.&#xA;Of je nu op Windows, Linux of macOS werkt, het maakt niet uit – zolang je een internetverbinding hebt, kun je direct je foto’s uploaden en comprimeren.&lt;/p&gt;</description>
     </item>
   </channel>

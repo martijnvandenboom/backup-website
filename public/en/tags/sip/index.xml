@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sip on Notities</title>
-    <link>http://localhost:1313/en/tags/sip/</link>
+    <link>https://www.vandenboom.icu/en/tags/sip/</link>
     <description>Recent content in Sip on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 27 Jun 2024 22:27:46 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/sip/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/sip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rEFIt installation to EFI partition of an iMac</title>
-      <link>http://localhost:1313/en/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link>
+      <link>https://www.vandenboom.icu/en/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link>
       <pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid>
       <description>&lt;p&gt;F﻿ollow the steps below to install rEFIt to the EFI partition of an iMac&lt;/p&gt;&#xA;&lt;p&gt;D﻿ownload rEFIt and copy the efi folder to the /efi folder as explained below&lt;br&gt;&#xA;&lt;br&gt;&#xA;B﻿efore you do the bless command disable the SIP&lt;br&gt;&#xA;Boot in recovery mode&lt;br&gt;&#xA;#﻿ csrutil status&lt;br&gt;&#xA;#﻿ csrutil disable&lt;br&gt;&#xA;#﻿ reboot&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mkdir /efi&#xA;&#xA;sudo mount -t msdos /dev/disk0s1 /efi&#xA;&#xA;sudo bless --mount /efi --setBoot --file /efi/EFI/refit/refit.efi --labelfile /efi/EFI/refit/refit.vollabel&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>

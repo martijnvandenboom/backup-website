@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Version on Notities</title>
-    <link>http://localhost:1313/tags/version/</link>
+    <link>https://www.vandenboom.icu/tags/version/</link>
     <description>Recent content in Version on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Mon, 28 Apr 2025 16:04:39 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/version/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/version/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deze versie van BootCamp is niet bedoeld voor deze computer</title>
-      <link>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
+      <link>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
       <description>&lt;p&gt;D﻿eare lezer,&lt;br&gt;&#xA;&lt;br&gt;&#xA;O﻿nlangs heb ik mijn Windows-versie op mijn MacBook Pro 16,1 BootCamp-installatie bijgewerkt naar Windows 11. Nu liep ik tegen het probleem aan dat mijn ingebouwde toetsenbord en trackpad niet meer werkten. Ik moest dit oplossen door een apart toetsenbord en muis aan te sluiten via USB.&lt;/p&gt;&#xA;&lt;p&gt;I﻿k downloadde de software in het BootCamp-hulpprogramma op macOS die compatibel is met mijn laptop, in dit geval versie: Boot Camp-stuurprogramma&amp;rsquo;s 6.1.6655. Maar bij het opstarten van setup.exe krijg ik de volgende foutmelding: This version of boot camp is not intended for this computer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stel de versie van de Python interpreter in voor de extensie: Code Runner in VSCodium</title>
-      <link>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>
+      <link>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid>
       <description>&lt;p&gt;# File name: version_used.py&lt;/p&gt;&#xA;&lt;p&gt;# This prints the version of Python being used by the Code Runner extension in VSCodium&lt;br&gt;&#xA;# Set by going to: File -&amp;gt; Preferences -&amp;gt; Settings -&amp;gt; Search Settings -&amp;gt; code-runner.executorMap -&amp;gt; Edit in settings.json&lt;br&gt;&#xA;# &amp;ldquo;python&amp;rdquo;: &amp;ldquo;/bin/python3.9 -u&amp;rdquo;,\&lt;/p&gt;&#xA;&lt;p&gt;# To run this script press the little play button on the top right in the editor&lt;/p&gt;&#xA;&lt;p&gt;import sys&lt;br&gt;&#xA;print(sys.version)&lt;/p&gt;</description>
     </item>
   </channel>

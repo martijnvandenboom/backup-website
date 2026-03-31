@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Display on Notities</title>
-    <link>http://localhost:1313/en/tags/display/</link>
+    <link>https://www.vandenboom.icu/en/tags/display/</link>
     <description>Recent content in Display on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 31 Oct 2022 17:55:56 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/display/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/display/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Any iMac as a second display with extended desktop</title>
-      <link>http://localhost:1313/en/blog/2022-imac-as-an-extened-display-with-windows/</link>
+      <link>https://www.vandenboom.icu/en/blog/2022-imac-as-an-extened-display-with-windows/</link>
       <pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2022-imac-as-an-extened-display-with-windows/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2022-imac-as-an-extened-display-with-windows/</guid>
       <description>&lt;p&gt;Install Windows on your iMac and use the software utility spacedesk.&lt;/p&gt;&#xA;&lt;p&gt;Such a simple solution to turn any iMac into a second (or even a third or more) display to extended your desktop.&lt;/p&gt;</description>
     </item>
   </channel>

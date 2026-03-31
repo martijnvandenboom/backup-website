@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coderunner on Notities</title>
-    <link>http://localhost:1313/tags/coderunner/</link>
+    <link>https://www.vandenboom.icu/tags/coderunner/</link>
     <description>Recent content in Coderunner on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sun, 03 Apr 2022 19:55:44 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/coderunner/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/coderunner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stel de versie van de Python interpreter in voor de extensie: Code Runner in VSCodium</title>
-      <link>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>
+      <link>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid>
       <description>&lt;p&gt;# File name: version_used.py&lt;/p&gt;&#xA;&lt;p&gt;# This prints the version of Python being used by the Code Runner extension in VSCodium&lt;br&gt;&#xA;# Set by going to: File -&amp;gt; Preferences -&amp;gt; Settings -&amp;gt; Search Settings -&amp;gt; code-runner.executorMap -&amp;gt; Edit in settings.json&lt;br&gt;&#xA;# &amp;ldquo;python&amp;rdquo;: &amp;ldquo;/bin/python3.9 -u&amp;rdquo;,\&lt;/p&gt;&#xA;&lt;p&gt;# To run this script press the little play button on the top right in the editor&lt;/p&gt;&#xA;&lt;p&gt;import sys&lt;br&gt;&#xA;print(sys.version)&lt;/p&gt;</description>
     </item>
   </channel>

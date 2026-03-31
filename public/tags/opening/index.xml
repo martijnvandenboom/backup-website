@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opening on Notities</title>
-    <link>http://localhost:1313/tags/opening/</link>
+    <link>https://www.vandenboom.icu/tags/opening/</link>
     <description>Recent content in Opening on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Thu, 01 Dec 2022 19:30:38 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/opening/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/opening/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Voorkom dat de Windows 11 Store opent wanneer je het commando python typt</title>
-      <link>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
+      <link>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
       <description>&lt;p&gt;Stap 1: Open Instellingen in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: Ga naar Apps&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: Ga naar Geavanceerde app-instellingen&lt;/p&gt;&#xA;&lt;p&gt;Stap 4: Ga naar App-uitvoeringsaliassen&lt;/p&gt;&#xA;&lt;p&gt;Stap 5: Schakel de optie voor python.exe en python3.exe uit&lt;/p&gt;</description>
     </item>
   </channel>

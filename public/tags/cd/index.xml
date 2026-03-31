@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cd on Notities</title>
-    <link>http://localhost:1313/tags/cd/</link>
+    <link>https://www.vandenboom.icu/tags/cd/</link>
     <description>Recent content in Cd on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Fri, 21 Jul 2023 17:04:59 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hoe brand je een *.iso-bestand naar cd of dvd in Windows</title>
-      <link>http://localhost:1313/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</link>
+      <link>https://www.vandenboom.icu/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</link>
       <pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</guid>
       <description>&lt;p&gt;Klik in Verkenner met de rechtermuisknop op het *.ISO-bestand en kies Eigenschappen.&lt;/br&gt;Klik vervolgens op Wijzigen op het tabblad Algemeen, kies Windows Verkenner en klik op OK.&lt;/br&gt;Sla de wijziging daarna op door op Toepassen &amp;gt; OK te klikken.&lt;/br&gt; Klik nu met de rechtermuisknop op het *.ISO-bestand en kies: Schijfimage branden, of kies: Meer opties weergeven om dit te vinden.&lt;/p&gt;</description>
     </item>
   </channel>

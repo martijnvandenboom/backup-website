@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virtualbox on Notities</title>
-    <link>http://localhost:1313/tags/virtualbox/</link>
+    <link>https://www.vandenboom.icu/tags/virtualbox/</link>
     <description>Recent content in Virtualbox on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Tue, 01 Jul 2025 08:30:05 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</title>
-      <link>http://localhost:1313/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</link>
+      <link>https://www.vandenboom.icu/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</link>
       <pubDate>Tue, 01 Jul 2025 08:30:05 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</guid>
       <description>&lt;p&gt;&lt;strong&gt;VBoxWebSrv&lt;/strong&gt; is de VirtualBox-webservice waarmee u uw VirtualBox-virtuele machines op afstand kunt beheren via een webgebaseerde API. Het wordt vaak gebruikt met tools zoals &lt;strong&gt;phpVirtualBox&lt;/strong&gt; om een volledige webinterface te bieden voor VM-beheer.&lt;/p&gt;&#xA;&lt;p&gt;Door VBoxWebSrv als Windows-service uit te voeren, zorgt u ervoor dat het automatisch start met uw systeem en continu op de achtergrond draait.&lt;/p&gt;&#xA;&lt;p&gt;VBoxWebSrv installeren als Windows-service met NSSM&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Download NSSM (Non-Sucking Service Manager) van &lt;a href=&#34;https://nssm.cc/download&#34;&gt;https://nssm.cc/download&lt;/a&gt; en pak het uit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>VirtualBox Guest Additions installeren op AlmaLinux 8.10</title>
-      <link>http://localhost:1313/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</link>
+      <link>https://www.vandenboom.icu/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</link>
       <pubDate>Sat, 29 Mar 2025 20:16:41 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;$ sudo dnf update&lt;br&gt;&#xA;$ sudo reboot&lt;br&gt;&#xA;(Zodat een nieuw geïnstalleerde kernel wordt geladen)&lt;br&gt;&#xA;&lt;br&gt;&#xA;$ sudo dnf install gcc kernel-devel kernel-headers make bzip2 perl&lt;br&gt;&#xA;&lt;br&gt;&#xA;Ga naar het VirtualBox-menu &amp;gt; Apparaten &amp;gt; Guest Additions-cd-image invoegen&lt;br&gt;&#xA;&lt;br&gt;&#xA;Automatisch:&lt;br&gt;&#xA;Klik op Uitvoeren&lt;br&gt;&#xA;&lt;br&gt;&#xA;Handmatig:&lt;br&gt;&#xA;$ cd /run/media/$USER/VBox_GAs_*/   # Pas het pad aan indien nodig&lt;br&gt;&#xA;$ sudo ./VBoxLinuxAdditions.run&lt;br&gt;&#xA;&lt;br&gt;&#xA;$ sudo reboot&lt;br&gt;&#xA;&lt;br&gt;&#xA;Verificatie:&lt;br&gt;&#xA;$ lsmod | grep vbox&lt;br&gt;&#xA;(Controleer of vboxguest wordt vermeld)&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Oracle VirtualBox installeren op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
       <pubDate>Sun, 23 Mar 2025 13:20:53 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
       <description>&lt;p&gt;P﻿robeer de volgende stappen:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo apt upgrade&lt;br&gt;&#xA;$﻿ sudo apt install curl&lt;br&gt;&#xA;$﻿ curl -fsSL &lt;a href=&#34;https://www.virtualbox.org/download/oracle_vbox_2016.asc&#34;&gt;https://www.virtualbox.org/download/oracle_vbox_2016.asc&lt;/a&gt; | sudo gpg &amp;ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg&lt;br&gt;&#xA;$﻿ echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] &lt;a href=&#34;http://download.virtualbox.org/virtualbox/debian&#34;&gt;http://download.virtualbox.org/virtualbox/debian&lt;/a&gt; noble contrib&amp;rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list&lt;br&gt;&#xA;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo search virtualbox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox/noble-updates 7.0.16-dfsg-2ubuntu1.1 amd64&#xA;x86 virtualization solution - base binaries&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.0/unknown 7.0.24-167081~Ubuntu~noble amd64&#xA;Oracle VM VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.1/unknown 7.1.6-167084~Ubuntu~noble amd64&#xA;Oracle VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;$﻿ sudo install virtualbox-7.1&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;D﻿ownload het Extension Pack van de website: &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;https://www.virtualbox.org/wiki/Downloads&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>De VirtualBox Guest Additions installeren op Rocky Linux 9.3</title>
-      <link>http://localhost:1313/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
+      <link>https://www.vandenboom.icu/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
       <pubDate>Tue, 16 Jan 2024 21:08:26 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
       <description>&lt;p&gt;&lt;strong&gt;De VirtualBox Guest Additions installeren op Rocky Linux 9.3&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;dnf update --refresh&#xA;dnf update kernel-*&#xA;reboot (optioneel)&#xA;&#xA;dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel&#xA;&#xA;rpm -q kernel-devel&#xA;uname -r&#xA;&#xA;Bovenmenu: Apparaten -&amp;gt; Gast-uitbreidingen CD-image invoegen&#xA;Uitvoeren&#xA;&#xA;(optioneel)&#xA;cd /run/media/&#xA;./VBoxLinuxAdditions.run&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Bestanden delen met MS-DOS 6.22 in VirtualBox en macOS</title>
-      <link>http://localhost:1313/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link>
+      <link>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link>
       <pubDate>Sun, 17 Sep 2023 12:29:24 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid>
       <description>&lt;p&gt;Hoe maak je een ISO-bestand van een map op macOS dat als CDROM gekoppeld kan worden in MS-DOS 6.22?&lt;/p&gt;&#xA;&lt;p&gt;Start Schijfhulpprogramma op macOS&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ga naar: Archief -&amp;gt; Nieuwe afbeelding -&amp;gt; Afbeelding van map&lt;/li&gt;&#xA;&lt;li&gt;Kies de map en druk op Kies&lt;/li&gt;&#xA;&lt;li&gt;Stel Afbeeldingsformaat in op: DVD/CD-master en druk op Bewaar&lt;/li&gt;&#xA;&lt;li&gt;Er wordt een *.cdr-bestand aangemaakt&lt;/li&gt;&#xA;&lt;li&gt;Ga naar de opdrachtregel&lt;/li&gt;&#xA;&lt;li&gt;Navigeer naar de map met het *.cdr-bestand&lt;/li&gt;&#xA;&lt;li&gt;Typ het commando: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr&lt;/li&gt;&#xA;&lt;li&gt;Ga naar je virtuele machine met MS-DOS 6.22 en koppel het nieuw aangemaakte *.iso-bestand&lt;/li&gt;&#xA;&lt;li&gt;In de MS-DOS 6.22 virtuele machine heb je nu toegang tot de inhoud op station D:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/br&gt;&#xA;&lt;p&gt;Vragen?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Virtuele machines installeren op macOS Monterey met OpenCore Legacy Patcher</title>
-      <link>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</link>
       <pubDate>Thu, 01 Dec 2022 21:20:43 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</guid>
       <description>&lt;p&gt;Probeer Oracle VirtualBox versie 6.1.40, de oudere versie. In mijn thuislab werkte de nieuwste versie VirtualBox 7.0.4 niet vanwege de foutmelding: hv_vm_create() failed: 0xfae94001 (VERR_NEM_INIT_FAILED)&lt;/p&gt;&#xA;&lt;p&gt;In de oudere versie was dit geen probleem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</title>
-      <link>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
+      <link>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
       <pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
       <description>&lt;p&gt;Stap 1: installeer Python&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: zet de scripts folder en de boven liggende folder allebij in het path&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: CMD&amp;gt; pip install pywin32&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title>
-      <link>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
+      <link>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
       <pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
       <description>&lt;p&gt;Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.&lt;/p&gt;</description>
     </item>
   </channel>

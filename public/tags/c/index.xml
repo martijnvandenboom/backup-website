@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C on Notities</title>
-    <link>http://localhost:1313/tags/c/</link>
+    <link>https://www.vandenboom.icu/tags/c/</link>
     <description>Recent content in C on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sat, 22 Mar 2025 19:32:21 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gebruik van Golang, Java, C/C&#43;&#43; of Rust: een beknopte gids</title>
-      <link>http://localhost:1313/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</link>
+      <link>https://www.vandenboom.icu/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</link>
       <pubDate>Sat, 22 Mar 2025 19:32:21 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</guid>
       <description>&lt;p&gt;Voor &lt;strong&gt;realtime-toepassingen&lt;/strong&gt; zijn &lt;strong&gt;Go&lt;/strong&gt; en &lt;strong&gt;Rust&lt;/strong&gt; de beste keuzes vanwege hun lichtgewicht gelijktijdigheid en geheugenefficiëntie. Combineer ze voor een evenwichtige aanpak: Go voor logica op hoog niveau en Rust voor prestatiekritische taken. Gebruik &lt;strong&gt;C/C++&lt;/strong&gt; voor legacysystemen en &lt;strong&gt;Java&lt;/strong&gt; voor bedrijfstoepassingen waarbij realtime-prestaties minder kritisch zijn.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bij gebruik van Go&lt;/strong&gt; is de kans op klassieke gelijktijdigheidsproblemen zoals &lt;strong&gt;race conditions&lt;/strong&gt;, &lt;strong&gt;deadlocks&lt;/strong&gt; en &lt;strong&gt;resource leaks&lt;/strong&gt; aanzienlijk kleiner. Dit komt door Go&amp;rsquo;s gebruik van &lt;strong&gt;channels&lt;/strong&gt; voor veilige communicatie tussen goroutines en de ingebouwde garbage collector, die naadloos samenwerkt met de goroutine-planner. Dit maakt Go niet alleen efficiënt maar ook betrouwbaarder en eenvoudiger te debuggen in scenario&amp;rsquo;s met hoge gelijktijdigheid.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Maak een Zombie proces in Linux m.b.v. een C programma</title>
-      <link>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link>
+      <link>https://www.vandenboom.icu/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link>
       <pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
       <description>&lt;p&gt;Hierbij de broncode van een C programma om een Zombie proces in Linux te maken en deze te kunnen analyseren.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#include &amp;lt;stdlib.h&amp;gt;&#xA;#include &amp;lt;sys/types.h&amp;gt;&#xA;#include &amp;lt;unistd.h&amp;gt;&#xA;&#xA;int main ()&#xA;{&#xA;  pid_t child_pid;&#xA;&#xA;  child_pid = fork ();&#xA;  if (child_pid &amp;gt; 0) {&#xA;    sleep (60);&#xA;  }&#xA;  else {&#xA;    exit (0);&#xA;  }&#xA;  return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;C﻿ompileer de C broncode in een uitvoerbaar programma:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gcc create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;S﻿tart het programma:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./a.out&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O﻿pen een tweede Terminal en bekijk de proces lijst, hier zie je nu een proces met een STAT: Z en de tekst: defunct&lt;/p&gt;</description>
     </item>
   </channel>

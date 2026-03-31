@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Command on Notities</title>
-    <link>http://localhost:1313/tags/command/</link>
+    <link>https://www.vandenboom.icu/tags/command/</link>
     <description>Recent content in Command on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Wed, 03 Apr 2024 20:12:58 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/command/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/command/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH naar een externe machine met SSH-sleutels en commando uitvoeren in oud Python 2</title>
-      <link>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</link>
       <pubDate>Wed, 03 Apr 2024 20:12:58 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</guid>
       <description>&lt;p&gt;I﻿n het geval u een oud legacysysteem heeft waarop nog Python 2 wordt gebruikt en u een script wilt maken om bepaalde commando&amp;rsquo;s uit te voeren in een client-servernetwerk.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import subprocess&#xA;&#xA;def ssh_exec_command(hostname, username, private_key_path, command):&#xA;    ssh_cmd = [&amp;#39;ssh&amp;#39;, &amp;#39;-i&amp;#39;, private_key_path, &amp;#39;-o&amp;#39;, &amp;#39;StrictHostKeyChecking=no&amp;#39;, f&amp;#39;{username}@{hostname}&amp;#39;, command]&#xA;    ssh_process = subprocess.Popen(&#xA;        ssh_cmd,&#xA;        stdin=subprocess.PIPE,&#xA;        stdout=subprocess.PIPE,&#xA;        stderr=subprocess.PIPE&#xA;    )&#xA;    output, error = ssh_process.communicate()&#xA;&#xA;    if error:&#xA;        print(&amp;#34;Error:&amp;#34;, error)&#xA;    else:&#xA;        print(&amp;#34;Output:&amp;#34;, output)&#xA;&#xA;# Vervang deze door uw werkelijke inloggegevens en commando&#xA;hostname = &amp;#39;remote_host_address&amp;#39;&#xA;username = &amp;#39;your_username&amp;#39;&#xA;private_key_path = &amp;#39;/path/to/your/private_key&amp;#39;&#xA;command = &amp;#39;ls -l&amp;#39;&#xA;&#xA;ssh_exec_command(hostname, username, private_key_path, command)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>LDAP/IPA Server zoekopdrachten via de opdrachtregel</title>
-      <link>http://localhost:1313/blog/2024-ldap-ipa-server-command-line-searches/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-command-line-searches/</link>
       <pubDate>Sat, 09 Mar 2024 17:34:27 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-command-line-searches/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-command-line-searches/</guid>
       <description>&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;FQDN_SERVER&amp;gt;/ -b dc=&lt;NETWORK&gt;,dc=com -x&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -x -LLL -H ldap:/// -b dc=&lt;NETWORK&gt;,dc=com dn&lt;/p&gt;&#xA;&lt;p&gt;$ ldapwhoami -x -H ldap:///&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -b &amp;ldquo;cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -x -W&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -b &amp;ldquo;dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -x -W -s one &amp;ldquo;(&amp;amp;(objectClass=organizationalUnit)&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -W uid=&amp;lt;ADMIN_USER&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&lt;USER&gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -W uid=&lt;USER&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Het Linux mlocate-commando op macOS</title>
-      <link>http://localhost:1313/blog/2023-the-linux-mlocate-command-under-macos/</link>
+      <link>https://www.vandenboom.icu/blog/2023-the-linux-mlocate-command-under-macos/</link>
       <pubDate>Wed, 27 Sep 2023 17:40:13 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-the-linux-mlocate-command-under-macos/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-the-linux-mlocate-command-under-macos/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Het Linux mlocate-commando op macOS&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo /usr/libexec/locate.updatedb&#xA;&#xA;sudo ln -s /usr/libexec/locate.updatedb /usr/local/bin/updatedb&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Voorkom dat de Windows 11 Store opent wanneer je het commando python typt</title>
-      <link>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
+      <link>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
       <description>&lt;p&gt;Stap 1: Open Instellingen in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: Ga naar Apps&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: Ga naar Geavanceerde app-instellingen&lt;/p&gt;&#xA;&lt;p&gt;Stap 4: Ga naar App-uitvoeringsaliassen&lt;/p&gt;&#xA;&lt;p&gt;Stap 5: Schakel de optie voor python.exe en python3.exe uit&lt;/p&gt;</description>
     </item>
   </channel>

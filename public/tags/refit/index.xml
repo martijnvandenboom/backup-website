@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Refit on Notities</title>
-    <link>http://localhost:1313/tags/refit/</link>
+    <link>https://www.vandenboom.icu/tags/refit/</link>
     <description>Recent content in Refit on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sun, 07 Jul 2024 20:45:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/refit/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/refit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Maak een USB rEFIt opstartschijf</title>
-      <link>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</link>
+      <link>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</link>
       <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img&#xA;# diskutil list&#xA;# diskutil unmountDisk /dev/disk2&#xA;# sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m&#xA;Het gebruik van rdisk2 hier lijkt de zaken te versnellen&#xA;&#xA;# diskutil eject /dev/disk2&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>rEFIt installeren op de EFI-partitie van een iMac</title>
-      <link>http://localhost:1313/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link>
+      <link>https://www.vandenboom.icu/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link>
       <pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid>
       <description>&lt;p&gt;V﻿olg de onderstaande stappen om rEFIt te installeren op de EFI-partitie van een iMac&lt;/p&gt;&#xA;&lt;p&gt;D﻿ownload rEFIt en kopieer de efi-map naar de /efi-map zoals hieronder uitgelegd&lt;br&gt;&#xA;&lt;br&gt;&#xA;V﻿oordat u het bless-commando uitvoert, schakelt u de SIP uit&lt;br&gt;&#xA;Start op in herstelmodus&lt;br&gt;&#xA;#﻿ csrutil status&lt;br&gt;&#xA;#﻿ csrutil disable&lt;br&gt;&#xA;#﻿ reboot&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mkdir /efi&#xA;&#xA;sudo mount -t msdos /dev/disk0s1 /efi&#xA;&#xA;sudo bless --mount /efi --setBoot --file /efi/EFI/refit/refit.efi --labelfile /efi/EFI/refit/refit.vollabel&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>

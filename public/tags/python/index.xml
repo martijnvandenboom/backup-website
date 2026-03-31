@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Notities</title>
-    <link>http://localhost:1313/tags/python/</link>
+    <link>https://www.vandenboom.icu/tags/python/</link>
     <description>Recent content in Python on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Wed, 03 Apr 2024 20:20:39 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH naar een externe machine met SSH-sleutels en commando uitvoeren in nieuw Python 3</title>
-      <link>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</link>
       <pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</guid>
       <description>&lt;p&gt;O﻿m een script te maken voor het uitvoeren van externe commando&amp;rsquo;s in een client-servernetwerk.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import subprocess&#xA;&#xA;def ssh_exec_command(hostname, username, command):&#xA;    ssh_cmd = [&amp;#39;ssh&amp;#39;, f&amp;#39;{username}@{hostname}&amp;#39;, command]&#xA;    ssh_process = subprocess.Popen(&#xA;        ssh_cmd,&#xA;        stdin=subprocess.PIPE,&#xA;        stdout=subprocess.PIPE,&#xA;        stderr=subprocess.PIPE,&#xA;        text=True&#xA;    )&#xA;    output, error = ssh_process.communicate()&#xA;&#xA;    if error:&#xA;        print(&amp;#34;Error:&amp;#34;, error)&#xA;    else:&#xA;        print(&amp;#34;Output:&amp;#34;, output)&#xA;&#xA;# Vervang deze door uw werkelijke inloggegevens en commando&#xA;hostname = &amp;#39;remote_host_address&amp;#39;&#xA;username = &amp;#39;your_username&amp;#39;&#xA;command = &amp;#39;ls -l&amp;#39;&#xA;&#xA;ssh_exec_command(hostname, username, command)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>SSH naar een externe machine met SSH-sleutels en commando uitvoeren in oud Python 2</title>
-      <link>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</link>
       <pubDate>Wed, 03 Apr 2024 20:12:58 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</guid>
       <description>&lt;p&gt;I﻿n het geval u een oud legacysysteem heeft waarop nog Python 2 wordt gebruikt en u een script wilt maken om bepaalde commando&amp;rsquo;s uit te voeren in een client-servernetwerk.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import subprocess&#xA;&#xA;def ssh_exec_command(hostname, username, private_key_path, command):&#xA;    ssh_cmd = [&amp;#39;ssh&amp;#39;, &amp;#39;-i&amp;#39;, private_key_path, &amp;#39;-o&amp;#39;, &amp;#39;StrictHostKeyChecking=no&amp;#39;, f&amp;#39;{username}@{hostname}&amp;#39;, command]&#xA;    ssh_process = subprocess.Popen(&#xA;        ssh_cmd,&#xA;        stdin=subprocess.PIPE,&#xA;        stdout=subprocess.PIPE,&#xA;        stderr=subprocess.PIPE&#xA;    )&#xA;    output, error = ssh_process.communicate()&#xA;&#xA;    if error:&#xA;        print(&amp;#34;Error:&amp;#34;, error)&#xA;    else:&#xA;        print(&amp;#34;Output:&amp;#34;, output)&#xA;&#xA;# Vervang deze door uw werkelijke inloggegevens en commando&#xA;hostname = &amp;#39;remote_host_address&amp;#39;&#xA;username = &amp;#39;your_username&amp;#39;&#xA;private_key_path = &amp;#39;/path/to/your/private_key&amp;#39;&#xA;command = &amp;#39;ls -l&amp;#39;&#xA;&#xA;ssh_exec_command(hostname, username, private_key_path, command)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Voorkom dat de Windows 11 Store opent wanneer je het commando python typt</title>
-      <link>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
+      <link>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
       <description>&lt;p&gt;Stap 1: Open Instellingen in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: Ga naar Apps&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: Ga naar Geavanceerde app-instellingen&lt;/p&gt;&#xA;&lt;p&gt;Stap 4: Ga naar App-uitvoeringsaliassen&lt;/p&gt;&#xA;&lt;p&gt;Stap 5: Schakel de optie voor python.exe en python3.exe uit&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</title>
-      <link>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
+      <link>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
       <pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
       <description>&lt;p&gt;Stap 1: installeer Python&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: zet de scripts folder en de boven liggende folder allebij in het path&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: CMD&amp;gt; pip install pywin32&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stel de versie van de Python interpreter in voor de extensie: Code Runner in VSCodium</title>
-      <link>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>
+      <link>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid>
       <description>&lt;p&gt;# File name: version_used.py&lt;/p&gt;&#xA;&lt;p&gt;# This prints the version of Python being used by the Code Runner extension in VSCodium&lt;br&gt;&#xA;# Set by going to: File -&amp;gt; Preferences -&amp;gt; Settings -&amp;gt; Search Settings -&amp;gt; code-runner.executorMap -&amp;gt; Edit in settings.json&lt;br&gt;&#xA;# &amp;ldquo;python&amp;rdquo;: &amp;ldquo;/bin/python3.9 -u&amp;rdquo;,\&lt;/p&gt;&#xA;&lt;p&gt;# To run this script press the little play button on the top right in the editor&lt;/p&gt;&#xA;&lt;p&gt;import sys&lt;br&gt;&#xA;print(sys.version)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installeer Python 3.9 op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 18:55:18 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ sudo apt install software-properties-common&lt;/p&gt;&#xA;&lt;p&gt;$ sudo add-apt-repository ppa:deadsnakes/ppa&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install python3.9&lt;/p&gt;&#xA;&lt;p&gt;$ python3.9 —version&lt;/p&gt;</description>
     </item>
   </channel>

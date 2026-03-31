@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>File on Notities</title>
-    <link>http://localhost:1313/en/tags/file/</link>
+    <link>https://www.vandenboom.icu/en/tags/file/</link>
     <description>Recent content in File on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 21 Jul 2023 17:04:59 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/file/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/file/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to burn an *.iso file to CD or DVD in Windows</title>
-      <link>http://localhost:1313/en/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</link>
+      <link>https://www.vandenboom.icu/en/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</link>
       <pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</guid>
       <description>&lt;p&gt;In File Explorer right-click on the *.ISO file and choose Properties.&lt;/br&gt;Then, click Change from the General tab, choose Windows Explorer, and click OK.&lt;/br&gt;Next, save the change by clicking Apply &amp;gt; OK&lt;/br&gt; Now right click on the *.ISO file and choose: Burn disc image or on: Show more options to find this.&lt;/p&gt;</description>
     </item>
   </channel>

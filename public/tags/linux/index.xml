@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Notities</title>
-    <link>http://localhost:1313/tags/linux/</link>
+    <link>https://www.vandenboom.icu/tags/linux/</link>
     <description>Recent content in Linux on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Mon, 24 Mar 2025 17:57:51 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deskflow: Bedien meerdere computers met 1 keyboard en muis voor: macOS, Windows en Linux</title>
-      <link>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
       <description>&lt;p&gt;Met Deskflow bestuur je meerdere computers – macOS, Windows of Linux – met één muis en toetsenbord. Het werkt als een softwarematige KVM-switch (zonder video) en wordt gesponsord door Synergy. Dit programma is nog steeds actueel en goed onderhouden, met een intuïtieve interface die het gebruik simpel maakt. Tip: zet in de instellingen even TLS uit voor een soepele start.&lt;/p&gt;&#xA;&lt;p&gt;Download het via: &lt;a href=&#34;https://github.com/deskflow/deskflow/releases&#34;&gt;https://github.com/deskflow/deskflow/releases&lt;/a&gt;. Zoek naar de tag &amp;ldquo;latest&amp;rdquo; en check alle assets voor de juiste versie!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oracle VirtualBox installeren op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
       <pubDate>Sun, 23 Mar 2025 13:20:53 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
       <description>&lt;p&gt;P﻿robeer de volgende stappen:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo apt upgrade&lt;br&gt;&#xA;$﻿ sudo apt install curl&lt;br&gt;&#xA;$﻿ curl -fsSL &lt;a href=&#34;https://www.virtualbox.org/download/oracle_vbox_2016.asc&#34;&gt;https://www.virtualbox.org/download/oracle_vbox_2016.asc&lt;/a&gt; | sudo gpg &amp;ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg&lt;br&gt;&#xA;$﻿ echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] &lt;a href=&#34;http://download.virtualbox.org/virtualbox/debian&#34;&gt;http://download.virtualbox.org/virtualbox/debian&lt;/a&gt; noble contrib&amp;rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list&lt;br&gt;&#xA;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo search virtualbox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox/noble-updates 7.0.16-dfsg-2ubuntu1.1 amd64&#xA;x86 virtualization solution - base binaries&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.0/unknown 7.0.24-167081~Ubuntu~noble amd64&#xA;Oracle VM VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.1/unknown 7.1.6-167084~Ubuntu~noble amd64&#xA;Oracle VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;$﻿ sudo install virtualbox-7.1&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;D﻿ownload het Extension Pack van de website: &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;https://www.virtualbox.org/wiki/Downloads&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tips voor het gebruik van XRDP op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</link>
       <pubDate>Sun, 23 Mar 2025 12:51:59 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</guid>
       <description>&lt;p&gt;O﻿m XRDP op Ubuntu Linux te kunnen gebruiken, volgt u de onderstaande instructies:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$ s﻿udo apt update &lt;br&gt;&#xA;$ s﻿udo apt upgrade&lt;br&gt;&#xA;$ s﻿udo apt install xrdp&lt;br&gt;&#xA;$ echo &amp;ldquo;gnome-session &amp;ndash;session=ubuntu&amp;rdquo; &amp;gt; ~/.xsession&lt;br&gt;&#xA;$ echo &amp;ldquo;export DISPLAY=:10.0&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$ echo &amp;ldquo;xhost +&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$﻿ ip a&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;O﻿nthoud dat u uw IP-adres noteert en uitlogt uit uw grafische gebruikerssessie.&lt;/p&gt;&#xA;&lt;p&gt;P﻿robeer nu in te loggen op uw systeem met een RDP-tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microsoft Visual Studio Code installeren in Linux vanuit de repository</title>
-      <link>http://localhost:1313/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link>
+      <link>https://www.vandenboom.icu/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link>
       <pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid>
       <description>&lt;p&gt;V﻿olg de onderstaande stappen om Microsoft Visual Studio Code IDE op Linux te installeren vanuit de repository:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;sudo rpm &amp;ndash;import &lt;a href=&#34;https://packages.microsoft.com/keys/microsoft.asc&#34;&gt;https://packages.microsoft.com/keys/microsoft.asc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;sudo sh -c &amp;rsquo;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &amp;gt; /etc/yum.repos.d/vscode.repo&#39;&lt;/p&gt;&#xA;&lt;p&gt;sudo dnf install code -y&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>LDAP/IPA - Server op Red Hat Enterprise Linux 7</title>
-      <link>http://localhost:1313/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link>
       <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</guid>
       <description>&lt;p&gt;A﻿ls je gebruikt maakt van een hosts file, let dan goed op dat er FQDN&amp;rsquo;s in staan en de volgorde waarin.&lt;/p&gt;&#xA;&lt;p&gt;C﻿ontroleer de hosts file en pas deze eventueel aan:&lt;/p&gt;&#xA;&lt;p&gt;De FQDN voorop, daarna pas de aliassen.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/etc/hosts&#xA;&#xA;10.0.0.1   server1.example.com    server1    applicatie1&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Maak een Zombie proces in Linux m.b.v. een C programma</title>
-      <link>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link>
+      <link>https://www.vandenboom.icu/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link>
       <pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
       <description>&lt;p&gt;Hierbij de broncode van een C programma om een Zombie proces in Linux te maken en deze te kunnen analyseren.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#include &amp;lt;stdlib.h&amp;gt;&#xA;#include &amp;lt;sys/types.h&amp;gt;&#xA;#include &amp;lt;unistd.h&amp;gt;&#xA;&#xA;int main ()&#xA;{&#xA;  pid_t child_pid;&#xA;&#xA;  child_pid = fork ();&#xA;  if (child_pid &amp;gt; 0) {&#xA;    sleep (60);&#xA;  }&#xA;  else {&#xA;    exit (0);&#xA;  }&#xA;  return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;C﻿ompileer de C broncode in een uitvoerbaar programma:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gcc create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;S﻿tart het programma:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./a.out&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O﻿pen een tweede Terminal en bekijk de proces lijst, hier zie je nu een proces met een STAT: Z en de tekst: defunct&lt;/p&gt;</description>
     </item>
     <item>
       <title>Checkmk installatie op Rocky Linux 9.3</title>
-      <link>http://localhost:1313/blog/2024-checkmk-installation-on-rocky-linux-9-3/</link>
+      <link>https://www.vandenboom.icu/blog/2024-checkmk-installation-on-rocky-linux-9-3/</link>
       <pubDate>Tue, 16 Jan 2024 21:13:15 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-checkmk-installation-on-rocky-linux-9-3/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-checkmk-installation-on-rocky-linux-9-3/</guid>
       <description>&lt;p&gt;Checkmk installatie op Rocky Linux 9.3&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;&#xA;setsebool -P httpd_can_network_connect 1&#xA;&#xA;firewall-cmd --zone=public --add-service=http --permanent&#xA;firewall-cmd --reload&#xA;&#xA;wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;&#xA;omd version&#xA;omd create monitoring&#xA;omd start monitoring&#xA;&#xA;http://localhost.localdomain/monitoring/&#xA;gebruiker: cmkadmin met wachtwoord: &amp;lt;opgegeven&amp;gt;&#xA;&#xA;omd su monitoring (Voor beheer via de opdrachtregel van de site.)&#xA;cmk-passwd cmkadmin (Na het inloggen kun je het wachtwoord voor cmkadmin wijzigen met.)&#xA;&#xA;(optioneel)&#xA;omd status&#xA;omd sites&#xA;omd help&#xA;&#xA;(optioneel na herstart als je de foutmelding krijgt: Unable to connect)&#xA;omd update-apache-config monitoring&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>De VirtualBox Guest Additions installeren op Rocky Linux 9.3</title>
-      <link>http://localhost:1313/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
+      <link>https://www.vandenboom.icu/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
       <pubDate>Tue, 16 Jan 2024 21:08:26 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
       <description>&lt;p&gt;&lt;strong&gt;De VirtualBox Guest Additions installeren op Rocky Linux 9.3&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;dnf update --refresh&#xA;dnf update kernel-*&#xA;reboot (optioneel)&#xA;&#xA;dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel&#xA;&#xA;rpm -q kernel-devel&#xA;uname -r&#xA;&#xA;Bovenmenu: Apparaten -&amp;gt; Gast-uitbreidingen CD-image invoegen&#xA;Uitvoeren&#xA;&#xA;(optioneel)&#xA;cd /run/media/&#xA;./VBoxLinuxAdditions.run&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Het Linux mlocate-commando op macOS</title>
-      <link>http://localhost:1313/blog/2023-the-linux-mlocate-command-under-macos/</link>
+      <link>https://www.vandenboom.icu/blog/2023-the-linux-mlocate-command-under-macos/</link>
       <pubDate>Wed, 27 Sep 2023 17:40:13 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-the-linux-mlocate-command-under-macos/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-the-linux-mlocate-command-under-macos/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Het Linux mlocate-commando op macOS&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo /usr/libexec/locate.updatedb&#xA;&#xA;sudo ln -s /usr/libexec/locate.updatedb /usr/local/bin/updatedb&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Linux schijfruimte-informatie overzichtelijker weergeven zonder de geweigerd- en kan-niet-berichten</title>
-      <link>http://localhost:1313/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</link>
+      <link>https://www.vandenboom.icu/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</link>
       <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</guid>
       <description>&lt;p&gt;$ du -hs * 2&amp;gt; &amp;gt;(egrep -iv &amp;lsquo;permission denied|cannot access&amp;rsquo;) | sort -n&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux zoek verloren opslagruimte op door het verschil tussen df en du te achterhalen</title>
-      <link>http://localhost:1313/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</link>
+      <link>https://www.vandenboom.icu/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</link>
       <pubDate>Tue, 05 Sep 2023 06:18:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</guid>
       <description>&lt;p&gt;$ lsof | grep -E &amp;lsquo;^COM|deleted&amp;rsquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automatisch inloggen op een Linux server m.b.v. PuTTY onder Windows</title>
-      <link>http://localhost:1313/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</link>
+      <link>https://www.vandenboom.icu/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</link>
       <pubDate>Fri, 17 Feb 2023 14:51:15 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</guid>
       <description>&lt;p&gt;J﻿e kunt onder Windows met PuTTY automatisch op een Linux server inloggen door gebruik te maken van een key file. Hieronder leg ik stap voor stap uit hoe je dit doet.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Maak een key aan: start: puttygen.exe&lt;/li&gt;&#xA;&lt;li&gt;Klik op: Generate&lt;/li&gt;&#xA;&lt;li&gt;Klik op: Save private key&lt;/li&gt;&#xA;&lt;li&gt;Ga naar PuTTY Configuration -&amp;gt; Session&lt;/li&gt;&#xA;&lt;li&gt;Laad een eerder gemaakte sessie of maak een nieuwe&lt;/li&gt;&#xA;&lt;li&gt;Ga naar: Connection -&amp;gt; SSH -&amp;gt; Auth -&amp;gt; Private key file for authentication -&amp;gt; Browse&lt;/li&gt;&#xA;&lt;li&gt;Selecteer je bestand met de private key: *.ppk&lt;/li&gt;&#xA;&lt;li&gt;Ga terug naar Session en klik op: Save&lt;/li&gt;&#xA;&lt;li&gt;Login op de Linux server m.b.v. de Saved Sessions en nog met je wachtwoord&lt;/li&gt;&#xA;&lt;li&gt;Maak in de home directory een nieuwe map: .ssh&lt;/li&gt;&#xA;&lt;li&gt;Geef deze map de juiste rechten: chmod 700 ~/.ssh&lt;/li&gt;&#xA;&lt;li&gt;Maak en edit het bestand authorized_keys: vi ~/ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Kopieer de Public key for pasting in de PuTTY Key Generator&lt;/li&gt;&#xA;&lt;li&gt;Plak deze in de file authorized_keys op de Linux server&lt;/li&gt;&#xA;&lt;li&gt;Save de authorized_keys file (voor vi type je :wq)&lt;/li&gt;&#xA;&lt;li&gt;Geef deze file de juiste rechten: chmod 600 ~/.ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Sluit de ingelogde sessie met PuTTY naar de Linux Server af&lt;/li&gt;&#xA;&lt;li&gt;Open de sessie opnieuw om te controleren dat je nu automatisch kunt inloggen&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Installeer Python 3.9 op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 18:55:18 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ sudo apt install software-properties-common&lt;/p&gt;&#xA;&lt;p&gt;$ sudo add-apt-repository ppa:deadsnakes/ppa&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install python3.9&lt;/p&gt;&#xA;&lt;p&gt;$ python3.9 —version&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installeer de editor VSCodium op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 14:22:24 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ wget -qO - &lt;a href=&#34;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&#34;&gt;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo echo &amp;lsquo;deb &lt;a href=&#34;https://vscodium.c7.ee/debs/&#34;&gt;https://vscodium.c7.ee/debs/&lt;/a&gt; vscodium main&amp;rsquo; | sudo tee &amp;ndash;append /etc/apt/sources.list.d/vscodium.list&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install codium&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installeer de Google Chrome Web Browser op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 11:51:54 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ wget -q -O - &lt;a href=&#34;https://dl.google.com/linux/linux_signing_key.pub&#34;&gt;https://dl.google.com/linux/linux_signing_key.pub&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo sh -c &amp;rsquo;echo &amp;ldquo;deb [arch=amd64] &lt;a href=&#34;http://dl.google.com/linux/chrome/deb/&#34;&gt;http://dl.google.com/linux/chrome/deb/&lt;/a&gt; stable main&amp;rdquo; &amp;raquo; /etc/apt/sources.list.d/google-chrome.list&#39;&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install google-chrome-stable&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title>
-      <link>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
+      <link>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
       <pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
       <description>&lt;p&gt;Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.&lt;/p&gt;</description>
     </item>
   </channel>

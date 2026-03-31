@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Files on Notities</title>
-    <link>http://localhost:1313/tags/files/</link>
+    <link>https://www.vandenboom.icu/tags/files/</link>
     <description>Recent content in Files on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sun, 07 Jul 2024 20:49:33 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/files/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/files/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>De Microsoft EFI-opstartbestanden op de EFI-partitie plaatsen</title>
-      <link>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
+      <link>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
       <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
       <description>&lt;p&gt;Start op via het Windows-installatieprogramma&lt;/p&gt;&#xA;&lt;p&gt;Druk op het eerste scherm op SHIFT + F10&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&#xA;# diskpart&#xA;# list disk&#xA;# select disk 0&#xA;# list part&#xA;Zoek naar de Windows-partitie&#xA;&#xA;# select part 3&#xA;# assign letter=W&#xA;# format quick fs=NTFS&#xA;# list volume&#xA;Zoek naar het EFI-volume&#xA;&#xA;# select volume 2&#xA;# assign letter=Z&#xA;# exit&#xA;&#xA;# D:&#xA;Ga naar de USB-installatieschijf van Windows&#xA;# cd D:\sources&#xA;# dir install*&#xA;Het bestand install.esd bestaat&#xA;&#xA;# dism /Get-WimInfo /WimFile:D:\Sources\install.esd&#xA;Selecteer de Index van de gewenste Windows-versie&#xA;&#xA;# dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\&#xA;# bcdboot W:\Windows /l en-us /s Z: /f UEFI&#xA;Zet uw computer uit en verwijder de USB-installatieschijf&#xA;Nu hebben we de Microsoft EFI-opstartbestanden op de EFI-partitie in de daarvoor bestemde map&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Volg de normale procedure voor het installeren van Windows&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bestanden delen met MS-DOS 6.22 in VirtualBox en macOS</title>
-      <link>http://localhost:1313/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link>
+      <link>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link>
       <pubDate>Sun, 17 Sep 2023 12:29:24 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid>
       <description>&lt;p&gt;Hoe maak je een ISO-bestand van een map op macOS dat als CDROM gekoppeld kan worden in MS-DOS 6.22?&lt;/p&gt;&#xA;&lt;p&gt;Start Schijfhulpprogramma op macOS&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ga naar: Archief -&amp;gt; Nieuwe afbeelding -&amp;gt; Afbeelding van map&lt;/li&gt;&#xA;&lt;li&gt;Kies de map en druk op Kies&lt;/li&gt;&#xA;&lt;li&gt;Stel Afbeeldingsformaat in op: DVD/CD-master en druk op Bewaar&lt;/li&gt;&#xA;&lt;li&gt;Er wordt een *.cdr-bestand aangemaakt&lt;/li&gt;&#xA;&lt;li&gt;Ga naar de opdrachtregel&lt;/li&gt;&#xA;&lt;li&gt;Navigeer naar de map met het *.cdr-bestand&lt;/li&gt;&#xA;&lt;li&gt;Typ het commando: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr&lt;/li&gt;&#xA;&lt;li&gt;Ga naar je virtuele machine met MS-DOS 6.22 en koppel het nieuw aangemaakte *.iso-bestand&lt;/li&gt;&#xA;&lt;li&gt;In de MS-DOS 6.22 virtuele machine heb je nu toegang tot de inhoud op station D:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/br&gt;&#xA;&lt;p&gt;Vragen?&lt;/p&gt;</description>
     </item>
   </channel>

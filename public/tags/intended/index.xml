@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Intended on Notities</title>
-    <link>http://localhost:1313/tags/intended/</link>
+    <link>https://www.vandenboom.icu/tags/intended/</link>
     <description>Recent content in Intended on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Mon, 28 Apr 2025 16:04:39 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/intended/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/intended/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deze versie van BootCamp is niet bedoeld voor deze computer</title>
-      <link>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
+      <link>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
       <description>&lt;p&gt;D﻿eare lezer,&lt;br&gt;&#xA;&lt;br&gt;&#xA;O﻿nlangs heb ik mijn Windows-versie op mijn MacBook Pro 16,1 BootCamp-installatie bijgewerkt naar Windows 11. Nu liep ik tegen het probleem aan dat mijn ingebouwde toetsenbord en trackpad niet meer werkten. Ik moest dit oplossen door een apart toetsenbord en muis aan te sluiten via USB.&lt;/p&gt;&#xA;&lt;p&gt;I﻿k downloadde de software in het BootCamp-hulpprogramma op macOS die compatibel is met mijn laptop, in dit geval versie: Boot Camp-stuurprogramma&amp;rsquo;s 6.1.6655. Maar bij het opstarten van setup.exe krijg ik de volgende foutmelding: This version of boot camp is not intended for this computer.&lt;/p&gt;</description>
     </item>
   </channel>

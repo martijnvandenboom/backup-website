@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on Notities</title>
-    <link>http://localhost:1313/categories/windows/</link>
+    <link>https://www.vandenboom.icu/categories/windows/</link>
     <description>Recent content in Windows on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
-    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/categories/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Proxmox Lab — Windows Server 2022 Template voorbereiding</title>
-      <link>http://localhost:1313/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</link>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</guid>
-      <description>&lt;p&gt;Deze handleiding beschrijft het volledige proces voor het voorbereiden van een vers geïnstalleerde Windows Server 2022 VM als herbruikbaar Proxmox-template. Alle toekomstige VM&amp;rsquo;s (CA-server, lidservers, enzovoort) worden gekloond vanuit dit template, wat aanzienlijk tijd bespaart en een consistente basisinstallatie garandeert.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;📄 &lt;strong&gt;Download de volledige handleiding met screenshots:&lt;/strong&gt;&#xA;&lt;a href=&#34;http://localhost:1313/documents/WS2022-in-Proxmox-Template-Preparation-Guide.docx&#34;&gt;WS2022-in-Proxmox-Template-Preparation-Guide.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overzicht&#34;&gt;Overzicht&lt;/h2&gt;&#xA;&lt;p&gt;Het volledige proces bestaat uit de volgende stappen:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;VirtIO guest-drivers installeren&lt;/li&gt;&#xA;&lt;li&gt;Windows Update uitvoeren — OS volledig patchen&lt;/li&gt;&#xA;&lt;li&gt;Prestatieoptimalisaties toepassen&lt;/li&gt;&#xA;&lt;li&gt;Basisconfiguratie — tijdzone, RDP, IE Enhanced Security&lt;/li&gt;&#xA;&lt;li&gt;Sysprep — generaliseren en afsluiten&lt;/li&gt;&#xA;&lt;li&gt;Converteren naar template in Proxmox&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Waarschuwing:&lt;/strong&gt; Start de VM nooit opnieuw op na Sysprep. Als je dat toch doet, wordt de generalisatie verbruikt en moet het template opnieuw worden opgebouwd vanaf het begin.&lt;/p&gt;</description>
+      <title>Windows Server 2022 in Proxmox — Template Voorbereiding</title>
+      <link>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</guid>
+      <description>&lt;p&gt;Dit is deel 2 van de serie over het opbouwen van een Windows DevOps lab in Proxmox. In &lt;a href=&#34;https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/&#34;&gt;deel 1&lt;/a&gt; heb ik beschreven hoe je de VM aanmaakt. In dit artikel bereid ik de VM voor als herbruikbare Proxmox template. Alle toekomstige VMs — de CA server, member servers en andere rollen — worden vanuit deze template gekloond.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Download de volledige handleiding met screenshots (.docx):&lt;/strong&gt;&#xA;&lt;a href=&#34;https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/WS2022-in-Proxmox-Template-Preparation-Guide-NL.docx&#34;&gt;WS2022-in-Proxmox-Template-Preparation-Guide-NL.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Belangrijk:&lt;/strong&gt; Start de VM na Sysprep &lt;strong&gt;nooit&lt;/strong&gt; opnieuw op. Als je dat doet wordt de generalisatie verbruikt en moet de template opnieuw worden opgebouwd.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Proxmox Lab — Windows Server 2022 VM aanmaken</title>
-      <link>http://localhost:1313/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</link>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</guid>
-      <description>&lt;p&gt;Deze handleiding beschrijft het volledige proces voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Gebaseerd op praktijkervaring inclusief alle correcties en geleerde lessen tijdens de opbouw van een thuislab.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;📄 &lt;strong&gt;Download de volledige handleiding met screenshots:&lt;/strong&gt;&#xA;&lt;a href=&#34;http://localhost:1313/documents/WS2022-in-Proxmox-VM-Creation-Guide.docx&#34;&gt;WS2022-in-Proxmox-VM-Creation-Guide.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;omgeving&#34;&gt;Omgeving&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Onderdeel&lt;/th&gt;&#xA;          &lt;th&gt;Details&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox Host&lt;/td&gt;&#xA;          &lt;td&gt;macpro2013.local — Mac Pro 2013 Trashcan&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox Versie&lt;/td&gt;&#xA;          &lt;td&gt;9.1.6&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RAM&lt;/td&gt;&#xA;          &lt;td&gt;128 GB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Opslag&lt;/td&gt;&#xA;          &lt;td&gt;3.6 TB NVMe (local-lvm pool)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Netwerkbrug&lt;/td&gt;&#xA;          &lt;td&gt;vmbr0 — intern lab netwerk (192.168.178.x)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox WebUI&lt;/td&gt;&#xA;          &lt;td&gt;https://192.168.178.205:8006&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Let op:&lt;/strong&gt; De Proxmox WebUI toont een SSL-certificaatwaarschuwing omdat Proxmox standaard een zelfondertekend certificaat gebruikt. Dit is de aanleiding voor het later opzetten van een interne Certificate Authority (CA).&lt;/p&gt;</description>
+      <title>Windows Server 2022 in Proxmox — Een VM Aanmaken</title>
+      <link>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</guid>
+      <description>&lt;p&gt;In dit artikel beschrijf ik stap voor stap hoe ik een Windows Server 2022 VM aanmaak in Proxmox VE 9.1.6. De handleiding is gebaseerd op praktijkervaring en bevat alle correcties en lessen die ik onderweg heb opgedaan. Dit is deel 1 van een serie over het opbouwen van een volledig Windows DevOps lab in Proxmox.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Download de volledige handleiding met screenshots (.docx):&lt;/strong&gt;&#xA;&lt;a href=&#34;https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/WS2022-in-Proxmox-VM-Creation-Guide-NL.docx&#34;&gt;WS2022-in-Proxmox-VM-Creation-Guide-NL.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;laboratoriumomgeving&#34;&gt;Laboratoriumomgeving&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Onderdeel&lt;/th&gt;&#xA;          &lt;th&gt;Waarde&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox host&lt;/td&gt;&#xA;          &lt;td&gt;macpro2013.local — Mac Pro 2013 Trashcan&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox versie&lt;/td&gt;&#xA;          &lt;td&gt;9.1.6&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RAM&lt;/td&gt;&#xA;          &lt;td&gt;128 GB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Opslag&lt;/td&gt;&#xA;          &lt;td&gt;3.6 TB NVMe (local-lvm pool)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Netwerkbridge&lt;/td&gt;&#xA;          &lt;td&gt;vmbr0 — intern lab netwerk (192.168.178.x)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox WebUI&lt;/td&gt;&#xA;          &lt;td&gt;https://192.168.178.205:8006&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;waarom-een-ca-nodig-is--de-ssl-waarschuwing&#34;&gt;Waarom een CA nodig is — de SSL waarschuwing&lt;/h2&gt;&#xA;&lt;p&gt;Wie de Proxmox WebUI via &lt;code&gt;macpro2013.local&lt;/code&gt; opent in Safari krijgt meteen een certificaatwaarschuwing. Proxmox gebruikt standaard een zelfondertekend certificaat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows Server 2022 — Active Directory en DNS installatie</title>
-      <link>http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/</link>
+      <link>https://www.vandenboom.icu/blog/2026-windows-server-2022-active-directory-dns-installatie/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/</guid>
+      <guid>https://www.vandenboom.icu/blog/2026-windows-server-2022-active-directory-dns-installatie/</guid>
       <description>&lt;p&gt;In dit artikel beschrijf ik stap voor stap hoe ik Active Directory Domain Services (AD DS) en DNS heb geïnstalleerd op een Windows Server 2022 Datacenter VM in een VMware Fusion lab omgeving. Het resultaat is een volledig functionele domeincontroller voor het domein &lt;strong&gt;lab.local&lt;/strong&gt;, als basis voor een Windows DevOps lab.&lt;/p&gt;&#xA;&lt;h2 id=&#34;omgeving&#34;&gt;Omgeving&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Onderdeel&lt;/th&gt;&#xA;          &lt;th&gt;Waarde&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Virtualisatie&lt;/td&gt;&#xA;          &lt;td&gt;VMware Fusion (macOS)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Gastbesturingssysteem&lt;/td&gt;&#xA;          &lt;td&gt;Windows Server 2022 Datacenter (Desktop Experience)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Hostnaam&lt;/td&gt;&#xA;          &lt;td&gt;DC01&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Domeinnaam&lt;/td&gt;&#xA;          &lt;td&gt;lab.local&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NetBIOS naam&lt;/td&gt;&#xA;          &lt;td&gt;LAB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Lab-netwerk adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet1 — 172.16.37.10 (vast IP)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Internet adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet0 — DHCP via VMware NAT&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;stap-1--netwerk-instellen&#34;&gt;Stap 1 — Netwerk instellen&lt;/h2&gt;&#xA;&lt;p&gt;Voordat Active Directory wordt geïnstalleerd, heeft de domeincontroller een vast (statisch) IP-adres nodig. AD DS en DNS zijn afhankelijk van een stabiel adres.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network routing naar LAN systemen met OpenVPN Server</title>
-      <link>http://localhost:1313/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link>
+      <link>https://www.vandenboom.icu/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link>
       <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid>
+      <guid>https://www.vandenboom.icu/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid>
       <description>&lt;p&gt;Om systemen op het LAN-netwerk te kunnen benaderen via de VPN-tunnel van de OpenVPN-server, moet het LAN-systeem weten dat verkeer bestemd voor het VPN-subnet via de OpenVPN-server moet worden verstuurd. Zonder deze extra route komt retourverkeer niet bij de VPN-clients terecht.&lt;/p&gt;&#xA;&lt;p&gt;In dit voorbeeld gebruiken we het subnet 10.0.8.0/24 als de IP-range die je hebt ingesteld voor de OpenVPN-tunnel. Dit is het netwerk waarin alle VPN-clients een IP-adres krijgen. Om ervoor te zorgen dat een apparaat op het LAN verkeer correct kan terugsturen naar deze VPN-clients, moet je op dat LAN-apparaat een statische route toevoegen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Foto&#39;s comprimeren zonder kwaliteitsverlies voor elk platform</title>
-      <link>http://localhost:1313/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link>
+      <link>https://www.vandenboom.icu/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid>
+      <guid>https://www.vandenboom.icu/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid>
       <description>&lt;p&gt;P.S. Op speciaal verzoek van Maria Isabel Rondini, die voor het schrijven van haar scriptie deze tool extra onder de aandacht wilde brengen.&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wil je je foto’s kleiner maken zonder kwaliteitsverlies, en dat zonder extra software te hoeven installeren?&#xA;Dan is de Image Compressor tool ideaal.&lt;/p&gt;&#xA;&lt;p&gt;Deze handige webtool werkt volledig online. Dat betekent dat je niets hoeft te downloaden of te installeren.&#xA;Of je nu op Windows, Linux of macOS werkt, het maakt niet uit – zolang je een internetverbinding hebt, kun je direct je foto’s uploaden en comprimeren.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Maak een gratis website met GitHub Pages</title>
-      <link>http://localhost:1313/blog/maak_een_website_met_github_pages/</link>
+      <link>https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/</link>
       <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/maak_een_website_met_github_pages/</guid>
+      <guid>https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/</guid>
       <description>&lt;p&gt;Maak een gratis website met GitHub&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://vandenboom.netlify.app/images/GitHub-Pages-NL.png&#34; alt=&#34;GitHub Pages en GitHub Desktop&#34; /&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via een van de Social Media Links op deze website.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automatisch inloggen in Windows</title>
-      <link>http://localhost:1313/blog/automatisch_inloggen_in_windows/</link>
+      <link>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</link>
       <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/automatisch_inloggen_in_windows/</guid>
+      <guid>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</guid>
       <description>&lt;p&gt;Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig.&lt;/br&gt;&#xA;Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows?&lt;/br&gt;&#xA;Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien.&#xA;Op het bureaublad kun je al je handige programma&amp;rsquo;s bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.&#xA;Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of pincode in te hoeven toetsen.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gehele webpagina opslaan</title>
-      <link>http://localhost:1313/blog/gehele_webpagina_opslaan/</link>
+      <link>https://www.vandenboom.icu/blog/gehele_webpagina_opslaan/</link>
       <pubDate>Sun, 19 Dec 2021 09:50:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/gehele_webpagina_opslaan/</guid>
+      <guid>https://www.vandenboom.icu/blog/gehele_webpagina_opslaan/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;In de webbrowser Microsoft Edge:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; klik rechtsboven in de hoek op de 3 puntjes: ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; kies voor de optie: Webopname (Ctrl+Shift+S)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; kies voor de optie: Volledige pagina vastleggen&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; klik op de knop: Opslaan&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; nu staat er een afbeelding van het type: .jpeg in je persoonlijke directory: Downloads&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>In- en uitzoomen op een website</title>
-      <link>http://localhost:1313/blog/zoomen_op_een_website/</link>
+      <link>https://www.vandenboom.icu/blog/zoomen_op_een_website/</link>
       <pubDate>Sat, 18 Dec 2021 20:56:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/zoomen_op_een_website/</guid>
+      <guid>https://www.vandenboom.icu/blog/zoomen_op_een_website/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Houd de CTRL toets van het toetsenbord ingedrukt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;en draai aan het wieltje op de muis.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Windows Update Snelkoppeling</title>
-      <link>http://localhost:1313/blog/windows-update-snelkoppeling/</link>
+      <link>https://www.vandenboom.icu/blog/windows-update-snelkoppeling/</link>
       <pubDate>Thu, 16 Dec 2021 09:07:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/windows-update-snelkoppeling/</guid>
+      <guid>https://www.vandenboom.icu/blog/windows-update-snelkoppeling/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Windows Update snelkoppeling die iedereen op zijn bureaublad moet hebben&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Heb je bureaublad voor je&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Klik met de rechtermuisknop&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Kies voor: Nieuw&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Kies voor: Snelkoppeling&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Vul als locatie in:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (Op Windows 8)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  %windir%\explorer.exe shell:::{36eef7db-88ad-4e81-ad49-0e313f0c35f8} &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (Op Windows 10)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ms-settings:windowsupdate&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Klik op: Volgende&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Vul de naam in: Windows Update&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Klik op: Voltooien&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>

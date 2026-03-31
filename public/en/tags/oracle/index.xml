@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oracle on Notities</title>
-    <link>http://localhost:1313/en/tags/oracle/</link>
+    <link>https://www.vandenboom.icu/en/tags/oracle/</link>
     <description>Recent content in Oracle on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 23 Mar 2025 13:20:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Oracle VirtualBox on Ubuntu Linux</title>
-      <link>http://localhost:1313/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
       <pubDate>Sun, 23 Mar 2025 13:20:53 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
       <description>&lt;p&gt;T﻿ry the following steps:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo apt upgrade&lt;br&gt;&#xA;$﻿ sudo apt install curl&lt;br&gt;&#xA;$﻿ curl -fsSL &lt;a href=&#34;https://www.virtualbox.org/download/oracle_vbox_2016.asc&#34;&gt;https://www.virtualbox.org/download/oracle_vbox_2016.asc&lt;/a&gt; | sudo gpg &amp;ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg&lt;br&gt;&#xA;$﻿ echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] &lt;a href=&#34;http://download.virtualbox.org/virtualbox/debian&#34;&gt;http://download.virtualbox.org/virtualbox/debian&lt;/a&gt; noble contrib&amp;rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list&lt;br&gt;&#xA;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo search virtualbox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox/noble-updates 7.0.16-dfsg-2ubuntu1.1 amd64&#xA;x86 virtualization solution - base binaries&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.0/unknown 7.0.24-167081~Ubuntu~noble amd64&#xA;Oracle VM VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.1/unknown 7.1.6-167084~Ubuntu~noble amd64&#xA;Oracle VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;$﻿ sudo install virtualbox-7.1&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;D﻿ownload the Extension Pack frm the website: &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;https://www.virtualbox.org/wiki/Downloads&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python dependencies when installing Oracle VirtualBox on Windows 11</title>
-      <link>http://localhost:1313/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
+      <link>https://www.vandenboom.icu/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
       <pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
       <description>&lt;p&gt;Step 1: install Python&lt;/p&gt;&#xA;&lt;p&gt;Step 2: add both the scripts folder and its parent folder to the path&lt;/p&gt;&#xA;&lt;p&gt;Step 3: CMD&amp;gt; pip install pywin32&lt;/p&gt;</description>
     </item>
   </channel>

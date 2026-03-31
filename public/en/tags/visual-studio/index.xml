@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visual Studio on Notities</title>
-    <link>http://localhost:1313/en/tags/visual-studio/</link>
+    <link>https://www.vandenboom.icu/en/tags/visual-studio/</link>
     <description>Recent content in Visual Studio on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 22 Mar 2025 22:13:54 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install Microsoft Visual Studio Code in Linux from the repo</title>
-      <link>http://localhost:1313/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link>
+      <link>https://www.vandenboom.icu/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link>
       <pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid>
       <description>&lt;p&gt;F﻿ollow the below steps to install Microsoft Visual Studio Code IDE on Linux from its repository:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;sudo rpm &amp;ndash;import &lt;a href=&#34;https://packages.microsoft.com/keys/microsoft.asc&#34;&gt;https://packages.microsoft.com/keys/microsoft.asc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;sudo sh -c &amp;rsquo;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &amp;gt; /etc/yum.repos.d/vscode.repo&#39;&lt;/p&gt;&#xA;&lt;p&gt;sudo dnf install code -y&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
   </channel>

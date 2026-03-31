@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stick on Notities</title>
-    <link>http://localhost:1313/en/tags/stick/</link>
+    <link>https://www.vandenboom.icu/en/tags/stick/</link>
     <description>Recent content in Stick on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 18 Jul 2024 07:20:59 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/stick/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/stick/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Find the name of your USB stick with a script</title>
-      <link>http://localhost:1313/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</link>
+      <link>https://www.vandenboom.icu/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</link>
       <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</guid>
       <description>&lt;p&gt;You can use this script to retrieve the name of your USB stick.&lt;br&gt;&#xA;The name of your USB stick can be used in Apple&amp;rsquo;s sudo command to create a USB installer.&lt;br&gt;&#xA;&lt;br&gt;&#xA;Step 1: Open the Terminal application&lt;br&gt;&#xA;Step 2: Go to your home directory, type: # cd&lt;br&gt;&#xA;Step 3: Optionally create a scripts directory, type: # mkdir scripts&lt;br&gt;&#xA;Step 4: Navigate to the newly created scripts directory, type: # cd scripts&lt;br&gt;&#xA;Step 5: Create a bash script, type: # vim usbstick.sh&lt;br&gt;&#xA;Step 6: Insert the following code:&lt;/p&gt;</description>
     </item>
   </channel>

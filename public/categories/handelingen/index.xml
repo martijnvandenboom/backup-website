@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Handelingen on Notities</title>
-    <link>http://localhost:1313/categories/handelingen/</link>
+    <link>https://www.vandenboom.icu/categories/handelingen/</link>
     <description>Recent content in Handelingen on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Wed, 09 Mar 2022 19:18:22 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/handelingen/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/categories/handelingen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Maak een gratis website met GitHub Pages</title>
-      <link>http://localhost:1313/blog/maak_een_website_met_github_pages/</link>
+      <link>https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/</link>
       <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/maak_een_website_met_github_pages/</guid>
+      <guid>https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/</guid>
       <description>&lt;p&gt;Maak een gratis website met GitHub&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://vandenboom.netlify.app/images/GitHub-Pages-NL.png&#34; alt=&#34;GitHub Pages en GitHub Desktop&#34; /&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via een van de Social Media Links op deze website.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automatisch inloggen in Windows</title>
-      <link>http://localhost:1313/blog/automatisch_inloggen_in_windows/</link>
+      <link>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</link>
       <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/automatisch_inloggen_in_windows/</guid>
+      <guid>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</guid>
       <description>&lt;p&gt;Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig.&lt;/br&gt;&#xA;Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows?&lt;/br&gt;&#xA;Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien.&#xA;Op het bureaublad kun je al je handige programma&amp;rsquo;s bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.&#xA;Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of pincode in te hoeven toetsen.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gehele webpagina opslaan</title>
-      <link>http://localhost:1313/blog/gehele_webpagina_opslaan/</link>
+      <link>https://www.vandenboom.icu/blog/gehele_webpagina_opslaan/</link>
       <pubDate>Sun, 19 Dec 2021 09:50:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/gehele_webpagina_opslaan/</guid>
+      <guid>https://www.vandenboom.icu/blog/gehele_webpagina_opslaan/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;In de webbrowser Microsoft Edge:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; klik rechtsboven in de hoek op de 3 puntjes: ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; kies voor de optie: Webopname (Ctrl+Shift+S)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; kies voor de optie: Volledige pagina vastleggen&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; klik op de knop: Opslaan&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; nu staat er een afbeelding van het type: .jpeg in je persoonlijke directory: Downloads&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>

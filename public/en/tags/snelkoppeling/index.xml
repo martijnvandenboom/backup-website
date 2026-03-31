@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Snelkoppeling on Notities</title>
-    <link>http://localhost:1313/en/tags/snelkoppeling/</link>
+    <link>https://www.vandenboom.icu/en/tags/snelkoppeling/</link>
     <description>Recent content in Snelkoppeling on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 10 May 2023 19:09:51 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/snelkoppeling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/snelkoppeling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a shortcut with an icon on the desktop</title>
-      <link>http://localhost:1313/en/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</link>
+      <link>https://www.vandenboom.icu/en/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</link>
       <pubDate>Wed, 10 May 2023 19:09:51 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</guid>
       <description>&lt;p&gt;Part 1: creating the shortcut&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Go to the website you find useful and want quick access to&#xA;&lt;/br&gt;For example: nu.nl , open in your browser: https:/www.nu.nl&lt;/li&gt;&#xA;&lt;li&gt;Click (with the left mouse button) on the address bar where the website address is shown, it will turn blue.&#xA;&lt;/br&gt;If it does not automatically turn blue, you need to select the address and highlight it yourself&lt;/li&gt;&#xA;&lt;li&gt;Right-click on the blue text and choose: Copy&lt;/li&gt;&#xA;&lt;li&gt;Click the minus sign to minimise the web browser so you can see the desktop&lt;/li&gt;&#xA;&lt;li&gt;Right-click on the desktop and choose: New -&amp;gt; Shortcut&lt;/li&gt;&#xA;&lt;li&gt;Right-click in the location rectangle and choose: Paste&lt;/li&gt;&#xA;&lt;li&gt;Click Next&lt;/li&gt;&#xA;&lt;li&gt;Give the shortcut the name of the website and click: Finish&#xA;&lt;/br&gt;&lt;/br&gt;You now have your shortcut&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Part 2: changing the icon to the website&amp;rsquo;s logo&lt;/p&gt;</description>
     </item>
     <item>
       <title>Create a Windows - God Mode - shortcut</title>
-      <link>http://localhost:1313/en/blog/2023-maak-een-windows-god-mode-snelkoppeling/</link>
+      <link>https://www.vandenboom.icu/en/blog/2023-maak-een-windows-god-mode-snelkoppeling/</link>
       <pubDate>Sun, 05 Mar 2023 13:40:14 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2023-maak-een-windows-god-mode-snelkoppeling/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2023-maak-een-windows-god-mode-snelkoppeling/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;Right-click on the Desktop&lt;/li&gt;&#xA;&lt;li&gt;Choose: New -&amp;gt; Folder&lt;/li&gt;&#xA;&lt;li&gt;Name the folder: GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}&lt;/li&gt;&#xA;&lt;li&gt;Open the folder for a huge number of advanced settings&lt;/li&gt;&#xA;&lt;li&gt;The shortcuts in this folder can be copied to, for example, the Desktop for even faster access&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Change your Windows password using a shortcut</title>
-      <link>http://localhost:1313/en/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</link>
+      <link>https://www.vandenboom.icu/en/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</link>
       <pubDate>Thu, 16 Feb 2023 10:56:24 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</guid>
       <description>&lt;p&gt;Change your Windows password by using a shortcut on your desktop. (CTRL+ALT+DEL key combination by clicking a shortcut)&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Right-click on your desktop, choose New and then Shortcut&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Enter the following command for the item location:&lt;br&gt;&#xA;C:\Windows\explorer.exe shell:::{2559a1f2-21d7-11d4-bdaf-00c04f60b9f0}&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click: Next&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Give the shortcut a name, for example: Reset password&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click: Finish&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Zooming in and out on a website</title>
-      <link>http://localhost:1313/en/blog/zoomen_op_een_website/</link>
+      <link>https://www.vandenboom.icu/en/blog/zoomen_op_een_website/</link>
       <pubDate>Sat, 18 Dec 2021 20:56:00 +0100</pubDate>
-      <guid>http://localhost:1313/en/blog/zoomen_op_een_website/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/zoomen_op_een_website/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hold down the CTRL key on the keyboard&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;and scroll with the wheel on the mouse.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Windows Update Shortcut</title>
-      <link>http://localhost:1313/en/blog/windows-update-snelkoppeling/</link>
+      <link>https://www.vandenboom.icu/en/blog/windows-update-snelkoppeling/</link>
       <pubDate>Thu, 16 Dec 2021 09:07:17 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/windows-update-snelkoppeling/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/windows-update-snelkoppeling/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Windows Update shortcut that everyone should have on their desktop&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Have your desktop in front of you&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Right-click&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Choose: New&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Choose: Shortcut&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Enter the following as the location:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (On Windows 8)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  %windir%\explorer.exe shell:::{36eef7db-88ad-4e81-ad49-0e313f0c35f8}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (On Windows 10)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ms-settings:windowsupdate&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Click: Next&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Enter the name: Windows Update&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Click: Finish&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>

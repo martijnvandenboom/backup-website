@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Handelingen on Notities</title>
-    <link>http://localhost:1313/en/categories/handelingen/</link>
+    <link>https://www.vandenboom.icu/en/categories/handelingen/</link>
     <description>Recent content in Handelingen on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Dec 2021 09:50:22 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/handelingen/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/categories/handelingen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Save an entire webpage</title>
-      <link>http://localhost:1313/en/blog/gehele_webpagina_opslaan/</link>
+      <link>https://www.vandenboom.icu/en/blog/gehele_webpagina_opslaan/</link>
       <pubDate>Sun, 19 Dec 2021 09:50:22 +0100</pubDate>
-      <guid>http://localhost:1313/en/blog/gehele_webpagina_opslaan/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/gehele_webpagina_opslaan/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;In the web browser Microsoft Edge:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; click the 3 dots in the top right corner: ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choose the option: Web capture (Ctrl+Shift+S)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choose the option: Capture full page&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; click the button: Save&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; an image of type .jpeg will now be saved in your personal directory: Downloads&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>

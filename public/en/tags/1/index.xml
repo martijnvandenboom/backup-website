@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 on Notities</title>
-    <link>http://localhost:1313/en/tags/1/</link>
+    <link>https://www.vandenboom.icu/en/tags/1/</link>
     <description>Recent content in 1 on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 24 Mar 2025 17:57:51 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deskflow: Control multiple computers with 1 keyboard and mouse for: macOS, Windows and Linux</title>
-      <link>http://localhost:1313/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
+      <link>https://www.vandenboom.icu/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
       <description>&lt;p&gt;With Deskflow you control multiple computers — macOS, Windows or Linux — using a single mouse and keyboard. It works as a software-based KVM switch (without video) and is sponsored by Synergy. This program is still actively maintained, with an intuitive interface that makes it easy to use. Tip: disable TLS in the settings for a smooth start.&lt;/p&gt;&#xA;&lt;p&gt;Download it via: &lt;a href=&#34;https://github.com/deskflow/deskflow/releases&#34;&gt;https://github.com/deskflow/deskflow/releases&lt;/a&gt;. Look for the &amp;ldquo;latest&amp;rdquo; tag and check all assets for the correct version!&lt;/p&gt;</description>
     </item>
   </channel>

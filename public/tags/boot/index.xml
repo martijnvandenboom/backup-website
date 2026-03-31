@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Boot on Notities</title>
-    <link>http://localhost:1313/tags/boot/</link>
+    <link>https://www.vandenboom.icu/tags/boot/</link>
     <description>Recent content in Boot on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Mon, 28 Apr 2025 16:04:39 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/boot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/boot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deze versie van BootCamp is niet bedoeld voor deze computer</title>
-      <link>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
+      <link>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
       <description>&lt;p&gt;D﻿eare lezer,&lt;br&gt;&#xA;&lt;br&gt;&#xA;O﻿nlangs heb ik mijn Windows-versie op mijn MacBook Pro 16,1 BootCamp-installatie bijgewerkt naar Windows 11. Nu liep ik tegen het probleem aan dat mijn ingebouwde toetsenbord en trackpad niet meer werkten. Ik moest dit oplossen door een apart toetsenbord en muis aan te sluiten via USB.&lt;/p&gt;&#xA;&lt;p&gt;I﻿k downloadde de software in het BootCamp-hulpprogramma op macOS die compatibel is met mijn laptop, in dit geval versie: Boot Camp-stuurprogramma&amp;rsquo;s 6.1.6655. Maar bij het opstarten van setup.exe krijg ik de volgende foutmelding: This version of boot camp is not intended for this computer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>OCLP-update geeft een cirkel met diagonaal bij het opstarten</title>
-      <link>http://localhost:1313/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/</link>
+      <link>https://www.vandenboom.icu/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/</link>
       <pubDate>Fri, 04 Apr 2025 14:27:55 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/</guid>
       <description>&lt;p&gt;Welke Mac gebruikt u?&lt;br&gt;&#xA;iMac (Retina 5K, 27 inch, Late 2015)&lt;br&gt;&#xA;Model-ID: iMac17,1&lt;br&gt;&#xA;&lt;br&gt;&#xA;Welke versie van OCLP gebruikt u?&lt;br&gt;&#xA;2.3.1&lt;br&gt;&#xA;&lt;br&gt;&#xA;Welke OS-versie heeft u geïnstalleerd of probeert u te installeren?&lt;br&gt;&#xA;Geïnstalleerd: Sequoia 15.3.2 (24D81)&lt;br&gt;&#xA;&lt;br&gt;&#xA;Wat is precies het probleem dat u ondervindt?&lt;br&gt;&#xA;Na het installeren van OCLP 2.3.1 op schijf weigert mijn iMac op te starten. Bij het opstarten druk ik op de Option-toets om het menu te openen, ik kies het blauwe OCLP-icoon. Normaal gesproken gaat het daarna verder met het Apple-logo, maar nu verschijnt er een cirkel met een diagonaal.&lt;br&gt;&#xA;Gelukkig kon ik met mijn oude USB-stick met OCLP 2.2.0 opstarten vanaf USB. Dat werkte prima. Vervolgens heb ik mijn EFI-partitie gekoppeld, de OC-map verwijderd en vervangen door die van mijn USB-stick. Nu start mijn iMac weer op, maar met versie 2.2.0.&lt;br&gt;&#xA;Gebruik het hulpmiddel: MountEFI Beschikbaar op GitHub: &lt;a href=&#34;https://github.com/corpnewt/MountEFI&#34; title=&#34;https\://github.com/corpnewt/MountEFI&#34;&gt;https://github.com/corpnewt/MountEFI&lt;/a&gt;&lt;br&gt;&#xA;&lt;br&gt;&#xA;N﻿u heb ik het kunnen oplossen met de volgende instellingen in OCLP:&lt;br&gt;&#xA;Mijn iMac is een Late 2015 27&amp;quot; met modelnummer 17,1&lt;/br&gt;&lt;br&gt;&#xA;In het OCLP-hulpprogramma bij instellingen heb ik ingevuld:&lt;/br&gt;&#xA;Doelmodel: 17,1&lt;/br&gt;&#xA;Build: Debug: Vink alle 3 opties aan: Verbose, Kext Debugging en OpenCore Debugging&lt;/br&gt;&#xA;Extra&amp;rsquo;s: Vink aan: 3rd Party NVMe PM&lt;/br&gt;&#xA;Beveiliging: Vink alle opties aan onder SIP&lt;/br&gt;&#xA;SMBIOS: SMBIOS Spoof Level: Matig en SMBIOS Spoof Model: iMac19,1&lt;/br&gt;&#xA;Vervolgens heb ik OpenCore gebouwd en geïnstalleerd op schijf&lt;/br&gt;&lt;br&gt;&#xA;&lt;br&gt;&#xA;Trouwens, in de tussentijd was OCLP bijgewerkt naar versie 2.3.2 en heb ik deze versie gebruikt.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>De Microsoft EFI-opstartbestanden op de EFI-partitie plaatsen</title>
-      <link>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
+      <link>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
       <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
       <description>&lt;p&gt;Start op via het Windows-installatieprogramma&lt;/p&gt;&#xA;&lt;p&gt;Druk op het eerste scherm op SHIFT + F10&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&#xA;# diskpart&#xA;# list disk&#xA;# select disk 0&#xA;# list part&#xA;Zoek naar de Windows-partitie&#xA;&#xA;# select part 3&#xA;# assign letter=W&#xA;# format quick fs=NTFS&#xA;# list volume&#xA;Zoek naar het EFI-volume&#xA;&#xA;# select volume 2&#xA;# assign letter=Z&#xA;# exit&#xA;&#xA;# D:&#xA;Ga naar de USB-installatieschijf van Windows&#xA;# cd D:\sources&#xA;# dir install*&#xA;Het bestand install.esd bestaat&#xA;&#xA;# dism /Get-WimInfo /WimFile:D:\Sources\install.esd&#xA;Selecteer de Index van de gewenste Windows-versie&#xA;&#xA;# dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\&#xA;# bcdboot W:\Windows /l en-us /s Z: /f UEFI&#xA;Zet uw computer uit en verwijder de USB-installatieschijf&#xA;Nu hebben we de Microsoft EFI-opstartbestanden op de EFI-partitie in de daarvoor bestemde map&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Volg de normale procedure voor het installeren van Windows&lt;/p&gt;</description>
     </item>
     <item>
       <title>Maak een USB rEFIt opstartschijf</title>
-      <link>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</link>
+      <link>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</link>
       <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img&#xA;# diskutil list&#xA;# diskutil unmountDisk /dev/disk2&#xA;# sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m&#xA;Het gebruik van rdisk2 hier lijkt de zaken te versnellen&#xA;&#xA;# diskutil eject /dev/disk2&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Concourse automatisch opstarten bij het booten met een systemctl-service</title>
-      <link>http://localhost:1313/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</link>
+      <link>https://www.vandenboom.icu/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</link>
       <pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/home/martijn/Downloads/concourse&#xA;$ curl -LO https://concourse-ci.org/docker-compose.yml&#xA;&#xA;$ cat /etc/systemd/system/docker-compose-concourse.service&#xA;&#xA;[Unit]&#xA;Description=Docker Compose Application Service for Concourse&#xA;Requires=docker.service&#xA;After=docker.service&#xA;&#xA;[Service]&#xA;Type=oneshot&#xA;RemainAfterExit=yes&#xA;WorkingDirectory=/home/martijn/Downloads/concourse&#xA;ExecStart=/usr/bin/docker-compose up -d&#xA;ExecStop=/usr/bin/docker-compose down&#xA;TimeoutStartSec=0&#xA;&#xA;[Install]&#xA;WantedBy=multi-user.target&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>

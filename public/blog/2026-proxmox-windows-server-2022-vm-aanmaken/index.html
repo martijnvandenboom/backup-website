@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="nl">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8">
     <style>
         @keyframes rotate {
@@ -39,7 +39,7 @@
 
 
   <meta charset="utf-8">
-<title>Proxmox Lab — Windows Server 2022 VM aanmaken - Notities</title>
+<title>Windows Server 2022 in Proxmox — Een VM Aanmaken - Notities</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -55,11 +55,92 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
+
+  
+
+
+<link rel="canonical" href="https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">
+
+
+
+  <link rel="alternate" hreflang="nl" href="https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">
+
+
+
+
+
+  <meta name="author" content="van den Boom">
+
+
+
+<meta name="robots" content="index, follow">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Windows Server 2022 in Proxmox — Een VM Aanmaken">
+<meta name="twitter:description" content="Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 VM in Proxmox VE 9.1.6. Met correcte wizard instellingen, screenshots en lessen uit de praktijk.">
+
+  <meta name="twitter:creator" content="@ingvdboom">
+
+
+
+
+  
+    <meta property="article:published_time" content="2026-03-30T00:00:00Z">
+  
+  
+    <meta property="article:modified_time" content="2026-03-30T00:00:00Z">
+  
+  
+    <meta property="article:author" content="van den Boom">
+  
+  
+    <meta property="article:tag" content="Windows Server 2022">
+  
+    <meta property="article:tag" content="Proxmox">
+  
+    <meta property="article:tag" content="Virtualisatie">
+  
+    <meta property="article:tag" content="Lab">
+  
+    <meta property="article:tag" content="DevOps">
+  
+    <meta property="article:tag" content="VirtIO">
+  
+    <meta property="article:tag" content="VM">
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "\"Windows Server 2022 in Proxmox — Een VM Aanmaken\"",
+  "description": "\"Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 VM in Proxmox VE 9.1.6. Met correcte wizard instellingen, screenshots en lessen uit de praktijk.\"",
+  "url": "https:\/\/www.vandenboom.icu\/blog\/2026-proxmox-windows-server-2022-vm-aanmaken\/",
+  "inLanguage": "nl",
+  "datePublished": "2026-03-30T00:00:00Z",
+  "dateModified": "2026-03-30T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "\"van den Boom\""
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "\"Notities\"",
+    "url": "https:\/\/www.vandenboom.icu\/"
+  },
+  "keywords": "[\"Windows Server 2022\",\"Proxmox\",\"Virtualisatie\",\"Lab\",\"DevOps\",\"VirtIO\",\"VM\"]"
+}
+</script>
+
 <meta name="generator" content="Hugo 0.157.0"><meta property="og:site_name" content="Notities">
-  <meta property="og:title" content="Proxmox Lab — Windows Server 2022 VM aanmaken">
-  <meta property="og:description" content="Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Inclusief alle wizard-instellingen, VirtIO drivers en tips uit de praktijk.">
-  <meta property="description" content="Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Inclusief alle wizard-instellingen, VirtIO drivers en tips uit de praktijk.">
-  <meta property="og:url" content="http://localhost:1313/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">
+  <meta property="og:title" content="Windows Server 2022 in Proxmox — Een VM Aanmaken">
+  <meta property="og:description" content="Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 VM in Proxmox VE 9.1.6. Met correcte wizard instellingen, screenshots en lessen uit de praktijk.">
+  <meta property="description" content="Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 VM in Proxmox VE 9.1.6. Met correcte wizard instellingen, screenshots en lessen uit de praktijk.">
+  <meta property="og:url" content="https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">
   <meta property="og:type" content="article">
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
@@ -516,37 +597,37 @@
 
   
     
-    <a href="//x.com/share?text=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken&amp;url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//x.com/share?text=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Een%20VM%20Aanmaken&amp;url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>X</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Een%20VM%20Aanmaken" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Een%20VM%20Aanmaken" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;description=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;description=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Een%20VM%20Aanmaken" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van ing.%20M.A.C.M.%20%28Martijn%29%20van%20den%20Boom&amp;body=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van van%20den%20Boom&amp;body=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -651,16 +732,16 @@
     <header>
   <div class="title">
     
-      <h2><a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">Proxmox Lab — Windows Server 2022 VM aanmaken</a></h2>
+      <h2><a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">Windows Server 2022 in Proxmox — Een VM Aanmaken</a></h2>
     
     
-      <p>Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Inclusief alle wizard-instellingen, VirtIO drivers en tips uit de praktijk.</p>
+      <p>Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 VM in Proxmox VE 9.1.6. Met correcte wizard instellingen, screenshots en lessen uit de praktijk.</p>
     
   </div>
   <div class="meta">
-    <time datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>6 minuten leestijd</p>
+    <time datetime="2026-03-30 00:00:00 &#43;0000 UTC">30 Maart 2026</time>
+    
+    <p>7 minuten leestijd</p>
   </div>
 </header>
 
@@ -672,37 +753,37 @@
 
   
     
-    <a href="//x.com/share?text=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken&amp;url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//x.com/share?text=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Een%20VM%20Aanmaken&amp;url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>X</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Een%20VM%20Aanmaken" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Een%20VM%20Aanmaken" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;description=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;description=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Een%20VM%20Aanmaken" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van ing.%20M.A.C.M.%20%28Martijn%29%20van%20den%20Boom&amp;body=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van van%20den%20Boom&amp;body=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -711,27 +792,26 @@
     </div>
     <div class="content">
       
-      <p>Deze handleiding beschrijft het volledige proces voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Gebaseerd op praktijkervaring inclusief alle correcties en geleerde lessen tijdens de opbouw van een thuislab.</p>
+      <p>In dit artikel beschrijf ik stap voor stap hoe ik een Windows Server 2022 VM aanmaak in Proxmox VE 9.1.6. De handleiding is gebaseerd op praktijkervaring en bevat alle correcties en lessen die ik onderweg heb opgedaan. Dit is deel 1 van een serie over het opbouwen van een volledig Windows DevOps lab in Proxmox.</p>
 <blockquote>
-<p>📄 <strong>Download de volledige handleiding met screenshots:</strong>
-<a href="/documents/WS2022-in-Proxmox-VM-Creation-Guide.docx">WS2022-in-Proxmox-VM-Creation-Guide.docx</a></p>
+<p><strong>Download de volledige handleiding met screenshots (.docx):</strong>
+<a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/WS2022-in-Proxmox-VM-Creation-Guide-NL.docx">WS2022-in-Proxmox-VM-Creation-Guide-NL.docx</a></p>
 </blockquote>
-<hr>
-<h2 id="omgeving">Omgeving</h2>
+<h2 id="laboratoriumomgeving">Laboratoriumomgeving</h2>
 <table>
   <thead>
       <tr>
           <th>Onderdeel</th>
-          <th>Details</th>
+          <th>Waarde</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Proxmox Host</td>
+          <td>Proxmox host</td>
           <td>macpro2013.local — Mac Pro 2013 Trashcan</td>
       </tr>
       <tr>
-          <td>Proxmox Versie</td>
+          <td>Proxmox versie</td>
           <td>9.1.6</td>
       </tr>
       <tr>
@@ -743,7 +823,7 @@
           <td>3.6 TB NVMe (local-lvm pool)</td>
       </tr>
       <tr>
-          <td>Netwerkbrug</td>
+          <td>Netwerkbridge</td>
           <td>vmbr0 — intern lab netwerk (192.168.178.x)</td>
       </tr>
       <tr>
@@ -752,22 +832,25 @@
       </tr>
   </tbody>
 </table>
-<blockquote>
-<p><strong>Let op:</strong> De Proxmox WebUI toont een SSL-certificaatwaarschuwing omdat Proxmox standaard een zelfondertekend certificaat gebruikt. Dit is de aanleiding voor het later opzetten van een interne Certificate Authority (CA).</p>
-</blockquote>
+<hr>
+<h2 id="waarom-een-ca-nodig-is--de-ssl-waarschuwing">Waarom een CA nodig is — de SSL waarschuwing</h2>
+<p>Wie de Proxmox WebUI via <code>macpro2013.local</code> opent in Safari krijgt meteen een certificaatwaarschuwing. Proxmox gebruikt standaard een zelfondertekend certificaat.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/proxmox-ssl-warning.png" alt="Safari SSL waarschuwing voor macpro2013.local">
+<em>Safari toont een SSL waarschuwing voor macpro2013.local — dit wordt opgelost zodra de Certificate Authority is ingericht</em></p>
+<p>Dit is precies de motivatie om later een interne Certificate Authority (CA) op te zetten. Zodra die draait kan Proxmox een vertrouwd certificaat krijgen en verdwijnt de waarschuwing.</p>
 <hr>
 <h2 id="vereisten">Vereisten</h2>
-<p>Zorg ervoor dat de volgende ISO-images zijn geüpload naar de Proxmox lokale opslag (<strong>Proxmox WebUI → local → ISO Images</strong>) voordat je een VM aanmaakt:</p>
+<p>Zorg dat de volgende ISO bestanden beschikbaar zijn in de Proxmox local opslag (Proxmox WebUI → local → ISO Images):</p>
 <ul>
 <li><strong>Windows Server 2022 Evaluation:</strong> <code>Windows_2022_SERVER_EVAL_x64FRE_en-us.iso</code></li>
-<li><strong>VirtIO Drivers:</strong> <code>virtio-win-0.1.285.iso</code> (of nieuwer)</li>
+<li><strong>VirtIO drivers:</strong> <code>virtio-win-0.1.285.iso</code> of nieuwer</li>
 </ul>
 <blockquote>
-<p><strong>Waarschuwing:</strong> Beide ISO&rsquo;s zijn verplicht. Zonder de VirtIO ISO kan Windows Setup de schijf en netwerkadapter niet detecteren.</p>
+<p><strong>Let op:</strong> Beide ISO&rsquo;s zijn vereist. Zonder de VirtIO ISO kan Windows Setup de schijf en netwerkkaart niet detecteren.</p>
 </blockquote>
 <hr>
-<h2 id="naamgevingsconventie">Naamgevingsconventie</h2>
-<p>Gebruik consistente namen voor alle lab-VM&rsquo;s zodat je in één oogopslag ziet wat elke VM doet in het Proxmox-paneel.</p>
+<h2 id="naamgeving-van-vms">Naamgeving van VMs</h2>
+<p>Gebruik consistente namen die de OS versie én alle actieve rollen bevatten. Zo zie je in één oogopslag wat elke VM doet in het Proxmox paneel.</p>
 <table>
   <thead>
       <tr>
@@ -780,7 +863,7 @@
       <tr>
           <td>WS2022-LAB{nn}-{ROLLEN}</td>
           <td>WS2022-LAB01-AD-DNS</td>
-          <td>Lab VM — nummer + alle actieve rollen</td>
+          <td>Lab VM met alle actieve rollen in de naam</td>
       </tr>
       <tr>
           <td>WS2022-LAB{nn}-CA</td>
@@ -794,15 +877,19 @@
       </tr>
   </tbody>
 </table>
-<p>Een VM hernoemen via de Proxmox hostshell (de Proxmox GUI heeft geen hernoemoptie):</p>
+<p>Een VM hernoemen gaat via de Proxmox host shell (de WebUI heeft geen rename optie):</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh root@macpro2013.local
 </span></span><span style="display:flex;"><span>qm set &lt;VMID&gt; --name &lt;NIEUWE-NAAM&gt;
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Voorbeeld — hernoem VM 100:</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Voorbeeld:</span>
 </span></span><span style="display:flex;"><span>qm set <span style="color:#ae81ff">100</span> --name WS2022-LAB01-AD-DNS
-</span></span></code></pre></div><hr>
-<h2 id="stap-1--vm-aanmaken-via-de-proxmox-wizard">Stap 1 — VM aanmaken via de Proxmox Wizard</h2>
-<p>Klik in de Proxmox WebUI op <strong>Create VM</strong> (blauwe knop rechtsboven). Doorloop elk tabblad in de volgorde zoals hieronder beschreven.</p>
-<h3 id="11-tabblad-general">1.1 Tabblad General</h3>
+</span></span></code></pre></div><p>Hieronder zie je hoe het Proxmox paneel eruitziet nadat beide VMs correct zijn aangemaakt en hernoemd:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/proxmox-overview-both-vms.png" alt="Proxmox overzicht met beide VMs correct benoemd">
+<em>Proxmox paneel met WS2022-LAB01-AD-DNS (VM 100) en WS2022-TEMPLATE-BASE (VM 900) correct aangemaakt</em></p>
+<hr>
+<h2 id="vm-aanmaken--de-proxmox-wizard">VM aanmaken — de Proxmox wizard</h2>
+<p>Klik op <strong>Create VM</strong> (blauwe knop rechtsboven) en doorloop alle tabbladen zoals hieronder beschreven.</p>
+<h3 id="general-tabblad">General tabblad</h3>
 <table>
   <thead>
       <tr>
@@ -815,21 +902,21 @@
       <tr>
           <td>Name</td>
           <td>WS2022-TEMPLATE-BASE</td>
-          <td>Beschrijvende naam met OS + rol</td>
+          <td>Beschrijvende naam inclusief OS en rol</td>
       </tr>
       <tr>
           <td>VM ID</td>
           <td>900</td>
-          <td>Gebruik 900+ voor templates, 100+ voor lab-VM&rsquo;s</td>
+          <td>Gebruik 900+ voor templates, 100+ voor lab VMs</td>
       </tr>
       <tr>
           <td>Node</td>
           <td>macpro2013</td>
-          <td>Jouw Proxmox hostknooppunt</td>
+          <td>Jouw Proxmox host</td>
       </tr>
   </tbody>
 </table>
-<h3 id="12-tabblad-os">1.2 Tabblad OS</h3>
+<h3 id="os-tabblad">OS tabblad</h3>
 <table>
   <thead>
       <tr>
@@ -842,34 +929,34 @@
       <tr>
           <td>ISO Image</td>
           <td>Windows_2022_SERVER_EVAL_x64FRE_en-us.iso</td>
-          <td>Selecteer uit lokale opslag</td>
+          <td>Selecteer uit local opslag</td>
       </tr>
       <tr>
           <td>Type</td>
           <td>Microsoft Windows</td>
-          <td>Moet expliciet worden ingesteld</td>
+          <td><strong>Moet expliciet worden ingesteld</strong></td>
       </tr>
       <tr>
           <td>Version</td>
           <td>11/2022/2025</td>
-          <td>Moet expliciet worden ingesteld</td>
+          <td><strong>Moet expliciet worden ingesteld</strong></td>
       </tr>
       <tr>
           <td>Add VirtIO drivers ISO</td>
-          <td>Ingeschakeld (vinkje)</td>
-          <td>Voegt een tweede cd-schijf toe</td>
+          <td>Ingeschakeld (checkbox)</td>
+          <td>Voegt een tweede CD drive toe voor VirtIO ISO</td>
       </tr>
       <tr>
           <td>VirtIO ISO</td>
           <td>virtio-win-0.1.285.iso</td>
-          <td>Selecteer uit lokale opslag</td>
+          <td>Selecteer uit local opslag</td>
       </tr>
   </tbody>
 </table>
 <blockquote>
-<p><strong>Waarschuwing:</strong> Het OS-type en de versie moeten handmatig worden ingesteld. Het vinkje voor de extra VirtIO ISO voegt een tweede cd-station toe — dit is essentieel voor het laden van opslag- en netwerkdrivers tijdens Windows Setup.</p>
+<p><strong>Let op:</strong> Type en Version moeten allebei handmatig worden ingesteld. De checkbox voor de VirtIO ISO voegt een tweede CD drive toe — dit is essentieel voor het laden van storage en netwerk drivers tijdens Windows Setup.</p>
 </blockquote>
-<h3 id="13-tabblad-system">1.3 Tabblad System</h3>
+<h3 id="system-tabblad">System tabblad</h3>
 <table>
   <thead>
       <tr>
@@ -892,17 +979,17 @@
       <tr>
           <td>SCSI Controller</td>
           <td>VirtIO SCSI single</td>
-          <td>Beste opslagprestaties</td>
+          <td>Beste storage prestaties</td>
       </tr>
       <tr>
           <td>EFI Storage</td>
           <td>local-lvm</td>
-          <td>Moet expliciet worden geselecteerd</td>
+          <td><strong>Moet expliciet worden geselecteerd — geen standaard</strong></td>
       </tr>
       <tr>
           <td>TPM Storage</td>
           <td>local-lvm</td>
-          <td>Moet expliciet worden geselecteerd</td>
+          <td><strong>Moet expliciet worden geselecteerd — geen standaard</strong></td>
       </tr>
       <tr>
           <td>TPM Version</td>
@@ -912,9 +999,9 @@
   </tbody>
 </table>
 <blockquote>
-<p><strong>Waarschuwing:</strong> EFI Storage en TPM Storage hebben geen standaardwaarde — beide moeten expliciet worden geselecteerd. Zonder deze instellingen start de VM niet correct op.</p>
+<p><strong>Let op:</strong> EFI Storage en TPM Storage hebben geen standaardwaarde — beide moeten expliciet worden geselecteerd. Zonder deze instellingen start de VM niet correct op.</p>
 </blockquote>
-<h3 id="14-tabblad-disks">1.4 Tabblad Disks</h3>
+<h3 id="disks-tabblad">Disks tabblad</h3>
 <table>
   <thead>
       <tr>
@@ -927,7 +1014,7 @@
       <tr>
           <td>Bus/Device</td>
           <td>SCSI</td>
-          <td>Gebruik met VirtIO SCSI controller</td>
+          <td>Gebruik samen met VirtIO SCSI controller</td>
       </tr>
       <tr>
           <td>Storage</td>
@@ -947,7 +1034,7 @@
       <tr>
           <td>Discard</td>
           <td>Ingeschakeld</td>
-          <td>Maakt TRIM mogelijk voor SSD/NVMe</td>
+          <td>Activeert TRIM voor SSD/NVMe opslag</td>
       </tr>
       <tr>
           <td>IO Thread</td>
@@ -956,7 +1043,7 @@
       </tr>
   </tbody>
 </table>
-<h3 id="15-tabblad-cpu">1.5 Tabblad CPU</h3>
+<h3 id="cpu-tabblad">CPU tabblad</h3>
 <table>
   <thead>
       <tr>
@@ -974,19 +1061,19 @@
       <tr>
           <td>Cores</td>
           <td>2</td>
-          <td>Voldoende voor alle lab-VM-rollen</td>
+          <td>Voldoende voor alle lab VM rollen</td>
       </tr>
       <tr>
           <td>Type</td>
-          <td>host</td>
-          <td>Geeft de daadwerkelijke host-CPU door — betere prestaties dan kvm64</td>
+          <td><strong>host</strong></td>
+          <td>Geeft de echte host CPU door — betere prestaties dan de standaard kvm64</td>
       </tr>
   </tbody>
 </table>
 <blockquote>
-<p><strong>Waarschuwing:</strong> Het CPU-type moet worden ingesteld op <strong>host</strong>. De standaard kvm64 beperkt de beschikbare CPU-instructiesets en vermindert de prestaties.</p>
+<p><strong>Let op:</strong> CPU Type moet worden ingesteld op <code>host</code>. De standaard <code>kvm64</code> beperkt beschikbare CPU instructieset functies en verlaagt de prestaties.</p>
 </blockquote>
-<h3 id="16-tabblad-memory">1.6 Tabblad Memory</h3>
+<h3 id="memory-tabblad">Memory tabblad</h3>
 <table>
   <thead>
       <tr>
@@ -999,24 +1086,24 @@
       <tr>
           <td>Memory</td>
           <td>4096 MB</td>
-          <td>4 GB per VM</td>
+          <td>4GB per VM</td>
       </tr>
       <tr>
           <td>Minimum Memory</td>
           <td>4096 MB</td>
-          <td>Gelijk stellen aan Memory om ballooning uit te schakelen</td>
+          <td>Zet gelijk aan Memory om ballooning uit te schakelen</td>
       </tr>
       <tr>
           <td>Ballooning Device</td>
           <td>Uitgeschakeld</td>
-          <td>Wordt slecht ondersteund op Windows</td>
+          <td>Wordt niet goed ondersteund op Windows</td>
       </tr>
   </tbody>
 </table>
 <blockquote>
-<p><strong>Waarschuwing:</strong> Ballooning moet worden uitgeschakeld voor Windows-VM&rsquo;s. Stel Minimum Memory gelijk aan Memory om dit af te dwingen.</p>
+<p><strong>Let op:</strong> Ballooning moet worden uitgeschakeld voor Windows VMs. Zet Minimum Memory gelijk aan Memory. In het hardware overzicht zie je dit terug als <code>[balloon=0]</code>.</p>
 </blockquote>
-<h3 id="17-tabblad-network">1.7 Tabblad Network</h3>
+<h3 id="network-tabblad">Network tabblad</h3>
 <table>
   <thead>
       <tr>
@@ -1034,89 +1121,138 @@
       <tr>
           <td>Model</td>
           <td>VirtIO (paravirtualized)</td>
-          <td>Beste prestaties — vereist VirtIO-drivers</td>
+          <td>Beste prestaties — vereist VirtIO drivers</td>
       </tr>
       <tr>
           <td>Firewall</td>
           <td>Ingeschakeld (standaard laten)</td>
-          <td>Laat ingeschakeld — weerspiegelt productieomgevingen</td>
+          <td>Laat ingeschakeld — spiegelt productie en bouwt troubleshooting vaardigheden</td>
       </tr>
   </tbody>
 </table>
 <blockquote>
-<p><strong>Tip:</strong> Laat de Proxmox-firewall ingeschakeld op de netwerkadapter. Door de firewall in te laten staan oefen je met het oplossen van problemen zoals in een echte productieomgeving.</p>
+<p><strong>Let op:</strong> Laat de Proxmox firewall ingeschakeld op de netwerkadapter. Uitschakelen lijkt handig maar verwijdert een belangrijke laag die echte productieomgevingen weerspiegelt. Troubleshooten door de firewall heen is een waardevolle vaardigheid.</p>
 </blockquote>
 <hr>
-<h2 id="stap-2--hardware-verifiëren-voor-het-opstarten">Stap 2 — Hardware verifiëren voor het opstarten</h2>
-<p>Klik na het afronden van de wizard <strong>niet</strong> direct op Start. Controleer eerst de hardwareconfiguratie via <strong>Hardware</strong> in het linker paneel. Verifieer het volgende:</p>
+<h2 id="hardware-verificatie-vóór-eerste-start">Hardware verificatie vóór eerste start</h2>
+<p>Na het klikken op Finish, start de VM <strong>nog niet</strong>. Klik eerst op de VM in het linker paneel en selecteer <strong>Hardware</strong>. Controleer dat alle instellingen overeenkomen met bovenstaande tabellen.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/proxmox-vm900-hardware.png" alt="Proxmox Hardware tab VM 900 — correcte configuratie">
+<em>VM 900 (WS2022-TEMPLATE-BASE) — Hardware tabblad met correcte configuratie. Let op balloon=0, host CPU type, beide ISO&rsquo;s aanwezig, 60G schijf met writeback/discard/iothread, EFI en TPM aanwezig.</em></p>
+<p>Controleer specifiek:</p>
 <ul>
-<li><strong>Memory:</strong> 4.00 GiB [balloon=0] — balloon=0 bevestigt dat ballooning is uitgeschakeld</li>
-<li><strong>Processors:</strong> 2 (1 socket, 2 cores) [host] — bevestigt host CPU-type</li>
-<li><strong>BIOS:</strong> OVMF (UEFI)</li>
-<li><strong>Machine:</strong> pc-q35-10.1</li>
-<li><strong>SCSI Controller:</strong> VirtIO SCSI single</li>
-<li><strong>CD/DVD ide0:</strong> VirtIO ISO</li>
-<li><strong>CD/DVD ide2:</strong> Windows 2022 ISO</li>
-<li><strong>Hard Disk:</strong> 60 GB, cache=writeback, discard=on, iothread=1</li>
-<li><strong>Network:</strong> vmbr0, firewall=1</li>
-<li><strong>EFI Disk</strong> en <strong>TPM State</strong> aanwezig op local-lvm</li>
+<li>Memory: <code>4.00 GiB [balloon=0]</code> — balloon=0 bevestigt dat ballooning uit staat</li>
+<li>Processors: <code>2 (1 socket, 2 cores) [host]</code> — bevestigt host CPU type</li>
+<li>BIOS: <code>OVMF (UEFI)</code></li>
+<li>Machine: <code>pc-q35</code></li>
+<li>SCSI Controller: <code>VirtIO SCSI single</code></li>
+<li>CD/DVD ide0: virtio-win ISO aanwezig</li>
+<li>CD/DVD ide2: Windows 2022 ISO aanwezig</li>
+<li>Hard Disk: 60G, <code>cache=writeback</code>, <code>discard=on</code>, <code>iothread=1</code></li>
+<li>Network: <code>vmbr0</code>, <code>firewall=1</code></li>
+<li>EFI Disk en TPM State aanwezig op local-lvm</li>
 </ul>
 <hr>
-<h2 id="stap-3--vm-opstarten-en-windows-installeren">Stap 3 — VM opstarten en Windows installeren</h2>
-<p>Klik op <strong>Start</strong> en open direct de <strong>Console</strong>. Wanneer je het volgende bericht ziet, klik dan eerst in het consolevenster (om toetsenbordfocus te krijgen) en druk op een willekeurige toets:</p>
+<h2 id="vm-opstarten-en-windows-boot">VM opstarten en Windows boot</h2>
+<p>Klik op <strong>Start</strong> en open direct de <strong>Console</strong>. Zodra je het volgende ziet, klik je eerst in het console venster (om toetsenbordinvoer te vangen) en druk je op een willekeurige toets:</p>
 <pre tabindex="0"><code>Press any key to boot from CD or DVD......
 </code></pre><blockquote>
-<p><strong>Waarschuwing:</strong> Als je deze prompt mist, probeert de VM op te starten via PXE-boot. Reset de VM en probeer het opnieuw — wees klaar bij de console voordat je op Start klikt.</p>
+<p><strong>Let op:</strong> Als je te laat bent start de VM door naar PXE boot zoals hieronder. Reset de VM dan gewoon en probeer het opnieuw — wees klaar bij de console vóórdat je op Start klikt.</p>
 </blockquote>
-<p>Wanneer de prompt op tijd wordt gevangen, verschijnt de <strong>Windows Boot Manager</strong>. Selecteer <strong>Windows Setup [EMS Enabled]</strong> en druk op Enter.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/proxmox-boot-pxe.png" alt="PXE boot fallback — te laat op CD boot prompt">
+<em>PXE boot fallback wanneer de CD boot prompt gemist werd — reset de VM en probeer opnieuw</em></p>
+<p>Als je het prompt op tijd haalt verschijnt de Windows Boot Manager:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/windows-boot-manager.png" alt="Windows Boot Manager">
+<em>Windows Boot Manager — selecteer Windows Setup [EMS Enabled] en druk op Enter</em></p>
+<p>Selecteer <strong>Windows Setup [EMS Enabled]</strong> (staat al geselecteerd) en druk op Enter.</p>
 <hr>
-<h2 id="stap-4--editieselectie">Stap 4 — Editieselectie</h2>
-<p>Wanneer gevraagd om een editie te selecteren, kies:</p>
+<h2 id="editie-selectie">Editie selectie</h2>
+<p>Kies bij de editieselectie:</p>
 <p><strong>Windows Server 2022 Datacenter (Desktop Experience)</strong></p>
 <blockquote>
-<p><strong>Waarschuwing:</strong> Zorg ervoor dat je <strong>Datacenter</strong> selecteert — niet Standard. En <strong>Desktop Experience</strong> — niet Core. Core heeft geen GUI, wat het ongeschikt maakt voor dit lab-template.</p>
+<p><strong>Let op:</strong> Selecteer Datacenter, niet Standard. En Desktop Experience, niet Core. Core heeft geen GUI en is daarvoor ongeschikt voor deze lab template.</p>
 </blockquote>
 <hr>
-<h2 id="stap-5--virtio-opslagdriver-laden">Stap 5 — VirtIO Opslagdriver laden</h2>
-<p>Op het scherm &lsquo;Where do you want to install the operating system?&rsquo; is de schijflijst leeg. Dit is normaal — Windows kan de VirtIO SCSI-schijf niet zien zonder de driver.</p>
-<p>Volg deze stappen om de driver te laden:</p>
+<h2 id="virtio-storage-driver-laden">VirtIO storage driver laden</h2>
+<p>Op het scherm &ldquo;Where do you want to install the operating system?&rdquo; is de schijflijst leeg. Dit is normaal — Windows kan de VirtIO SCSI schijf niet zien zonder de driver.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/windows-no-disk.png" alt="Windows Setup zonder schijf zichtbaar">
+<em>Windows Setup toont geen schijf — VirtIO SCSI driver moet eerst worden geladen</em></p>
+<p>Stappen om de driver te laden:</p>
 <ol>
 <li>Klik op <strong>Load driver</strong></li>
 <li>Klik op <strong>Browse</strong></li>
-<li>Navigeer naar het VirtIO cd-station (D: of E:)</li>
+<li>Navigeer naar het VirtIO CD station (D: of E:)</li>
 <li>Open de map: <code>vioscsi \ w2k22 \ amd64</code></li>
-<li>Klik op <strong>OK</strong></li>
+<li>Klik <strong>OK</strong></li>
 <li>Selecteer <strong>Red Hat VirtIO SCSI pass-through controller</strong></li>
-<li>Klik op <strong>Next</strong></li>
+<li>Klik <strong>Next</strong></li>
 </ol>
-<p>De 60 GB-schijf verschijnt nu in de lijst. Selecteer deze en ga verder. De Windows-installatie begint.</p>
+<p>De 60GB schijf verschijnt nu in de lijst. Selecteer deze en ga verder. De Windows installatie start:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/windows-installing.png" alt="Windows Server 2022 installatie bezig">
+<em>Windows Server 2022 installatie in uitvoering — 23% bezig</em></p>
 <hr>
-<h2 id="stap-6--na-de-installatie">Stap 6 — Na de installatie</h2>
-<p>Na de installatie en herstart land je op het <strong>Server Manager Dashboard</strong>. Sluit de Windows Admin Center-pop-up (vink <em>Don&rsquo;t show this message again</em> aan).</p>
-<p>De VM is nu klaar voor de volgende stap: het voorbereiden als herbruikbaar Proxmox-template. Raadpleeg hiervoor de begeleidende handleiding:</p>
-<blockquote>
-<p>📄 <strong><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Proxmox Lab — Windows Server 2022 Template voorbereiding</a></strong></p>
-</blockquote>
+<h2 id="na-de-installatie--server-manager">Na de installatie — Server Manager</h2>
+<p>Na de installatie en herstart land je op het Server Manager Dashboard. Sluit de Windows Admin Center melding (vink &ldquo;Don&rsquo;t show this message again&rdquo; aan):</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/windows-server-manager.png" alt="Server Manager Dashboard">
+<em>Server Manager Dashboard — Windows Server 2022 Datacenter succesvol geïnstalleerd</em></p>
+<p>De VM is nu klaar voor de volgende stap: template voorbereiding zoals beschreven in deel 2 van deze serie.</p>
 <hr>
 <h2 id="samenvatting-checklist">Samenvatting checklist</h2>
-<ol>
-<li>Windows Server 2022 ISO uploaden naar Proxmox lokale opslag ☐</li>
-<li>VirtIO drivers ISO uploaden naar Proxmox lokale opslag ☐</li>
-<li>VM aanmaken met de juiste instellingen in alle wizard-tabbladen ☐</li>
-<li>Hardwareconfiguratie verifiëren in het Proxmox Hardware-tabblad vóór het opstarten ☐</li>
-<li>VM opstarten — CD-bootprompt direct in de Console opvangen ☐</li>
-<li>Windows Server 2022 Datacenter (Desktop Experience) selecteren ☐</li>
-<li>VirtIO SCSI-driver laden (vioscsi/w2k22/amd64) vóór schijfselectie ☐</li>
-<li>Windows-installatie voltooien ☐</li>
-<li>Verder gaan naar de Template Preparation-handleiding ☐</li>
-</ol>
-<hr>
-<blockquote>
-<p>📄 <strong>Download de volledige handleiding met screenshots:</strong>
-<a href="/documents/WS2022-in-Proxmox-VM-Creation-Guide.docx">WS2022-in-Proxmox-VM-Creation-Guide.docx</a></p>
-</blockquote>
-<p>Vriendelijke groeten,</p>
-<p>Martijn</p>
+<table>
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>Taak</th>
+          <th>Gereed</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Windows Server 2022 ISO uploaden naar Proxmox local opslag</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>VirtIO drivers ISO uploaden naar Proxmox local opslag</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>VM aanmaken met correcte instellingen in alle wizard tabbladen</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Hardware configuratie verifiëren in Proxmox Hardware tab vóór start</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>VM opstarten — CD boot prompt direct opvangen in Console</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>Windows Server 2022 Datacenter (Desktop Experience) selecteren</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>VirtIO SCSI driver laden (vioscsi/w2k22/amd64) vóór schijfselectie</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>Windows installatie voltooien</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>Verder naar deel 2 — Template Voorbereiding</td>
+          <td>☐</td>
+      </tr>
+  </tbody>
+</table>
 
     </div>
     <footer>
@@ -1125,9 +1261,7 @@
     <ul class="categories">
       
         
-          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
-        
-          <li><a class="article-terms-link" href="/categories/windows/">windows</a></li>
+          <li><a class="article-terms-link" href="/categories/windows/">Windows</a></li>
         
       
     </ul>
@@ -1136,19 +1270,19 @@
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/tags/proxmox/">proxmox</a></li>
+          <li><a class="article-terms-link" href="/tags/windows-server-2022/">Windows Server 2022</a></li>
         
-          <li><a class="article-terms-link" href="/tags/windows-server-2022/">windows-server-2022</a></li>
+          <li><a class="article-terms-link" href="/tags/proxmox/">Proxmox</a></li>
         
-          <li><a class="article-terms-link" href="/tags/virtualisatie/">virtualisatie</a></li>
+          <li><a class="article-terms-link" href="/tags/virtualisatie/">Virtualisatie</a></li>
         
-          <li><a class="article-terms-link" href="/tags/vm/">vm</a></li>
+          <li><a class="article-terms-link" href="/tags/lab/">Lab</a></li>
         
-          <li><a class="article-terms-link" href="/tags/virtio/">virtio</a></li>
+          <li><a class="article-terms-link" href="/tags/devops/">DevOps</a></li>
         
-          <li><a class="article-terms-link" href="/tags/lab/">lab</a></li>
+          <li><a class="article-terms-link" href="/tags/virtio/">VirtIO</a></li>
         
-          <li><a class="article-terms-link" href="/tags/hypervisor/">hypervisor</a></li>
+          <li><a class="article-terms-link" href="/tags/vm/">VM</a></li>
         
       
     </ul>
@@ -1158,33 +1292,29 @@
     </footer>
   </article>
   
-    
-  <article class="post">
-
-    <div id="disqus_thread"></div>
-    <script>
-      (function() {
-        if (window.location.hostname == "localhost")
-          return;
-      var d = document, s = d.createElement('script');
-      s.src = 'https://' + "\"www-vandenboom-icu\"" + '.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
+    <article class="post">
+    <div class="giscus"></div>
+    <script src="https://giscus.app/client.js"
+            data-repo="martijnvandenboom/backup-website"
+            data-repo-id="MDEwOlJlcG9zaXRvcnkzMjA2NTM3Nzc="
+            data-category="Comments"
+            data-category-id="DIC_kwDOExzJ0c4C5s22"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>    
-
-    
-  </article>
-
-
-
+</article>
 
   
   <div class="pagination">
     
-      <a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/" class="button left"><span>Proxmox Lab — Windows Server 2022 Template voorbereiding</span></a>
+      <a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/" class="button left"><span>Windows Server 2022 in Proxmox — Template Voorbereiding</span></a>
     
     
       <a href="/blog/2026-windows-server-2022-active-directory-dns-installatie/" class="button right"><span>Windows Server 2022 — Active Directory en DNS installatie</span></a>
@@ -1202,16 +1332,16 @@
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Proxmox Lab — Windows Server 2022 Template voorbereiding</a></h2>
-          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+          <h2><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Windows Server 2022 in Proxmox — Template Voorbereiding</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0000 UTC">31 Maart 2026</time>
         </header>
       </article>
       
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">Proxmox Lab — Windows Server 2022 VM aanmaken</a></h2>
-          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+          <h2><a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">Windows Server 2022 in Proxmox — Een VM Aanmaken</a></h2>
+          <time class="published" datetime="2026-03-30 00:00:00 &#43;0000 UTC">30 Maart 2026</time>
         </header>
       </article>
       
@@ -1258,7 +1388,7 @@
           
           
           <li>
-              <a href="/categories/article/">article<span class="count">65</span></a>
+              <a href="/categories/article/">article<span class="count">63</span></a>
           
           <li>
               <a href="/categories/syntax/">syntax<span class="count">13</span></a>

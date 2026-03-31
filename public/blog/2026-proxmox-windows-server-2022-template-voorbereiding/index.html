@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="nl">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8">
     <style>
         @keyframes rotate {
@@ -39,7 +39,7 @@
 
 
   <meta charset="utf-8">
-<title>Proxmox Lab — Windows Server 2022 Template voorbereiding - Notities</title>
+<title>Windows Server 2022 in Proxmox — Template Voorbereiding - Notities</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -55,11 +55,96 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
+
+  
+
+
+<link rel="canonical" href="https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">
+
+
+
+  <link rel="alternate" hreflang="nl" href="https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">
+
+
+
+
+
+  <meta name="author" content="van den Boom">
+
+
+
+<meta name="robots" content="index, follow">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Windows Server 2022 in Proxmox — Template Voorbereiding">
+<meta name="twitter:description" content="Stap voor stap handleiding voor het voorbereiden van een Windows Server 2022 Proxmox template. Van eerste start tot Sysprep, inclusief VirtIO drivers, Windows Update via PowerShell en alle basisinstellingen.">
+
+  <meta name="twitter:creator" content="@ingvdboom">
+
+
+
+
+  
+    <meta property="article:published_time" content="2026-03-31T00:00:00Z">
+  
+  
+    <meta property="article:modified_time" content="2026-03-31T00:00:00Z">
+  
+  
+    <meta property="article:author" content="van den Boom">
+  
+  
+    <meta property="article:tag" content="Windows Server 2022">
+  
+    <meta property="article:tag" content="Proxmox">
+  
+    <meta property="article:tag" content="Virtualisatie">
+  
+    <meta property="article:tag" content="Lab">
+  
+    <meta property="article:tag" content="DevOps">
+  
+    <meta property="article:tag" content="VirtIO">
+  
+    <meta property="article:tag" content="Sysprep">
+  
+    <meta property="article:tag" content="Template">
+  
+    <meta property="article:tag" content="PowerShell">
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "\"Windows Server 2022 in Proxmox — Template Voorbereiding\"",
+  "description": "\"Stap voor stap handleiding voor het voorbereiden van een Windows Server 2022 Proxmox template. Van eerste start tot Sysprep, inclusief VirtIO drivers, Windows Update via PowerShell en alle basisinstellingen.\"",
+  "url": "https:\/\/www.vandenboom.icu\/blog\/2026-proxmox-windows-server-2022-template-voorbereiding\/",
+  "inLanguage": "nl",
+  "datePublished": "2026-03-31T00:00:00Z",
+  "dateModified": "2026-03-31T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "\"van den Boom\""
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "\"Notities\"",
+    "url": "https:\/\/www.vandenboom.icu\/"
+  },
+  "keywords": "[\"Windows Server 2022\",\"Proxmox\",\"Virtualisatie\",\"Lab\",\"DevOps\",\"VirtIO\",\"Sysprep\",\"Template\",\"PowerShell\"]"
+}
+</script>
+
 <meta name="generator" content="Hugo 0.157.0"><meta property="og:site_name" content="Notities">
-  <meta property="og:title" content="Proxmox Lab — Windows Server 2022 Template voorbereiding">
-  <meta property="og:description" content="Van eerste opstart tot Sysprep — stap voor stap handleiding voor het voorbereiden van een Windows Server 2022 VM als herbruikbaar Proxmox-template. Inclusief VirtIO-drivers, Windows Update via PowerShell, prestatieoptimalisaties en Sysprep.">
-  <meta property="description" content="Van eerste opstart tot Sysprep — stap voor stap handleiding voor het voorbereiden van een Windows Server 2022 VM als herbruikbaar Proxmox-template. Inclusief VirtIO-drivers, Windows Update via PowerShell, prestatieoptimalisaties en Sysprep.">
-  <meta property="og:url" content="http://localhost:1313/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">
+  <meta property="og:title" content="Windows Server 2022 in Proxmox — Template Voorbereiding">
+  <meta property="og:description" content="Stap voor stap handleiding voor het voorbereiden van een Windows Server 2022 Proxmox template. Van eerste start tot Sysprep, inclusief VirtIO drivers, Windows Update via PowerShell en alle basisinstellingen.">
+  <meta property="description" content="Stap voor stap handleiding voor het voorbereiden van een Windows Server 2022 Proxmox template. Van eerste start tot Sysprep, inclusief VirtIO drivers, Windows Update via PowerShell en alle basisinstellingen.">
+  <meta property="og:url" content="https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">
   <meta property="og:type" content="article">
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
@@ -516,37 +601,37 @@
 
   
     
-    <a href="//x.com/share?text=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20Template%20voorbereiding&amp;url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//x.com/share?text=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Template%20Voorbereiding&amp;url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>X</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20Template%20voorbereiding" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;title=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Template%20Voorbereiding" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20Template%20voorbereiding" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;title=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Template%20Voorbereiding" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;description=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20Template%20voorbereiding" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;description=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Template%20Voorbereiding" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van ing.%20M.A.C.M.%20%28Martijn%29%20van%20den%20Boom&amp;body=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van van%20den%20Boom&amp;body=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -651,16 +736,16 @@
     <header>
   <div class="title">
     
-      <h2><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Proxmox Lab — Windows Server 2022 Template voorbereiding</a></h2>
+      <h2><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Windows Server 2022 in Proxmox — Template Voorbereiding</a></h2>
     
     
-      <p>Van eerste opstart tot Sysprep — stap voor stap handleiding voor het voorbereiden van een Windows Server 2022 VM als herbruikbaar Proxmox-template. Inclusief VirtIO-drivers, Windows Update via PowerShell, prestatieoptimalisaties en Sysprep.</p>
+      <p>Stap voor stap handleiding voor het voorbereiden van een Windows Server 2022 Proxmox template. Van eerste start tot Sysprep, inclusief VirtIO drivers, Windows Update via PowerShell en alle basisinstellingen.</p>
     
   </div>
   <div class="meta">
-    <time datetime="2026-03-31 10:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>6 minuten leestijd</p>
+    <time datetime="2026-03-31 00:00:00 &#43;0000 UTC">31 Maart 2026</time>
+    
+    <p>7 minuten leestijd</p>
   </div>
 </header>
 
@@ -672,37 +757,37 @@
 
   
     
-    <a href="//x.com/share?text=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20Template%20voorbereiding&amp;url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//x.com/share?text=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Template%20Voorbereiding&amp;url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>X</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20Template%20voorbereiding" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;title=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Template%20Voorbereiding" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20Template%20voorbereiding" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;title=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Template%20Voorbereiding" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;description=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20Template%20voorbereiding" target="_blank" rel="noopener" class="nav share-btn pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f&amp;description=Windows%20Server%202022%20in%20Proxmox%20%e2%80%94%20Template%20Voorbereiding" target="_blank" rel="noopener" class="nav share-btn pinterest">
           <p>Pinterest</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van ing.%20M.A.C.M.%20%28Martijn%29%20van%20den%20Boom&amp;body=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van van%20den%20Boom&amp;body=https%3a%2f%2fwww.vandenboom.icu%2fblog%2f2026-proxmox-windows-server-2022-template-voorbereiding%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -711,84 +796,105 @@
     </div>
     <div class="content">
       
-      <p>Deze handleiding beschrijft het volledige proces voor het voorbereiden van een vers geïnstalleerde Windows Server 2022 VM als herbruikbaar Proxmox-template. Alle toekomstige VM&rsquo;s (CA-server, lidservers, enzovoort) worden gekloond vanuit dit template, wat aanzienlijk tijd bespaart en een consistente basisinstallatie garandeert.</p>
+      <p>Dit is deel 2 van de serie over het opbouwen van een Windows DevOps lab in Proxmox. In <a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">deel 1</a> heb ik beschreven hoe je de VM aanmaakt. In dit artikel bereid ik de VM voor als herbruikbare Proxmox template. Alle toekomstige VMs — de CA server, member servers en andere rollen — worden vanuit deze template gekloond.</p>
 <blockquote>
-<p>📄 <strong>Download de volledige handleiding met screenshots:</strong>
-<a href="/documents/WS2022-in-Proxmox-Template-Preparation-Guide.docx">WS2022-in-Proxmox-Template-Preparation-Guide.docx</a></p>
+<p><strong>Download de volledige handleiding met screenshots (.docx):</strong>
+<a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/WS2022-in-Proxmox-Template-Preparation-Guide-NL.docx">WS2022-in-Proxmox-Template-Preparation-Guide-NL.docx</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Belangrijk:</strong> Start de VM na Sysprep <strong>nooit</strong> opnieuw op. Als je dat doet wordt de generalisatie verbruikt en moet de template opnieuw worden opgebouwd.</p>
 </blockquote>
 <hr>
-<h2 id="overzicht">Overzicht</h2>
-<p>Het volledige proces bestaat uit de volgende stappen:</p>
+<h2 id="overzicht-van-de-stappen">Overzicht van de stappen</h2>
 <ol>
-<li>VirtIO guest-drivers installeren</li>
-<li>Windows Update uitvoeren — OS volledig patchen</li>
-<li>Prestatieoptimalisaties toepassen</li>
-<li>Basisconfiguratie — tijdzone, RDP, IE Enhanced Security</li>
+<li>VirtIO guest drivers installeren</li>
+<li>Windows Update — OS volledig patchen</li>
+<li>Prestatie-optimalisaties toepassen</li>
+<li>Basisinstellingen — tijdzone, RDP, IE Enhanced Security</li>
 <li>Sysprep — generaliseren en afsluiten</li>
 <li>Converteren naar template in Proxmox</li>
 </ol>
-<blockquote>
-<p><strong>Waarschuwing:</strong> Start de VM nooit opnieuw op na Sysprep. Als je dat toch doet, wordt de generalisatie verbruikt en moet het template opnieuw worden opgebouwd vanaf het begin.</p>
-</blockquote>
 <hr>
-<h2 id="stap-1--virtio-guest-drivers-installeren">Stap 1 — VirtIO Guest-Drivers installeren</h2>
-<p>VirtIO guest-drivers zijn vereist zodat Windows correct functioneert op Proxmox. Ze omvatten de opslagcontroller, netwerkadapter, geheugenballon, weergave en andere paravirtualiseerde apparaten.</p>
-<p>Open <strong>Verkenner</strong> in de Windows VM en navigeer naar het VirtIO-cd-station (D: of E:). Scroll naar het einde van de bestandslijst en dubbelklik op <strong>virtio-win-guest-tools.exe</strong> (het Application-bestand, circa 30 MB). Dit ene installatieprogramma regelt alle benodigde drivers in één keer. Accepteer de standaardwaarden en laat de installatie voltooien.</p>
+<h2 id="stap-1--virtio-guest-drivers-installeren">Stap 1 — VirtIO guest drivers installeren</h2>
+<p>Windows Server 2022 heeft VirtIO drivers nodig om correct te functioneren op Proxmox. Ze dekken de storage controller, netwerkadapter, memory ballooning, display en andere paravirtualized apparaten.</p>
+<p>Open Verkenner in de VM en navigeer naar het VirtIO CD station (D: of E:). Scroll naar beneden in de bestandslijst:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/virtio-file-explorer.png" alt="VirtIO CD station met virtio-win-guest-tools.exe zichtbaar">
+<em>VirtIO CD station inhoud — virtio-win-guest-tools.exe staat onderaan de lijst (30MB Application)</em></p>
+<p>Dubbelklik op <strong>virtio-win-guest-tools.exe</strong> (de Application, ongeveer 30MB). Deze installeert alle benodigde drivers in één keer. Accepteer de standaardinstellingen en wacht tot de installatie klaar is.</p>
 <blockquote>
-<p><strong>Tip:</strong> Gebruik altijd <code>virtio-win-guest-tools.exe</code> in plaats van afzonderlijke drivers te installeren vanuit de submappen. Het is sneller en zorgt ervoor dat niets wordt gemist.</p>
+<p><strong>Tip:</strong> Gebruik altijd <code>virtio-win-guest-tools.exe</code> in plaats van individuele drivers uit de submappen. Het is sneller en garandeert dat niets wordt overgeslagen.</p>
 </blockquote>
 <hr>
 <h2 id="stap-2--windows-update">Stap 2 — Windows Update</h2>
-<p>Het volledig patchen van het OS vóór Sysprep zorgt ervoor dat elke gekloonde VM direct up-to-date start zonder individuele updates te hoeven uitvoeren.</p>
+<p>Het OS volledig patchen vóór Sysprep zorgt ervoor dat elke gekloonde VM al up-to-date start zonder individueel updates te hoeven draaien.</p>
 <h3 id="21-windows-update-starten">2.1 Windows Update starten</h3>
-<p>Open <strong>Instellingen → Update &amp; Beveiliging → Windows Update</strong> en klik op <strong>Controleren op updates</strong>. Beschikbare updates beginnen te downloaden en te installeren.</p>
-<h3 id="22-bekende-problemen-met-de-windows-update-gui">2.2 Bekende problemen met de Windows Update GUI</h3>
-<p>De Windows Update GUI in Server 2022 VM&rsquo;s is onbetrouwbaar. Knoppen reageren regelmatig niet meer en downloads lijken te hangen. Dit is een bekend probleem in VM-omgevingen.</p>
+<p>Open <strong>Instellingen → Update &amp; Security → Windows Update</strong> en klik op Check for updates. Beschikbare updates beginnen te downloaden en installeren:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-update-running.png" alt="Windows Update bezig met installeren">
+<em>Windows Update downloadt en installeert meerdere updates — laat dit rustig draaien</em></p>
+<h3 id="22-bekend-probleem--windows-update-gui-loopt-vast">2.2 Bekend probleem — Windows Update GUI loopt vast</h3>
+<p>De Windows Update GUI in Server 2022 VMs is onbetrouwbaar. Knoppen reageren regelmatig niet meer en downloads lijken te hangen. Dit is een bekend probleem in VM omgevingen.</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-update-stuck.png" alt="Windows Update GUI loopt vast">
+<em>Windows Update GUI met Install Now knop die niet reageert — schakel over naar PowerShell</em></p>
 <blockquote>
-<p><strong>Waarschuwing:</strong> Probeer nooit het vastlopen van de Windows Update GUI via de GUI zelf op te lossen. Schakel over naar de PowerShell-methode hieronder.</p>
+<p><strong>Let op:</strong> Wanneer de Windows Update GUI vastloopt, probeer dit <strong>niet</strong> via de GUI op te lossen. Gebruik in plaats daarvan de PowerShell methode hieronder.</p>
 </blockquote>
 <h3 id="23-aanbevolen-methode--pswindowsupdate-via-powershell">2.3 Aanbevolen methode — PSWindowsUpdate via PowerShell</h3>
-<p>Open <strong>PowerShell als Administrator</strong> (rechtermuisklik op Start → Windows PowerShell (Admin)):</p>
-<p><strong>Stap 1 — Installeer de PSWindowsUpdate-module:</strong></p>
+<p>Open PowerShell als Administrator (rechtsklik Start → Windows PowerShell (Admin)):</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/powershell-wuauclt.png" alt="PowerShell open klaar voor PSWindowsUpdate commando’s">
+<em>PowerShell (Admin) open en gereed</em></p>
+<p><strong>Stap 1 — Installeer de PSWindowsUpdate module:</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Install-Module PSWindowsUpdate -Force -Confirm:$false
-</span></span></code></pre></div><p>Typ <code>Y</code> en druk op Enter wanneer gevraagd wordt de NuGet-provider te installeren of PSGallery te vertrouwen.</p>
-<p><strong>Stap 2 — Importeer de module en voer alle updates uit:</strong></p>
+</span></span></code></pre></div><p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/pswu-install.png" alt="PSWindowsUpdate module installeren">
+<em>PSWindowsUpdate module installeert — typ Y als er gevraagd wordt om de NuGet provider te installeren of PSGallery te vertrouwen</em></p>
+<p>Typ <strong>Y</strong> en druk op Enter als er gevraagd wordt om de NuGet provider te installeren of PSGallery te vertrouwen.</p>
+<p><strong>Stap 2 — Importeer de module en installeer alle updates:</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Import-Module PSWindowsUpdate
 </span></span><span style="display:flex;"><span>Get-WindowsUpdate -Install -AcceptAll -AutoReboot
-</span></span></code></pre></div><p>De VM herstart automatisch indien nodig. Na de herstart log je opnieuw in en voer je de opdracht opnieuw uit totdat er geen updates meer zijn:</p>
+</span></span></code></pre></div><p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/pswu-running.png" alt="PSWindowsUpdate draait en toont update status per KB artikel">
+<em>PSWindowsUpdate in uitvoering — toont status per KB artikel</em></p>
+<p>De VM herstart automatisch als dat nodig is. Tijdens de herstart worden updates toegepast:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-update-30pct.png" alt="Windows past updates toe tijdens herstart — 30% gereed">
+<em>Windows past updates toe tijdens herstart — onderbreek dit niet</em></p>
+<p>Na de herstart, log opnieuw in en voer het commando nogmaals uit totdat er geen updates meer zijn:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-WindowsUpdate -Install -AcceptAll -AutoReboot
-</span></span></code></pre></div><p>Voer Windows Update een tweede keer uit om te bevestigen dat niets is gemist. Sommige updates worden pas beschikbaar nadat andere zijn geïnstalleerd.</p>
+</span></span></code></pre></div><p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-uptodate-1.png" alt="Windows Update toont You’re up to date — eerste ronde klaar">
+<em>Windows Update toont &ldquo;You&rsquo;re up to date&rdquo; na de eerste ronde</em></p>
+<p>Voer Windows Update een tweede keer uit om te bevestigen dat er niets gemist is. Sommige updates worden pas beschikbaar nadat andere zijn geïnstalleerd:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/windows-uptodate-final.png" alt="Windows Update bevestigd up to date na tweede ronde — volledig gepatcht">
+<em>Windows Update bevestigd up to date na tweede controle — OS is volledig gepatcht</em></p>
 <blockquote>
-<p><strong>Tip:</strong> Sommige updates (zoals KB890830 — Windows Malicious Software Removal Tool) kunnen aanhoudend mislukken in VM-omgevingen. Dit is bekend en onschadelijk — het heeft geen invloed op de serverfunctionaliteit en kan veilig worden overgeslagen.</p>
+<p><strong>Opmerking:</strong> Sommige updates (zoals KB890830 — Windows Malicious Software Removal Tool) mislukken soms persistent in VM omgevingen. Dit is bekend en onschadelijk — het heeft geen invloed op de serverfunctionaliteit en kan veilig worden overgeslagen.</p>
 </blockquote>
 <hr>
-<h2 id="stap-3--prestatieoptimalisaties">Stap 3 — Prestatieoptimalisaties</h2>
-<p>Pas deze optimalisaties toe in PowerShell (Admin) vóór Sysprep, zodat elke gekloonde VM er automatisch van profiteert:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Hoog-prestatieplan inschakelen</span>
+<h2 id="stap-3--prestatie-optimalisaties">Stap 3 — Prestatie-optimalisaties</h2>
+<p>Voer deze aanpassingen uit in PowerShell (Admin) vóór Sysprep zodat elke gekloonde VM er automatisch van profiteert:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Hoog prestatieniveau energieplan instellen</span>
 </span></span><span style="display:flex;"><span>powercfg /setactive 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Windows Search-indexering uitschakelen — niet nodig op servers</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Windows Search indexering uitschakelen — niet nodig op servers</span>
 </span></span><span style="display:flex;"><span>Set-Service WSearch -StartupType Disabled
 </span></span><span style="display:flex;"><span>Stop-Service WSearch -Force
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># SysMain / Superfetch uitschakelen — niet nuttig in VM&#39;s</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># SysMain / Superfetch uitschakelen — niet nuttig in VMs</span>
 </span></span><span style="display:flex;"><span>Set-Service SysMain -StartupType Disabled
 </span></span><span style="display:flex;"><span>Stop-Service SysMain -Force
 </span></span></code></pre></div><blockquote>
-<p><strong>Tip:</strong> Verander ook de VM-weergave van <strong>Default</strong> naar <strong>VirtIO-GPU</strong> in het tabblad Proxmox Hardware. Dit verbetert de responsiviteit van de console aanzienlijk.</p>
+<p><strong>Tip:</strong> Wijzig ook de VM Display van Default naar <strong>VirtIO-GPU</strong> in de Proxmox Hardware tab. Dit verbetert de console responsiviteit aanzienlijk.</p>
 </blockquote>
 <hr>
-<h2 id="stap-4--basisconfiguratie">Stap 4 — Basisconfiguratie</h2>
-<p>Voer deze opdrachten uit in PowerShell (Admin):</p>
+<h2 id="stap-4--basisinstellingen">Stap 4 — Basisinstellingen</h2>
+<p>Voer deze commando&rsquo;s uit in PowerShell (Admin):</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Tijdzone instellen op Amsterdam</span>
 </span></span><span style="display:flex;"><span>Set-TimeZone -Name <span style="color:#e6db74">&#34;W. Europe Standard Time&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># RDP inschakelen</span>
-</span></span><span style="display:flex;"><span>Set-ItemProperty -Path <span style="color:#e6db74">&#39;HKLM:\System\CurrentControlSet\Control\Terminal Server&#39;</span> -Name <span style="color:#e6db74">&#34;fDenyTSConnections&#34;</span> -Value <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Set-ItemProperty -Path <span style="color:#e6db74">&#39;HKLM:\System\CurrentControlSet\Control\Terminal Server&#39;</span> `
+</span></span><span style="display:flex;"><span>  -Name <span style="color:#e6db74">&#34;fDenyTSConnections&#34;</span> -Value <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span>Enable-NetFirewallRule -DisplayGroup <span style="color:#e6db74">&#34;Remote Desktop&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># NLA uitschakelen voor eenvoudigere labtoegang</span>
-</span></span><span style="display:flex;"><span>Set-ItemProperty -Path <span style="color:#e6db74">&#39;HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp&#39;</span> -Name <span style="color:#e6db74">&#34;UserAuthentication&#34;</span> -Value <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># NLA uitschakelen voor eenvoudiger lab toegang</span>
+</span></span><span style="display:flex;"><span>Set-ItemProperty -Path <span style="color:#e6db74">&#39;HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp&#39;</span> `
+</span></span><span style="display:flex;"><span>  -Name <span style="color:#e6db74">&#34;UserAuthentication&#34;</span> -Value <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># IE Enhanced Security Configuration uitschakelen</span>
 </span></span><span style="display:flex;"><span>$AdminKey = <span style="color:#e6db74">&#34;HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}&#34;</span>
@@ -796,93 +902,143 @@
 </span></span><span style="display:flex;"><span>Set-ItemProperty -Path $AdminKey -Name <span style="color:#e6db74">&#34;IsInstalled&#34;</span> -Value <span style="color:#ae81ff">0</span>
 </span></span><span style="display:flex;"><span>Set-ItemProperty -Path $UserKey  -Name <span style="color:#e6db74">&#34;IsInstalled&#34;</span> -Value <span style="color:#ae81ff">0</span>
 </span></span></code></pre></div><blockquote>
-<p><strong>Waarschuwing:</strong> Na het inschakelen van RDP via het register is een herstart vereist voordat poort 3389 begint te luisteren. Voer <code>Restart-Computer</code> uit en wacht tot de VM weer beschikbaar is.</p>
+<p><strong>Let op:</strong> Na het inschakelen van RDP via het register is een herstart nodig voordat poort 3389 begint te luisteren. Voer <code>Restart-Computer</code> uit en wacht tot de VM terug is.</p>
 </blockquote>
-<h3 id="41-rdp-verbinding-verifiëren">4.1 RDP-verbinding verifiëren</h3>
-<p>Verifieer na het herstarten of RDP werkt vanuit de Proxmox-hostshell:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ping 192.168.178.11          <span style="color:#75715e"># Reageert met 0% pakketverlies</span>
-</span></span><span style="display:flex;"><span>nc -zv 192.168.178.11 <span style="color:#ae81ff">3389</span>   <span style="color:#75715e"># Poort open bevestigt dat RDP luistert</span>
-</span></span></code></pre></div><blockquote>
-<p><strong>Tip:</strong> Als <code>nc</code> <em>Connection refused</em> toont na het inschakelen van RDP, is een herstart nodig. RDP begint pas te luisteren na een herstart.</p>
+<h3 id="rdp-verbinding-verifiëren">RDP verbinding verifiëren</h3>
+<p>Na de herstart verifieer je RDP via de Proxmox host shell:</p>
+<p><img src="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/rdp-verification.png" alt="RDP verificatie — ping en poort 3389 open bevestigd">
+<em>Ping succesvol en nc -zv bevestigt poort 3389 open — RDP werkt correct. Get-NetFirewallRule toont alle Remote Desktop regels als Enabled: True</em></p>
+<p>De screenshot toont:</p>
+<ul>
+<li><code>ping 192.168.178.11</code> — reageert met 0% packet loss, netwerk werkt</li>
+<li><code>nc -zv 192.168.178.11 3389</code> — poort open, RDP luistert</li>
+<li><code>Get-NetFirewallRule</code> — alle Remote Desktop firewall regels tonen <code>Enabled: True</code></li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> Als nc &ldquo;Connection refused&rdquo; toont na het inschakelen van RDP, is een herstart nodig. RDP begint pas te luisteren na een herstart.</p>
 </blockquote>
 <hr>
 <h2 id="stap-5--sysprep">Stap 5 — Sysprep</h2>
-<p>Sysprep generaliseert de installatie door alle machine-specifieke identificatoren te verwijderen, waaronder de Security Identifier (SID), computernaam en hardwareverwijzingen. Dit is essentieel — zonder Sysprep zou elke gekloonde VM dezelfde SID delen, wat Active Directory-conflicten veroorzaakt.</p>
+<p>Sysprep generaliseert de installatie door alle machine-specifieke identificatoren te verwijderen, inclusief de Security Identifier (SID), computernaam en hardware referenties. Dit is essentieel — zonder Sysprep zou elke gekloonde VM dezelfde SID hebben, wat Active Directory conflicten veroorzaakt.</p>
 <blockquote>
-<p><strong>Waarschuwing:</strong> Dit is het punt van geen terugkeer. Nadat Sysprep de VM heeft afgesloten, mag je de VM <strong>niet</strong> opnieuw opstarten. Ga direct naar Proxmox en converteer de VM naar een template.</p>
+<p><strong>Dit is het punt van geen terugkeer.</strong> Na Sysprep sluit de VM zichzelf af. Start de VM daarna <strong>nooit</strong> opnieuw op. Ga direct naar Proxmox en converteer hem naar een template.</p>
 </blockquote>
-<p>Voer dit uit in PowerShell (Admin) of de opdrachtprompt:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>C:\Windows\System32\Sysprep\sysprep.exe /oobe /generalize /shutdown
-</span></span></code></pre></div><p>Uitleg van de vlaggen:</p>
-<table>
+<p>Voer uit in PowerShell (Admin) of de Opdrachtprompt:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>C:\Windows\System32\Sysprep\sysprep.exe<span style="color:#75715e"> /oobe /generalize /shutdown</span>
+</span></span></code></pre></div><table>
   <thead>
       <tr>
           <th>Vlag</th>
-          <th>Functie</th>
+          <th>Doel</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>/generalize</td>
-          <td>Verwijdert unieke systeemidentificatoren — SID, computernaam, hardware-ID&rsquo;s</td>
+          <td>Verwijdert unieke systeem-ID&rsquo;s — SID, computernaam, hardware ID&rsquo;s</td>
       </tr>
       <tr>
           <td>/oobe</td>
-          <td>Stelt Windows in om de eerste installatie bij de volgende opstart uit te voeren</td>
+          <td>Configureert Windows om bij de volgende start first-time setup te draaien</td>
       </tr>
       <tr>
           <td>/shutdown</td>
-          <td>Sluit de VM automatisch af wanneer Sysprep klaar is</td>
+          <td>Sluit de VM automatisch af na voltooiing</td>
       </tr>
   </tbody>
 </table>
-<p>Sysprep duurt circa 2–5 minuten. De VM sluit zichzelf af wanneer het proces is voltooid.</p>
+<p>Sysprep duurt ongeveer 2-5 minuten. De VM sluit zichzelf af wanneer klaar.</p>
 <hr>
-<h2 id="stap-6--converteren-naar-template-in-proxmox">Stap 6 — Converteren naar Template in Proxmox</h2>
-<p>Zodra de VM zichzelf heeft afgesloten na Sysprep, ga je naar het Proxmox-linker paneel:</p>
+<h2 id="stap-6--converteren-naar-template-in-proxmox">Stap 6 — Converteren naar template in Proxmox</h2>
+<p>Zodra de VM zichzelf heeft afgesloten na Sysprep, in het Proxmox linker paneel:</p>
 <ol>
-<li>Rechtsklik op de VM (bijv. <strong>900 WS2022-TEMPLATE-BASE</strong>)</li>
+<li><strong>Rechtsklik</strong> op de VM (bijv. 900 WS2022-TEMPLATE-BASE)</li>
 <li>Selecteer <strong>Convert to template</strong></li>
 <li>Bevestig de actie</li>
 </ol>
-<p>Het VM-pictogram verandert in een template-pictogram. De VM kan niet meer rechtstreeks worden gestart — alleen worden gekloond.</p>
-<hr>
-<h2 id="stap-7--template-klonen-voor-nieuwe-vms">Stap 7 — Template klonen voor nieuwe VM&rsquo;s</h2>
-<p>Om een nieuwe VM te maken vanuit het template:</p>
+<p>Het VM icoon verandert naar een template icoon (gestapelde pagina&rsquo;s). De VM kan niet meer direct worden gestart — alleen gekloond.</p>
+<h3 id="template-klonen-voor-nieuwe-vms">Template klonen voor nieuwe VMs</h3>
+<p>Om een nieuwe VM vanuit de template te maken:</p>
 <ol>
-<li>Rechtsklik op het template in het Proxmox-linker paneel</li>
+<li>Rechtsklik op de template in het Proxmox linker paneel</li>
 <li>Selecteer <strong>Clone</strong></li>
-<li>Stel <strong>Mode</strong> in op <strong>Full Clone</strong> — niet Linked Clone</li>
-<li>Voer de nieuwe VM-naam in volgens de naamgevingsconventie (bijv. WS2022-LAB02-CA)</li>
-<li>Stel het VM-ID in</li>
-<li>Klik op <strong>Clone</strong></li>
+<li>Stel Mode in op <strong>Full Clone</strong> — niet Linked Clone</li>
+<li>Voer de nieuwe VM naam in volgens de naamgevingsconventie (bijv. WS2022-LAB02-CA)</li>
+<li>Stel het VM ID in</li>
+<li>Klik <strong>Clone</strong></li>
 </ol>
 <blockquote>
-<p><strong>Waarschuwing:</strong> Gebruik altijd <strong>Full Clone</strong>. Linked Clones zijn afhankelijk van de templateschijf en kunnen niet zelfstandig functioneren. Full Clones zijn volledig onafhankelijke VM&rsquo;s.</p>
+<p><strong>Let op:</strong> Gebruik altijd Full Clone. Linked clones zijn afhankelijk van de template schijf en kunnen niet zelfstandig functioneren. Full clones zijn volledig onafhankelijke VMs.</p>
 </blockquote>
-<p>Na het klonen start de nieuwe VM op in Windows OOBE (eerste installatie), waar je het Administrator-wachtwoord, de computernaam en de netwerkinstellingen configureert voordat je het domein toevoegt.</p>
+<p>Na het klonen start de nieuwe VM op in Windows OOBE (first-time setup) waar je het Administrator wachtwoord, de computernaam en netwerkinstellingen configureert voordat je het domein kunt joinen.</p>
 <hr>
 <h2 id="samenvatting-checklist">Samenvatting checklist</h2>
-<ol>
-<li>virtio-win-guest-tools.exe installeren vanaf het VirtIO-cd-station ☐</li>
-<li>PSWindowsUpdate uitvoeren totdat volledig gepatcht — herhalen na elke herstart ☐</li>
-<li>Hoog-prestatieplan instellen via powercfg ☐</li>
-<li>WSearch en SysMain services uitschakelen ☐</li>
-<li>Proxmox-weergave wijzigen naar VirtIO-GPU in het Hardware-tabblad ☐</li>
-<li>Tijdzone instellen op W. Europe Standard Time ☐</li>
-<li>RDP inschakelen en NLA uitschakelen ☐</li>
-<li>IE Enhanced Security Configuration uitschakelen ☐</li>
-<li>Herstarten en RDP op poort 3389 verifiëren via nc ☐</li>
-<li>Sysprep uitvoeren: /oobe /generalize /shutdown ☐</li>
-<li>VM direct na afsluiten converteren naar template in Proxmox ☐</li>
-</ol>
-<hr>
-<blockquote>
-<p>📄 <strong>Download de volledige handleiding met screenshots:</strong>
-<a href="/documents/WS2022-in-Proxmox-Template-Preparation-Guide.docx">WS2022-in-Proxmox-Template-Preparation-Guide.docx</a></p>
-</blockquote>
-<p>Vriendelijke groeten,</p>
-<p>Martijn</p>
+<table>
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>Taak</th>
+          <th>Gereed</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>virtio-win-guest-tools.exe installeren vanaf VirtIO CD station</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>PSWindowsUpdate uitvoeren tot volledig gepatcht — herhaal na elke herstart</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Hoog prestatieniveau energieplan instellen via powercfg</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>WSearch en SysMain services uitschakelen</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Proxmox Display wijzigen naar VirtIO-GPU in Hardware tab</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Tijdzone instellen op W. Europe Standard Time</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>RDP inschakelen en NLA uitschakelen</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>IE Enhanced Security Configuration uitschakelen</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Herstart en RDP op poort 3389 verifiëren via nc</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>Sysprep uitvoeren: /oobe /generalize /shutdown</td>
+          <td>☐</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>VM direct na afsluiten converteren naar template in Proxmox</td>
+          <td>☐</td>
+      </tr>
+  </tbody>
+</table>
 
     </div>
     <footer>
@@ -891,9 +1047,7 @@
     <ul class="categories">
       
         
-          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
-        
-          <li><a class="article-terms-link" href="/categories/windows/">windows</a></li>
+          <li><a class="article-terms-link" href="/categories/windows/">Windows</a></li>
         
       
     </ul>
@@ -902,21 +1056,23 @@
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/tags/proxmox/">proxmox</a></li>
+          <li><a class="article-terms-link" href="/tags/windows-server-2022/">Windows Server 2022</a></li>
         
-          <li><a class="article-terms-link" href="/tags/windows-server-2022/">windows-server-2022</a></li>
+          <li><a class="article-terms-link" href="/tags/proxmox/">Proxmox</a></li>
         
-          <li><a class="article-terms-link" href="/tags/sysprep/">sysprep</a></li>
+          <li><a class="article-terms-link" href="/tags/virtualisatie/">Virtualisatie</a></li>
         
-          <li><a class="article-terms-link" href="/tags/virtio/">virtio</a></li>
+          <li><a class="article-terms-link" href="/tags/lab/">Lab</a></li>
         
-          <li><a class="article-terms-link" href="/tags/powershell/">powershell</a></li>
+          <li><a class="article-terms-link" href="/tags/devops/">DevOps</a></li>
         
-          <li><a class="article-terms-link" href="/tags/template/">template</a></li>
+          <li><a class="article-terms-link" href="/tags/virtio/">VirtIO</a></li>
         
-          <li><a class="article-terms-link" href="/tags/lab/">lab</a></li>
+          <li><a class="article-terms-link" href="/tags/sysprep/">Sysprep</a></li>
         
-          <li><a class="article-terms-link" href="/tags/hypervisor/">hypervisor</a></li>
+          <li><a class="article-terms-link" href="/tags/template/">Template</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/powershell/">PowerShell</a></li>
         
       
     </ul>
@@ -926,34 +1082,30 @@
     </footer>
   </article>
   
-    
-  <article class="post">
-
-    <div id="disqus_thread"></div>
-    <script>
-      (function() {
-        if (window.location.hostname == "localhost")
-          return;
-      var d = document, s = d.createElement('script');
-      s.src = 'https://' + "\"www-vandenboom-icu\"" + '.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
+    <article class="post">
+    <div class="giscus"></div>
+    <script src="https://giscus.app/client.js"
+            data-repo="martijnvandenboom/backup-website"
+            data-repo-id="MDEwOlJlcG9zaXRvcnkzMjA2NTM3Nzc="
+            data-category="Comments"
+            data-category-id="DIC_kwDOExzJ0c4C5s22"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>    
-
-    
-  </article>
-
-
-
+</article>
 
   
   <div class="pagination">
     
     
-      <a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/" class="button right"><span>Proxmox Lab — Windows Server 2022 VM aanmaken</span></a>
+      <a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/" class="button right"><span>Windows Server 2022 in Proxmox — Een VM Aanmaken</span></a>
     
   </div>
 
@@ -968,16 +1120,16 @@
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Proxmox Lab — Windows Server 2022 Template voorbereiding</a></h2>
-          <time class="published" datetime="2026-03-31 10:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+          <h2><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Windows Server 2022 in Proxmox — Template Voorbereiding</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0000 UTC">31 Maart 2026</time>
         </header>
       </article>
       
       <article class="mini-post">
           
         <header>
-          <h2><a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">Proxmox Lab — Windows Server 2022 VM aanmaken</a></h2>
-          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+          <h2><a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">Windows Server 2022 in Proxmox — Een VM Aanmaken</a></h2>
+          <time class="published" datetime="2026-03-30 00:00:00 &#43;0000 UTC">30 Maart 2026</time>
         </header>
       </article>
       
@@ -1024,7 +1176,7 @@
           
           
           <li>
-              <a href="/categories/article/">article<span class="count">65</span></a>
+              <a href="/categories/article/">article<span class="count">63</span></a>
           
           <li>
               <a href="/categories/syntax/">syntax<span class="count">13</span></a>

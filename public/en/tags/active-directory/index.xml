@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Active-Directory on Notities</title>
-    <link>http://localhost:1313/en/tags/active-directory/</link>
+    <link>https://www.vandenboom.icu/en/tags/active-directory/</link>
     <description>Recent content in Active-Directory on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/active-directory/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/active-directory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows Server 2022 — Active Directory and DNS Installation</title>
-      <link>http://localhost:1313/en/blog/2026-windows-server-2022-active-directory-dns-installatie/</link>
+      <link>https://www.vandenboom.icu/en/blog/2026-windows-server-2022-active-directory-dns-installatie/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/en/blog/2026-windows-server-2022-active-directory-dns-installatie/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2026-windows-server-2022-active-directory-dns-installatie/</guid>
       <description>&lt;p&gt;In this article I describe step by step how I installed Active Directory Domain Services (AD DS) and DNS on a Windows Server 2022 Datacenter VM in a VMware Fusion lab environment. The result is a fully functional domain controller for the domain &lt;strong&gt;lab.local&lt;/strong&gt;, as the foundation for a Windows DevOps lab.&lt;/p&gt;&#xA;&lt;h2 id=&#34;environment&#34;&gt;Environment&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Component&lt;/th&gt;&#xA;          &lt;th&gt;Value&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Virtualisation&lt;/td&gt;&#xA;          &lt;td&gt;VMware Fusion (macOS)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Guest operating system&lt;/td&gt;&#xA;          &lt;td&gt;Windows Server 2022 Datacenter (Desktop Experience)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Hostname&lt;/td&gt;&#xA;          &lt;td&gt;DC01&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Domain name&lt;/td&gt;&#xA;          &lt;td&gt;lab.local&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NetBIOS name&lt;/td&gt;&#xA;          &lt;td&gt;LAB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Lab network adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet1 — 172.16.37.10 (static IP)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Internet adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet0 — DHCP via VMware NAT&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;step-1--configure-networking&#34;&gt;Step 1 — Configure Networking&lt;/h2&gt;&#xA;&lt;p&gt;Before installing Active Directory, the domain controller needs a static IP address. AD DS and DNS depend on a stable address.&lt;/p&gt;</description>
     </item>
   </channel>

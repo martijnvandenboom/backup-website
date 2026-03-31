@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Privacy on Notities</title>
-    <link>http://localhost:1313/en/tags/privacy/</link>
+    <link>https://www.vandenboom.icu/en/tags/privacy/</link>
     <description>Recent content in Privacy on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 21 Jun 2023 17:10:45 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Search the Internet anonymously, protect your privacy</title>
-      <link>http://localhost:1313/en/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</link>
+      <link>https://www.vandenboom.icu/en/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</link>
       <pubDate>Wed, 21 Jun 2023 17:10:45 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</guid>
       <description>&lt;p&gt;Do you want to stay anonymous when searching the Internet?&lt;/p&gt;&#xA;&lt;p&gt;Then use a different web browser. The Tor Browser was specifically developed to stay anonymous.&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Step 1.: go to the website: &lt;a href=&#34;https://www.torproject.org/&#34;&gt;https://www.torproject.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Step 2.: download the Tor Browser&lt;/p&gt;&#xA;&lt;p&gt;Step 3.: install the new application&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Please note! Do not change the size of the application window, as this can already reveal information about your identity. The advice: do not do this.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rich Content</title>
-      <link>http://localhost:1313/en/blog/rich-content/</link>
+      <link>https://www.vandenboom.icu/en/blog/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/rich-content/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/rich-content/</guid>
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
     </item>
   </channel>

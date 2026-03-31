@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Installing on Notities</title>
-    <link>http://localhost:1313/tags/installing/</link>
+    <link>https://www.vandenboom.icu/tags/installing/</link>
     <description>Recent content in Installing on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sun, 23 Mar 2025 13:20:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/installing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/installing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oracle VirtualBox installeren op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
       <pubDate>Sun, 23 Mar 2025 13:20:53 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
       <description>&lt;p&gt;P﻿robeer de volgende stappen:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo apt upgrade&lt;br&gt;&#xA;$﻿ sudo apt install curl&lt;br&gt;&#xA;$﻿ curl -fsSL &lt;a href=&#34;https://www.virtualbox.org/download/oracle_vbox_2016.asc&#34;&gt;https://www.virtualbox.org/download/oracle_vbox_2016.asc&lt;/a&gt; | sudo gpg &amp;ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg&lt;br&gt;&#xA;$﻿ echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] &lt;a href=&#34;http://download.virtualbox.org/virtualbox/debian&#34;&gt;http://download.virtualbox.org/virtualbox/debian&lt;/a&gt; noble contrib&amp;rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list&lt;br&gt;&#xA;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo search virtualbox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox/noble-updates 7.0.16-dfsg-2ubuntu1.1 amd64&#xA;x86 virtualization solution - base binaries&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.0/unknown 7.0.24-167081~Ubuntu~noble amd64&#xA;Oracle VM VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.1/unknown 7.1.6-167084~Ubuntu~noble amd64&#xA;Oracle VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;$﻿ sudo install virtualbox-7.1&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;D﻿ownload het Extension Pack van de website: &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;https://www.virtualbox.org/wiki/Downloads&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>De VirtualBox Guest Additions installeren op Rocky Linux 9.3</title>
-      <link>http://localhost:1313/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
+      <link>https://www.vandenboom.icu/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
       <pubDate>Tue, 16 Jan 2024 21:08:26 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
       <description>&lt;p&gt;&lt;strong&gt;De VirtualBox Guest Additions installeren op Rocky Linux 9.3&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;dnf update --refresh&#xA;dnf update kernel-*&#xA;reboot (optioneel)&#xA;&#xA;dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel&#xA;&#xA;rpm -q kernel-devel&#xA;uname -r&#xA;&#xA;Bovenmenu: Apparaten -&amp;gt; Gast-uitbreidingen CD-image invoegen&#xA;Uitvoeren&#xA;&#xA;(optioneel)&#xA;cd /run/media/&#xA;./VBoxLinuxAdditions.run&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Virtuele machines installeren op macOS Monterey met OpenCore Legacy Patcher</title>
-      <link>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</link>
       <pubDate>Thu, 01 Dec 2022 21:20:43 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</guid>
       <description>&lt;p&gt;Probeer Oracle VirtualBox versie 6.1.40, de oudere versie. In mijn thuislab werkte de nieuwste versie VirtualBox 7.0.4 niet vanwege de foutmelding: hv_vm_create() failed: 0xfae94001 (VERR_NEM_INIT_FAILED)&lt;/p&gt;&#xA;&lt;p&gt;In de oudere versie was dit geen probleem.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on Notities</title>
-    <link>http://localhost:1313/en/tags/web/</link>
+    <link>https://www.vandenboom.icu/en/tags/web/</link>
     <description>Recent content in Web on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 02 Jun 2022 09:41:34 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clearing cookies when closing your web browser</title>
-      <link>http://localhost:1313/en/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/</link>
+      <link>https://www.vandenboom.icu/en/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/</link>
       <pubDate>Thu, 02 Jun 2022 09:41:34 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/</guid>
       <description>&lt;!--StartFragment--&gt;&#xA;&lt;p&gt;Google Chrome: &lt;a href=&#34;https://youtu.be/FAKQyjzLXrA&#34;&gt;https://youtu.be/FAKQyjzLXrA&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Microsoft Edge: &lt;a href=&#34;https://youtu.be/nj3eNmNeip4&#34;&gt;https://youtu.be/nj3eNmNeip4&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Safari on iPad: &lt;a href=&#34;https://youtu.be/dymKWea_600&#34;&gt;https://youtu.be/dymKWea_600&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!--EndFragment--&gt;</description>
     </item>
     <item>
       <title>Install the Google Chrome Web Browser on Ubuntu Linux</title>
-      <link>http://localhost:1313/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 11:51:54 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ wget -q -O - &lt;a href=&#34;https://dl.google.com/linux/linux_signing_key.pub&#34;&gt;https://dl.google.com/linux/linux_signing_key.pub&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo sh -c &amp;rsquo;echo &amp;ldquo;deb [arch=amd64] &lt;a href=&#34;http://dl.google.com/linux/chrome/deb/&#34;&gt;http://dl.google.com/linux/chrome/deb/&lt;/a&gt; stable main&amp;rdquo; &amp;raquo; /etc/apt/sources.list.d/google-chrome.list&#39;&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install google-chrome-stable&lt;/p&gt;</description>
     </item>
   </channel>

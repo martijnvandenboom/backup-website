@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Animations on Notities</title>
-    <link>http://localhost:1313/en/categories/animations/</link>
+    <link>https://www.vandenboom.icu/en/categories/animations/</link>
     <description>Recent content in Animations on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/animations/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/categories/animations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Animations</title>
-      <link>http://localhost:1313/en/animations/</link>
+      <link>https://www.vandenboom.icu/en/animations/</link>
       <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/animations/</guid>
+      <guid>https://www.vandenboom.icu/en/animations/</guid>
       <description>&lt;p&gt;&lt;b&gt;&lt;a rel=&#34;noopener&#34; href=&#34;#creating_animations&#34;&gt;Creating animations service&lt;/a&gt;&lt;/b&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a id=&#34;creating_animations&#34;&gt;&lt;/a&gt;&#xA;&lt;/br&gt;&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;b&gt;Creating animations service&lt;/b&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bring Your Ideas to Life with Stunning Animations&lt;/p&gt;&#xA;&lt;p&gt;At &amp;ldquo;van den &lt;span class=&#34;bold-rotate&#34;&gt;B&lt;/span&gt;oom Animations&amp;rdquo;, we specialize in crafting custom animations that captivate and engage your audience. Whether you&amp;rsquo;re looking to enhance your website, advertise your brand, or add an eye-catching effect to your project, our team is here to transform your vision into motion. From smooth transitions and dynamic visuals to attractive animations, we offer tailored solutions to make your content stand out. Let us help you tell your story through the magic of animation!&lt;/p&gt;</description>
     </item>
   </channel>

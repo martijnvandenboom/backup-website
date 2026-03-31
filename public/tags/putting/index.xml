@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Putting on Notities</title>
-    <link>http://localhost:1313/tags/putting/</link>
+    <link>https://www.vandenboom.icu/tags/putting/</link>
     <description>Recent content in Putting on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sun, 07 Jul 2024 20:49:33 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/putting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/putting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>De Microsoft EFI-opstartbestanden op de EFI-partitie plaatsen</title>
-      <link>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
+      <link>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
       <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
       <description>&lt;p&gt;Start op via het Windows-installatieprogramma&lt;/p&gt;&#xA;&lt;p&gt;Druk op het eerste scherm op SHIFT + F10&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&#xA;# diskpart&#xA;# list disk&#xA;# select disk 0&#xA;# list part&#xA;Zoek naar de Windows-partitie&#xA;&#xA;# select part 3&#xA;# assign letter=W&#xA;# format quick fs=NTFS&#xA;# list volume&#xA;Zoek naar het EFI-volume&#xA;&#xA;# select volume 2&#xA;# assign letter=Z&#xA;# exit&#xA;&#xA;# D:&#xA;Ga naar de USB-installatieschijf van Windows&#xA;# cd D:\sources&#xA;# dir install*&#xA;Het bestand install.esd bestaat&#xA;&#xA;# dism /Get-WimInfo /WimFile:D:\Sources\install.esd&#xA;Selecteer de Index van de gewenste Windows-versie&#xA;&#xA;# dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\&#xA;# bcdboot W:\Windows /l en-us /s Z: /f UEFI&#xA;Zet uw computer uit en verwijder de USB-installatieschijf&#xA;Nu hebben we de Microsoft EFI-opstartbestanden op de EFI-partitie in de daarvoor bestemde map&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Volg de normale procedure voor het installeren van Windows&lt;/p&gt;</description>
     </item>
   </channel>

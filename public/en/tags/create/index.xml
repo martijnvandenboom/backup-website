@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Create on Notities</title>
-    <link>http://localhost:1313/en/tags/create/</link>
+    <link>https://www.vandenboom.icu/en/tags/create/</link>
     <description>Recent content in Create on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 07 Jul 2024 20:45:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/create/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/create/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create a USB rEFIt boot disk</title>
-      <link>http://localhost:1313/en/blog/2024-create-a-usb-refit-boot-disk/</link>
+      <link>https://www.vandenboom.icu/en/blog/2024-create-a-usb-refit-boot-disk/</link>
       <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2024-create-a-usb-refit-boot-disk/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2024-create-a-usb-refit-boot-disk/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img&#xA;# diskutil list&#xA;# diskutil unmountDisk /dev/disk2&#xA;# sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m&#xA;Using rdisk2 here seems to speed up things&#xA;&#xA;# diskutil eject /dev/disk2&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Create a website for free with GitHub Pages</title>
-      <link>http://localhost:1313/en/blog/maak_een_website_met_github_pages/</link>
+      <link>https://www.vandenboom.icu/en/blog/maak_een_website_met_github_pages/</link>
       <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>http://localhost:1313/en/blog/maak_een_website_met_github_pages/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/maak_een_website_met_github_pages/</guid>
       <description>&lt;p&gt;Create a website for free with GitHub&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://vandenboom.netlify.app/images/GitHub-Pages.png&#34; alt=&#34;GitHub Pages en GitHub Desktop&#34; /&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;P.S. Would you like somebody to help you? Feel free to send me a message on one of my Social Media Links available on this website.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
   </channel>

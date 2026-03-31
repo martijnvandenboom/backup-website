@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Not on Notities</title>
-    <link>http://localhost:1313/tags/not/</link>
+    <link>https://www.vandenboom.icu/tags/not/</link>
     <description>Recent content in Not on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Mon, 28 Apr 2025 16:04:39 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/not/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/not/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deze versie van BootCamp is niet bedoeld voor deze computer</title>
-      <link>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
+      <link>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
       <description>&lt;p&gt;D﻿eare lezer,&lt;br&gt;&#xA;&lt;br&gt;&#xA;O﻿nlangs heb ik mijn Windows-versie op mijn MacBook Pro 16,1 BootCamp-installatie bijgewerkt naar Windows 11. Nu liep ik tegen het probleem aan dat mijn ingebouwde toetsenbord en trackpad niet meer werkten. Ik moest dit oplossen door een apart toetsenbord en muis aan te sluiten via USB.&lt;/p&gt;&#xA;&lt;p&gt;I﻿k downloadde de software in het BootCamp-hulpprogramma op macOS die compatibel is met mijn laptop, in dit geval versie: Boot Camp-stuurprogramma&amp;rsquo;s 6.1.6655. Maar bij het opstarten van setup.exe krijg ik de volgende foutmelding: This version of boot camp is not intended for this computer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microsoft OneNote zoekfunctie werkt niet meer</title>
-      <link>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</link>
+      <link>https://www.vandenboom.icu/blog/2025-microsoft-onenote-search-not-working-anymore/</link>
       <pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-microsoft-onenote-search-not-working-anymore/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;S﻿luit alle Microsoft-applicaties&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;H﻿ernoem de cachemap in:&lt;br&gt;&#xA;C:\Users\&amp;lt;Gebruiker&amp;gt;\AppData\Local\Microsoft\OneNote\16.0&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;H﻿erstart OneNote&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;P﻿.S.&lt;br&gt;&#xA;M﻿aak u geen zorgen als de notitieboeken leeg lijken, ze worden opnieuw aangemaakt.&lt;/p&gt;</description>
     </item>
   </channel>

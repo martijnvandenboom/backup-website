@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Toetsenbord on Notities</title>
-    <link>http://localhost:1313/en/tags/toetsenbord/</link>
+    <link>https://www.vandenboom.icu/en/tags/toetsenbord/</link>
     <description>Recent content in Toetsenbord on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 18 Dec 2021 20:56:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/toetsenbord/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/toetsenbord/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zooming in and out on a website</title>
-      <link>http://localhost:1313/en/blog/zoomen_op_een_website/</link>
+      <link>https://www.vandenboom.icu/en/blog/zoomen_op_een_website/</link>
       <pubDate>Sat, 18 Dec 2021 20:56:00 +0100</pubDate>
-      <guid>http://localhost:1313/en/blog/zoomen_op_een_website/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/zoomen_op_een_website/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hold down the CTRL key on the keyboard&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;and scroll with the wheel on the mouse.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>

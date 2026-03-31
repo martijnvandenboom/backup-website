@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opslaan on Notities</title>
-    <link>http://localhost:1313/en/tags/opslaan/</link>
+    <link>https://www.vandenboom.icu/en/tags/opslaan/</link>
     <description>Recent content in Opslaan on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 05 Jul 2023 18:02:27 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/opslaan/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/opslaan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Saving a website exactly as it looks</title>
-      <link>http://localhost:1313/en/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</link>
+      <link>https://www.vandenboom.icu/en/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</link>
       <pubDate>Wed, 05 Jul 2023 18:02:27 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</guid>
       <description>&lt;p&gt;Saving a website exactly as it looks &lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;(1) With the Microsoft Edge Browser:&lt;/p&gt;&#xA;&lt;p&gt;step 1.: are you on the website you want to save? Or navigate to it.&lt;/p&gt;&#xA;&lt;p&gt;step 2.: click on the 3 dots in the top right of the screen &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;step 3.: click on: Web capture (with the camera icon)&lt;/p&gt;&#xA;&lt;p&gt;step 4.: choose the option: Capture full page&lt;/p&gt;&#xA;&lt;p&gt;step 5.: click the disk icon (Save) in the top right of the screen&lt;/p&gt;</description>
     </item>
     <item>
       <title>Save an entire webpage</title>
-      <link>http://localhost:1313/en/blog/gehele_webpagina_opslaan/</link>
+      <link>https://www.vandenboom.icu/en/blog/gehele_webpagina_opslaan/</link>
       <pubDate>Sun, 19 Dec 2021 09:50:22 +0100</pubDate>
-      <guid>http://localhost:1313/en/blog/gehele_webpagina_opslaan/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/gehele_webpagina_opslaan/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;In the web browser Microsoft Edge:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; click the 3 dots in the top right corner: ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choose the option: Web capture (Ctrl+Shift+S)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choose the option: Capture full page&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; click the button: Save&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; an image of type .jpeg will now be saved in your personal directory: Downloads&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>

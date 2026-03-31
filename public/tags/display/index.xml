@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Display on Notities</title>
-    <link>http://localhost:1313/tags/display/</link>
+    <link>https://www.vandenboom.icu/tags/display/</link>
     <description>Recent content in Display on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Mon, 31 Oct 2022 17:55:56 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/display/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/display/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elke iMac als tweede scherm met uitgebreid bureaublad</title>
-      <link>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</link>
+      <link>https://www.vandenboom.icu/blog/2022-imac-as-an-extened-display-with-windows/</link>
       <pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-imac-as-an-extened-display-with-windows/</guid>
       <description>&lt;p&gt;Installeer Windows op je iMac en gebruik de softwaretool spacedesk.&lt;/p&gt;&#xA;&lt;p&gt;Zo eenvoudig is het om elke iMac te gebruiken als tweede (of zelfs derde of meer) scherm om je bureaublad uit te breiden.&lt;/p&gt;</description>
     </item>
   </channel>

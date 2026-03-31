@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nexus on Notities</title>
-    <link>http://localhost:1313/tags/nexus/</link>
+    <link>https://www.vandenboom.icu/tags/nexus/</link>
     <description>Recent content in Nexus on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sat, 09 Mar 2024 17:37:42 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/nexus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/nexus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LDAP/IPA Server configureren met Nexus</title>
-      <link>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-nexus/</link>
+      <link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-nexus/</link>
       <pubDate>Sat, 09 Mar 2024 17:37:42 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-nexus/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-nexus/</guid>
       <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Nexus&lt;/p&gt;&#xA;&lt;p&gt;Sonatype Nexus Repository&lt;/p&gt;&#xA;&lt;p&gt;OSS 3.60.0-02&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;LDAP&lt;/p&gt;&#xA;&lt;p&gt;ldap://&amp;lt;IP_SERVER&amp;gt;:389&lt;/p&gt;&#xA;&lt;p&gt;cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;p&gt;Eenvoudige verificatie&lt;/p&gt;&#xA;&lt;p&gt;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;pw&gt;&#xA;&lt;p&gt;Volgende&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Geen sjabloon selecteren&lt;/p&gt;&#xA;&lt;p&gt;Relatieve DN gebruikers = leeg&lt;/p&gt;&#xA;&lt;p&gt;Gebruikerssubstructuur = uitgeschakeld&lt;/p&gt;&#xA;&lt;p&gt;Objectklasse: inetOrgPerson&lt;/p&gt;&#xA;&lt;p&gt;Gebruikersfilter = leeg&lt;/p&gt;&#xA;&lt;p&gt;Gebruikers-ID attribuut = uid&lt;/p&gt;&#xA;&lt;p&gt;Echte naam attribuut = cn&lt;/p&gt;&#xA;&lt;p&gt;E-mail attribuut = mail&lt;/p&gt;&#xA;&lt;p&gt;Wachtwoord attribuut = leeg&lt;/p&gt;&#xA;&lt;p&gt;LDAP-groepen als rollen koppelen = uitgeschakeld&lt;/p&gt;</description>
     </item>
   </channel>

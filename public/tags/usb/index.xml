@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Usb on Notities</title>
-    <link>http://localhost:1313/tags/usb/</link>
+    <link>https://www.vandenboom.icu/tags/usb/</link>
     <description>Recent content in Usb on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Thu, 18 Jul 2024 07:20:59 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/usb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/usb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Zoek de naam van je USB stick met een script</title>
-      <link>http://localhost:1313/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</link>
+      <link>https://www.vandenboom.icu/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</link>
       <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</guid>
       <description>&lt;p&gt;D﻿it script kun je gebruiken voor het opvragen van de naam van je USB stick.&lt;br&gt;&#xA;De naam van je USB stick kun je gebruiken in het sudo commando van Apple om een USB installer te maken.&lt;br&gt;&#xA;&lt;br&gt;&#xA;S﻿tap 1: Open de Terminal applicatie&lt;br&gt;&#xA;S﻿tap 2: Ga naar je home directory, type: # cd&lt;br&gt;&#xA;S﻿tap 3: Maak eventueel een directory scripts, type: # mkdir scripts&lt;br&gt;&#xA;S﻿tap 4: Ga naar de zojuist gemaakte scripts directory, type: # cd scripts&lt;br&gt;&#xA;Stap 5: Maak een bash script, type: # vim usbstick.sh&lt;br&gt;&#xA;Stap 6: Insert de volgende code:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Maak een USB rEFIt opstartschijf</title>
-      <link>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</link>
+      <link>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</link>
       <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img&#xA;# diskutil list&#xA;# diskutil unmountDisk /dev/disk2&#xA;# sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m&#xA;Het gebruik van rdisk2 hier lijkt de zaken te versnellen&#xA;&#xA;# diskutil eject /dev/disk2&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>

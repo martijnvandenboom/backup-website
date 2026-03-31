@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Automatisch on Notities</title>
-    <link>http://localhost:1313/en/tags/automatisch/</link>
+    <link>https://www.vandenboom.icu/en/tags/automatisch/</link>
     <description>Recent content in Automatisch on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 17 Feb 2023 14:51:15 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/automatisch/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/automatisch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automatically log in to a Linux server using PuTTY on Windows</title>
-      <link>http://localhost:1313/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</link>
+      <link>https://www.vandenboom.icu/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</link>
       <pubDate>Fri, 17 Feb 2023 14:51:15 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</guid>
       <description>&lt;p&gt;You can automatically log in to a Linux server on Windows using PuTTY by making use of a key file. Below I explain step by step how to do this.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a key: start: puttygen.exe&lt;/li&gt;&#xA;&lt;li&gt;Click on: Generate&lt;/li&gt;&#xA;&lt;li&gt;Click on: Save private key&lt;/li&gt;&#xA;&lt;li&gt;Go to PuTTY Configuration -&amp;gt; Session&lt;/li&gt;&#xA;&lt;li&gt;Load a previously created session or create a new one&lt;/li&gt;&#xA;&lt;li&gt;Go to: Connection -&amp;gt; SSH -&amp;gt; Auth -&amp;gt; Private key file for authentication -&amp;gt; Browse&lt;/li&gt;&#xA;&lt;li&gt;Select your file with the private key: *.ppk&lt;/li&gt;&#xA;&lt;li&gt;Go back to Session and click on: Save&lt;/li&gt;&#xA;&lt;li&gt;Log in to the Linux server using the Saved Sessions and still with your password&lt;/li&gt;&#xA;&lt;li&gt;Create a new directory in the home directory: .ssh&lt;/li&gt;&#xA;&lt;li&gt;Give this directory the correct permissions: chmod 700 ~/.ssh&lt;/li&gt;&#xA;&lt;li&gt;Create and edit the file authorized_keys: vi ~/ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Copy the Public key for pasting from the PuTTY Key Generator&lt;/li&gt;&#xA;&lt;li&gt;Paste it into the authorized_keys file on the Linux server&lt;/li&gt;&#xA;&lt;li&gt;Save the authorized_keys file (for vi type: :wq)&lt;/li&gt;&#xA;&lt;li&gt;Give this file the correct permissions: chmod 600 ~/.ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Close the logged-in PuTTY session to the Linux Server&lt;/li&gt;&#xA;&lt;li&gt;Open the session again to verify that you can now log in automatically&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
   </channel>

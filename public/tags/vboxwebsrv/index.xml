@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VBoxWebSrv on Notities</title>
-    <link>http://localhost:1313/tags/vboxwebsrv/</link>
+    <link>https://www.vandenboom.icu/tags/vboxwebsrv/</link>
     <description>Recent content in VBoxWebSrv on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Tue, 01 Jul 2025 08:30:05 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/vboxwebsrv/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/vboxwebsrv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</title>
-      <link>http://localhost:1313/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</link>
+      <link>https://www.vandenboom.icu/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</link>
       <pubDate>Tue, 01 Jul 2025 08:30:05 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</guid>
       <description>&lt;p&gt;&lt;strong&gt;VBoxWebSrv&lt;/strong&gt; is de VirtualBox-webservice waarmee u uw VirtualBox-virtuele machines op afstand kunt beheren via een webgebaseerde API. Het wordt vaak gebruikt met tools zoals &lt;strong&gt;phpVirtualBox&lt;/strong&gt; om een volledige webinterface te bieden voor VM-beheer.&lt;/p&gt;&#xA;&lt;p&gt;Door VBoxWebSrv als Windows-service uit te voeren, zorgt u ervoor dat het automatisch start met uw systeem en continu op de achtergrond draait.&lt;/p&gt;&#xA;&lt;p&gt;VBoxWebSrv installeren als Windows-service met NSSM&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Download NSSM (Non-Sucking Service Manager) van &lt;a href=&#34;https://nssm.cc/download&#34;&gt;https://nssm.cc/download&lt;/a&gt; en pak het uit.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Store on Notities</title>
-    <link>http://localhost:1313/en/tags/store/</link>
+    <link>https://www.vandenboom.icu/en/tags/store/</link>
     <description>Recent content in Store on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 01 Dec 2022 19:30:38 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/store/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/store/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prevent opening Windows 11 Store when typing the command python</title>
-      <link>http://localhost:1313/en/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
+      <link>https://www.vandenboom.icu/en/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
       <description>&lt;p&gt;Step 1: Open Settings in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Step 2: Go to Apps&lt;/p&gt;&#xA;&lt;p&gt;Step 3: Go to Advanced app settings&lt;/p&gt;&#xA;&lt;p&gt;Step 4: Go to App execution aliases&lt;/p&gt;&#xA;&lt;p&gt;Step 5: Disable the option for python.exe and python3.exe&lt;/p&gt;</description>
     </item>
   </channel>

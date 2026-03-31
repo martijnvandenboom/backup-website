@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nieuwe on Notities</title>
-    <link>http://localhost:1313/en/tags/nieuwe/</link>
+    <link>https://www.vandenboom.icu/en/tags/nieuwe/</link>
     <description>Recent content in Nieuwe on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 25 Feb 2022 11:44:45 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/nieuwe/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/nieuwe/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New content for your website via a web page</title>
-      <link>http://localhost:1313/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</link>
+      <link>https://www.vandenboom.icu/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</link>
       <pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</guid>
       <description>&lt;p&gt;Add Netlify CMS to your website to add new content via a web page instead of the command line.&lt;/p&gt;</description>
     </item>
   </channel>

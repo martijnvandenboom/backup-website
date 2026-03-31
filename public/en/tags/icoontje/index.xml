@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Icoontje on Notities</title>
-    <link>http://localhost:1313/en/tags/icoontje/</link>
+    <link>https://www.vandenboom.icu/en/tags/icoontje/</link>
     <description>Recent content in Icoontje on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 10 May 2023 19:09:51 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/icoontje/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/icoontje/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a shortcut with an icon on the desktop</title>
-      <link>http://localhost:1313/en/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</link>
+      <link>https://www.vandenboom.icu/en/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</link>
       <pubDate>Wed, 10 May 2023 19:09:51 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</guid>
       <description>&lt;p&gt;Part 1: creating the shortcut&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Go to the website you find useful and want quick access to&#xA;&lt;/br&gt;For example: nu.nl , open in your browser: https:/www.nu.nl&lt;/li&gt;&#xA;&lt;li&gt;Click (with the left mouse button) on the address bar where the website address is shown, it will turn blue.&#xA;&lt;/br&gt;If it does not automatically turn blue, you need to select the address and highlight it yourself&lt;/li&gt;&#xA;&lt;li&gt;Right-click on the blue text and choose: Copy&lt;/li&gt;&#xA;&lt;li&gt;Click the minus sign to minimise the web browser so you can see the desktop&lt;/li&gt;&#xA;&lt;li&gt;Right-click on the desktop and choose: New -&amp;gt; Shortcut&lt;/li&gt;&#xA;&lt;li&gt;Right-click in the location rectangle and choose: Paste&lt;/li&gt;&#xA;&lt;li&gt;Click Next&lt;/li&gt;&#xA;&lt;li&gt;Give the shortcut the name of the website and click: Finish&#xA;&lt;/br&gt;&lt;/br&gt;You now have your shortcut&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Part 2: changing the icon to the website&amp;rsquo;s logo&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ubuntu on Notities</title>
-    <link>http://localhost:1313/en/tags/ubuntu/</link>
+    <link>https://www.vandenboom.icu/en/tags/ubuntu/</link>
     <description>Recent content in Ubuntu on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 23 Mar 2025 13:20:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Oracle VirtualBox on Ubuntu Linux</title>
-      <link>http://localhost:1313/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
       <pubDate>Sun, 23 Mar 2025 13:20:53 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
       <description>&lt;p&gt;T﻿ry the following steps:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo apt upgrade&lt;br&gt;&#xA;$﻿ sudo apt install curl&lt;br&gt;&#xA;$﻿ curl -fsSL &lt;a href=&#34;https://www.virtualbox.org/download/oracle_vbox_2016.asc&#34;&gt;https://www.virtualbox.org/download/oracle_vbox_2016.asc&lt;/a&gt; | sudo gpg &amp;ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg&lt;br&gt;&#xA;$﻿ echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] &lt;a href=&#34;http://download.virtualbox.org/virtualbox/debian&#34;&gt;http://download.virtualbox.org/virtualbox/debian&lt;/a&gt; noble contrib&amp;rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list&lt;br&gt;&#xA;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo search virtualbox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox/noble-updates 7.0.16-dfsg-2ubuntu1.1 amd64&#xA;x86 virtualization solution - base binaries&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.0/unknown 7.0.24-167081~Ubuntu~noble amd64&#xA;Oracle VM VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.1/unknown 7.1.6-167084~Ubuntu~noble amd64&#xA;Oracle VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;$﻿ sudo install virtualbox-7.1&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;D﻿ownload the Extension Pack frm the website: &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;https://www.virtualbox.org/wiki/Downloads&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tips for using XRDP on Ubuntu Linux</title>
-      <link>http://localhost:1313/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</link>
       <pubDate>Sun, 23 Mar 2025 12:51:59 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</guid>
       <description>&lt;p&gt;T﻿o be able to use XRDP on Ubuntu Linux try the following instructions:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$ s﻿udo apt update &lt;br&gt;&#xA;$ s﻿udo apt upgrade&lt;br&gt;&#xA;$ s﻿udo apt install xrdp&lt;br&gt;&#xA;$ echo &amp;ldquo;gnome-session &amp;ndash;session=ubuntu&amp;rdquo; &amp;gt; ~/.xsession&lt;br&gt;&#xA;$ echo &amp;ldquo;export DISPLAY=:10.0&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$ echo &amp;ldquo;xhost +&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$﻿ ip a&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;R﻿emember write down your IP address of your system and to log out of your graphical user session.&lt;/p&gt;&#xA;&lt;p&gt;N﻿ow try to login to your system with a RDP tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install Python 3.9 on Ubuntu Linux</title>
-      <link>http://localhost:1313/en/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/en/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 18:55:18 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ sudo apt install software-properties-common&lt;/p&gt;&#xA;&lt;p&gt;$ sudo add-apt-repository ppa:deadsnakes/ppa&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install python3.9&lt;/p&gt;&#xA;&lt;p&gt;$ python3.9 &amp;ndash;version&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install the editor VSCodium on Ubuntu Linux</title>
-      <link>http://localhost:1313/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 14:22:24 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ wget -qO - &lt;a href=&#34;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&#34;&gt;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo echo &amp;lsquo;deb &lt;a href=&#34;https://vscodium.c7.ee/debs/&#34;&gt;https://vscodium.c7.ee/debs/&lt;/a&gt; vscodium main&amp;rsquo; | sudo tee &amp;ndash;append /etc/apt/sources.list.d/vscodium.list&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install codium&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install the Google Chrome Web Browser on Ubuntu Linux</title>
-      <link>http://localhost:1313/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 11:51:54 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ wget -q -O - &lt;a href=&#34;https://dl.google.com/linux/linux_signing_key.pub&#34;&gt;https://dl.google.com/linux/linux_signing_key.pub&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo sh -c &amp;rsquo;echo &amp;ldquo;deb [arch=amd64] &lt;a href=&#34;http://dl.google.com/linux/chrome/deb/&#34;&gt;http://dl.google.com/linux/chrome/deb/&lt;/a&gt; stable main&amp;rdquo; &amp;raquo; /etc/apt/sources.list.d/google-chrome.list&#39;&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install google-chrome-stable&lt;/p&gt;</description>
     </item>
   </channel>

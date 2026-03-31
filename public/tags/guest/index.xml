@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guest on Notities</title>
-    <link>http://localhost:1313/tags/guest/</link>
+    <link>https://www.vandenboom.icu/tags/guest/</link>
     <description>Recent content in Guest on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Sat, 29 Mar 2025 20:16:41 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/guest/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/guest/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VirtualBox Guest Additions installeren op AlmaLinux 8.10</title>
-      <link>http://localhost:1313/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</link>
+      <link>https://www.vandenboom.icu/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</link>
       <pubDate>Sat, 29 Mar 2025 20:16:41 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;$ sudo dnf update&lt;br&gt;&#xA;$ sudo reboot&lt;br&gt;&#xA;(Zodat een nieuw geïnstalleerde kernel wordt geladen)&lt;br&gt;&#xA;&lt;br&gt;&#xA;$ sudo dnf install gcc kernel-devel kernel-headers make bzip2 perl&lt;br&gt;&#xA;&lt;br&gt;&#xA;Ga naar het VirtualBox-menu &amp;gt; Apparaten &amp;gt; Guest Additions-cd-image invoegen&lt;br&gt;&#xA;&lt;br&gt;&#xA;Automatisch:&lt;br&gt;&#xA;Klik op Uitvoeren&lt;br&gt;&#xA;&lt;br&gt;&#xA;Handmatig:&lt;br&gt;&#xA;$ cd /run/media/$USER/VBox_GAs_*/   # Pas het pad aan indien nodig&lt;br&gt;&#xA;$ sudo ./VBoxLinuxAdditions.run&lt;br&gt;&#xA;&lt;br&gt;&#xA;$ sudo reboot&lt;br&gt;&#xA;&lt;br&gt;&#xA;Verificatie:&lt;br&gt;&#xA;$ lsmod | grep vbox&lt;br&gt;&#xA;(Controleer of vboxguest wordt vermeld)&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>De VirtualBox Guest Additions installeren op Rocky Linux 9.3</title>
-      <link>http://localhost:1313/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
+      <link>https://www.vandenboom.icu/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
       <pubDate>Tue, 16 Jan 2024 21:08:26 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
       <description>&lt;p&gt;&lt;strong&gt;De VirtualBox Guest Additions installeren op Rocky Linux 9.3&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;dnf update --refresh&#xA;dnf update kernel-*&#xA;reboot (optioneel)&#xA;&#xA;dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel&#xA;&#xA;rpm -q kernel-devel&#xA;uname -r&#xA;&#xA;Bovenmenu: Apparaten -&amp;gt; Gast-uitbreidingen CD-image invoegen&#xA;Uitvoeren&#xA;&#xA;(optioneel)&#xA;cd /run/media/&#xA;./VBoxLinuxAdditions.run&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>

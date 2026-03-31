@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Macos on Notities</title>
-    <link>http://localhost:1313/tags/macos/</link>
-    <description>Recent content in Macos on Notities</description>
+    <title>MacOS on Notities</title>
+    <link>https://www.vandenboom.icu/tags/macos/</link>
+    <description>Recent content in MacOS on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Mon, 24 Mar 2025 17:57:51 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deskflow: Bedien meerdere computers met 1 keyboard en muis voor: macOS, Windows en Linux</title>
-      <link>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
       <description>&lt;p&gt;Met Deskflow bestuur je meerdere computers – macOS, Windows of Linux – met één muis en toetsenbord. Het werkt als een softwarematige KVM-switch (zonder video) en wordt gesponsord door Synergy. Dit programma is nog steeds actueel en goed onderhouden, met een intuïtieve interface die het gebruik simpel maakt. Tip: zet in de instellingen even TLS uit voor een soepele start.&lt;/p&gt;&#xA;&lt;p&gt;Download het via: &lt;a href=&#34;https://github.com/deskflow/deskflow/releases&#34;&gt;https://github.com/deskflow/deskflow/releases&lt;/a&gt;. Zoek naar de tag &amp;ldquo;latest&amp;rdquo; en check alle assets voor de juiste versie!&lt;/p&gt;</description>
     </item>
     <item>
       <title>macOS desktop extended over 3 schermen: iMac, MacBook en iPad</title>
-      <link>http://localhost:1313/blog/2023-macos-desktop-extended-over-3-schermen/</link>
+      <link>https://www.vandenboom.icu/blog/2023-macos-desktop-extended-over-3-schermen/</link>
       <pubDate>Sun, 26 Nov 2023 15:16:27 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-macos-desktop-extended-over-3-schermen/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-macos-desktop-extended-over-3-schermen/</guid>
       <description>&lt;p&gt;In de setup die ik gebruik heb ik de volgende 3 apparaten:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;iMac 27” late 2015 met OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;MacBook Pro 15” late 2016 met OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;iPad 10.2” 7th Gen met iPadOS-versie: 17.1.1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Ze zijn op hetzelfde WiFi netwerk verbonden.&lt;/p&gt;&#xA;&lt;p&gt;Stappen:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Op de iMac ga naar: System Settings -&amp;gt; Displays&lt;/li&gt;&#xA;&lt;li&gt;Klik op het plusje rechts naast de Built-in Display&lt;/li&gt;&#xA;&lt;li&gt;Kies onder Mirror or Extend to: MacBook Pro&lt;/li&gt;&#xA;&lt;li&gt;Kies onder Link keyboard and mouse to: iPad&lt;/li&gt;&#xA;&lt;li&gt;Nu zie je onder de Displays de 3 schermen, maar het is nog niet extended over de 3&lt;/li&gt;&#xA;&lt;li&gt;Klik op de iPad&lt;/li&gt;&#xA;&lt;li&gt;Kies bij de optie: “Use as” - voor: Extend or mirrored display&lt;/li&gt;&#xA;&lt;li&gt;Nu zie je op alle 3 de apparaten het zelfde bureaublad&lt;/li&gt;&#xA;&lt;li&gt;En kun je applicaties schuiven vanaf de iMac naar de MacBook of de iPad&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Meerdere versies van Java op macOS</title>
-      <link>http://localhost:1313/blog/2023-multiple-versions-of-java-on-macos/</link>
+      <link>https://www.vandenboom.icu/blog/2023-multiple-versions-of-java-on-macos/</link>
       <pubDate>Wed, 27 Sep 2023 17:43:18 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-multiple-versions-of-java-on-macos/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-multiple-versions-of-java-on-macos/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ls -al /usr/local/opt/ | grep -i openjdk&#xA;&#xA;$ brew install jenv&#xA;&#xA;$ jenv add /Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home/&#xA;&#xA;$ jenv versions&#xA;$ jenv local 1.8&#xA;$ java -version&#xA;$ jenv global 1.8&#xA;$ java -version&#xA;$ jenv shell 1.8&#xA;$ java -version&#xA;$ jenv versions&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Het Linux mlocate-commando op macOS</title>
-      <link>http://localhost:1313/blog/2023-the-linux-mlocate-command-under-macos/</link>
+      <link>https://www.vandenboom.icu/blog/2023-the-linux-mlocate-command-under-macos/</link>
       <pubDate>Wed, 27 Sep 2023 17:40:13 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-the-linux-mlocate-command-under-macos/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-the-linux-mlocate-command-under-macos/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Het Linux mlocate-commando op macOS&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo /usr/libexec/locate.updatedb&#xA;&#xA;sudo ln -s /usr/libexec/locate.updatedb /usr/local/bin/updatedb&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Bestanden delen met MS-DOS 6.22 in VirtualBox en macOS</title>
-      <link>http://localhost:1313/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link>
+      <link>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link>
       <pubDate>Sun, 17 Sep 2023 12:29:24 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid>
       <description>&lt;p&gt;Hoe maak je een ISO-bestand van een map op macOS dat als CDROM gekoppeld kan worden in MS-DOS 6.22?&lt;/p&gt;&#xA;&lt;p&gt;Start Schijfhulpprogramma op macOS&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ga naar: Archief -&amp;gt; Nieuwe afbeelding -&amp;gt; Afbeelding van map&lt;/li&gt;&#xA;&lt;li&gt;Kies de map en druk op Kies&lt;/li&gt;&#xA;&lt;li&gt;Stel Afbeeldingsformaat in op: DVD/CD-master en druk op Bewaar&lt;/li&gt;&#xA;&lt;li&gt;Er wordt een *.cdr-bestand aangemaakt&lt;/li&gt;&#xA;&lt;li&gt;Ga naar de opdrachtregel&lt;/li&gt;&#xA;&lt;li&gt;Navigeer naar de map met het *.cdr-bestand&lt;/li&gt;&#xA;&lt;li&gt;Typ het commando: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr&lt;/li&gt;&#xA;&lt;li&gt;Ga naar je virtuele machine met MS-DOS 6.22 en koppel het nieuw aangemaakte *.iso-bestand&lt;/li&gt;&#xA;&lt;li&gt;In de MS-DOS 6.22 virtuele machine heb je nu toegang tot de inhoud op station D:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/br&gt;&#xA;&lt;p&gt;Vragen?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Breng een oude / 2e handse Apple Mac computer weer tot leven met OpenCore Legacy Patcher</title>
-      <link>http://localhost:1313/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</link>
+      <link>https://www.vandenboom.icu/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</guid>
       <description>&lt;p&gt;Is computeren je hobby en heb je altijd al een Apple Mac willen proberen? Een tip / aanrader is dan OpenCore Lagacy Patcher.&lt;/p&gt;&#xA;&lt;p&gt;Zie de officiele website: &lt;a href=&#34;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&#34;&gt;&lt;a href=&#34;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&#34;&gt;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;En het YouTube kanaal: &lt;a href=&#34;https://www.youtube.com/@Mr.Macintosh&#34;&gt;&lt;a href=&#34;https://www.youtube.com/@Mr.Macintosh&#34;&gt;https://www.youtube.com/@Mr.Macintosh&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Met deze tool kun je oudere / 2e hands en inmiddels goedkoper geworden hardware nog steeds met de nieuwste software gebruiken. Echt de moeite waard om een keer te proberen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Virtuele machines installeren op macOS Monterey met OpenCore Legacy Patcher</title>
-      <link>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</link>
       <pubDate>Thu, 01 Dec 2022 21:20:43 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</guid>
       <description>&lt;p&gt;Probeer Oracle VirtualBox versie 6.1.40, de oudere versie. In mijn thuislab werkte de nieuwste versie VirtualBox 7.0.4 niet vanwege de foutmelding: hv_vm_create() failed: 0xfae94001 (VERR_NEM_INIT_FAILED)&lt;/p&gt;&#xA;&lt;p&gt;In de oudere versie was dit geen probleem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title>
-      <link>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
+      <link>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
       <pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
       <description>&lt;p&gt;Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.&lt;/p&gt;</description>
     </item>
   </channel>

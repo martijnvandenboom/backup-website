@@ -2,619 +2,619 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Notities</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://www.vandenboom.icu/blog/</link>
     <description>Recent content in Blog on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
-    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Proxmox Lab — Windows Server 2022 Template voorbereiding</title>
-      <link>http://localhost:1313/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</link>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</guid>
-      <description>&lt;p&gt;Deze handleiding beschrijft het volledige proces voor het voorbereiden van een vers geïnstalleerde Windows Server 2022 VM als herbruikbaar Proxmox-template. Alle toekomstige VM&amp;rsquo;s (CA-server, lidservers, enzovoort) worden gekloond vanuit dit template, wat aanzienlijk tijd bespaart en een consistente basisinstallatie garandeert.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;📄 &lt;strong&gt;Download de volledige handleiding met screenshots:&lt;/strong&gt;&#xA;&lt;a href=&#34;http://localhost:1313/documents/WS2022-in-Proxmox-Template-Preparation-Guide.docx&#34;&gt;WS2022-in-Proxmox-Template-Preparation-Guide.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overzicht&#34;&gt;Overzicht&lt;/h2&gt;&#xA;&lt;p&gt;Het volledige proces bestaat uit de volgende stappen:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;VirtIO guest-drivers installeren&lt;/li&gt;&#xA;&lt;li&gt;Windows Update uitvoeren — OS volledig patchen&lt;/li&gt;&#xA;&lt;li&gt;Prestatieoptimalisaties toepassen&lt;/li&gt;&#xA;&lt;li&gt;Basisconfiguratie — tijdzone, RDP, IE Enhanced Security&lt;/li&gt;&#xA;&lt;li&gt;Sysprep — generaliseren en afsluiten&lt;/li&gt;&#xA;&lt;li&gt;Converteren naar template in Proxmox&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Waarschuwing:&lt;/strong&gt; Start de VM nooit opnieuw op na Sysprep. Als je dat toch doet, wordt de generalisatie verbruikt en moet het template opnieuw worden opgebouwd vanaf het begin.&lt;/p&gt;</description>
+      <title>Windows Server 2022 in Proxmox — Template Voorbereiding</title>
+      <link>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</guid>
+      <description>&lt;p&gt;Dit is deel 2 van de serie over het opbouwen van een Windows DevOps lab in Proxmox. In &lt;a href=&#34;https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/&#34;&gt;deel 1&lt;/a&gt; heb ik beschreven hoe je de VM aanmaakt. In dit artikel bereid ik de VM voor als herbruikbare Proxmox template. Alle toekomstige VMs — de CA server, member servers en andere rollen — worden vanuit deze template gekloond.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Download de volledige handleiding met screenshots (.docx):&lt;/strong&gt;&#xA;&lt;a href=&#34;https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/WS2022-in-Proxmox-Template-Preparation-Guide-NL.docx&#34;&gt;WS2022-in-Proxmox-Template-Preparation-Guide-NL.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Belangrijk:&lt;/strong&gt; Start de VM na Sysprep &lt;strong&gt;nooit&lt;/strong&gt; opnieuw op. Als je dat doet wordt de generalisatie verbruikt en moet de template opnieuw worden opgebouwd.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Proxmox Lab — Windows Server 2022 VM aanmaken</title>
-      <link>http://localhost:1313/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</link>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</guid>
-      <description>&lt;p&gt;Deze handleiding beschrijft het volledige proces voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Gebaseerd op praktijkervaring inclusief alle correcties en geleerde lessen tijdens de opbouw van een thuislab.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;📄 &lt;strong&gt;Download de volledige handleiding met screenshots:&lt;/strong&gt;&#xA;&lt;a href=&#34;http://localhost:1313/documents/WS2022-in-Proxmox-VM-Creation-Guide.docx&#34;&gt;WS2022-in-Proxmox-VM-Creation-Guide.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;omgeving&#34;&gt;Omgeving&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Onderdeel&lt;/th&gt;&#xA;          &lt;th&gt;Details&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox Host&lt;/td&gt;&#xA;          &lt;td&gt;macpro2013.local — Mac Pro 2013 Trashcan&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox Versie&lt;/td&gt;&#xA;          &lt;td&gt;9.1.6&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RAM&lt;/td&gt;&#xA;          &lt;td&gt;128 GB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Opslag&lt;/td&gt;&#xA;          &lt;td&gt;3.6 TB NVMe (local-lvm pool)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Netwerkbrug&lt;/td&gt;&#xA;          &lt;td&gt;vmbr0 — intern lab netwerk (192.168.178.x)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox WebUI&lt;/td&gt;&#xA;          &lt;td&gt;https://192.168.178.205:8006&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Let op:&lt;/strong&gt; De Proxmox WebUI toont een SSL-certificaatwaarschuwing omdat Proxmox standaard een zelfondertekend certificaat gebruikt. Dit is de aanleiding voor het later opzetten van een interne Certificate Authority (CA).&lt;/p&gt;</description>
+      <title>Windows Server 2022 in Proxmox — Een VM Aanmaken</title>
+      <link>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</guid>
+      <description>&lt;p&gt;In dit artikel beschrijf ik stap voor stap hoe ik een Windows Server 2022 VM aanmaak in Proxmox VE 9.1.6. De handleiding is gebaseerd op praktijkervaring en bevat alle correcties en lessen die ik onderweg heb opgedaan. Dit is deel 1 van een serie over het opbouwen van een volledig Windows DevOps lab in Proxmox.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Download de volledige handleiding met screenshots (.docx):&lt;/strong&gt;&#xA;&lt;a href=&#34;https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/WS2022-in-Proxmox-VM-Creation-Guide-NL.docx&#34;&gt;WS2022-in-Proxmox-VM-Creation-Guide-NL.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;laboratoriumomgeving&#34;&gt;Laboratoriumomgeving&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Onderdeel&lt;/th&gt;&#xA;          &lt;th&gt;Waarde&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox host&lt;/td&gt;&#xA;          &lt;td&gt;macpro2013.local — Mac Pro 2013 Trashcan&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox versie&lt;/td&gt;&#xA;          &lt;td&gt;9.1.6&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RAM&lt;/td&gt;&#xA;          &lt;td&gt;128 GB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Opslag&lt;/td&gt;&#xA;          &lt;td&gt;3.6 TB NVMe (local-lvm pool)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Netwerkbridge&lt;/td&gt;&#xA;          &lt;td&gt;vmbr0 — intern lab netwerk (192.168.178.x)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox WebUI&lt;/td&gt;&#xA;          &lt;td&gt;https://192.168.178.205:8006&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;waarom-een-ca-nodig-is--de-ssl-waarschuwing&#34;&gt;Waarom een CA nodig is — de SSL waarschuwing&lt;/h2&gt;&#xA;&lt;p&gt;Wie de Proxmox WebUI via &lt;code&gt;macpro2013.local&lt;/code&gt; opent in Safari krijgt meteen een certificaatwaarschuwing. Proxmox gebruikt standaard een zelfondertekend certificaat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows Server 2022 — Active Directory en DNS installatie</title>
-      <link>http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/</link>
+      <link>https://www.vandenboom.icu/blog/2026-windows-server-2022-active-directory-dns-installatie/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/2026-windows-server-2022-active-directory-dns-installatie/</guid>
+      <guid>https://www.vandenboom.icu/blog/2026-windows-server-2022-active-directory-dns-installatie/</guid>
       <description>&lt;p&gt;In dit artikel beschrijf ik stap voor stap hoe ik Active Directory Domain Services (AD DS) en DNS heb geïnstalleerd op een Windows Server 2022 Datacenter VM in een VMware Fusion lab omgeving. Het resultaat is een volledig functionele domeincontroller voor het domein &lt;strong&gt;lab.local&lt;/strong&gt;, als basis voor een Windows DevOps lab.&lt;/p&gt;&#xA;&lt;h2 id=&#34;omgeving&#34;&gt;Omgeving&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Onderdeel&lt;/th&gt;&#xA;          &lt;th&gt;Waarde&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Virtualisatie&lt;/td&gt;&#xA;          &lt;td&gt;VMware Fusion (macOS)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Gastbesturingssysteem&lt;/td&gt;&#xA;          &lt;td&gt;Windows Server 2022 Datacenter (Desktop Experience)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Hostnaam&lt;/td&gt;&#xA;          &lt;td&gt;DC01&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Domeinnaam&lt;/td&gt;&#xA;          &lt;td&gt;lab.local&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NetBIOS naam&lt;/td&gt;&#xA;          &lt;td&gt;LAB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Lab-netwerk adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet1 — 172.16.37.10 (vast IP)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Internet adapter&lt;/td&gt;&#xA;          &lt;td&gt;Ethernet0 — DHCP via VMware NAT&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;stap-1--netwerk-instellen&#34;&gt;Stap 1 — Netwerk instellen&lt;/h2&gt;&#xA;&lt;p&gt;Voordat Active Directory wordt geïnstalleerd, heeft de domeincontroller een vast (statisch) IP-adres nodig. AD DS en DNS zijn afhankelijk van een stabiel adres.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows packet capturing voor bijvoorbeeld een LDAPS verkeer analyse</title>
-      <link>http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</link>
+      <link>https://www.vandenboom.icu/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</link>
       <pubDate>Sun, 18 Jan 2026 18:55:54 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</guid>
+      <guid>https://www.vandenboom.icu/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/</guid>
       <description>&lt;p&gt;Open een Windows Terminal of Command sessie As Administrator&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Check existing filters&#xA;# pktmon filter list&#xA;&#xA;Clear all filters&#xA;# pktmon filter remove&#xA;&#xA;Check capture status*&#xA;# pktmon status&#xA;&#xA;Add a filter for LDAPS&#xA;# pktmon filter add -p 636&#xA;&#xA;Start the capture&#xA;# pktmon start --etw&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Probeer opnieuw verbinding te maken met de LDAP server / Indien je een andere poort wilt monitoren herhaal dan het commando dat het netwerkverkeer genereert.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network routing naar LAN systemen met OpenVPN Server</title>
-      <link>http://localhost:1313/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link>
+      <link>https://www.vandenboom.icu/blog/network-routing-naar-lan-systemen-met-openvpn-server/</link>
       <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid>
+      <guid>https://www.vandenboom.icu/blog/network-routing-naar-lan-systemen-met-openvpn-server/</guid>
       <description>&lt;p&gt;Om systemen op het LAN-netwerk te kunnen benaderen via de VPN-tunnel van de OpenVPN-server, moet het LAN-systeem weten dat verkeer bestemd voor het VPN-subnet via de OpenVPN-server moet worden verstuurd. Zonder deze extra route komt retourverkeer niet bij de VPN-clients terecht.&lt;/p&gt;&#xA;&lt;p&gt;In dit voorbeeld gebruiken we het subnet 10.0.8.0/24 als de IP-range die je hebt ingesteld voor de OpenVPN-tunnel. Dit is het netwerk waarin alle VPN-clients een IP-adres krijgen. Om ervoor te zorgen dat een apparaat op het LAN verkeer correct kan terugsturen naar deze VPN-clients, moet je op dat LAN-apparaat een statische route toevoegen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Foto&#39;s comprimeren zonder kwaliteitsverlies voor elk platform</title>
-      <link>http://localhost:1313/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link>
+      <link>https://www.vandenboom.icu/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</link>
       <pubDate>Fri, 12 Sep 2025 01:58:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid>
+      <guid>https://www.vandenboom.icu/blog/fotos_comprimeren_zonder_kwaliteitsverlies/</guid>
       <description>&lt;p&gt;P.S. Op speciaal verzoek van Maria Isabel Rondini, die voor het schrijven van haar scriptie deze tool extra onder de aandacht wilde brengen.&#xA;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wil je je foto’s kleiner maken zonder kwaliteitsverlies, en dat zonder extra software te hoeven installeren?&#xA;Dan is de Image Compressor tool ideaal.&lt;/p&gt;&#xA;&lt;p&gt;Deze handige webtool werkt volledig online. Dat betekent dat je niets hoeft te downloaden of te installeren.&#xA;Of je nu op Windows, Linux of macOS werkt, het maakt niet uit – zolang je een internetverbinding hebt, kun je direct je foto’s uploaden en comprimeren.&lt;/p&gt;</description>
     </item>
     <item>
       <title>De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</title>
-      <link>http://localhost:1313/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</link>
+      <link>https://www.vandenboom.icu/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</link>
       <pubDate>Tue, 01 Jul 2025 08:30:05 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/</guid>
       <description>&lt;p&gt;&lt;strong&gt;VBoxWebSrv&lt;/strong&gt; is de VirtualBox-webservice waarmee u uw VirtualBox-virtuele machines op afstand kunt beheren via een webgebaseerde API. Het wordt vaak gebruikt met tools zoals &lt;strong&gt;phpVirtualBox&lt;/strong&gt; om een volledige webinterface te bieden voor VM-beheer.&lt;/p&gt;&#xA;&lt;p&gt;Door VBoxWebSrv als Windows-service uit te voeren, zorgt u ervoor dat het automatisch start met uw systeem en continu op de achtergrond draait.&lt;/p&gt;&#xA;&lt;p&gt;VBoxWebSrv installeren als Windows-service met NSSM&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Download NSSM (Non-Sucking Service Manager) van &lt;a href=&#34;https://nssm.cc/download&#34;&gt;https://nssm.cc/download&lt;/a&gt; en pak het uit.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deze versie van BootCamp is niet bedoeld voor deze computer</title>
-      <link>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
+      <link>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</link>
       <pubDate>Mon, 28 Apr 2025 16:04:39 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-this-version-of-boot-camp-is-not-intented-for-this-computer/</guid>
       <description>&lt;p&gt;D﻿eare lezer,&lt;br&gt;&#xA;&lt;br&gt;&#xA;O﻿nlangs heb ik mijn Windows-versie op mijn MacBook Pro 16,1 BootCamp-installatie bijgewerkt naar Windows 11. Nu liep ik tegen het probleem aan dat mijn ingebouwde toetsenbord en trackpad niet meer werkten. Ik moest dit oplossen door een apart toetsenbord en muis aan te sluiten via USB.&lt;/p&gt;&#xA;&lt;p&gt;I﻿k downloadde de software in het BootCamp-hulpprogramma op macOS die compatibel is met mijn laptop, in dit geval versie: Boot Camp-stuurprogramma&amp;rsquo;s 6.1.6655. Maar bij het opstarten van setup.exe krijg ik de volgende foutmelding: This version of boot camp is not intended for this computer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microsoft OneNote zoekfunctie werkt niet meer</title>
-      <link>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</link>
+      <link>https://www.vandenboom.icu/blog/2025-microsoft-onenote-search-not-working-anymore/</link>
       <pubDate>Thu, 10 Apr 2025 08:48:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-microsoft-onenote-search-not-working-anymore/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-microsoft-onenote-search-not-working-anymore/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;S﻿luit alle Microsoft-applicaties&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;H﻿ernoem de cachemap in:&lt;br&gt;&#xA;C:\Users\&amp;lt;Gebruiker&amp;gt;\AppData\Local\Microsoft\OneNote\16.0&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;H﻿erstart OneNote&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;P﻿.S.&lt;br&gt;&#xA;M﻿aak u geen zorgen als de notitieboeken leeg lijken, ze worden opnieuw aangemaakt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>OCLP-update geeft een cirkel met diagonaal bij het opstarten</title>
-      <link>http://localhost:1313/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/</link>
+      <link>https://www.vandenboom.icu/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/</link>
       <pubDate>Fri, 04 Apr 2025 14:27:55 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-oclp-update-gives-a-circle-with-diagonal-at-boot/</guid>
       <description>&lt;p&gt;Welke Mac gebruikt u?&lt;br&gt;&#xA;iMac (Retina 5K, 27 inch, Late 2015)&lt;br&gt;&#xA;Model-ID: iMac17,1&lt;br&gt;&#xA;&lt;br&gt;&#xA;Welke versie van OCLP gebruikt u?&lt;br&gt;&#xA;2.3.1&lt;br&gt;&#xA;&lt;br&gt;&#xA;Welke OS-versie heeft u geïnstalleerd of probeert u te installeren?&lt;br&gt;&#xA;Geïnstalleerd: Sequoia 15.3.2 (24D81)&lt;br&gt;&#xA;&lt;br&gt;&#xA;Wat is precies het probleem dat u ondervindt?&lt;br&gt;&#xA;Na het installeren van OCLP 2.3.1 op schijf weigert mijn iMac op te starten. Bij het opstarten druk ik op de Option-toets om het menu te openen, ik kies het blauwe OCLP-icoon. Normaal gesproken gaat het daarna verder met het Apple-logo, maar nu verschijnt er een cirkel met een diagonaal.&lt;br&gt;&#xA;Gelukkig kon ik met mijn oude USB-stick met OCLP 2.2.0 opstarten vanaf USB. Dat werkte prima. Vervolgens heb ik mijn EFI-partitie gekoppeld, de OC-map verwijderd en vervangen door die van mijn USB-stick. Nu start mijn iMac weer op, maar met versie 2.2.0.&lt;br&gt;&#xA;Gebruik het hulpmiddel: MountEFI Beschikbaar op GitHub: &lt;a href=&#34;https://github.com/corpnewt/MountEFI&#34; title=&#34;https\://github.com/corpnewt/MountEFI&#34;&gt;https://github.com/corpnewt/MountEFI&lt;/a&gt;&lt;br&gt;&#xA;&lt;br&gt;&#xA;N﻿u heb ik het kunnen oplossen met de volgende instellingen in OCLP:&lt;br&gt;&#xA;Mijn iMac is een Late 2015 27&amp;quot; met modelnummer 17,1&lt;/br&gt;&lt;br&gt;&#xA;In het OCLP-hulpprogramma bij instellingen heb ik ingevuld:&lt;/br&gt;&#xA;Doelmodel: 17,1&lt;/br&gt;&#xA;Build: Debug: Vink alle 3 opties aan: Verbose, Kext Debugging en OpenCore Debugging&lt;/br&gt;&#xA;Extra&amp;rsquo;s: Vink aan: 3rd Party NVMe PM&lt;/br&gt;&#xA;Beveiliging: Vink alle opties aan onder SIP&lt;/br&gt;&#xA;SMBIOS: SMBIOS Spoof Level: Matig en SMBIOS Spoof Model: iMac19,1&lt;/br&gt;&#xA;Vervolgens heb ik OpenCore gebouwd en geïnstalleerd op schijf&lt;/br&gt;&lt;br&gt;&#xA;&lt;br&gt;&#xA;Trouwens, in de tussentijd was OCLP bijgewerkt naar versie 2.3.2 en heb ik deze versie gebruikt.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitLab installeren op Docker in AlmaLinux 8.10</title>
-      <link>http://localhost:1313/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</link>
+      <link>https://www.vandenboom.icu/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</link>
       <pubDate>Sat, 29 Mar 2025 20:21:32 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-installing-gitlab-on-docker-in-almalinux-8-10/</guid>
       <description>&lt;p&gt;Stap 1: Systeem bijwerken&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo dnf update&#xA;$ sudo dnf install epel-release&#xA;$ sudo /usr/bin/crb enable&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Stap 2: Docker installeren vanuit de AlmaLinux-repository&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;$ sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo&#xA;$ sudo dnf remove -y podman podman-docker podman-plugins&#xA;$ sudo dnf remove -y runc&#xA;$ sudo dnf clean all&#xA;$ sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin&#xA;$ sudo systemctl enable --now docker&#xA;$ sudo systemctl status docker&#xA;$ sudo usermod -aG docker $USER&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Stap 3: Uitloggen en opnieuw inloggen&lt;/p&gt;</description>
     </item>
     <item>
       <title>VirtualBox Guest Additions installeren op AlmaLinux 8.10</title>
-      <link>http://localhost:1313/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</link>
+      <link>https://www.vandenboom.icu/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</link>
       <pubDate>Sat, 29 Mar 2025 20:16:41 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-installing-virtualbox-guest-additions-on-almalinux-8-10/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;$ sudo dnf update&lt;br&gt;&#xA;$ sudo reboot&lt;br&gt;&#xA;(Zodat een nieuw geïnstalleerde kernel wordt geladen)&lt;br&gt;&#xA;&lt;br&gt;&#xA;$ sudo dnf install gcc kernel-devel kernel-headers make bzip2 perl&lt;br&gt;&#xA;&lt;br&gt;&#xA;Ga naar het VirtualBox-menu &amp;gt; Apparaten &amp;gt; Guest Additions-cd-image invoegen&lt;br&gt;&#xA;&lt;br&gt;&#xA;Automatisch:&lt;br&gt;&#xA;Klik op Uitvoeren&lt;br&gt;&#xA;&lt;br&gt;&#xA;Handmatig:&lt;br&gt;&#xA;$ cd /run/media/$USER/VBox_GAs_*/   # Pas het pad aan indien nodig&lt;br&gt;&#xA;$ sudo ./VBoxLinuxAdditions.run&lt;br&gt;&#xA;&lt;br&gt;&#xA;$ sudo reboot&lt;br&gt;&#xA;&lt;br&gt;&#xA;Verificatie:&lt;br&gt;&#xA;$ lsmod | grep vbox&lt;br&gt;&#xA;(Controleer of vboxguest wordt vermeld)&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Deskflow: Bedien meerdere computers met 1 keyboard en muis voor: macOS, Windows en Linux</title>
-      <link>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</link>
       <pubDate>Mon, 24 Mar 2025 17:57:51 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-deskflow-bedien-meerdere-computers-met-1-keyboard-en-muis-voor-macos-windows-en-linux/</guid>
       <description>&lt;p&gt;Met Deskflow bestuur je meerdere computers – macOS, Windows of Linux – met één muis en toetsenbord. Het werkt als een softwarematige KVM-switch (zonder video) en wordt gesponsord door Synergy. Dit programma is nog steeds actueel en goed onderhouden, met een intuïtieve interface die het gebruik simpel maakt. Tip: zet in de instellingen even TLS uit voor een soepele start.&lt;/p&gt;&#xA;&lt;p&gt;Download het via: &lt;a href=&#34;https://github.com/deskflow/deskflow/releases&#34;&gt;https://github.com/deskflow/deskflow/releases&lt;/a&gt;. Zoek naar de tag &amp;ldquo;latest&amp;rdquo; en check alle assets voor de juiste versie!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oracle VirtualBox installeren op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</link>
       <pubDate>Sun, 23 Mar 2025 13:20:53 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-installing-oracle-virtualbox-on-ubuntu-linux/</guid>
       <description>&lt;p&gt;P﻿robeer de volgende stappen:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo apt upgrade&lt;br&gt;&#xA;$﻿ sudo apt install curl&lt;br&gt;&#xA;$﻿ curl -fsSL &lt;a href=&#34;https://www.virtualbox.org/download/oracle_vbox_2016.asc&#34;&gt;https://www.virtualbox.org/download/oracle_vbox_2016.asc&lt;/a&gt; | sudo gpg &amp;ndash;dearmor -o /usr/share/keyrings/virtualbox-archive-keyring.gpg&lt;br&gt;&#xA;$﻿ echo &amp;ldquo;deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox-archive-keyring.gpg] &lt;a href=&#34;http://download.virtualbox.org/virtualbox/debian&#34;&gt;http://download.virtualbox.org/virtualbox/debian&lt;/a&gt; noble contrib&amp;rdquo; | sudo tee /etc/apt/sources.list.d/virtualbox.list&lt;br&gt;&#xA;$﻿ sudo apt update&lt;br&gt;&#xA;$﻿ sudo search virtualbox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox/noble-updates 7.0.16-dfsg-2ubuntu1.1 amd64&#xA;x86 virtualization solution - base binaries&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.0/unknown 7.0.24-167081~Ubuntu~noble amd64&#xA;Oracle VM VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;virtualbox-7.1/unknown 7.1.6-167084~Ubuntu~noble amd64&#xA;Oracle VirtualBox&lt;/p&gt;&#xA;&lt;p&gt;$﻿ sudo install virtualbox-7.1&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;D﻿ownload het Extension Pack van de website: &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;https://www.virtualbox.org/wiki/Downloads&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tips voor het gebruik van XRDP op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</link>
       <pubDate>Sun, 23 Mar 2025 12:51:59 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/</guid>
       <description>&lt;p&gt;O﻿m XRDP op Ubuntu Linux te kunnen gebruiken, volgt u de onderstaande instructies:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$ s﻿udo apt update &lt;br&gt;&#xA;$ s﻿udo apt upgrade&lt;br&gt;&#xA;$ s﻿udo apt install xrdp&lt;br&gt;&#xA;$ echo &amp;ldquo;gnome-session &amp;ndash;session=ubuntu&amp;rdquo; &amp;gt; ~/.xsession&lt;br&gt;&#xA;$ echo &amp;ldquo;export DISPLAY=:10.0&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$ echo &amp;ldquo;xhost +&amp;rdquo; &amp;gt; ~/.bash_profile&lt;br&gt;&#xA;$﻿ ip a&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;O﻿nthoud dat u uw IP-adres noteert en uitlogt uit uw grafische gebruikerssessie.&lt;/p&gt;&#xA;&lt;p&gt;P﻿robeer nu in te loggen op uw systeem met een RDP-tool.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microsoft Visual Studio Code installeren in Linux vanuit de repository</title>
-      <link>http://localhost:1313/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link>
+      <link>https://www.vandenboom.icu/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</link>
       <pubDate>Sat, 22 Mar 2025 22:13:54 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/</guid>
       <description>&lt;p&gt;V﻿olg de onderstaande stappen om Microsoft Visual Studio Code IDE op Linux te installeren vanuit de repository:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;sudo rpm &amp;ndash;import &lt;a href=&#34;https://packages.microsoft.com/keys/microsoft.asc&#34;&gt;https://packages.microsoft.com/keys/microsoft.asc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;sudo sh -c &amp;rsquo;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &amp;gt; /etc/yum.repos.d/vscode.repo&#39;&lt;/p&gt;&#xA;&lt;p&gt;sudo dnf install code -y&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Gebruik van Golang, Java, C/C&#43;&#43; of Rust: een beknopte gids</title>
-      <link>http://localhost:1313/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</link>
+      <link>https://www.vandenboom.icu/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</link>
       <pubDate>Sat, 22 Mar 2025 19:32:21 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/</guid>
       <description>&lt;p&gt;Voor &lt;strong&gt;realtime-toepassingen&lt;/strong&gt; zijn &lt;strong&gt;Go&lt;/strong&gt; en &lt;strong&gt;Rust&lt;/strong&gt; de beste keuzes vanwege hun lichtgewicht gelijktijdigheid en geheugenefficiëntie. Combineer ze voor een evenwichtige aanpak: Go voor logica op hoog niveau en Rust voor prestatiekritische taken. Gebruik &lt;strong&gt;C/C++&lt;/strong&gt; voor legacysystemen en &lt;strong&gt;Java&lt;/strong&gt; voor bedrijfstoepassingen waarbij realtime-prestaties minder kritisch zijn.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bij gebruik van Go&lt;/strong&gt; is de kans op klassieke gelijktijdigheidsproblemen zoals &lt;strong&gt;race conditions&lt;/strong&gt;, &lt;strong&gt;deadlocks&lt;/strong&gt; en &lt;strong&gt;resource leaks&lt;/strong&gt; aanzienlijk kleiner. Dit komt door Go&amp;rsquo;s gebruik van &lt;strong&gt;channels&lt;/strong&gt; voor veilige communicatie tussen goroutines en de ingebouwde garbage collector, die naadloos samenwerkt met de goroutine-planner. Dit maakt Go niet alleen efficiënt maar ook betrouwbaarder en eenvoudiger te debuggen in scenario&amp;rsquo;s met hoge gelijktijdigheid.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ondersteuning toevoegen voor dark mode op uw website met een subtiel icoon</title>
-      <link>http://localhost:1313/blog/2025-create-support-on-your-website-for-dark-mode-capability-with-a-subtile-icon/</link>
+      <link>https://www.vandenboom.icu/blog/2025-create-support-on-your-website-for-dark-mode-capability-with-a-subtile-icon/</link>
       <pubDate>Sat, 15 Feb 2025 21:17:06 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-create-support-on-your-website-for-dark-mode-capability-with-a-subtile-icon/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-create-support-on-your-website-for-dark-mode-capability-with-a-subtile-icon/</guid>
       <description>&lt;p&gt;D﻿ ear lezer,&lt;/p&gt;&#xA;&lt;p&gt;I﻿k verwijs u graag naar mijn GitHub-pagina voor een mooi en eenvoudig project waarmee u het dark mode-effect op een website kunt inschakelen. Ik deel dit graag met u zodat het u kan inspireren en u een soortgelijke implementatie kunt maken die u op uw eigen website kunt gebruiken.&lt;/p&gt;&#xA;&lt;p&gt;Z﻿ie: &lt;a href=&#34;https://github.com/martijnvandenboom/darkmode-test&#34;&gt;https://github.com/martijnvandenboom/darkmode-test&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;M﻿et vriendelijke groet,&lt;/p&gt;&#xA;&lt;p&gt;M﻿artijn&lt;/p&gt;&#xA;&lt;p&gt;P﻿.S. laat een berichtje achter, ik hoor graag van u&lt;/p&gt;</description>
     </item>
     <item>
       <title>Java een variabele omzetten om af te drukken in een prijsnotatie gerelateerd aan landinstellingen</title>
-      <link>http://localhost:1313/blog/2025-java-convert-a-variabele-for-it-to-be-printed-in-a-price-format-related-to-country-settings/</link>
+      <link>https://www.vandenboom.icu/blog/2025-java-convert-a-variabele-for-it-to-be-printed-in-a-price-format-related-to-country-settings/</link>
       <pubDate>Sun, 05 Jan 2025 20:09:27 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-java-convert-a-variabele-for-it-to-be-printed-in-a-price-format-related-to-country-settings/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-java-convert-a-variabele-for-it-to-be-printed-in-a-price-format-related-to-country-settings/</guid>
       <description>&lt;p&gt;V﻿oor Nederlandse euro gebruik: .getCurrencyInstance(new Locale(&amp;ldquo;nl&amp;rdquo;, &amp;ldquo;NL&amp;rdquo;))&lt;/p&gt;&#xA;&lt;p&gt;V﻿oor Zwitserse frank gebruik: .getCurrencyInstance(new Locale(&amp;ldquo;de&amp;rdquo;, &amp;ldquo;CH&amp;rdquo;))&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.text.NumberFormat;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.util.Locale;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;prog_002_variables&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; args){&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        String message;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; year;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;double&lt;/span&gt; prijs;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        message &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;De beste wensen voor: &amp;#34;&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        year &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 2025;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        prijs &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 2.&lt;span style=&#34;color:#a6e22e&#34;&gt;50&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;// Combineer het aanmaken van de Locale en NumberFormat op één regel&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        NumberFormat currencyFormat;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        currencyFormat &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; NumberFormat.&lt;span style=&#34;color:#a6e22e&#34;&gt;getCurrencyInstance&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Locale(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nl&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;NL&amp;#34;&lt;/span&gt;));&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(message &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; year &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;, een frikandel kost nu: &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; currencyFormat.&lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;(prijs));&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        currencyFormat &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; NumberFormat.&lt;span style=&#34;color:#a6e22e&#34;&gt;getCurrencyInstance&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Locale(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;de&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;CH&amp;#34;&lt;/span&gt;));&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        System.&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;(message &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; year &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;, een frikandel kost nu: &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; currencyFormat.&lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;(prijs));&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Snelle git-opdrachten om een lokale repository in Visual Studio Code toe te voegen aan GitHub</title>
-      <link>http://localhost:1313/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/</link>
+      <link>https://www.vandenboom.icu/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/</link>
       <pubDate>Fri, 03 Jan 2025 22:23:19 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/</guid>
+      <guid>https://www.vandenboom.icu/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/</guid>
       <description>&lt;p&gt;T﻿ype in de terminal van Visual Studio Code&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;#﻿ git init&lt;br&gt;&#xA;#﻿ git add .&lt;br&gt;&#xA;#﻿ git commit -m &amp;ldquo;initial commit&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;M﻿aak een nieuwe repository aan op GitHub&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;#﻿ git remote add origin &amp;lt;de nieuwe .git URL&amp;gt;&lt;br&gt;&#xA;Voorbeeld: #﻿ git remote add origin &lt;a href=&#34;https://github.com/martijnvandenboom/Java_tools.git&#34;&gt;https://github.com/martijnvandenboom/Java_tools.git&lt;/a&gt;&lt;br&gt;&#xA;#﻿ git push -u origin main&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Zoek de naam van je USB stick met een script</title>
-      <link>http://localhost:1313/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</link>
+      <link>https://www.vandenboom.icu/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</link>
       <pubDate>Thu, 18 Jul 2024 07:20:59 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/</guid>
       <description>&lt;p&gt;D﻿it script kun je gebruiken voor het opvragen van de naam van je USB stick.&lt;br&gt;&#xA;De naam van je USB stick kun je gebruiken in het sudo commando van Apple om een USB installer te maken.&lt;br&gt;&#xA;&lt;br&gt;&#xA;S﻿tap 1: Open de Terminal applicatie&lt;br&gt;&#xA;S﻿tap 2: Ga naar je home directory, type: # cd&lt;br&gt;&#xA;S﻿tap 3: Maak eventueel een directory scripts, type: # mkdir scripts&lt;br&gt;&#xA;S﻿tap 4: Ga naar de zojuist gemaakte scripts directory, type: # cd scripts&lt;br&gt;&#xA;Stap 5: Maak een bash script, type: # vim usbstick.sh&lt;br&gt;&#xA;Stap 6: Insert de volgende code:&lt;/p&gt;</description>
     </item>
     <item>
       <title>De Microsoft EFI-opstartbestanden op de EFI-partitie plaatsen</title>
-      <link>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
+      <link>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</link>
       <pubDate>Sun, 07 Jul 2024 20:49:33 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/</guid>
       <description>&lt;p&gt;Start op via het Windows-installatieprogramma&lt;/p&gt;&#xA;&lt;p&gt;Druk op het eerste scherm op SHIFT + F10&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&#xA;# diskpart&#xA;# list disk&#xA;# select disk 0&#xA;# list part&#xA;Zoek naar de Windows-partitie&#xA;&#xA;# select part 3&#xA;# assign letter=W&#xA;# format quick fs=NTFS&#xA;# list volume&#xA;Zoek naar het EFI-volume&#xA;&#xA;# select volume 2&#xA;# assign letter=Z&#xA;# exit&#xA;&#xA;# D:&#xA;Ga naar de USB-installatieschijf van Windows&#xA;# cd D:\sources&#xA;# dir install*&#xA;Het bestand install.esd bestaat&#xA;&#xA;# dism /Get-WimInfo /WimFile:D:\Sources\install.esd&#xA;Selecteer de Index van de gewenste Windows-versie&#xA;&#xA;# dism /Apply-image /ImageFile:D:\Sources\install.esd /index:6 /ApplyDir:W:\&#xA;# bcdboot W:\Windows /l en-us /s Z: /f UEFI&#xA;Zet uw computer uit en verwijder de USB-installatieschijf&#xA;Nu hebben we de Microsoft EFI-opstartbestanden op de EFI-partitie in de daarvoor bestemde map&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Volg de normale procedure voor het installeren van Windows&lt;/p&gt;</description>
     </item>
     <item>
       <title>Maak een USB rEFIt opstartschijf</title>
-      <link>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</link>
+      <link>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</link>
       <pubDate>Sun, 07 Jul 2024 20:45:53 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-create-a-usb-refit-boot-disk/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-create-a-usb-refit-boot-disk/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# hdiutil convert /path/to/refit-0.14.cdr -format UDRW -o /path/to/refit-0.14.img&#xA;# diskutil list&#xA;# diskutil unmountDisk /dev/disk2&#xA;# sudo dd if=/path/to/refit-0.14.img.dmg of=/dev/rdisk2 bs=1m&#xA;Het gebruik van rdisk2 hier lijkt de zaken te versnellen&#xA;&#xA;# diskutil eject /dev/disk2&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>rEFIt installeren op de EFI-partitie van een iMac</title>
-      <link>http://localhost:1313/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link>
+      <link>https://www.vandenboom.icu/blog/2024-refit-installation-to-efi-partition-of-an-imac/</link>
       <pubDate>Thu, 27 Jun 2024 22:27:46 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-refit-installation-to-efi-partition-of-an-imac/</guid>
       <description>&lt;p&gt;V﻿olg de onderstaande stappen om rEFIt te installeren op de EFI-partitie van een iMac&lt;/p&gt;&#xA;&lt;p&gt;D﻿ownload rEFIt en kopieer de efi-map naar de /efi-map zoals hieronder uitgelegd&lt;br&gt;&#xA;&lt;br&gt;&#xA;V﻿oordat u het bless-commando uitvoert, schakelt u de SIP uit&lt;br&gt;&#xA;Start op in herstelmodus&lt;br&gt;&#xA;#﻿ csrutil status&lt;br&gt;&#xA;#﻿ csrutil disable&lt;br&gt;&#xA;#﻿ reboot&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mkdir /efi&#xA;&#xA;sudo mount -t msdos /dev/disk0s1 /efi&#xA;&#xA;sudo bless --mount /efi --setBoot --file /efi/EFI/refit/refit.efi --labelfile /efi/EFI/refit/refit.vollabel&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>SSH naar een externe machine met SSH-sleutels en commando uitvoeren in nieuw Python 3</title>
-      <link>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</link>
       <pubDate>Wed, 03 Apr 2024 20:20:39 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/</guid>
       <description>&lt;p&gt;O﻿m een script te maken voor het uitvoeren van externe commando&amp;rsquo;s in een client-servernetwerk.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import subprocess&#xA;&#xA;def ssh_exec_command(hostname, username, command):&#xA;    ssh_cmd = [&amp;#39;ssh&amp;#39;, f&amp;#39;{username}@{hostname}&amp;#39;, command]&#xA;    ssh_process = subprocess.Popen(&#xA;        ssh_cmd,&#xA;        stdin=subprocess.PIPE,&#xA;        stdout=subprocess.PIPE,&#xA;        stderr=subprocess.PIPE,&#xA;        text=True&#xA;    )&#xA;    output, error = ssh_process.communicate()&#xA;&#xA;    if error:&#xA;        print(&amp;#34;Error:&amp;#34;, error)&#xA;    else:&#xA;        print(&amp;#34;Output:&amp;#34;, output)&#xA;&#xA;# Vervang deze door uw werkelijke inloggegevens en commando&#xA;hostname = &amp;#39;remote_host_address&amp;#39;&#xA;username = &amp;#39;your_username&amp;#39;&#xA;command = &amp;#39;ls -l&amp;#39;&#xA;&#xA;ssh_exec_command(hostname, username, command)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>SSH naar een externe machine met SSH-sleutels en commando uitvoeren in oud Python 2</title>
-      <link>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</link>
       <pubDate>Wed, 03 Apr 2024 20:12:58 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/</guid>
       <description>&lt;p&gt;I﻿n het geval u een oud legacysysteem heeft waarop nog Python 2 wordt gebruikt en u een script wilt maken om bepaalde commando&amp;rsquo;s uit te voeren in een client-servernetwerk.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import subprocess&#xA;&#xA;def ssh_exec_command(hostname, username, private_key_path, command):&#xA;    ssh_cmd = [&amp;#39;ssh&amp;#39;, &amp;#39;-i&amp;#39;, private_key_path, &amp;#39;-o&amp;#39;, &amp;#39;StrictHostKeyChecking=no&amp;#39;, f&amp;#39;{username}@{hostname}&amp;#39;, command]&#xA;    ssh_process = subprocess.Popen(&#xA;        ssh_cmd,&#xA;        stdin=subprocess.PIPE,&#xA;        stdout=subprocess.PIPE,&#xA;        stderr=subprocess.PIPE&#xA;    )&#xA;    output, error = ssh_process.communicate()&#xA;&#xA;    if error:&#xA;        print(&amp;#34;Error:&amp;#34;, error)&#xA;    else:&#xA;        print(&amp;#34;Output:&amp;#34;, output)&#xA;&#xA;# Vervang deze door uw werkelijke inloggegevens en commando&#xA;hostname = &amp;#39;remote_host_address&amp;#39;&#xA;username = &amp;#39;your_username&amp;#39;&#xA;private_key_path = &amp;#39;/path/to/your/private_key&amp;#39;&#xA;command = &amp;#39;ls -l&amp;#39;&#xA;&#xA;ssh_exec_command(hostname, username, private_key_path, command)&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>LDAP/IPA Server configureren met Jenkins</title>
-      <link>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-jenkins/</link>
+      <link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-jenkins/</link>
       <pubDate>Sat, 09 Mar 2024 17:38:50 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-jenkins/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-jenkins/</guid>
       <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Identity, Policy, and Audit (IPA) systeem&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Jenkins&lt;/p&gt;&#xA;&lt;p&gt;2.319.2&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Dashboard -&amp;gt; Beveiliging -&amp;gt; Globale beveiliging configureren&lt;/p&gt;&#xA;&lt;p&gt;Server:&lt;/p&gt;&#xA;&lt;p&gt;ldap://&amp;lt;IP_SERVER&amp;gt;:389&lt;/p&gt;&#xA;&lt;p&gt;Basis-DN:&lt;/p&gt;&#xA;&lt;p&gt;dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;p&gt;Zoekbasis gebruikers&lt;/p&gt;&#xA;&lt;p&gt;cn=users,cn=accounts&lt;/p&gt;&#xA;&lt;p&gt;Zoekfilter gebruikers&lt;/p&gt;&#xA;&lt;p&gt;uid={0}&lt;/p&gt;&#xA;&lt;p&gt;Zoekbasis groepen&lt;/p&gt;&#xA;&lt;p&gt;cn=groups,cn=accounts&lt;/p&gt;&#xA;&lt;p&gt;Groepslidmaatschap -&amp;gt; Zoeken naar LDAP-groepen die gebruiker bevatten -&amp;gt; Groepslidmaatschapsfilter:&lt;/p&gt;&#xA;&lt;p&gt;(| (member={0}) (uniqueMember={0}) (memberUid={1}))&lt;/p&gt;&#xA;&lt;p&gt;Beheerder-DN:&lt;/p&gt;&#xA;&lt;p&gt;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;</description>
     </item>
     <item>
       <title>LDAP/IPA Server configureren met Nexus</title>
-      <link>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-nexus/</link>
+      <link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-nexus/</link>
       <pubDate>Sat, 09 Mar 2024 17:37:42 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-nexus/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-nexus/</guid>
       <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Nexus&lt;/p&gt;&#xA;&lt;p&gt;Sonatype Nexus Repository&lt;/p&gt;&#xA;&lt;p&gt;OSS 3.60.0-02&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;LDAP&lt;/p&gt;&#xA;&lt;p&gt;ldap://&amp;lt;IP_SERVER&amp;gt;:389&lt;/p&gt;&#xA;&lt;p&gt;cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;p&gt;Eenvoudige verificatie&lt;/p&gt;&#xA;&lt;p&gt;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;pw&gt;&#xA;&lt;p&gt;Volgende&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Geen sjabloon selecteren&lt;/p&gt;&#xA;&lt;p&gt;Relatieve DN gebruikers = leeg&lt;/p&gt;&#xA;&lt;p&gt;Gebruikerssubstructuur = uitgeschakeld&lt;/p&gt;&#xA;&lt;p&gt;Objectklasse: inetOrgPerson&lt;/p&gt;&#xA;&lt;p&gt;Gebruikersfilter = leeg&lt;/p&gt;&#xA;&lt;p&gt;Gebruikers-ID attribuut = uid&lt;/p&gt;&#xA;&lt;p&gt;Echte naam attribuut = cn&lt;/p&gt;&#xA;&lt;p&gt;E-mail attribuut = mail&lt;/p&gt;&#xA;&lt;p&gt;Wachtwoord attribuut = leeg&lt;/p&gt;&#xA;&lt;p&gt;LDAP-groepen als rollen koppelen = uitgeschakeld&lt;/p&gt;</description>
     </item>
     <item>
       <title>LDAP/IPA Server configureren met Sonarqube</title>
-      <link>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-sonarqube/</link>
+      <link>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-sonarqube/</link>
       <pubDate>Sat, 09 Mar 2024 17:35:22 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-configure-ldap-ipa-server-with-sonarqube/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-configure-ldap-ipa-server-with-sonarqube/</guid>
       <description>&lt;p&gt;&lt;strong&gt;LDAP/IPA Server configureren met Sonarqube&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Sonarqube&lt;/p&gt;&#xA;&lt;p&gt;8.9.6&lt;/p&gt;&#xA;&lt;p&gt;sonar.properties&lt;/p&gt;&#xA;&lt;p&gt;sonarqube-8.9.6/conf/sonar.properties&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;sonar.security.realm=LDAP&lt;/p&gt;&#xA;&lt;p&gt;ldap.url=ldap://&amp;lt;IP_SERVER&amp;gt;:389&lt;/p&gt;&#xA;&lt;p&gt;ldap.bindDn=uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;p&gt;ldap.bindPassword=&lt;PASSWORD&gt;&lt;/p&gt;&#xA;&lt;p&gt;ldap.authentication=simple&lt;/p&gt;&#xA;&lt;p&gt;ldap.user.baseDn=cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;p&gt;# laat volgende default&lt;/p&gt;&#xA;&lt;p&gt;# ldap.user.request=&lt;/p&gt;&#xA;&lt;p&gt;# LDAP gebruikersverzoek. (standaard: (&amp;amp;(objectClass=inetOrgPerson)(uid={login})) )&lt;/p&gt;&#xA;&lt;p&gt;ldap.group.baseDn=cn=groups,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&lt;/p&gt;&#xA;&lt;p&gt;# laat volgende default&lt;/p&gt;&#xA;&lt;p&gt;# ldap.group.request=&lt;/p&gt;&#xA;&lt;p&gt;# LDAP groepsverzoek (standaard: (&amp;amp;(objectClass=groupOfUniqueNames)(uniqueMember={dn})) )&lt;/p&gt;</description>
     </item>
     <item>
       <title>LDAP/IPA Server zoekopdrachten via de opdrachtregel</title>
-      <link>http://localhost:1313/blog/2024-ldap-ipa-server-command-line-searches/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-command-line-searches/</link>
       <pubDate>Sat, 09 Mar 2024 17:34:27 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-command-line-searches/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-command-line-searches/</guid>
       <description>&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;FQDN_SERVER&amp;gt;/ -b dc=&lt;NETWORK&gt;,dc=com -x&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -x -LLL -H ldap:/// -b dc=&lt;NETWORK&gt;,dc=com dn&lt;/p&gt;&#xA;&lt;p&gt;$ ldapwhoami -x -H ldap:///&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -b &amp;ldquo;cn=users,cn=accounts,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -x -W&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -H ldap://&amp;lt;IP_SERVER&amp;gt; -D &amp;ldquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -b &amp;ldquo;dc=&lt;NETWORK&gt;,dc=com&amp;rdquo; -x -W -s one &amp;ldquo;(&amp;amp;(objectClass=organizationalUnit)&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&amp;lt;ADMIN_USER&amp;gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -W uid=&amp;lt;ADMIN_USER&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;$ ldapsearch -h &amp;lt;FQDN_SERVER&amp;gt; -D &amp;lsquo;uid=&lt;USER&gt;,cn=users,cn=compat,dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -o ldif-wrap=no -b &amp;lsquo;dc=&lt;NETWORK&gt;,dc=com&amp;rsquo; -W uid=&lt;USER&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>LDAP/IPA Server clientinstallatie</title>
-      <link>http://localhost:1313/blog/2024-ldap-ipa-server-client-installation/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-client-installation/</link>
       <pubDate>Sat, 09 Mar 2024 17:33:26 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-client-installation/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-client-installation/</guid>
       <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;# yum install ipa-client&lt;/p&gt;&#xA;&lt;p&gt;# ipa-client-install &amp;ndash;server=&lt;FQDN&gt; &amp;ndash;domain=&lt;NETWORK&gt; &amp;ndash;principal=admin -W&lt;/p&gt;&#xA;&lt;p&gt;# ipa-client-install &amp;ndash;server=&amp;lt;&lt;a href=&#34;http://ipa-server.example.com&#34;&gt;ipa-server.example.com&lt;/a&gt;&amp;gt; &amp;ndash;domain=&amp;lt;example.com&amp;gt; &amp;ndash;principal=admin -W&lt;/p&gt;</description>
     </item>
     <item>
       <title>LDAP/IPA Server installatie</title>
-      <link>http://localhost:1313/blog/2024-ldap-ipa-server-installation/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-installation/</link>
       <pubDate>Sat, 09 Mar 2024 17:31:40 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-installation/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-installation/</guid>
       <description>&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;# yum install ipa-server&lt;/p&gt;&#xA;&lt;p&gt;# ipa-server-install&lt;/p&gt;&#xA;&lt;p&gt;===&lt;/p&gt;&#xA;&lt;p&gt;Hosts bestand aanpassen&lt;/p&gt;&#xA;&lt;p&gt;De FQDN voor op, daarna pas de aliassen&lt;/p&gt;&#xA;&lt;p&gt;/etc/hosts&lt;/p&gt;&#xA;&lt;p&gt;&amp;lt;IP_SERVER&amp;gt;   &lt;FQDN&gt; &lt;ALIAS1&gt; (&lt;ALIAS2&gt;)&lt;/p&gt;&#xA;&lt;p&gt;Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LDAP/IPA - Server op Red Hat Enterprise Linux 7</title>
-      <link>http://localhost:1313/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link>
+      <link>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</link>
       <pubDate>Thu, 15 Feb 2024 10:47:28 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/</guid>
       <description>&lt;p&gt;A﻿ls je gebruikt maakt van een hosts file, let dan goed op dat er FQDN&amp;rsquo;s in staan en de volgorde waarin.&lt;/p&gt;&#xA;&lt;p&gt;C﻿ontroleer de hosts file en pas deze eventueel aan:&lt;/p&gt;&#xA;&lt;p&gt;De FQDN voorop, daarna pas de aliassen.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/etc/hosts&#xA;&#xA;10.0.0.1   server1.example.com    server1    applicatie1&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Maak een Zombie proces in Linux m.b.v. een C programma</title>
-      <link>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link>
+      <link>https://www.vandenboom.icu/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</link>
       <pubDate>Wed, 31 Jan 2024 20:54:45 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/</guid>
       <description>&lt;p&gt;Hierbij de broncode van een C programma om een Zombie proces in Linux te maken en deze te kunnen analyseren.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#include &amp;lt;stdlib.h&amp;gt;&#xA;#include &amp;lt;sys/types.h&amp;gt;&#xA;#include &amp;lt;unistd.h&amp;gt;&#xA;&#xA;int main ()&#xA;{&#xA;  pid_t child_pid;&#xA;&#xA;  child_pid = fork ();&#xA;  if (child_pid &amp;gt; 0) {&#xA;    sleep (60);&#xA;  }&#xA;  else {&#xA;    exit (0);&#xA;  }&#xA;  return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;C﻿ompileer de C broncode in een uitvoerbaar programma:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gcc create_zombie_process.c&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;S﻿tart het programma:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./a.out&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;O﻿pen een tweede Terminal en bekijk de proces lijst, hier zie je nu een proces met een STAT: Z en de tekst: defunct&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bash script met een SUCCES of FAILED melding aan het einde van de regel</title>
-      <link>http://localhost:1313/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/</link>
+      <link>https://www.vandenboom.icu/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/</link>
       <pubDate>Wed, 31 Jan 2024 20:18:39 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/</guid>
       <description>&lt;p&gt;Z﻿ie hieronder een voorbeeld script om aan het einde van de regel helemaal rechts uitgelijnd een SUCCES melding in het groen of een FAILED melding in het rood te krijgen.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#!/bin/bash&#xA;&#xA;# Set the message&#xA;success_message=&amp;#34;Your command was successful&amp;#34;&#xA;failed_message=&amp;#34;Your command failed&amp;#34;&#xA;&#xA;# Set the &amp;#34;OK&amp;#34; string in green&#xA;ok=&amp;#34;$(tput setaf 2)[SUCCES]$(tput sgr0)&amp;#34;&#xA;failed=&amp;#34;$(tput setaf 1)[FAILED]$(tput sgr0)&amp;#34;&#xA;&#xA;# Get the width of the terminal&#xA;term_width=$(tput cols)+9&#xA;&#xA;# Calculate the number of dots needed&#xA;success_dots_count=$((term_width - ${#success_message} - ${#ok}))&#xA;failed_dots_count=$((term_width - ${#failed_message} - ${#failed}))&#xA;&#xA;# Create a string of dots for success and failed messages&#xA;success_dots=$(printf &amp;#34;%0.s.&amp;#34; $(seq 1 $success_dots_count))&#xA;failed_dots=$(printf &amp;#34;%0.s.&amp;#34; $(seq 1 $failed_dots_count))&#xA;&#xA;# Print the success message with dots and &amp;#34;OK&amp;#34; at the end of the line&#xA;printf &amp;#34;%s%s%s\n&amp;#34; &amp;#34;$success_message &amp;#34; &amp;#34;$success_dots&amp;#34; &amp;#34; $ok&amp;#34;&#xA;&#xA;# Print the failed message with dots and &amp;#34;FAILED&amp;#34; at the end of the line&#xA;printf &amp;#34;%s%s%s\n&amp;#34; &amp;#34;$failed_message &amp;#34; &amp;#34;$failed_dots&amp;#34; &amp;#34; $failed&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Checkmk installatie op Rocky Linux 9.3</title>
-      <link>http://localhost:1313/blog/2024-checkmk-installation-on-rocky-linux-9-3/</link>
+      <link>https://www.vandenboom.icu/blog/2024-checkmk-installation-on-rocky-linux-9-3/</link>
       <pubDate>Tue, 16 Jan 2024 21:13:15 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-checkmk-installation-on-rocky-linux-9-3/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-checkmk-installation-on-rocky-linux-9-3/</guid>
       <description>&lt;p&gt;Checkmk installatie op Rocky Linux 9.3&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;&#xA;setsebool -P httpd_can_network_connect 1&#xA;&#xA;firewall-cmd --zone=public --add-service=http --permanent&#xA;firewall-cmd --reload&#xA;&#xA;wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm&#xA;&#xA;omd version&#xA;omd create monitoring&#xA;omd start monitoring&#xA;&#xA;http://localhost.localdomain/monitoring/&#xA;gebruiker: cmkadmin met wachtwoord: &amp;lt;opgegeven&amp;gt;&#xA;&#xA;omd su monitoring (Voor beheer via de opdrachtregel van de site.)&#xA;cmk-passwd cmkadmin (Na het inloggen kun je het wachtwoord voor cmkadmin wijzigen met.)&#xA;&#xA;(optioneel)&#xA;omd status&#xA;omd sites&#xA;omd help&#xA;&#xA;(optioneel na herstart als je de foutmelding krijgt: Unable to connect)&#xA;omd update-apache-config monitoring&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>De VirtualBox Guest Additions installeren op Rocky Linux 9.3</title>
-      <link>http://localhost:1313/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
+      <link>https://www.vandenboom.icu/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</link>
       <pubDate>Tue, 16 Jan 2024 21:08:26 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/</guid>
       <description>&lt;p&gt;&lt;strong&gt;De VirtualBox Guest Additions installeren op Rocky Linux 9.3&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dnf install epel-release&#xA;dnf update --refresh&#xA;dnf update kernel-*&#xA;reboot (optioneel)&#xA;&#xA;dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel&#xA;&#xA;rpm -q kernel-devel&#xA;uname -r&#xA;&#xA;Bovenmenu: Apparaten -&amp;gt; Gast-uitbreidingen CD-image invoegen&#xA;Uitvoeren&#xA;&#xA;(optioneel)&#xA;cd /run/media/&#xA;./VBoxLinuxAdditions.run&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>PowerShell computerresourcemonitor-script met cpu-percentage en uitgebreide geheugeninformatie</title>
-      <link>http://localhost:1313/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/</link>
+      <link>https://www.vandenboom.icu/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/</link>
       <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/</guid>
+      <guid>https://www.vandenboom.icu/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/</guid>
       <description>&lt;p&gt;PowerShell computerresourcemonitor-script met cpu-percentage en uitgebreide geheugeninformatie&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PowerShell&#xA;&#xA;Resourcemonitor&#xA;&#xA;&#xA; $app=&amp;#34;notepad&amp;#34;&#xA; $ids = Get-Process $app | Select-Object -Property Id | ForEach-Object {$_.Id}&#xA;&#xA; $filedate = Get-Date -format &amp;#34;yyyy-MM-dd&amp;#34;&#xA;&#xA; #echo $pids&#xA;&#xA; foreach ($id in $ids) {&#xA;&#xA;   $date = Get-Date -format &amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34;&#xA;&#xA;   # CPU-informatie van het proces&#xA;&#xA;   $ProcessId = $id&#xA;   $Process = Get-WmiObject -Query &amp;#34;SELECT * FROM Win32_PerfFormattedData_PerfProc_Process WHERE IDProcess = $ProcessId&amp;#34;&#xA;   $usage = $Process.PercentProcessorTime&#xA;&#xA;&#xA;   # Geheugeninformatie van het proces&#xA;&#xA;   $TotalMemory = (Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory / 1GB&#xA;&#xA;   $ProcessMem = Get-CIMInstance Win32_Process -Filter &amp;#34;ProcessId = &amp;#39;$id&amp;#39;&amp;#34;&#xA;   $MemSizeInKB = $ProcessMem.WS/1KB&#xA;   $PeakWorkingSetInKB = $Process.PeakWorkingSet/1KB&#xA;   $PageCountInKB = $ProcessMem.PrivatePageCount/1KB&#xA;   $NonPagedPoolInKB = $ProcessMem.QuotaNonPagedPoolUsage/1KB&#xA;   $PagedPoolInKB = $ProcessMem.QuotaPagedPoolUsage/1KB&#xA;&#xA;   $TotalMemory = &amp;#34;{0:n3}&amp;#34; -f $TotalMemory&#xA;   $MemSizeInKB = &amp;#34;{0:n3}&amp;#34; -f $MemSizeInKB&#xA;   $PeakWorkingSetInKB = &amp;#34;{0:n3}&amp;#34; -f $PeakWorkingSetInKB&#xA;   $PageCountInKB = &amp;#34;{0:n3}&amp;#34; -f $PageCountInKB&#xA;   $NonPagedPoolInKB = &amp;#34;{0:n3}&amp;#34; -f $NonPagedPoolInKB&#xA;   $PagedPoolInKB = &amp;#34;{0:n3}&amp;#34; -f $PagedPoolInKB&#xA;&#xA;   #write-host &amp;#34;$TotalMemory&amp;#34;&#xA;   #write-host &amp;#34;$MemSizeInKB&amp;#34;&#xA;   #write-host &amp;#34;$PeakWorkingSetInKB&amp;#34;&#xA;   #write-host &amp;#34;$PageCountInKB&amp;#34;&#xA;   #write-host &amp;#34;$NonPagedPoolInKB&amp;#34;&#xA;   #write-host &amp;#34;$PagedPoolInKB&amp;#34;&#xA;&#xA;   # Opdrachtregel-informatie&#xA;   $commandline = (Get-CimInstance Win32_Process -Filter &amp;#34;ProcessId=$id&amp;#34;).CommandLine&#xA;&#xA;   $FileName = $filedate+&amp;#34;_memory_usage.txt&amp;#34;&#xA;   $FullPath = Join-Path -Path &amp;#34;C:\Users\mvdbo\OneDrive\Documenten\PowerShell&amp;#34; -ChildPath $FileName&#xA;&#xA;   $regel = &amp;#34;$date - pid: $id - cpu: $usage % - mem: $MemSizeInKB KB - pws: $PeakWorkingSetInKB KB - pc: $PageCountInKB KB - pp: $PagedPoolInKB KB - command: $commandline&amp;#34;&#xA;   $regel | Out-File -FilePath $FullPath -Encoding utf8 -Append&#xA;&#xA; }&#xA;&#xA; # Bronnen&#xA; # https://learn.microsoft.com/en-us/windows/win32/psapi/process-memory-usage-information&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>macOS desktop extended over 3 schermen: iMac, MacBook en iPad</title>
-      <link>http://localhost:1313/blog/2023-macos-desktop-extended-over-3-schermen/</link>
+      <link>https://www.vandenboom.icu/blog/2023-macos-desktop-extended-over-3-schermen/</link>
       <pubDate>Sun, 26 Nov 2023 15:16:27 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-macos-desktop-extended-over-3-schermen/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-macos-desktop-extended-over-3-schermen/</guid>
       <description>&lt;p&gt;In de setup die ik gebruik heb ik de volgende 3 apparaten:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;iMac 27” late 2015 met OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;MacBook Pro 15” late 2016 met OpenCore Legacy Patcher Sonoma: 14.1.1&lt;/li&gt;&#xA;&lt;li&gt;iPad 10.2” 7th Gen met iPadOS-versie: 17.1.1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Ze zijn op hetzelfde WiFi netwerk verbonden.&lt;/p&gt;&#xA;&lt;p&gt;Stappen:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Op de iMac ga naar: System Settings -&amp;gt; Displays&lt;/li&gt;&#xA;&lt;li&gt;Klik op het plusje rechts naast de Built-in Display&lt;/li&gt;&#xA;&lt;li&gt;Kies onder Mirror or Extend to: MacBook Pro&lt;/li&gt;&#xA;&lt;li&gt;Kies onder Link keyboard and mouse to: iPad&lt;/li&gt;&#xA;&lt;li&gt;Nu zie je onder de Displays de 3 schermen, maar het is nog niet extended over de 3&lt;/li&gt;&#xA;&lt;li&gt;Klik op de iPad&lt;/li&gt;&#xA;&lt;li&gt;Kies bij de optie: “Use as” - voor: Extend or mirrored display&lt;/li&gt;&#xA;&lt;li&gt;Nu zie je op alle 3 de apparaten het zelfde bureaublad&lt;/li&gt;&#xA;&lt;li&gt;En kun je applicaties schuiven vanaf de iMac naar de MacBook of de iPad&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Meerdere versies van Java op macOS</title>
-      <link>http://localhost:1313/blog/2023-multiple-versions-of-java-on-macos/</link>
+      <link>https://www.vandenboom.icu/blog/2023-multiple-versions-of-java-on-macos/</link>
       <pubDate>Wed, 27 Sep 2023 17:43:18 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-multiple-versions-of-java-on-macos/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-multiple-versions-of-java-on-macos/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ls -al /usr/local/opt/ | grep -i openjdk&#xA;&#xA;$ brew install jenv&#xA;&#xA;$ jenv add /Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home/&#xA;&#xA;$ jenv versions&#xA;$ jenv local 1.8&#xA;$ java -version&#xA;$ jenv global 1.8&#xA;$ java -version&#xA;$ jenv shell 1.8&#xA;$ java -version&#xA;$ jenv versions&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Het Linux mlocate-commando op macOS</title>
-      <link>http://localhost:1313/blog/2023-the-linux-mlocate-command-under-macos/</link>
+      <link>https://www.vandenboom.icu/blog/2023-the-linux-mlocate-command-under-macos/</link>
       <pubDate>Wed, 27 Sep 2023 17:40:13 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-the-linux-mlocate-command-under-macos/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-the-linux-mlocate-command-under-macos/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Het Linux mlocate-commando op macOS&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo /usr/libexec/locate.updatedb&#xA;&#xA;sudo ln -s /usr/libexec/locate.updatedb /usr/local/bin/updatedb&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Bestanden delen met MS-DOS 6.22 in VirtualBox en macOS</title>
-      <link>http://localhost:1313/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link>
+      <link>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</link>
       <pubDate>Sun, 17 Sep 2023 12:29:24 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-sharing-files-with-ms-dos-6-22-in-virtualbox-and-macos/</guid>
       <description>&lt;p&gt;Hoe maak je een ISO-bestand van een map op macOS dat als CDROM gekoppeld kan worden in MS-DOS 6.22?&lt;/p&gt;&#xA;&lt;p&gt;Start Schijfhulpprogramma op macOS&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ga naar: Archief -&amp;gt; Nieuwe afbeelding -&amp;gt; Afbeelding van map&lt;/li&gt;&#xA;&lt;li&gt;Kies de map en druk op Kies&lt;/li&gt;&#xA;&lt;li&gt;Stel Afbeeldingsformaat in op: DVD/CD-master en druk op Bewaar&lt;/li&gt;&#xA;&lt;li&gt;Er wordt een *.cdr-bestand aangemaakt&lt;/li&gt;&#xA;&lt;li&gt;Ga naar de opdrachtregel&lt;/li&gt;&#xA;&lt;li&gt;Navigeer naar de map met het *.cdr-bestand&lt;/li&gt;&#xA;&lt;li&gt;Typ het commando: $ hdiutil makehybrid -iso -joliet -o tcc.iso TCC.cdr&lt;/li&gt;&#xA;&lt;li&gt;Ga naar je virtuele machine met MS-DOS 6.22 en koppel het nieuw aangemaakte *.iso-bestand&lt;/li&gt;&#xA;&lt;li&gt;In de MS-DOS 6.22 virtuele machine heb je nu toegang tot de inhoud op station D:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/br&gt;&#xA;&lt;p&gt;Vragen?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux schijfruimte-informatie overzichtelijker weergeven zonder de geweigerd- en kan-niet-berichten</title>
-      <link>http://localhost:1313/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</link>
+      <link>https://www.vandenboom.icu/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</link>
       <pubDate>Tue, 05 Sep 2023 06:23:38 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/</guid>
       <description>&lt;p&gt;$ du -hs * 2&amp;gt; &amp;gt;(egrep -iv &amp;lsquo;permission denied|cannot access&amp;rsquo;) | sort -n&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linux zoek verloren opslagruimte op door het verschil tussen df en du te achterhalen</title>
-      <link>http://localhost:1313/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</link>
+      <link>https://www.vandenboom.icu/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</link>
       <pubDate>Tue, 05 Sep 2023 06:18:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/</guid>
       <description>&lt;p&gt;$ lsof | grep -E &amp;lsquo;^COM|deleted&amp;rsquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hoe brand je een *.iso-bestand naar cd of dvd in Windows</title>
-      <link>http://localhost:1313/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</link>
+      <link>https://www.vandenboom.icu/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</link>
       <pubDate>Fri, 21 Jul 2023 17:04:59 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-how-to-burn-an-iso-file-to-cd-or-dvd-in-windows/</guid>
       <description>&lt;p&gt;Klik in Verkenner met de rechtermuisknop op het *.ISO-bestand en kies Eigenschappen.&lt;/br&gt;Klik vervolgens op Wijzigen op het tabblad Algemeen, kies Windows Verkenner en klik op OK.&lt;/br&gt;Sla de wijziging daarna op door op Toepassen &amp;gt; OK te klikken.&lt;/br&gt; Klik nu met de rechtermuisknop op het *.ISO-bestand en kies: Schijfimage branden, of kies: Meer opties weergeven om dit te vinden.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Een Website opslaan precies zoals deze eruit ziet</title>
-      <link>http://localhost:1313/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</link>
+      <link>https://www.vandenboom.icu/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</link>
       <pubDate>Wed, 05 Jul 2023 18:02:27 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-een-website-opslaan-precies-zoals-deze-eruit-ziet/</guid>
       <description>&lt;p&gt;Een Website opslaan precies zoals deze eruit ziet &lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;(1) Met de Microsoft Edge Browser:&lt;/p&gt;&#xA;&lt;p&gt;stap 1.: ben je op de website die je op wilt slaan? Of ga er naartoe.&lt;/p&gt;&#xA;&lt;p&gt;stap 2.: klik op de 3 puntjes recht boven in beeld &amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;stap 3.: klik op: Webopname (met het camera icoontje)&lt;/p&gt;&#xA;&lt;p&gt;stap 4.: kies voor de optie: Volledige pagina vastleggen&lt;/p&gt;&#xA;&lt;p&gt;stap 5.: klik rechtsboven in beeld op het schijfje icoontje (Opslaan)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Anoniem zoeken op het Internet, bescherm je privacy</title>
-      <link>http://localhost:1313/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</link>
+      <link>https://www.vandenboom.icu/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</link>
       <pubDate>Wed, 21 Jun 2023 17:10:45 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-anoniem-zoeken-op-het-internet-bescherm-je-privacy/</guid>
       <description>&lt;p&gt;W﻿il je anoniem blijven als je op het Internet gaat zoeken?&lt;/p&gt;&#xA;&lt;p&gt;G﻿ebruik dan een andere webbrowser, de Tor Browser is speciaal ontwikkeld om anoniem te blijven.&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 1.: ga naar de website: &lt;a href=&#34;https://www.torproject.org/&#34;&gt;https://www.torproject.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 2.: download de Tor Browser&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 3.: installeer de nieuwe applicatie&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;L﻿et op! Verander de grootte van het applicatie window niet, dit kan al informatie over jouw identiteit vrijgeven. Het advies, doe dit dus niet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Microsoft maakt Office gratis beschikbaar op de website</title>
-      <link>http://localhost:1313/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</link>
+      <link>https://www.vandenboom.icu/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</link>
       <pubDate>Wed, 21 Jun 2023 16:46:56 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-microsoft-maakt-office-gratis-beschikbaar-op-de-website/</guid>
       <description>&lt;p&gt;H﻿eb je al een Microsoft account?&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 1.: log in op de website: office.com&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 2.: klik op het icoontje met de 9 puntjes links bovenin beeld&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 3.: kies de office app die je wilt gebruiken&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;A﻿ls je nog geen Microsoft account hebt kun je er een gratis aanmaken.&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 1.: ga naar de website: account.microsoft.com&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 2.: klik op de knop aanmelden&lt;/p&gt;&#xA;&lt;p&gt;S﻿tap 3.: klik op de link: Maak nu een account&lt;/p&gt;</description>
     </item>
     <item>
       <title>Snelkoppeling maken met een icoontje op het bureaublad</title>
-      <link>http://localhost:1313/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</link>
+      <link>https://www.vandenboom.icu/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</link>
       <pubDate>Wed, 10 May 2023 19:09:51 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-snelkoppeling-maken-met-een-icoontje-op-het-bureaublad/</guid>
       <description>&lt;p&gt;Deel 1: de snelkoppeling maken&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ga naar de website die je handig vindt en waar je snel toegang toe wilt hebben&#xA;&lt;/br&gt;Bijvoorbeeld: nu.nl , open in je browser: https:/www.nu.nl&lt;/li&gt;&#xA;&lt;li&gt;Klik (met de linkermuisknop) op de adresbalk waar het adres van de website staat, deze wordt nu blauw.&#xA;&lt;/br&gt;Als het niet automatisch blauw wordt, moet je het adres selecteren en zelf blauw maken&lt;/li&gt;&#xA;&lt;li&gt;Klik (met de rechtermuisknop) op de blauwe tekst en kies voor: Kopieren&lt;/li&gt;&#xA;&lt;li&gt;Klik op het minteken om de webbrowser te minimaliseren, zodat je het bureaublad ziet&lt;/li&gt;&#xA;&lt;li&gt;Klik (met de rechtermuisknop) op het bureaublad en kies: Nieuw -&amp;gt; Snelkoppeling&lt;/li&gt;&#xA;&lt;li&gt;Klik (rechtermuisknop) in de rechthoek van de locatie en kies: Plakken&lt;/li&gt;&#xA;&lt;li&gt;Klik op volgende&lt;/li&gt;&#xA;&lt;li&gt;Geef de snelkoppeling de naam van de website en klik op: Voltooien&#xA;&lt;/br&gt;&lt;/br&gt;Nu heb je je snelkoppeling&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Deel 2: het icoontje aanpassen naar het logo van de website&lt;/p&gt;</description>
     </item>
     <item>
       <title>Al gehoord van: ChatGPT? Vind antwoorden op al je moeilijke vragen!</title>
-      <link>http://localhost:1313/blog/2023-al-gehoord-van-chatgpt-vind-antwoorden-op-al-je-moeilijke-vragen/</link>
+      <link>https://www.vandenboom.icu/blog/2023-al-gehoord-van-chatgpt-vind-antwoorden-op-al-je-moeilijke-vragen/</link>
       <pubDate>Sun, 30 Apr 2023 13:15:53 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-al-gehoord-van-chatgpt-vind-antwoorden-op-al-je-moeilijke-vragen/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-al-gehoord-van-chatgpt-vind-antwoorden-op-al-je-moeilijke-vragen/</guid>
       <description>&lt;p&gt;Zoek je antwoord op je moeilijke vragen? Vragen waarvan je het maar niet lukt om het antwoord te vinden? En zelfs niet op Google?&lt;/p&gt;&#xA;&lt;p&gt;Krijg nu echt directe antwoorden op je vragen met ChatGPT.&lt;/p&gt;&#xA;&lt;p&gt;Zie: &lt;a href=&#34;https://chat.openai.com&#34;&gt;&lt;a href=&#34;https://chat.openai.com&#34;&gt;https://chat.openai.com&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/br&gt;&#xA;&lt;p&gt;Je kunt vragen stellen zoals bijvoorbeeld:&lt;/p&gt;&#xA;&lt;p&gt;Waarom leven wij hier op aarde?&lt;/p&gt;&#xA;&lt;p&gt;Waarom is Engeland uit de Europese Unie gestapt in de Brexit?&lt;/p&gt;&#xA;&lt;p&gt;Wat kun je het beste doen om iemand te beschermen en een ondraaglijke pijn te voorkomen?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Breng een oude / 2e handse Apple Mac computer weer tot leven met OpenCore Legacy Patcher</title>
-      <link>http://localhost:1313/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</link>
+      <link>https://www.vandenboom.icu/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-breng-een-oude-2e-handse-apple-mac-computer-weer-tot-leven-met-opencore-legacy-patcher/</guid>
       <description>&lt;p&gt;Is computeren je hobby en heb je altijd al een Apple Mac willen proberen? Een tip / aanrader is dan OpenCore Lagacy Patcher.&lt;/p&gt;&#xA;&lt;p&gt;Zie de officiele website: &lt;a href=&#34;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&#34;&gt;&lt;a href=&#34;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&#34;&gt;https://github.com/dortania/OpenCore-Legacy-Patcher/releases&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;En het YouTube kanaal: &lt;a href=&#34;https://www.youtube.com/@Mr.Macintosh&#34;&gt;&lt;a href=&#34;https://www.youtube.com/@Mr.Macintosh&#34;&gt;https://www.youtube.com/@Mr.Macintosh&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Met deze tool kun je oudere / 2e hands en inmiddels goedkoper geworden hardware nog steeds met de nieuwste software gebruiken. Echt de moeite waard om een keer te proberen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Maak een Windows - God Mode - snelkoppeling</title>
-      <link>http://localhost:1313/blog/2023-maak-een-windows-god-mode-snelkoppeling/</link>
+      <link>https://www.vandenboom.icu/blog/2023-maak-een-windows-god-mode-snelkoppeling/</link>
       <pubDate>Sun, 05 Mar 2023 13:40:14 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-maak-een-windows-god-mode-snelkoppeling/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-maak-een-windows-god-mode-snelkoppeling/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;Klik met je rechtermuisknop op het Bureaublad&lt;/li&gt;&#xA;&lt;li&gt;Kies voor: New -&amp;gt; Folder&lt;/li&gt;&#xA;&lt;li&gt;Geef de map de naam: GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}&lt;/li&gt;&#xA;&lt;li&gt;Open de map voor heel veel geavanceerde instellingen&lt;/li&gt;&#xA;&lt;li&gt;De snelkoppelingen in deze map kunnen gekopieerd worden naar bijv. het Bureaublad voor nog snellere toegang&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Automatisch inloggen op een Linux server m.b.v. PuTTY onder Windows</title>
-      <link>http://localhost:1313/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</link>
+      <link>https://www.vandenboom.icu/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</link>
       <pubDate>Fri, 17 Feb 2023 14:51:15 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-authomatisch-inloggen-op-een-linux-server-m-b-v-putty-onder-windows/</guid>
       <description>&lt;p&gt;J﻿e kunt onder Windows met PuTTY automatisch op een Linux server inloggen door gebruik te maken van een key file. Hieronder leg ik stap voor stap uit hoe je dit doet.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Maak een key aan: start: puttygen.exe&lt;/li&gt;&#xA;&lt;li&gt;Klik op: Generate&lt;/li&gt;&#xA;&lt;li&gt;Klik op: Save private key&lt;/li&gt;&#xA;&lt;li&gt;Ga naar PuTTY Configuration -&amp;gt; Session&lt;/li&gt;&#xA;&lt;li&gt;Laad een eerder gemaakte sessie of maak een nieuwe&lt;/li&gt;&#xA;&lt;li&gt;Ga naar: Connection -&amp;gt; SSH -&amp;gt; Auth -&amp;gt; Private key file for authentication -&amp;gt; Browse&lt;/li&gt;&#xA;&lt;li&gt;Selecteer je bestand met de private key: *.ppk&lt;/li&gt;&#xA;&lt;li&gt;Ga terug naar Session en klik op: Save&lt;/li&gt;&#xA;&lt;li&gt;Login op de Linux server m.b.v. de Saved Sessions en nog met je wachtwoord&lt;/li&gt;&#xA;&lt;li&gt;Maak in de home directory een nieuwe map: .ssh&lt;/li&gt;&#xA;&lt;li&gt;Geef deze map de juiste rechten: chmod 700 ~/.ssh&lt;/li&gt;&#xA;&lt;li&gt;Maak en edit het bestand authorized_keys: vi ~/ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Kopieer de Public key for pasting in de PuTTY Key Generator&lt;/li&gt;&#xA;&lt;li&gt;Plak deze in de file authorized_keys op de Linux server&lt;/li&gt;&#xA;&lt;li&gt;Save de authorized_keys file (voor vi type je :wq)&lt;/li&gt;&#xA;&lt;li&gt;Geef deze file de juiste rechten: chmod 600 ~/.ssh/authorized_keys&lt;/li&gt;&#xA;&lt;li&gt;Sluit de ingelogde sessie met PuTTY naar de Linux Server af&lt;/li&gt;&#xA;&lt;li&gt;Open de sessie opnieuw om te controleren dat je nu automatisch kunt inloggen&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Windows wachtwoord veranderen met behulp van een snelkoppeling</title>
-      <link>http://localhost:1313/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</link>
+      <link>https://www.vandenboom.icu/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</link>
       <pubDate>Thu, 16 Feb 2023 10:56:24 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</guid>
+      <guid>https://www.vandenboom.icu/blog/2023-windows-wachtwoord-veranderen-met-behulp-van-een-snelkoppeling/</guid>
       <description>&lt;p&gt;Verander je Windows wachtwoord door gebruik te maken van een snelkoppeling op je bureaublad. (CTRL+ALT+DEL toetscombinatie door op een snelkoppeling te klikken)&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik met je rechtermuisknop op je bureaublad, kies voor nieuw en snelkoppeling&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Geef bij de locatie van het item het volgende commando op:&lt;br&gt;&#xA;C:\Windows\explorer.exe shell:::{2559a1f2-21d7-11d4-bdaf-00c04f60b9f0}&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik op: Volgende&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Geef de snelkoppeling bijv. de naam: Wachtwoord resetten&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Klik op: Voltooien&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Virtuele machines installeren op macOS Monterey met OpenCore Legacy Patcher</title>
-      <link>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</link>
       <pubDate>Thu, 01 Dec 2022 21:20:43 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installing-virtual-machines-on-macos-monterey-opencore-legacy-patcher/</guid>
       <description>&lt;p&gt;Probeer Oracle VirtualBox versie 6.1.40, de oudere versie. In mijn thuislab werkte de nieuwste versie VirtualBox 7.0.4 niet vanwege de foutmelding: hv_vm_create() failed: 0xfae94001 (VERR_NEM_INIT_FAILED)&lt;/p&gt;&#xA;&lt;p&gt;In de oudere versie was dit geen probleem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Voorkom dat de Windows 11 Store opent wanneer je het commando python typt</title>
-      <link>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
+      <link>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</link>
       <pubDate>Thu, 01 Dec 2022 19:30:38 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-prevent-opening-windows-11-store-when-typing-the-command-python/</guid>
       <description>&lt;p&gt;Stap 1: Open Instellingen in Windows 11&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: Ga naar Apps&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: Ga naar Geavanceerde app-instellingen&lt;/p&gt;&#xA;&lt;p&gt;Stap 4: Ga naar App-uitvoeringsaliassen&lt;/p&gt;&#xA;&lt;p&gt;Stap 5: Schakel de optie voor python.exe en python3.exe uit&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dependencies van Python bij de installatie van Oracle VirtualBox op Windows 11</title>
-      <link>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
+      <link>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</link>
       <pubDate>Thu, 01 Dec 2022 19:24:55 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-dependencies-van-python-bij-de-installatie-van-oracle-virtualbox-op-windows-11/</guid>
       <description>&lt;p&gt;Stap 1: installeer Python&lt;/p&gt;&#xA;&lt;p&gt;Stap 2: zet de scripts folder en de boven liggende folder allebij in het path&lt;/p&gt;&#xA;&lt;p&gt;Stap 3: CMD&amp;gt; pip install pywin32&lt;/p&gt;</description>
     </item>
     <item>
       <title>Elke iMac als tweede scherm met uitgebreid bureaublad</title>
-      <link>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</link>
+      <link>https://www.vandenboom.icu/blog/2022-imac-as-an-extened-display-with-windows/</link>
       <pubDate>Mon, 31 Oct 2022 17:55:56 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-imac-as-an-extened-display-with-windows/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-imac-as-an-extened-display-with-windows/</guid>
       <description>&lt;p&gt;Installeer Windows op je iMac en gebruik de softwaretool spacedesk.&lt;/p&gt;&#xA;&lt;p&gt;Zo eenvoudig is het om elke iMac te gebruiken als tweede (of zelfs derde of meer) scherm om je bureaublad uit te breiden.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concourse automatisch opstarten bij het booten met een systemctl-service</title>
-      <link>http://localhost:1313/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</link>
+      <link>https://www.vandenboom.icu/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</link>
       <pubDate>Thu, 16 Jun 2022 18:55:47 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-concourse-starting-automatically-at-boot-with-systemctl-service/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/home/martijn/Downloads/concourse&#xA;$ curl -LO https://concourse-ci.org/docker-compose.yml&#xA;&#xA;$ cat /etc/systemd/system/docker-compose-concourse.service&#xA;&#xA;[Unit]&#xA;Description=Docker Compose Application Service for Concourse&#xA;Requires=docker.service&#xA;After=docker.service&#xA;&#xA;[Service]&#xA;Type=oneshot&#xA;RemainAfterExit=yes&#xA;WorkingDirectory=/home/martijn/Downloads/concourse&#xA;ExecStart=/usr/bin/docker-compose up -d&#xA;ExecStop=/usr/bin/docker-compose down&#xA;TimeoutStartSec=0&#xA;&#xA;[Install]&#xA;WantedBy=multi-user.target&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Concourse permanente PostgreSQL-database in Docker</title>
-      <link>http://localhost:1313/blog/2022-concourse-persistent-postgresql-database-in-docker/</link>
+      <link>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</link>
       <pubDate>Thu, 16 Jun 2022 18:50:41 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-concourse-persistent-postgresql-database-in-docker/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo docker-compose stop concourse-db&#xA;&#xA;$ sudo docker ps&#xA;$ sudo docker cp -a &amp;lt;docker postgresql database id&amp;gt;:/database .\&#xA;&#xA;$ vim docker-compose.yml&#xA;&#x9;image: postgres&#xA;&#x9;volumes: \[&amp;#34;./database:/database&amp;#34;]&#xA;&#x9;environment:&#xA;&#xA;$ sudo docker-compose up -d --no-deps concourse-db&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Cookies opruimen bij het afsluiten van je webbrowser</title>
-      <link>http://localhost:1313/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/</link>
+      <link>https://www.vandenboom.icu/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/</link>
       <pubDate>Thu, 02 Jun 2022 09:41:34 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-cookies-opruimen-bij-het-afsluiten-van-je-webbrowser/</guid>
       <description>&lt;!--StartFragment--&gt;&#xA;&lt;p&gt;Google chrome: &lt;a href=&#34;https://youtu.be/FAKQyjzLXrA&#34;&gt;https://youtu.be/FAKQyjzLXrA&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Microsoft Edge: &lt;a href=&#34;https://youtu.be/nj3eNmNeip4&#34;&gt;https://youtu.be/nj3eNmNeip4&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Safari op de iPad: &lt;a href=&#34;https://youtu.be/dymKWea_600&#34;&gt;https://youtu.be/dymKWea_600&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!--EndFragment--&gt;</description>
     </item>
     <item>
       <title>Stel de versie van de Python interpreter in voor de extensie: Code Runner in VSCodium</title>
-      <link>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>
+      <link>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</link>
       <pubDate>Sun, 03 Apr 2022 19:55:44 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-stel-de-versie-van-de-python-interpreter-in-voor-de-extensie-code-runner-in-vscodium/</guid>
       <description>&lt;p&gt;# File name: version_used.py&lt;/p&gt;&#xA;&lt;p&gt;# This prints the version of Python being used by the Code Runner extension in VSCodium&lt;br&gt;&#xA;# Set by going to: File -&amp;gt; Preferences -&amp;gt; Settings -&amp;gt; Search Settings -&amp;gt; code-runner.executorMap -&amp;gt; Edit in settings.json&lt;br&gt;&#xA;# &amp;ldquo;python&amp;rdquo;: &amp;ldquo;/bin/python3.9 -u&amp;rdquo;,\&lt;/p&gt;&#xA;&lt;p&gt;# To run this script press the little play button on the top right in the editor&lt;/p&gt;&#xA;&lt;p&gt;import sys&lt;br&gt;&#xA;print(sys.version)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installeer Python 3.9 op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installeer-python-3-9-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 18:55:18 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installeer-python-3-9-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ sudo apt install software-properties-common&lt;/p&gt;&#xA;&lt;p&gt;$ sudo add-apt-repository ppa:deadsnakes/ppa&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install python3.9&lt;/p&gt;&#xA;&lt;p&gt;$ python3.9 —version&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installeer de editor VSCodium op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 14:22:24 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installeer-de-editor-vscodium-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ wget -qO - &lt;a href=&#34;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&#34;&gt;https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo echo &amp;lsquo;deb &lt;a href=&#34;https://vscodium.c7.ee/debs/&#34;&gt;https://vscodium.c7.ee/debs/&lt;/a&gt; vscodium main&amp;rsquo; | sudo tee &amp;ndash;append /etc/apt/sources.list.d/vscodium.list&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install codium&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installeer de Google Chrome Web Browser op Ubuntu Linux</title>
-      <link>http://localhost:1313/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link>
+      <link>https://www.vandenboom.icu/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</link>
       <pubDate>Sun, 03 Apr 2022 11:51:54 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-installeer-de-google-chrome-web-browser-op-ubuntu-linux/</guid>
       <description>&lt;p&gt;$ wget -q -O - &lt;a href=&#34;https://dl.google.com/linux/linux_signing_key.pub&#34;&gt;https://dl.google.com/linux/linux_signing_key.pub&lt;/a&gt; | sudo apt-key add -&lt;/p&gt;&#xA;&lt;p&gt;$ sudo sh -c &amp;rsquo;echo &amp;ldquo;deb [arch=amd64] &lt;a href=&#34;http://dl.google.com/linux/chrome/deb/&#34;&gt;http://dl.google.com/linux/chrome/deb/&lt;/a&gt; stable main&amp;rdquo; &amp;raquo; /etc/apt/sources.list.d/google-chrome.list&#39;&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt update&lt;/p&gt;&#xA;&lt;p&gt;$ sudo apt install google-chrome-stable&lt;/p&gt;</description>
     </item>
     <item>
       <title>Maak een gratis website met GitHub Pages</title>
-      <link>http://localhost:1313/blog/maak_een_website_met_github_pages/</link>
+      <link>https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/</link>
       <pubDate>Wed, 09 Mar 2022 19:18:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/maak_een_website_met_github_pages/</guid>
+      <guid>https://www.vandenboom.icu/blog/maak_een_website_met_github_pages/</guid>
       <description>&lt;p&gt;Maak een gratis website met GitHub&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://vandenboom.netlify.app/images/GitHub-Pages-NL.png&#34; alt=&#34;GitHub Pages en GitHub Desktop&#34; /&gt;&lt;/br&gt;&lt;/p&gt;&#xA;&lt;p&gt;P.S. Wil je graag dat iemand je helpt? Stuur me gerust een berichtje via een van de Social Media Links op deze website.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automatisch inloggen in Windows</title>
-      <link>http://localhost:1313/blog/automatisch_inloggen_in_windows/</link>
+      <link>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</link>
       <pubDate>Wed, 09 Mar 2022 11:58:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/automatisch_inloggen_in_windows/</guid>
+      <guid>https://www.vandenboom.icu/blog/automatisch_inloggen_in_windows/</guid>
       <description>&lt;p&gt;Niet voor iedereen is het invoeren van een wachtwoord of pincode even handig.&lt;/br&gt;&#xA;Vind je het vervelend om iedere keer een wachtwoord of pincode in te toetsen bij het inloggen van Windows?&lt;/br&gt;&#xA;Je kunt ook automatisch inloggen in Windows. Als de computer klaar is met opstarten krijg je meteen het bureaublad te zien.&#xA;Op het bureaublad kun je al je handige programma&amp;rsquo;s bereikbaar maken en dat heb je dan meteen voor je als je de computer aan hebt gezet.&#xA;Je kunt dan meteen aan de slag met de computer, zonder eerst een wachtwoord of pincode in te hoeven toetsen.&lt;/br&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nieuwe content voor je website via een webpagina</title>
-      <link>http://localhost:1313/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</link>
+      <link>https://www.vandenboom.icu/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</link>
       <pubDate>Fri, 25 Feb 2022 11:44:45 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/</guid>
       <description>&lt;p&gt;Voeg Netlify CMS toe aan je website om nieuwe content toe te voegen via een webpagina in plaats van de command line.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nieuw leven in een oude Apple computer (iMac, Macbook)</title>
-      <link>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
+      <link>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</link>
       <pubDate>Fri, 25 Feb 2022 11:09:02 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/</guid>
       <description>&lt;p&gt;Installeer de applicatie VirtualBox en draai daarin een virtuele machine met de nieuwste versie van Linux of Windows. Dit kan in veel gevallen problemen met Internetten oplossen. Zoals het bezoek aan websites weer mogelijk maken, die in de oude Apple omgeving niet meer werken.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gehele webpagina opslaan</title>
-      <link>http://localhost:1313/blog/gehele_webpagina_opslaan/</link>
+      <link>https://www.vandenboom.icu/blog/gehele_webpagina_opslaan/</link>
       <pubDate>Sun, 19 Dec 2021 09:50:22 +0100</pubDate>
-      <guid>http://localhost:1313/blog/gehele_webpagina_opslaan/</guid>
+      <guid>https://www.vandenboom.icu/blog/gehele_webpagina_opslaan/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;In de webbrowser Microsoft Edge:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; klik rechtsboven in de hoek op de 3 puntjes: ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; kies voor de optie: Webopname (Ctrl+Shift+S)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; kies voor de optie: Volledige pagina vastleggen&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; klik op de knop: Opslaan&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; nu staat er een afbeelding van het type: .jpeg in je persoonlijke directory: Downloads&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>In- en uitzoomen op een website</title>
-      <link>http://localhost:1313/blog/zoomen_op_een_website/</link>
+      <link>https://www.vandenboom.icu/blog/zoomen_op_een_website/</link>
       <pubDate>Sat, 18 Dec 2021 20:56:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/zoomen_op_een_website/</guid>
+      <guid>https://www.vandenboom.icu/blog/zoomen_op_een_website/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Houd de CTRL toets van het toetsenbord ingedrukt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;en draai aan het wieltje op de muis.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Windows Update Snelkoppeling</title>
-      <link>http://localhost:1313/blog/windows-update-snelkoppeling/</link>
+      <link>https://www.vandenboom.icu/blog/windows-update-snelkoppeling/</link>
       <pubDate>Thu, 16 Dec 2021 09:07:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/windows-update-snelkoppeling/</guid>
+      <guid>https://www.vandenboom.icu/blog/windows-update-snelkoppeling/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Windows Update snelkoppeling die iedereen op zijn bureaublad moet hebben&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Heb je bureaublad voor je&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Klik met de rechtermuisknop&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Kies voor: Nieuw&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Kies voor: Snelkoppeling&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Vul als locatie in:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (Op Windows 8)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  %windir%\explorer.exe shell:::{36eef7db-88ad-4e81-ad49-0e313f0c35f8} &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (Op Windows 10)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ms-settings:windowsupdate&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Klik op: Volgende&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Vul de naam in: Windows Update&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* Klik op: Voltooien&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Powershell Clean Memory</title>
-      <link>http://localhost:1313/blog/powershell-clean-memory/</link>
+      <link>https://www.vandenboom.icu/blog/powershell-clean-memory/</link>
       <pubDate>Mon, 13 Dec 2021 19:12:03 +0100</pubDate>
-      <guid>http://localhost:1313/blog/powershell-clean-memory/</guid>
+      <guid>https://www.vandenboom.icu/blog/powershell-clean-memory/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Function Opschonen-geheugen {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Get-PSSession | Remove-PSSession&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [System.GC]::Collect()         &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [GC]::Collect()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [GC]::WaitForPendingFinalizers()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Get-Variable |&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  #Where-Object { $startupVariables -notcontains $_.Name } |&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ForEach-Object {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    try {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      Clear-Variable -Name &amp;#34;$($_.Name)&amp;#34; -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      Remove-Variable -Name &amp;#34;$($_.Name)&amp;#34; -Force -Scope &amp;#34;global&amp;#34; -ErrorAction SilentlyContinue -WarningAction SilentlyContinue&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      Remove-Variable -Name &amp;#34;$($_.Name)&amp;#34; -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      #Write-Host &amp;#34;Variabele &amp;#39;$($_.Name)&amp;#39; is opgeruimd.&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    catch [Exception] {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      if ($_.Name -notlike &amp;#39;&amp;#39;) { Write-Host &amp;#34;An error has occured. Error Details: $($_.Exception.Message)&amp;#34; }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  #Get-Variable&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>WordPress zonder FTP</title>
-      <link>http://localhost:1313/blog/wordpress-no-ftp/</link>
+      <link>https://www.vandenboom.icu/blog/wordpress-no-ftp/</link>
       <pubDate>Sat, 19 Dec 2020 11:22:46 +0100</pubDate>
-      <guid>http://localhost:1313/blog/wordpress-no-ftp/</guid>
+      <guid>https://www.vandenboom.icu/blog/wordpress-no-ftp/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;voeg deze regel toe aan: wp-config.php&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;define(&amp;#39;FS_METHOD&amp;#39;, &amp;#39;direct&amp;#39;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>PostgreSQL-invoerlus</title>
-      <link>http://localhost:1313/blog/postgresql-insert-loop/</link>
+      <link>https://www.vandenboom.icu/blog/postgresql-insert-loop/</link>
       <pubDate>Wed, 16 Dec 2020 19:21:18 +0100</pubDate>
-      <guid>http://localhost:1313/blog/postgresql-insert-loop/</guid>
+      <guid>https://www.vandenboom.icu/blog/postgresql-insert-loop/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&#xA;do $$&#xA;declare&#xA;   counter integer := 0;&#xA;begin&#xA;   while counter &amp;lt; 100000 loop&#xA;      insert into public.person (first_name, last_name) values (&amp;#39;Jack&amp;#39;, &amp;#39;Twin&amp;#39;);&#xA;&#x9;  counter := counter + 1;&#xA;   end loop;&#xA;end$$;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Google sitemap</title>
-      <link>http://localhost:1313/blog/20201212_1609_-_google_sitemap/</link>
+      <link>https://www.vandenboom.icu/blog/20201212_1609_-_google_sitemap/</link>
       <pubDate>Sun, 13 Dec 2020 20:13:00 +0100</pubDate>
-      <guid>http://localhost:1313/blog/20201212_1609_-_google_sitemap/</guid>
+      <guid>https://www.vandenboom.icu/blog/20201212_1609_-_google_sitemap/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Google sitemap&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http://www.google.com/ping?sitemap=https://vandenboom.icu/sitemap.xml&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http://www.google.com/webmasters/tools/&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Hugo in Alpine Linux</title>
-      <link>http://localhost:1313/blog/hugo-in-alpine-linux/</link>
+      <link>https://www.vandenboom.icu/blog/hugo-in-alpine-linux/</link>
       <pubDate>Sat, 12 Dec 2020 19:59:50 +0100</pubDate>
-      <guid>http://localhost:1313/blog/hugo-in-alpine-linux/</guid>
+      <guid>https://www.vandenboom.icu/blog/hugo-in-alpine-linux/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hugo in Alpine Linux&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; apk update&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; apk upgrade&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; apk add git&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; apk add go&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.32-r0/glibc-2.32-r0.apk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; apk add glibc-2.32-r0.apk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; wget https://github.com/gohugoio/hugo/releases/download/v0.79.0/hugo_0.79.0_Linux-32bit.tar.gz&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; tar -xvzf hugo_0.79.0_Linux-32bit.tar.gz&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; ./hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; ./hugo version&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; echo $SHELL&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; vim .bash_profile&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export PATH=$PATH:/hugo/bin&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; source .bash_profile&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; which hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; cd website/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; hugo new blog/time-in-alpine.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; vim ./content/blog/time-in-alpine.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git add --all&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git commit -m &amp;#34;set time in Alpine Linux&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git push&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Tijd instellen in Alpine Linux</title>
-      <link>http://localhost:1313/blog/time-in-alpine/</link>
+      <link>https://www.vandenboom.icu/blog/time-in-alpine/</link>
       <pubDate>Sat, 12 Dec 2020 19:37:42 +0100</pubDate>
-      <guid>http://localhost:1313/blog/time-in-alpine/</guid>
+      <guid>https://www.vandenboom.icu/blog/time-in-alpine/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; Tijd instellen in Alpine Linux&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; apk add tzdata&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; cp /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; echo &amp;#34;Europe/Amsterdam&amp;#34; &amp;gt;  /etc/timezone&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; date&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Bitlocker-sleutels</title>
-      <link>http://localhost:1313/blog/december-2020-bitlocker/</link>
+      <link>https://www.vandenboom.icu/blog/december-2020-bitlocker/</link>
       <pubDate>Sat, 12 Dec 2020 01:44:50 +0100</pubDate>
-      <guid>http://localhost:1313/blog/december-2020-bitlocker/</guid>
+      <guid>https://www.vandenboom.icu/blog/december-2020-bitlocker/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;BitLocker-herstelsleutels&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;onedrive.live.com/RecoveryKey&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Git-opdrachten</title>
-      <link>http://localhost:1313/blog/20201212_1609_-_git/</link>
+      <link>https://www.vandenboom.icu/blog/20201212_1609_-_git/</link>
       <pubDate>Sat, 12 Dec 2020 01:44:50 +0100</pubDate>
-      <guid>http://localhost:1313/blog/20201212_1609_-_git/</guid>
+      <guid>https://www.vandenboom.icu/blog/20201212_1609_-_git/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Git-opdrachten&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; cd content/blog/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; cp december-2020-Bitlocker.md 20201212_1609_-_git.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; vim 20201212_1609_-_git.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git add --all&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git commit -m &amp;#34;edited title&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git status&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git push&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git pull&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git reset --hard HEAD&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git pull&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git fetch --all&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git reset --hard origin/main&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git status&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git fetch origin&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git checkout main&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git pull origin main&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git fetch --all&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git merge&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git pull&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; hugo server -D&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Van ESD naar WIM-bestand in Windows 10</title>
-      <link>http://localhost:1313/blog/december-2020-from-esd-to-wim-file/</link>
+      <link>https://www.vandenboom.icu/blog/december-2020-from-esd-to-wim-file/</link>
       <pubDate>Sat, 12 Dec 2020 01:44:50 +0100</pubDate>
-      <guid>http://localhost:1313/blog/december-2020-from-esd-to-wim-file/</guid>
+      <guid>https://www.vandenboom.icu/blog/december-2020-from-esd-to-wim-file/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;van ESD naar WIM-bestand&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; dism /Get-WimInfo /WimFile:install.esd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; dism /export-image /SourceImageFile:install.esd /SourceIndex:4 /DestinationImageFile:install.wim /Compress:max /CheckIntegrity&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Hugo in Windows 10</title>
-      <link>http://localhost:1313/blog/december-2020-hugo/</link>
+      <link>https://www.vandenboom.icu/blog/december-2020-hugo/</link>
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/december-2020-hugo/</guid>
+      <guid>https://www.vandenboom.icu/blog/december-2020-hugo/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; hugo new site vandenboom.icu&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; cd vandenboom.icu&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git init&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git submodule add https://github.com/lxndrblz/anatole.git themes/anatole&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; cd themes&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; git submodule add https://github.com/pacollins/hugo-future-imperfect-slim.git&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; cd ..&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; hugo new blog/december-2020.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; hugo server -D&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Chocolatey in Windows 10</title>
-      <link>http://localhost:1313/blog/december-2020/</link>
+      <link>https://www.vandenboom.icu/blog/december-2020/</link>
       <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/december-2020/</guid>
+      <guid>https://www.vandenboom.icu/blog/december-2020/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco version&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco update chocolatey&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco version all&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco outdated&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco upgrade &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;app&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; choco upgrade all&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Markdown-syntaxgids</title>
-      <link>http://localhost:1313/blog/markdown-syntax/</link>
+      <link>https://www.vandenboom.icu/blog/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/markdown-syntax/</guid>
+      <guid>https://www.vandenboom.icu/blog/markdown-syntax/</guid>
       <description>&lt;p&gt;Dit artikel biedt een overzicht van de basisopmaak van Markdown die kan worden gebruikt in Hugo-inhoudsbestanden, en toont ook hoe basale HTML-elementen worden opgemaakt met CSS in een Hugo-thema.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rijke inhoud</title>
-      <link>http://localhost:1313/blog/rich-content/</link>
+      <link>https://www.vandenboom.icu/blog/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/rich-content/</guid>
+      <guid>https://www.vandenboom.icu/blog/rich-content/</guid>
       <description>&lt;p&gt;Hugo wordt geleverd met verschillende &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;ingebouwde Shortcodes&lt;/a&gt; voor rijke inhoud, samen met een &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacyconfiguratie&lt;/a&gt; en een set eenvoudige Shortcodes die statische versies zonder JavaScript bieden voor verschillende sociale media-insluitingen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Voorbeeldtekst</title>
-      <link>http://localhost:1313/blog/placeholder-text/</link>
+      <link>https://www.vandenboom.icu/blog/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/placeholder-text/</guid>
+      <guid>https://www.vandenboom.icu/blog/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&#xA;pectora summo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Emoji-ondersteuning</title>
-      <link>http://localhost:1313/blog/emoji-support/</link>
+      <link>https://www.vandenboom.icu/blog/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/emoji-support/</guid>
+      <guid>https://www.vandenboom.icu/blog/emoji-support/</guid>
       <description>&lt;p&gt;Emoji kan op verschillende manieren worden ingeschakeld in een Hugo-project.&lt;/p&gt;</description>
     </item>
   </channel>

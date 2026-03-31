@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Persistent on Notities</title>
-    <link>http://localhost:1313/tags/persistent/</link>
+    <link>https://www.vandenboom.icu/tags/persistent/</link>
     <description>Recent content in Persistent on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Thu, 16 Jun 2022 18:50:41 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/persistent/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/tags/persistent/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concourse permanente PostgreSQL-database in Docker</title>
-      <link>http://localhost:1313/blog/2022-concourse-persistent-postgresql-database-in-docker/</link>
+      <link>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</link>
       <pubDate>Thu, 16 Jun 2022 18:50:41 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-concourse-persistent-postgresql-database-in-docker/</guid>
+      <guid>https://www.vandenboom.icu/blog/2022-concourse-persistent-postgresql-database-in-docker/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo docker-compose stop concourse-db&#xA;&#xA;$ sudo docker ps&#xA;$ sudo docker cp -a &amp;lt;docker postgresql database id&amp;gt;:/database .\&#xA;&#xA;$ vim docker-compose.yml&#xA;&#x9;image: postgres&#xA;&#x9;volumes: \[&amp;#34;./database:/database&amp;#34;]&#xA;&#x9;environment:&#xA;&#xA;$ sudo docker-compose up -d --no-deps concourse-db&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>

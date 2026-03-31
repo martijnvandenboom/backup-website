@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dark on Notities</title>
-    <link>http://localhost:1313/en/tags/dark/</link>
+    <link>https://www.vandenboom.icu/en/tags/dark/</link>
     <description>Recent content in Dark on Notities</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 15 Feb 2025 21:17:06 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/dark/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.vandenboom.icu/en/tags/dark/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create support on your website for dark mode capability with a subtle icon</title>
-      <link>http://localhost:1313/en/blog/2025-create-support-on-your-website-for-dark-mode-capability-with-a-subtile-icon/</link>
+      <link>https://www.vandenboom.icu/en/blog/2025-create-support-on-your-website-for-dark-mode-capability-with-a-subtile-icon/</link>
       <pubDate>Sat, 15 Feb 2025 21:17:06 +0000</pubDate>
-      <guid>http://localhost:1313/en/blog/2025-create-support-on-your-website-for-dark-mode-capability-with-a-subtile-icon/</guid>
+      <guid>https://www.vandenboom.icu/en/blog/2025-create-support-on-your-website-for-dark-mode-capability-with-a-subtile-icon/</guid>
       <description>&lt;p&gt;D﻿ear reader,&lt;/p&gt;&#xA;&lt;p&gt;I﻿ would like to refer you to my GitHub page for a nice and simple project enabling the dark mode effect on a website. I want to share this with you so that it can inspire you and enable you to do a similar implementation that you can use on your own website.&lt;/p&gt;&#xA;&lt;p&gt;S﻿ee: &lt;a href=&#34;https://github.com/martijnvandenboom/darkmode-test&#34;&gt;https://github.com/martijnvandenboom/darkmode-test&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;B﻿est regards,&lt;/p&gt;&#xA;&lt;p&gt;M﻿artijn&lt;/p&gt;&#xA;&lt;p&gt;P﻿.S. leave a message I would like to hear from from you&lt;/p&gt;</description>
     </item>
   </channel>
