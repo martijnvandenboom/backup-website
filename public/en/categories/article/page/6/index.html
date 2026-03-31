@@ -650,6 +650,127 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/">LDAP/IPA - Server on Red Hat Enterprise Linux 7</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-02-15 10:47:28.702 &#43;0000 UTC">February 15, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    If you are using a hosts file, make sure it contains FQDNs and pay close attention to the order in which they appear.
+Check the hosts file and adjust it if necessary:
+The FQDN must come first, followed by any aliases.
+/etc/hosts 10.0.0.1 server1.example.com server1 application1 If an alias is listed before the FQDN, you may encounter error messages that are not immediately traceable to this cause.
+
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ldap-ipa-server-op-red-hat-enterprise-linux-7/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ldap/">ldap</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ipa/">ipa</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/rhel/">rhel</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/red/">red</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/hat/">hat</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/7/">7</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/">Create a Zombie process in Linux using a C program</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-01-31 20:54:45.709 &#43;0000 UTC">January 31, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Below is the source code of a C program to create a Zombie process in Linux and analyse it.
+vim create_zombie_process.c #include &lt;stdlib.h&gt; #include &lt;sys/types.h&gt; #include &lt;unistd.h&gt; int main () { pid_t child_pid; child_pid = fork (); if (child_pid &gt; 0) { sleep (60); } else { exit (0); } return 0; } Compile the C source code into an executable program:
+gcc create_zombie_process.c Start the program:
+./a.out Open a second Terminal and view the process list. You will now see a...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-maak-een-zombie-proces-in-linux-m-b-v-een-c-programma/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/zombie/">zombie</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/proces/">proces</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/c/">C</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/programma/">programma</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2024-bash-script-met-een-succes-of-failed-melding-aan-het-einde-van-de-regel/">Bash script with a SUCCESS or FAILED message at the end of the line</a></h2>
     
     
@@ -884,117 +1005,6 @@ PowerShell Resource monitor $app=&amp;#34;notepad&amp;#34; $ids = Get-Process $a
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2023-macos-desktop-extended-over-3-schermen/">macOS desktop extended across 3 screens: iMac, MacBook and iPad</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2023-11-26 15:16:27.719 &#43;0000 UTC">November 26, 2023</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    In the setup I use I have the following 3 devices:
-iMac 27&amp;quot; late 2015 with OpenCore Legacy Patcher Sonoma: 14.1.1 MacBook Pro 15&amp;quot; late 2016 with OpenCore Legacy Patcher Sonoma: 14.1.1 iPad 10.2&amp;quot; 7th Gen with iPadOS version: 17.1.1 They are connected to the same WiFi network.
-Steps:
-On the iMac go to: System Settings -&gt; Displays Click the plus sign to the right of the Built-in Display Choose under Mirror or Extend to: MacBook Pro Choose under Link keyboard and mouse to: iPad You...
-  </div>
-  <footer>
-    <a href="/en/blog/2023-macos-desktop-extended-over-3-schermen/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/macos/">macos</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/desktop/">desktop</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/extended/">extended</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/meedere/">meedere</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/schermen/">schermen</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/apparaten/">apparaten</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2023-multiple-versions-of-java-on-macos/">Multiple versions of Java on macOS</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2023-09-27 17:43:18.381 &#43;0000 UTC">September 27, 2023</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    $ ls -al /usr/local/opt/ | grep -i openjdk $ brew install jenv $ jenv add /Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home/ $ jenv versions $ jenv local 1.8 $ java -version $ jenv global 1.8 $ java -version $ jenv shell 1.8 $ java -version $ jenv versions 
-  </div>
-  <footer>
-    <a href="/en/blog/2023-multiple-versions-of-java-on-macos/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/multiple/">multiple</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/versions/">versions</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/java/">Java</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/macos/">macOS</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/en/categories/article/page/5/" class="button left"><span>Previous Page</span></a>
@@ -1011,6 +1021,22 @@ On the iMac go to: System Settings -&gt; Displays Click the plus sign to the rig
       <header>
         <h1>Recent Posts:</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1036,22 +1062,6 @@ On the iMac go to: System Settings -&gt; Displays Click the plus sign to the rig
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/">Compress photos without quality loss for any platform</a></h2>
-          <time class="published" datetime="2025-09-12 01:58:22 &#43;0100 &#43;0100">September 12, 2025</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
-          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/en/blog/" class="button">See More</a>
@@ -1071,7 +1081,7 @@ On the iMac go to: System Settings -&gt; Displays Click the plus sign to the rig
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">63</span></a>
+              <a href="/en/categories/article/">article<span class="count">65</span></a>
           
           <li>
               <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1080,7 +1090,7 @@ On the iMac go to: System Settings -&gt; Displays Click the plus sign to the rig
               <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/en/categories/windows/">windows<span class="count">8</span></a>
+              <a href="/en/categories/windows/">windows<span class="count">10</span></a>
           
           <li>
               <a href="/en/categories/tools/">tools<span class="count">4</span></a>
@@ -1096,6 +1106,9 @@ On the iMac go to: System Settings -&gt; Displays Click the plus sign to the rig
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
+          
+          <li>
+              <a href="/en/categories/animations/">animations<span class="count">1</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

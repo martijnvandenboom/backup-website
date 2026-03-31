@@ -650,6 +650,127 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/">Tips for using XRDP on Ubuntu Linux</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2025-03-23 12:51:59.295 &#43;0000 UTC">March 23, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    T﻿o be able to use XRDP on Ubuntu Linux try the following instructions:
+$ s﻿udo apt update $ s﻿udo apt upgrade
+$ s﻿udo apt install xrdp
+$ echo &amp;ldquo;gnome-session &amp;ndash;session=ubuntu&amp;rdquo; &gt; ~/.xsession
+$ echo &amp;ldquo;export DISPLAY=:10.0&amp;rdquo; &gt; ~/.bash_profile
+$ echo &amp;ldquo;xhost &#43;&amp;rdquo; &gt; ~/.bash_profile
+$﻿ ip a
+R﻿emember write down your IP address of your system and to log out of your graphical user session.
+N﻿ow try to login to your system with a RDP tool.
+
+  </div>
+  <footer>
+    <a href="/en/blog/2025-tips-for-using-xrdp-on-ubuntu-linux/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/tips/">tips</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/xrdp/">xrdp</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ubuntu/">ubuntu</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/">Install Microsoft Visual Studio Code in Linux from the repo</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2025-03-22 22:13:54.381 &#43;0000 UTC">March 22, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    F﻿ollow the below steps to install Microsoft Visual Studio Code IDE on Linux from its repository:
+sudo rpm &amp;ndash;import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c &#39;echo -e &amp;ldquo;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&amp;rdquo; &gt; /etc/yum.repos.d/vscode.repo&#39;
+sudo dnf install code -y
+
+  </div>
+  <footer>
+    <a href="/en/blog/2025-install-microsoft-visual-studio-code-in-linux-from-the-repo/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/install/">install</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/microsoft/">microsoft</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/visual-studio/">visual studio</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/code/">code</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/repo/">repo</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2025-use-of-golang-java-c-c-or-rust-a-quick-guide/">Use of Golang, Java, C/C&#43;&#43;, or Rust: A Quick Guide</a></h2>
     
     
@@ -891,130 +1012,6 @@ Example: #﻿ git remote add orign https://github.com/martijnvandenboom/Java_too
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/">Find the name of your USB stick with a script</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-07-18 07:20:59.657 &#43;0000 UTC">July 18, 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>3-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    You can use this script to retrieve the name of your USB stick.
-The name of your USB stick can be used in Apple&#39;s sudo command to create a USB installer.
-Step 1: Open the Terminal application
-Step 2: Go to your home directory, type: # cd
-Step 3: Optionally create a scripts directory, type: # mkdir scripts
-Step 4: Navigate to the newly created scripts directory, type: # cd scripts
-Step 5: Create a bash script, type: # vim usbstick.sh
-Step 6: Insert the following code:
-
-  </div>
-  <footer>
-    <a href="/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/zoek/">zoek</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/naam/">naam</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/usb/">usb</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/stick/">stick</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/bash/">bash</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/script/">script</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/">Putting the Microsoft EFI boot files on the EFI partition</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-07-07 20:49:33.29 &#43;0000 UTC">July 7, 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    Boot into the Windows installer
-On the first screen press SHIFT &#43; F10
-# diskpart # list disk # select disk 0 # list part Look for the Windows partition # select part 3 # assign letter=W # format quick fs=NTFS # list volume Look for the EFI volume # select volume 2 # assign letter=Z # exit # D: Goto the USB installer of Windows # cd D:\sources # dir install* The file install.esd exists # dism /Get-WimInfo /WimFile:D:\Sources\install.esd Select the Index of the version of Windows you want # dism...
-  </div>
-  <footer>
-    <a href="/en/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/putting/">putting</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/microsoft/">microsoft</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/efi/">efi</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/boot/">boot</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/files/">files</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/partition/">partition</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/triple/">triple</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/en/categories/article/page/2/" class="button left"><span>Previous Page</span></a>
@@ -1031,6 +1028,22 @@ On the first screen press SHIFT &#43; F10
       <header>
         <h1>Recent Posts:</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1056,22 +1069,6 @@ On the first screen press SHIFT &#43; F10
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/">Compress photos without quality loss for any platform</a></h2>
-          <time class="published" datetime="2025-09-12 01:58:22 &#43;0100 &#43;0100">September 12, 2025</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
-          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/en/blog/" class="button">See More</a>
@@ -1091,7 +1088,7 @@ On the first screen press SHIFT &#43; F10
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">63</span></a>
+              <a href="/en/categories/article/">article<span class="count">65</span></a>
           
           <li>
               <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1100,7 +1097,7 @@ On the first screen press SHIFT &#43; F10
               <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/en/categories/windows/">windows<span class="count">8</span></a>
+              <a href="/en/categories/windows/">windows<span class="count">10</span></a>
           
           <li>
               <a href="/en/categories/tools/">tools<span class="count">4</span></a>
@@ -1116,6 +1113,9 @@ On the first screen press SHIFT &#43; F10
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
+          
+          <li>
+              <a href="/en/categories/animations/">animations<span class="count">1</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

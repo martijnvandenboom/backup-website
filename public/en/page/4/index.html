@@ -650,6 +650,132 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2025-java-convert-a-variabele-for-it-to-be-printed-in-a-price-format-related-to-country-settings/">Java convert a variabele for it to be printed in a price format related to country settings</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2025-01-05 20:09:27.423 &#43;0000 UTC">January 5, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    F﻿or Dutch Euro use: .getCurrencyInstance(new Locale(&amp;ldquo;nl&amp;rdquo;, &amp;ldquo;NL&amp;rdquo;))
+F﻿or Swiss Franc use: .getCurrencyInstance(new Locale(&amp;ldquo;de&amp;rdquo;, &amp;ldquo;CH&amp;rdquo;))
+import java.text.NumberFormat; import java.util.Locale; public class prog_002_variables { public static void main(String[] args){ String message; int year; double prijs; message = &amp;#34;De beste wensen voor: &amp;#34;; year = 2025; prijs = 2.50; // Combine the creation of the Locale and the NumberFormat in one line...
+  </div>
+  <footer>
+    <a href="/en/blog/2025-java-convert-a-variabele-for-it-to-be-printed-in-a-price-format-related-to-country-settings/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/java/">java</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/convert/">convert</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/variable/">variable</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/printed/">printed</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/price/">price</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/format/">format</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/country/">country</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/settings/">settings</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/">Quick git commands to add a local repository in Visual Studio Code to GitHub</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2025-01-03 22:23:19.432 &#43;0000 UTC">January 3, 2025</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    T﻿ype in the terminal of Visual Studio Code
+#﻿ git init
+#﻿ git add .
+#﻿ git commit -m &amp;ldquo;initial commit&amp;rdquo;
+C﻿reate a new repository on GitHub
+#﻿ git remote add origin &lt;the new .git URL&gt;
+Example: #﻿ git remote add orign https://github.com/martijnvandenboom/Java_tools.git
+#﻿ git push -u origin main
+
+  </div>
+  <footer>
+    <a href="/en/blog/2025-quick-git-commands-to-add-a-local-repository-in-visual-studio-code-to-github/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/quick/">quick</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/git/">git</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/commands/">commands</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/repository/">repository</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/visualstudiocode/">visualstudiocode</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/github/">github</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/">Find the name of your USB stick with a script</a></h2>
     
     
@@ -889,124 +1015,6 @@ sudo mkdir /efi sudo mount -t msdos /dev/disk0s1 /efi sudo bless --mount /efi --
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/">SSH in remote machine with SSH keys and run command in new Python 3</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-04-03 20:20:39.976 &#43;0000 UTC">April 3, 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    T﻿o make a script to run remote commands in a client server network.
-import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [&#39;ssh&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(&amp;#34;Error:&amp;#34;, error) else: print(&amp;#34;Output:&amp;#34;, output) # Replace these with your actual credentials...
-  </div>
-  <footer>
-    <a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/ssh/">ssh</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/remote/">remote</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/machine/">machine</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/keys/">keys</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/commands/">commands</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/new/">new</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/python/">python</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/">SSH in remote machine with SSH keys and run command in old Python 2</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-04-03 20:12:58.29 &#43;0000 UTC">April 3, 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.
-import subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = [&#39;ssh&#39;, &#39;-i&#39;, private_key_path, &#39;-o&#39;, &#39;StrictHostKeyChecking=no&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE )...
-  </div>
-  <footer>
-    <a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/ssh/">ssh</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/remote/">remote</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/machine/">machine</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/keys/">keys</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/command/">command</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/old/">old</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/python/">python</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/en/page/3/" class="button left"><span>Previous Page</span></a>
@@ -1023,6 +1031,22 @@ import subprocess def ssh_exec_command(hostname, username, private_key_path, com
       <header>
         <h1>Recent Posts:</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1048,22 +1072,6 @@ import subprocess def ssh_exec_command(hostname, username, private_key_path, com
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/">Compress photos without quality loss for any platform</a></h2>
-          <time class="published" datetime="2025-09-12 01:58:22 &#43;0100 &#43;0100">September 12, 2025</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
-          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/en/blog/" class="button">See More</a>
@@ -1083,7 +1091,7 @@ import subprocess def ssh_exec_command(hostname, username, private_key_path, com
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">63</span></a>
+              <a href="/en/categories/article/">article<span class="count">65</span></a>
           
           <li>
               <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1092,7 +1100,7 @@ import subprocess def ssh_exec_command(hostname, username, private_key_path, com
               <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/en/categories/windows/">windows<span class="count">8</span></a>
+              <a href="/en/categories/windows/">windows<span class="count">10</span></a>
           
           <li>
               <a href="/en/categories/tools/">tools<span class="count">4</span></a>
@@ -1108,6 +1116,9 @@ import subprocess def ssh_exec_command(hostname, username, private_key_path, com
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
+          
+          <li>
+              <a href="/en/categories/animations/">animations<span class="count">1</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

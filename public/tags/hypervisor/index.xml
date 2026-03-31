@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hypervisor on Notities</title>
+    <link>http://localhost:1313/tags/hypervisor/</link>
+    <description>Recent content in Hypervisor on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hypervisor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proxmox Lab — Windows Server 2022 Template voorbereiding</title>
+      <link>http://localhost:1313/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</guid>
+      <description>&lt;p&gt;Deze handleiding beschrijft het volledige proces voor het voorbereiden van een vers geïnstalleerde Windows Server 2022 VM als herbruikbaar Proxmox-template. Alle toekomstige VM&amp;rsquo;s (CA-server, lidservers, enzovoort) worden gekloond vanuit dit template, wat aanzienlijk tijd bespaart en een consistente basisinstallatie garandeert.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;📄 &lt;strong&gt;Download de volledige handleiding met screenshots:&lt;/strong&gt;&#xA;&lt;a href=&#34;http://localhost:1313/documents/WS2022-in-Proxmox-Template-Preparation-Guide.docx&#34;&gt;WS2022-in-Proxmox-Template-Preparation-Guide.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overzicht&#34;&gt;Overzicht&lt;/h2&gt;&#xA;&lt;p&gt;Het volledige proces bestaat uit de volgende stappen:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;VirtIO guest-drivers installeren&lt;/li&gt;&#xA;&lt;li&gt;Windows Update uitvoeren — OS volledig patchen&lt;/li&gt;&#xA;&lt;li&gt;Prestatieoptimalisaties toepassen&lt;/li&gt;&#xA;&lt;li&gt;Basisconfiguratie — tijdzone, RDP, IE Enhanced Security&lt;/li&gt;&#xA;&lt;li&gt;Sysprep — generaliseren en afsluiten&lt;/li&gt;&#xA;&lt;li&gt;Converteren naar template in Proxmox&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Waarschuwing:&lt;/strong&gt; Start de VM nooit opnieuw op na Sysprep. Als je dat toch doet, wordt de generalisatie verbruikt en moet het template opnieuw worden opgebouwd vanaf het begin.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Proxmox Lab — Windows Server 2022 VM aanmaken</title>
+      <link>http://localhost:1313/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</guid>
+      <description>&lt;p&gt;Deze handleiding beschrijft het volledige proces voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Gebaseerd op praktijkervaring inclusief alle correcties en geleerde lessen tijdens de opbouw van een thuislab.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;📄 &lt;strong&gt;Download de volledige handleiding met screenshots:&lt;/strong&gt;&#xA;&lt;a href=&#34;http://localhost:1313/documents/WS2022-in-Proxmox-VM-Creation-Guide.docx&#34;&gt;WS2022-in-Proxmox-VM-Creation-Guide.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;omgeving&#34;&gt;Omgeving&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Onderdeel&lt;/th&gt;&#xA;          &lt;th&gt;Details&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox Host&lt;/td&gt;&#xA;          &lt;td&gt;macpro2013.local — Mac Pro 2013 Trashcan&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox Versie&lt;/td&gt;&#xA;          &lt;td&gt;9.1.6&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RAM&lt;/td&gt;&#xA;          &lt;td&gt;128 GB&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Opslag&lt;/td&gt;&#xA;          &lt;td&gt;3.6 TB NVMe (local-lvm pool)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Netwerkbrug&lt;/td&gt;&#xA;          &lt;td&gt;vmbr0 — intern lab netwerk (192.168.178.x)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Proxmox WebUI&lt;/td&gt;&#xA;          &lt;td&gt;https://192.168.178.205:8006&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Let op:&lt;/strong&gt; De Proxmox WebUI toont een SSL-certificaatwaarschuwing omdat Proxmox standaard een zelfondertekend certificaat gebruikt. Dit is de aanleiding voor het later opzetten van een interne Certificate Authority (CA).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

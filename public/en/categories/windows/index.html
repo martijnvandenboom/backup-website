@@ -650,6 +650,137 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
+    
+    
+      <p>Step-by-step guide for creating a Windows Server 2022 virtual machine in Proxmox VE 9.1.6. Covers all wizard settings, VirtIO drivers, and real-world tips from actual lab experience.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>6-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    This guide documents the complete process of creating a Windows Server 2022 virtual machine in Proxmox VE 9.1.6. It is based on actual lab setup experience and includes all corrections and lessons learned during the build of a home lab.
+📄 Download the full guide with screenshots: WS2022-in-Proxmox-VM-Creation-Guide.docx
+Environment Component Details Proxmox Host macpro2013.local — Mac Pro 2013 Trashcan Proxmox Version 9.1.6 RAM 128 GB Storage 3.6 TB NVMe (local-lvm pool) Network Bridge vmbr0 —...
+  </div>
+  <footer>
+    <a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/proxmox/">proxmox</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/windows-server-2022/">windows-server-2022</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/virtualisation/">virtualisation</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/vm/">vm</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/virtio/">virtio</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/lab/">lab</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/hypervisor/">hypervisor</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+    
+    
+      <p>From first boot to Sysprep — step-by-step guide for preparing a Windows Server 2022 VM as a reusable Proxmox template. Covers VirtIO drivers, Windows Update via PowerShell, performance tweaks, and Sysprep.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>6-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    This guide covers the complete process of preparing a freshly installed Windows Server 2022 VM as a reusable Proxmox template. All future VMs (CA server, member servers, etc.) are cloned from this template, saving significant time and ensuring a consistent baseline across the entire lab.
+📄 Download the full guide with screenshots: WS2022-in-Proxmox-Template-Preparation-Guide.docx
+Overview The full process consists of these steps:
+Install VirtIO guest drivers Run Windows Update — fully patch the...
+  </div>
+  <footer>
+    <a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/proxmox/">proxmox</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/windows-server-2022/">windows-server-2022</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/sysprep/">sysprep</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/virtio/">virtio</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/powershell/">powershell</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/template/">template</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/lab/">lab</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/hypervisor/">hypervisor</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory and DNS Installation</a></h2>
     
     
@@ -925,132 +1056,6 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/automatisch_inloggen_in_windows/">Automatically log in to Windows</a></h2>
-    
-    
-      <p>Tools</p>
-    
-  </div>
-  <div class="meta">
-    <time datetime="2022-03-09 11:58:22 &#43;0100 CET">March 9, 2022</time>
-    <p>van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    Entering a password or PIN is not equally convenient for everyone. Do you find it annoying to enter a password or PIN every time you log in to Windows? You can also automatically log in to Windows. When the computer has finished starting up, you will immediately see the desktop. On the desktop you can make all your useful programs accessible and you have that immediately in front of you when you have turned on the computer. You can then immediately start using the computer, without having to...
-  </div>
-  <footer>
-    <a href="/en/blog/automatisch_inloggen_in_windows/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/actions/">actions</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/utilities/">utilities</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/automatic/">automatic</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/automatically/">automatically</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/log/">log</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/login/">login</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/autologon/">autologon</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/actions/">actions</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/utilities/">utilities</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/gehele_webpagina_opslaan/">Save an entire webpage</a></h2>
-    
-    
-      <p>Commands</p>
-    
-  </div>
-  <div class="meta">
-    <time datetime="2021-12-19 09:50:22 &#43;0100 CET">December 19, 2021</time>
-    <p>van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    In the web browser Microsoft Edge: &gt; click the 3 dots in the top right corner: ... &gt; choose the option: Web capture (Ctrl&#43;Shift&#43;S) &gt; choose the option: Capture full page &gt; click the button: Save &gt; an image of type .jpeg will now be saved in your personal directory: Downloads
-  </div>
-  <footer>
-    <a href="/en/blog/gehele_webpagina_opslaan/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/handelingen/">handelingen</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/webpagina/">webpagina</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/opslaan/">opslaan</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/html/">html</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/afbeelding/">afbeelding</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
     
@@ -1065,6 +1070,22 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
       <header>
         <h1>Recent Posts:</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1090,22 +1111,6 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/">Compress photos without quality loss for any platform</a></h2>
-          <time class="published" datetime="2025-09-12 01:58:22 &#43;0100 &#43;0100">September 12, 2025</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
-          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/en/blog/" class="button">See More</a>
@@ -1125,7 +1130,7 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">63</span></a>
+              <a href="/en/categories/article/">article<span class="count">65</span></a>
           
           <li>
               <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1134,7 +1139,7 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
               <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/en/categories/windows/">windows<span class="count">8</span></a>
+              <a href="/en/categories/windows/">windows<span class="count">10</span></a>
           
           <li>
               <a href="/en/categories/tools/">tools<span class="count">4</span></a>
@@ -1150,6 +1155,9 @@ P.S. Would you like somebody to help you? Feel free to send me a message on one 
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
+          
+          <li>
+              <a href="/en/categories/animations/">animations<span class="count">1</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

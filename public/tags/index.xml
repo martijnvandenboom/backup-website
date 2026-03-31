@@ -6,8 +6,78 @@
     <description>Recent content in Tags on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
-    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hypervisor</title>
+      <link>http://localhost:1313/tags/hypervisor/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/hypervisor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lab</title>
+      <link>http://localhost:1313/tags/lab/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/lab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerShell</title>
+      <link>http://localhost:1313/tags/powershell/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/powershell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxmox</title>
+      <link>http://localhost:1313/tags/proxmox/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/proxmox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sysprep</title>
+      <link>http://localhost:1313/tags/sysprep/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/sysprep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Template</title>
+      <link>http://localhost:1313/tags/template/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/template/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtio</title>
+      <link>http://localhost:1313/tags/virtio/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/virtio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtualisatie</title>
+      <link>http://localhost:1313/tags/virtualisatie/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/virtualisatie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vm</title>
+      <link>http://localhost:1313/tags/vm/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/vm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows-Server-2022</title>
+      <link>http://localhost:1313/tags/windows-server-2022/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/windows-server-2022/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Active-Directory</title>
       <link>http://localhost:1313/tags/active-directory/</link>
@@ -37,13 +107,6 @@
       <description></description>
     </item>
     <item>
-      <title>Lab</title>
-      <link>http://localhost:1313/tags/lab/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/lab/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Vmware</title>
       <link>http://localhost:1313/tags/vmware/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
@@ -55,13 +118,6 @@
       <link>http://localhost:1313/tags/windows/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
       <guid>http://localhost:1313/tags/windows/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Windows-Server-2022</title>
-      <link>http://localhost:1313/tags/windows-server-2022/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/windows-server-2022/</guid>
       <description></description>
     </item>
     <item>
@@ -198,7 +254,7 @@
       <description></description>
     </item>
     <item>
-      <title>VirtualBox</title>
+      <title>Virtualbox</title>
       <link>http://localhost:1313/tags/virtualbox/</link>
       <pubDate>Tue, 01 Jul 2025 08:30:05 +0000</pubDate>
       <guid>http://localhost:1313/tags/virtualbox/</guid>
@@ -569,6 +625,34 @@
       <description></description>
     </item>
     <item>
+      <title>Animatie</title>
+      <link>http://localhost:1313/tags/animatie/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/animatie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>http://localhost:1313/tags/css/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>http://localhost:1313/tags/javascript/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webdesign</title>
+      <link>http://localhost:1313/tags/webdesign/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/webdesign/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Convert</title>
       <link>http://localhost:1313/tags/convert/</link>
       <pubDate>Sun, 05 Jan 2025 20:09:27 +0000</pubDate>
@@ -842,7 +926,7 @@
       <description></description>
     </item>
     <item>
-      <title>Ipa</title>
+      <title>IPA</title>
       <link>http://localhost:1313/tags/ipa/</link>
       <pubDate>Sat, 09 Mar 2024 17:38:50 +0000</pubDate>
       <guid>http://localhost:1313/tags/ipa/</guid>
@@ -1042,13 +1126,6 @@
       <link>http://localhost:1313/tags/percentage/</link>
       <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
       <guid>http://localhost:1313/tags/percentage/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Powershell</title>
-      <link>http://localhost:1313/tags/powershell/</link>
-      <pubDate>Thu, 04 Jan 2024 22:21:38 +0000</pubDate>
-      <guid>http://localhost:1313/tags/powershell/</guid>
       <description></description>
     </item>
     <item>
@@ -1402,14 +1479,14 @@
       <description></description>
     </item>
     <item>
-      <title>MacBook</title>
+      <title>Macbook</title>
       <link>http://localhost:1313/tags/macbook/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
       <guid>http://localhost:1313/tags/macbook/</guid>
       <description></description>
     </item>
     <item>
-      <title>Opencore Legacy Patcher</title>
+      <title>OpenCore Legacy Patcher</title>
       <link>http://localhost:1313/tags/opencore-legacy-patcher/</link>
       <pubDate>Sun, 30 Apr 2023 12:53:36 +0000</pubDate>
       <guid>http://localhost:1313/tags/opencore-legacy-patcher/</guid>
@@ -1840,13 +1917,6 @@
       <link>http://localhost:1313/tags/themes/</link>
       <pubDate>Thu, 16 Dec 2021 09:07:17 +0000</pubDate>
       <guid>http://localhost:1313/tags/themes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Css</title>
-      <link>http://localhost:1313/tags/css/</link>
-      <pubDate>Mon, 13 Dec 2021 19:12:03 +0100</pubDate>
-      <guid>http://localhost:1313/tags/css/</guid>
       <description></description>
     </item>
     <item>

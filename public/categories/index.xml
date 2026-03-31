@@ -6,19 +6,19 @@
     <description>Recent content in Categories on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
-    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Article</title>
       <link>http://localhost:1313/categories/article/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
       <guid>http://localhost:1313/categories/article/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
       <link>http://localhost:1313/categories/windows/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0100</pubDate>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
       <guid>http://localhost:1313/categories/windows/</guid>
       <description></description>
     </item>
@@ -55,6 +55,13 @@
       <link>http://localhost:1313/categories/utilities/</link>
       <pubDate>Sat, 15 Nov 2025 15:40:22 +0100</pubDate>
       <guid>http://localhost:1313/categories/utilities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Animaties</title>
+      <link>http://localhost:1313/categories/animaties/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/animaties/</guid>
       <description></description>
     </item>
     <item>

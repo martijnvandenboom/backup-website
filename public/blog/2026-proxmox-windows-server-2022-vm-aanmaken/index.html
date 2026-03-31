@@ -1,0 +1,1504 @@
+<!doctype html>
+<html lang="nl">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <style>
+        @keyframes rotate {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+        .bold-rotate {
+            font-weight: bold;
+            display: inline-block;
+            animation: rotate 2s infinite;
+        }
+    </style>
+  </head>
+  <head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9BKD4YYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PX9BKD4YYT');
+  </script>
+
+  
+  <script>(function(w,d,s,l,i){
+    w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KWVBJ3K4');
+  </script>
+  
+
+
+  <meta charset="utf-8">
+<title>Proxmox Lab — Windows Server 2022 VM aanmaken - Notities</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
+  
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+<meta name="generator" content="Hugo 0.157.0"><meta property="og:site_name" content="Notities">
+  <meta property="og:title" content="Proxmox Lab — Windows Server 2022 VM aanmaken">
+  <meta property="og:description" content="Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Inclusief alle wizard-instellingen, VirtIO drivers en tips uit de praktijk.">
+  <meta property="description" content="Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Inclusief alle wizard-instellingen, VirtIO drivers en tips uit de praktijk.">
+  <meta property="og:url" content="http://localhost:1313/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">
+  <meta property="og:type" content="article">
+  
+    <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
+  
+  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.a694a0de4d12f03f7239d4eb60fd6f210f9713402aa21c902e52435f0e0ffb85.css" integrity="sha256-ppSg3k0S8D9yOdTrYP1vIQ&#43;XE0AqohyQLlJDXw4P&#43;4U="><link rel="stylesheet" href="/css/add-on.css">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  
+  <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "4j6o1x990j");
+  </script>
+
+  <style>
+  .footer {
+     position: fixed;
+     left: 0;
+      bottom: -1.125em;
+     width: 25%;
+     padding-left: 10px;
+     font-family: source sans pro,Helvetica,sans-serif;
+     font-size: .7em;
+     letter-spacing: .25em;
+     line-height: 2.5;
+     text-transform: uppercase;
+  }
+  </style>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9BKD4YYT"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PX9BKD4YYT');
+        }
+      </script>
+
+  
+
+  <style>
+
+    :root {
+      --base-color: rgb(255, 255, 255);
+      --base-variant: #ffffff;
+      --text-color: black;
+      --secondairy-text: #232738;
+      --primary-color: #000000;
+      --accent-color: #ffffff;
+    }
+
+    .darkmode {
+      --base-color: #070b1d;
+      --base-variant: #101425;
+      --text-color: white;
+      --secondairy-text: #a4a5b8;
+      --primary-color: hsl(0, 0%, 100%);
+      --accent-color: #0071ff;
+    }
+
+    * {
+    }
+
+    .darkmode_button {
+      margin: 0;
+      border: 0;
+      border-left: 1px solid #e8ebed;
+    }
+
+    .darkmode .darkmode_button {
+      border-left-color: transparent;
+    }
+
+    .darkmode-search-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 61px;
+      height: 3.5em;
+      padding: 0;
+      margin-right: 0;
+    }
+
+    .darkmode-search-toggle i {
+      line-height: 1;
+      vertical-align: middle;
+    }
+
+    #theme-switch {
+      height: 3.5em;
+      width: 61px;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0;
+      color: red;
+    }
+
+    #theme-switch:hover {
+       
+      color: #2eb8ac;      
+    }
+
+    #theme-switch svg {
+      fill: var(--primary-color);
+    }
+
+    #theme-switch:hover svg {
+     fill: #2eb8ac !important;
+     filter: none !important;
+    }
+
+    #theme-switch svg {
+      display: none;
+    }
+
+    .theme-pref-system #theme-switch svg:nth-child(1) {
+      display: block;
+      fill: #050505;
+      filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.4));
+    }
+
+    .darkmode.theme-pref-system #theme-switch svg:nth-child(1) {
+      fill: #ffffff;
+      filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.6));
+    }
+
+    .theme-pref-light #theme-switch svg:nth-child(2) {
+      display: block;
+    }
+
+    .theme-pref-dark #theme-switch svg:nth-child(3) {
+      display: block;
+    }
+
+    .absolute-position {
+      position: static;
+      display: flex;
+      align-items: center;
+      height: 3.5em;
+      position: relative;
+      z-index: auto;
+    }
+
+    .theme-menu {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 2px);
+      background-color: var(--base-color);
+      border: 1px solid #e8ebed;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+      min-width: 190px;
+      padding: 6px 0;
+      display: none;
+      z-index: 10001;
+    }
+
+    .theme-menu.active {
+      display: block;
+    }
+
+    .theme-option {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      font-size: 0.78em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .theme-option:hover,
+    .theme-option.theme-option-active {
+      background: rgba(46, 184, 172, 0.15);
+      color: #2eb8ac;
+    }
+
+    .theme-option i {
+      width: 1.1em;
+      text-align: center;
+    }
+
+    html {
+
+    }
+
+    body {
+      background-color: var(--base-color);
+      color: var(--text-color);
+    }
+  
+    #site-header {
+      background-color: var(--base-color);
+      color: var(--text-color);;
+    }
+
+    .post {
+      background-color: var(--base-color);
+      color: var(--text-color);
+    }
+
+    .mini-post {
+      background-color: var(--base-color);
+      color: var(--text-color);
+    }
+
+    .flyout-menu {
+      background-color: var(--base-color);
+      color: var(--text-color);
+    }
+
+    .text-color-darkmode {
+      color: var(--text-color);
+    }
+
+    .nav {
+      color: var(--text-color);
+    }
+
+    p.copyright {
+      color: var(--text-color); 
+    }
+
+    .share-btn {
+      color: white;
+    }
+
+
+
+
+    .twitter {
+      background-color: black;
+    }
+    .twitter:hover {
+      background-color: #454545;
+    }
+    .twitter::before {
+      font-family: "Font Awesome 6 Brands";
+      content: "\e61b";
+    }
+
+  </style>
+
+  <style>
+    #telegram-btn, #back-to-top {
+      position: fixed;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 10000;
+      border: 2px solid #fff;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      padding: 0;
+    }
+
+    #back-to-top {
+      bottom: 20px;
+      border-bottom: 2px solid #fff;  
+    }
+
+    #telegram-btn {
+      bottom: 140px;
+    }
+
+    #telegram-btn svg {
+      fill: #fff;
+      width: 28px;
+      height: 28px;
+    }
+
+    #back-to-top::before {
+      font-size: 24px;
+    }
+
+    #telegram-btn:hover, #back-to-top:hover {
+      background-color: #2eb8ac;
+      color: #fff !important;
+      border-color: #2eb8ac;
+      transform: none !important;
+    }
+
+    #telegram-btn:hover svg {
+      fill: #fff;
+    }
+
+     
+    .darkmode table {
+      background-color: #101425;
+      color: var(--text-color);
+    }
+
+    .darkmode table > thead {
+      background-color: #1a1f35;
+    }
+
+    .darkmode table > tbody > tr > td:first-child {
+      background-color: #1a1f35;
+      color: var(--text-color);
+    }
+
+    .darkmode table > tbody > tr:nth-child(even) {
+      background-color: #0d1126;
+    }
+
+    .darkmode table > tbody > tr:hover {
+      background-color: #1e2640;
+    }
+  </style>
+
+
+
+
+
+
+</head>
+
+  <body>
+
+    
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWVBJ3K4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    
+
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          Blog
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/archive/" class="nav link"><i class='fas fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="/about/" class="nav link"><i class='far fa-id-card'></i> Over</a>
+        
+      
+        
+          
+          <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+        
+      
+        
+          
+          <a href="/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categorieën</a>
+        
+      
+        
+          
+          <a href="/services/" class="nav link"><i class='fas fa-briefcase'></i> Services</a>
+        
+      
+        
+          
+          <a href="/animations/" class="nav link"><i class='fas fa-film'></i> Animaties</a>
+        
+      
+        
+          
+          <a href="/archive/" class="nav link"><i class='fas fa-archive'></i> Archief</a>
+        
+      
+        
+          
+          <a href="/contact/" class="nav link"><i class='fas fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <div class="absolute-position">
+      <a href="#search-input" class="nav search-toggle darkmode-search-toggle" aria-label="Search"><i class="fas fa-search fa-2x"></i></a>
+      <button class="nav darkmode_button theme-toggle" id="theme-switch" type="button" aria-haspopup="true" aria-controls="theme-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-636q-121 15-200.5 105.5T160-480q0 122 79.5 212.5T440-162Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg> 
+      </button>
+      <menu id="theme-menu" class="menu theme-menu">
+        <button type="button" class="theme-option" data-theme="light"><i class="fas fa-sun"></i><span>Light mode</span></button>
+        <button type="button" class="theme-option" data-theme="dark"><i class="fas fa-moon"></i><span>Dark mode</span></button>
+        <button type="button" class="theme-option" data-theme="system"><i class="fas fa-adjust"></i><span>Auto mode</span></button>
+      </menu>
+    </div>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="nl">nl</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+
+  <img style="height: 160px; padding: 15px 2px 11px 20px; border: none; box-shadow: none; background: transparent;" src="/images/Earth-globe-transparent.gif">
+  
+  <a href="#" lang="nl" class="nav link active">Nederlands (nl)</a>
+  
+    
+      
+        <a href="/en" lang="en" class="nav no-lang link">English (en)</a>
+      
+    
+      
+    
+  
+
+    
+
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1 class="text-color-darkmode">Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//x.com/share?text=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken&amp;url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>X</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;description=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van ing.%20M.A.C.M.%20%28Martijn%29%20van%20den%20Boom&amp;body=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://vandenboom.netlify.app/images/Martijn_001.jpg" class="circle" width="100" alt="Notities" /></a>
+  <header>
+    <h1>Notities</h1>
+  </header>
+  <main>
+    <p>ing. M.A.C.M. (Martijn) van den Boom </br></br> Computer Infrastructure Engineer </br> ingenieur, docent en mentor</br></br></p>
+
+    
+    
+    <style>
+      .amazon-button {
+        display: inline-block;
+        width: 250px;  
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.2s, color 0.2s;
+        margin-bottom: 10px;  
+      }
+
+      .amazon-button:hover {
+        background-color: black;
+        color: white;
+      }
+    </style>
+
+  </main>
+  
+    <footer>
+	  <h6 style="text-align:left;">Social Media Links:</h6>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/martijnvandenboom" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+<li><a href="//stackoverflow.com/users/13417146" target="_blank" rel="noopener" title="Stack Overflow" class="fab fa-stack-overflow"></a></li>
+<li><a href="//bitbucket.com/martijnvandenboom" target="_blank" rel="noopener" title="Bitbucket" class="fab fa-bitbucket"></a></li>
+
+
+<li><a href="//ingvdboom.deviantart.com/" target="_blank" rel="noopener" title="DeviantArt" class="fab fa-deviantart"></a></li>
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/macmvandenboom" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+<li><a href="//xing.com/profile/MACMMartijn_vandenBoom" target="_blank" rel="noopener" title="Xing" class="fab fa-xing"></a></li>
+
+<li><a href="//facebook.com/macmvandenboom" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+<li><a href="//youtube.com/channel/UCslXipyVBwsTe6UjhVNOz7A" target="_blank" rel="noopener" title="YouTube" class="fab fa-youtube"></a></li>
+<li><a href="//vimeo.com/macmvandenboom" target="_blank" rel="noopener" title="Vimeo" class="fab fa-vimeo"></a></li>
+
+
+
+
+<li><a href="//instagram.com/ingmacmvandenboom" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//open.spotify.com/user/0d6z61v65xapwjgn7n416pc1j" target="_blank" rel="noopener" title="Spotify" class="fab fa-spotify"></a></li>
+<li><a href="//soundcloud.com/ing-macm-van-den-boom" target="_blank" rel="noopener" title="Soundcloud" class="fab fa-soundcloud"></a></li>
+<li><a href="//x.com/ingvdboom" target="_blank" rel="noopener" title="X" class="fab fa-x-twitter"></a></li>
+
+<li><a href="skype:mvdboom@live.com?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+<li><a href="//snapchat.com/add/ingvdboom" target="_blank" rel="noopener" title="snapchat" class="fab fa-snapchat"></a></li>
+<li><a href="//www.pinterest.com/macmvandenboom" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/ingvdboom" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+
+
+
+<li><a href="mailto:ingmacmvandenboom@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">Proxmox Lab — Windows Server 2022 VM aanmaken</a></h2>
+    
+    
+      <p>Stap voor stap handleiding voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Inclusief alle wizard-instellingen, VirtIO drivers en tips uit de praktijk.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>6 minuten leestijd</p>
+  </div>
+</header>
+
+    <div id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//x.com/share?text=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken&amp;url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>X</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;title=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f&amp;description=Proxmox%20Lab%20%e2%80%94%20Windows%20Server%202022%20VM%20aanmaken" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Bekijk%20ook%20eens%20dit%20bericht%20van ing.%20M.A.C.M.%20%28Martijn%29%20van%20den%20Boom&amp;body=http%3a%2f%2flocalhost%3a1313%2fblog%2f2026-proxmox-windows-server-2022-vm-aanmaken%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </div>
+    <div class="content">
+      
+      <p>Deze handleiding beschrijft het volledige proces voor het aanmaken van een Windows Server 2022 virtuele machine in Proxmox VE 9.1.6. Gebaseerd op praktijkervaring inclusief alle correcties en geleerde lessen tijdens de opbouw van een thuislab.</p>
+<blockquote>
+<p>📄 <strong>Download de volledige handleiding met screenshots:</strong>
+<a href="/documents/WS2022-in-Proxmox-VM-Creation-Guide.docx">WS2022-in-Proxmox-VM-Creation-Guide.docx</a></p>
+</blockquote>
+<hr>
+<h2 id="omgeving">Omgeving</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Onderdeel</th>
+          <th>Details</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Proxmox Host</td>
+          <td>macpro2013.local — Mac Pro 2013 Trashcan</td>
+      </tr>
+      <tr>
+          <td>Proxmox Versie</td>
+          <td>9.1.6</td>
+      </tr>
+      <tr>
+          <td>RAM</td>
+          <td>128 GB</td>
+      </tr>
+      <tr>
+          <td>Opslag</td>
+          <td>3.6 TB NVMe (local-lvm pool)</td>
+      </tr>
+      <tr>
+          <td>Netwerkbrug</td>
+          <td>vmbr0 — intern lab netwerk (192.168.178.x)</td>
+      </tr>
+      <tr>
+          <td>Proxmox WebUI</td>
+          <td>https://192.168.178.205:8006</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Let op:</strong> De Proxmox WebUI toont een SSL-certificaatwaarschuwing omdat Proxmox standaard een zelfondertekend certificaat gebruikt. Dit is de aanleiding voor het later opzetten van een interne Certificate Authority (CA).</p>
+</blockquote>
+<hr>
+<h2 id="vereisten">Vereisten</h2>
+<p>Zorg ervoor dat de volgende ISO-images zijn geüpload naar de Proxmox lokale opslag (<strong>Proxmox WebUI → local → ISO Images</strong>) voordat je een VM aanmaakt:</p>
+<ul>
+<li><strong>Windows Server 2022 Evaluation:</strong> <code>Windows_2022_SERVER_EVAL_x64FRE_en-us.iso</code></li>
+<li><strong>VirtIO Drivers:</strong> <code>virtio-win-0.1.285.iso</code> (of nieuwer)</li>
+</ul>
+<blockquote>
+<p><strong>Waarschuwing:</strong> Beide ISO&rsquo;s zijn verplicht. Zonder de VirtIO ISO kan Windows Setup de schijf en netwerkadapter niet detecteren.</p>
+</blockquote>
+<hr>
+<h2 id="naamgevingsconventie">Naamgevingsconventie</h2>
+<p>Gebruik consistente namen voor alle lab-VM&rsquo;s zodat je in één oogopslag ziet wat elke VM doet in het Proxmox-paneel.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Patroon</th>
+          <th>Voorbeeld</th>
+          <th>Beschrijving</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>WS2022-LAB{nn}-{ROLLEN}</td>
+          <td>WS2022-LAB01-AD-DNS</td>
+          <td>Lab VM — nummer + alle actieve rollen</td>
+      </tr>
+      <tr>
+          <td>WS2022-LAB{nn}-CA</td>
+          <td>WS2022-LAB02-CA</td>
+          <td>Certificate Authority VM</td>
+      </tr>
+      <tr>
+          <td>WS2022-TEMPLATE-{NAAM}</td>
+          <td>WS2022-TEMPLATE-BASE</td>
+          <td>Template VM — gebruik VM ID 900+</td>
+      </tr>
+  </tbody>
+</table>
+<p>Een VM hernoemen via de Proxmox hostshell (de Proxmox GUI heeft geen hernoemoptie):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh root@macpro2013.local
+</span></span><span style="display:flex;"><span>qm set &lt;VMID&gt; --name &lt;NIEUWE-NAAM&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Voorbeeld — hernoem VM 100:</span>
+</span></span><span style="display:flex;"><span>qm set <span style="color:#ae81ff">100</span> --name WS2022-LAB01-AD-DNS
+</span></span></code></pre></div><hr>
+<h2 id="stap-1--vm-aanmaken-via-de-proxmox-wizard">Stap 1 — VM aanmaken via de Proxmox Wizard</h2>
+<p>Klik in de Proxmox WebUI op <strong>Create VM</strong> (blauwe knop rechtsboven). Doorloop elk tabblad in de volgorde zoals hieronder beschreven.</p>
+<h3 id="11-tabblad-general">1.1 Tabblad General</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Instelling</th>
+          <th>Waarde</th>
+          <th>Toelichting</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Name</td>
+          <td>WS2022-TEMPLATE-BASE</td>
+          <td>Beschrijvende naam met OS + rol</td>
+      </tr>
+      <tr>
+          <td>VM ID</td>
+          <td>900</td>
+          <td>Gebruik 900+ voor templates, 100+ voor lab-VM&rsquo;s</td>
+      </tr>
+      <tr>
+          <td>Node</td>
+          <td>macpro2013</td>
+          <td>Jouw Proxmox hostknooppunt</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="12-tabblad-os">1.2 Tabblad OS</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Instelling</th>
+          <th>Waarde</th>
+          <th>Toelichting</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ISO Image</td>
+          <td>Windows_2022_SERVER_EVAL_x64FRE_en-us.iso</td>
+          <td>Selecteer uit lokale opslag</td>
+      </tr>
+      <tr>
+          <td>Type</td>
+          <td>Microsoft Windows</td>
+          <td>Moet expliciet worden ingesteld</td>
+      </tr>
+      <tr>
+          <td>Version</td>
+          <td>11/2022/2025</td>
+          <td>Moet expliciet worden ingesteld</td>
+      </tr>
+      <tr>
+          <td>Add VirtIO drivers ISO</td>
+          <td>Ingeschakeld (vinkje)</td>
+          <td>Voegt een tweede cd-schijf toe</td>
+      </tr>
+      <tr>
+          <td>VirtIO ISO</td>
+          <td>virtio-win-0.1.285.iso</td>
+          <td>Selecteer uit lokale opslag</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Waarschuwing:</strong> Het OS-type en de versie moeten handmatig worden ingesteld. Het vinkje voor de extra VirtIO ISO voegt een tweede cd-station toe — dit is essentieel voor het laden van opslag- en netwerkdrivers tijdens Windows Setup.</p>
+</blockquote>
+<h3 id="13-tabblad-system">1.3 Tabblad System</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Instelling</th>
+          <th>Waarde</th>
+          <th>Toelichting</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>BIOS</td>
+          <td>OVMF (UEFI)</td>
+          <td>Vereist voor Windows Server 2022</td>
+      </tr>
+      <tr>
+          <td>Machine</td>
+          <td>pc-q35</td>
+          <td>Moderne chipset vereist voor TPM 2.0</td>
+      </tr>
+      <tr>
+          <td>SCSI Controller</td>
+          <td>VirtIO SCSI single</td>
+          <td>Beste opslagprestaties</td>
+      </tr>
+      <tr>
+          <td>EFI Storage</td>
+          <td>local-lvm</td>
+          <td>Moet expliciet worden geselecteerd</td>
+      </tr>
+      <tr>
+          <td>TPM Storage</td>
+          <td>local-lvm</td>
+          <td>Moet expliciet worden geselecteerd</td>
+      </tr>
+      <tr>
+          <td>TPM Version</td>
+          <td>v2.0</td>
+          <td>Vereist voor Windows Server 2022</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Waarschuwing:</strong> EFI Storage en TPM Storage hebben geen standaardwaarde — beide moeten expliciet worden geselecteerd. Zonder deze instellingen start de VM niet correct op.</p>
+</blockquote>
+<h3 id="14-tabblad-disks">1.4 Tabblad Disks</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Instelling</th>
+          <th>Waarde</th>
+          <th>Toelichting</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Bus/Device</td>
+          <td>SCSI</td>
+          <td>Gebruik met VirtIO SCSI controller</td>
+      </tr>
+      <tr>
+          <td>Storage</td>
+          <td>local-lvm</td>
+          <td>NVMe-backed pool</td>
+      </tr>
+      <tr>
+          <td>Disk Size</td>
+          <td>60 GB</td>
+          <td>Voldoende voor OS, rollen en tools</td>
+      </tr>
+      <tr>
+          <td>Cache</td>
+          <td>Write back</td>
+          <td>Beste prestaties op NVMe</td>
+      </tr>
+      <tr>
+          <td>Discard</td>
+          <td>Ingeschakeld</td>
+          <td>Maakt TRIM mogelijk voor SSD/NVMe</td>
+      </tr>
+      <tr>
+          <td>IO Thread</td>
+          <td>Ingeschakeld</td>
+          <td>Verbetert schijfdoorvoer</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="15-tabblad-cpu">1.5 Tabblad CPU</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Instelling</th>
+          <th>Waarde</th>
+          <th>Toelichting</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Sockets</td>
+          <td>1</td>
+          <td>Enkele socket</td>
+      </tr>
+      <tr>
+          <td>Cores</td>
+          <td>2</td>
+          <td>Voldoende voor alle lab-VM-rollen</td>
+      </tr>
+      <tr>
+          <td>Type</td>
+          <td>host</td>
+          <td>Geeft de daadwerkelijke host-CPU door — betere prestaties dan kvm64</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Waarschuwing:</strong> Het CPU-type moet worden ingesteld op <strong>host</strong>. De standaard kvm64 beperkt de beschikbare CPU-instructiesets en vermindert de prestaties.</p>
+</blockquote>
+<h3 id="16-tabblad-memory">1.6 Tabblad Memory</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Instelling</th>
+          <th>Waarde</th>
+          <th>Toelichting</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Memory</td>
+          <td>4096 MB</td>
+          <td>4 GB per VM</td>
+      </tr>
+      <tr>
+          <td>Minimum Memory</td>
+          <td>4096 MB</td>
+          <td>Gelijk stellen aan Memory om ballooning uit te schakelen</td>
+      </tr>
+      <tr>
+          <td>Ballooning Device</td>
+          <td>Uitgeschakeld</td>
+          <td>Wordt slecht ondersteund op Windows</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Waarschuwing:</strong> Ballooning moet worden uitgeschakeld voor Windows-VM&rsquo;s. Stel Minimum Memory gelijk aan Memory om dit af te dwingen.</p>
+</blockquote>
+<h3 id="17-tabblad-network">1.7 Tabblad Network</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Instelling</th>
+          <th>Waarde</th>
+          <th>Toelichting</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Bridge</td>
+          <td>vmbr0</td>
+          <td>Intern lab netwerk</td>
+      </tr>
+      <tr>
+          <td>Model</td>
+          <td>VirtIO (paravirtualized)</td>
+          <td>Beste prestaties — vereist VirtIO-drivers</td>
+      </tr>
+      <tr>
+          <td>Firewall</td>
+          <td>Ingeschakeld (standaard laten)</td>
+          <td>Laat ingeschakeld — weerspiegelt productieomgevingen</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Tip:</strong> Laat de Proxmox-firewall ingeschakeld op de netwerkadapter. Door de firewall in te laten staan oefen je met het oplossen van problemen zoals in een echte productieomgeving.</p>
+</blockquote>
+<hr>
+<h2 id="stap-2--hardware-verifiëren-voor-het-opstarten">Stap 2 — Hardware verifiëren voor het opstarten</h2>
+<p>Klik na het afronden van de wizard <strong>niet</strong> direct op Start. Controleer eerst de hardwareconfiguratie via <strong>Hardware</strong> in het linker paneel. Verifieer het volgende:</p>
+<ul>
+<li><strong>Memory:</strong> 4.00 GiB [balloon=0] — balloon=0 bevestigt dat ballooning is uitgeschakeld</li>
+<li><strong>Processors:</strong> 2 (1 socket, 2 cores) [host] — bevestigt host CPU-type</li>
+<li><strong>BIOS:</strong> OVMF (UEFI)</li>
+<li><strong>Machine:</strong> pc-q35-10.1</li>
+<li><strong>SCSI Controller:</strong> VirtIO SCSI single</li>
+<li><strong>CD/DVD ide0:</strong> VirtIO ISO</li>
+<li><strong>CD/DVD ide2:</strong> Windows 2022 ISO</li>
+<li><strong>Hard Disk:</strong> 60 GB, cache=writeback, discard=on, iothread=1</li>
+<li><strong>Network:</strong> vmbr0, firewall=1</li>
+<li><strong>EFI Disk</strong> en <strong>TPM State</strong> aanwezig op local-lvm</li>
+</ul>
+<hr>
+<h2 id="stap-3--vm-opstarten-en-windows-installeren">Stap 3 — VM opstarten en Windows installeren</h2>
+<p>Klik op <strong>Start</strong> en open direct de <strong>Console</strong>. Wanneer je het volgende bericht ziet, klik dan eerst in het consolevenster (om toetsenbordfocus te krijgen) en druk op een willekeurige toets:</p>
+<pre tabindex="0"><code>Press any key to boot from CD or DVD......
+</code></pre><blockquote>
+<p><strong>Waarschuwing:</strong> Als je deze prompt mist, probeert de VM op te starten via PXE-boot. Reset de VM en probeer het opnieuw — wees klaar bij de console voordat je op Start klikt.</p>
+</blockquote>
+<p>Wanneer de prompt op tijd wordt gevangen, verschijnt de <strong>Windows Boot Manager</strong>. Selecteer <strong>Windows Setup [EMS Enabled]</strong> en druk op Enter.</p>
+<hr>
+<h2 id="stap-4--editieselectie">Stap 4 — Editieselectie</h2>
+<p>Wanneer gevraagd om een editie te selecteren, kies:</p>
+<p><strong>Windows Server 2022 Datacenter (Desktop Experience)</strong></p>
+<blockquote>
+<p><strong>Waarschuwing:</strong> Zorg ervoor dat je <strong>Datacenter</strong> selecteert — niet Standard. En <strong>Desktop Experience</strong> — niet Core. Core heeft geen GUI, wat het ongeschikt maakt voor dit lab-template.</p>
+</blockquote>
+<hr>
+<h2 id="stap-5--virtio-opslagdriver-laden">Stap 5 — VirtIO Opslagdriver laden</h2>
+<p>Op het scherm &lsquo;Where do you want to install the operating system?&rsquo; is de schijflijst leeg. Dit is normaal — Windows kan de VirtIO SCSI-schijf niet zien zonder de driver.</p>
+<p>Volg deze stappen om de driver te laden:</p>
+<ol>
+<li>Klik op <strong>Load driver</strong></li>
+<li>Klik op <strong>Browse</strong></li>
+<li>Navigeer naar het VirtIO cd-station (D: of E:)</li>
+<li>Open de map: <code>vioscsi \ w2k22 \ amd64</code></li>
+<li>Klik op <strong>OK</strong></li>
+<li>Selecteer <strong>Red Hat VirtIO SCSI pass-through controller</strong></li>
+<li>Klik op <strong>Next</strong></li>
+</ol>
+<p>De 60 GB-schijf verschijnt nu in de lijst. Selecteer deze en ga verder. De Windows-installatie begint.</p>
+<hr>
+<h2 id="stap-6--na-de-installatie">Stap 6 — Na de installatie</h2>
+<p>Na de installatie en herstart land je op het <strong>Server Manager Dashboard</strong>. Sluit de Windows Admin Center-pop-up (vink <em>Don&rsquo;t show this message again</em> aan).</p>
+<p>De VM is nu klaar voor de volgende stap: het voorbereiden als herbruikbaar Proxmox-template. Raadpleeg hiervoor de begeleidende handleiding:</p>
+<blockquote>
+<p>📄 <strong><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Proxmox Lab — Windows Server 2022 Template voorbereiding</a></strong></p>
+</blockquote>
+<hr>
+<h2 id="samenvatting-checklist">Samenvatting checklist</h2>
+<ol>
+<li>Windows Server 2022 ISO uploaden naar Proxmox lokale opslag ☐</li>
+<li>VirtIO drivers ISO uploaden naar Proxmox lokale opslag ☐</li>
+<li>VM aanmaken met de juiste instellingen in alle wizard-tabbladen ☐</li>
+<li>Hardwareconfiguratie verifiëren in het Proxmox Hardware-tabblad vóór het opstarten ☐</li>
+<li>VM opstarten — CD-bootprompt direct in de Console opvangen ☐</li>
+<li>Windows Server 2022 Datacenter (Desktop Experience) selecteren ☐</li>
+<li>VirtIO SCSI-driver laden (vioscsi/w2k22/amd64) vóór schijfselectie ☐</li>
+<li>Windows-installatie voltooien ☐</li>
+<li>Verder gaan naar de Template Preparation-handleiding ☐</li>
+</ol>
+<hr>
+<blockquote>
+<p>📄 <strong>Download de volledige handleiding met screenshots:</strong>
+<a href="/documents/WS2022-in-Proxmox-VM-Creation-Guide.docx">WS2022-in-Proxmox-VM-Creation-Guide.docx</a></p>
+</blockquote>
+<p>Vriendelijke groeten,</p>
+<p>Martijn</p>
+
+    </div>
+    <footer>
+      <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
+        
+          <li><a class="article-terms-link" href="/categories/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/proxmox/">proxmox</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/windows-server-2022/">windows-server-2022</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/virtualisatie/">virtualisatie</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/vm/">vm</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/virtio/">virtio</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/lab/">lab</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/hypervisor/">hypervisor</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+    </footer>
+  </article>
+  
+    
+  <article class="post">
+
+    <div id="disqus_thread"></div>
+    <script>
+      (function() {
+        if (window.location.hostname == "localhost")
+          return;
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + "\"www-vandenboom-icu\"" + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>    
+
+    
+  </article>
+
+
+
+
+  
+  <div class="pagination">
+    
+      <a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/" class="button left"><span>Proxmox Lab — Windows Server 2022 Template voorbereiding</span></a>
+    
+    
+      <a href="/blog/2026-windows-server-2022-active-directory-dns-installatie/" class="button right"><span>Windows Server 2022 — Active Directory en DNS installatie</span></a>
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recente berichten</h1>
+      </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Proxmox Lab — Windows Server 2022 Template voorbereiding</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">Proxmox Lab — Windows Server 2022 VM aanmaken</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory en DNS installatie</a></h2>
+          <time class="published" datetime="2026-03-27 00:00:00 &#43;0100 CET">27 Maart 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/">Windows packet capturing voor bijvoorbeeld een LDAPS verkeer analyse</a></h2>
+          <time class="published" datetime="2026-01-18 18:55:54.439 &#43;0000 UTC">18 Januari 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/network-routing-naar-lan-systemen-met-openvpn-server/">Network routing naar LAN systemen met OpenVPN Server</a></h2>
+          <time class="published" datetime="2025-11-15 15:40:22 &#43;0100 CET">15 November 2025</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="/blog/" class="button">Toon meer</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categorieën</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="/categories/article/">article<span class="count">65</span></a>
+          
+          <li>
+              <a href="/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/categories/themes/">themes<span class="count">13</span></a>
+          
+          <li>
+              <a href="/categories/windows/">windows<span class="count">10</span></a>
+          
+          <li>
+              <a href="/categories/tools/">tools<span class="count">4</span></a>
+          
+          <li>
+              <a href="/categories/utilities/">utilities<span class="count">4</span></a>
+          
+          <li>
+              <a href="/categories/handelingen/">handelingen<span class="count">3</span></a>
+          
+          <li>
+              <a href="/categories/linux/">linux<span class="count">2</span></a>
+          
+          <li>
+              <a href="/categories/macos/">macos<span class="count">2</span></a>
+          
+          <li>
+              <a href="/categories/animaties/">animaties<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/routing/">routing<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/scripting/">scripting<span class="count">1</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>Over Mij</h1>
+      </header>
+      <p>Sponsor me link: </br> <a href='https://ko-fi.com/martijnvandenboom'>ko-fi.com/martijnvandenboom</a> </br> <a href='https://paypal.me/ingmacmvandenboom'>paypal.me/ingmacmvandenboom</a> </br> <a href='https://buymeacoffee.com/ingvdboom'>buymeacoffee.com/ingvdboom</a></p>
+      <footer>
+        <a href="/about" class="button">Meer Informatie</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+	  <h6 style="text-align:left;">Social Media Links:</h6>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/martijnvandenboom" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+<li><a href="//stackoverflow.com/users/13417146" target="_blank" rel="noopener" title="Stack Overflow" class="fab fa-stack-overflow"></a></li>
+<li><a href="//bitbucket.com/martijnvandenboom" target="_blank" rel="noopener" title="Bitbucket" class="fab fa-bitbucket"></a></li>
+
+
+<li><a href="//ingvdboom.deviantart.com/" target="_blank" rel="noopener" title="DeviantArt" class="fab fa-deviantart"></a></li>
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/macmvandenboom" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+<li><a href="//xing.com/profile/MACMMartijn_vandenBoom" target="_blank" rel="noopener" title="Xing" class="fab fa-xing"></a></li>
+
+<li><a href="//facebook.com/macmvandenboom" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+<li><a href="//youtube.com/channel/UCslXipyVBwsTe6UjhVNOz7A" target="_blank" rel="noopener" title="YouTube" class="fab fa-youtube"></a></li>
+<li><a href="//vimeo.com/macmvandenboom" target="_blank" rel="noopener" title="Vimeo" class="fab fa-vimeo"></a></li>
+
+
+
+
+<li><a href="//instagram.com/ingmacmvandenboom" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//open.spotify.com/user/0d6z61v65xapwjgn7n416pc1j" target="_blank" rel="noopener" title="Spotify" class="fab fa-spotify"></a></li>
+<li><a href="//soundcloud.com/ing-macm-van-den-boom" target="_blank" rel="noopener" title="Soundcloud" class="fab fa-soundcloud"></a></li>
+<li><a href="//x.com/ingvdboom" target="_blank" rel="noopener" title="X" class="fab fa-x-twitter"></a></li>
+
+<li><a href="skype:mvdboom@live.com?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+<li><a href="//snapchat.com/add/ingvdboom" target="_blank" rel="noopener" title="snapchat" class="fab fa-snapchat"></a></li>
+<li><a href="//www.pinterest.com/macmvandenboom" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/ingvdboom" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+
+
+
+<li><a href="mailto:ingmacmvandenboom@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+
+</footer>
+
+<div>
+  <div>
+    <a href="https://t.me/ingvdboom" id="telegram-btn" target="_blank">
+      
+   
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/>
+        </svg>
+      
+    </a>
+  </div>
+
+  <div>
+    <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x" style="display: none;"></a>
+  </div>
+</div>
+      <script src="/js/highlight.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.1638f3918cbe55f5267a85103dfdabca4b23dcd17274e389270fc26e63fb57b0.js" integrity="sha256-FjjzkYy&#43;VfUmeoUQPf2ryksj3NFydOOJJw/CbmP7V7A="></script>
+    <script src="/js/add-on.js"></script>
+    <script src="/js/accessibility.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9BKD4YYT"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PX9BKD4YYT');
+        }
+      </script>
+    </div>
+    
+    <div class="footer">
+      <p class="copyright">
+         - van den <span class="bold-rotate">B</span>oom &copy; 2026 - 
+      </p>
+    </div>
+
+	<script>
+	  if (window.netlifyIdentity) {
+		window.netlifyIdentity.on("init", user => {
+		  if (!user) {
+			window.netlifyIdentity.on("login", () => {
+			  document.location.href = "/admin/";
+			});
+		  }
+		});
+	  }
+	</script>
+
+  <script type="text/javascript">
+    (function () {
+      const themeSwitch = document.getElementById('theme-switch')
+      const themeOptions = document.querySelectorAll('.theme-option')
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+      const THEME_PREF_KEY = 'themePreference'
+
+      function getSavedThemePreference() {
+        const value = localStorage.getItem(THEME_PREF_KEY)
+        if (value === 'dark' || value === 'light' || value === 'system') {
+          return value
+        }
+        if (localStorage.getItem('darkmode') === 'active') {
+          return 'dark'
+        }
+        return 'system'
+      }
+
+      function isDarkThemeActive(preference) {
+        if (preference === 'dark') return true
+        if (preference === 'light') return false
+        return mediaQuery.matches
+      }
+
+      function applyThemePreference(preference) {
+        const enableDark = isDarkThemeActive(preference)
+        document.body.classList.toggle('darkmode', enableDark)
+
+        document.body.classList.remove('theme-pref-system', 'theme-pref-dark', 'theme-pref-light')
+        document.body.classList.add('theme-pref-' + preference)
+
+        localStorage.setItem(THEME_PREF_KEY, preference)
+        localStorage.removeItem('darkmode')
+
+        if (themeSwitch) {
+          const titleMap = {
+            system: 'Theme: System',
+            dark: 'Theme: Dark',
+            light: 'Theme: Light'
+          }
+          themeSwitch.setAttribute('title', titleMap[preference])
+          themeSwitch.setAttribute('aria-label', titleMap[preference])
+        }
+
+        themeOptions.forEach(function (option) {
+          option.classList.toggle('theme-option-active', option.getAttribute('data-theme') === preference)
+        })
+      }
+
+      const initialPreference = getSavedThemePreference()
+      applyThemePreference(initialPreference)
+
+      themeOptions.forEach(function (option) {
+        option.addEventListener('click', function () {
+          const selected = option.getAttribute('data-theme')
+          applyThemePreference(selected)
+        })
+      })
+
+      function handleSystemThemeChange() {
+        if (getSavedThemePreference() === 'system') {
+          applyThemePreference('system')
+        }
+      }
+
+      if (typeof mediaQuery.addEventListener === 'function') {
+        mediaQuery.addEventListener('change', handleSystemThemeChange)
+      } else if (typeof mediaQuery.addListener === 'function') {
+        mediaQuery.addListener(handleSystemThemeChange)
+      }
+
+      window.toggleDarkMode = function () {}
+    })()
+  </script>
+
+
+
+
+  </body>
+</html>

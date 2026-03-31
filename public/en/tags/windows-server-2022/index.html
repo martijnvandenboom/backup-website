@@ -650,6 +650,137 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
+    
+    
+      <p>Step-by-step guide for creating a Windows Server 2022 virtual machine in Proxmox VE 9.1.6. Covers all wizard settings, VirtIO drivers, and real-world tips from actual lab experience.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>6-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    This guide documents the complete process of creating a Windows Server 2022 virtual machine in Proxmox VE 9.1.6. It is based on actual lab setup experience and includes all corrections and lessons learned during the build of a home lab.
+📄 Download the full guide with screenshots: WS2022-in-Proxmox-VM-Creation-Guide.docx
+Environment Component Details Proxmox Host macpro2013.local — Mac Pro 2013 Trashcan Proxmox Version 9.1.6 RAM 128 GB Storage 3.6 TB NVMe (local-lvm pool) Network Bridge vmbr0 —...
+  </div>
+  <footer>
+    <a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/proxmox/">proxmox</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/windows-server-2022/">windows-server-2022</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/virtualisation/">virtualisation</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/vm/">vm</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/virtio/">virtio</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/lab/">lab</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/hypervisor/">hypervisor</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+    
+    
+      <p>From first boot to Sysprep — step-by-step guide for preparing a Windows Server 2022 VM as a reusable Proxmox template. Covers VirtIO drivers, Windows Update via PowerShell, performance tweaks, and Sysprep.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>6-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    This guide covers the complete process of preparing a freshly installed Windows Server 2022 VM as a reusable Proxmox template. All future VMs (CA server, member servers, etc.) are cloned from this template, saving significant time and ensuring a consistent baseline across the entire lab.
+📄 Download the full guide with screenshots: WS2022-in-Proxmox-Template-Preparation-Guide.docx
+Overview The full process consists of these steps:
+Install VirtIO guest drivers Run Windows Update — fully patch the...
+  </div>
+  <footer>
+    <a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/proxmox/">proxmox</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/windows-server-2022/">windows-server-2022</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/sysprep/">sysprep</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/virtio/">virtio</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/powershell/">powershell</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/template/">template</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/lab/">lab</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/hypervisor/">hypervisor</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory and DNS Installation</a></h2>
     
     
@@ -727,6 +858,22 @@ Environment Component Value Virtualisation VMware Fusion (macOS) Guest operating
       <article class="mini-post">
           
         <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
           <h2><a href="/en/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory and DNS Installation</a></h2>
           <time class="published" datetime="2026-03-27 00:00:00 &#43;0100 CET">March 27, 2026</time>
         </header>
@@ -745,22 +892,6 @@ Environment Component Value Virtualisation VMware Fusion (macOS) Guest operating
         <header>
           <h2><a href="/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/">Network routing to LAN systems with OpenVPN Server</a></h2>
           <time class="published" datetime="2025-11-15 15:40:22 &#43;0100 CET">November 15, 2025</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/">Compress photos without quality loss for any platform</a></h2>
-          <time class="published" datetime="2025-09-12 01:58:22 &#43;0100 &#43;0100">September 12, 2025</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
-          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
         </header>
       </article>
       
@@ -783,7 +914,7 @@ Environment Component Value Virtualisation VMware Fusion (macOS) Guest operating
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">63</span></a>
+              <a href="/en/categories/article/">article<span class="count">65</span></a>
           
           <li>
               <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
@@ -792,7 +923,7 @@ Environment Component Value Virtualisation VMware Fusion (macOS) Guest operating
               <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/en/categories/windows/">windows<span class="count">8</span></a>
+              <a href="/en/categories/windows/">windows<span class="count">10</span></a>
           
           <li>
               <a href="/en/categories/tools/">tools<span class="count">4</span></a>
@@ -808,6 +939,9 @@ Environment Component Value Virtualisation VMware Fusion (macOS) Guest operating
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
+          
+          <li>
+              <a href="/en/categories/animations/">animations<span class="count">1</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

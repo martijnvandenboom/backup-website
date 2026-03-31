@@ -650,6 +650,135 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/automatisch_inloggen_in_windows/">Automatically log in to Windows</a></h2>
+    
+    
+      <p>Tools</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2022-03-09 11:58:22 &#43;0100 CET">March 9, 2022</time>
+    <p>van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Entering a password or PIN is not equally convenient for everyone. Do you find it annoying to enter a password or PIN every time you log in to Windows? You can also automatically log in to Windows. When the computer has finished starting up, you will immediately see the desktop. On the desktop you can make all your useful programs accessible and you have that immediately in front of you when you have turned on the computer. You can then immediately start using the computer, without having to...
+  </div>
+  <footer>
+    <a href="/en/blog/automatisch_inloggen_in_windows/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/actions/">actions</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/tools/">tools</a></li>
+        
+          <li><a class="article-terms-link" href="/en/categories/utilities/">utilities</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/automatic/">automatic</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/automatically/">automatically</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/log/">log</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/login/">login</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/windows/">windows</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/autologon/">autologon</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/actions/">actions</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/tools/">tools</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/utilities/">utilities</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/">New content for your website via a web page</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2022-02-25 11:44:45.912 &#43;0000 UTC">February 25, 2022</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Add Netlify CMS to your website to add new content via a web page instead of the command line.
+
+  </div>
+  <footer>
+    <a href="/en/blog/2022-nieuwe-content-voor-je-website-met-een-webpagina/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/nieuwe/">Nieuwe</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/content/">content</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/hugo/">Hugo</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/website/">website</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/webpagina/">webpagina</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/netlify/">Netlify</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/cms/">CMS</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2022-nieuw-leven-in-een-oude-apple-computer-imac-macbook/">New life in an old Apple computer (iMac, MacBook)</a></h2>
     
     
@@ -885,122 +1014,6 @@
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/powershell-clean-memory/">Powershell Clean Memory</a></h2>
-    
-    
-      <p>Commands</p>
-    
-  </div>
-  <div class="meta">
-    <time datetime="2021-12-13 19:12:03 &#43;0100 CET">December 13, 2021</time>
-    <p>van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    Function Clean-Memory { Get-PSSession | Remove-PSSession [System.GC]::Collect() [GC]::Collect() [GC]::WaitForPendingFinalizers() Get-Variable | #Where-Object { $startupVariables -notcontains $_.Name } | ForEach-Object { try { Clear-Variable -Name &amp;#34;$($_.Name)&amp;#34; -Force -ErrorAction SilentlyContinue -WarningAction SilentlyContinue Remove-Variable -Name &amp;#34;$($_.Name)&amp;#34; -Force -Scope &amp;#34;global&amp;#34; -ErrorAction SilentlyContinue -WarningAction SilentlyContinue Remove-Variable -Name...
-  </div>
-  <footer>
-    <a href="/en/blog/powershell-clean-memory/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/scripting/">scripting</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/themes/">themes</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/syntax/">syntax</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/powershell/">powershell</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/markdown/">markdown</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/css/">css</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/html/">html</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/themes/">themes</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/wordpress-no-ftp/">Wordpress no FTP needed</a></h2>
-    
-    
-      <p>Commands</p>
-    
-  </div>
-  <div class="meta">
-    <time datetime="2020-12-19 11:22:46 &#43;0100 CET">December 19, 2020</time>
-    <p>van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    add this line to: wp-config.php define(&#39;FS_METHOD&#39;, &#39;direct&#39;);
-  </div>
-  <footer>
-    <a href="/en/blog/wordpress-no-ftp/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/themes/">themes</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/syntax/">syntax</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/markdown/">markdown</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/css/">css</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/html/">html</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/themes/">themes</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/en/page/11/" class="button left"><span>Previous Page</span></a>
@@ -1017,6 +1030,22 @@
       <header>
         <h1>Recent Posts:</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1042,22 +1071,6 @@
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/">Compress photos without quality loss for any platform</a></h2>
-          <time class="published" datetime="2025-09-12 01:58:22 &#43;0100 &#43;0100">September 12, 2025</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
-          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/en/blog/" class="button">See More</a>
@@ -1077,7 +1090,7 @@
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">63</span></a>
+              <a href="/en/categories/article/">article<span class="count">65</span></a>
           
           <li>
               <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1086,7 +1099,7 @@
               <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/en/categories/windows/">windows<span class="count">8</span></a>
+              <a href="/en/categories/windows/">windows<span class="count">10</span></a>
           
           <li>
               <a href="/en/categories/tools/">tools<span class="count">4</span></a>
@@ -1102,6 +1115,9 @@
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
+          
+          <li>
+              <a href="/en/categories/animations/">animations<span class="count">1</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>

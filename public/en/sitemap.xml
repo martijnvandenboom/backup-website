@@ -2,21 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/tags/active-directory/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/tags/active-directory/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/active-directory/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/categories/article/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -29,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/en/blog/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -42,7 +29,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/en/categories/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -52,6 +39,184 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/hypervisor/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/hypervisor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/hypervisor/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/lab/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/lab/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/lab/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/powershell/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/powershell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/powershell/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/proxmox/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/proxmox/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/proxmox/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/blog/2026-proxmox-windows-server-2022-vm-creation/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/blog/2026-proxmox-windows-server-2022-template-preparation/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/sysprep/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/sysprep/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/sysprep/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/template/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/template/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/template/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/virtio/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/virtio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/virtio/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/virtualisation/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/vm/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/vm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/vm/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/windows/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/categories/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/windows/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/windows-server-2022/</loc>
+    <lastmod>2026-03-31T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/windows-server-2022/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/windows-server-2022/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/active-directory/</loc>
+    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/active-directory/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/active-directory/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/tags/devops/</loc>
@@ -83,45 +248,6 @@
     <loc>http://localhost:1313/en/tags/domain-controller/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/tags/lab/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/tags/lab/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/lab/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/tags/vmware/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
     <xhtml:link
@@ -133,19 +259,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/tags/vmware/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/categories/windows/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/categories/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/categories/windows/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/tags/windows/</loc>
@@ -172,19 +285,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/blog/2026-windows-server-2022-active-directory-dns-installatie/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/tags/windows-server-2022/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/tags/windows-server-2022/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/windows-server-2022/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/tags/analyse/</loc>
@@ -1355,6 +1455,9 @@
                 href="http://localhost:1313/en/thank-you/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/tags/animation/</loc>
+    <lastmod>2025-02-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/en/animations/</loc>
     <lastmod>2025-02-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -1366,6 +1469,48 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/animations/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/animations/</loc>
+    <lastmod>2025-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/css/</loc>
+    <lastmod>2025-02-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/css/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/css/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/javascript/</loc>
+    <lastmod>2025-02-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/javascript/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/javascript/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/webdesign/</loc>
+    <lastmod>2025-02-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/tags/webdesign/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/webdesign/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/tags/convert/</loc>
@@ -2497,19 +2642,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/tags/percentage/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/tags/powershell/</loc>
-    <lastmod>2024-01-04T22:21:38+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/tags/powershell/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/powershell/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/</loc>
@@ -4473,19 +4605,6 @@
                 href="http://localhost:1313/en/blog/windows-update-snelkoppeling/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/css/</loc>
-    <lastmod>2021-12-13T19:12:03+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/tags/css/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/css/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/blog/powershell-clean-memory/</loc>
     <lastmod>2021-12-13T19:12:03+01:00</lastmod>
     <xhtml:link
@@ -4634,7 +4753,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="http://localhost:1313/about-legacy/"
+                href="http://localhost:1313/about/"
                 />
     <xhtml:link
                 rel="alternate"

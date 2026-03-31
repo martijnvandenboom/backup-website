@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Template on Notities</title>
+    <link>http://localhost:1313/tags/template/</link>
+    <description>Recent content in Template on Notities</description>
+    <generator>Hugo</generator>
+    <language>nl</language>
+    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/template/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proxmox Lab — Windows Server 2022 Template voorbereiding</title>
+      <link>http://localhost:1313/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</guid>
+      <description>&lt;p&gt;Deze handleiding beschrijft het volledige proces voor het voorbereiden van een vers geïnstalleerde Windows Server 2022 VM als herbruikbaar Proxmox-template. Alle toekomstige VM&amp;rsquo;s (CA-server, lidservers, enzovoort) worden gekloond vanuit dit template, wat aanzienlijk tijd bespaart en een consistente basisinstallatie garandeert.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;📄 &lt;strong&gt;Download de volledige handleiding met screenshots:&lt;/strong&gt;&#xA;&lt;a href=&#34;http://localhost:1313/documents/WS2022-in-Proxmox-Template-Preparation-Guide.docx&#34;&gt;WS2022-in-Proxmox-Template-Preparation-Guide.docx&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;overzicht&#34;&gt;Overzicht&lt;/h2&gt;&#xA;&lt;p&gt;Het volledige proces bestaat uit de volgende stappen:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;VirtIO guest-drivers installeren&lt;/li&gt;&#xA;&lt;li&gt;Windows Update uitvoeren — OS volledig patchen&lt;/li&gt;&#xA;&lt;li&gt;Prestatieoptimalisaties toepassen&lt;/li&gt;&#xA;&lt;li&gt;Basisconfiguratie — tijdzone, RDP, IE Enhanced Security&lt;/li&gt;&#xA;&lt;li&gt;Sysprep — generaliseren en afsluiten&lt;/li&gt;&#xA;&lt;li&gt;Converteren naar template in Proxmox&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Waarschuwing:&lt;/strong&gt; Start de VM nooit opnieuw op na Sysprep. Als je dat toch doet, wordt de generalisatie verbruikt en moet het template opnieuw worden opgebouwd vanaf het begin.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -650,6 +650,130 @@
   <header>
   <div class="title">
     
+      <h2><a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/">De VirtualBox Guest Additions installeren op Rocky Linux 9.3</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-01-16 21:08:26.966 &#43;0000 UTC">16 Januari 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1 minuut leestijd</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    De VirtualBox Guest Additions installeren op Rocky Linux 9.3
+dnf install epel-release dnf update --refresh dnf update kernel-* reboot (optioneel) dnf install dkms kernel-devel kernel-headers gcc make bzip2 perl elfutils-libelf-devel rpm -q kernel-devel uname -r Bovenmenu: Apparaten -&gt; Gast-uitbreidingen CD-image invoegen Uitvoeren (optioneel) cd /run/media/ ./VBoxLinuxAdditions.run 
+  </div>
+  <footer>
+    <a href="/blog/2024-installing-the-virtualbox-guest-additions-on-rocky-linux-9-3/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/installing/">installing</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/virtualbox/">virtualbox</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/guest/">guest</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/additions/">additions</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/rocky/">rocky</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/linux/">linux</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/9.3/">9.3</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/">PowerShell computerresourcemonitor-script met cpu-percentage en uitgebreide geheugeninformatie</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-01-04 22:21:38.732 &#43;0000 UTC">4 Januari 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1 minuut leestijd</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    PowerShell computerresourcemonitor-script met cpu-percentage en uitgebreide geheugeninformatie
+PowerShell Resourcemonitor $app=&amp;#34;notepad&amp;#34; $ids = Get-Process $app | Select-Object -Property Id | ForEach-Object {$_.Id} $filedate = Get-Date -format &amp;#34;yyyy-MM-dd&amp;#34; #echo $pids foreach ($id in $ids) { $date = Get-Date -format &amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34; # CPU-informatie van het proces $ProcessId = $id $Process = Get-WmiObject -Query &amp;#34;SELECT * FROM...
+  </div>
+  <footer>
+    <a href="/blog/2024-powershell-computer-resource-monitor-script-with-cpu-percentage-and-advanced-memory-information/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/powershell/">PowerShell</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/computer/">computer</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/resource/">resource</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/monitor/">monitor</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/script/">script</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/cpu/">cpu</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/percentage/">percentage</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/advanced/">advanced</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/memory/">memory</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/information/">information</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/blog/2023-macos-desktop-extended-over-3-schermen/">macOS desktop extended over 3 schermen: iMac, MacBook en iPad</a></h2>
     
     
@@ -866,130 +990,6 @@ Ga naar: Archief -&gt; Nieuwe afbeelding -&gt; Afbeelding van map Kies de map en
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/">Linux schijfruimte-informatie overzichtelijker weergeven zonder de geweigerd- en kan-niet-berichten</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2023-09-05 06:23:38.58 &#43;0000 UTC">5 September 2023</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1 minuut leestijd</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    $ du -hs * 2&gt; &gt;(egrep -iv &amp;lsquo;permission denied|cannot access&#39;) | sort -n
-
-  </div>
-  <footer>
-    <a href="/blog/2023-linux-disk-space-information-more-clearly-excluding-the-denied-and-cannot-messages/" class="button big">Lees verder</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/linux/">linux</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/disk/">disk</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/space/">space</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/information/">information</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/clearly/">clearly</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/excluding/">excluding</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/denied/">denied</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/cannot/">cannot</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/messages/">messages</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/">Linux zoek verloren opslagruimte op door het verschil tussen df en du te achterhalen</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2023-09-05 06:18:17.459 &#43;0000 UTC">5 September 2023</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1 minuut leestijd</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    $ lsof | grep -E &amp;lsquo;^COM|deleted&#39;
-
-  </div>
-  <footer>
-    <a href="/blog/2023-linux-locate-lost-storage-space-difference-between-results-df-and-du/" class="button big">Lees verder</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/linux/">linux</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/locate/">locate</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/lost/">lost</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/storage/">storage</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/space/">space</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/difference/">difference</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/df/">df</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/du/">du</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/page/6/" class="button left"><span>Vorige Pagina</span></a>
@@ -1006,6 +1006,22 @@ Ga naar: Archief -&gt; Nieuwe afbeelding -&gt; Afbeelding van map Kies de map en
       <header>
         <h1>Recente berichten</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Proxmox Lab — Windows Server 2022 Template voorbereiding</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">Proxmox Lab — Windows Server 2022 VM aanmaken</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1031,22 +1047,6 @@ Ga naar: Archief -&gt; Nieuwe afbeelding -&gt; Afbeelding van map Kies de map en
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/blog/fotos_comprimeren_zonder_kwaliteitsverlies/">Foto&#39;s comprimeren zonder kwaliteitsverlies voor elk platform</a></h2>
-          <time class="published" datetime="2025-09-12 01:58:22 &#43;0100 &#43;0100">12 September 2025</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</a></h2>
-          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">1 Juli 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/blog/" class="button">Toon meer</a>
@@ -1066,7 +1066,7 @@ Ga naar: Archief -&gt; Nieuwe afbeelding -&gt; Afbeelding van map Kies de map en
           
           
           <li>
-              <a href="/categories/article/">article<span class="count">63</span></a>
+              <a href="/categories/article/">article<span class="count">65</span></a>
           
           <li>
               <a href="/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1075,7 +1075,7 @@ Ga naar: Archief -&gt; Nieuwe afbeelding -&gt; Afbeelding van map Kies de map en
               <a href="/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/categories/windows/">windows<span class="count">8</span></a>
+              <a href="/categories/windows/">windows<span class="count">10</span></a>
           
           <li>
               <a href="/categories/tools/">tools<span class="count">4</span></a>

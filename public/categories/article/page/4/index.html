@@ -650,6 +650,130 @@
   <header>
   <div class="title">
     
+      <h2><a href="/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/">Zoek de naam van je USB stick met een script</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-07-18 07:20:59.657 &#43;0000 UTC">18 Juli 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>3 minuten leestijd</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    D﻿it script kun je gebruiken voor het opvragen van de naam van je USB stick.
+De naam van je USB stick kun je gebruiken in het sudo commando van Apple om een USB installer te maken.
+S﻿tap 1: Open de Terminal applicatie
+S﻿tap 2: Ga naar je home directory, type: # cd
+S﻿tap 3: Maak eventueel een directory scripts, type: # mkdir scripts
+S﻿tap 4: Ga naar de zojuist gemaakte scripts directory, type: # cd scripts
+Stap 5: Maak een bash script, type: # vim usbstick.sh
+Stap 6: Insert de volgende code:
+
+  </div>
+  <footer>
+    <a href="/blog/2024-zoek-de-naam-van-je-usb-stick-met-een-script/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/zoek/">zoek</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/naam/">naam</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/usb/">usb</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/stick/">stick</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/bash/">bash</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/script/">script</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/">De Microsoft EFI-opstartbestanden op de EFI-partitie plaatsen</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-07-07 20:49:33.29 &#43;0000 UTC">7 Juli 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1 minuut leestijd</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    Start op via het Windows-installatieprogramma
+Druk op het eerste scherm op SHIFT &#43; F10
+# diskpart # list disk # select disk 0 # list part Zoek naar de Windows-partitie # select part 3 # assign letter=W # format quick fs=NTFS # list volume Zoek naar het EFI-volume # select volume 2 # assign letter=Z # exit # D: Ga naar de USB-installatieschijf van Windows # cd D:\sources # dir install* Het bestand install.esd bestaat # dism /Get-WimInfo /WimFile:D:\Sources\install.esd Selecteer de Index van de...
+  </div>
+  <footer>
+    <a href="/blog/2024-putting-the-microsoft-efi-boot-files-on-the-efi-partition/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/putting/">putting</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/microsoft/">microsoft</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/efi/">efi</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/boot/">boot</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/files/">files</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/partition/">partition</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/triple/">triple</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/blog/2024-create-a-usb-refit-boot-disk/">Maak een USB rEFIt opstartschijf</a></h2>
     
     
@@ -883,154 +1007,6 @@ import subprocess def ssh_exec_command(hostname, username, private_key_path, com
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/blog/2024-configure-ldap-ipa-server-with-jenkins/">LDAP/IPA Server configureren met Jenkins</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-03-09 17:38:50.197 &#43;0000 UTC">9 Maart 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1 minuut leestijd</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    ===
-Identity, Policy, and Audit (IPA) systeem
-===
-Jenkins
-2.319.2
-===
-Dashboard -&gt; Beveiliging -&gt; Globale beveiliging configureren
-Server:
-ldap://&lt;IP_SERVER&gt;:389
-Basis-DN:
-dc=,dc=com
-Zoekbasis gebruikers
-cn=users,cn=accounts
-Zoekfilter gebruikers
-uid={0}
-Zoekbasis groepen
-cn=groups,cn=accounts
-Groepslidmaatschap -&gt; Zoeken naar LDAP-groepen die gebruiker bevatten -&gt; Groepslidmaatschapsfilter:
-(| (member={0}) (uniqueMember={0}) (memberUid={1}))
-Beheerder-DN:...
-  </div>
-  <footer>
-    <a href="/blog/2024-configure-ldap-ipa-server-with-jenkins/" class="button big">Lees verder</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/configure/">configure</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/ldap/">LDAP</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/ipa/">IPA</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/server/">server</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/jenkins/">jenkins</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/blog/2024-configure-ldap-ipa-server-with-nexus/">LDAP/IPA Server configureren met Nexus</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-03-09 17:37:42.65 &#43;0000 UTC">9 Maart 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1 minuut leestijd</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    ===
-Nexus
-Sonatype Nexus Repository
-OSS 3.60.0-02
-===
-LDAP
-ldap://&lt;IP_SERVER&gt;:389
-cn=users,cn=accounts,dc=,dc=com
-Eenvoudige verificatie
-uid=&lt;ADMIN_USER&gt;,cn=users,cn=accounts,dc=,dc=com
-Volgende
-===
-Geen sjabloon selecteren
-Relatieve DN gebruikers = leeg
-Gebruikerssubstructuur = uitgeschakeld
-Objectklasse: inetOrgPerson
-Gebruikersfilter = leeg
-Gebruikers-ID attribuut = uid
-Echte naam attribuut = cn
-E-mail attribuut = mail
-Wachtwoord attribuut = leeg
-LDAP-groepen als rollen koppelen =...
-  </div>
-  <footer>
-    <a href="/blog/2024-configure-ldap-ipa-server-with-nexus/" class="button big">Lees verder</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/configure/">configure</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/ldap/">LDAP</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/ipa/">IPA</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/server/">server</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/nexus/">nexus</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/categories/article/page/3/" class="button left"><span>Vorige Pagina</span></a>
@@ -1047,6 +1023,22 @@ LDAP-groepen als rollen koppelen =...
       <header>
         <h1>Recente berichten</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-proxmox-windows-server-2022-template-voorbereiding/">Proxmox Lab — Windows Server 2022 Template voorbereiding</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2026-proxmox-windows-server-2022-vm-aanmaken/">Proxmox Lab — Windows Server 2022 VM aanmaken</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">31 Maart 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1072,22 +1064,6 @@ LDAP-groepen als rollen koppelen =...
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/blog/fotos_comprimeren_zonder_kwaliteitsverlies/">Foto&#39;s comprimeren zonder kwaliteitsverlies voor elk platform</a></h2>
-          <time class="published" datetime="2025-09-12 01:58:22 &#43;0100 &#43;0100">12 September 2025</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">De webgebaseerde VirtualBox-API activeren - VBoxWebSrv</a></h2>
-          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">1 Juli 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/blog/" class="button">Toon meer</a>
@@ -1107,7 +1083,7 @@ LDAP-groepen als rollen koppelen =...
           
           
           <li>
-              <a href="/categories/article/">article<span class="count">63</span></a>
+              <a href="/categories/article/">article<span class="count">65</span></a>
           
           <li>
               <a href="/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1116,7 +1092,7 @@ LDAP-groepen als rollen koppelen =...
               <a href="/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/categories/windows/">windows<span class="count">8</span></a>
+              <a href="/categories/windows/">windows<span class="count">10</span></a>
           
           <li>
               <a href="/categories/tools/">tools<span class="count">4</span></a>
@@ -1132,6 +1108,9 @@ LDAP-groepen als rollen koppelen =...
           
           <li>
               <a href="/categories/macos/">macos<span class="count">2</span></a>
+          
+          <li>
+              <a href="/categories/animaties/">animaties<span class="count">1</span></a>
           
           <li>
               <a href="/categories/routing/">routing<span class="count">1</span></a>

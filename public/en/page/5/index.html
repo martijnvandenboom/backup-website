@@ -650,6 +650,124 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/">SSH in remote machine with SSH keys and run command in new Python 3</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-04-03 20:20:39.976 &#43;0000 UTC">April 3, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    T﻿o make a script to run remote commands in a client server network.
+import subprocess def ssh_exec_command(hostname, username, command): ssh_cmd = [&#39;ssh&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True ) output, error = ssh_process.communicate() if error: print(&amp;#34;Error:&amp;#34;, error) else: print(&amp;#34;Output:&amp;#34;, output) # Replace these with your actual credentials...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-new-python-3/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ssh/">ssh</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/remote/">remote</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/machine/">machine</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/keys/">keys</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/commands/">commands</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/new/">new</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/python/">python</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/">SSH in remote machine with SSH keys and run command in old Python 2</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-04-03 20:12:58.29 &#43;0000 UTC">April 3, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    I﻿n case you have an old legacy system with Python 2 still in use and want to make a script to run certain commands in a client server network.
+import subprocess def ssh_exec_command(hostname, username, private_key_path, command): ssh_cmd = [&#39;ssh&#39;, &#39;-i&#39;, private_key_path, &#39;-o&#39;, &#39;StrictHostKeyChecking=no&#39;, f&#39;{username}@{hostname}&#39;, command] ssh_process = subprocess.Popen( ssh_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE )...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ssh-in-remote-machine-with-ssh-keys-and-run-command-in-old-python/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ssh/">ssh</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/remote/">remote</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/machine/">machine</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/keys/">keys</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/command/">command</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/old/">old</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/python/">python</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2024-configure-ldap-ipa-server-with-jenkins/">Configure LDAP/IPA Server with Jenkins </a></h2>
     
     
@@ -925,125 +1043,6 @@ $ ldapsearch -H ldap://&lt;IP_SERVER&gt; -D &amp;ldquo;uid=&lt;ADMIN_USER&gt;,cn
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2024-ldap-ipa-server-client-installation/">LDAP/IPA Server client installation</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-03-09 17:33:26.773 &#43;0000 UTC">March 9, 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    ===
-# yum install ipa-client
-# ipa-client-install &amp;ndash;server= &amp;ndash;domain= &amp;ndash;principal=admin -W
-# ipa-client-install &amp;ndash;server=&lt;ipa-server.example.com&gt; &amp;ndash;domain=&lt;example.com&gt; &amp;ndash;principal=admin -W
-
-  </div>
-  <footer>
-    <a href="/en/blog/2024-ldap-ipa-server-client-installation/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/client/">client</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/installation/">installation</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2024-ldap-ipa-server-installation/">LDAP/IPA Server installation</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-03-09 17:31:40.399 &#43;0000 UTC">March 9, 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    ===
-# yum install ipa-server
-# ipa-server-install
-===
-Hosts file aanpassen
-De FQDN voor op, daarna pas de aliassen
-/etc/hosts
-&lt;IP_SERVER&gt; ()
-Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier niet meteen aan te relateren zijn.
-
-  </div>
-  <footer>
-    <a href="/en/blog/2024-ldap-ipa-server-installation/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/installation/">installation</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/en/page/4/" class="button left"><span>Previous Page</span></a>
@@ -1060,6 +1059,22 @@ Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier
       <header>
         <h1>Recent Posts:</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1085,22 +1100,6 @@ Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/">Compress photos without quality loss for any platform</a></h2>
-          <time class="published" datetime="2025-09-12 01:58:22 &#43;0100 &#43;0100">September 12, 2025</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/2025-how-to-activate-the-virtualbox-web-based-api-vboxwebsrv/">How to activate the VirtualBox web-based API - VBoxWebSrv</a></h2>
-          <time class="published" datetime="2025-07-01 08:30:05.765 &#43;0000 UTC">July 1, 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/en/blog/" class="button">See More</a>
@@ -1120,7 +1119,7 @@ Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier
           
           
           <li>
-              <a href="/en/categories/article/">article<span class="count">63</span></a>
+              <a href="/en/categories/article/">article<span class="count">65</span></a>
           
           <li>
               <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
@@ -1129,7 +1128,7 @@ Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier
               <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/en/categories/windows/">windows<span class="count">8</span></a>
+              <a href="/en/categories/windows/">windows<span class="count">10</span></a>
           
           <li>
               <a href="/en/categories/tools/">tools<span class="count">4</span></a>
@@ -1145,6 +1144,9 @@ Mocht er een alias voor de FQDN staan, dan kun je foutmeldingen krijgen die hier
           
           <li>
               <a href="/en/categories/macos/">macos<span class="count">2</span></a>
+          
+          <li>
+              <a href="/en/categories/animations/">animations<span class="count">1</span></a>
           
           <li>
               <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>
