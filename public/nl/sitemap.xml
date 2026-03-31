@@ -161,6 +161,9 @@
                 href="https://www.vandenboom.icu/categories/windows/"
                 />
   </url><url>
+    <loc>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</loc>
+    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.vandenboom.icu/tags/windows-server-2022/</loc>
     <lastmod>2026-03-31T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -173,9 +176,6 @@
                 hreflang="nl"
                 href="https://www.vandenboom.icu/tags/windows-server-2022/"
                 />
-  </url><url>
-    <loc>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.vandenboom.icu/tags/vm/</loc>
     <lastmod>2026-03-30T00:00:00+00:00</lastmod>
