@@ -2,8 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.vandenboom.icu/tags/active-directory/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/tags/active-directory/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/tags/active-directory/"
+                />
+  </url><url>
+    <loc>https://www.vandenboom.icu/tags/beveiliging/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.vandenboom.icu/blog/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +32,7 @@
                 />
   </url><url>
     <loc>https://www.vandenboom.icu/categories/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,8 +44,21 @@
                 href="https://www.vandenboom.icu/categories/"
                 />
   </url><url>
+    <loc>https://www.vandenboom.icu/tags/certificate-authority/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/tags/certificate-authority/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/tags/certificate-authority/"
+                />
+  </url><url>
     <loc>https://www.vandenboom.icu/tags/devops/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,8 +70,34 @@
                 href="https://www.vandenboom.icu/tags/devops/"
                 />
   </url><url>
+    <loc>https://www.vandenboom.icu/tags/dns/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/tags/dns/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/tags/dns/"
+                />
+  </url><url>
+    <loc>https://www.vandenboom.icu/tags/group-policy/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/tags/group-policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/tags/group-policy/"
+                />
+  </url><url>
     <loc>https://www.vandenboom.icu/tags/lab/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,7 +110,7 @@
                 />
   </url><url>
     <loc>https://www.vandenboom.icu/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -67,8 +122,21 @@
                 href="https://www.vandenboom.icu/"
                 />
   </url><url>
+    <loc>https://www.vandenboom.icu/tags/pki/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/tags/pki/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/tags/pki/"
+                />
+  </url><url>
     <loc>https://www.vandenboom.icu/tags/powershell/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -81,7 +149,7 @@
                 />
   </url><url>
     <loc>https://www.vandenboom.icu/tags/proxmox/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -91,6 +159,71 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://www.vandenboom.icu/tags/proxmox/"
+                />
+  </url><url>
+    <loc>https://www.vandenboom.icu/tags/rdp/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/tags/rdp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/tags/rdp/"
+                />
+  </url><url>
+    <loc>https://www.vandenboom.icu/tags/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/tags/"
+                />
+  </url><url>
+    <loc>https://www.vandenboom.icu/categories/windows/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/categories/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/categories/windows/"
+                />
+  </url><url>
+    <loc>https://www.vandenboom.icu/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/"
+                />
+  </url><url>
+    <loc>https://www.vandenboom.icu/tags/windows-server-2022/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/tags/windows-server-2022/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/tags/windows-server-2022/"
                 />
   </url><url>
     <loc>https://www.vandenboom.icu/tags/sysprep/</loc>
@@ -104,19 +237,6 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://www.vandenboom.icu/tags/sysprep/"
-                />
-  </url><url>
-    <loc>https://www.vandenboom.icu/tags/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/tags/"
                 />
   </url><url>
     <loc>https://www.vandenboom.icu/tags/template/</loc>
@@ -148,34 +268,8 @@
     <loc>https://www.vandenboom.icu/tags/virtualisatie/</loc>
     <lastmod>2026-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/categories/windows/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/categories/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/categories/windows/"
-                />
-  </url><url>
     <loc>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</loc>
     <lastmod>2026-03-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.vandenboom.icu/tags/windows-server-2022/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/windows-server-2022/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/tags/windows-server-2022/"
-                />
   </url><url>
     <loc>https://www.vandenboom.icu/tags/vm/</loc>
     <lastmod>2026-03-30T00:00:00+00:00</lastmod>
@@ -193,19 +287,6 @@
     <loc>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/</loc>
     <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.vandenboom.icu/tags/active-directory/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/active-directory/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/tags/active-directory/"
-                />
-  </url><url>
     <loc>https://www.vandenboom.icu/categories/article/</loc>
     <lastmod>2026-03-27T00:00:00+01:00</lastmod>
     <xhtml:link
@@ -217,19 +298,6 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://www.vandenboom.icu/categories/article/"
-                />
-  </url><url>
-    <loc>https://www.vandenboom.icu/tags/dns/</loc>
-    <lastmod>2026-03-27T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/dns/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/tags/dns/"
                 />
   </url><url>
     <loc>https://www.vandenboom.icu/tags/domeincontroller/</loc>
@@ -4720,6 +4788,19 @@
     <loc>https://www.vandenboom.icu/posts/</loc>
     <lastmod>2020-12-11T22:23:48+01:00</lastmod>
   </url><url>
+    <loc>https://www.vandenboom.icu/about-legacy/</loc>
+    <lastmod>2020-12-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/about-legacy/"
+                />
+  </url><url>
     <loc>https://www.vandenboom.icu/blog/december-2020/</loc>
     <lastmod>2020-12-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -4731,19 +4812,6 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://www.vandenboom.icu/blog/december-2020/"
-                />
-  </url><url>
-    <loc>https://www.vandenboom.icu/about/</loc>
-    <lastmod>2020-12-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/about/"
                 />
   </url><url>
     <loc>https://www.vandenboom.icu/blog/markdown-syntax/</loc>

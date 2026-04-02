@@ -116,7 +116,9 @@
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
   
-  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.a694a0de4d12f03f7239d4eb60fd6f210f9713402aa21c902e52435f0e0ffb85.css" integrity="sha256-ppSg3k0S8D9yOdTrYP1vIQ&#43;XE0AqohyQLlJDXw4P&#43;4U="><link rel="stylesheet" href="/css/add-on.css">
+  <meta property="twitter:site" content="ingvdboom">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/dark.min.css">
+          <link rel="stylesheet" href="/css/bundle.min.23cb4b25157d025563c098a10e27266bbd45fb82c3b3efc626fdb6bef850ec73.css" integrity="sha256-I8tLJRV9AlVjwJihDicma71F&#43;4LDs&#43;/GJv22vvhQ7HM="><link rel="stylesheet" href="/css/add-on.css">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -702,6 +704,77 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/">Windows Server 2022 Home Lab — AD DS, DNS, CA and Secured RDP</a></h2>
+    
+    
+      <p>Complete step-by-step guide to building a Windows Server 2022 home lab in Proxmox: Active Directory, DNS, Certificate Authority, Group Policy and secured RDP connections from macOS.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2026-04-02 00:00:00 &#43;0000 UTC">April 2, 2026</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>9-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    This article describes the full setup of a two-server Windows Server 2022 home lab in Proxmox VE. Together the two virtual machines provide Active Directory Domain Services, DNS, Group Policy and a Certificate Authority (ADCS). RDP connections are secured with PKI certificates so that the Mac Mini M1 management workstation connects without certificate warnings.
+This is part 3 of the series on building a Windows DevOps lab in Proxmox. In part 1 I described how to create a VM, and in part 2 how to...
+  </div>
+  <footer>
+    <a href="/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/windows-server-2022/">windows-server-2022</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/proxmox/">proxmox</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/active-directory/">active-directory</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/dns/">dns</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/certificate-authority/">certificate-authority</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/pki/">pki</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/group-policy/">group-policy</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/rdp/">rdp</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/powershell/">powershell</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/lab/">lab</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/devops/">devops</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/security/">security</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
     
     
@@ -1019,79 +1092,6 @@ In this example, we use the subnet 10.0.8.0/24 as the IP range you have configur
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/">Compress photos without quality loss for any platform</a></h2>
-    
-    
-      <p>Tools</p>
-    
-  </div>
-  <div class="meta">
-    <time datetime="2025-09-12 01:58:22 &#43;0100 &#43;0100">September 12, 2025</time>
-    <p>van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    P.S. Special thanks to Maria Isabel Rondini
-She inspired this article as part of the research for her thesis, where she could use some extra attention for the tool ImageCompressor. Do you want to make your photos smaller in size without losing quality? Good news: you don’t need to install any software for that! With the online tool ImageCompressor, you can simply upload your photos and compress them directly in your browser. That means it doesn’t matter whether you’re working on Windows, Linux,...
-  </div>
-  <footer>
-    <a href="/en/blog/fotos_comprimeren_zonder_kwaliteitsverlies/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/linux/">linux</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/macos/">macos</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/actions/">actions</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/tools/">tools</a></li>
-        
-          <li><a class="article-terms-link" href="/en/categories/utilities/">utilities</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/photos/">photos</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/compress/">compress</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/without/">without</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/quality/">quality</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/loss/">loss</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/any/">any</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/platform/">platform</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/utilities/">utilities</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
     
@@ -1106,6 +1106,14 @@ She inspired this article as part of the research for her thesis, where she coul
       <header>
         <h1>Recent Posts:</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/">Windows Server 2022 Home Lab — AD DS, DNS, CA and Secured RDP</a></h2>
+          <time class="published" datetime="2026-04-02 00:00:00 &#43;0000 UTC">April 2, 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1139,14 +1147,6 @@ She inspired this article as part of the research for her thesis, where she coul
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/">Network routing to LAN systems with OpenVPN Server</a></h2>
-          <time class="published" datetime="2025-11-15 15:40:22 &#43;0100 CET">November 15, 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/en/blog/" class="button">See More</a>
@@ -1175,7 +1175,7 @@ She inspired this article as part of the research for her thesis, where she coul
               <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/en/categories/windows/">windows<span class="count">10</span></a>
+              <a href="/en/categories/windows/">windows<span class="count">11</span></a>
           
           <li>
               <a href="/en/categories/tools/">tools<span class="count">4</span></a>
@@ -1302,7 +1302,7 @@ She inspired this article as part of the research for her thesis, where she coul
   </div>
 </div>
       <script src="/js/highlight.js"></script>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/powershell.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.1638f3918cbe55f5267a85103dfdabca4b23dcd17274e389270fc26e63fb57b0.js" integrity="sha256-FjjzkYy&#43;VfUmeoUQPf2ryksj3NFydOOJJw/CbmP7V7A="></script>
     <script src="/js/add-on.js"></script>
     <script src="/js/accessibility.js"></script>

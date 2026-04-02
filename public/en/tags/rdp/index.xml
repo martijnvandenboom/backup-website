@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rdp on Notities</title>
+    <link>https://www.vandenboom.icu/en/tags/rdp/</link>
+    <description>Recent content in Rdp on Notities</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 02 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.vandenboom.icu/en/tags/rdp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Server 2022 Home Lab — AD DS, DNS, CA and Secured RDP</title>
+      <link>https://www.vandenboom.icu/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/</link>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/</guid>
+      <description>&lt;p&gt;This article describes the full setup of a two-server Windows Server 2022 home lab in Proxmox VE. Together the two virtual machines provide Active Directory Domain Services, DNS, Group Policy and a Certificate Authority (ADCS). RDP connections are secured with PKI certificates so that the Mac Mini M1 management workstation connects without certificate warnings.&lt;/p&gt;&#xA;&lt;p&gt;This is part 3 of the series on building a Windows DevOps lab in Proxmox. In &lt;a href=&#34;https://vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-creation/&#34;&gt;part 1&lt;/a&gt; I described how to create a VM, and in &lt;a href=&#34;https://vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-preparation/&#34;&gt;part 2&lt;/a&gt; how to prepare the template.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

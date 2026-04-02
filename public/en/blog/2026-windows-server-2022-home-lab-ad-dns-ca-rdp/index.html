@@ -1,0 +1,1646 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <style>
+        @keyframes rotate {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+        .bold-rotate {
+            font-weight: bold;
+            display: inline-block;
+            animation: rotate 2s infinite;
+        }
+    </style>
+  </head>
+  <head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9BKD4YYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PX9BKD4YYT');
+  </script>
+
+  
+  <script>(function(w,d,s,l,i){
+    w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KWVBJ3K4');
+  </script>
+  
+
+
+  <meta charset="utf-8">
+<title>Windows Server 2022 Home Lab — AD DS, DNS, CA and Secured RDP - Notities</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
+  
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+
+  
+
+
+<link rel="canonical" href="https://www.vandenboom.icu/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/">
+
+
+
+  <link rel="alternate" hreflang="en" href="https://www.vandenboom.icu/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/">
+
+  <link rel="alternate" hreflang="nl" href="https://www.vandenboom.icu/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/">
+
+
+  <link rel="alternate" hreflang="x-default" href="https://www.vandenboom.icu/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/">
+
+
+
+
+  <meta name="author" content="ing. M.A.C.M. (Martijn) van den Boom">
+
+
+
+<meta name="robots" content="index, follow">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Windows Server 2022 Home Lab — AD DS, DNS, CA and Secured RDP">
+<meta name="twitter:description" content="Complete step-by-step guide to building a Windows Server 2022 home lab in Proxmox: Active Directory, DNS, Certificate Authority, Group Policy and secured RDP connections from macOS.">
+
+  <meta name="twitter:creator" content="@ingvdboom">
+
+
+
+
+  
+    <meta property="article:published_time" content="2026-04-02T00:00:00Z">
+  
+  
+    <meta property="article:modified_time" content="2026-04-02T00:00:00Z">
+  
+  
+    <meta property="article:author" content="ing. M.A.C.M. (Martijn) van den Boom">
+  
+  
+    <meta property="article:tag" content="windows-server-2022">
+  
+    <meta property="article:tag" content="proxmox">
+  
+    <meta property="article:tag" content="active-directory">
+  
+    <meta property="article:tag" content="dns">
+  
+    <meta property="article:tag" content="certificate-authority">
+  
+    <meta property="article:tag" content="pki">
+  
+    <meta property="article:tag" content="group-policy">
+  
+    <meta property="article:tag" content="rdp">
+  
+    <meta property="article:tag" content="powershell">
+  
+    <meta property="article:tag" content="lab">
+  
+    <meta property="article:tag" content="devops">
+  
+    <meta property="article:tag" content="security">
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "\"Windows Server 2022 Home Lab — AD DS, DNS, CA and Secured RDP\"",
+  "description": "\"Complete step-by-step guide to building a Windows Server 2022 home lab in Proxmox: Active Directory, DNS, Certificate Authority, Group Policy and secured RDP connections from macOS.\"",
+  "url": "https:\/\/www.vandenboom.icu\/en\/blog\/2026-windows-server-2022-home-lab-ad-dns-ca-rdp\/",
+  "inLanguage": "en",
+  "datePublished": "2026-04-02T00:00:00Z",
+  "dateModified": "2026-04-02T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "\"ing. M.A.C.M. (Martijn) van den Boom\""
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "\"Notities\"",
+    "url": "https:\/\/www.vandenboom.icu\/"
+  },
+  "keywords": "[\"windows-server-2022\",\"proxmox\",\"active-directory\",\"dns\",\"certificate-authority\",\"pki\",\"group-policy\",\"rdp\",\"powershell\",\"lab\",\"devops\",\"security\"]"
+}
+</script>
+
+<meta name="generator" content="Hugo 0.157.0"><meta property="og:site_name" content="Notities">
+  <meta property="og:title" content="Windows Server 2022 Home Lab — AD DS, DNS, CA and Secured RDP">
+  <meta property="og:description" content="Complete step-by-step guide to building a Windows Server 2022 home lab in Proxmox: Active Directory, DNS, Certificate Authority, Group Policy and secured RDP connections from macOS.">
+  <meta property="description" content="Complete step-by-step guide to building a Windows Server 2022 home lab in Proxmox: Active Directory, DNS, Certificate Authority, Group Policy and secured RDP connections from macOS.">
+  <meta property="og:url" content="https://www.vandenboom.icu/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/">
+  <meta property="og:type" content="article">
+  
+    <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
+  
+  <meta property="twitter:site" content="ingvdboom">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/dark.min.css">
+          <link rel="stylesheet" href="/css/bundle.min.23cb4b25157d025563c098a10e27266bbd45fb82c3b3efc626fdb6bef850ec73.css" integrity="sha256-I8tLJRV9AlVjwJihDicma71F&#43;4LDs&#43;/GJv22vvhQ7HM="><link rel="stylesheet" href="/css/add-on.css">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  
+  <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "4j6o1x990j");
+  </script>
+
+  <style>
+  .footer {
+     position: fixed;
+     left: 0;
+      bottom: -1.125em;
+     width: 25%;
+     padding-left: 10px;
+     font-family: source sans pro,Helvetica,sans-serif;
+     font-size: .7em;
+     letter-spacing: .25em;
+     line-height: 2.5;
+     text-transform: uppercase;
+  }
+  </style>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9BKD4YYT"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PX9BKD4YYT');
+        }
+      </script>
+
+  
+
+  <style>
+
+    :root {
+      --base-color: rgb(255, 255, 255);
+      --base-variant: #ffffff;
+      --text-color: black;
+      --secondairy-text: #232738;
+      --primary-color: #000000;
+      --accent-color: #ffffff;
+    }
+
+    .darkmode {
+      --base-color: #070b1d;
+      --base-variant: #101425;
+      --text-color: white;
+      --secondairy-text: #a4a5b8;
+      --primary-color: hsl(0, 0%, 100%);
+      --accent-color: #0071ff;
+    }
+
+    * {
+    }
+
+    .darkmode_button {
+      margin: 0;
+      border: 0;
+      border-left: 1px solid #e8ebed;
+    }
+
+    .darkmode .darkmode_button {
+      border-left-color: transparent;
+    }
+
+    .darkmode-search-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 61px;
+      height: 3.5em;
+      padding: 0;
+      margin-right: 0;
+    }
+
+    .darkmode-search-toggle i {
+      line-height: 1;
+      vertical-align: middle;
+    }
+
+    #theme-switch {
+      height: 3.5em;
+      width: 61px;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0;
+      color: red;
+    }
+
+    #theme-switch:hover {
+       
+      color: #2eb8ac;      
+    }
+
+    #theme-switch svg {
+      fill: var(--primary-color);
+    }
+
+    #theme-switch:hover svg {
+     fill: #2eb8ac !important;
+     filter: none !important;
+    }
+
+    #theme-switch svg {
+      display: none;
+    }
+
+    .theme-pref-system #theme-switch svg:nth-child(1) {
+      display: block;
+      fill: #050505;
+      filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.4));
+    }
+
+    .darkmode.theme-pref-system #theme-switch svg:nth-child(1) {
+      fill: #ffffff;
+      filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.6));
+    }
+
+    .theme-pref-light #theme-switch svg:nth-child(2) {
+      display: block;
+    }
+
+    .theme-pref-dark #theme-switch svg:nth-child(3) {
+      display: block;
+    }
+
+    .absolute-position {
+      position: static;
+      display: flex;
+      align-items: center;
+      height: 3.5em;
+      position: relative;
+      z-index: auto;
+    }
+
+    .theme-menu {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 2px);
+      background-color: var(--base-color);
+      border: 1px solid #e8ebed;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+      min-width: 190px;
+      padding: 6px 0;
+      display: none;
+      z-index: 10001;
+    }
+
+    .theme-menu.active {
+      display: block;
+    }
+
+    .theme-option {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      font-size: 0.78em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .theme-option:hover,
+    .theme-option.theme-option-active {
+      background: rgba(46, 184, 172, 0.15);
+      color: #2eb8ac;
+    }
+
+    .theme-option i {
+      width: 1.1em;
+      text-align: center;
+    }
+
+    html {
+
+    }
+
+    body {
+      background-color: var(--base-color);
+      color: var(--text-color);
+    }
+  
+    #site-header {
+      background-color: var(--base-color);
+      color: var(--text-color);;
+    }
+
+    .post {
+      background-color: var(--base-color);
+      color: var(--text-color);
+    }
+
+    .mini-post {
+      background-color: var(--base-color);
+      color: var(--text-color);
+    }
+
+    .flyout-menu {
+      background-color: var(--base-color);
+      color: var(--text-color);
+    }
+
+    .text-color-darkmode {
+      color: var(--text-color);
+    }
+
+    .nav {
+      color: var(--text-color);
+    }
+
+    p.copyright {
+      color: var(--text-color); 
+    }
+
+    .share-btn {
+      color: white;
+    }
+
+
+
+
+    .twitter {
+      background-color: black;
+    }
+    .twitter:hover {
+      background-color: #454545;
+    }
+    .twitter::before {
+      font-family: "Font Awesome 6 Brands";
+      content: "\e61b";
+    }
+
+  </style>
+
+  <style>
+    #telegram-btn, #back-to-top {
+      position: fixed;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 10000;
+      border: 2px solid #fff;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      padding: 0;
+    }
+
+    #back-to-top {
+      bottom: 20px;
+      border-bottom: 2px solid #fff;  
+    }
+
+    #telegram-btn {
+      bottom: 140px;
+    }
+
+    #telegram-btn svg {
+      fill: #fff;
+      width: 28px;
+      height: 28px;
+    }
+
+    #back-to-top::before {
+      font-size: 24px;
+    }
+
+    #telegram-btn:hover, #back-to-top:hover {
+      background-color: #2eb8ac;
+      color: #fff !important;
+      border-color: #2eb8ac;
+      transform: none !important;
+    }
+
+    #telegram-btn:hover svg {
+      fill: #fff;
+    }
+
+     
+    .darkmode table {
+      background-color: #101425;
+      color: var(--text-color);
+    }
+
+    .darkmode table > thead {
+      background-color: #1a1f35;
+    }
+
+    .darkmode table > tbody > tr > td:first-child {
+      background-color: #1a1f35;
+      color: var(--text-color);
+    }
+
+    .darkmode table > tbody > tr:nth-child(even) {
+      background-color: #0d1126;
+    }
+
+    .darkmode table > tbody > tr:hover {
+      background-color: #1e2640;
+    }
+  </style>
+
+
+
+
+
+
+</head>
+
+  <body>
+
+    
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWVBJ3K4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    
+
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/en/" class="nav">
+        
+          Blog
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/en/archive/" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="/en/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="/en/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+        
+      
+        
+          
+          <a href="/en/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="/en/services/" class="nav link"><i class='fas fa-briefcase'></i> Services</a>
+        
+      
+        
+          
+          <a href="/en/animations/" class="nav link"><i class='fas fa-film'></i> Animations</a>
+        
+      
+        
+          
+          <a href="/en/archive/" class="nav link"><i class='fas fa-archive'></i> Archive</a>
+        
+      
+        
+          
+          <a href="/en/contact/" class="nav link"><i class='fas fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <div class="absolute-position">
+      <a href="#search-input" class="nav search-toggle darkmode-search-toggle" aria-label="Search"><i class="fas fa-search fa-2x"></i></a>
+      <button class="nav darkmode_button theme-toggle" id="theme-switch" type="button" aria-haspopup="true" aria-controls="theme-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-636q-121 15-200.5 105.5T160-480q0 122 79.5 212.5T440-162Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg> 
+      </button>
+      <menu id="theme-menu" class="menu theme-menu">
+        <button type="button" class="theme-option" data-theme="light"><i class="fas fa-sun"></i><span>Light mode</span></button>
+        <button type="button" class="theme-option" data-theme="dark"><i class="fas fa-moon"></i><span>Dark mode</span></button>
+        <button type="button" class="theme-option" data-theme="system"><i class="fas fa-adjust"></i><span>Auto mode</span></button>
+      </menu>
+    </div>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+
+  <img style="height: 160px; padding: 15px 2px 11px 20px; border: none; box-shadow: none; background: transparent;" src="/images/Earth-globe-transparent.gif">
+  
+  <a href="#" lang="en" class="nav link active">English (en)</a>
+  
+      <a href="https://www.vandenboom.icu/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/" lang="nl" class="nav link">Nederlands (nl)</a>
+    
+  
+
+    
+
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1 class="text-color-darkmode">Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//x.com/share?text=Windows%20Server%202022%20Home%20Lab%20%e2%80%94%20AD%20DS%2c%20DNS%2c%20CA%20and%20Secured%20RDP&amp;url=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>X</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f&amp;title=Windows%20Server%202022%20Home%20Lab%20%e2%80%94%20AD%20DS%2c%20DNS%2c%20CA%20and%20Secured%20RDP" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f&amp;title=Windows%20Server%202022%20Home%20Lab%20%e2%80%94%20AD%20DS%2c%20DNS%2c%20CA%20and%20Secured%20RDP" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f&amp;description=Windows%20Server%202022%20Home%20Lab%20%e2%80%94%20AD%20DS%2c%20DNS%2c%20CA%20and%20Secured%20RDP" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by ing.%20M.A.C.M.%20%28Martijn%29%20van%20den%20Boom&amp;body=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/en/"><img src="https://vandenboom.netlify.app/images/Martijn_001.jpg" class="circle" width="100" alt="Notities" /></a>
+  <header>
+    <h1>Notities</h1>
+  </header>
+  <main>
+    <p>ing. M.A.C.M. (Martijn) van den Boom </br></br> Computer Infrastructure Engineer </br> ingenieur, docent en mentor</br></br></p>
+
+    
+    
+    <style>
+      .amazon-button {
+        display: inline-block;
+        width: 250px;  
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.2s, color 0.2s;
+        margin-bottom: 10px;  
+      }
+
+      .amazon-button:hover {
+        background-color: black;
+        color: white;
+      }
+    </style>
+
+  </main>
+  
+    <footer>
+	  <h6 style="text-align:left;">Social Media Links:</h6>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/martijnvandenboom" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+<li><a href="//stackoverflow.com/users/13417146" target="_blank" rel="noopener" title="Stack Overflow" class="fab fa-stack-overflow"></a></li>
+<li><a href="//bitbucket.com/martijnvandenboom" target="_blank" rel="noopener" title="Bitbucket" class="fab fa-bitbucket"></a></li>
+
+
+<li><a href="//ingvdboom.deviantart.com/" target="_blank" rel="noopener" title="DeviantArt" class="fab fa-deviantart"></a></li>
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/macmvandenboom" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+<li><a href="//xing.com/profile/MACMMartijn_vandenBoom" target="_blank" rel="noopener" title="Xing" class="fab fa-xing"></a></li>
+
+<li><a href="//facebook.com/macmvandenboom" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+<li><a href="//youtube.com/channel/UCslXipyVBwsTe6UjhVNOz7A" target="_blank" rel="noopener" title="YouTube" class="fab fa-youtube"></a></li>
+<li><a href="//vimeo.com/macmvandenboom" target="_blank" rel="noopener" title="Vimeo" class="fab fa-vimeo"></a></li>
+
+
+
+
+<li><a href="//instagram.com/ingmacmvandenboom" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//open.spotify.com/user/0d6z61v65xapwjgn7n416pc1j" target="_blank" rel="noopener" title="Spotify" class="fab fa-spotify"></a></li>
+<li><a href="//soundcloud.com/ing-macm-van-den-boom" target="_blank" rel="noopener" title="Soundcloud" class="fab fa-soundcloud"></a></li>
+<li><a href="//x.com/ingvdboom" target="_blank" rel="noopener" title="X" class="fab fa-x-twitter"></a></li>
+
+<li><a href="skype:mvdboom@live.com?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+<li><a href="//snapchat.com/add/ingvdboom" target="_blank" rel="noopener" title="snapchat" class="fab fa-snapchat"></a></li>
+<li><a href="//www.pinterest.com/macmvandenboom" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/ingvdboom" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+
+
+
+<li><a href="mailto:ingmacmvandenboom@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/">Windows Server 2022 Home Lab — AD DS, DNS, CA and Secured RDP</a></h2>
+    
+    
+      <p>Complete step-by-step guide to building a Windows Server 2022 home lab in Proxmox: Active Directory, DNS, Certificate Authority, Group Policy and secured RDP connections from macOS.</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2026-04-02 00:00:00 &#43;0000 UTC">April 2, 2026</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>9-Minute Read</p>
+  </div>
+</header>
+
+    <div id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//x.com/share?text=Windows%20Server%202022%20Home%20Lab%20%e2%80%94%20AD%20DS%2c%20DNS%2c%20CA%20and%20Secured%20RDP&amp;url=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>X</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f&amp;title=Windows%20Server%202022%20Home%20Lab%20%e2%80%94%20AD%20DS%2c%20DNS%2c%20CA%20and%20Secured%20RDP" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f&amp;title=Windows%20Server%202022%20Home%20Lab%20%e2%80%94%20AD%20DS%2c%20DNS%2c%20CA%20and%20Secured%20RDP" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f&amp;description=Windows%20Server%202022%20Home%20Lab%20%e2%80%94%20AD%20DS%2c%20DNS%2c%20CA%20and%20Secured%20RDP" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by ing.%20M.A.C.M.%20%28Martijn%29%20van%20den%20Boom&amp;body=https%3a%2f%2fwww.vandenboom.icu%2fen%2fblog%2f2026-windows-server-2022-home-lab-ad-dns-ca-rdp%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </div>
+    <div class="content">
+      
+      <p>This article describes the full setup of a two-server Windows Server 2022 home lab in Proxmox VE. Together the two virtual machines provide Active Directory Domain Services, DNS, Group Policy and a Certificate Authority (ADCS). RDP connections are secured with PKI certificates so that the Mac Mini M1 management workstation connects without certificate warnings.</p>
+<p>This is part 3 of the series on building a Windows DevOps lab in Proxmox. In <a href="https://vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-creation/">part 1</a> I described how to create a VM, and in <a href="https://vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-preparation/">part 2</a> how to prepare the template.</p>
+<blockquote>
+<p><strong>Download the complete manual as a Word document (.docx):</strong>
+<a href="https://vandenboom.icu/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/WS2022-Lab-Manual-EN.docx">WS2022-Lab-Manual-EN.docx</a></p>
+</blockquote>
+<hr>
+<h2 id="lab-environment">Lab Environment</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Proxmox host</td>
+          <td>macpro2013.local</td>
+      </tr>
+      <tr>
+          <td>Proxmox console</td>
+          <td><a href="https://macpro2013.local:8006">https://macpro2013.local:8006</a></td>
+      </tr>
+      <tr>
+          <td>Management workstation</td>
+          <td>Mac Mini M1</td>
+      </tr>
+      <tr>
+          <td>VM 1 — AD + DNS</td>
+          <td>WS2022-AD-DNS — 192.168.178.210</td>
+      </tr>
+      <tr>
+          <td>VM 2 — CA</td>
+          <td>WS2022-CA01 — 192.168.178.211</td>
+      </tr>
+      <tr>
+          <td>Default gateway</td>
+          <td>192.168.178.1</td>
+      </tr>
+      <tr>
+          <td>Subnet prefix</td>
+          <td>/24</td>
+      </tr>
+      <tr>
+          <td>Domain</td>
+          <td>LAB01.local</td>
+      </tr>
+      <tr>
+          <td>Resources (both VMs)</td>
+          <td>2 vCPU / 4 GB RAM</td>
+      </tr>
+      <tr>
+          <td>Template</td>
+          <td>WS2022-TEMPLATE-BASE</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="build-order">Build Order</h2>
+<p>The CA has a hard dependency on a working AD and DNS. Always build in this order:</p>
+<ol>
+<li>Clone <code>WS2022-TEMPLATE-BASE</code> to <code>WS2022-AD-DNS</code> and configure hostname and static IP</li>
+<li>Install AD DS + DNS and promote to Domain Controller</li>
+<li>Configure DNS zones, SYSVOL scripts folder and Group Policy</li>
+<li>Clone <code>WS2022-TEMPLATE-BASE</code> to <code>WS2022-CA01</code> and join the domain</li>
+<li>Install ADCS (Enterprise Root CA), Web Enrollment and IIS</li>
+<li>Configure certificate templates and CRL distribution points</li>
+<li>Deploy <code>Set-RDPCert.ps1</code> via SYSVOL and Scheduled Task on both servers</li>
+<li>Trust the Root CA certificate on the Mac Mini M1</li>
+</ol>
+<hr>
+<h2 id="step-1--clone-and-prepare-ws2022-ad-dns">Step 1 — Clone and prepare WS2022-AD-DNS</h2>
+<p>Clone <code>WS2022-TEMPLATE-BASE</code> to <code>WS2022-AD-DNS</code> via the Proxmox console. Set 2 vCPU and 4 GB RAM and attach the VM to the lab bridge.</p>
+<p>After booting, log in as local Administrator and run the following in an elevated PowerShell session:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># RUN ON: WS2022-AD-DNS (192.168.178.210) — Elevated PowerShell</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Rename the computer</span>
+</span></span><span style="display:flex;"><span>Rename-Computer -NewName <span style="color:#e6db74">&#34;WS2022-AD-DNS&#34;</span> -Force
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Identify the active network adapter</span>
+</span></span><span style="display:flex;"><span>$adapter = Get-NetAdapter | Where-Object { $_.Status <span style="color:#f92672">-eq</span> <span style="color:#e6db74">&#39;Up&#39;</span> } | Select-Object -First <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remove any existing DHCP configuration</span>
+</span></span><span style="display:flex;"><span>Remove-NetIPAddress -InterfaceIndex $adapter.ifIndex -Confirm:$false -ErrorAction SilentlyContinue
+</span></span><span style="display:flex;"><span>Remove-NetRoute     -InterfaceIndex $adapter.ifIndex -Confirm:$false -ErrorAction SilentlyContinue
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Assign a static IP address</span>
+</span></span><span style="display:flex;"><span>New-NetIPAddress `
+</span></span><span style="display:flex;"><span>    -InterfaceIndex  $adapter.ifIndex `
+</span></span><span style="display:flex;"><span>    -IPAddress       <span style="color:#ae81ff">192.168</span>.178.210 `
+</span></span><span style="display:flex;"><span>    -PrefixLength    <span style="color:#ae81ff">24</span> `
+</span></span><span style="display:flex;"><span>    -DefaultGateway  <span style="color:#ae81ff">192.168</span>.178.1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Point DNS to loopback — after AD DS installation point to own IP</span>
+</span></span><span style="display:flex;"><span>Set-DnsClientServerAddress `
+</span></span><span style="display:flex;"><span>    -InterfaceIndex  $adapter.ifIndex `
+</span></span><span style="display:flex;"><span>    -ServerAddresses <span style="color:#ae81ff">127.0</span>.0.1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Restart to apply the hostname</span>
+</span></span><span style="display:flex;"><span>Restart-Computer -Force
+</span></span></code></pre></div><hr>
+<h2 id="step-2--install-ad-ds-and-dns">Step 2 — Install AD DS and DNS</h2>
+<p>After the restart, log in as local Administrator and run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># RUN ON: WS2022-AD-DNS (192.168.178.210) — Elevated PowerShell</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install AD DS and DNS with all management tools</span>
+</span></span><span style="display:flex;"><span>Install-WindowsFeature `
+</span></span><span style="display:flex;"><span>    -Name AD-Domain-Services, DNS `
+</span></span><span style="display:flex;"><span>    -IncludeManagementTools `
+</span></span><span style="display:flex;"><span>    -IncludeAllSubFeature
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Promote to Domain Controller and create the new forest</span>
+</span></span><span style="display:flex;"><span>Import-Module ADDSDeployment
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Install-ADDSForest `
+</span></span><span style="display:flex;"><span>    -DomainName                    <span style="color:#e6db74">&#34;LAB01.local&#34;</span> `
+</span></span><span style="display:flex;"><span>    -DomainNetBiosName             <span style="color:#e6db74">&#34;LAB01&#34;</span> `
+</span></span><span style="display:flex;"><span>    -ForestMode                    <span style="color:#e6db74">&#34;WinThreshold&#34;</span> `
+</span></span><span style="display:flex;"><span>    -DomainMode                    <span style="color:#e6db74">&#34;WinThreshold&#34;</span> `
+</span></span><span style="display:flex;"><span>    -InstallDns                    $true `
+</span></span><span style="display:flex;"><span>    -DatabasePath                  <span style="color:#e6db74">&#34;C:\Windows\NTDS&#34;</span> `
+</span></span><span style="display:flex;"><span>    -LogPath                       <span style="color:#e6db74">&#34;C:\Windows\NTDS&#34;</span> `
+</span></span><span style="display:flex;"><span>    -SysvolPath                    <span style="color:#e6db74">&#34;C:\Windows\SYSVOL&#34;</span> `
+</span></span><span style="display:flex;"><span>    -SafeModeAdministratorPassword (ConvertTo-SecureString <span style="color:#e6db74">&#34;P@ssw0rd!DSRM2026&#34;</span> -AsPlainText -Force) `
+</span></span><span style="display:flex;"><span>    -Force
+</span></span></code></pre></div><p>The server restarts automatically. Afterwards, log in as <code>LAB01\Administrator</code>.</p>
+<p>After the restart: update the DNS pointer and create the reverse lookup zone:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># RUN ON: WS2022-AD-DNS (192.168.178.210) — Elevated PowerShell</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Update DNS pointer to own IP</span>
+</span></span><span style="display:flex;"><span>$adapter = Get-NetAdapter | Where-Object { $_.Status <span style="color:#f92672">-eq</span> <span style="color:#e6db74">&#39;Up&#39;</span> } | Select-Object -First <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>Set-DnsClientServerAddress `
+</span></span><span style="display:flex;"><span>    -InterfaceIndex  $adapter.ifIndex `
+</span></span><span style="display:flex;"><span>    -ServerAddresses <span style="color:#ae81ff">192.168</span>.178.<span style="color:#ae81ff">210</span>, <span style="color:#ae81ff">8.8</span>.8.8
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create reverse lookup zone</span>
+</span></span><span style="display:flex;"><span>Add-DnsServerPrimaryZone `
+</span></span><span style="display:flex;"><span>    -NetworkID        <span style="color:#e6db74">&#34;192.168.178.0/24&#34;</span> `
+</span></span><span style="display:flex;"><span>    -ReplicationScope <span style="color:#e6db74">&#34;Forest&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add PTR record for the AD server</span>
+</span></span><span style="display:flex;"><span>Add-DnsServerResourceRecordPtr `
+</span></span><span style="display:flex;"><span>    -ZoneName      <span style="color:#e6db74">&#34;178.168.192.in-addr.arpa&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Name          <span style="color:#e6db74">&#34;210&#34;</span> `
+</span></span><span style="display:flex;"><span>    -PtrDomainName <span style="color:#e6db74">&#34;WS2022-AD-DNS.LAB01.local.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the SYSVOL scripts folder</span>
+</span></span><span style="display:flex;"><span>$scriptShare = <span style="color:#e6db74">&#34;\\LAB01.local\SYSVOL\LAB01.local\scripts&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">If</span> (<span style="color:#f92672">-Not</span> (Test-Path $scriptShare)) {
+</span></span><span style="display:flex;"><span>    New-Item -ItemType Directory -Path $scriptShare -Force
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="step-3--configure-group-policy">Step 3 — Configure Group Policy</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># RUN ON: WS2022-AD-DNS (192.168.178.210) — Elevated PowerShell</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Import-Module GroupPolicy
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the GPO and link to the domain root</span>
+</span></span><span style="display:flex;"><span>$gpo = New-GPO -Name <span style="color:#e6db74">&#34;LAB01-Core-Settings&#34;</span>
+</span></span><span style="display:flex;"><span>New-GPLink -Name <span style="color:#e6db74">&#34;LAB01-Core-Settings&#34;</span> -Target <span style="color:#e6db74">&#34;DC=LAB01,DC=local&#34;</span> -LinkEnabled Yes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Require NLA for RDP</span>
+</span></span><span style="display:flex;"><span>Set-GPRegistryValue `
+</span></span><span style="display:flex;"><span>    -Name <span style="color:#e6db74">&#34;LAB01-Core-Settings&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Key  <span style="color:#e6db74">&#34;HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services&#34;</span> `
+</span></span><span style="display:flex;"><span>    -ValueName <span style="color:#e6db74">&#34;UserAuthentication&#34;</span> -Type DWord -Value <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Set TLS security layer</span>
+</span></span><span style="display:flex;"><span>Set-GPRegistryValue `
+</span></span><span style="display:flex;"><span>    -Name <span style="color:#e6db74">&#34;LAB01-Core-Settings&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Key  <span style="color:#e6db74">&#34;HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services&#34;</span> `
+</span></span><span style="display:flex;"><span>    -ValueName <span style="color:#e6db74">&#34;SecurityLayer&#34;</span> -Type DWord -Value <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># High encryption level</span>
+</span></span><span style="display:flex;"><span>Set-GPRegistryValue `
+</span></span><span style="display:flex;"><span>    -Name <span style="color:#e6db74">&#34;LAB01-Core-Settings&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Key  <span style="color:#e6db74">&#34;HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services&#34;</span> `
+</span></span><span style="display:flex;"><span>    -ValueName <span style="color:#e6db74">&#34;MinEncryptionLevel&#34;</span> -Type DWord -Value <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Automatic certificate enrollment (computers and users)</span>
+</span></span><span style="display:flex;"><span>Set-GPRegistryValue `
+</span></span><span style="display:flex;"><span>    -Name <span style="color:#e6db74">&#34;LAB01-Core-Settings&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Key  <span style="color:#e6db74">&#34;HKLM\SOFTWARE\Policies\Microsoft\Cryptography\AutoEnrollment&#34;</span> `
+</span></span><span style="display:flex;"><span>    -ValueName <span style="color:#e6db74">&#34;AEPolicy&#34;</span> -Type DWord -Value <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Set-GPRegistryValue `
+</span></span><span style="display:flex;"><span>    -Name <span style="color:#e6db74">&#34;LAB01-Core-Settings&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Key  <span style="color:#e6db74">&#34;HKCU\SOFTWARE\Policies\Microsoft\Cryptography\AutoEnrollment&#34;</span> `
+</span></span><span style="display:flex;"><span>    -ValueName <span style="color:#e6db74">&#34;AEPolicy&#34;</span> -Type DWord -Value <span style="color:#ae81ff">7</span>
+</span></span></code></pre></div><hr>
+<h2 id="step-4--clone-ws2022-ca01-and-join-the-domain">Step 4 — Clone WS2022-CA01 and join the domain</h2>
+<p>Clone <code>WS2022-TEMPLATE-BASE</code> to <code>WS2022-CA01</code> (2 vCPU, 4 GB RAM, same lab bridge). Configure the hostname and static IP on first boot:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># RUN ON: WS2022-CA01 (192.168.178.211) — Local VM console / Elevated PowerShell</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Rename-Computer -NewName <span style="color:#e6db74">&#34;WS2022-CA01&#34;</span> -Force
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$adapter = Get-NetAdapter | Where-Object { $_.Status <span style="color:#f92672">-eq</span> <span style="color:#e6db74">&#39;Up&#39;</span> } | Select-Object -First <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>Remove-NetIPAddress -InterfaceIndex $adapter.ifIndex -Confirm:$false -ErrorAction SilentlyContinue
+</span></span><span style="display:flex;"><span>Remove-NetRoute     -InterfaceIndex $adapter.ifIndex -Confirm:$false -ErrorAction SilentlyContinue
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>New-NetIPAddress `
+</span></span><span style="display:flex;"><span>    -InterfaceIndex  $adapter.ifIndex `
+</span></span><span style="display:flex;"><span>    -IPAddress       <span style="color:#ae81ff">192.168</span>.178.211 `
+</span></span><span style="display:flex;"><span>    -PrefixLength    <span style="color:#ae81ff">24</span> `
+</span></span><span style="display:flex;"><span>    -DefaultGateway  <span style="color:#ae81ff">192.168</span>.178.1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># REQUIRED: point DNS to the AD server</span>
+</span></span><span style="display:flex;"><span>Set-DnsClientServerAddress `
+</span></span><span style="display:flex;"><span>    -InterfaceIndex  $adapter.ifIndex `
+</span></span><span style="display:flex;"><span>    -ServerAddresses <span style="color:#ae81ff">192.168</span>.178.210
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Restart-Computer -Force
+</span></span></code></pre></div><p>After the restart, join the domain:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># RUN ON: WS2022-CA01 (192.168.178.211) — Elevated PowerShell</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Verify DNS resolution before joining the domain</span>
+</span></span><span style="display:flex;"><span>Resolve-DnsName LAB01.local
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Join the domain</span>
+</span></span><span style="display:flex;"><span>Add-Computer `
+</span></span><span style="display:flex;"><span>    -DomainName <span style="color:#e6db74">&#34;LAB01.local&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Credential (Get-Credential -Message <span style="color:#e6db74">&#34;Enter LAB01\Administrator credentials&#34;</span>) `
+</span></span><span style="display:flex;"><span>    -Restart -Force
+</span></span></code></pre></div><hr>
+<h2 id="step-5--install-adcs-and-configure-the-certificate-authority">Step 5 — Install ADCS and configure the Certificate Authority</h2>
+<p>Log in as <code>LAB01\Administrator</code> on WS2022-CA01:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># RUN ON: WS2022-CA01 (192.168.178.211) — Elevated PowerShell</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check and install IIS</span>
+</span></span><span style="display:flex;"><span>Get-WindowsFeature Web-Server
+</span></span><span style="display:flex;"><span>Install-WindowsFeature Web-Server -IncludeManagementTools
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install the CA role and Web Enrollment</span>
+</span></span><span style="display:flex;"><span>Install-WindowsFeature `
+</span></span><span style="display:flex;"><span>    -Name ADCS-Cert-Authority `
+</span></span><span style="display:flex;"><span>    -IncludeManagementTools `
+</span></span><span style="display:flex;"><span>    -IncludeAllSubFeature
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Install-WindowsFeature ADCS-Web-Enrollment -IncludeManagementTools
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Verify installation</span>
+</span></span><span style="display:flex;"><span>Get-WindowsFeature ADCS-Cert-Authority, ADCS-Web-Enrollment, Web-Server | `
+</span></span><span style="display:flex;"><span>    Select-Object Name, Installed, DisplayName
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configure the Enterprise Root CA</span>
+</span></span><span style="display:flex;"><span>Install-AdcsCertificationAuthority `
+</span></span><span style="display:flex;"><span>    -CAType                    EnterpriseRootCA `
+</span></span><span style="display:flex;"><span>    -CACommonName              <span style="color:#e6db74">&#34;LAB01-Root-CA&#34;</span> `
+</span></span><span style="display:flex;"><span>    -CADistinguishedNameSuffix <span style="color:#e6db74">&#34;DC=LAB01,DC=local&#34;</span> `
+</span></span><span style="display:flex;"><span>    -CryptoProviderName        <span style="color:#e6db74">&#34;RSA#Microsoft Software Key Storage Provider&#34;</span> `
+</span></span><span style="display:flex;"><span>    -KeyLength                 <span style="color:#ae81ff">4096</span> `
+</span></span><span style="display:flex;"><span>    -HashAlgorithmName         SHA256 `
+</span></span><span style="display:flex;"><span>    -ValidityPeriod            Years `
+</span></span><span style="display:flex;"><span>    -ValidityPeriodUnits       <span style="color:#ae81ff">10</span> `
+</span></span><span style="display:flex;"><span>    -DatabaseDirectory         <span style="color:#e6db74">&#34;C:\Windows\system32\CertLog&#34;</span> `
+</span></span><span style="display:flex;"><span>    -LogDirectory              <span style="color:#e6db74">&#34;C:\Windows\system32\CertLog&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Force
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configure Web Enrollment</span>
+</span></span><span style="display:flex;"><span>Install-AdcsWebEnrollment -Force
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Verify</span>
+</span></span><span style="display:flex;"><span>Get-WindowsFeature ADCS-Web-Enrollment
+</span></span><span style="display:flex;"><span>Get-Service W3SVC
+</span></span><span style="display:flex;"><span>netstat -an | findstr <span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Test the Web Enrollment page</span>
+</span></span><span style="display:flex;"><span>Invoke-WebRequest `
+</span></span><span style="display:flex;"><span>    -Uri <span style="color:#e6db74">&#34;http://localhost/certsrv&#34;</span> `
+</span></span><span style="display:flex;"><span>    -UseDefaultCredentials `
+</span></span><span style="display:flex;"><span>    | Select-Object StatusCode, StatusDescription
+</span></span></code></pre></div><p>The Web Enrollment page is accessible at: <code>http://WS2022-CA01.LAB01.local/certsrv</code></p>
+<hr>
+<h2 id="step-6--secure-rdp-with-set-rdpcertps1">Step 6 — Secure RDP with Set-RDPCert.ps1</h2>
+<p>Create the script in SYSVOL (run on WS2022-AD-DNS):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># RUN ON: WS2022-AD-DNS (192.168.178.210) — Elevated PowerShell</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>notepad \\LAB01.local\SYSVOL\LAB01.local\scripts\Set-RDPCert.ps1
+</span></span></code></pre></div><p>Paste the following script content into Notepad, save and close:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">#</span><span style="color:#66d9ef">Requires</span> <span style="color:#66d9ef">-RunAsAdministrator</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;#
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">.</span><span style="color:#e6db74">SYNOPSIS</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    Binds a CA-issued certificate to the RDP listener on every startup.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">.</span><span style="color:#e6db74">DESCRIPTION</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    Finds the most recent valid certificate in Cert:\LocalMachine\My issued by
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    LAB01-Root-CA for the local computer&#39;s FQDN. If none is found, certificate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    auto-enrollment is triggered. The selected certificate thumbprint is written
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    to the RDP-Tcp registry key and the Remote Desktop service is restarted.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">.</span><span style="color:#e6db74">NOTES</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    Deploy via SYSVOL and run as SYSTEM via Scheduled Task at startup.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    Lab: LAB01.local — WS2022-AD-DNS / WS2022-CA01
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Set-StrictMode -Version Latest
+</span></span><span style="display:flex;"><span>$ErrorActionPreference = <span style="color:#e6db74">&#39;Stop&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$LogFile = <span style="color:#e6db74">&#34;C:\Scripts\Set-RDPCert.log&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> Write-Log {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">param</span>([<span style="color:#66d9ef">string</span>]$Message)
+</span></span><span style="display:flex;"><span>    $timestamp = Get-Date -Format <span style="color:#e6db74">&#34;yyyy-MM-dd HH:mm:ss&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;</span>$timestamp<span style="color:#e6db74">  </span>$Message<span style="color:#e6db74">&#34;</span> | Tee-Object -FilePath $LogFile -Append | Write-Host
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Write-Log <span style="color:#e6db74">&#34;=== Set-RDPCert.ps1 started ===&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ── 1. Determine the computer&#39;s FQDN ────────────────────────────────────────</span>
+</span></span><span style="display:flex;"><span>$fqdn = [<span style="color:#66d9ef">System.Net.Dns</span>]::GetHostEntry(<span style="color:#e6db74">&#39;&#39;</span>).HostName
+</span></span><span style="display:flex;"><span>Write-Log <span style="color:#e6db74">&#34;FQDN: </span>$fqdn<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ── 2. Find a valid certificate issued by LAB01-Root-CA ─────────────────────</span>
+</span></span><span style="display:flex;"><span>$rdpCert = Get-ChildItem Cert<span style="color:#960050;background-color:#1e0010">:</span>\LocalMachine\My |
+</span></span><span style="display:flex;"><span>    Where-Object {
+</span></span><span style="display:flex;"><span>        $_.Issuer    <span style="color:#f92672">-like</span> <span style="color:#e6db74">&#34;*LAB01-Root-CA*&#34;</span>  <span style="color:#f92672">-and</span>
+</span></span><span style="display:flex;"><span>        $_.Subject   <span style="color:#f92672">-like</span> <span style="color:#e6db74">&#34;*</span>$fqdn<span style="color:#e6db74">*&#34;</span>           <span style="color:#f92672">-and</span>
+</span></span><span style="display:flex;"><span>        $_.NotAfter  <span style="color:#f92672">-gt</span> (Get-Date)            <span style="color:#f92672">-and</span>
+</span></span><span style="display:flex;"><span>        $_.HasPrivateKey
+</span></span><span style="display:flex;"><span>    } |
+</span></span><span style="display:flex;"><span>    Sort-Object NotAfter -Descending |
+</span></span><span style="display:flex;"><span>    Select-Object -First <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ── 3. If no certificate found, trigger auto-enrollment and retry ────────────</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">-not</span> $rdpCert) {
+</span></span><span style="display:flex;"><span>    Write-Log <span style="color:#e6db74">&#34;No valid certificate found — triggering auto-enrollment...&#34;</span>
+</span></span><span style="display:flex;"><span>    &amp; certutil -pulse | Out-Null
+</span></span><span style="display:flex;"><span>    Start-Sleep -Seconds <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    $rdpCert = Get-ChildItem Cert<span style="color:#960050;background-color:#1e0010">:</span>\LocalMachine\My |
+</span></span><span style="display:flex;"><span>        Where-Object {
+</span></span><span style="display:flex;"><span>            $_.Issuer    <span style="color:#f92672">-like</span> <span style="color:#e6db74">&#34;*LAB01-Root-CA*&#34;</span>  <span style="color:#f92672">-and</span>
+</span></span><span style="display:flex;"><span>            $_.Subject   <span style="color:#f92672">-like</span> <span style="color:#e6db74">&#34;*</span>$fqdn<span style="color:#e6db74">*&#34;</span>           <span style="color:#f92672">-and</span>
+</span></span><span style="display:flex;"><span>            $_.NotAfter  <span style="color:#f92672">-gt</span> (Get-Date)            <span style="color:#f92672">-and</span>
+</span></span><span style="display:flex;"><span>            $_.HasPrivateKey
+</span></span><span style="display:flex;"><span>        } |
+</span></span><span style="display:flex;"><span>        Sort-Object NotAfter -Descending |
+</span></span><span style="display:flex;"><span>        Select-Object -First <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">-not</span> $rdpCert) {
+</span></span><span style="display:flex;"><span>    Write-Log <span style="color:#e6db74">&#34;ERROR: No certificate available after auto-enrollment. Aborting.&#34;</span>
+</span></span><span style="display:flex;"><span>    exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Write-Log <span style="color:#e6db74">&#34;Certificate selected: </span>$($rdpCert.Subject)<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>Write-Log <span style="color:#e6db74">&#34;Thumbprint : </span>$($rdpCert.Thumbprint)<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>Write-Log <span style="color:#e6db74">&#34;Valid until: </span>$($rdpCert.NotAfter)<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ── 4. Grant the Network Service read access to the private key ──────────────</span>
+</span></span><span style="display:flex;"><span>$keyPath = $rdpCert.PrivateKey.CspKeyContainerInfo.UniqueKeyContainerName
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ($keyPath) {
+</span></span><span style="display:flex;"><span>    $keyFile = Get-ChildItem <span style="color:#e6db74">&#34;</span>$env:ProgramData<span style="color:#e6db74">\Microsoft\Crypto\RSA\MachineKeys\</span>$keyPath<span style="color:#e6db74">&#34;</span> `
+</span></span><span style="display:flex;"><span>               -ErrorAction SilentlyContinue
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> ($keyFile) {
+</span></span><span style="display:flex;"><span>        $acl  = Get-Acl $keyFile.FullName
+</span></span><span style="display:flex;"><span>        $rule = New-Object System.Security.AccessControl.FileSystemAccessRule(
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#34;NT AUTHORITY\NETWORK SERVICE&#34;</span>, <span style="color:#e6db74">&#34;Read&#34;</span>, <span style="color:#e6db74">&#34;Allow&#34;</span>)
+</span></span><span style="display:flex;"><span>        $acl.AddAccessRule($rule)
+</span></span><span style="display:flex;"><span>        Set-Acl -Path $keyFile.FullName -AclObject $acl
+</span></span><span style="display:flex;"><span>        Write-Log <span style="color:#e6db74">&#34;Private key ACL updated for NETWORK SERVICE.&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ── 5. Bind the certificate to the RDP listener ──────────────────────────────</span>
+</span></span><span style="display:flex;"><span>$rdpReg = <span style="color:#e6db74">&#34;HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp&#34;</span>
+</span></span><span style="display:flex;"><span>Set-ItemProperty -Path $rdpReg -Name SSLCertificateSHA1Hash -Value $rdpCert.Thumbprint
+</span></span><span style="display:flex;"><span>Write-Log <span style="color:#e6db74">&#34;Registry updated with new thumbprint.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ── 6. Restart Remote Desktop Services to apply the new certificate ──────────</span>
+</span></span><span style="display:flex;"><span>Write-Log <span style="color:#e6db74">&#34;Restarting TermService...&#34;</span>
+</span></span><span style="display:flex;"><span>Restart-Service -Name TermService -Force
+</span></span><span style="display:flex;"><span>Write-Log <span style="color:#e6db74">&#34;TermService restarted.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Write-Log <span style="color:#e6db74">&#34;=== Set-RDPCert.ps1 completed successfully ===&#34;</span>
+</span></span></code></pre></div><p>Save the file and close Notepad. Then copy the script locally and register the Scheduled Task — on <strong>both servers</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># RUN ON: BOTH SERVERS — WS2022-AD-DNS + WS2022-CA01 — Elevated PowerShell</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create local copy</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">If</span> (<span style="color:#f92672">-Not</span> (Test-Path <span style="color:#e6db74">&#34;C:\Scripts&#34;</span>)) { New-Item -ItemType Directory -Path <span style="color:#e6db74">&#34;C:\Scripts&#34;</span> -Force }
+</span></span><span style="display:flex;"><span>Copy-Item `
+</span></span><span style="display:flex;"><span>    -Path        <span style="color:#e6db74">&#34;\\LAB01.local\SYSVOL\LAB01.local\scripts\Set-RDPCert.ps1&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Destination <span style="color:#e6db74">&#34;C:\Scripts\Set-RDPCert.ps1&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Force
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine -Force
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Register the Scheduled Task</span>
+</span></span><span style="display:flex;"><span>$action    = New-ScheduledTaskAction `
+</span></span><span style="display:flex;"><span>    -Execute <span style="color:#e6db74">&#34;powershell.exe&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Argument <span style="color:#e6db74">&#34;-NonInteractive -ExecutionPolicy Bypass -File C:\Scripts\Set-RDPCert.ps1&#34;</span>
+</span></span><span style="display:flex;"><span>$trigger   = New-ScheduledTaskTrigger -AtStartup
+</span></span><span style="display:flex;"><span>$principal = New-ScheduledTaskPrincipal -UserId <span style="color:#e6db74">&#34;SYSTEM&#34;</span> -LogonType ServiceAccount -RunLevel Highest
+</span></span><span style="display:flex;"><span>$settings  = New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Hours <span style="color:#ae81ff">1</span>) `
+</span></span><span style="display:flex;"><span>    -RestartCount <span style="color:#ae81ff">3</span> -RestartInterval (New-TimeSpan -Minutes <span style="color:#ae81ff">5</span>) -StartWhenAvailable $true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Register-ScheduledTask `
+</span></span><span style="display:flex;"><span>    -TaskName <span style="color:#e6db74">&#34;Set-RDPCertificate&#34;</span> -TaskPath <span style="color:#e6db74">&#34;\LAB01\&#34;</span> `
+</span></span><span style="display:flex;"><span>    -Action $action -Trigger $trigger -Principal $principal -Settings $settings `
+</span></span><span style="display:flex;"><span>    -Description <span style="color:#e6db74">&#34;Binds CA certificate to RDP on every startup&#34;</span> -Force
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Run immediately for first-time installation</span>
+</span></span><span style="display:flex;"><span>Start-ScheduledTask -TaskPath <span style="color:#e6db74">&#34;\LAB01\&#34;</span> -TaskName <span style="color:#e6db74">&#34;Set-RDPCertificate&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="step-7--trust-the-root-ca-certificate-on-mac-mini-m1">Step 7 — Trust the Root CA certificate on Mac Mini M1</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># RUN ON: Mac Mini M1 — Terminal (macOS)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Download the Root CA certificate</span>
+</span></span><span style="display:flex;"><span>curl -o ~/Downloads/LAB01-Root-CA.cer http://192.168.178.211/LAB01-Root-CA.cer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install in the System Keychain as trusted root</span>
+</span></span><span style="display:flex;"><span>sudo security add-trusted-cert <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    -d <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    -r trustRoot <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    -k /Library/Keychains/System.keychain <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    ~/Downloads/LAB01-Root-CA.cer
+</span></span></code></pre></div><p>Add both VMs in Microsoft Remote Desktop:</p>
+<ul>
+<li><code>192.168.178.210</code> — <code>LAB01\Administrator</code> — WS2022-AD-DNS</li>
+<li><code>192.168.178.211</code> — <code>LAB01\Administrator</code> — WS2022-CA01</li>
+</ul>
+<p>RDP connections will no longer show certificate warnings.</p>
+<hr>
+<h2 id="verification">Verification</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># WS2022-AD-DNS — full DC diagnostics</span>
+</span></span><span style="display:flex;"><span>dcdiag /test<span style="color:#960050;background-color:#1e0010">:</span>Replications /test<span style="color:#960050;background-color:#1e0010">:</span>DNS /test<span style="color:#960050;background-color:#1e0010">:</span>KnowsOfRoleHolders /v
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># WS2022-CA01 — CA and Web Enrollment</span>
+</span></span><span style="display:flex;"><span>Get-Service certsvc | Select-Object Name, Status
+</span></span><span style="display:flex;"><span>Get-WindowsFeature ADCS-Web-Enrollment
+</span></span><span style="display:flex;"><span>Get-Service W3SVC
+</span></span><span style="display:flex;"><span>netstat -an | findstr <span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>certutil -CRL
+</span></span><span style="display:flex;"><span>certutil -verifystore Root <span style="color:#e6db74">&#34;LAB01-Root-CA&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Both servers — verify RDP certificate</span>
+</span></span><span style="display:flex;"><span>$rdpReg = <span style="color:#e6db74">&#34;HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp&#34;</span>
+</span></span><span style="display:flex;"><span>$thumb  = (Get-ItemProperty $rdpReg -Name SSLCertificateSHA1Hash).SSLCertificateSHA1Hash
+</span></span><span style="display:flex;"><span>Get-ChildItem Cert<span style="color:#960050;background-color:#1e0010">:</span>\LocalMachine\My | Where-Object { $_.Thumbprint <span style="color:#f92672">-eq</span> $thumb } |
+</span></span><span style="display:flex;"><span>    Select-Object Subject, Thumbprint, NotAfter, Issuer
+</span></span></code></pre></div><hr>
+<h2 id="download">Download</h2>
+<p>The complete manual — including all commands, the full <code>Set-RDPCert.ps1</code> script content, troubleshooting and reference — is available as a Word document:</p>
+<blockquote>
+<p><strong><a href="https://vandenboom.icu/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/WS2022-Lab-Manual-EN.docx">WS2022-Lab-Manual-EN.docx</a></strong></p>
+</blockquote>
+
+    </div>
+    <footer>
+      <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/windows/">windows</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/windows-server-2022/">windows-server-2022</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/proxmox/">proxmox</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/active-directory/">active-directory</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/dns/">dns</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/certificate-authority/">certificate-authority</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/pki/">pki</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/group-policy/">group-policy</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/rdp/">rdp</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/powershell/">powershell</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/lab/">lab</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/devops/">devops</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/security/">security</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+    </footer>
+  </article>
+  
+    <article class="post">
+    <div class="giscus"></div>
+    <script src="https://giscus.app/client.js"
+            data-repo="martijnvandenboom/backup-website"
+            data-repo-id="MDEwOlJlcG9zaXRvcnkzMjA2NTM3Nzc="
+            data-category="Comments"
+            data-category-id="DIC_kwDOExzJ0c4C5s22"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
+</article>
+
+  
+  <div class="pagination">
+    
+    
+      <a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/" class="button right"><span>Proxmox Lab — Windows Server 2022 Template Preparation</span></a>
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent Posts:</h1>
+      </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/">Windows Server 2022 Home Lab — AD DS, DNS, CA and Secured RDP</a></h2>
+          <time class="published" datetime="2026-04-02 00:00:00 &#43;0000 UTC">April 2, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-template-preparation/">Proxmox Lab — Windows Server 2022 Template Preparation</a></h2>
+          <time class="published" datetime="2026-03-31 10:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-proxmox-windows-server-2022-vm-creation/">Proxmox Lab — Creating a Windows Server 2022 VM</a></h2>
+          <time class="published" datetime="2026-03-31 00:00:00 &#43;0100 &#43;0100">March 31, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-windows-server-2022-active-directory-dns-installatie/">Windows Server 2022 — Active Directory and DNS Installation</a></h2>
+          <time class="published" datetime="2026-03-27 00:00:00 &#43;0100 CET">March 27, 2026</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-windows-packet-capturing-voor-bijvoorbeeld-een-ldaps-verkeer-analyse/">Windows packet capturing for example for an LDAPS traffic analysis</a></h2>
+          <time class="published" datetime="2026-01-18 18:55:54.439 &#43;0000 UTC">January 18, 2026</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="/en/blog/" class="button">See More</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="/en/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="/en/categories/article/">article<span class="count">65</span></a>
+          
+          <li>
+              <a href="/en/categories/syntax/">syntax<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/themes/">themes<span class="count">13</span></a>
+          
+          <li>
+              <a href="/en/categories/windows/">windows<span class="count">11</span></a>
+          
+          <li>
+              <a href="/en/categories/tools/">tools<span class="count">4</span></a>
+          
+          <li>
+              <a href="/en/categories/utilities/">utilities<span class="count">4</span></a>
+          
+          <li>
+              <a href="/en/categories/actions/">actions<span class="count">2</span></a>
+          
+          <li>
+              <a href="/en/categories/linux/">linux<span class="count">2</span></a>
+          
+          <li>
+              <a href="/en/categories/macos/">macos<span class="count">2</span></a>
+          
+          <li>
+              <a href="/en/categories/animations/">animations<span class="count">1</span></a>
+          
+          <li>
+              <a href="/en/categories/handelingen/">handelingen<span class="count">1</span></a>
+          
+          <li>
+              <a href="/en/categories/manual/">manual<span class="count">1</span></a>
+          
+          <li>
+              <a href="/en/categories/routing/">routing<span class="count">1</span></a>
+          
+          <li>
+              <a href="/en/categories/scripting/">scripting<span class="count">1</span></a>
+          
+          <li>
+              <a href="/en/categories/tutorial/">tutorial<span class="count">1</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Sponsor me link: </br> <a href='https://ko-fi.com/martijnvandenboom'>ko-fi.com/martijnvandenboom</a> </br> <a href='https://paypal.me/ingmacmvandenboom'>paypal.me/ingmacmvandenboom</a> </br> <a href='https://buymeacoffee.com/ingvdboom'>buymeacoffee.com/ingvdboom</a></p>
+      <footer>
+        <a href="/en/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+	  <h6 style="text-align:left;">Social Media Links:</h6>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/martijnvandenboom" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+<li><a href="//stackoverflow.com/users/13417146" target="_blank" rel="noopener" title="Stack Overflow" class="fab fa-stack-overflow"></a></li>
+<li><a href="//bitbucket.com/martijnvandenboom" target="_blank" rel="noopener" title="Bitbucket" class="fab fa-bitbucket"></a></li>
+
+
+<li><a href="//ingvdboom.deviantart.com/" target="_blank" rel="noopener" title="DeviantArt" class="fab fa-deviantart"></a></li>
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/macmvandenboom" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+<li><a href="//xing.com/profile/MACMMartijn_vandenBoom" target="_blank" rel="noopener" title="Xing" class="fab fa-xing"></a></li>
+
+<li><a href="//facebook.com/macmvandenboom" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+<li><a href="//youtube.com/channel/UCslXipyVBwsTe6UjhVNOz7A" target="_blank" rel="noopener" title="YouTube" class="fab fa-youtube"></a></li>
+<li><a href="//vimeo.com/macmvandenboom" target="_blank" rel="noopener" title="Vimeo" class="fab fa-vimeo"></a></li>
+
+
+
+
+<li><a href="//instagram.com/ingmacmvandenboom" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//open.spotify.com/user/0d6z61v65xapwjgn7n416pc1j" target="_blank" rel="noopener" title="Spotify" class="fab fa-spotify"></a></li>
+<li><a href="//soundcloud.com/ing-macm-van-den-boom" target="_blank" rel="noopener" title="Soundcloud" class="fab fa-soundcloud"></a></li>
+<li><a href="//x.com/ingvdboom" target="_blank" rel="noopener" title="X" class="fab fa-x-twitter"></a></li>
+
+<li><a href="skype:mvdboom@live.com?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+<li><a href="//snapchat.com/add/ingvdboom" target="_blank" rel="noopener" title="snapchat" class="fab fa-snapchat"></a></li>
+<li><a href="//www.pinterest.com/macmvandenboom" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/ingvdboom" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+
+
+
+<li><a href="mailto:ingmacmvandenboom@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+
+</footer>
+
+<div>
+  <div>
+    <a href="https://t.me/ingvdboom" id="telegram-btn" target="_blank">
+      
+   
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/>
+        </svg>
+      
+    </a>
+  </div>
+
+  <div>
+    <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x" style="display: none;"></a>
+  </div>
+</div>
+      <script src="/js/highlight.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/powershell.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.1638f3918cbe55f5267a85103dfdabca4b23dcd17274e389270fc26e63fb57b0.js" integrity="sha256-FjjzkYy&#43;VfUmeoUQPf2ryksj3NFydOOJJw/CbmP7V7A="></script>
+    <script src="/js/add-on.js"></script>
+    <script src="/js/accessibility.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9BKD4YYT"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PX9BKD4YYT');
+        }
+      </script>
+    </div>
+    
+    <div class="footer">
+      <p class="copyright">
+         - van den <span class="bold-rotate">B</span>oom &copy; 2026 - 
+      </p>
+    </div>
+
+	<script>
+	  if (window.netlifyIdentity) {
+		window.netlifyIdentity.on("init", user => {
+		  if (!user) {
+			window.netlifyIdentity.on("login", () => {
+			  document.location.href = "/admin/";
+			});
+		  }
+		});
+	  }
+	</script>
+
+  <script type="text/javascript">
+    (function () {
+      const themeSwitch = document.getElementById('theme-switch')
+      const themeOptions = document.querySelectorAll('.theme-option')
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+      const THEME_PREF_KEY = 'themePreference'
+
+      function getSavedThemePreference() {
+        const value = localStorage.getItem(THEME_PREF_KEY)
+        if (value === 'dark' || value === 'light' || value === 'system') {
+          return value
+        }
+        if (localStorage.getItem('darkmode') === 'active') {
+          return 'dark'
+        }
+        return 'system'
+      }
+
+      function isDarkThemeActive(preference) {
+        if (preference === 'dark') return true
+        if (preference === 'light') return false
+        return mediaQuery.matches
+      }
+
+      function applyThemePreference(preference) {
+        const enableDark = isDarkThemeActive(preference)
+        document.body.classList.toggle('darkmode', enableDark)
+
+        document.body.classList.remove('theme-pref-system', 'theme-pref-dark', 'theme-pref-light')
+        document.body.classList.add('theme-pref-' + preference)
+
+        localStorage.setItem(THEME_PREF_KEY, preference)
+        localStorage.removeItem('darkmode')
+
+        if (themeSwitch) {
+          const titleMap = {
+            system: 'Theme: System',
+            dark: 'Theme: Dark',
+            light: 'Theme: Light'
+          }
+          themeSwitch.setAttribute('title', titleMap[preference])
+          themeSwitch.setAttribute('aria-label', titleMap[preference])
+        }
+
+        themeOptions.forEach(function (option) {
+          option.classList.toggle('theme-option-active', option.getAttribute('data-theme') === preference)
+        })
+      }
+
+      const initialPreference = getSavedThemePreference()
+      applyThemePreference(initialPreference)
+
+      themeOptions.forEach(function (option) {
+        option.addEventListener('click', function () {
+          const selected = option.getAttribute('data-theme')
+          applyThemePreference(selected)
+        })
+      })
+
+      function handleSystemThemeChange() {
+        if (getSavedThemePreference() === 'system') {
+          applyThemePreference('system')
+        }
+      }
+
+      if (typeof mediaQuery.addEventListener === 'function') {
+        mediaQuery.addEventListener('change', handleSystemThemeChange)
+      } else if (typeof mediaQuery.addListener === 'function') {
+        mediaQuery.addListener(handleSystemThemeChange)
+      }
+
+      window.toggleDarkMode = function () {}
+    })()
+  </script>
+
+
+
+
+  </body>
+</html>

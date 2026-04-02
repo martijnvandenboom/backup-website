@@ -116,7 +116,9 @@
   
     <meta property="og:image" content="https://vandenboom.netlify.app/images/Martijn_001.jpg">
   
-  <meta property="twitter:site" content="ingvdboom"><link rel="stylesheet" href="/css/bundle.min.a694a0de4d12f03f7239d4eb60fd6f210f9713402aa21c902e52435f0e0ffb85.css" integrity="sha256-ppSg3k0S8D9yOdTrYP1vIQ&#43;XE0AqohyQLlJDXw4P&#43;4U="><link rel="stylesheet" href="/css/add-on.css">
+  <meta property="twitter:site" content="ingvdboom">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/dark.min.css">
+          <link rel="stylesheet" href="/css/bundle.min.23cb4b25157d025563c098a10e27266bbd45fb82c3b3efc626fdb6bef850ec73.css" integrity="sha256-I8tLJRV9AlVjwJihDicma71F&#43;4LDs&#43;/GJv22vvhQ7HM="><link rel="stylesheet" href="/css/add-on.css">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -702,6 +704,66 @@
   <header>
   <div class="title">
     
+      <h2><a href="/en/blog/2024-ldap-ipa-server-command-line-searches/">LDAP/IPA Server command line searches</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2024-03-09 17:34:27.901 &#43;0000 UTC">March 9, 2024</time>
+    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
+    <p>1-Minute Read</p>
+  </div>
+</header>
+
+  <div class="content">
+    
+    $ ldapsearch -H ldap://&lt;FQDN_SERVER&gt;/ -b dc=,dc=com -x
+$ ldapsearch -x -LLL -H ldap:/// -b dc=,dc=com dn
+$ ldapwhoami -x -H ldap:///
+$ ldapsearch -H ldap://&lt;IP_SERVER&gt; -D &amp;ldquo;uid=&lt;ADMIN_USER&gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;cn=users,cn=accounts,dc=,dc=com&amp;rdquo; -x -W
+$ ldapsearch -H ldap://&lt;IP_SERVER&gt; -D &amp;ldquo;uid=&lt;ADMIN_USER&gt;,cn=users,cn=compat,dc=,dc=com&amp;rdquo; -b &amp;ldquo;dc=,dc=com&amp;rdquo; -x -W -s one...
+  </div>
+  <footer>
+    <a href="/en/blog/2024-ldap-ipa-server-command-line-searches/" class="button big">Read More</a>
+    <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/en/tags/ldap/">LDAP</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/ipa/">IPA</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/server/">server</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/command/">command</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/line/">line</a></li>
+        
+          <li><a class="article-terms-link" href="/en/tags/searches/">searches</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
       <h2><a href="/en/blog/2024-ldap-ipa-server-client-installation/">LDAP/IPA Server client installation</a></h2>
     
     
@@ -997,61 +1059,6 @@ gcc create_zombie_process.c Start the program:
 </article>
 
   
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/en/blog/2024-checkmk-installation-on-rocky-linux-9-3/">Checkmk installation on Rocky Linux 9.3</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2024-01-16 21:13:15.512 &#43;0000 UTC">January 16, 2024</time>
-    <p>ing. M.A.C.M. (Martijn) van den Boom</p>
-    <p>1-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    
-    Checkmk installation on Rocky Linux 9.3
-dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd --zone=public --add-service=http --permanent firewall-cmd --reload wget https://download.checkmk.com/checkmk/2.2.0p18/check-mk-raw-2.2.0p18-el9-38.x86_64.rpm yum install check-mk-raw-2.2.0p18-el9-38.x86_64.rpm omd version omd create monitoring omd start monitoring http://localhost.localdomain/monitoring/ user: cmkadmin with password: &lt;given&gt; omd su monitoring (For command...
-  </div>
-  <footer>
-    <a href="/en/blog/2024-checkmk-installation-on-rocky-linux-9-3/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/en/categories/article/">article</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/en/tags/checkmk/">checkmk</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/installation/">installation</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/rocky/">rocky</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/linux/">linux</a></li>
-        
-          <li><a class="article-terms-link" href="/en/tags/9.3/">9.3</a></li>
-        
-      
-    </ul>
-  
-</div>
-
-  </footer>
-</article>
-
-  
   <div class="pagination">
     
       <a href="/en/page/5/" class="button left"><span>Previous Page</span></a>
@@ -1068,6 +1075,14 @@ dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd -
       <header>
         <h1>Recent Posts:</h1>
       </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/en/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/">Windows Server 2022 Home Lab — AD DS, DNS, CA and Secured RDP</a></h2>
+          <time class="published" datetime="2026-04-02 00:00:00 &#43;0000 UTC">April 2, 2026</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           
@@ -1101,14 +1116,6 @@ dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd -
         </header>
       </article>
       
-      <article class="mini-post">
-          
-        <header>
-          <h2><a href="/en/blog/network-routing-naar-lan-systemen-met-openvpn-server/">Network routing to LAN systems with OpenVPN Server</a></h2>
-          <time class="published" datetime="2025-11-15 15:40:22 &#43;0100 CET">November 15, 2025</time>
-        </header>
-      </article>
-      
       
         <footer>
           <a href="/en/blog/" class="button">See More</a>
@@ -1137,7 +1144,7 @@ dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd -
               <a href="/en/categories/themes/">themes<span class="count">13</span></a>
           
           <li>
-              <a href="/en/categories/windows/">windows<span class="count">10</span></a>
+              <a href="/en/categories/windows/">windows<span class="count">11</span></a>
           
           <li>
               <a href="/en/categories/tools/">tools<span class="count">4</span></a>
@@ -1264,7 +1271,7 @@ dnf install epel-release setsebool -P httpd_can_network_connect 1 firewall-cmd -
   </div>
 </div>
       <script src="/js/highlight.js"></script>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/powershell.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.1638f3918cbe55f5267a85103dfdabca4b23dcd17274e389270fc26e63fb57b0.js" integrity="sha256-FjjzkYy&#43;VfUmeoUQPf2ryksj3NFydOOJJw/CbmP7V7A="></script>
     <script src="/js/add-on.js"></script>
     <script src="/js/accessibility.js"></script>

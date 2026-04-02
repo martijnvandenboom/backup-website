@@ -6,8 +6,15 @@
     <description>Recent content in Blog on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
-    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.vandenboom.icu/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Server 2022 Home Lab — AD DS, DNS, CA en Beveiligde RDP</title>
+      <link>https://www.vandenboom.icu/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/</link>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.vandenboom.icu/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/</guid>
+      <description>&lt;p&gt;Dit artikel beschrijft de volledige opbouw van een twee-server Windows Server 2022 home lab in Proxmox VE. De twee virtuele machines leveren samen Active Directory Domain Services, DNS, Group Policy en een Certificate Authority (ADCS). RDP-verbindingen worden beveiligd met PKI-certificaten, zodat de Mac Mini M1 als beheerstation zonder certificaatwaarschuwingen verbinding maakt.&lt;/p&gt;&#xA;&lt;p&gt;Dit is deel 3 van de serie over het opbouwen van een Windows DevOps lab in Proxmox. In &lt;a href=&#34;https://vandenboom.icu/blog/2026-proxmox-windows-server-2022-vm-aanmaken/&#34;&gt;deel 1&lt;/a&gt; heb ik beschreven hoe je een VM aanmaakt, in &lt;a href=&#34;https://vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/&#34;&gt;deel 2&lt;/a&gt; hoe je de template voorbereidt.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Windows Server 2022 in Proxmox — Template Voorbereiding</title>
       <link>https://www.vandenboom.icu/blog/2026-proxmox-windows-server-2022-template-voorbereiding/</link>
