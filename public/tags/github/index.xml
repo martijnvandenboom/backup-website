@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Github on Notities</title>
+    <title>GitHub on Notities</title>
     <link>https://www.vandenboom.icu/tags/github/</link>
-    <description>Recent content in Github on Notities</description>
+    <description>Recent content in GitHub on Notities</description>
     <generator>Hugo</generator>
     <language>nl</language>
     <lastBuildDate>Fri, 03 Jan 2025 22:23:19 +0000</lastBuildDate>
