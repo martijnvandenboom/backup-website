@@ -11,10 +11,6 @@ comments = false
 
 <b><a rel="noopener" href="#creating_animations">Creating animations service</a></b></br>
 
-<a id="creating_animations"></a>
-</br>
-</br>
-
 <b>Creating animations service</b>
 
 Bring Your Ideas to Life with Stunning Animations
@@ -38,7 +34,7 @@ Martijn</br>
 P.S.</br>
 Please note: This service is based on the contributions agreed upon by both parties. If we successfully provide you with excellent service and you are satisfied with the outcome, we would greatly appreciate positive feedback that we can showcase publicly and include in our portfolio.</br>
 </br>
-</br>
+<a id="creating_animations" style="scroll-margin-top: 80px;"></a>
 
 <b><a rel="noopener" href="#creating_animations">Creating animations service</a></b></br>
 

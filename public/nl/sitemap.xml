@@ -200,19 +200,6 @@
                 href="https://www.vandenboom.icu/categories/windows/"
                 />
   </url><url>
-    <loc>https://www.vandenboom.icu/tags/windows-server-2022/</loc>
-    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.vandenboom.icu/en/tags/windows-server-2022/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.vandenboom.icu/tags/windows-server-2022/"
-                />
-  </url><url>
     <loc>https://www.vandenboom.icu/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/</loc>
     <lastmod>2026-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -224,6 +211,19 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://www.vandenboom.icu/blog/2026-windows-server-2022-home-lab-ad-dns-ca-rdp/"
+                />
+  </url><url>
+    <loc>https://www.vandenboom.icu/tags/windows-server-2022/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.vandenboom.icu/en/tags/windows-server-2022/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.vandenboom.icu/tags/windows-server-2022/"
                 />
   </url><url>
     <loc>https://www.vandenboom.icu/tags/sysprep/</loc>
