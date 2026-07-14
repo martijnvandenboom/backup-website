@@ -13,7 +13,7 @@ comments = false
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
 <b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
 <b><a rel="noopener" href="#guidance_and_tutoring_service">6. Personal Guidance and Tutoring Service</a></b></br>
-<b><a rel="noopener" href="#ai_status_update_service">7. AI Status Update Agent Service</a></b>
+<b><a rel="noopener" href="#ai_status_update_service">7. AI Agent Insights & Decision Support Service</a></b>
 
 <a id="web_design_and_development_service"></a>
 </br>
@@ -144,6 +144,7 @@ Trust us for your installation needs and experience the convenience of our high-
 </br>
 
 
+<a id="guidance_and_tutoring_service"></a>
 <a id="begeleiding_en_bijles_service"></a>
 </br>
 </br>
@@ -170,7 +171,7 @@ For more information about my offerings in Linux, Windows, macOS, Android and iO
 </br>
 </br>
 
-<b>7. AI Agent Status Update Service</b>
+<b>7. AI Agent Insights & Decision Support Service</b>
 
 Do you want faster, clearer insight into developments that matter to your organization? With this service, we create an AI agent that monitors selected topics and delivers concise updates at a fixed cadence (for example daily or weekly).
 
@@ -224,6 +225,6 @@ Please note: Our services are based on voluntary contributions. If we manage to 
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
 <b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
 <b><a rel="noopener" href="#guidance_and_tutoring_service">6. Personal Guidance and Tutoring Service</a></b></br>
-<b><a rel="noopener" href="#ai_status_update_service">7. AI Status Update Agent Service</a></b>
+<b><a rel="noopener" href="#ai_status_update_service">7. AI Agent Insights & Decision Support Service</a></b>
 </br>
 </br>   

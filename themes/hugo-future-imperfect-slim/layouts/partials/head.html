@@ -419,6 +419,20 @@
       color: var(--text-color);
     }
 
+    /* Keep in-page anchor targets visible below the fixed header. */
+    #site-main .content a[id] {
+      scroll-margin-top: 0.5rem;
+    }
+
+    #site-main .content a[id]:target::before {
+      content: "";
+      display: block;
+      height: 0.5rem;
+      margin-top: -0.5rem;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
     .darkmode table > tbody > tr:nth-child(even) {
       background-color: #0d1126;
     }

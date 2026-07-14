@@ -13,7 +13,7 @@ comments = false
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
 <b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
 <b><a rel="noopener" href="#begeleiding_en_bijles_service">6. Persoonlijke Begeleiding en Bijles Service</a></b></br>
-<b><a rel="noopener" href="#ai_status_update_service">7. AI Status Update Agent Service</a></b>
+<b><a rel="noopener" href="#ai_status_update_service">7. AI Agent Inzichten & Besluitvorming Service</a></b>
 
 <a id="webdesign_en_ontwikkeling_service"></a>
 </br>
@@ -168,7 +168,7 @@ Voor meer informatie over mijn aanbod op het gebied van Linux, Windows, macOS, A
 </br>
 </br>
 
-<b>7. AI Agent Status Update Service</b>
+<b>7. AI Agent Inzichten & Besluitvorming Service</b>
 
 Wil je als manager sneller en met minder ruis weten wat er echt speelt rond onderwerpen die voor jouw organisatie belangrijk zijn? Met deze service bouwen we een AI agent (AI-agent) die op vaste momenten (bijvoorbeeld dagelijks of wekelijks) de door jou gekozen ontwikkelingen volgt en samenvat in heldere managementupdates.
 
@@ -225,6 +225,6 @@ Let op: Onze services zijn gebaseerd op vrijwillige bijdragen. Als we erin slage
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
 <b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
 <b><a rel="noopener" href="#begeleiding_en_bijles_service">6. Persoonlijke Begeleiding en Bijles Service</a></b></br>
-<b><a rel="noopener" href="#ai_status_update_service">7. AI Status Update Agent Service</a></b>
+<b><a rel="noopener" href="#ai_status_update_service">7. AI Agent Inzichten & Besluitvorming Service</a></b>
 </br>
 </br>
