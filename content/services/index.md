@@ -12,7 +12,8 @@ comments = false
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
 <b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
-<b><a rel="noopener" href="#begeleiding_en_bijles_service">6. Persoonlijke Begeleiding en Bijles Service</a></b>
+<b><a rel="noopener" href="#begeleiding_en_bijles_service">6. Persoonlijke Begeleiding en Bijles Service</a></b></br>
+<b><a rel="noopener" href="#ai_status_update_service">7. AI Status Update Agent Service</a></b>
 
 <a id="webdesign_en_ontwikkeling_service"></a>
 </br>
@@ -163,6 +164,50 @@ Voor meer informatie over mijn aanbod op het gebied van Linux, Windows, macOS, A
 </br>
 </br>
 
+<a id="ai_status_update_service"></a>
+</br>
+</br>
+
+<b>7. AI Agent Status Update Service</b>
+
+Wil je als manager sneller en met minder ruis weten wat er echt speelt rond onderwerpen die voor jouw organisatie belangrijk zijn? Met deze service bouwen we een AI agent (AI-agent) die op vaste momenten (bijvoorbeeld dagelijks of wekelijks) de door jou gekozen ontwikkelingen volgt en samenvat in heldere managementupdates.
+
+<u>Wat deze service oplevert:</u>
+
+Gerichte managementinformatie: Je ontvangt compacte updates die direct antwoord geven op de vragen die je wilt kunnen sturen.
+
+Minder zoekwerk, betere focus: In plaats van losse bronnen en handmatig uitzoeken, krijg je een consistente samenvatting met prioriteiten en aandachtspunten.
+
+Sneller besluiten nemen: De update is ingericht op besluitvorming: wat verandert er, waarom is dit relevant, en welke actie ligt voor de hand?
+
+Herhaalbaar en schaalbaar: De agent werkt volgens een vaste structuur, zodat kwaliteit en vergelijkbaarheid over tijd behouden blijven.
+
+<u>Welke vragen staan centraal?</u>
+
+Samen bepalen we eerst welke vragen voor jou en je team echt waardevol zijn. Bijvoorbeeld:
+
+- Welke veranderingen in markt, technologie of regelgeving vragen nu onze aandacht?
+- Welke risico's nemen toe en waar ontstaan nieuwe kansen?
+- Wat betekent deze ontwikkeling concreet voor onze planning, kosten of prioriteiten?
+- Welke 3 acties adviseren we op basis van de nieuwste signalen?
+
+<u>Hoe we dit aanpakken:</u>
+
+Intake en doelbepaling: We vertalen jouw informatiebehoefte naar een heldere set stuurvragen en KPI-relevante signalen.
+
+Instructie- en vraagontwerp (prompt engineering): We ontwerpen de instructies voor de agent zo dat de output betrouwbaar, to-the-point en bruikbaar is voor managementbesluiten.
+
+Pilotfase: Je ontvangt proefupdates, waarna we toon, diepgang en structuur aanscherpen tot het exact past bij jouw organisatie.
+
+Operationele fase: De agent levert periodieke updates in een afgesproken format (kort managementoverzicht, actielijst en optioneel een verdiepingsnotitie).
+
+<u>Voor wie is dit interessant?</u>
+
+Deze service is geschikt voor ondernemers, teamleads en managers die structureel beter geïnformeerd willen zijn zonder extra vergaderdruk of handmatig researchwerk.
+
+Dit is een betaalde service met maatwerk. De investering hangt af van frequentie, scope en gewenste diepgang. Neem contact op voor een intake en een passend voorstel.</br>
+</br>
+
 
 Vriendelijke groet,
 
@@ -179,6 +224,7 @@ Let op: Onze services zijn gebaseerd op vrijwillige bijdragen. Als we erin slage
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
 <b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
-<b><a rel="noopener" href="#begeleiding_en_bijles_service">6. Persoonlijke Begeleiding en Bijles Service</a></b>
+<b><a rel="noopener" href="#begeleiding_en_bijles_service">6. Persoonlijke Begeleiding en Bijles Service</a></b></br>
+<b><a rel="noopener" href="#ai_status_update_service">7. AI Status Update Agent Service</a></b>
 </br>
 </br>

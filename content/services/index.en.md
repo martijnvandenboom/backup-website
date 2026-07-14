@@ -12,7 +12,8 @@ comments = false
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
 <b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
-<b><a rel="noopener" href="#guidance_and_tutoring_service">6. Personal Guidance and Tutoring Service</a></b>
+<b><a rel="noopener" href="#guidance_and_tutoring_service">6. Personal Guidance and Tutoring Service</a></b></br>
+<b><a rel="noopener" href="#ai_status_update_service">7. AI Status Update Agent Service</a></b>
 
 <a id="web_design_and_development_service"></a>
 </br>
@@ -165,6 +166,48 @@ For more information about my offerings in Linux, Windows, macOS, Android and iO
 </br>
 </br>
 
+<a id="ai_status_update_service"></a>
+</br>
+</br>
+
+<b>7. AI Agent Status Update Service</b>
+
+Do you want faster, clearer insight into developments that matter to your organization? With this service, we create an AI agent that monitors selected topics and delivers concise updates at a fixed cadence (for example daily or weekly).
+
+<u>What this service delivers:</u>
+
+Management-ready updates: Short, focused summaries built around the decisions you need to make.
+
+Less noise, more direction: Instead of searching many sources manually, you receive one consistent report with key priorities.
+
+Faster decision support: Each update highlights what changed, why it matters, and which action is recommended.
+
+Repeatable quality: The agent follows a clear framework so output stays consistent and comparable over time.
+
+<u>Key business questions we define together:</u>
+
+- Which market, technology, or regulatory changes require attention now?
+- Where are risks increasing, and where are new opportunities emerging?
+- What is the expected impact on planning, budget, or priorities?
+- Which top 3 actions should management consider this period?
+
+<u>How we implement:</u>
+
+Discovery and scope: We translate your information needs into concrete management questions and monitoring signals.
+
+Instruction and question design (prompt engineering): We configure the agent so output is reliable, relevant, and practical for leadership use.
+
+Pilot and tuning: You receive trial updates, and we refine tone, depth, and format until the output fits your organization.
+
+Operational delivery: The agent provides recurring updates in an agreed format (executive summary, action points, and optional deep dive).
+
+<u>Who this is for:</u>
+
+This service is ideal for founders, team leads, and managers who need better situational awareness without increasing meeting load or manual research time.
+
+This is a paid, tailored service. Investment depends on frequency, scope, and depth. Contact us for an intake and a proposal.</br>
+</br>
+
 Best regards,
 
 Martijn</br>
@@ -180,6 +223,7 @@ Please note: Our services are based on voluntary contributions. If we manage to 
 <b><a rel="noopener" href="#dia_scan_service">3. Dia Scan Service</a></b></br>
 <b><a rel="noopener" href="#upgrade_service">4. Upgrade Service</a></b></br>
 <b><a rel="noopener" href="#usb_service">5. USB Service</a></b></br>
-<b><a rel="noopener" href="#guidance_and_tutoring_service">6. Personal Guidance and Tutoring Service</a></b>
+<b><a rel="noopener" href="#guidance_and_tutoring_service">6. Personal Guidance and Tutoring Service</a></b></br>
+<b><a rel="noopener" href="#ai_status_update_service">7. AI Status Update Agent Service</a></b>
 </br>
 </br>   
