@@ -159,8 +159,8 @@ enableRobotsTXT         = true
 [Languages]
 
   [Languages.nl]
-    LanguageCode        = "nl"
-    LanguageName        = "Nederlands"
+    locale              = "nl"
+    label               = "Nederlands"
     weight              = 10
 
     [[Languages.nl.menu.main]]
@@ -220,8 +220,8 @@ enableRobotsTXT         = true
       weight            = 8
 
   [Languages.en]
-    LanguageCode        = "en"
-    LanguageName        = "English"
+    locale              = "en"
+    label               = "English"
     weight              = 1
 
 [params.Social]

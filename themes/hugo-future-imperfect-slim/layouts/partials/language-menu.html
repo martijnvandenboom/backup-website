@@ -2,15 +2,15 @@
 
   <img style="height: 160px; padding: 15px 2px 11px 20px; border: none; box-shadow: none; background: transparent;" src="/images/Earth-globe-transparent.gif">
   
-  <a href="#" lang="{{ .Site.Language.Lang }}" class="nav link active">{{ .Site.Language.LanguageName }} ({{ .Site.Language.Lang }})</a>
+  <a href="#" lang="{{ .Site.Language.Lang }}" class="nav link active">{{ .Site.Language.Label }} ({{ .Site.Language.Lang }})</a>
   {{ if .IsTranslated -}}
     {{ range .Translations }}
-      <a href="{{ .Permalink }}" lang="{{ .Lang }}" class="nav link">{{ .Language.LanguageName }} ({{ .Site.Language.Lang }})</a>
+      <a href="{{ .Permalink }}" lang="{{ .Lang }}" class="nav link">{{ .Language.Label }} ({{ .Lang }})</a>
     {{ end }}
   {{ else }}
-    {{ range .Site.Languages }}
-      {{ if not (eq .Lang $.Site.Language.Lang) }}
-        <a href="{{ relURL .Lang }}" lang="{{ .Lang }}" class="nav no-lang link">{{ .LanguageName }} ({{ .Lang }})</a>
+    {{ range hugo.Sites }}
+      {{ if not (eq .Language.Lang $.Site.Language.Lang) }}
+        <a href="{{ .Home.RelPermalink }}" lang="{{ .Language.Lang }}" class="nav no-lang link">{{ .Language.Label }} ({{ .Language.Lang }})</a>
       {{ end }}
     {{ end }}
   {{ end }}

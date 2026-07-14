@@ -6,5 +6,4 @@ date = "2025-02-14"
 layout = "contact"
 netlify = true
 thank_you = "/thank-you/"
-thankYouPage = "/thank-you"
 +++
