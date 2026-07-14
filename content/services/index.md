@@ -170,7 +170,7 @@ Voor meer informatie over mijn aanbod op het gebied van Linux, Windows, macOS, A
 
 <b>7. AI Agent Inzichten & Besluitvorming Service</b>
 
-Wil je als manager sneller en met minder ruis weten wat er echt speelt rond onderwerpen die voor jouw organisatie belangrijk zijn? Met deze service bouwen we een AI agent (AI-agent) die op vaste momenten (bijvoorbeeld dagelijks of wekelijks) de door jou gekozen ontwikkelingen volgt en samenvat in heldere managementupdates.
+Wil je als manager sneller en met minder ruis weten wat er echt speelt rond onderwerpen die voor jouw organisatie belangrijk zijn? Met deze service bouwen we een AI agent die op vaste momenten (bijvoorbeeld dagelijks of wekelijks) de door jou gekozen ontwikkelingen volgt en samenvat in heldere managementupdates.
 
 <u>Wat deze service oplevert:</u>
 
