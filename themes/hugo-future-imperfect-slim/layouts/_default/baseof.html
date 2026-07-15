@@ -2,24 +2,13 @@
 <html lang="{{ .Page.Language | default "en" }}">
   <head>
     <meta charset="UTF-8">
-    <style>
-        @keyframes rotate {
-            0% { transform: rotateY(0deg); }
-            100% { transform: rotateY(360deg); }
-        }
-        .bold-rotate {
-            font-weight: bold;
-            display: inline-block;
-            animation: rotate 2s infinite;
-        }
-    </style>
   </head>
   {{ partial "head" . }}
   <body>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWVBJ3K4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWVBJ3K4" height="0" width="0" class="gtm-noscript-frame"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -40,92 +29,7 @@
       </p>
     </div>
 
-	<script>
-	  if (window.netlifyIdentity) {
-		window.netlifyIdentity.on("init", user => {
-		  if (!user) {
-			window.netlifyIdentity.on("login", () => {
-			  document.location.href = "/admin/";
-			});
-		  }
-		});
-	  }
-	</script>
-
-  <script type="text/javascript">
-    (function () {
-      const themeSwitch = document.getElementById('theme-switch')
-      const themeOptions = document.querySelectorAll('.theme-option')
-      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-      const THEME_PREF_KEY = 'themePreference'
-
-      function getSavedThemePreference() {
-        const value = localStorage.getItem(THEME_PREF_KEY)
-        if (value === 'dark' || value === 'light' || value === 'system') {
-          return value
-        }
-        if (localStorage.getItem('darkmode') === 'active') {
-          return 'dark'
-        }
-        return 'system'
-      }
-
-      function isDarkThemeActive(preference) {
-        if (preference === 'dark') return true
-        if (preference === 'light') return false
-        return mediaQuery.matches
-      }
-
-      function applyThemePreference(preference) {
-        const enableDark = isDarkThemeActive(preference)
-        document.body.classList.toggle('darkmode', enableDark)
-
-        document.body.classList.remove('theme-pref-system', 'theme-pref-dark', 'theme-pref-light')
-        document.body.classList.add('theme-pref-' + preference)
-
-        localStorage.setItem(THEME_PREF_KEY, preference)
-        localStorage.removeItem('darkmode')
-
-        if (themeSwitch) {
-          const titleMap = {
-            system: 'Theme: System',
-            dark: 'Theme: Dark',
-            light: 'Theme: Light'
-          }
-          themeSwitch.setAttribute('title', titleMap[preference])
-          themeSwitch.setAttribute('aria-label', titleMap[preference])
-        }
-
-        themeOptions.forEach(function (option) {
-          option.classList.toggle('theme-option-active', option.getAttribute('data-theme') === preference)
-        })
-      }
-
-      const initialPreference = getSavedThemePreference()
-      applyThemePreference(initialPreference)
-
-      themeOptions.forEach(function (option) {
-        option.addEventListener('click', function () {
-          const selected = option.getAttribute('data-theme')
-          applyThemePreference(selected)
-        })
-      })
-
-      function handleSystemThemeChange() {
-        if (getSavedThemePreference() === 'system') {
-          applyThemePreference('system')
-        }
-      }
-
-      if (typeof mediaQuery.addEventListener === 'function') {
-        mediaQuery.addEventListener('change', handleSystemThemeChange)
-      } else if (typeof mediaQuery.addListener === 'function') {
-        mediaQuery.addListener(handleSystemThemeChange)
-      }
-
-      window.toggleDarkMode = function () {}
-    })()
-  </script>
+  <script src="{{ "js/site-theme-init.js" | relURL }}"></script>
 
 
 

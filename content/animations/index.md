@@ -37,7 +37,7 @@ Martijn</br>
 P.S.</br>
 Let op: Deze service is gebaseerd op de bijdragen die door beide partijen zijn overeengekomen. Als wij je succesvol uitstekende service bieden en je tevreden bent met het resultaat, zouden we het zeer op prijs stellen om positieve feedback te ontvangen die we publiekelijk kunnen tonen en opnemen in ons portfolio.</br>
 </br>
-<a id="creating_animations" style="scroll-margin-top: 80px;"></a>
+<a id="creating_animations" class="anchor-scroll-offset"></a>
 
 <b><a rel="noopener" href="#creating_animations">Animatie creatie service</a></b></br>
 

@@ -14,7 +14,7 @@
         <div class="short-about">
             {{ with .Site.Params.sidebar_avatar }}
             <a href="{{ "/about" | relLangURL }}">
-               <img src="{{ . | relURL }}" alt="avatar" style="cursor: pointer" />
+                    <img src="{{ . | relURL }}" alt="avatar" class="cursor-pointer" />
             </a>
             {{ end }}
             {{ with .Site.Params.sidebar_about_description }}
@@ -255,7 +255,7 @@
         <div class="short-about">
         {{ range .Site.Params.publications.items }}
         <a href="{{.href}}">
-            <img src="{{.image}}" alt="avatar" style="cursor: pointer" />
+            <img src="{{.image}}" alt="avatar" class="cursor-pointer" />
         </a>
         {{ end }}
         </div>

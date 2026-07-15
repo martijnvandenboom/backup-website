@@ -2,7 +2,7 @@
   {{- if .Site.Params.highlightjs -}}
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
     {{ with .Site.Params.highlightjsLang }}{{ range . }}<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/{{ . }}.min.js"></script>{{ end }}{{ end }}
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="{{ "js/highlight-init.js" | relURL }}"></script>
   {{- end -}}
   {{- range .Site.Params.jsFiles -}}
     {{- if eq . "default" -}}
@@ -27,7 +27,7 @@
     {{- $hljs := resources.Get "js/highlight.js" -}}
     <script src="{{ $hljs.RelPermalink }}"></script>
     {{ with .Site.Params.highlightjsLang }}{{ range . }}<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/{{ . }}.min.js"></script>{{ end }}{{ end }}
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="{{ "js/highlight-init.js" | relURL }}"></script>
   {{- end -}}
   {{- range .Site.Params.jsFiles -}}
     {{- $jsSlice := slice -}}
@@ -53,4 +53,3 @@
 {{ if and .Site.Params.staticman.recaptcha.siteKey .Site.Params.staticman.recaptcha.encryptedKey }}
   <script src='https://www.google.com/recaptcha/api.js'></script>
 {{- end -}}
-{{- template "_internal/google_analytics.html" . -}}
