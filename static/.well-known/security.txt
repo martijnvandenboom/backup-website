@@ -1,5 +1,8 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Contact: mailto:ingmacmvandenboom@gmail.com
-Encryption: https://vandenboom.icu/contact/
+Encryption: https://vandenboom.icu/.well-known/security-pgp-key.asc
 Expires: 2027-07-15T00:00:00.000Z
 Preferred-Languages: nl, en
 Canonical: https://vandenboom.icu/.well-known/security.txt
@@ -7,3 +10,11 @@ Canonical: https://vandenboom.icu/security.txt
 Canonical: https://www.vandenboom.icu/.well-known/security.txt
 Canonical: https://www.vandenboom.icu/security.txt
 Policy: https://vandenboom.icu/contact/
+-----BEGIN PGP SIGNATURE-----
+
+iJEEARYKADkWIQTmZyrT8JPtRuPmHxZAfSn09fJy/QUCalgAahsUgAAAAAAEAA5t
+YW51MiwyLjUrMS4xMiwwLDMACgkQQH0p9PXycv0rYAD7BQ6AIfVR9bx0UovPhhV9
+4hTcHdM4niHd7nEmt7wYQFsA/1bzDiL9weNYDQ65RMXpLQtEH3E8g0/LEDIer02p
+uYwH
+=uawa
+-----END PGP SIGNATURE-----
