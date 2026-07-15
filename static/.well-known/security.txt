@@ -1,6 +1,9 @@
 Contact: mailto:ingmacmvandenboom@gmail.com
-Encryption: https://vandenboom.online/contact/
+Encryption: https://vandenboom.icu/contact/
 Expires: 2027-07-15T00:00:00.000Z
 Preferred-Languages: nl, en
-Canonical: https://vandenboom.online/.well-known/security.txt
-Policy: https://vandenboom.online/contact/
+Canonical: https://vandenboom.icu/.well-known/security.txt
+Canonical: https://vandenboom.icu/security.txt
+Canonical: https://www.vandenboom.icu/.well-known/security.txt
+Canonical: https://www.vandenboom.icu/security.txt
+Policy: https://vandenboom.icu/contact/
