@@ -24,7 +24,7 @@
             <fieldset>
               <textarea placeholder="{{ i18n "form_body" }}" name="message" tabindex="4" required></textarea>
             </fieldset>
-            <input type="hidden" name="redirect" value="{{ relLangURL (.Params.thank_you | default "/thank-you/") }}">
+            <input type="hidden" name="redirect" value="{{ (site.GetPage (.Params.thank_you | default "/thank-you/")).Permalink }}">
             <input type="hidden" name="_language" value="{{ .Lang }}">
             <fieldset>
               <div class="h-captcha" data-captcha="true"></div>

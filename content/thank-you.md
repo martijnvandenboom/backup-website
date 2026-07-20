@@ -1,12 +1,6 @@
-+++
-title = "Bedankt"
-description = "Notities"
-author = "van den Boom"
-date = "2025-02-14"
-+++
+---
+title: "Bedankt"
+layout: "thank-you"
+---
 
-Bedankt voor je bericht!
-
-We waarderen het dat je contact met ons hebt opgenomen. Ons team gaat direct aan de slag en we nemen zo snel mogelijk contact met je op.
-
-Heb je ondertussen nog vragen? Aarzel niet om opnieuw een bericht te sturen!
+Bedankt voor je bericht! Ik neem zo snel mogelijk contact met je op.
