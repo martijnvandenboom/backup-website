@@ -84,6 +84,85 @@ Examples:</br>
         from, to { opacity: 1; }
         50% { opacity: 0; }
     }
+
+    .hugo-animation-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .hugo-animation-container .left-div {
+        flex: 1;
+        min-width: 220px;
+    }
+
+    .hugo-animation-container .right-div {
+        flex: 0 0 220px;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hugo-circle-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Wrapper div rotates — more reliable than animating the SVG itself */
+    .hugo-circle-container .hugo-rotating-ring {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: 50% 50%;
+        animation: hugo-rotate-circle 18s linear infinite;
+    }
+
+    .hugo-circle-container .hugo-rotating-ring > svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+
+    .hugo-circle-container .hugo-rotating-ring text {
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: 7.2px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        fill: currentColor;
+        text-transform: none;
+    }
+
+    .hugo-logo-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 92px;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .hugo-logo-center img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    @keyframes hugo-rotate-circle {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .hugo-circle-container .hugo-rotating-ring {
+            animation: none;
+        }
+    }
 </style>
 
 <div>3. The company logo:</br>
@@ -125,4 +204,34 @@ startAnimation();
 </br>
 </br>
 </br>
+
+<div class="hugo-animation-container">
+    <div class="left-div">4. The rotating Hugo circle:</br>
+        This animation showcases our expertise with Hugo, the fast static site generator we use to build modern websites. At the center sits the official Hugo logo. Around it, the gohugo.io site icon rides along with the rotating text: <em>Hugo · static site generator · Written in Golang</em> — a nod to the Go language Hugo is written in, and to the continuous motion of the web.
+    </div>
+    <div class="right-div">
+        <div class="hugo-circle-container" aria-label="Hugo rotating logo animation">
+            <div class="hugo-logo-center">
+                <img src="/images/hugo-logo-wide.svg" alt="Official Hugo logo" width="92" height="24" loading="lazy">
+            </div>
+            <div class="hugo-rotating-ring">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="presentation">
+                    <defs>
+                        <path id="hugoCirclePath" fill="none" d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"/>
+                    </defs>
+                    <!-- gohugo.io favicon: positioned on the path, tilted 90° clockwise to sit with the text -->
+                    <g transform="translate(10 50) rotate(90)">
+                        <image href="/images/hugo-favicon.png" xlink:href="/images/hugo-favicon.png" x="-5.5" y="-5.5" width="11" height="11" preserveAspectRatio="xMidYMid meet"/>
+                    </g>
+                    <text>
+                        <textPath href="#hugoCirclePath" xlink:href="#hugoCirclePath" startOffset="14%">Hugo · static site generator · Written in Golang ·</textPath>
+                    </text>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div></br>
+</br>
+
+
 </br>
