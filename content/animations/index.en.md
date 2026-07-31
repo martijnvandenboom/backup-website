@@ -206,7 +206,7 @@ startAnimation();
 </br>
 
 <div class="hugo-animation-container">
-    <div class="left-div">4. The rotating Hugo circle:</br>
+    <div class="left-div">4. The rotating circle:</br>
         This animation showcases our expertise with Hugo, the fast static site generator we use to build modern websites. At the center sits the official Hugo logo. Around it, the gohugo.io site icon rides along with the rotating text: <em>Hugo · static site generator · Written in Golang</em> — a nod to the Go language Hugo is written in, and to the continuous motion of the web.
     </div>
     <div class="right-div">
