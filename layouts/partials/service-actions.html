@@ -1,0 +1,14 @@
+{{- $page := .page -}}
+{{- $contact := .contact -}}
+{{- $primary := $page.Params.cta_button | default (i18n "service_cta_button") -}}
+{{- if eq .placement "top" -}}
+  {{- $primary = $page.Params.primary_cta | default $primary -}}
+{{- end -}}
+<p class="service-actions{{ with .class }} {{ . }}{{ end }}">
+  <a class="service-button service-button-primary" href="{{ $contact }}">{{ $primary }}</a>
+  {{- if and (eq .placement "top") $page.Params.secondary_cta -}}
+    <a class="service-button service-button-secondary" href="#{{ $page.Params.secondary_anchor | default "hoe-het-werkt" }}">{{ $page.Params.secondary_cta }}</a>
+  {{- else -}}
+    <a class="service-button service-button-secondary" href="{{ "/services/" | relLangURL }}">{{ i18n "back_to_services" }}</a>
+  {{- end -}}
+</p>

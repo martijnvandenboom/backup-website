@@ -8,16 +8,7 @@
         {{ with .Params.lead }}
           <p class="service-lead">{{ . }}</p>
         {{ end }}
-        {{ if or .Params.primary_cta .Params.secondary_cta }}
-          <p class="service-actions">
-            {{ with .Params.primary_cta }}
-              <a class="service-button service-button-primary" href="{{ $contact }}">{{ . }}</a>
-            {{ end }}
-            {{ with .Params.secondary_cta }}
-              <a class="service-button" href="#{{ $.Params.secondary_anchor | default "hoe-het-werkt" }}">{{ . }}</a>
-            {{ end }}
-          </p>
-        {{ end }}
+        {{ partial "service-actions.html" (dict "page" . "contact" $contact "placement" "top") }}
       </div>
     </header>
     <div id="content" class="service-content">

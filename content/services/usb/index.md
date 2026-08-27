@@ -12,7 +12,7 @@ service_id = "usb"
 contact_subject = "USB-installatiestick"
 cta_heading = "Een stick die meteen installeert?"
 cta_text = "Zeg welk systeem je nodig hebt — macOS, Windows, Linux, multiboot of OCLP — en stuur een bericht."
-cta_button = "Naar het contactformulier"
+cta_button = "Stuur een bericht"
 legacy_hashes = ["usb_service"]
 service_type = "Computer accessory"
 [sitemap]

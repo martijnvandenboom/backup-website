@@ -12,7 +12,7 @@ service_id = "tutoring"
 contact_subject = "Begeleiding en bijles"
 cta_heading = "Iets waar je bij wilt worden geholpen?"
 cta_text = "Stuur een bericht over het onderwerp en jouw niveau. Dan kijken we hoe de begeleiding eruit kan zien."
-cta_button = "Naar het contactformulier"
+cta_button = "Stuur een bericht"
 legacy_hashes = ["begeleiding_en_bijles_service"]
 service_type = "Educational service"
 [sitemap]

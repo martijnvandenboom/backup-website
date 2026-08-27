@@ -12,7 +12,7 @@ service_id = "usb"
 contact_subject = "USB installer stick"
 cta_heading = "A stick that installs straight away?"
 cta_text = "Say which system you need — macOS, Windows, Linux, multiboot, or OCLP — and send a message."
-cta_button = "Go to the contact form"
+cta_button = "Send a message"
 legacy_hashes = ["usb_service"]
 service_type = "Computer accessory"
 [sitemap]

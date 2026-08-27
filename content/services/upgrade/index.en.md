@@ -12,7 +12,7 @@ service_id = "upgrade"
 contact_subject = "Upgrade service"
 cta_heading = "An old computer that could use a lift?"
 cta_text = "Send a message about the machine (desktop, laptop, or iMac) and the current system. Then we can see what is worthwhile."
-cta_button = "Go to the contact form"
+cta_button = "Send a message"
 legacy_hashes = ["upgrade_service"]
 service_type = "Computer repair"
 [sitemap]

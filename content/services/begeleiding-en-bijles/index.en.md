@@ -13,7 +13,7 @@ service_id = "tutoring"
 contact_subject = "Guidance and tutoring"
 cta_heading = "Something you want help with?"
 cta_text = "Send a message about the topic and your level. Then we can see how the sessions could look."
-cta_button = "Go to the contact form"
+cta_button = "Send a message"
 legacy_hashes = ["guidance_and_tutoring_service", "begeleiding_en_bijles_service"]
 service_type = "Educational service"
 [sitemap]

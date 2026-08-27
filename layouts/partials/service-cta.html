@@ -5,8 +5,5 @@
   {{ with .Params.price_note }}
     <p class="service-price-note">{{ . }}</p>
   {{ end }}
-  <p class="service-actions">
-    <a class="service-button service-button-primary" href="{{ $contact }}">{{ .Params.cta_button | default (i18n "service_cta_button") }}</a>
-    <a class="service-button" href="{{ "/services/" | relLangURL }}">{{ i18n "back_to_services" }}</a>
-  </p>
+  {{ partial "service-actions.html" (dict "page" . "contact" $contact "placement" "bottom") }}
 </section>

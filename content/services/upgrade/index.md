@@ -12,7 +12,7 @@ service_id = "upgrade"
 contact_subject = "Upgrade service"
 cta_heading = "Een oude computer die een oppepper kan gebruiken?"
 cta_text = "Stuur een bericht over het apparaat (desktop, laptop of iMac) en het huidige systeem. Dan kijken we wat er zinvol is."
-cta_button = "Naar het contactformulier"
+cta_button = "Stuur een bericht"
 legacy_hashes = ["upgrade_service"]
 service_type = "Computer repair"
 [sitemap]
