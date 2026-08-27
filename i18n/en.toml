@@ -1,0 +1,20 @@
+[services]
+  other = "Services"
+
+[other_services]
+  other = "Other technical services"
+
+[back_to_services]
+  other = "All services"
+
+[service_cta_heading]
+  other = "Interested in this service?"
+
+[service_cta_text]
+  other = "Send a message through the contact form. I will reply as soon as I can."
+
+[service_cta_button]
+  other = "Go to the contact form"
+
+[form_hint_familielfilm]
+  other = "For example: “Family film for my parents’ 40th wedding anniversary. About 400 photos and 25 clips, 1998–2024. Open with the speech video. Music: two tracks, I’ll send those later.”"

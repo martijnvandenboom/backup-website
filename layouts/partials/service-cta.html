@@ -1,0 +1,12 @@
+{{ $contact := partial "service-contact-url.html" . | htmlUnescape | safeURL }}
+<section class="service-cta" aria-labelledby="service-cta-heading">
+  <h2 id="service-cta-heading">{{ .Params.cta_heading | default (i18n "service_cta_heading") }}</h2>
+  <p>{{ .Params.cta_text | default (i18n "service_cta_text") }}</p>
+  {{ with .Params.price_note }}
+    <p class="service-price-note">{{ . }}</p>
+  {{ end }}
+  <p class="service-actions">
+    <a class="service-button service-button-primary" href="{{ $contact }}">{{ .Params.cta_button | default (i18n "service_cta_button") }}</a>
+    <a class="service-button" href="{{ "/services/" | relLangURL }}">{{ i18n "back_to_services" }}</a>
+  </p>
+</section>

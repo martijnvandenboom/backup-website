@@ -1,0 +1,13 @@
+{{- $contact := "contact/" | relLangURL -}}
+{{- with site.GetPage "/contact" -}}
+  {{- $contact = .RelPermalink -}}
+{{- end -}}
+{{- if and .Params.service_id .Params.contact_subject -}}
+  {{- printf "%s?%s" $contact (querify "service" .Params.service_id "subject" .Params.contact_subject) -}}
+{{- else if .Params.service_id -}}
+  {{- printf "%s?%s" $contact (querify "service" .Params.service_id) -}}
+{{- else if .Params.contact_subject -}}
+  {{- printf "%s?%s" $contact (querify "subject" .Params.contact_subject) -}}
+{{- else -}}
+  {{- $contact -}}
+{{- end -}}

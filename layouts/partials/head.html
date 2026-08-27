@@ -1,0 +1,106 @@
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PX9BKD4YYT"></script>
+  <script src="{{ "js/head-tracking-init.js" | relURL }}"></script>
+
+
+  {{ partial "meta" . }}
+  {{ partial "seo" . }}
+  {{- hugo.Generator -}}
+
+  {{ $seoTitle := .Params.meta_title | default .Title }}
+  {{ $seoDesc := .Description | default .Site.Params.meta.description }}
+  {{ with .Site.Title }}<meta property="og:site_name" content="{{ . }}">{{ end }}
+  <meta property="og:title" content="{{ $seoTitle }}">
+  <meta property="og:description" content="{{ $seoDesc }}">
+  <meta name="description" content="{{ $seoDesc }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="{{ if or .IsHome (eq .Section "services") }}website{{ else }}article{{ end }}">
+  <meta property="og:locale" content="{{ if eq .Lang "nl" }}nl_NL{{ else }}en_GB{{ end }}">
+  {{ range .Translations }}
+    <meta property="og:locale:alternate" content="{{ if eq .Lang "nl" }}nl_NL{{ else }}en_GB{{ end }}">
+  {{ end }}
+  {{ with or (.Params.openGraph) (.Params.images) }}
+    {{ range . }}
+      <meta property="og:image" content="{{ .src | absURL }}">
+      <meta property="og:image:alt" content="{{ .alt }}">
+    {{ end }}
+  {{ else }}
+    <meta property="og:image" content="{{ .Site.Params.intro.pic.src | absURL }}">
+  {{ end }}
+  {{ with .Site.Params.Social.twitter}}<meta property="twitter:site" content="{{ . }}">{{ end }}
+
+  {{- if .Site.Params.enableCDN -}}
+    {{- if .Site.Params.highlightjs -}}<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/{{ .Site.Params.highlightjsTheme | default "default" }}.min.css">{{- end -}}
+    {{- range .Site.Params.cssFiles -}}
+      {{- if eq . "default" -}}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <script src="https://kit.fontawesome.com/f4a4501b51.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+        {{- $mainCSSOptions := (dict "targetPath" "css/main.min.css" "outputStyle" "compressed") -}}
+        {{- $main := resources.Get "scss/main.scss" | resources.ToCSS $mainCSSOptions | resources.Fingerprint -}}
+        <link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}">
+        {{- if eq (i18n "letter_direction") "RTL" -}}
+          {{- $rtl := resources.Get "css/rtl.css" | minify -}}
+          <link rel="stylesheet" href="{{ $rtl.RelPermalink }}">
+        {{- end -}}
+        <link rel="stylesheet" href="{{ "css/add-on.css" | relURL }}">
+      {{- else }}
+        <link rel="stylesheet" href="{{ . | relURL }}">
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- range .Site.Params.cssFiles -}}
+      {{- if eq . "default" -}}
+        {{- $cssSlice := slice -}}
+        {{- if $.Site.Params.highlightjs -}}
+          {{ with $.Site.Params.highlightjsTheme }}
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/{{ . }}.min.css">
+          {{ else }}
+            {{- $cssSlice = $cssSlice | append (resources.Get "css/default.css") -}}
+          {{ end }}
+        {{- end -}}
+        {{- $assets := resources.Get "assets.json" | unmarshal -}}
+        {{- range $assets.styles -}}
+          {{- $cssSlice = $cssSlice | append (resources.Get . ) -}}
+        {{- end -}}
+        {{- $cssSlice = $cssSlice | append (resources.Get "scss/main.scss" | toCSS) -}}
+        {{- $css := $cssSlice | resources.Concat "css/bundle.css" | minify | fingerprint -}}
+        <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+        {{- if eq (i18n "letter_direction") "RTL" -}}
+          {{- $rtl := resources.Get "css/rtl.css" | minify -}}
+          <link rel="stylesheet" href="{{ $rtl.RelPermalink }}">
+        {{- end -}}
+        <link rel="stylesheet" href="{{ "css/add-on.css" | relURL }}">
+      {{- else }}
+        <link rel="stylesheet" href="{{ . | relURL }}">
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  <link rel="stylesheet" href="{{ "css/accessibility.css" | relURL }}">
+  {{- .Scratch.Set "Permalink" .Permalink -}}
+  {{- .Scratch.Set "Title" .Title -}}
+  {{- if .Params.author -}}
+    {{- .Scratch.Set "Author" .Params.author -}}
+  {{- else if .Params.Author -}}
+    {{- .Scratch.Set "Author" .Params.Author -}}
+  {{- else if .Site.Params.author -}}
+    {{- .Scratch.Set "Author" .Site.Params.author -}}
+  {{- else -}}
+    {{- .Scratch.Set "Author" "" -}}
+  {{ end }}
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  
+
+</head>

@@ -1,0 +1,20 @@
+[services]
+  other = "Services"
+
+[other_services]
+  other = "Overige technische diensten"
+
+[back_to_services]
+  other = "Alle services"
+
+[service_cta_heading]
+  other = "Interesse in deze service?"
+
+[service_cta_text]
+  other = "Stuur een bericht via het contactformulier. Ik reageer zo snel mogelijk."
+
+[service_cta_button]
+  other = "Naar het contactformulier"
+
+[form_hint_familielfilm]
+  other = "Bijvoorbeeld: “Familiefilm voor de 40e trouwdag van mijn ouders. Ruim 400 foto’s en zo’n 25 filmpjes, 1998–2024. Openen met het filmpje van de speech. Muziek: twee nummers, die stuur ik later.”"

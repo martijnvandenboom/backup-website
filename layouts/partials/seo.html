@@ -1,0 +1,138 @@
+{{/* ========================================================
+     SEO partial — canonical, hreflang, Twitter Card,
+     Open Graph extras, robots, JSON-LD
+     ======================================================== */}}
+
+{{ $seoTitle := .Params.meta_title | default .Title }}
+{{ $seoDesc := .Description | default .Site.Params.meta.description }}
+{{ $author := .Params.author | default .Site.Params.author }}
+
+{{/* Canonical URL */}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* hreflang — language versions for Google and Bing */}}
+{{ range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{ if eq .Lang "nl" }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+  {{ end }}
+{{ end }}
+
+{{ with $author }}
+  <meta name="author" content="{{ . }}">
+{{ end }}
+
+<meta name="robots" content="index, follow">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $seoTitle }}">
+<meta name="twitter:description" content="{{ $seoDesc }}">
+{{ with .Site.Params.Social.twitter }}
+  <meta name="twitter:creator" content="@{{ . }}">
+{{ end }}
+
+{{ if and .IsPage (ne .Section "services") }}
+  {{ if not .Date.IsZero }}
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+  {{ end }}
+  {{ if not .Lastmod.IsZero }}
+    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+  {{ end }}
+  {{ with $author }}
+    <meta property="article:author" content="{{ . }}">
+  {{ end }}
+  {{ range .Params.tags }}
+    <meta property="article:tag" content="{{ . }}">
+  {{ end }}
+{{ end }}
+
+{{ $provider := dict "@type" "Person" "name" $author "url" .Site.BaseURL }}
+{{ $publisher := dict "@type" "Organization" "name" "Van den Boom" "url" .Site.BaseURL }}
+
+{{ if .IsHome }}
+  {{ $ld := dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "name" .Site.Title
+    "url" .Site.BaseURL
+    "description" $seoDesc
+    "inLanguage" .Language.Lang
+    "author" $provider
+  }}
+{{ print "<script type=\"application/ld+json\">" ($ld | jsonify) "</script>" | safeHTML }}
+{{ else if and (eq .Section "services") .IsSection }}
+  {{ $items := slice }}
+  {{ range $i, $p := .RegularPages.ByWeight }}
+    {{ $items = $items | append (dict
+      "@type" "ListItem"
+      "position" (add $i 1)
+      "name" $p.Title
+      "url" $p.Permalink
+      "description" ($p.Description | default $p.Params.summary)
+    ) }}
+  {{ end }}
+  {{ $ld := dict
+    "@context" "https://schema.org"
+    "@type" "CollectionPage"
+    "name" $seoTitle
+    "description" $seoDesc
+    "url" .Permalink
+    "inLanguage" .Language.Lang
+    "isPartOf" (dict "@type" "WebSite" "name" "Van den Boom" "url" .Site.BaseURL)
+    "about" (dict
+      "@type" "ItemList"
+      "name" $seoTitle
+      "itemListElement" $items
+    )
+  }}
+{{ print "<script type=\"application/ld+json\">" ($ld | jsonify) "</script>" | safeHTML }}
+{{ else if and (eq .Section "services") .IsPage }}
+  {{ $servicesURL := "" }}
+  {{ with site.GetPage "/services" }}{{ $servicesURL = .Permalink }}{{ end }}
+  {{ $crumbs := slice
+    (dict "@type" "ListItem" "position" 1 "name" "Home" "item" site.Home.Permalink)
+    (dict "@type" "ListItem" "position" 2 "name" (i18n "services") "item" $servicesURL)
+    (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink)
+  }}
+  {{ $service := dict
+    "@type" "Service"
+    "name" (.Params.headline | default .Title)
+    "description" $seoDesc
+    "url" .Permalink
+    "inLanguage" .Language.Lang
+    "provider" $provider
+    "areaServed" (dict "@type" "Country" "name" "Netherlands")
+    "availableLanguage" (slice "nl" "en")
+  }}
+  {{ with .Params.service_type }}
+    {{ $service = merge $service (dict "serviceType" .) }}
+  {{ end }}
+  {{ with .Params.price_note }}
+    {{ $service = merge $service (dict "offers" (dict "@type" "Offer" "description" . "url" $.Permalink)) }}
+  {{ end }}
+  {{ $ld := dict
+    "@context" "https://schema.org"
+    "@graph" (slice
+      $service
+      (dict "@type" "BreadcrumbList" "itemListElement" $crumbs)
+    )
+  }}
+{{ print "<script type=\"application/ld+json\">" ($ld | jsonify) "</script>" | safeHTML }}
+{{ else if .IsPage }}
+  {{ $ld := dict
+    "@context" "https://schema.org"
+    "@type" "Article"
+    "headline" $seoTitle
+    "description" $seoDesc
+    "url" .Permalink
+    "inLanguage" .Language.Lang
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+    "author" $provider
+    "publisher" $publisher
+  }}
+  {{ with .Params.tags }}
+    {{ $ld = merge $ld (dict "keywords" .) }}
+  {{ end }}
+{{ print "<script type=\"application/ld+json\">" ($ld | jsonify) "</script>" | safeHTML }}
+{{ end }}

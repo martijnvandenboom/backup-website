@@ -1,0 +1,28 @@
+{{ define "main" }}
+  {{ $contact := partial "service-contact-url.html" . | htmlUnescape | safeURL }}
+  <article class="post service-page">
+    <header>
+      <div class="title">
+        <p class="service-kicker"><a href="{{ "/services/" | relLangURL }}">{{ i18n "services" }}</a></p>
+        <h1>{{ with .Params.headline }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
+        {{ with .Params.lead }}
+          <p class="service-lead">{{ . }}</p>
+        {{ end }}
+        {{ if or .Params.primary_cta .Params.secondary_cta }}
+          <p class="service-actions">
+            {{ with .Params.primary_cta }}
+              <a class="service-button service-button-primary" href="{{ $contact }}">{{ . }}</a>
+            {{ end }}
+            {{ with .Params.secondary_cta }}
+              <a class="service-button" href="#{{ $.Params.secondary_anchor | default "hoe-het-werkt" }}">{{ . }}</a>
+            {{ end }}
+          </p>
+        {{ end }}
+      </div>
+    </header>
+    <div id="content" class="service-content">
+      {{ .Content }}
+    </div>
+    {{ partial "service-cta.html" . }}
+  </article>
+{{ end }}

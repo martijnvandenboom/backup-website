@@ -1,0 +1,61 @@
+{{ define "main" }}
+  {{ $pages := .RegularPages.ByWeight }}
+  <article class="post service-landing">
+    <header>
+      <div class="title">
+        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </header>
+    <div id="content" class="services-landing-content">
+      {{ .Content }}
+      {{ if $pages }}
+        {{ $featured := first 1 $pages }}
+        {{ $rest := after 1 $pages }}
+        <ol class="services-index">
+          {{ range $featured }}
+            <li>
+              <a href="{{ .RelPermalink }}">
+                <span class="service-name">
+                  {{ .Title }}
+                  {{ with .Params.badge }}<span class="service-badge">{{ . }}</span>{{ end }}
+                </span>
+                {{ with .Params.summary }}
+                  <span class="service-summary">{{ . }}</span>
+                {{ end }}
+              </a>
+            </li>
+          {{ end }}
+        </ol>
+        {{ if $rest }}
+          <p class="services-rest-label">{{ i18n "other_services" }}</p>
+          <ol class="services-index" start="{{ add (len $featured) 1 }}">
+            {{ range $rest }}
+              <li>
+                <a href="{{ .RelPermalink }}">
+                  <span class="service-name">{{ .Title }}</span>
+                  {{ with .Params.summary }}
+                    <span class="service-summary">{{ . }}</span>
+                  {{ end }}
+                </a>
+              </li>
+            {{ end }}
+          </ol>
+        {{ end }}
+      {{ end }}
+    </div>
+  </article>
+  {{- $hashMap := dict -}}
+  {{- range $page := $pages -}}
+    {{- range $hash := $page.Params.legacy_hashes -}}
+      {{- $hashMap = merge $hashMap (dict $hash $page.RelPermalink) -}}
+    {{- end -}}
+  {{- end -}}
+  {{ if $hashMap }}
+    <div id="service-hash-map" hidden>
+      {{ range $hash, $url := $hashMap }}
+        <span data-hash="{{ $hash }}" data-url="{{ $url }}"></span>
+      {{ end }}
+    </div>
+  {{ end }}
+{{ end }}

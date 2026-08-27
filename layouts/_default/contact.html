@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <article class="post">
+    <header>
+      <div class="title">
+        <h1><a href="{{ .RelPermalink }}">{{ i18n "contact" }}</a></h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </header>
+      <div id="content">
+        {{ .Content }}
+        <div class="contact-container">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact" center width="300px">
+            <h4>{{ i18n "contact_replies" .Params.contactanswertime }}</h4>
+            <p id="contact-form-hint" class="contact-form-hint" hidden>{{ i18n "form_hint_familielfilm" }}</p>
+            <input type="hidden" name="access_key" value="{{ .Params.web3forms_access_key }}">
+            <fieldset>
+              <input placeholder="{{ i18n "form_name" }}" type="text" name="name" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="{{ i18n "form_email" }}" type="email" name="_replyto" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="{{ i18n "form_subject" }}" type="text" name="_subject" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="{{ i18n "form_body" }}" name="message" tabindex="4" required></textarea>
+            </fieldset>
+            <input type="hidden" name="redirect" value="{{ (site.GetPage .Params.thank_you).Permalink }}">
+            <input type="hidden" name="_language" value="{{ .Lang }}">
+            <fieldset>
+              <div class="h-captcha" data-captcha="true"></div>
+            </fieldset>
+            <fieldset>
+              <button name="submit" class="button" type="submit" id="contact-submit" tabindex="5">{{ i18n "submit" }}</button>
+            </fieldset>
+          </form>
+          <script src="https://web3forms.com/client/script.js" async defer></script>
+        </div>
+      </div>
+  </article>
+{{ end }}
